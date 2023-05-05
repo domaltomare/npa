@@ -142,9 +142,19 @@ components:
         type: object
         additionalProperties: false
       AvvisoType:
-        description: Oggetto che riporta tutti i dati dell'Avviso
+        description: Oggetto che riporta i dati dell'Avviso
         type: object
         additionalProperties: false
+        properties:
+          idAvviso:
+            description: identificativo univoco dell'Avviso generato da ANAC
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          scheda:
+            $ref: '#/components/schemas/SchedaType'
+        required:
+          - idAvviso
       PianoType:
         description: Oggetto che riporta tutti i dati della Pianificazione
         type: object
