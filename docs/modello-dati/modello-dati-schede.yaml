@@ -85,8 +85,7 @@ components:
       format: uuid
       example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     TipoFinanziamentoEnum:
-      description: Tipo di finanziamento - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/npa-fvoe/docs/modello-dati/tipologiche/tipoFinanziamento.json' 
-      https://raw.githubusercontent.com/domaltomare/YAML/main/npa-fvoe/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAppaltoEnum'
+      description: Tipo di finanziamento - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/npa-fvoe/docs/modello-dati/tipologiche/tipoFinanziamento.json'
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'
     ImportoType:
