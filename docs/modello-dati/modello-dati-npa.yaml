@@ -1,3 +1,4 @@
+openapi: 3.0.3
 info:
   title: Modello Dati NPA - OpenAPI 3.0
   version: 1.0.0
@@ -179,12 +180,8 @@ components:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-          espdRequest:
-            $ref: '#/components/schemas/EspdRequestType'
-          eForm:
-            $ref: '#/components/schemas/EFormType'
-          anacForm:
-            $ref: '#/components/schemas/AFormType'
+          scheda:
+            $ref: '#/components/schemas/SchedaType'
         required:
           - idAppalto
       DatiPianoType :
