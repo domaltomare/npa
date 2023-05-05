@@ -78,7 +78,6 @@ components:
         - $ref: '#/components/schemas/SchedaP4.1Type'
         - $ref: '#/components/schemas/SchedaP4.2Type'
         - $ref: '#/components/schemas/SchedaP5Type'
-        - $ref: '#/components/schemas/SchedaP6Type'
     IdSchedaType:
       description: Identificativo univoco della Scheda restituito da ANAC in fase di creazione Scheda
       type: string
