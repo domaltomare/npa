@@ -1824,12 +1824,6 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoRuoloEnum'
     AppaltoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
-    EspdRequestType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EspdRequestType'
-    EFormType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EFormType'
-    AFormType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AFormType'
     PianoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PianoType'
     AnagraficaSoggettoType:
@@ -1855,13 +1849,7 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       properties:  
         appalto:
-          $ref: '#/components/schemas/AppaltoType'
-        espdRequest:
-          $ref: '#/components/schemas/EspdRequestType'
-        eForm:
-          $ref: '#/components/schemas/EFormType'
-        anacForm:
-          $ref: '#/components/schemas/AFormType'     
+          $ref: '#/components/schemas/DatiAppaltoType'
     CreaPianoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2120,10 +2108,6 @@ components:
       properties:
         avviso:
           $ref: '#/components/schemas/AvvisoType'
-        eForm:
-          $ref: '#/components/schemas/EFormType'
-        anacForm:
-          $ref: '#/components/schemas/AFormType'
     RenderingAvvisoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
