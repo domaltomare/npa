@@ -2152,14 +2152,6 @@ components:
       type: object
       additionalProperties: false
       properties:
-          detail:
-              description: |
-                A human readable explanation specific to this occurrence of the
-                problem.
-              maxLength: 4096
-              pattern: ^.{0,1024}$
-              type: string
-              example: 'Request took too long to complete.'
           instance:
               description: |
                 An absolute URI that identifies the specific occurrence of the
@@ -2178,7 +2170,7 @@ components:
               maximum: 600
               minimum: 100
               type: integer
-              example: 503
+              example: 400
           title:
               description: |
                 A short, summary of the problem type. Written in english and
@@ -2188,7 +2180,15 @@ components:
               maxLength: 64
               pattern: ^[ -~]{0,64}$
               type: string
-              example: 'Service Unavailable'
+              example: 'There was a validation error'
+          detail:
+              description: |
+                A human readable explanation specific to this occurrence of the
+                problem.
+              maxLength: 4096
+              pattern: ^.{0,1024}$
+              type: string
+              example: 'Object Validation Error'
           type:
               description: |
                 An absolute URI that identifies the problem type. When
@@ -2200,7 +2200,19 @@ components:
               format: uri
               maxLength: 2048
               type: string
-              example: 'https://tools.ietf.org/html/rfc7231#section-6.6.4'  
+              example: 'https://tools.ietf.org/html/rfc7231#section-6.6.4'
+          errori:
+            description: elenco degli errori
+            type: object
+            properties:
+              codice:
+                type: string
+                example: '001'
+              descrizione:
+                maxLength: 4096
+                pattern: ^.{0,1024}$
+                type: string
+                example: 'Non è stato indicato il campo Motivazione richiesta CIG.'
     ErrorResponse:
       allOf: # estende la classe BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
