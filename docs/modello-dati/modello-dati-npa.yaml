@@ -333,6 +333,10 @@ components:
             $ref: '#/components/schemas/SchedaComunicaAppaltoType'
         required:
           - idAppalto
+      DatiSchedaType:
+        description: Oggetto Complesso che riporta tutti i dati delle schede
+        allOf: # estende il modello dati SchedaType
+              - $ref: '#/components/schemas/SchedaPostPubblicazioneType'
       DatiPianoType :
         description: Oggetto Complesso che riporta tutti i dati dell'appalto 
         type: object
