@@ -42,28 +42,10 @@ components:
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.14.yaml#/components/schemas/SchedaP1.14Type'
       SchedaComunicaAppaltoType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
+        allOf: # estende il modello dati SchedaType
+          - $ref: '#/components/schemas/SchedaType'       
         type: object
         additionalProperties: false
-        properties:
-          _idScheda:
-            $ref: '#/components/schemas/IdSchedaType'
-          _idStatoScheda:
-            description: identificativo dello stato della Scheda 
-            type: string
-            example: '1'
-          _origineScheda:
-            description: origine Scheda 
-            type: string
-            example: ''          
-          _versione:
-            description: versione della scheda. necessaria al motore interno ANAC.
-            type: string
-            example: '01.00.00'
-          _dataCreazione:
-            description: data creazione della pianificazione (A datetime specified by RF3339)
-            type: string
-            format: datetime
-            example: '2022-01-23T12:02:05Z'
         oneOf:
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.10Type'
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.11Type'
@@ -100,28 +82,10 @@ components:
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP5Type'   
       SchedaPostPubblicazioneType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
+        allOf: # estende il modello dati SchedaType
+          - $ref: '#/components/schemas/SchedaType'       
         type: object
         additionalProperties: false
-        properties:
-          _idScheda:
-            $ref: '#/components/schemas/IdSchedaType'
-          _idStatoScheda:
-            description: identificativo dello stato della Scheda 
-            type: string
-            example: '1'
-          _origineScheda:
-            description: origine Scheda 
-            type: string
-            example: ''          
-          _versione:
-            description: versione della scheda. necessaria al motore interno ANAC.
-            type: string
-            example: '01.00.00'
-          _dataCreazione:
-            description: data creazione della pianificazione (A datetime specified by RF3339)
-            type: string
-            format: datetime
-            example: '2022-01-23T12:02:05Z'
         oneOf:
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaCL1Type'
       IdSchedaType:
