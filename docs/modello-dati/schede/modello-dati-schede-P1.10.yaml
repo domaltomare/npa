@@ -7,13 +7,13 @@ components:
     AppaltoP.10Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoBaseType'
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoBaseType'
       type: object
       required: [categorieMerceologiche,ripetizioniEConsegneComplementari, prestazioniComprese]
       additionalProperties: false
       properties:
         motivoUrgenza:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoUrgenzaEnum'       
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:
           description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
           type: string
@@ -23,7 +23,7 @@ components:
           type: string
           enum: ['S','N']
         prestazioniComprese:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/PrestazioniEnum'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/PrestazioniEnum'
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
           type: string
@@ -31,7 +31,7 @@ components:
     LottoP.10Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoBaseType'
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoBaseType'
       type: object
       required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
       additionalProperties: false
@@ -49,28 +49,28 @@ components:
           type: string
           enum: ['S','N']
         tipologiaLavoro:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipologiaLavoroType'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipologiaLavoroType'
         opzioni/rinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: string
           enum: ['S','N']  
         ipotesiCollegamento:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/IpotesiCollegamentoType'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IpotesiCollegamentoType'
         categoria:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaEnum' 
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaEnum' 
         paritaDiGenereGenerazionale:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/ParitaDiGenereGenerazionaleType'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ParitaDiGenereGenerazionaleType'
     QuadroEconomicoP.10Type:
       description: Oggetto che riporta tutti i dati del quadro economico standard 
       allOf: # estende la classe QuadroEconomicoBaseType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoBaseType'        
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoBaseType'        
       type: object
       required: [sommeRipetizioni]
       additionalProperties: false          
     AnacFormP1.10Type:
       description: Contiene tutti i dati necessari per la pubblicazione nazionale di un bando di gara soprasoglia – direttiva generale, regime ordinario. Articolo 48, paragrafo 2, della direttiva 2014/24/UE 
       allOf: # estende la classe AnacFormBaseType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType' 
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType' 
       type: object
       required: [categoria, finanziamenti, opzioni/rinnovi, appalto]
       additionalProperties: false
@@ -93,6 +93,6 @@ components:
         anacFormP1:
           $ref: '#/components/schemas/AnacFormP1.10Type'
         eform:
-         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         
+         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         
         espd:
-         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'
+         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'
