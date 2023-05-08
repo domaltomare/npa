@@ -237,33 +237,6 @@ components:
         description: Oggetto specifico dell'anagrafica
         type: object
         additionalProperties: false
-      EFormType:
-        description:  dati per la pubblicazione in TED nel formato definito in ambito europeo
-        type: object
-        additionalProperties: false
-        properties:
-          body:
-            description: EForm codificato Base64 e compresso XXXX nel formato XML definito da TED 
-            type: string
-            format: byte
-            example: U3dhZ2dlciByb2Nrcw== 
-      EspdRequestType:
-        description: Definizione delle gara, dei sui lotti con i criteri di esclusione/inclusioni nel formato definito in ambito europeo (ESPD - Request)
-        type: object
-        additionalProperties: false
-        properties:
-          body:
-            description: ESPD Request codificato Base64 nel formato XML definito da TED 
-            type: string
-            format: byte
-            example: U3dhZ2dlciByb2Nrcw==
-      AFormType:
-        description: dati aggiuntivi per la gestione italiana della richiesta
-        type: object
-        properties:
-          body:
-            description: Definizione form lato ANAC in formato JSON 
-            type: string
       LottoType:
         description: Oggetto che riporta tutti i dati del lotto
         type: object
