@@ -340,10 +340,8 @@ components:
         properties:
           idPianificazione:
             description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Pianificazione. (A UUID specified by RFC4122)
-          eForm:
-            $ref: '#/components/schemas/EFormType'
-          anacForm:
-            $ref: '#/components/schemas/AFormType'  
+          scheda:
+            $ref: '#/components/schemas/SchedaPianificazioneType' 
         required:
           - idPianificazione
       EsitoOperazioneType:
