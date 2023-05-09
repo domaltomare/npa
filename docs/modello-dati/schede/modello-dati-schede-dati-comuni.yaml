@@ -99,7 +99,7 @@ components:
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'      
     TipoClassificazioneEnum:  
-      description: Il tipo di classificazione che descrive l'appalto (ad es. CPV) - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/JSON/tipoClassificazione.json'
+      description: Il tipo di classificazione che descrive l'appalto (ad es. CPV) - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoClassificazione.json'
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'       
     CPVEnum:
@@ -107,31 +107,31 @@ components:
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'      
     AccessibilitaEnum:
-      description: Richiamo nel bando di gara, nell’avviso o nell’invito alla necessità da parte del concorrente o dell’offerente di aver assolto, al momento della presentazione dell'offerta, agli obblighi in materia di lavoro delle persone con disabilità di cui alla legge 12 marzo 1999, n. 68 - corrisponde al campo bt-754 - Accessibility del TED - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/JSON/accessibilita.json'
+      description: Richiamo nel bando di gara, nell’avviso o nell’invito alla necessità da parte del concorrente o dell’offerente di aver assolto, al momento della presentazione dell'offerta, agli obblighi in materia di lavoro delle persone con disabilità di cui alla legge 12 marzo 1999, n. 68 - corrisponde al campo bt-754 - Accessibility del TED - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/accessibilita.json'
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'      
     OggettoContrattoEnum:
-      description: Oggetto del contratto - corrisponde al campo bt-23 - Main Nature del TED - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/JSON/oggettoContratto.json'
+      description: Oggetto del contratto - corrisponde al campo bt-23 - Main Nature del TED - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoContratto.json'
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'      
     SceltaContraenteEnum:
-      description: Il tipo di procedura di appalto (ad es. secondo i tipi indicati nelle direttive sugli appalti citate nei considerando del presente documento). - corrisponde al campo bt-105 - Procedure Type del TED - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/JSON/sceltaContraente.json'
+      description: Il tipo di procedura di appalto (ad es. secondo i tipi indicati nelle direttive sugli appalti citate nei considerando del presente documento). - corrisponde al campo bt-105 - Procedure Type del TED - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/sceltaContraente.json'
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'      
     AffidamentiRiservatiEnum:
-      description: Indicare se la partecipazione è riservata a specifiche organizzazioni (ad es. laboratori protetti, organizzazioni con missione di servizio pubblico) - corrisponde al campo bt-71 - Reserved Participation del TED - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/JSON/affidamentiRiservati.json'
+      description: Indicare se la partecipazione è riservata a specifiche organizzazioni (ad es. laboratori protetti, organizzazioni con missione di servizio pubblico) - corrisponde al campo bt-71 - Reserved Participation del TED - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/affidamentiRiservati.json'
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'      
     CriteriAggiudicazioneEnum:
-      description: criteri di aggiudicazione - corrisponde al campo bt-539 - Award Criterion Type del TED - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/JSON/criteriAggiudicazione.json'
+      description: criteri di aggiudicazione - corrisponde al campo bt-539 - Award Criterion Type del TED - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/criteriAggiudicazione.json'
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'      
     SistemaDinamicoAcquisizioneEnum: 
-      description: Sistema dinamico di acquisizione - corrisponde al campo bt-766 - Dynamic Purchasing System del TED  - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/JSON/sistemaDinamicoAcquisizione.json' 
+      description: Sistema dinamico di acquisizione - corrisponde al campo bt-766 - Dynamic Purchasing System del TED  - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/sistemaDinamicoAcquisizione.json' 
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'  
     AccordoQuadroEnum:
-      description: Accordo quadro - corrisponde al campo bt-765 - Framework agreement del TED  - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/JSON/accordoQuadro.json' 
+      description: Accordo quadro - corrisponde al campo bt-765 - Framework agreement del TED  - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/accordoQuadro.json' 
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'       
     MotivoDerogaType:
@@ -303,6 +303,13 @@ components:
           description: Somme a disposizione - Iva e altre Imposte e tasse
           type: string
           format: decimal           
+    QuadroEconomicoType:
+      description: Oggetto che riporta tutti i dati del quadro economico standard 
+      allOf: # estende la classe QuadroEconomicoBaseType
+      - $ref: '#/components/schemas/QuadroEconomicoBaseType'       
+      type: object
+      required: [sommeADisposizione]
+      additionalProperties: false          
     DatiBaseAvvisoType: 
       description: Dato in comune con il Business Group Notice delle eforms
       type: object
@@ -352,6 +359,19 @@ components:
           type: string
         importoGara: 
           description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED          
+    DatiBaseP2.12Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggettoLotto,importoGara]
+      additionalProperties: false
+      properties:
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggettoLotto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importoGara: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED            
     DatiBaseProceduraType:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
@@ -382,6 +402,18 @@ components:
       properties:
         criteriAggiudicazione: 
           $ref: '#/components/schemas/CriteriAggiudicazioneEnum'          
+    DatiBaseStrumentiProceduraType:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      additionalProperties: false
+      properties:
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'        
+        sistemaDinamicoAcquisizione: 
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
+          type: string
+          enum: ['S','N']          
     DatiBaseStrumentiProceduraP2.10Type:
       description: Dato in comune con il Business Group Techniques delle eforms 
       required: [sistemaDinamicoAcquisizione,accordoQuadro]
@@ -395,7 +427,38 @@ components:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
           type: string
           enum: ['S','N']           
+    DatiBaseStrumentiProceduraP2.11Type:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      required: [sistemaDinamicoAcquisizione,accordoQuadro]
+      additionalProperties: false
+      properties:
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'        
+        sistemaDinamicoAcquisizione: 
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
+          type: string
+          enum: ['S','N']          
     DatiBaseTerminiInvioP2.10Type:
+      description: Dato in comune con il Business Group Submission Terms delle eforms 
+      required: [scadenzaPresentazioneInvito]
+      additionalProperties: false
+      properties:
+        scadenzaPresentazioneInvito:
+          description: Data di scadenza per la presentazione della richiesta di invito - corrisponde ai campi bt-630 - Deadline Receipt Expressions e bt-1311 - Deadline Receipt Requests del TED
+          type: string
+          format: datetime          
+    DatiBaseTerminiInvioP2.11Type:
+      description: Dato in comune con il Business Group Submission Terms delle eforms 
+      required: [scadenzaPresentazioneInvito]
+      additionalProperties: false
+      properties:
+        scadenzaPresentazioneInvito:
+          description: Data di scadenza per la presentazione della richiesta di invito - corrisponde ai campi bt-630 - Deadline Receipt Expressions e bt-1311 - Deadline Receipt Requests del TED
+          type: string
+          format: datetime          
+    DatiBaseTerminiInvioP2.12Type:
       description: Dato in comune con il Business Group Submission Terms delle eforms 
       required: [scadenzaPresentazioneInvito]
       additionalProperties: false
