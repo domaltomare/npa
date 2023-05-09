@@ -127,47 +127,21 @@ components:
       TipoOperazioneEnum:
         description: Tipo Operazione di cui si richiedere l'esito dell'operazione - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazione.json'
       TipoPianoEnum:
-        type: string
-        minimum: 1
-        enum: []
-        description: >
-            tipoOperazione - Tipo Operazione di cui si richiedere l'esito dell'operazione
+        description: Tipo di pianificazione - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoPiano.json'
       TipoAzioneAvvisoEnum:
-        description: azione dell'avviso
-        type: string
-        minimum: 1
-        enum: []
+        description: Tipo di azione dell'avviso - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneAvviso.json'
       TipoAvvisoEnum:
-        description: Tipologie di avvisi 
-        type: string
-        minimum: 1
-        enum: []
+        description: Tipologia di avviso - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAvviso.json'
       TipoRuoloEnum:
-        type: string
-        minimum: 1
-        enum: [] 
+        description: Tipo di ruolo di un soggetto - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRuolo.json'
       StatoPianoEnum:  
-        type: string
-        minimum: 1
-        enum: []
+        description: Stato della pianificazione - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoPiano.json'
       StatoAppaltoEnum: 
-        type: string
-        minimum: 1
-        enum: []
-        description: >
-          stato- Stato in cui si trova la Appalto
+        description: Stato in cui si trova l' Appalto - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json'
       StatoAvvisoEnum:
-        type: string
-        minimum: 1
-        enum: []
-        description: >
-          stato - Stato in cui si trova l'avviso
+        description: Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAvviso.json'
       StatoLottoEnum:
-        type: string
-        minimum: 1
-        enum: []
-        description: >
-            stato- Stato in cui si trova il lotto:
+        description: Stato in cui si trova il Lotto - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoLotto.json'
       CigType:
         description: coppia progressivoLotto-CIG
         type: object
