@@ -527,7 +527,7 @@ paths:
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
         - in: query
           name: CIG
-          description: Identificativo univoco Gara-Lotto rilasciato da ANAC
+          description: Identificativo univoco Appalto-Lotto rilasciato da ANAC
           schema:
             type: string
             example: 9050626CD6
@@ -1498,6 +1498,153 @@ paths:
                   $ref: '#/components/schemas/ErrorResponse'
       security:
         - apiKeyAuth: []
+  /recupera-elenco-tipologiche:
+    get:
+      tags:
+        - serviziComuni
+      summary: API Rest per il recupero di tutte le tipologiche utilizzate dal modello dati. SINCRONO
+      description: Il servizio restituiti un'elenco di tipologiche. SINCRONO
+      operationId: idRecuperaElencoTipologiche
+      parameters:
+        - in: query
+          name: dataInizio
+          description: Data di inizio (A datetime specified by RF3339)
+          schema:
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: dataFine
+          description: Data di fine (A datetime specified by RF3339)
+          schema:
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: page
+          description: numero di pagine da visualizzare
+          schema:
+            type: integer
+            format: int32
+        - in: query  
+          name: perPage
+          description: numero di elementi per pagina
+          schema:
+            type: integer
+            format: int32    
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TipologicaListaResponse' 
+            application/xml:
+              schema:
+                description: Risposta generica servizio
+                type: object
+                additionalProperties: false
+                properties:
+                  code:
+                    description: codice di ritorno dell'operazione 
+                    type: integer
+                    format: int32
+                    example: 200
+                  type:
+                    description: descrizione dell'esito dell'operazione eseguita
+                    type: string
+                    example: operazione terminata con successo
+                  message:
+                    description: messaggio di errore in caso di operazione non venga eseguita correttamente  
+                    type: string
+                xml:
+                  name: '##default'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: [] 
+  /recupera-tipologica:
+    get:
+      tags:
+        - serviziComuni
+      summary: API Rest per il recupero di una specifica tipologica. SINCRONO
+      description: Il servizio restituiti l'elenco di una singola tipologica. SINCRONO
+      operationId: idRecuperaTipologica
+      parameters:
+        - in: query
+          name: tipo
+          description: elenco delle possibili tipologiche
+          schema:
+            $ref: '#/components/schemas/ElencoTipologicaEnum'
+        - in: query
+          name: dataInizio
+          description: Data di inizio (A datetime specified by RF3339)
+          schema:
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: dataFine
+          description: Data di fine (A datetime specified by RF3339)
+          schema:
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: page
+          description: numero di pagine da visualizzare
+          schema:
+            type: integer
+            format: int32
+        - in: query  
+          name: perPage
+          description: numero di elementi per pagina
+          schema:
+            type: integer
+            format: int32 
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TipologicaResponse' 
+            application/xml:
+              schema:
+                description: Risposta generica servizio
+                type: object
+                additionalProperties: false
+                properties:
+                  code:
+                    description: codice di ritorno dell'operazione 
+                    type: integer
+                    format: int32
+                    example: 200
+                  type:
+                    description: descrizione dell'esito dell'operazione eseguita
+                    type: string
+                    example: operazione terminata con successo
+                  message:
+                    description: messaggio di errore in caso di operazione non venga eseguita correttamente  
+                    type: string
+                xml:
+                  name: '##default'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []          
   /presa-carico:
     post:
       tags:
@@ -1829,6 +1976,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoOperazioneSoggettoEnum'      
     TipoRuoloEnum:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoRuoloEnum'
+    ElencoTipologicaEnum:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/ElencoTipologicaEnum'
     AppaltoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
     PianoType:
@@ -1851,6 +2000,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/ContentDocumentType'
     EsitoOperazioneType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EsitoOperazioneType'
+    TipologicaType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaType'
     ConsultaAppaltoResponse :
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2043,6 +2194,24 @@ components:
               CIG: 'EF89908H45' 
             - progressivoLotto: '0003'
               CIG: 'EF90908G67' 
+    TipologicaResponse:
+      type: object
+      additionalProperties: false
+      properties:
+        tipologica:  
+          $ref: '#/components/schemas/TipologicaType'           
+    TipologicaListaResponse:
+      allOf: # estende la classe PaginazioneType
+        - $ref: '#/components/schemas/PaginazioneType'
+      description: Oggetto generico di ritorno di una risposta con paginazione
+      type: object
+      additionalProperties: false
+      properties:
+        result: 
+          description: Elenco di tutte le tipologiche
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologicaType' 
     SchedaListaResponse:
       allOf: # estende la classe PaginazioneType
           - $ref: '#/components/schemas/PaginazioneType'
