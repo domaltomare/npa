@@ -162,14 +162,15 @@ components:
         type: object
         additionalProperties: false
         properties:
-          codice:
-            description: Identificativo univoco della tipologica.
-            format: string
+          id:
+            description: Identificativo univoco della tipologica. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
             example: "categoria"
           descrizione:
             description: Descrizione della tipologica.
             format: string
-            example: "tipologica delle categorie"            
+            example: "categoria"            
           elenco: 
             description: Elenco di una tipologica
             type: array
