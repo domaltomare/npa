@@ -1,0 +1,60 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda P1.18 - Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea, che contiene i dati necessari per la pubblicazione nazionale e per la pubblicazione europea con eform18.
+  version: 1.0.0
+components:
+  schemas:
+    LottoP.18Type:
+      description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
+      allOf: # estende la classe LottoBaseType
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoBaseType'
+      type: object
+      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      additionalProperties: false
+      properties:
+        ipotesiCollegamento:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IpotesiCollegamentoType'
+        categoria:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaEnum' 
+    AppaltoP.18Type:
+      description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
+      type: object
+      required: [cig,fattispecieContrattuale,importo,oggetto,sceltaContraente,stazioneAppaltante,oggettoLotto]
+      additionalProperties: false    
+      properties:
+        cfSA: 
+          description: Codice fiscale SA
+          type: string
+        denominazioneSA: 
+          description: Denominazione SA
+          type: string    
+        oggettoLotto:
+          description: oggetto del lotto
+          type: string          
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'
+    AnacFormP1.18Type:
+      description: Contiene tutti i dati necessari per la pubblicazione nazionale di un bando di gara soprasoglia - Bando di gara — direttiva per il settore della difesa, regime ordinario. Articolo 30, paragrafo 2, della direttiva 2009/81/CE 
+      type: object
+      additionalProperties: false
+      properties:      
+        appalto:
+          $ref: '#/components/schemas/AppaltoP.18Type' 
+        lotti:
+          description: Dati relativi ai lotti
+          type: array
+          items:
+            $ref: '#/components/schemas/LottoP.18Type'           
+    SchedaP1.18Type:
+      description: Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea, che contiene i dati necessari per la pubblicazione nazionale e per la pubblicazione europea con eform18.
+      type: object
+      required: [anacFormP1, eform,espd]
+      additionalProperties: false
+      properties:
+        anacFormP1:
+          $ref: '#/components/schemas/AnacFormP1.18Type'
+        eform:
+         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'  
+        espd:
+         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'           
+         
