@@ -155,6 +155,20 @@ components:
             type: string
           en:
             type: string
+      ListaTipologicaType:
+        description: Oggetto generico di una tipologica
+        type: object
+        additionalProperties: false
+        properties:
+          codice:
+            description: Identificativo univoco della tipologica.
+            format: string
+            example: "categoria"
+          elenco: 
+            description: Elenco di una tipologica
+            type: array
+            items:
+              $ref: '#/components/schemas/DatiTipologicaType'
       DatiTipologicaType:
         type: object
         properties:
