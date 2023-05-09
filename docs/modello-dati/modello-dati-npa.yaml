@@ -148,6 +148,30 @@ components:
         description: coppia progressivoLotto-CIG
         type: object
         additionalProperties: false
+      I18NType:
+        type: object
+        properties:
+          it:
+            type: string
+          en:
+            type: string
+      TipologicaType:
+        type: object
+        properties:
+          codice:
+            type: string
+          descrizione:
+            $ref: '#/components/schemas/I18NType'
+          dataInizio:
+            description: data inizio (A datetime specified by RF3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+          dataFine:
+            description: data fine (A datetime specified by RF3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
       AnagraficaType:
         description: oggetto generico dell'anagrafica
         type: object
