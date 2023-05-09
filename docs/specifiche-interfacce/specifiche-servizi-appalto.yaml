@@ -1565,15 +1565,20 @@ paths:
             type: string
             example: 'RSSMRA94E07A511G'
         - in: query
-          name: funzione
-          description: tipo funzione del soggetto
-          schema:
-            $ref: '#/components/schemas/TipoFunzioneEnum'
-        - in: query
           name: ruolo
           description: tipo ruolo del soggetto
           schema:
             $ref: '#/components/schemas/TipoRuoloEnum' 
+        - in: query
+          name: servizio
+          description: servizio del soggetto delegato
+          schema:
+            $ref: '#/components/schemas/TipoServizioSoggettoEnum'
+        - in: query
+          name: operazione
+          description: operazione del soggetto delegato
+          schema:
+            $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'            
         - in: query
           name: dataInizioDa
           description: Data inizio incarico soggetto - intervallo successivo (A datetime specified by RF3339)
@@ -1818,8 +1823,10 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoSchedaEnum'
     TipoOperazioneEnum:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoOperazioneEnum'
-    TipoFunzioneEnum:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoFunzioneEnum'
+    TipoServizioSoggettoEnum:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoServizioSoggettoEnum'
+    TipoOperazioneSoggettoEnum:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoOperazioneSoggettoEnum'      
     TipoRuoloEnum:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoRuoloEnum'
     AppaltoType:
@@ -2073,8 +2080,10 @@ components:
           example: "9050626CD6"
         ruolo:  
           $ref: '#/components/schemas/TipoRuoloEnum'
-        funzione:  
-          $ref: '#/components/schemas/TipoFunzioneEnum'
+        servizio:  
+          $ref: '#/components/schemas/TipoServizioSoggettoEnum'
+        operazione:  
+          $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'          
         dataInizio: 
           description: Data di inizio (A datetime specified by RF3339)
           type: string
