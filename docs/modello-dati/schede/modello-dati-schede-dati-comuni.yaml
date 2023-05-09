@@ -134,6 +134,10 @@ components:
       description: Accordo quadro - corrisponde al campo bt-765 - Framework agreement del TED  - fare riferimento ai valori contenuti nel file [accordoQuadro.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/accordoQuadro.json) 
       allOf:
         - $ref: '#/components/schemas/TipologicaType'
+    MotivoEsclusioneOrdinarioSpecialeEnum:
+      description: Motivo di esclusione settore ordinario e speciale - fare riferimento ai valori contenuti nel file [motivoEsclusioneOrdinarioSpeciale.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoEsclusioneOrdinarioSpeciale.json) 
+      allOf: 
+      - $ref: '#/components/schemas/TipologicaType'        
     MotivoDerogaType:
       type: array
       items:
@@ -229,6 +233,24 @@ components:
           $ref: '#/components/schemas/MotivazioneCIGEnum'
         strumentiSvolgimentoProcedure:
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'
+    AppaltoP3BaseType:
+      description: Oggetto che riporta i dati dell'appalto relativi ai contratti senza limiti di importo con obblighi di comunicazione.
+      type: object
+      #required: []
+      additionalProperties: false
+      properties:      
+        strumentiSvolgimentoProcedure: 
+          $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum' 
+        codIstat:
+          description: Codice del luogo di esecuzione del contratto (ISTAT) - Fare riferimento alla tabella di codifica dei comuni, province e regioni sul sito 'www.istat.it'
+          type: string
+          example: '058091' 
+        modalitaAcquisizione:
+          $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
+        tipologiaLavoro:
+          $ref: '#/components/schemas/TipologiaLavoroType'  
+        oggettoPrincipaleContratto:
+          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'          
     LottoBaseType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione
       type: object
@@ -267,6 +289,44 @@ components:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         oggettoPrincipaleContratto:
           $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
+    LottoP3BaseType:
+      description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione
+      type: object
+      additionalProperties: false
+      required:
+        - cig
+        - lotIdentifier
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 9050626CD6
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string
+        codIstat:
+          $ref: '#/components/schemas/CodIstatEnum'
+        afferenteInvestimentiPNRR:
+          description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
+          type: string
+          enum:
+            - S
+            - 'N'
+        cupLotto:
+          description: Cup associati al lotto
+          type: array
+          items:
+            type: string
+        modalitaAcquisizione:
+          $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
+        tipologiaLavoro:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipologiaLavoroType'
+        categoria:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaEnum'           
+        oggettoPrincipaleContratto:
+          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'          
+        paritaDiGenereGenerazionale:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ParitaDiGenereGenerazionaleType'          
     QuadroEconomicoBaseType:
       description: Oggetto che riporta tutti i dati del quadro economico standard
       type: object
@@ -316,6 +376,62 @@ components:
       required:
         - sommeADisposizione
       additionalProperties: false
+    QuadroEconomicoConcorsiProgettazioneType:
+      description: Quadro economico concorsi progettazione
+      type: object
+      required: [impTotalePremi]
+      additionalProperties: false
+      properties:  
+        impTotalePremi:
+          description: Importo totale dei premi
+          type: string
+          format: decimal
+        impStimatoProgSuccessiva:
+          description: Importo stimato del servizio di progettazione successiva
+          type: string
+          format: decimal
+        impTotale:
+          description: Importo totale (somma degli altri due campi)
+          type: string
+          format: decimal      
+    QuadroEconomicoP3ContrattiEsclusiType:
+      description: Oggetto che riporta tutti i dati del quadro economico standard 
+      type: object
+      required: [impLavori, impServizi, impForniture]
+      additionalProperties: false
+      properties:
+        impLavori:
+          description: Importo componente lavori in € 
+          type: string
+          format: decimal
+        impServizi:
+          description: Importo componente servizi in € 
+          type: string
+          format: decimal
+        impForniture:
+          description: Importo componente forniture in €
+          type: string
+          format: decimal
+        impTotaleSicurezza: 
+          description: Importo totale per l'attuazione della sicurezza
+          type: string
+          format: decimal
+        ulterioriSommeNoRibasso:
+          description: Ulteriori somme non soggette a ribasso
+          type: string
+          format: decimal
+        impProgettazione:
+          description: Importo della progettazione in caso di appalto integrato
+          type: string
+          format: decimal
+        sommeRipetizioni:
+          description: Somme per ripetizione servizi/forniture/lavori analoghi e consegne complementari 
+          type: string
+          format: decimal
+        sommeADisposizione:
+          description: Somme a disposizione - Iva e altre Imposte e tasse
+          type: string
+          format: decimal            
     DatiBaseAvvisoType:
       description: Dato in comune con il Business Group Notice delle eforms
       type: object
@@ -409,6 +525,74 @@ components:
           type: string
         importoGara: 
           description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED           
+    DatiBaseP2.20Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggettoLotto,importoGara]
+      additionalProperties: false
+      properties:
+        cig: 
+          description: Codice di individuazione dell'appalto (CIG) - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string
+          format: integer
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggettoLotto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importoGara: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED            
+    DatiBaseP2.21Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggettoLotto,importoGara]
+      additionalProperties: false
+      properties:
+        cig: 
+          description: Codice di individuazione dell'appalto (CIG) - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string
+          format: integer
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggettoLotto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importoGara: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED             
+    DatiBaseP2.23Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggettoLotto,importoGara]
+      additionalProperties: false
+      properties:
+        cig: 
+          description: Codice di individuazione dell'appalto (CIG) - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string
+          format: integer
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggettoLotto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importoGara: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED           
+    DatiBaseP2.24Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggettoLotto,importoGara]
+      additionalProperties: false
+      properties:
+        cig: 
+          description: Codice di individuazione dell'appalto (CIG) - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string
+          format: integer
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggettoLotto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importoGara: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED          
     DatiBaseProceduraType:
       description: Dato in comune con il Business Group Procedure delle eforms
       type: object
@@ -463,6 +647,28 @@ components:
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string           
+    DatiBaseProceduraP2.19Type:
+      description: Dato in comune con il Business Group Procedure dell'eform 10
+      type: object
+      additionalProperties: false
+      properties:
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'          
+    DatiBaseProceduraP3ContrattiEsclusiType:
+      description: Dato in comune con il Business Group Procedure dell'eform 10
+      type: object
+      required: [sceltaContraente]
+      additionalProperties: false
+      properties:
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'           
+    DatiBaseAggiudicazioneP3ContrattiEsclusiType: 
+      description: Dato in comune con il Business Group Award Criterion delle eforms
+      required: [criteriAggiudicazione]    
+      additionalProperties: false
+      properties:
+        criteriAggiudicazione: 
+          $ref: '#/components/schemas/CriteriAggiudicazioneEnum'          
     DatiBaseContrattoType:
       description: Dato in comune con il Business Group Place of Performance delle eforms
       type: object
@@ -581,6 +787,14 @@ components:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
           type: string
           enum: ['S','N']            
+    DatiBaseStrumentiProceduraP2.19Type:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      additionalProperties: false
+      properties:
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
+          type: string
+          enum: ['S','N']           
     DatiTerminiInvioType:
       description: Dato in comune con il Business Group Submission Terms delle eforms 
       additionalProperties: false
@@ -656,6 +870,29 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/DatiBaseAccessibilitaType'
+    AnacFormP3ContrattiEsclusiDatiBaseType:
+      description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia dei contratti esclusi
+      type: object
+      additionalProperties: false
+      properties:
+        datiBase:
+          $ref: 'components/schemas/DatiBaseType'
+        datiBaseAvviso:
+          $ref: 'components/schemas/DatiBaseAvvisoType'
+        datiBaseCPV:
+          $ref: 'components/schemas/DatiBaseCPVType'
+        datiBaseContratto:
+          $ref: 'components/schemas/DatiBaseContrattoType' 
+        datiBaseProcedura:
+          $ref: 'components/schemas/DatiBaseProceduraP3ContrattiEsclusiType'
+        datiBaseAggiudicazione:
+          $ref: 'components/schemas/DatiBaseAggiudicazioneP3ContrattiEsclusiType'  
+        datiBaseAggiuntivi:
+          $ref: 'components/schemas/DatiBaseAggiuntiviType'       
+        datiBaseStrumentiProcedura:
+          $ref: 'components/schemas/DatiBaseStrumentiProceduraType'
+        datiBaseTerminiInvio:
+          $ref: 'components/schemas/DatiTerminiInvioType'            
     AnacFormBaseType:
       description: Contiene i dati necessari per la pubblicazione nazionale di un bando di gara soprasoglia e sottosoglia con pubblicazione europea
       type: object
