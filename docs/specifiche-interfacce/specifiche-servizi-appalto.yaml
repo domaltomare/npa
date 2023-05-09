@@ -2024,8 +2024,6 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoOperazioneSoggettoEnum'      
     TipoRuoloEnum:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoRuoloEnum'
-    ElencoTipologicaEnum:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/ElencoTipologicaEnum'
     AppaltoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
     PianoType:
