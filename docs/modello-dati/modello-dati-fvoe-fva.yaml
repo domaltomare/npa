@@ -54,7 +54,7 @@ components:
       type: object
       additionalProperties: false
     RichiestaAccessoType:
-      description: Oggetto che riporta i dato della Richiesta di Accesso
+      description: Oggetto che riporta i dati della Richiesta di Accesso
       type: object
       additionalProperties: false
     AnagraficaType:
