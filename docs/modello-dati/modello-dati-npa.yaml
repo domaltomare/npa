@@ -155,7 +155,7 @@ components:
             type: string
           en:
             type: string
-      TipologicaType:
+      DatiTipologicaType:
         type: object
         properties:
           codice:
