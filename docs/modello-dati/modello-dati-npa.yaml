@@ -123,25 +123,25 @@ components:
       TipoSchedaEnum:
         description: Tipologia di Scheda - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoScheda.json'
       TipoFunzioneEnum:
-        description: Tipologia di Funzione associabili ad un Soggetto - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoFunzione.json'
+        description: Tipologia di Funzione associabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoFunzione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoFunzione.json)
       TipoOperazioneEnum:
-        description: Tipo Operazione di cui si richiedere l'esito dell'operazione - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazione.json'
+        description: Tipo Operazione di cui si richiedere l'esito dell'operazione - fare riferimento ai valori contenuti nel file [tipoOperazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazione.json)
       TipoPianoEnum:
-        description: Tipo di pianificazione - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoPiano.json'
+        description: Tipo di pianificazione - fare riferimento ai valori contenuti nel file [tipoPiano.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoPiano.json)
       TipoAzioneAvvisoEnum:
-        description: Tipo di azione dell'avviso - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneAvviso.json'
+        description: Tipo di azione dell'avviso - fare riferimento ai valori contenuti nel file [tipoAzioneAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneAvviso.json)
       TipoAvvisoEnum:
-        description: Tipologia di avviso - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAvviso.json'
+        description: Tipologia di avviso - fare riferimento ai valori contenuti nel file [tipoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAvviso.json)
       TipoRuoloEnum:
-        description: Tipo di ruolo di un soggetto - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRuolo.json'
+        description: Tipo di ruolo di un soggetto - fare riferimento ai valori contenuti nel file [tipoRuolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRuolo.json)
       StatoPianoEnum:  
-        description: Stato della pianificazione - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoPiano.json'
+        description: Stato della pianificazione - fare riferimento ai valori contenuti nel file [statoPiano.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoPiano.json)
       StatoAppaltoEnum: 
-        description: Stato in cui si trova l' Appalto - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json'
+        description: Stato in cui si trova l' Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
       StatoAvvisoEnum:
-        description: Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAvviso.json'
+        description: Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file [statoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAvviso.json)
       StatoLottoEnum:
-        description: Stato in cui si trova il Lotto - fare riferimento ai valori contenuti nel file 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoLotto.json'
+        description: Stato in cui si trova il Lotto - fare riferimento ai valori contenuti nel file [statoLotto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoLotto.json)
       CigType:
         description: coppia progressivoLotto-CIG
         type: object
