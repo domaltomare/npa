@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Dati comuni
+  title: Modello Dati Schede - Dati comuni
   version: 1.0.0
 components:
   schemas:
