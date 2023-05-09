@@ -1578,10 +1578,11 @@ paths:
       operationId: idRecuperaTipologica
       parameters:
         - in: query
-          name: tipologica
-          description: Elenco delle possibili tipologiche
+          name: idTipologica
+          description: Identificativo univoco della tipologica
           schema:
-            $ref: '#/components/schemas/ElencoTipologicaEnum'
+            type: string
+            format: uuid
           required: true
         - in: query
           name: dataInizio
@@ -1651,7 +1652,7 @@ paths:
           required: true
         - in: query
           name: codice
-          description: Codice dello valore che si vuole recuperare dalla tipologica
+          description: Codice del valore che si vuole recuperare dalla tipologica
           schema:
             type: string
           required: true          
@@ -1760,17 +1761,17 @@ paths:
             example: 'RSSMRA94E07A511G'
         - in: query
           name: ruolo
-          description: tipo ruolo del soggetto
+          description: ruolo del soggetto
           schema:
             $ref: '#/components/schemas/TipoRuoloEnum' 
         - in: query
           name: servizio
-          description: servizio del soggetto delegato
+          description: servizio delegato al soggetto
           schema:
             $ref: '#/components/schemas/TipoServizioSoggettoEnum'
         - in: query
           name: operazione
-          description: operazione del soggetto delegato
+          description: operazione delegata al soggetto
           schema:
             $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'            
         - in: query
