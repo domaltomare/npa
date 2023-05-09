@@ -155,7 +155,7 @@ components:
             type: string
           en:
             type: string
-      ListaTipologicaType:
+      TipologicaType:
         description: Oggetto generico di una tipologica
         type: object
         additionalProperties: false
