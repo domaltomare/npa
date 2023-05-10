@@ -29,7 +29,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoBaseType'
       type: object
-      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
       additionalProperties: false
       properties:
         saNonSoggettaObblighi24Dicembre2015:
@@ -38,6 +38,10 @@ components:
           enum: ['S','N']
         iniziativeNonSoddisfacenti:
           description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
+          type: string
+          enum: ['S','N']     
+        regimeParticolare:
+          description: Contratto regime particolare di appalto (speciale o alleggerito)
           type: string
           enum: ['S','N']          
         strumentiElettroniciSpecifici:
