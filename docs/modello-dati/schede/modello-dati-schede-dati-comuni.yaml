@@ -290,13 +290,12 @@ components:
       type: object
       additionalProperties: false
       required:
-        - cig
         - lotIdentifier
       properties:
         cig:
           description: codice identificativo lotto
           type: string
-          example: 9050626CD6
+          example: 
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
           type: string
@@ -328,13 +327,12 @@ components:
       type: object
       additionalProperties: false
       required:
-        - cig
         - lotIdentifier
       properties:
         cig:
           description: codice identificativo lotto
           type: string
-          example: 9050626CD6
+          example: 
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
           type: string
@@ -364,13 +362,13 @@ components:
     LottoP4BaseType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [cig,lotIdentifier, regimeParticolare,afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [lotIdentifier, regimeParticolare,afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
       additionalProperties: false
       properties:
         cig:
           description: codice identificativo lotto
           type: string
-          example: 9050626CD6
+          example: 
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
           type: string
@@ -412,13 +410,13 @@ components:
     LottoP6BaseType:
         description: Oggetto che riporta i dati del lotto all'interno della scheda di tracciabilità
         type: object
-        required: [cig,lotIdentifier,regimeParticolare]
+        required: [lotIdentifier,regimeParticolare]
         additionalProperties: false
         properties:
           cig:
             description: codice identificativo lotto
             type: string
-            example: 9050626CD6
+            example: 
           lotIdentifier:
             description: Id univoco del lotto generato dalla stazione appaltanteD
             type: string  
@@ -1196,11 +1194,12 @@ components:
       description: Contiene i dati necessari per la pubblicazione nazionale di un bando di gara soprasoglia e sottosoglia con pubblicazione europea
       type: object
       required:
-        - categoria
         - finanziamenti
-        - opzioni/rinnovi
       additionalProperties: false
       properties:
+        idAppalto:
+          description: Codice univoco dell'appalto
+          type: string
         finanziamenti:
           description: Dati relativi ai finanziamenti
           type: array
