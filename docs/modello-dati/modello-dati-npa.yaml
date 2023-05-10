@@ -4,12 +4,12 @@ info:
   version: 1.0.0
 components:
     schemas:
-      SchedaBaseType:
+      SchedaType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
         type: object
         additionalProperties: false
         properties:
-          idScheda:
+          _idScheda:
             $ref: '#/components/schemas/IdSchedaType'
           _idStatoScheda:
             description: identificativo dello stato della Scheda 
@@ -28,15 +28,10 @@ components:
             type: string
             format: datetime
             example: '2022-01-23T12:02:05Z'
-      SchedaType:
-        allOf: # estende la classe SchedaBaseType
-          - $ref: '#/components/schemas/SchedaBaseType'      
-        required:
-          - idScheda
       SchedaPianificazioneType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
-        allOf: # estende il modello dati SchedaBaseType
-          - $ref: '#/components/schemas/SchedaBaseType'       
+        allOf: # estende il modello dati SchedaType
+          - $ref: '#/components/schemas/SchedaType'       
         type: object
         additionalProperties: false
         oneOf:
@@ -47,8 +42,8 @@ components:
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.14.yaml#/components/schemas/SchedaP1.14Type'
       SchedaComunicaAppaltoType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
-        allOf: # estende il modello dati SchedaBaseType
-          - $ref: '#/components/schemas/SchedaBaseType'       
+        allOf: # estende il modello dati SchedaType
+          - $ref: '#/components/schemas/SchedaType'       
         type: object
         additionalProperties: false
         oneOf:
@@ -87,8 +82,8 @@ components:
           #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP5Type'   
       SchedaPostPubblicazioneType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
-        allOf: # estende il modello dati SchedaBaseType
-          - $ref: '#/components/schemas/SchedaBaseType'       
+        allOf: # estende il modello dati SchedaType
+          - $ref: '#/components/schemas/SchedaType'       
         type: object
         additionalProperties: false
         oneOf:
@@ -237,8 +232,8 @@ components:
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
           scheda:
             description: Scheda generica definita dal contesto in cui si trova l'appalto
-            allOf: # estende il modello dati SchedaBaseType
-              - $ref: '#/components/schemas/SchedaBaseType'       
+            allOf: # estende il modello dati SchedaType
+              - $ref: '#/components/schemas/SchedaType'       
             type: object
             additionalProperties: false
             oneOf:
