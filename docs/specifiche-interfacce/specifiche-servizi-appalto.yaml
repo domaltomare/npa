@@ -388,7 +388,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/DatiAppaltoRequest'
+              $ref: '#/components/schemas/DatiCreaAppaltoRequest'
         required: true
       responses:
         '200':
@@ -1137,7 +1137,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/SchedaRequest'
+              $ref: '#/components/schemas/DatiSchedaRequest'
         required: true
       responses:
         '200':
@@ -1168,7 +1168,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/SchedaRequest'
+              $ref: '#/components/schemas/DatiSchedaRequest'
         required: true
       responses:
         '200':
@@ -1212,7 +1212,7 @@ paths:
                   maxLength: 200
                   example: 'Errore inserimento dati'
               required:
-                - idAppalto
+                - idScheda
         required: true
       responses:
         '200':
@@ -1355,6 +1355,7 @@ paths:
         - in: query
           name: idScheda
           description: identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
+          required: true
           schema:
             type: string
             format: uuid
@@ -1502,36 +1503,9 @@ paths:
     get:
       tags:
         - serviziComuni
-      summary: API Rest per il recupero di tutte le tipologiche presenti. SINCRONO
-      description: Il servizio restituiti un'elenco di tipologiche. SINCRONO
+      summary: API Rest per il recupero dell'elenco delle tipologiche disponibili. SINCRONO
+      description: Il servizio restituiti un'elenco delle tipologiche disponibili. SINCRONO
       operationId: idRecuperaElencoTipologiche
-      parameters:
-        - in: query
-          name: dataInizio
-          description: Data di inizio (A datetime specified by RF3339)
-          schema:
-            type: string
-            format: datetime
-            example: '2022-01-23T12:02:05Z'
-        - in: query
-          name: dataFine
-          description: Data di fine (A datetime specified by RF3339)
-          schema:
-            type: string
-            format: datetime
-            example: '2022-01-23T12:02:05Z'
-        - in: query
-          name: page
-          description: numero di pagine da visualizzare
-          schema:
-            type: integer
-            format: int32
-        - in: query  
-          name: perPage
-          description: numero di elementi per pagina
-          schema:
-            type: integer
-            format: int32    
       responses:
         '200':
           description: Operazione terminato con successo
@@ -2038,6 +2012,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/CigType'
     DatiAppaltoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAppaltoType'
+    DatiCreaAppaltoType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiCreaAppaltoType'      
     DatiSchedaType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiSchedaType'
     DatiPianoType:
@@ -2046,6 +2022,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/ContentDocumentType'
     EsitoOperazioneType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EsitoOperazioneType'
+    TipologicaBaseType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaBaseType'      
     TipologicaType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaType'
     DatiTipologicaType:
@@ -2265,7 +2243,7 @@ components:
           description: Elenco di tutte le tipologiche
           type: array
           items:
-            $ref: '#/components/schemas/TipologicaType' 
+            $ref: '#/components/schemas/TipologicaBaseType' 
     SchedaListaResponse:
       allOf: # estende la classe PaginazioneType
           - $ref: '#/components/schemas/PaginazioneType'
@@ -2278,6 +2256,9 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/DatiSchedaType'
+    DatiCreaAppaltoRequest:
+      allOf: # estende la classe DatiCreaAppaltoType
+        - $ref: '#/components/schemas/DatiCreaAppaltoType'
     DatiAppaltoRequest:
       allOf: # estende la classe DatiAppaltoType
         - $ref: '#/components/schemas/DatiAppaltoType'
@@ -2317,7 +2298,7 @@ components:
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'  
-    SchedaRequest:
+    DatiSchedaRequest:
       allOf: # estende la classe DatiSchedaType
         - $ref: '#/components/schemas/DatiSchedaType' 
     AvvisoRequest:
@@ -2334,7 +2315,7 @@ components:
       oneOf:
         - $ref: '#/components/schemas/DatiPianoRequest'
         - $ref: '#/components/schemas/DatiAppaltoRequest'
-        - $ref: '#/components/schemas/SchedaRequest'
+        - $ref: '#/components/schemas/DatiSchedaRequest'
     ConsultaAvvisoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
