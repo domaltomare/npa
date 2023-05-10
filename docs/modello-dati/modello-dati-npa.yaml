@@ -282,14 +282,14 @@ components:
         required:
           - idAppalto
       DatiCreaAppaltoType:
-        description: Oggetto Complesso che riporta tutti i dati dell'appalto
+        description: Oggetto Complesso che riporta tutti i dati delle schede per il contesto comunicaAppalto
         type: object
         additionalProperties: false
         properties:
           scheda:
             $ref: '#/components/schemas/SchedaComunicaAppaltoType'
       DatiSchedaType:
-        description: Oggetto Complesso che riporta tutti i dati delle schede
+        description: Oggetto Complesso che riporta tutti i dati delle schede per il contesto comunicaPostPubblicazione
         type: object
         additionalProperties: false
         properties:
@@ -303,7 +303,7 @@ components:
         required:
           - idAppalto
       DatiPianoType :
-        description: Oggetto Complesso che riporta tutti i dati dell'appalto 
+        description: Oggetto Complesso che riporta tutti i dati delle schede per il contesto pianificazioneAppalto
         type: object
         additionalProperties: false
         properties:
