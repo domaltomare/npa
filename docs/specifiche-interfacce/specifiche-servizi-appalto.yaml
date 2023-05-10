@@ -1168,7 +1168,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/DatiSchedaRequest'
+              $ref: '#/components/schemas/DatiModificaSchedaRequest'
         required: true
       responses:
         '200':
@@ -2297,10 +2297,20 @@ components:
           description: Data di fine (A datetime specified by RF3339)
           type: string
           format: datetime
-          example: '2022-01-23T12:02:05Z'  
+          example: '2022-01-23T12:02:05Z'
+    DatiModificaSchedaRequest:
+      properties:
+        idScheda:
+          description: Identificativo univoco della Scheda da modificare definito da ANAC. (A UUID specified by RFC4122)
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      allOf: # estende la classe DatiSchedaType
+        - $ref: '#/components/schemas/DatiSchedaType'
+      required:
+        - idScheda
     DatiSchedaRequest:
       allOf: # estende la classe DatiSchedaType
-        - $ref: '#/components/schemas/DatiSchedaType' 
+        - $ref: '#/components/schemas/DatiSchedaType'
     AvvisoRequest:
       type: object
       additionalProperties: false
