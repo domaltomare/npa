@@ -274,6 +274,18 @@ components:
             $ref: '#/components/schemas/SchedaComunicaAppaltoType'
         required:
           - idAppalto
+      DatiCreaAppaltoType:
+        description: Oggetto Complesso che riporta tutti i dati dell'appalto
+        type: object
+        additionalProperties: false
+        properties:
+          idAppalto:
+            description: identificativo univoco dell'Appalto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          scheda:
+            $ref: '#/components/schemas/SchedaComunicaAppaltoType'
       DatiSchedaType:
         description: Oggetto Complesso che riporta tutti i dati delle schede
         type: object
