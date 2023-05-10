@@ -9,7 +9,7 @@ components:
         type: object
         additionalProperties: false
         properties:
-          _idScheda:
+          idScheda:
             $ref: '#/components/schemas/IdSchedaType'
           _idStatoScheda:
             description: identificativo dello stato della Scheda 
@@ -23,7 +23,7 @@ components:
             description: versione della scheda. necessaria al motore interno ANAC.
             type: string
             example: '01.00.00'
-          _dataCreazione:
+          dataCreazione:
             description: data creazione della scheda (A datetime specified by RF3339)
             type: string
             format: datetime
