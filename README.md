@@ -39,9 +39,9 @@ La superclasse dalla quale derivano tutte le schede è riportata di seguito:
         idAppalto	[...]
         idScheda	[...]
         scheda	SchedaPostPubblicazioneType{
-        oneOf ->	
-          SchedaP1.10Type{...}
-          ...
+          oneOf ->	
+            SchedaP1.10Type{...}
+            ...
         }
      }
   }
