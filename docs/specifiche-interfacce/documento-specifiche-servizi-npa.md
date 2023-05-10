@@ -411,6 +411,9 @@ In questo capitolo si riportano i servizi comuni, ossia quelli che possono esser
 Ritorna l’esito per le seguenti operazioni: “pubblica-pvviso”, “modifica-avviso”, “cancella-avviso”, “rettifica-avviso”
   - [SE il contesto è comunicaPostPubblicazione] recupero l’esito per le seguenti operazioni: “crea-scheda ”, “modifica-scheda”, “cancella-scheda”, “conferma-scheda”, “verifica-scheda”
 -	stato-appalto: tramite questo servizio è possibile conoscere lo stato dell’Appalto in un determinato momento.
+-	recupera-elenco-tipologiche: tramite questo servizio è possibile recuperare l'elenco delle tipologiche disponibili.
+-	recupera-tipologica: tramite questo servizio è possibile recuperare l'elenco dei valori data una specifica tipologica.
+-	recupera-valore-tipologica: tramite questo servizio è possibile recuperare un valore puntuale data una specifica tipologica.
 
 # 13	Interfaccia servizi
 Le interfacce dei servizi sono definite secondo gli standard di interoperabilità tramite API dei sistemi informatici che tutte le pubbliche amministrazioni devono adottare al fine di garantire l’interoperabilità dei propri sistemi con quelli di altri soggetti a favorire l’implementazione complessiva del sistema informativo delle PA (ModI).
