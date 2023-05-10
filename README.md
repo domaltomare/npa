@@ -19,11 +19,8 @@ La superclasse dalla quale derivano tutte le schede è riportata di seguito:
         idPianificazione	{...}
         scheda	SchedaPianificazioneType{
           oneOf ->	
-            SchedaP1.10Type{...}
-            SchedaP1.11Type{...}
-            SchedaP1.12Type{...}
-            SchedaP1.13Type{...}
-            SchedaP1.14Type{...}
+            SchedaPIN.1Type{...}
+            SchedaPIN.2Type{...}
             ...
         }
       }
@@ -32,6 +29,9 @@ La superclasse dalla quale derivano tutte le schede è riportata di seguito:
         scheda	SchedaComunicaAppaltoType{
           oneOf ->	
             SchedaP1.10Type{...}
+            SchedaP1.11Type{...}
+            SchedaP1.12Type{...}
+            SchedaP1.13Type{...}
             ...
         }
       }
@@ -40,7 +40,8 @@ La superclasse dalla quale derivano tutte le schede è riportata di seguito:
         idScheda	[...]
         scheda	SchedaPostPubblicazioneType{
           oneOf ->	
-            SchedaP1.10Type{...}
+            SchedaA1.29Type{...}
+            SchedaA1.30Type{...}
             ...
         }
      }
