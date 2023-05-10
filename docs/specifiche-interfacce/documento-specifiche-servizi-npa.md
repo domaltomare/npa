@@ -195,6 +195,9 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo FVA**|**FVA**| recupera-storico-documento-fva  | RP, DRP |
   |**Modulo NPA**|**Servizi comuni**| stato-appalto  | RP, DRP |
   |**Modulo NPA**|**Servizi comuni**| esito-operazione  | RP, DRP |
+  |**Modulo NPA**|**Servizi comuni**| recupera-elenco-tipologiche  | RP, DRP |
+  |**Modulo NPA**|**Servizi comuni**| recupera-tipologica  | RP, DRP |
+  |**Modulo NPA**|**Servizi comuni**| recupera-valore-tipologica  | * |
 
 # 5	Contesto gestioneUtenti
 
