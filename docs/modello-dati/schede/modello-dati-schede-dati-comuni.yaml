@@ -238,7 +238,11 @@ components:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione
       type: object
       additionalProperties: false
+      required: [idAppalto]
       properties:
+        idAppalto:
+          description: Codice univoco dell'appalto
+          type: string      
         categorieMerceologiche:
           $ref: '#/components/schemas/CategorieMerceologicheType'
         motivazioneCIG:
@@ -248,17 +252,23 @@ components:
     AppaltoP3BaseType:
       description: Oggetto che riporta i dati dell'appalto relativi ai contratti senza limiti di importo con obblighi di comunicazione.
       type: object
-      #required: []
+      required: [idAppalto]
       additionalProperties: false
-      properties:      
+      properties:  
+        idAppalto:
+          description: Codice univoco dell'appalto
+          type: string      
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum' 
     AppaltoP4BaseType:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sotto soglia per le adesioni AQ/convenzione con successivo confronto competitivo 
       type: object
-      required: [cigAccordoQuadro,servizioPubblicoLocale,ripetizioniEConsegneComplementari,afferenteInvestimentiPNRR]
+      required: [idAppalto,cigAccordoQuadro,servizioPubblicoLocale,ripetizioniEConsegneComplementari,afferenteInvestimentiPNRR]
       additionalProperties: false
-      properties:      
+      properties:  
+        idAppalto:
+          description: Codice univoco dell'appalto
+          type: string      
         cigAccordoQuadro:
           description: CIG relativo all’accordo quadro/convenzione cui si aderisce
           type: string
@@ -272,9 +282,12 @@ components:
     AppaltoP6BaseType:
       description: Oggetto che riporta i dati dell'appalto all'interno della scheda di Finanza di progetto
       type: object
-      required: [prelazionePromotore,servizioPubblicoLocale]
+      required: [idAppalto,prelazionePromotore,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        idAppalto:
+          description: Codice univoco dell'appalto
+          type: string      
         prelazionePromotore:
           description: E' previsto il diritto di prelazione per il promotore?
           type: string
@@ -1195,12 +1208,8 @@ components:
       type: object
       required:
         - finanziamenti
-        - idAppalto
       additionalProperties: false
       properties:
-        idAppalto:
-          description: Codice univoco dell'appalto
-          type: string
         finanziamenti:
           description: Dati relativi ai finanziamenti
           type: array
