@@ -9,7 +9,7 @@ components:
       allOf: # estende la classe LottoP3BaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP3BaseType'      
       type: object
-      required: [afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,motivoEsclusioneConcessione]
+      required: [afferenteInvestimentiPNRR,opzioni/rinnovi,motivoEsclusioneConcessione]
       additionalProperties: false
       properties:
         motivoEsclusioneConcessione: 
@@ -26,7 +26,7 @@ components:
       allOf: # estende la classe AnacFormP3ContrattiEsclusiDatiBaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormP3ContrattiEsclusiDatiBaseType'       
       type: object
-      required: [categoria, finanziamenti, appalto]
+      required: [categoria, finanziamenti, appalto,lotti]
       additionalProperties: false
       properties:  
         appalto: 

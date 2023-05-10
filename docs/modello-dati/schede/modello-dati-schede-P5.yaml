@@ -7,17 +7,11 @@ components:
    AppaltoP5Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della scheda di tracciabilità
       type: object
-      #required: []
+      required: [fattispecieContrattuale]
       additionalProperties: false
       properties:
-        motivoEsclusioneTracciabilita:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoEsclusioneTracciabilitaEnum'  
         fattispecieContrattuale:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/FattispecieContrattualeEnum' 
-        linkDocumenti:
-          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
-          type: string
-          format: url    
         cigAccordoQuadro:
           description: CIG relativo all’accordo quadro/convenzione cui si aderisce
           type: string
@@ -25,7 +19,7 @@ components:
    LottoP5Type:
       description: Oggetto che riporta i dati del lotto all'interno della scheda di tracciabilità
       type: object
-      required: [cig,lotIdentifier]
+      required: [lotIdentifier,importo,oggetto,sceltaContraente,oggettoPrincipaleContratto]
       additionalProperties: false
       properties:
         cig:
@@ -35,6 +29,8 @@ components:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltanteD
           type: string  
+        motivoEsclusioneTracciabilita:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoEsclusioneTracciabilitaEnum'          
         importo:
           description: importo
           type: string
@@ -44,8 +40,6 @@ components:
           type: string 
         sceltaContraente:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SceltaContraenteEnum'
-        oggettoContratto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OggettoContrattoEnum'
         oggettoPrincipaleContratto:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OggettoPrincipaleContrattoEnum'  
         cupLotto:
@@ -56,7 +50,7 @@ components:
    AnacFormP5Type:
       description: Contiene i dati per la tracciabilità
       type: object
-      required: [cig,fattispecieContrattuale,importo,oggetto,sceltaContraente] 
+      required: [appalto,lotti] 
       additionalProperties: false
       properties:
         appalto:

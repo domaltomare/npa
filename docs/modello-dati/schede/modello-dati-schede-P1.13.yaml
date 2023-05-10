@@ -20,12 +20,10 @@ components:
           format: url   
         servizioPubblicoLocale:
           description: Flag servizio pubblico locale
-          type: string
-          enum: ['S','N']   
+          type: boolean   
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: string
-          enum: ['S','N'] 
+          type: boolean 
     LottoP.13Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -36,24 +34,20 @@ components:
       properties:
         lavoroOAcquistoPrevistoInProgrammazione:
           description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
-          type: string
-          enum: ['S','N']  
+          type: boolean 
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
           example: ''       
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: string
-          enum: ['S','N']
+          type: boolean
         iniziativeNonSoddisfacenti:
           description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: string
-          enum: ['S','N']          
+          type: boolean          
         opzioni/rinnovi:
           description: L’appalto prevede opzioni/rinnovi?
-          type: string
-          enum: ['S','N']  
+          type: boolean  
         ipotesiCollegamento:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IpotesiCollegamentoType'
         categoria:

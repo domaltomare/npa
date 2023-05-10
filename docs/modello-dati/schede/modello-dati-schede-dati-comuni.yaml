@@ -402,7 +402,7 @@ components:
     LottoP6BaseType:
         description: Oggetto che riporta i dati del lotto all'interno della scheda di tracciabilità
         type: object
-        required: [lotIdentifier,regimeParticolare]
+        required: [lotIdentifier,regimeParticolare,lavoroOAcquistoPrevistoInProgrammazione, opzioni/rinnovi,afferenteInvestimentiPNRR,categoria]
         additionalProperties: false
         properties:
           cig:
@@ -548,7 +548,52 @@ components:
         sommeADisposizione:
           description: Somme a disposizione - Iva e altre Imposte e tasse
           type: string
-          format: decimal            
+          format: decimal   
+    QuadroEconomicoP3.4Type:
+      description: Oggetto che riporta tutti i dati del quadro economico standard 
+      type: object
+      additionalProperties: false
+      properties:
+        impLavori:
+          description: Importo componente lavori in € 
+          type: string
+          format: decimal
+        impServizi:
+          description: Importo componente servizi in € 
+          type: string
+          format: decimal
+        impForniture:
+          description: Importo componente forniture in €
+          type: string
+          format: decimal
+        impTotaleSicurezza: 
+          description: Importo totale per l'attuazione della sicurezza
+          type: string
+          format: decimal
+        ulterioriSommeNoRibasso:
+          description: Ulteriori somme non soggette a ribasso
+          type: string
+          format: decimal
+        impProgettazione:
+          description: Importo della progettazione in caso di appalto integrato
+          type: string
+          format: decimal
+        sommeRipetizioni:
+          description: Somme per ripetizione servizi/forniture/lavori analoghi e consegne complementari 
+          type: string
+          format: decimal
+        sommeADisposizione:
+          description: Somme a disposizione - Iva e altre Imposte e tasse
+          type: string
+          format: decimal             
+    QuadroEconomicoP3.5Type:
+      description: Oggetto che riporta tutti i dati del quadro economico standard
+      allOf:
+        - $ref: '#/components/schemas/QuadroEconomicoBaseType'
+      type: object
+      required:
+        - sommeRipetizioni
+      additionalProperties: false          
     DatiBaseAvvisoType:
       description: Dato in comune con il Business Group Notice delle eforms
       type: object
@@ -706,7 +751,22 @@ components:
           description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
           type: string
         importoGara: 
-          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED           
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED    
+    DatiBaseP3.5Type:
+      description: Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required:
+        - oggettoLotto
+        - importoGara
+      additionalProperties: false
+      properties:
+        oggettoContratto:
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggettoLotto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importoGara:
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED          
     DatiBaseProceduraType:
       description: Dato in comune con il Business Group Procedure delle eforms
       type: object
@@ -776,7 +836,7 @@ components:
     DatiBaseProceduraP3.4Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
-      required: [sceltaContraente]
+      required: [sceltaContraente,proceduraAccelerata]
       additionalProperties: false
       properties:
         sceltaContraente:
@@ -795,6 +855,12 @@ components:
       properties:
         sceltaContraente:
           $ref: '#/components/schemas/SceltaContraenteEnum'
+        proceduraAccelerata:
+          description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
+          type: boolean
+        giustificazioneProceduraAccelerata:
+          description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
+          type: string             
     DatiBaseProceduraP6Type:
       description: Dato in comune con il Business Group Procedure dell'eform 10
       type: object
@@ -853,6 +919,13 @@ components:
         criteriAggiudicazione:
           $ref: '#/components/schemas/CriteriAggiudicazioneEnum'
     DatiBaseAggiudicazioneP3.4Type: 
+      description: Dato in comune con il Business Group Award Criterion delle eforms
+      required: [criteriAggiudicazione]    
+      additionalProperties: false
+      properties:
+        criteriAggiudicazione: 
+          $ref: '#/components/schemas/CriteriAggiudicazioneEnum' 
+    DatiBaseAggiudicazioneP3.5Type: 
       description: Dato in comune con il Business Group Award Criterion delle eforms
       required: [criteriAggiudicazione]    
       additionalProperties: false
@@ -991,6 +1064,8 @@ components:
       required: [astaElettronica]
       additionalProperties: false
       properties:
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'       
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
           type: boolean            
@@ -1163,7 +1238,7 @@ components:
       additionalProperties: false
       properties:
         datiBase:
-          $ref: '#/components/schemas/DatiBaseType'
+          $ref: '#/components/schemas/DatiBaseP3.5Type'
         datiBaseAvviso:
           $ref: '#/components/schemas/DatiBaseAvvisoType'
         datiBaseCPV:
@@ -1173,9 +1248,7 @@ components:
         datiBaseProcedura:
           $ref: '#/components/schemas/DatiBaseProceduraP3.5Type'
         datiBaseAggiudicazione:
-          $ref: '#/components/schemas/DatiBaseAggiudicazioneType'  
-        datiBaseAggiuntivi:
-          $ref: '#/components/schemas/DatiBaseAggiuntiviType'       
+          $ref: '#/components/schemas/DatiBaseAggiudicazioneP3.5Type'  
         datiBaseStrumentiProcedura:
           $ref: '#/components/schemas/DatiBaseStrumentiProceduraP3.5Type'
         datiBaseTerminiInvio:

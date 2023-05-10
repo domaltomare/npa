@@ -10,7 +10,7 @@ components:
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType' 
       - $ref: '#/components/schemas/AnacFormP4.1DatiBaseType'      
       type: object
-      required: [categoria, finanziamenti, opzioni/rinnovi, appalto]
+      required: [categoria, finanziamenti, opzioni/rinnovi, appalto,lotti]
       additionalProperties: false
       properties:  
         appalto:

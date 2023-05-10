@@ -9,28 +9,26 @@ components:
       allOf: # estende la classe LottoP3BaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP3BaseType'      
       type: object
-      required: [afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,motivoEsclusioneOrdinarioSpeciale]
+      required: [afferenteInvestimentiPNRR,motivoEsclusioneOrdinarioSpeciale]
       additionalProperties: false
       properties:
         motivoEsclusioneOrdinarioSpeciale: 
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoEsclusioneOrdinarioSpecialeEnum'  
         opzioni/rinnovi:
           description: L’appalto prevede opzioni/rinnovi?
-          type: string
-          enum: ['S','N'] 
+          type: boolean
     AppaltoP3.1Type:
       description: Oggetto che riporta i dati dell'appalto relativi ai contratti esclusi (generale o di tipo accordo quadro)
       allOf: # estende la classe AppaltoP3BaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP3BaseType'      
       type: object
-      #required: [motivoEsclusioneOrdinarioSpeciale]
       additionalProperties: false
     AnacFormP3.1Type:
       description: Contiene i dati relativi ai contratti esclusi (generale o di tipo accordo quadro)
       allOf: # estende la classe AnacFormP3ContrattiEsclusiDatiBaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormP3ContrattiEsclusiDatiBaseType'       
       type: object
-      required: [categoria, finanziamenti, appalto]
+      required: [categoria, finanziamenti, appalto,lotti]
       additionalProperties: false
       properties:  
         appalto: 
