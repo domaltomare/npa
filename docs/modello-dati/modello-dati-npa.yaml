@@ -93,7 +93,7 @@ components:
           - $ref: '#/components/schemas/SchedaType'       
         type: object
         additionalProperties: false
-        oneOf:
+        #oneOf:
           #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaCL1Type'        
       IdSchedaType:
         description: Identificativo univoco della Scheda restituito da ANAC in fase di creazione Scheda
