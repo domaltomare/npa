@@ -40,7 +40,7 @@ components:
           description: Dati relativi ai lotti
           type: array
           items:
-            $ref: '#/components/schemas/LottoP3.2Type'          
+            $ref: '#/components/schemas/LottoP3.3Type'          
         stazioniAppaltanti:
           description: Dati relativi alle stazioni appaltanti
           type: array

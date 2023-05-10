@@ -29,7 +29,7 @@ components:
     AppaltoP3.4Type:
       description: Oggetto che riporta i dati dell'appalto relativi al contraente generale
       allOf: # estende la classe AppaltoP3BaseType
-      - $ref: '#/components/schemas/AppaltoP3BaseType'      
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP3BaseType'      
       type: object
       required: [strumentiElettroniciSpecifici,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,afferenteInvestimentiPNRR]
       additionalProperties: false

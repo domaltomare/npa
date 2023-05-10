@@ -18,7 +18,7 @@ components:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
           type: string
         codIstat:
-          $ref: '#/components/schemas/CodIstatEnum'          
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CodIstatEnum'          
         lavoroOAcquistoPrevistoInProgrammazione:
           description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
           type: string
