@@ -302,15 +302,19 @@ components:
             $ref: '#/components/schemas/SchedaPostPubblicazioneType'
         required:
           - idAppalto
-      DatiPianoType :
+      DatiPianoBaseType :
         description: Oggetto Complesso che riporta tutti i dati delle schede per il contesto pianificazioneAppalto
         type: object
         additionalProperties: false
         properties:
-          idPianificazione:
-            description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Pianificazione. (A UUID specified by RFC4122)
           scheda:
             $ref: '#/components/schemas/SchedaPianificazioneType' 
+      DatiPianoType :
+        allOf: # estende la classe DatiPianoType
+          - $ref: '#/components/schemas/DatiPianoBaseType'
+        properties:
+          idPianificazione:
+            description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Pianificazione. (A UUID specified by RFC4122)
         required:
           - idPianificazione
       EsitoOperazioneType:
