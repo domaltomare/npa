@@ -773,6 +773,20 @@ components:
       properties:
         sceltaContraente:
           $ref: '#/components/schemas/SceltaContraenteEnum'           
+    DatiBaseProceduraP3.4Type:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      required: [sceltaContraente]
+      additionalProperties: false
+      properties:
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'
+        proceduraAccelerata:
+          description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
+          type: boolean
+        giustificazioneProceduraAccelerata:
+          description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
+          type: string          
     DatiBaseProceduraP3.5Type:
       description: Dato in comune con il Business Group Procedure dell'eform 10
       type: object
@@ -1133,7 +1147,7 @@ components:
         datiBaseContratto:
           $ref: '#/components/schemas/DatiBaseContrattoType' 
         datiBaseProcedura:
-          $ref: '#/components/schemas/DatiBaseProceduraType'
+          $ref: '#/components/schemas/DatiBaseProceduraP3.4Type'
         datiBaseAggiudicazione:
           $ref: '#/components/schemas/DatiBaseAggiudicazioneP3.4Type'  
         datiBaseStrumentiProcedura:
