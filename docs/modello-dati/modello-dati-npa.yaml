@@ -155,7 +155,7 @@ components:
             type: string
           en:
             type: string
-      TipologicaType:
+      TipologicaBaseType:
         description: Oggetto generico di una tipologica
         type: object
         additionalProperties: false
@@ -168,7 +168,14 @@ components:
           descrizione:
             description: Descrizione della tipologica.
             format: string
-            example: "categoria"            
+            example: "categoria"
+      TipologicaType:
+        description: Oggetto generico di una tipologica
+        type: object
+        additionalProperties: false
+        allOf: # estende lo schema dati di TipologicaBaseType
+          - $ref: '#/components/schemas/TipologicaBaseType'
+        properties:
           elenco: 
             description: Elenco di una tipologica
             type: array
