@@ -268,8 +268,7 @@ components:
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'  
         servizioPubblicoLocale:
           description: Flag servizio pubblico locale
-          type: string
-          enum: ['S','N']            
+          type: boolean            
     AppaltoP6BaseType:
       description: Oggetto che riporta i dati dell'appalto all'interno della scheda di Finanza di progetto
       type: object
@@ -281,14 +280,12 @@ components:
           type: string      
         prelazionePromotore:
           description: E' previsto il diritto di prelazione per il promotore?
-          type: string
-          enum: ['S','N']  
+          type: boolean  
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'          
         servizioPubblicoLocale:
           description: Flag servizio pubblico locale
-          type: string
-          enum: ['S','N']          
+          type: boolean          
     LottoBaseType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione
       type: object
@@ -313,10 +310,7 @@ components:
           $ref: '#/components/schemas/CodIstatEnum'
         afferenteInvestimentiPNRR:
           description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
-          type: string
-          enum:
-            - S
-            - 'N'
+          type: boolean
         cupLotto:
           description: Cup associati al lotto
           type: array
@@ -344,10 +338,7 @@ components:
           $ref: '#/components/schemas/CodIstatEnum'
         afferenteInvestimentiPNRR:
           description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
-          type: string
-          enum:
-            - S
-            - 'N'
+          type: boolean
         cupLotto:
           description: Cup associati al lotto
           type: array
@@ -380,8 +371,7 @@ components:
           $ref: '#/components/schemas/CodIstatEnum'      
         regimeParticolare:
           description: Contratto regime particolare di appalto (speciale o alleggerito)
-          type: string
-          enum: ['S','N']          
+          type: boolean          
         contrattiDisposizioniParticolari:
           $ref: '#/components/schemas/ContrattiDisposizioniParticolariEnum'  
         cui:
@@ -392,12 +382,10 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         opzioni/rinnovi:
           description: L’appalto prevede opzioni/rinnovi?
-          type: string
-          enum: ['S','N']   
+          type: boolean  
         afferenteInvestimentiPNRR:
           description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
-          type: string
-          enum: ['S','N']    
+          type: boolean   
         cupLotto:
           description: Cup associati al lotto
           type: array
@@ -430,14 +418,12 @@ components:
             $ref: '#/components/schemas/CodIstatEnum'      
           regimeParticolare:
             description: Contratto regime particolare di appalto (speciale o alleggerito)
-            type: string
-            enum: ['S','N']          
+            type: boolean          
           contrattiDisposizioniParticolari:
             $ref: '#/components/schemas/ContrattiDisposizioniParticolariEnum'       
           lavoroOAcquistoPrevistoInProgrammazione:
             description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
-            type: string
-            enum: ['S','N']            
+            type: boolean            
           cui:
             description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
             type: string
@@ -446,12 +432,10 @@ components:
             $ref: '#/components/schemas/IpotesiCollegamentoType'  
           opzioni/rinnovi:
             description: L’appalto prevede opzioni/rinnovi?
-            type: string
-            enum: ['S','N']   
+            type: boolean   
           afferenteInvestimentiPNRR:
             description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
-            type: string
-            enum: ['S','N']     
+            type: boolean    
           cupLotto:
             description: Cup associati al lotto
             type: array
@@ -531,7 +515,6 @@ components:
     QuadroEconomicoP3ContrattiEsclusiType:
       description: Oggetto che riporta tutti i dati del quadro economico standard 
       type: object
-      required: [impLavori, impServizi, impForniture]
       additionalProperties: false
       properties:
         impLavori:
@@ -743,8 +726,7 @@ components:
           $ref: '#/components/schemas/SceltaContraenteEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
-          type: string
-          enum: ['S','N']
+          type: boolean
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string            
@@ -758,8 +740,7 @@ components:
           $ref: '#/components/schemas/SceltaContraenteEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
-          type: string
-          enum: ['S','N']
+          type: boolean
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string            
@@ -773,8 +754,7 @@ components:
           $ref: '#/components/schemas/SceltaContraenteEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
-          type: string
-          enum: ['S','N']
+          type: boolean
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string           
@@ -819,8 +799,7 @@ components:
           $ref: '#/components/schemas/SceltaContraenteEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
-          type: string
-          enum: ['S','N']
+          type: boolean
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string           
@@ -876,10 +855,16 @@ components:
           $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum:
-            - S
-            - 'N'
+          type: boolean
+    DatiBaseStrumentiProceduraP3.3Type:
+      description: Dato in comune con il Business Group Techniques delle eforms
+      additionalProperties: false
+      properties:
+        sistemaDinamicoAcquisizione:
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean          
     DatiBaseStrumentiProceduraP2.10Type:
       description: Dato in comune con il Business Group Techniques delle eforms
       required:
@@ -893,10 +878,7 @@ components:
           $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum:
-            - S
-            - 'N'
+          type: boolean
     DatiBaseStrumentiProceduraP2.11Type:
       description: Dato in comune con il Business Group Techniques delle eforms
       required:
@@ -922,8 +904,7 @@ components:
           $ref: '#/components/schemas/AccordoQuadroEnum'        
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum: ['S','N']                
+          type: boolean                
     DatiBaseStrumentiProceduraP2.16Type:
       description: Dato in comune con il Business Group Techniques delle eforms 
       required: [sistemaDinamicoAcquisizione,accordoQuadro,astaElettronica]
@@ -935,8 +916,7 @@ components:
           $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum: ['S','N']           
+          type: boolean           
     DatiBaseStrumentiProceduraP2.17Type:
       description: Dato in comune con il Business Group Techniques delle eforms 
       required: [sistemaDinamicoAcquisizione,accordoQuadro,astaElettronica]
@@ -948,8 +928,7 @@ components:
           $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum: ['S','N']           
+          type: boolean          
     DatiBaseStrumentiProceduraP2.18Type:
       description: Dato in comune con il Business Group Techniques delle eforms 
       required: [accordoQuadro,astaElettronica]
@@ -961,16 +940,14 @@ components:
           $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum: ['S','N']            
+          type: boolean            
     DatiBaseStrumentiProceduraP2.19Type:
       description: Dato in comune con il Business Group Techniques delle eforms 
       additionalProperties: false
       properties:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum: ['S','N']           
+          type: boolean           
     DatiBaseStrumentiProceduraP3.4Type:
       description: Dato in comune con il Business Group Techniques delle eforms 
       #required: []
@@ -978,8 +955,7 @@ components:
       properties:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum: ['S','N']             
+          type: boolean             
     DatiBaseStrumentiProceduraP3.5Type:
       description: Dato in comune con il Business Group Techniques delle eforms 
       #required: []
@@ -987,8 +963,7 @@ components:
       properties:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum: ['S','N'] 
+          type: boolean 
     DatiBaseStrumentiProceduraP6Type:
       description: Dato in comune con il Business Group Techniques delle eforms 
       #required: []
@@ -996,8 +971,7 @@ components:
       properties:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum: ['S','N']           
+          type: boolean           
     DatiBaseStrumentiProceduraP4Type:
       description: Dato in comune con il Business Group Techniques delle eforms 
       required: [astaElettronica]
@@ -1005,8 +979,7 @@ components:
       properties:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: string
-          enum: ['S','N']            
+          type: boolean            
     DatiTerminiInvioType:
       description: Dato in comune con il Business Group Submission Terms delle eforms 
       additionalProperties: false
@@ -1076,6 +1049,14 @@ components:
           description: Ora scadenza per la presentazione delle offerte (hh:mm) - corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
           type: string
           format: datetime            
+    DatiBaseImportoType:
+      description: Dato in comune con il Business Group Prize delle eforms 
+      additionalProperties: false
+      required: [contrattiSuccessivi]
+      properties:
+        contrattiSuccessivi:
+          description: contratti successivi - corrisponde al campo bt-41 - Following Contract del TED
+          type: string           
     AnacFormP2DatiBaseType:
       description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia > 5K
       type: object
@@ -1113,7 +1094,30 @@ components:
         datiBaseStrumentiProcedura:
           $ref: '#/components/schemas/DatiBaseStrumentiProceduraType'
         datiBaseTerminiInvio:
-          $ref: '#/components/schemas/DatiTerminiInvioType'            
+          $ref: '#/components/schemas/DatiTerminiInvioType' 
+    AnacFormP3.3DatiBaseType:
+      description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia dei contratti esclusi
+      type: object
+      additionalProperties: false
+      properties:
+        datiBase:
+          $ref: '#/components/schemas/DatiBaseType'
+        datiBaseAvviso:
+          $ref: '#/components/schemas/DatiBaseAvvisoType'
+        datiBaseCPV:
+          $ref: '#/components/schemas/DatiBaseCPVType'
+        datiBaseContratto:
+          $ref: '#/components/schemas/DatiBaseContrattoType' 
+        datiBaseProcedura:
+          $ref: '#/components/schemas/DatiBaseProceduraP3ContrattiEsclusiType'
+        datiBaseAggiudicazione:
+          $ref: '#/components/schemas/DatiBaseAggiudicazioneP3ContrattiEsclusiType'  
+        datiBaseAggiuntivi:
+          $ref: '#/components/schemas/DatiBaseAggiuntiviType'       
+        datiBaseStrumentiProcedura:
+          $ref: '#/components/schemas/DatiBaseStrumentiProceduraP3.3Type'
+        datiBaseTerminiInvio:
+          $ref: '#/components/schemas/DatiTerminiInvioType'          
     AnacFormP3.4DatiBaseType:
       description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia del contraente generale.
       type: object
