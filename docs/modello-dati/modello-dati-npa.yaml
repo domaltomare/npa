@@ -9,7 +9,7 @@ components:
         type: object
         additionalProperties: false
         properties:
-          _idScheda:
+          idScheda:
             $ref: '#/components/schemas/IdSchedaType'
           _idStatoScheda:
             description: identificativo dello stato della Scheda 
