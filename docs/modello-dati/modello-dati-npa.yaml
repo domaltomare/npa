@@ -300,7 +300,8 @@ components:
           - $ref: '#/components/schemas/DatiSchedaBaseType'
         properties:
           idScheda:
-            description: Identificativo univoco della Scheda da modificare definito da ANAC. (A UUID specified by RFC4122)
+            description: identificativo univoco ddella Scheda definito da ANAC. Restituito dall'operazione di creazione Scheda. (A UUID specified by RFC4122)
+            type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         required:
