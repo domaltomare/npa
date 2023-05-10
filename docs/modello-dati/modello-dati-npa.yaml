@@ -302,8 +302,8 @@ components:
             $ref: '#/components/schemas/SchedaPostPubblicazioneType'
         required:
           - idAppalto
-      DatiPianoBaseType :
-        description: Oggetto Complesso che riporta tutti i dati delle schede per il contesto pianificazioneAppalto
+      DatiPianoBaseType:
+        description: Oggetto Complesso che riporta tutti i dati base delle schede per il contesto pianificazioneAppalto
         type: object
         additionalProperties: false
         properties:
