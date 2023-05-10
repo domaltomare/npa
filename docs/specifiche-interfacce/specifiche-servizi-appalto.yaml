@@ -2008,6 +2008,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PaginazioneType'
     AvvisoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoType'
+    DatiAvvisoType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAvvisoType'
     CigType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/CigType'
     DatiAppaltoBaseType:
@@ -2312,20 +2314,8 @@ components:
       allOf: # estende la classe DatiSchedaType
         - $ref: '#/components/schemas/DatiSchedaType'
     AvvisoRequest:
-      type: object
-      additionalProperties: false
-      required:  # List the required properties here
-        - idAvviso
-      properties:
-        idAvviso:
-          description: identificativo univoco dell'Avviso generato da ANAC.
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-      oneOf:
-        - $ref: '#/components/schemas/DatiPianoRequest'
-        - $ref: '#/components/schemas/DatiAppaltoRequest'
-        - $ref: '#/components/schemas/DatiSchedaRequest'
+      allOf: # estende la classe DatiAvvisoType
+        - $ref: '#/components/schemas/DatiAvvisoType'
     ConsultaAvvisoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
