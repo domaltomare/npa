@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda P1.20 - Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea, che contiene i dati necessari per la pubblicazione nazionale e per la pubblicazione europea con eform20.
+  title: Modello Dati - Scheda P1.20 - Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea e sotto soglia con invio al TED dell'eform20.
   version: 1.0.0
 components:
   schemas:
@@ -9,7 +9,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoBaseType'
       type: object
-      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
       additionalProperties: false
       properties:
         saNonSoggettaObblighi24Dicembre2015:
@@ -43,7 +43,8 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR,modalitaAcquisizione]       
+      required: [
+        categorieMerceologiche,servizioPubblicoLocale,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR,modalitaAcquisizione]       
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -65,7 +66,7 @@ components:
       allOf: # estende la classe AnacFormBaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'   
       type: object
-      required: [categoria, finanziamenti, opzioni/rinnovi, appalto]
+      required: [categoria, finanziamenti, opzioni/rinnovi, appalto,lotti]
       additionalProperties: false
       properties:  
         appalto:
@@ -78,7 +79,7 @@ components:
         quadroEconomicoStandard:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType' 
     SchedaP1.20Type:
-      description: Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea, che contiene i dati necessari per la pubblicazione nazionale e per la pubblicazione europea con eform20.
+      description: Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea e sotto soglia con invio al TED dell'eform20.
       type: object
       required: [anacFormP1, eform,espd]
       additionalProperties: false

@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda P1.14 - Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea, che contiene i dati necessari per la pubblicazione nazionale e per la pubblicazione europea con eform14.
+  title: Modello Dati - Scheda P1.14 - Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea e sotto soglia con invio al TED dell'eform14. 
   version: 1.0.0
 components:
   schemas:
@@ -16,20 +16,12 @@ components:
           description: Flag servizio pubblico locale
           type: string
           enum: ['S','N']      
-        lavoroOAcquistoPrevistoInProgrammazione:
-          description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
-          type: string
-          enum: ['S','N']  
-        cui:
-          description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
-          type: string
-          example: ''   
     LottoP.14Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoBaseType'
       type: object
-      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione]
+      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione]
       additionalProperties: false
       properties:
         lavoroOAcquistoPrevistoInProgrammazione:
@@ -64,7 +56,7 @@ components:
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'   
       type: object
       additionalProperties: false
-      required: [finanziamenti,opzioni/rinnovi, appalto]
+      required: [finanziamenti,opzioni/rinnovi, appalto,lotti]
       properties:  
         appalto:
           $ref: '#/components/schemas/AppaltoP.14Type'  
@@ -74,7 +66,7 @@ components:
           items:
             $ref: '#/components/schemas/LottoP.14Type' 
     SchedaP1.14Type:
-      description: Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea, che contiene i dati necessari per la pubblicazione nazionale e per la pubblicazione europea con eform14.
+      description: Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea e sotto soglia con invio al TED dell'eform14.
       type: object
       required: [anacFormP1, eform,espd]
       additionalProperties: false

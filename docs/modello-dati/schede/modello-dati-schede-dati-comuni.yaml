@@ -14,24 +14,12 @@ components:
         descrizione:
           description: descrizione della voce della tipologica
           type: string
-        dataInizio:
-          description: data di inizio validità della voce nella tipologica
-          type: string
-          format: datetime
-        dataFine:
-          description: data di fine validità della voce nella tipologica
-          type: string
-          format: datetime
     TipoFinanziamentoEnum:
       description: Tipo di finanziamento - fare riferimento ai valori contenuti nel file [tipoFinanziamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoFinanziamento.json)
       allOf:
         - $ref: '#/components/schemas/TipologicaType'
     FunzioniDelegateEnum:
-      description: Funzioni Delegate - fare riferimento ai valori contenuti nel file [funzioniDelegate.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/funzioniDelegate.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
-    RuoloSAEnum:
-      description: Ruolo SA - fare riferimento ai valori contenuti nel file [ruoloSA.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/ruoloSA.json)
+      description: Ruolo svolto dalla S.A. nell'appalto - fare riferimento ai valori contenuti nel file [funzioniDelegate.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/funzioniDelegate.json)
       allOf:
         - $ref: '#/components/schemas/TipologicaType'
     CategorieMerceologicheEnum:
@@ -200,23 +188,26 @@ components:
         importo:
           $ref: '#/components/schemas/ImportoType'
     StazioneAppaltanteType:
-      description: Stazione Appaltante che agisce per conto di un’altra Stazione Appaltante
+      description: Stazione Appaltante e ruoli ricoperti nell'appalto
       type: object
       additionalProperties: false
       properties:
-        cfAusa:
+        codiceFiscale:
           description: Codice fiscale della S.A.
           type: string
-        funzioniDelegate:
-          $ref: '#/components/schemas/FunzioniDelegateEnum'
-        ruolo:
-          $ref: '#/components/schemas/RuoloSAEnum'
-        cfDelegante:
-          description: Codice fiscale soggetto per conto del quale agisce la S.A. (in caso di singolo soggetto)
+        codiceAusa:
+          description: Codice Ausa della S.A.
           type: string
-        denominazioneDelegante:
-          description: Denominazione dell'Amministrazione per la quale agisce la S.A.
+        codiceCentroCosto:
+          description: Codice del centro di costo
           type: string
+        funzioniSvolte:
+          type: array
+          items:
+            $ref: '#/components/schemas/FunzioniDelegateEnum'          
+        saTitolare:
+          description: Stazione appaltante titolare
+          type: boolean 
     ParitaDiGenereGenerazionaleType:
       description: Previsione nel bando di gara, nell’avviso o nell’invito, dell’obbligo di assicurare, in caso di aggiudicazione del contratto, una quota pari almeno al 30 per cento, delle assunzioni necessarie per l'esecuzione del contratto o per la realizzazione di attività ad esso connesse o strumentali, sia all'occupazione giovanile sia all'occupazione femminile (articolo 47, comma 4, D.L. 77/2021)?
       type: object
@@ -537,10 +528,6 @@ components:
           description: Importo stimato del servizio di progettazione successiva
           type: string
           format: decimal
-        impTotale:
-          description: Importo totale (somma degli altri due campi)
-          type: string
-          format: decimal      
     QuadroEconomicoP3ContrattiEsclusiType:
       description: Oggetto che riporta tutti i dati del quadro economico standard 
       type: object

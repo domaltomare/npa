@@ -1,13 +1,13 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda P1.23 - Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea, che contiene i dati necessari per la pubblicazione nazionale e per la pubblicazione europea con eform23.
+  title: Modello Dati - Scheda P1.23 - Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea e sotto soglia con invio al TED dell'eform23.
   version: 1.0.0
 components:
   schemas:
     LottoP.23Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lotIdentifier]
       additionalProperties: false
       properties:
         cig:
@@ -37,22 +37,27 @@ components:
           description: Cup associati al lotto
           type: array
           items:
-            type: string          
+            type: string  
+        motivoEsclusioneOrdinarioSpeciale:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoEsclusioneOrdinarioSpecialeEnum'            
     AppaltoP.23Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
       additionalProperties: false
+      required: [idAppalto]
       properties:
+        idAppalto:
+          description: Codice univoco dell'appalto
+          type: string         
         strumentiSvolgimentoProcedure: 
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/StrumentiSvolgimentoProcedureEnum'  
-        motivoEsclusioneOrdinarioSpeciale:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoEsclusioneOrdinarioSpecialeEnum'
         contrattiDisposizioniParticolari:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ContrattiDisposizioniParticolariEnum'          
     AnacFormP1.23Type:
       description: Contiene tutti i dati necessari per la pubblicazione nazionale di un bando di gara soprasoglia 
       type: object
       additionalProperties: false
+      required: [categoria, finanziamenti, opzioni/rinnovi, appalto,lotti]
       properties:  
         appalto:
           $ref: '#/components/schemas/AppaltoP.23Type'
@@ -74,7 +79,7 @@ components:
         quadroEconomicoConcorsiProgettazione:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcorsiProgettazioneType'           
     SchedaP1.23Type:
-      description: Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea, che contiene i dati necessari per la pubblicazione nazionale e per la pubblicazione europea con eform23.
+      description: Scheda di pubblicazione avviso per un bando di gara sopra la soglia europea e sotto soglia con invio al TED dell'eform23.
       type: object
       required: [anacFormP1, eform,espd]
       additionalProperties: false

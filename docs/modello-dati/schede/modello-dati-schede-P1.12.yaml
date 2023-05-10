@@ -66,7 +66,7 @@ components:
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'  
       type: object
       additionalProperties: false
-      required: [finanziamenti,opzioni/rinnovi, appalto]
+      required: [finanziamenti,opzioni/rinnovi, appalto,lotti]
       properties:  
         appalto:
           $ref: '#/components/schemas/AppaltoP.12Type' 
