@@ -240,6 +240,21 @@ components:
               - $ref: '#/components/schemas/SchedaPostPubblicazioneType'
         required:
           - idAvviso
+      DatiAvvisoType:
+        type: object
+        additionalProperties: false
+        required:  # List the required properties here
+          - idAvviso
+        properties:
+          idAvviso:
+            description: identificativo univoco dell'Avviso generato da ANAC.
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        oneOf:
+          - $ref: '#/components/schemas/DatiPianoType'
+          - $ref: '#/components/schemas/DatiAppaltoType'
+          - $ref: '#/components/schemas/DatiSchedaType'
       PianoType:
         description: Oggetto che riporta tutti i dati della Pianificazione
         type: object
