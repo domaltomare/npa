@@ -34,12 +34,12 @@ components:
           - $ref: '#/components/schemas/SchedaType'       
         type: object
         additionalProperties: false
-        oneOf:
-          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.10Type'
-          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.11.yaml#/components/schemas/SchedaP1.11Type'
-          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.12.yaml#/components/schemas/SchedaP1.12Type'
-          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.13.yaml#/components/schemas/SchedaP1.13Type'
-          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.14.yaml#/components/schemas/SchedaP1.14Type'
+        #oneOf:
+          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.10Type'
+          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.11.yaml#/components/schemas/SchedaP1.11Type'
+          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.12.yaml#/components/schemas/SchedaP1.12Type'
+          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.13.yaml#/components/schemas/SchedaP1.13Type'
+          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.14.yaml#/components/schemas/SchedaP1.14Type'
       SchedaComunicaAppaltoType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
         allOf: # estende il modello dati SchedaType
@@ -48,47 +48,53 @@ components:
         additionalProperties: false
         oneOf:
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.10Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.11Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.12Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.13Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.14Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.16Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.17Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.18Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.19Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.20Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.21Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.23Type' 
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.24Type'        
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.10Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.11Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.12Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.13Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.14Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.16Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.17Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.18Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.19Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.20Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.21Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.23Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP2.24Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP3.1Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP3.2Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP3.3Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP3.5Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP4.1Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP4.2Type'
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP5Type'   
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.11.yaml#/components/schemas/SchedaP1.11Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.12.yaml#/components/schemas/SchedaP1.12Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.13.yaml#/components/schemas/SchedaP1.13Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.14.yaml#/components/schemas/SchedaP1.14Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.16.yaml#/components/schemas/SchedaP1.16Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.17.yaml#/components/schemas/SchedaP1.17Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.18.yaml#/components/schemas/SchedaP1.18Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.19.yaml#/components/schemas/SchedaP1.19Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.20.yaml#/components/schemas/SchedaP1.20Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.21.yaml#/components/schemas/SchedaP1.21Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.23.yaml#/components/schemas/SchedaP1.23Type' 
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.24.yaml#/components/schemas/SchedaP1.24Type'        
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.10.yaml#/components/schemas/SchedaP2.10Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.11.yaml#/components/schemas/SchedaP2.11Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.12.yaml#/components/schemas/SchedaP2.12Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.13.yaml#/components/schemas/SchedaP2.13Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.14.yaml#/components/schemas/SchedaP2.14Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.16.yaml#/components/schemas/SchedaP2.16Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.17.yaml#/components/schemas/SchedaP2.17Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.18.yaml#/components/schemas/SchedaP2.18Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.19.yaml#/components/schemas/SchedaP2.19Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.20.yaml#/components/schemas/SchedaP2.20Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.21.yaml#/components/schemas/SchedaP2.21Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.23.yaml#/components/schemas/SchedaP2.23Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P2.24.yaml#/components/schemas/SchedaP2.24Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P3.1.yaml#/components/schemas/SchedaP3.1Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P3.2.yaml#/components/schemas/SchedaP3.2Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P3.3.yaml#/components/schemas/SchedaP3.3Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P3.4.yaml#/components/schemas/SchedaP3.4Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P3.5.yaml#/components/schemas/SchedaP3.5Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P4.1.yaml#/components/schemas/SchedaP4.1Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P4.2.yaml#/components/schemas/SchedaP4.2Type'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P5.yaml#/components/schemas/SchedaP5Type'   
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P6.1.yaml#/components/schemas/SchedaP6.1Type'   
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P6.2.yaml#/components/schemas/SchedaP6.2Type'   
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P6.3.yaml#/components/schemas/SchedaP6.3Type'   
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P6.4.yaml#/components/schemas/SchedaP6.4Type'   
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P6.5.yaml#/components/schemas/SchedaP6.5Type'   
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P6.6.yaml#/components/schemas/SchedaP6.6Type'   
       SchedaPostPubblicazioneType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
         allOf: # estende il modello dati SchedaType
           - $ref: '#/components/schemas/SchedaType'       
         type: object
         additionalProperties: false
-        oneOf:
-          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaCL1Type'
-          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaP1.10Type'
+        #oneOf:
+          #- $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.10.yaml#/components/schemas/SchedaCL1Type'        
       IdSchedaType:
         description: Identificativo univoco della Scheda restituito da ANAC in fase di creazione Scheda
         type: string
