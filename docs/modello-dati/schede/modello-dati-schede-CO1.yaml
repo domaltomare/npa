@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda CO01 - Scheda di conclusione.
+  title: Modello Dati - Scheda CO1 - Scheda di conclusione.
   version: 1.0.0
 components:
   schemas:
@@ -8,18 +8,18 @@ components:
       description: Oggetto che riporta i dati di conclusione.
       type: object
       additionalProperties: false
-    AnacFormCO01Type:
+    AnacFormCO1Type:
       description: Contiene tutti i dati di conclusione
       type: object
       additionalProperties: false
       properties:  
         conclusione:
           $ref: '#/components/schemas/ConclusioneType'
-    SchedaCO01Type:
+    SchedaCO1Type:
       description: Scheda di conclusione
       type: object
-      required: [anacFormCO01]
+      required: [anacFormCO1]
       additionalProperties: false
       properties:
-        anacFormCO01:
-          $ref: '#/components/schemas/AnacFormCO01Type'
+        anacFormCO1:
+          $ref: '#/components/schemas/AnacFormCO1Type'
