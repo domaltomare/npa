@@ -1732,6 +1732,66 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/StazioneAppaltanteType'
+    AppaltoP.10Type:
+      description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
+      allOf: # estende la classe AppaltoBaseType
+        - $ref: '#/components/schemas/AppaltoBaseType'
+      type: object
+      required: [categorieMerceologiche,ripetizioniEConsegneComplementari, prestazioniComprese]
+      additionalProperties: false
+      properties:
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
+          type: string
+          format: url      
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean
+        prestazioniComprese:
+          $ref: '#/components/schemas/PrestazioniEnum'
+        ripetizioniEConsegneComplementari:
+          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
+          type: boolean           
+    LottoP.10Type:
+      description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
+      allOf: # estende la classe LottoBaseType
+        - $ref: '#/components/schemas/LottoBaseType'
+      type: object
+      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      additionalProperties: false
+      properties:
+        saNonSoggettaObblighi24Dicembre2015:
+          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
+          type: boolean
+        iniziativeNonSoddisfacenti:
+          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
+          type: boolean  
+        regimeParticolare:
+          description: Contratto regime particolare di appalto (speciale o alleggerito)
+          type: boolean          
+        strumentiElettroniciSpecifici:
+          description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
+          type: boolean
+        tipologiaLavoro:
+          $ref: '#/components/schemas/TipologiaLavoroType'
+        opzioni/rinnovi:
+          description: L’appalto prevede opzioni/rinnovi?
+          type: boolean 
+        ipotesiCollegamento:
+          $ref: '#/components/schemas/IpotesiCollegamentoType'
+        categoria:
+          $ref: '#/components/schemas/CategoriaEnum' 
+        paritaDiGenereGenerazionale:
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'
+    QuadroEconomicoP.10Type:
+      description: Oggetto che riporta tutti i dati del quadro economico standard 
+      allOf: # estende la classe QuadroEconomicoBaseType
+        - $ref: '#/components/schemas/QuadroEconomicoBaseType'        
+      type: object
+      required: [sommeRipetizioni]
+      additionalProperties: false              
     EformType:
       description: Eform codificato Base64 nel formato XML definito da TED
       type: object
