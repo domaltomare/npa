@@ -30,6 +30,7 @@ components:
       description: Contiene tutti i dati necessari per la pubblicazione nazionale di un bando di gara sottosoglia maggiore di 5K — direttiva generale, regime ordinario. Articolo 49 della direttiva 2014/24/UE 
       allOf: # estende la classe AnacFormP1.16Type
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-P1.16.yaml#/components/schemas/AnacFormP1.16Type' 
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'      
       - $ref: '#/components/schemas/AnacFormP2.16DatiBaseType'
       type: object
       additionalProperties: false
