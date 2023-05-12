@@ -586,6 +586,21 @@ components:
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
           type: boolean          
+    AppaltoP.18Type:
+      description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
+      type: object
+      required: [idAppalto,cfSA,denominazioneSA]
+      additionalProperties: false    
+      properties:
+        idAppalto:
+          description: Codice univoco dell'appalto
+          type: string 
+        cfSA: 
+          description: Codice fiscale SA
+          type: string
+        denominazioneSA: 
+          description: Denominazione SA
+          type: string            
     AppaltoP.19Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -918,6 +933,28 @@ components:
           $ref: '#/components/schemas/CategoriaEnum' 
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'            
+    LottoP.18Type:
+      description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
+      type: object
+      required: [lotIdentifier, categoria,sceltaContraente,oggettoLotto]
+      additionalProperties: false
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 9050626CD6
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string      
+        ipotesiCollegamento:
+          $ref: '#/components/schemas/IpotesiCollegamentoType'
+        categoria:
+          $ref: '#/components/schemas/CategoriaEnum' 
+        oggettoLotto:
+          description: oggetto del lotto
+          type: string          
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'            
     LottoP.19Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
