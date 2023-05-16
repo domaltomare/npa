@@ -2213,17 +2213,10 @@ components:
       additionalProperties: false
       properties:
         result: 
-          description: Lista dei progressivoLotto-CIG
+          description: Lista lotIdentifier-cig
           type: array
           items:
             $ref: '#/components/schemas/CigType' 
-          example:
-            - progressivoLotto: '0001'
-              CIG: 'EF89808D45'
-            - progressivoLotto: '0002'
-              CIG: 'EF89908H45' 
-            - progressivoLotto: '0003'
-              CIG: 'EF90908G67' 
     TipologicaResponse:
       type: object
       additionalProperties: false
@@ -2440,18 +2433,9 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       type: object
       additionalProperties: false
-      required:  # List the required properties here
-        - idAvviso
-      properties:
-        idAvviso:
-          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
       example:
         status: 200
         title: "Operazione Effettuata" 
-        idAvviso: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     CreaSchedaResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2492,32 +2476,18 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       type: object
       additionalProperties: false
-      properties:
-        idAvviso:
-          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
       example:
         status: 200
-        title: "Operazione Effettuata" 
-        idAvviso: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        title: "Operazione Effettuata"
     ConfermaPianoResponse:
       description: Risposta all'operazione Conferma Piano
       allOf: # estende la classe BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       type: object
       additionalProperties: false
-      properties:
-        idAvviso:
-          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
       example:
         status: 200
         title: "Operazione Effettuata" 
-        idAvviso: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"    
     CancellaSchedaResponse:
       description: Risposta all'operazione Cancella Scheda
       allOf: # estende lo schema dati di BaseResponse
