@@ -207,9 +207,16 @@ components:
       OggettoPrincipaleContrattoEnum:
         description:  Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [statoLotto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json)
       CigType:
-        description: coppia progressivoLotto-CIG
+        description: coppia lotIdentifier-cig
         type: object
         additionalProperties: false
+        properties:
+          cig:
+            description: codice identificativo lotto
+            type: string
+            example: '9050626CD6'
+          lotIdentifier:
+            description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
       I18NType:
         type: object
         properties:
