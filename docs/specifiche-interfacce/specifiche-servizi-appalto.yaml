@@ -254,14 +254,14 @@ paths:
             $ref: '#/components/schemas/TipoPianoEnum'    
         - in: query
           name: dataCreazioneDa
-          description: Data di crezione della Pianificazione - intervallo successivo (A datetime specified by RF3339)
+          description: Data di crezione della Pianificazione - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataCreazioneA
-          description: Data di crezione della Pianificazione - intervallo precedente (A datetime specified by RF3339) 
+          description: Data di crezione della Pianificazione - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339) 
           schema:
             type: string
             format: datetime
@@ -509,7 +509,7 @@ paths:
       tags:
         -  comunicaAppalto
       summary: API Rest per la ricerca delle Gare-Lotto dell'Appalto. SINCRONO
-      description: viene recuperata la lista con i dati di sintesi dell'Appalto e dei rispetti lotti. SINCRONO
+      description: viene recuperata la lista con i dati di sintesi dell'Appalto e dei rispettivi lotti. SINCRONO
       operationId: idAppaltoRicerca
       parameters:
         - in: query
@@ -518,19 +518,17 @@ paths:
           schema:
             type: integer
             format: int32
-        - in: query    
-          name: idAppalto
-          description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by FC4122).
-          schema:
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
         - in: query
-          name: CIG
+          name: cig
           description: Identificativo univoco Appalto-Lotto rilasciato da ANAC
           schema:
             type: string
             example: 9050626CD6
+        - in: query    
+          name: lotIdentifier
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED.
+          schema:
+            type: string
         - in: query
           name: stato
           description: stato dell'Appalto 
@@ -538,14 +536,14 @@ paths:
             $ref: '#/components/schemas/StatoAppaltoEnum'
         - in: query
           name: dataCreazioneDa
-          description: Data di crezione dell'Appalto - intervallo successivo (A datetime specified by RF3339)
+          description: Data di crezione dell'Appalto - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataCreazioneA
-          description: Data di crezione dell'Appalto - intervallo precedente (A datetime specified by RF3339)
+          description: Data di crezione dell'Appalto - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
@@ -623,7 +621,7 @@ paths:
       tags:
         - comunicaAppalto
       summary: API Rest per la validazione dell'Appalto. ASINCRONO - ASIMMETRICO
-      description: L'ultima istanza di appalto inviata viene validata. In base allla tipologia dell'appalto viene eseguita una validazione sintattica dei dati di input dell'appalto (eForm, ESPDRequest, anacForm). ASINCRONO - ASIMMETRICO 
+      description: L'ultima istanza di appalto inviata viene validata. In base alla tipologia dell'appalto viene eseguita una validazione sintattica dei dati di input dell'appalto (eForm, ESPDRequest, anacForm). ASINCRONO - ASIMMETRICO 
       operationId: idAppaltoVerifica
       parameters:
         - in: query
@@ -959,7 +957,7 @@ paths:
             $ref: '#/components/schemas/StatoAppaltoEnum'
         - in: query
           name: dataCreazioneDa
-          description: Data di crezione dell'Appalto - intervallo successivo (A datetime specified by RF3339)
+          description: Data di crezione dell'Appalto - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
@@ -985,14 +983,14 @@ paths:
             $ref: '#/components/schemas/TipoAzioneAvvisoEnum'
         - in: query
           name: dataCreazioneAvvisoDa
-          description: Data di crezione dell'Avviso - intervallo successivo (A datetime specified by RF3339)
+          description: Data di crezione dell'Avviso - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: dataCreazioneAvvisoA
-          description: Data di crezione della Avviso - intervallo precedente (A datetime specified by RF3339)
+          description: Data di crezione della Avviso - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
@@ -1260,14 +1258,14 @@ paths:
             $ref: '#/components/schemas/StatoAppaltoEnum'
         - in: query
           name: dataCreazioneDa
-          description: Data di crezione dell'Appalto - intervallo successivo (A datetime specified by RF3339)
+          description: Data di crezione dell'Appalto - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: dataCreazioneA
-          description: Data di crezione della Gara - intervallo precedente (A datetime specified by RF3339) 
+          description: Data di crezione della Gara - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339) 
           schema:
             type: string
             format: datetime
@@ -1560,14 +1558,14 @@ paths:
           required: true
         - in: query
           name: dataInizio
-          description: Data di inizio (A datetime specified by RF3339)
+          description: Data di inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
             example: '2022-01-23T12:02:05Z'
         - in: query
           name: dataFine
-          description: Data di fine (A datetime specified by RF3339)
+          description: Data di fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
@@ -1750,28 +1748,28 @@ paths:
             $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'            
         - in: query
           name: dataInizioDa
-          description: Data inizio incarico soggetto - intervallo successivo (A datetime specified by RF3339)
+          description: Data inizio incarico soggetto - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataInizioA
-          description: Data inizio incarico soggetto - intervallo precedente (A datetime specified by RF3339)
+          description: Data inizio incarico soggetto - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataFineDa
-          description: Data fine incarico soggetto - intervallo successivo (A datetime specified by RF3339)
+          description: Data fine incarico soggetto - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataFineA
-          description: data fine incarico soggetto - intervallo precedente (A datetime specified by RF3339) 
+          description: data fine incarico soggetto - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339) 
           schema:
             type: string
             format: datetime
@@ -2298,12 +2296,12 @@ components:
         operazione:  
           $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'          
         dataInizio: 
-          description: Data di inizio (A datetime specified by RF3339)
+          description: Data di inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'
         dataFine: 
-          description: Data di fine (A datetime specified by RF3339)
+          description: Data di fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'
