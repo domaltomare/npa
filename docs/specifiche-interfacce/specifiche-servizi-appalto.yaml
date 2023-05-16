@@ -2146,11 +2146,6 @@ components:
       type: object
       additionalProperties: false
       properties:
-        idAvviso:
-          description: identificativo univoco dell'Avviso generato da ANAC.
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
         stato:  
           $ref: '#/components/schemas/StatoAvvisoEnum' 
       example:
@@ -2204,7 +2199,7 @@ components:
           description: Lista di ritorno con la sintesi dei dati dell'Avviso
           type: array
           items:
-            $ref: '#/components/schemas/AvvisoType'  
+            $ref: '#/components/schemas/DatiAvvisoType'  
     CigListaResponse :
       allOf: # estende la classe PaginazioneType
         - $ref: '#/components/schemas/PaginazioneType'
@@ -2305,14 +2300,14 @@ components:
       allOf: # estende la classe DatiSchedaType
         - $ref: '#/components/schemas/DatiSchedaType'
     AvvisoRequest:
-      allOf: # estende la classe DatiAvvisoType
-        - $ref: '#/components/schemas/DatiAvvisoType'
+      allOf: # estende la classe AvvisoType
+        - $ref: '#/components/schemas/AvvisoType'
     ConsultaAvvisoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       properties:
         avviso:
-          $ref: '#/components/schemas/AvvisoType'
+          $ref: '#/components/schemas/DatiAvvisoType'
     RenderingAvvisoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2435,7 +2430,7 @@ components:
       additionalProperties: false
       example:
         status: 200
-        title: "Operazione Effettuata" 
+        title: "Operazione Effettuata"
     CreaSchedaResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
