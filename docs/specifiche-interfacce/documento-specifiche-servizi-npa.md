@@ -404,12 +404,11 @@ Il modello dati del FVOE è descritto nel [file YAML](../modello-dati/modello-da
 
 In questo capitolo si riportano i servizi comuni, ossia quelli che possono essere richiamati dalle Stazioni appaltanti in più contesti dell’NPA e che forniranno una risposta diversa a seconda della fase in cui vengono invocati:
 - esito-operazione: tramite questo servizio è possibile recuperare l’esito di una determinata operazione;
-  - [SE il contesto è comunicaAppalto] recupero l’esito per le seguenti operazioni : “crea-appalto”, “modifica-appalto”, “cancella-appalto”, “conferma-appalto”, “verifica-appalto”.
-  - [SE il contesto è pubblicaAvviso] 
+  - [SE il contesto è comunicaAppalto] recupera l’esito per le seguenti operazioni : “crea-appalto”, “modifica-appalto”, “cancella-appalto”, “conferma-appalto”, “verifica-appalto”.
+  - [SE il contesto è pubblicaAvviso] recupera l’esito per le seguenti operazioni: “pubblica-pvviso”, “modifica-avviso”, “cancella-avviso”, “rettifica-avviso”
     - [SE lo stato Avviso è “In attesa pubblicazione” su TED] chiama l’ API TED “search-esentool” per  l’esito di pubblicazione sul sistema europeo.
     - [SE lo stato Avviso è “In attesa pubblicazione” su PPL-ANAC] chiama il servizio di back-end “ricerca-avviso-nazionale” per la verifica dell’esito di pubblicazione su PPL-ANAC.
-Ritorna l’esito per le seguenti operazioni: “pubblica-pvviso”, “modifica-avviso”, “cancella-avviso”, “rettifica-avviso”
-  - [SE il contesto è comunicaPostPubblicazione] recupero l’esito per le seguenti operazioni: “crea-scheda ”, “modifica-scheda”, “cancella-scheda”, “conferma-scheda”, “verifica-scheda”
+  - [SE il contesto è comunicaPostPubblicazione] recupera l’esito per le seguenti operazioni: “crea-scheda ”, “modifica-scheda”, “cancella-scheda”, “conferma-scheda”, “verifica-scheda”
 -	stato-appalto: tramite questo servizio è possibile conoscere lo stato dell’Appalto in un determinato momento.
 -	recupera-elenco-tipologiche: tramite questo servizio è possibile recuperare l'elenco delle tipologiche disponibili.
 -	recupera-tipologica: tramite questo servizio è possibile recuperare l'elenco dei valori per una specifica tipologica.
