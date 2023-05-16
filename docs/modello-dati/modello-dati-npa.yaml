@@ -206,6 +206,13 @@ components:
         description: Stato in cui si trova il Lotto - fare riferimento ai valori contenuti nel file [statoLotto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoLotto.json)
       OggettoPrincipaleContrattoEnum:
         description:  Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [statoLotto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json)
+      EsitoEnum:
+        description: Esito dell'operazione
+        type: string
+        enum:
+          - 'SUCCESS'
+          - 'ERROR'
+          - 'WARNING'
       CigType:
         description: coppia lotIdentifier-cig
         type: object
@@ -511,10 +518,13 @@ components:
       EsitoOperazioneBaseType:
         type: object
         additionalProperties: false
-        required:  # List the required properties here
+        required:  # List the required properties hereddd
           - codice
           - descrizione
+          - esito
         properties:
+          esito:
+            $ref: '#/components/schemas/EsitoEnum'
           codice: 
             description: codice dell'esito dell'operazione
             type: string
@@ -526,6 +536,18 @@ components:
           dettaglio:
             description: descrizione dettagliata dell'esito dell'operazione
             type: string
+          errori:
+            description: elenco degli errori
+            type: object
+            properties:
+              codice:
+                type: string
+                example: '001'
+              descrizione:
+                maxLength: 4096
+                pattern: ^.{0,1024}$
+                type: string
+                example: 'Non è stato indicato il campo Motivazione richiesta CIG.'            
       EsitoOperazioneAvvisoType:
         allOf: # estende la classe EsitoOperazioneBaseType
           - $ref: '#/components/schemas/EsitoOperazioneBaseType'
@@ -545,9 +567,6 @@ components:
       EsitoOperazioneType:
         type: object
         additionalProperties: false
-        required:  # List the required properties here
-          - codice
-          - descrizione
         oneOf:
           - $ref: '#/components/schemas/EsitoOperazioneBaseType' 
           - $ref: '#/components/schemas/EsitoOperazioneAvvisoType'      
