@@ -207,42 +207,42 @@ paths:
             example: "507f1f77bcf86cd799439011"
         - in: query
           name: dataInserimentoDa
-          description: data di inserimento del documento - intervallo successivo (A datetime specified by RF3339)
+          description: data di inserimento del documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataInserimentoA
-          description: data di inserimento del documento - intervallo precedente (A datetime specified by RF3339)
+          description: data di inserimento del documento - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'  
         - in: query
           name: dataEmissioneDa
-          description: data di emissione del documento - intervallo successivo (A datetime specified by RF3339)
+          description: data di emissione del documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataEmissioneA
-          description: data di emissione del documento - intervallo precedente (A datetime specified by RF3339)
+          description: data di emissione del documento - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'          
         - in: query
           name: dataFineValiditaDa
-          description: data fine validità del documento - intervallo successivo (A datetime specified by RF3339)
+          description: data fine validità del documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataFineValiditaA
-          description: data fine validità del documento - intervallo precedente (A datetime specified by RF3339)
+          description: data fine validità del documento - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
@@ -255,28 +255,28 @@ paths:
             example: '2342344342'
         - in: query
           name: dataProtocolloDa
-          description: Data di protocollo dell'Documento - intervallo successivo (A datetime specified by RF3339)
+          description: Data di protocollo dell'Documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataProtocolloA
-          description: Data di protocollo dell'Documento - intervallo precedente (A datetime specified by RF3339)
+          description: Data di protocollo dell'Documento - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'          
         - in: query
           name: dataCreazioneDa
-          description: Data di creazione dell'Documento - intervallo successivo (A datetime specified by RF3339)
+          description: Data di creazione dell'Documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataCreazioneA
-          description: Data di creazione dell'Documento - intervallo precedente (A datetime specified by RF3339) 
+          description: Data di creazione dell'Documento - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339) 
           schema:
             type: string
             format: datetime
@@ -472,42 +472,42 @@ paths:
             example: "507f1f77bcf86cd799439011"
         - in: query
           name: dataInserimentoDa
-          description: data di inserimento del documento - intervallo successivo (A datetime specified by RF3339)
+          description: data di inserimento del documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataInserimentoA
-          description: data di inserimento del documento - intervallo precedente (A datetime specified by RF3339)
+          description: data di inserimento del documento - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'  
         - in: query
           name: dataEmissioneDa
-          description: data di emissione del documento - intervallo successivo (A datetime specified by RF3339)
+          description: data di emissione del documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataEmissioneA
-          description: data di emissione del documento - intervallo precedente (A datetime specified by RF3339)
+          description: data di emissione del documento - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'          
         - in: query
           name: dataFineValiditaDa
-          description: data fine validità del documento - intervallo successivo (A datetime specified by RF3339)
+          description: data fine validità del documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataFineValiditaA
-          description: data fine validità del documento - intervallo precedente (A datetime specified by RF3339)
+          description: data fine validità del documento - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
@@ -520,28 +520,28 @@ paths:
             example: '2342344342'
         - in: query
           name: dataProtocolloDa
-          description: Data di protocollo dell'Documento - intervallo successivo (A datetime specified by RF3339)
+          description: Data di protocollo dell'Documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataProtocolloA
-          description: Data di protocollo dell'Documento - intervallo precedente (A datetime specified by RF3339)
+          description: Data di protocollo dell'Documento - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'          
         - in: query
           name: dataCreazioneDa
-          description: Data di creazione dell'Documento - intervallo successivo (A datetime specified by RF3339)
+          description: Data di creazione dell'Documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataCreazioneA
-          description: Data di creazione dell'Documento - intervallo precedente (A datetime specified by RF3339) 
+          description: Data di creazione dell'Documento - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339) 
           schema:
             type: string
             format: datetime
@@ -686,14 +686,14 @@ paths:
             example: 9050626CD6
         - in: query
           name: dataCreazioneDa
-          description: Data di crezione del Fascicolo - intervallo successivo (A datetime specified by RF3339)
+          description: Data di crezione del Fascicolo - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataCreazioneA
-          description: Data di crezione del Fascicolo - intervallo precedente (A datetime specified by RF3339) 
+          description: Data di crezione del Fascicolo - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339) 
           schema:
             type: string
             format: datetime
