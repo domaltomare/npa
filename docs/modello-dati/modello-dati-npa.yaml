@@ -296,12 +296,12 @@ components:
           oggettoPrincipaleContratto:
             $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
           appalto:
-            $ref: '#/components/schemas/AppaltoType' 
+            $ref: '#/components/schemas/AppaltoBaseType' 
           #avvisi: 
             #type: array
             #items:
               #$ref: '#/components/schemas/AvvisoType'
-      AppaltoType:
+      AppaltoBaseType:
         description: Oggetto che riporta tutti i dati dell'Appalto
         type: object
         additionalProperties: false
@@ -322,8 +322,30 @@ components:
             example: '2022-01-23T12:02:05Z'       
           stato:
             $ref: '#/components/schemas/StatoAppaltoEnum'
-          avviso:  
-            $ref: '#/components/schemas/AvvisoType'
+          #avviso:  
+            #$ref: '#/components/schemas/AvvisoType'
+      AppaltoType:
+        allOf: # estende la classe AppaltoBaseType
+          - $ref: '#/components/schemas/AppaltoBaseType'
+        properties:
+          idAppalto:
+            description: identificativo univoco dell'Appalto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          oggetto:
+            description: descrizione dell'appalto
+            type: string
+            example: Fornitura di strumento XX per XX
+          dataCreazione:
+            description: data creazione dell'appalto (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'       
+          stato:
+            $ref: '#/components/schemas/StatoAppaltoEnum'
+          #avviso:  
+            #$ref: '#/components/schemas/AvvisoType'
           lotti:
             type: array
             items:
