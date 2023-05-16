@@ -6,6 +6,8 @@ info:
    Vengono riportati gli oggetti usati dalle operazioni FVOE e FVA
 components:
   schemas:
+    StatoFascicoloEnum:
+      description: Stato in cui si trova il documento - fare riferimento ai valori contenuti nel file [statoDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoFascicolo.json)
     StatoDocumentoEnum:
       description: Stato in cui si trova il documento - fare riferimento ai valori contenuti nel file [statoDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoDocumento.json)
     StatoRichiestaEnum:
