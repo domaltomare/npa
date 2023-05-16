@@ -388,6 +388,38 @@ components:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+          dataCreazione:
+            description: Data di crezione dell'Avviso  (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+          dataPubblicazione:
+            description: Data di pubblicazione dell'Avviso  (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+          stato:
+            $ref: '#/components/schemas/StatoAvvisoEnum'
+          tipo:
+            $ref: '#/components/schemas/TipoAvvisoEnum'
+          azione:
+            $ref: '#/components/schemas/TipoAzioneAvvisoEnum'            
+          appalto:
+            $ref: '#/components/schemas/AppaltoBaseType'
+          lotto:
+            $ref: '#/components/schemas/LottoType'    
+        example:
+            idAvviso: 'f81d4fae-7dec-11d0-a765-00a0c91e6bf6'
+            dataCreazione: '2022-01-23T12:02:05Z'
+            dataPubblicazione: '2022-01-23T12:02:05Z'
+            stato: 'PUBBLICATO'
+            tipo: 'PUBBLICAZIONE GARA'
+            azione: 'RETTIFICA'
+            appalto: 
+              idAppalto: "ceb08609-1a78-4df6-ae8d-81b0516e6f71"
+              oggetto: 'Fornitura di strumento XX per XX'
+              dataCreazione: '2022-04-01T12:02:05Z'
+              stato: 'PUBBLICATO'
       PianoType:
         description: Oggetto che riporta tutti i dati della Pianificazione
         type: object
