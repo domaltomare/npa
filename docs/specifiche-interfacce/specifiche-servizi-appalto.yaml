@@ -2032,6 +2032,18 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaType'
     DatiTipologicaType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiTipologicaType'
+    CreaAppaltoRequest:
+      allOf: # estende la classe DatiAppaltoBaseType
+        - $ref: '#/components/schemas/DatiAppaltoBaseType'
+    DatiAppaltoRequest:
+      allOf: # estende la classe DatiAppaltoType
+        - $ref: '#/components/schemas/DatiAppaltoType'
+    CreaPianoRequest:
+      allOf: # estende la classe DatiPianoType
+        - $ref: '#/components/schemas/DatiPianoBaseType'
+    DatiPianoRequest:
+      allOf: # estende la classe DatiPianoType
+        - $ref: '#/components/schemas/DatiPianoType'
     ConsultaAppaltoResponse :
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2140,7 +2152,7 @@ components:
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         stato:  
            $ref: '#/components/schemas/StatoAppaltoEnum'
-    StatoAvvisoResponse : 
+    StatoAvvisoResponse: 
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       type: object
@@ -2248,18 +2260,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/DatiSchedaType'
-    CreaAppaltoRequest:
-      allOf: # estende la classe DatiAppaltoBaseType
-        - $ref: '#/components/schemas/DatiAppaltoBaseType'
-    DatiAppaltoRequest:
-      allOf: # estende la classe DatiAppaltoType
-        - $ref: '#/components/schemas/DatiAppaltoType'
-    CreaPianoRequest:
-      allOf: # estende la classe DatiPianoType
-        - $ref: '#/components/schemas/DatiPianoBaseType'
-    DatiPianoRequest:
-      allOf: # estende la classe DatiPianoType
-        - $ref: '#/components/schemas/DatiPianoType'
     SoggettoRequest:
       description: Oggetto generico di ritorno di una risposta con paginazione
       type: object
