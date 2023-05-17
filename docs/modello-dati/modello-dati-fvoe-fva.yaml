@@ -19,7 +19,11 @@ components:
     TipoOggettoFascicoloEnum:
       description: tipologie dell''oggetto fascicolo - Identificativo per determinare il tipo di modello dati del Fascicolo- fare riferimento ai valori contenuti nel file [tipoOggettoFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOggettoFascicolo.json)
     TipoAzioneFascicoloEnum:
-      description: tipologie delle azioni eseguite sul fascicolo - fare riferimento ai valori contenuti nel file [tipoAzioneFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneFascicolo.json)    
+      description: tipologie delle azioni eseguite sul fascicolo - fare riferimento ai valori contenuti nel file [tipoAzioneFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneFascicolo.json)
+    TipoOggettoDocumentoEnum:
+      description: tipologie dell''oggetto documento - Identificativo per determinare il tipo di modello dati del Documento- fare riferimento ai valori contenuti nel file [tipoOggettoDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOggettoDocumento.json)
+    TipoAzioneDocumentoEnum:
+      description: tipologie delle azioni eseguite sul fascicolo - fare riferimento ai valori contenuti nel file [tipoAzioneDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneDocumento.json)   
     AppaltoType : 
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
     FascicoloType: 
@@ -43,12 +47,12 @@ components:
           $ref: '#/components/schemas/StatoFascicoloEnum' 
         azione:
           $ref: '#/components/schemas/TipoAzioneFascicoloEnum'  
-        utente:
-          description: utente di creazione/modifica del fascicolo 
+        utenteCreazione:
+          description: utente di registrazione del fascicolo 
           type: string
           example: "UDI.8909"
-        data:
-          description: data di inserimento/modifica del fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+        dataCreazione:
+          description: data di registrazione del fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: "2022-01-23T12:02:05Z"      
@@ -76,6 +80,52 @@ components:
       description: Oggetto che riporta i dati del Documento
       type: object
       additionalProperties: false
+      properties:
+        idDocument:
+          description: identificativo univoco del documento
+          type: string
+          example: "507f1f77bcf86cd799439011"
+        tipoOggetto:
+          $ref: '#/components/schemas/TipoOggettoDocumentoEnum'
+        tipoDcumento:
+          $ref: '#/components/schemas/TipoDocumentoEnum'
+        statoDocumento:
+          $ref: '#/components/schemas/StatoDocumentoEnum'
+        dataInserimento:
+          description: data di inserimento del documento (A datetime specified by RF3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z' 
+        dataEmissione:
+          description: data di emissione del documento (A datetime specified by RF3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z' 
+        dataFineValidita:
+          description: data fine validità del documento(A datetime specified by RF3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z' 
+        numeroProtocollo:
+          description: numero di registrazione del documento
+          type: string
+          example: '2342344342'
+        dataProtocollo:
+          description: data di registrazione del documento  (A datetime specified by RF3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z' 
+        azione:
+          $ref: '#/components/schemas/TipoAzioneDocumentoEnum'   
+        utenteCreazione:
+          description: utente di registrazione del documento
+          type: string
+          example: "UDI.8909"  
+        dataCreazione:
+          description: data di registrazione del documento  (A datetime specified by RF3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z'        
     DocumentoOEType:
       description: Oggetto che riporta i dati del Documento dell'OE
       allOf: # estende lo schema dati di DocumentoType
@@ -86,9 +136,20 @@ components:
       description: Oggetto che riporta i dati del Documento dell'Appalto
       allOf: 
         - $ref: '#/components/schemas/DocumentoType' # estende lo schema dati di DocumentoType
-        - $ref: '#/components/schemas/DocumentoOEType' #estende lo schema dati di DocumentoOE perché potrebbe essere un Documento dell' Operatore Economico
+        # TBD POSSIBILI PROBLEMI APPLICATIVI LATO CLIENT- $ref: '#/components/schemas/DocumentoOEType' #estende lo schema dati di DocumentoOE perché potrebbe essere un Documento dell' Operatore Economico
       type: object
       additionalProperties: false
+      properties:
+        appalto:
+          $ref: '#/components/schemas/AppaltoType'
+        fascicoliA:
+          type: array
+          items:
+            $ref: '#/components/schemas/FVAType'
+        datiAggiuntivi:
+          description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON
+          type: string
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"       
     ContentDocumentType:
       description: Oggetto che riporta il contenuto del
       type: object
