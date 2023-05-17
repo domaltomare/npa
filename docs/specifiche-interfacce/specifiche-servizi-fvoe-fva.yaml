@@ -293,16 +293,20 @@ paths:
             $ref: '#/components/schemas/TipoDocumentoEnum'            
         - in: query
           name: page
-          description: numero della pagina da visualizzare
+          description: numero della pagina da visualizzare.
           schema:
             type: integer
             format: int32
+            minimum: 1
+            default: 1
         - in: query  
           name: perPage
-          description: numero di elementi per pagina
+          description: numero di elementi per pagina.
           schema:
             type: integer
             format: int32
+            minimum: 1
+            default: 20
       responses:
         '200':
           description: Operazione terminato con successo
@@ -559,16 +563,20 @@ paths:
           example: 'VISURA_CAMERALE' 
         - in: query
           name: page
-          description: numero della pagina da visualizzare
+          description: numero della pagina da visualizzare. 
           schema:
             type: integer
             format: int32
+            minimum: 1
+            default: 1
         - in: query  
           name: perPage
-          description: numero di elementi per pagina
+          description: numero di elementi per pagina.
           schema:
             type: integer
             format: int32
+            minimum: 1
+            default: 20
       responses:
         '200':
           description: Operazione terminato con successo
@@ -693,17 +701,21 @@ paths:
           example: '2015-05-28T14:07:17Z'  
         - in: query
           name: page
-          description: numero della pagina da visualizzare. Valore di default 1.
+          description: numero della pagina da visualizzare.
           schema:
             type: integer
             format: int32
+            minimum: 1
+            default: 1
           example: 2  
         - in: query  
           name: perPage
-          description: numero di elementi per pagina. Valore di default 20.
+          description: numero di elementi per pagina.
           schema:
             type: integer
             format: int32
+            minimum: 1
+            default: 20
           example: 40  
       responses:
         '200':
