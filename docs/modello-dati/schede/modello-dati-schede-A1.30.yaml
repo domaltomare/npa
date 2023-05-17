@@ -9,13 +9,8 @@ components:
       allOf: # estende la classe AggiudicatarioType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'      
       type: object
-      required: [importoAggiudicazioneAffidamento]
       additionalProperties: false
       properties:
-        importoAggiudicazioneAffidamento:
-          description: Importo di aggiudicazione/affidamento 
-          type: string
-          format: decimal      
         ribassoDasta:
           description: Ribasso d’Asta 
           type: string
@@ -26,20 +21,6 @@ components:
           description: Offerta qualitativa
           type: string
           format: decimal   
-    AggiudicazioneA.30Type:
-      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia    
-      allOf: # estende la classe AggiudicazioneBaseType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneBaseType'        
-      type: object
-      required: [opereUrbanizzazioneScomputo,preinformazione]
-      additionalProperties: false
-      properties: 
-        opereUrbanizzazioneScomputo:
-          description: Opere di urbanizzazione a scomputo
-          type: boolean
-        preinformazione:
-          description: E' stata effettuata la preinformazione?
-          type: boolean
     AnacFormA1.30Type:
       description: Contiene tutti i dati relativi all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso di aggiudicazione di un appalto — direttiva settoriale, regime ordinario. Articolo 70 della direttiva 2014/25/UE
       type: object
@@ -47,7 +28,7 @@ components:
       additionalProperties: false
       properties:
         aggiudicazione:
-          $ref: '#/components/schemas/AggiudicazioneA.30Type'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA.30Type'
         quadroEconomicoStandard:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoAType' 
         aggiudicatari:

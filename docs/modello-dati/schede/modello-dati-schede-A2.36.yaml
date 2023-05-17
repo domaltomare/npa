@@ -7,23 +7,28 @@ components:
     AnacFormA2.36DatiBaseType:
       description: Oggetto che contiene gli oggetti comuni con il TED relativi alle aggiudicazioni sottosoglia - Avviso sui risultati di un concorso di progettazione — direttiva generale, progettazione. Articolo 79, paragrafo 2, della direttiva 2014/24/UE.
       type: object
-      required: [datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto]
       additionalProperties: false 
       properties:
         datiBaseRisultatoProcedura:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraType'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraType'           
         datiBaseAggiudicazioneAppalto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoA2.36Type' 
         datiBaseAccessibilita:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'              
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType' 
+        datiBaseProcedura:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraType'        
     AnacFormA2.36Type:
       description: Contiene tutti i dati relativi all'aggiudicazione sottosoglia senza invio al TED - Avviso sui risultati di un concorso di progettazione — direttiva generale, progettazione. Articolo 79, paragrafo 2, della direttiva 2014/24/UE.
       allOf: 
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-A1.36.yaml#/components/schemas/AnacFormA1.36Type'
       - $ref: '#/components/schemas/AnacFormA2.36DatiBaseType'
       type: object
-      #required: []
-      additionalProperties: false       
+      required: [aggiudicatari]
+      properties:
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'      
     SchedaA2.36Type:
       description: Scheda relativa all'aggiudicazione sottosoglia senza invio al TED - Avviso sui risultati di un concorso di progettazione — direttiva generale, progettazione. Articolo 79, paragrafo 2, della direttiva 2014/24/UE.
       type: object

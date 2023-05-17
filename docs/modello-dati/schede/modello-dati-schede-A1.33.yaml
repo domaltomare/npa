@@ -9,13 +9,8 @@ components:
       allOf: # estende la classe AggiudicatarioType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'      
       type: object
-      required: [importoAggiudicazioneAffidamento]
       additionalProperties: false
       properties:
-        importoAggiudicazioneAffidamento:
-          description: Importo di aggiudicazione/affidamento 
-          type: string
-          format: decimal      
         ribassoDasta:
           description: Ribasso d’Asta 
           type: string
@@ -26,12 +21,6 @@ components:
           description: Offerta qualitativa
           type: string
           format: decimal  
-    AggiudicazioneA.33Type:
-      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
-      allOf: # estende la classe AggiudicazioneBaseType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneBaseType'        
-      type: object
-      additionalProperties: false          
     AnacFormA1.33Type:
       description: Contiene tutti i dati relativi all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso di aggiudicazione di un appalto — direttiva generale, regime alleggerito. Articolo 75, paragrafo 2, della direttiva 2014/24/UE
       type: object
@@ -39,7 +28,7 @@ components:
       additionalProperties: false
       properties:
         aggiudicazione:
-          $ref: '#/components/schemas/AggiudicazioneA.33Type'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA.33Type'
         quadroEconomicoStandard:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoA.33Type' 
         aggiudicatari:
