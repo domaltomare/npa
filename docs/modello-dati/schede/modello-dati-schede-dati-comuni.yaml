@@ -1673,45 +1673,37 @@ components:
           description: Data della decisione ufficiale di selezione dell'offerta vincitrice - corrisponde al campo bt-1451 - Winner Decision Date del TED
           type: string
           format: datetime   
-    DatiBaseStrumentiProceduraA2.30Type:
-      description: Dato in comune con il Business Group Techniques delle eforms 
-      additionalProperties: false
-      required: [modalitaRealizzazione,strumentiSvolgimentoProcedure,astaElettronica]
-      properties:
-        modalitaRealizzazione: 
-          $ref: '#/components/schemas/ModalitaRealizzazioneEnum'    
-        sistemaDinamicoAcquisizione: 
-          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
-        astaElettronica:
-          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: boolean           
-    DatiBaseStrumentiProceduraA2.31Type:
-      description: Dato in comune con il Business Group Techniques delle eforms 
-      additionalProperties: false
-      required: [modalitaRealizzazione,astaElettronica]
-      properties:
-        modalitaRealizzazione: 
-          $ref: '#/components/schemas/ModalitaRealizzazioneEnum'    
-        sistemaDinamicoAcquisizione: 
-          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
-        astaElettronica:
-          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: boolean                     
-    DatiBaseStrumentiProceduraA2.32Type:
-      description: Dato in comune con il Business Group Techniques delle eforms 
-      #required: []
-      additionalProperties: false
-      properties:
-        astaElettronica:
-          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: boolean           
     DatiBaseAggiudicazioneSubappaltoType:
       description:  Dato in comune con il Business Group Subcontracting delle eforms
       additionalProperties: false
       properties:
         subAppalto:
           description: L'affidatario ha richiesto in sede di offerta la possibilità di subappaltare parte delle prestazioni?
-          type: boolean             
+          type: boolean   
+    DatiBaseAggiudicazioneSubappaltoA2.29Type:
+      description:  Dato in comune con il Business Group Subcontracting delle eforms
+      additionalProperties: false
+      required: [subAppalto]
+      properties:
+        subAppalto:
+          description: L'affidatario ha richiesto in sede di offerta la possibilità di subappaltare parte delle prestazioni?
+          type: boolean  
+    DatiBaseAggiudicazioneSubappaltoA2.30Type:
+      description:  Dato in comune con il Business Group Subcontracting delle eforms
+      additionalProperties: false
+      required: [subAppalto]
+      properties:
+        subAppalto:
+          description: L'affidatario ha richiesto in sede di offerta la possibilità di subappaltare parte delle prestazioni?
+          type: boolean 
+    DatiBaseAggiudicazioneSubappaltoA2.31Type:
+      description:  Dato in comune con il Business Group Subcontracting delle eforms
+      additionalProperties: false
+      required: [subAppalto]
+      properties:
+        subAppalto:
+          description: L'affidatario ha richiesto in sede di offerta la possibilità di subappaltare parte delle prestazioni?
+          type: boolean           
     DatiBaseSottomissioniRicevuteType:
       description:  Dato in comune con il Business Group Received Submissions delle eforms
       #required: []
@@ -1721,27 +1713,6 @@ components:
           description: Offerta di massimo ribasso - corrisponde ai campi bt-710 e bt-711 del TED.
           type: string
           format: decimal          
-    DatiBaseStrumentiProceduraA2.29Type:
-      description: Dato in comune con il Business Group Techniques delle eforms 
-      additionalProperties: false
-      required: [modalitaRealizzazione,strumentiSvolgimentoProcedure,astaElettronica]
-      properties:
-        modalitaRealizzazione: 
-          $ref: '#/components/schemas/ModalitaRealizzazioneEnum'    
-        sistemaDinamicoAcquisizione: 
-          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
-        astaElettronica:
-          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: boolean             
-    DatiBaseProceduraA2Type:
-      description: Dato in comune con il Business Group Procedure delle eforms 
-      type: object
-      #required: []
-      additionalProperties: false
-      properties:
-        proceduraAccelerata:
-          description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
-          type: boolean           
     DatiBaseType:
       description: Dato in comune con il Business Group Purpose delle eforms
       type: object
@@ -1993,20 +1964,57 @@ components:
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string           
-    DatiBaseAggiudicazioneP3ContrattiEsclusiType: 
-      description: Dato in comune con il Business Group Award Criterion delle eforms
-      required: [criteriAggiudicazione]    
+    DatiBaseProceduraA2Type:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      #required: []
       additionalProperties: false
       properties:
-        criteriAggiudicazione: 
-          $ref: '#/components/schemas/CriteriAggiudicazioneEnum'          
-    DatiBaseAggiudicazioneP4.1Type: 
-      description: Dato in comune con il Business Group Award Criterion delle eforms
-      required: [criteriAggiudicazione]    
+        proceduraAccelerata:
+          description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
+          type: boolean  
+    DatiBaseProceduraA2.29Type:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      required: [sceltaContraente]
       additionalProperties: false
       properties:
-        criteriAggiudicazione: 
-          $ref: '#/components/schemas/CriteriAggiudicazioneEnum'    
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'
+        proceduraAccelerata:
+          description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
+          type: boolean
+        giustificazioneProceduraAccelerata:
+          description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
+          type: string 
+    DatiBaseProceduraA2.30Type:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      required: [sceltaContraente]
+      additionalProperties: false
+      properties:
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'
+        proceduraAccelerata:
+          description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
+          type: boolean
+        giustificazioneProceduraAccelerata:
+          description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
+          type: string   
+    DatiBaseProceduraA2.31Type:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      required: [sceltaContraente]
+      additionalProperties: false
+      properties:
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'
+        proceduraAccelerata:
+          description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
+          type: boolean
+        giustificazioneProceduraAccelerata:
+          description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
+          type: string           
     DatiBaseContrattoType:
       description: Dato in comune con il Business Group Place of Performance delle eforms
       type: object
@@ -2028,6 +2036,13 @@ components:
       properties:
         criteriAggiudicazione:
           $ref: '#/components/schemas/CriteriAggiudicazioneEnum'
+    DatiBaseAggiudicazioneP3ContrattiEsclusiType: 
+      description: Dato in comune con il Business Group Award Criterion delle eforms
+      required: [criteriAggiudicazione]    
+      additionalProperties: false
+      properties:
+        criteriAggiudicazione: 
+          $ref: '#/components/schemas/CriteriAggiudicazioneEnum'           
     DatiBaseAggiudicazioneP3.4Type: 
       description: Dato in comune con il Business Group Award Criterion delle eforms
       required: [criteriAggiudicazione]    
@@ -2042,6 +2057,13 @@ components:
       properties:
         criteriAggiudicazione: 
           $ref: '#/components/schemas/CriteriAggiudicazioneEnum'          
+    DatiBaseAggiudicazioneP4.1Type: 
+      description: Dato in comune con il Business Group Award Criterion delle eforms
+      required: [criteriAggiudicazione]    
+      additionalProperties: false
+      properties:
+        criteriAggiudicazione: 
+          $ref: '#/components/schemas/CriteriAggiudicazioneEnum'              
     DatiBaseStrumentiProceduraType:
       description: Dato in comune con il Business Group Techniques delle eforms
       additionalProperties: false
@@ -2179,6 +2201,49 @@ components:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
           type: boolean            
+    DatiBaseStrumentiProceduraA2.29Type:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      additionalProperties: false
+      required: [accordoQuadro,strumentiSvolgimentoProcedure,astaElettronica]
+      properties:
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'    
+        sistemaDinamicoAcquisizione: 
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean                       
+    DatiBaseStrumentiProceduraA2.30Type:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      additionalProperties: false
+      required: [accordoQuadro,strumentiSvolgimentoProcedure,astaElettronica]
+      properties:
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'   
+        sistemaDinamicoAcquisizione: 
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean           
+    DatiBaseStrumentiProceduraA2.31Type:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      additionalProperties: false
+      required: [accordoQuadro,astaElettronica]
+      properties:
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'    
+        sistemaDinamicoAcquisizione: 
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean            
+    DatiBaseStrumentiProceduraA2.32Type:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      additionalProperties: false
+      properties:
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean                 
     DatiTerminiInvioType:
       description: Dato in comune con il Business Group Submission Terms delle eforms 
       additionalProperties: false
@@ -2256,6 +2321,15 @@ components:
         contrattiSuccessivi:
           description: contratti successivi - corrisponde al campo bt-41 - Following Contract del TED
           type: string           
+    DatiBaseRisultatoProceduraType:
+      description:  Dato in comune con il Business Group Procedure Lot Result delle eforms
+      required: [esito]
+      additionalProperties: false
+      properties:
+        esito:
+          $ref: '#/components/schemas/EsitoProceduraEnum'
+        giustificazione:
+          $ref: '#/components/schemas/GiustificazioneEsitoProceduraEnum'                     
     AnacFormP2DatiBaseType:
       description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia > 5K
       type: object
@@ -2391,15 +2465,6 @@ components:
           $ref: '#/components/schemas/DatiTerminiInvioType' 
         datiBaseAccessibilita:
           $ref: '#/components/schemas/DatiBaseAccessibilitaType'          
-    DatiBaseRisultatoProceduraType:
-      description:  Dato in comune con il Business Group Procedure Lot Result delle eforms
-      #required: []
-      additionalProperties: false
-      properties:
-        esito:
-          $ref: '#/components/schemas/EsitoProceduraEnum'
-        giustificazione:
-          $ref: '#/components/schemas/GiustificazioneEsitoProceduraEnum'           
     AnacFormA2DatiBaseType:
       description: Oggetto che contiene gli oggetti comuni con il TED per le aggiudicazioni sottosoglia
       type: object
