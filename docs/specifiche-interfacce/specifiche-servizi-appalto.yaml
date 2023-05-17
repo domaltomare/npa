@@ -239,17 +239,17 @@ paths:
       tags:
         -  pianificazioneAppalto
       summary: API Rest per la ricerca delle Pianificazioni. SINCRONO
-      description: Viene recuperata la lista con i dati di sintesi delle Pianificazioni. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi delle Pianificazioni.Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base alla competenza della SA che sta operando SINCRONO
       operationId: idPianoRicerca
       parameters:
         - in: query
           name: stato
-          description: stato della Pianificazione
+          description: stato della Pianificazione - - fare riferimento ai valori contenuti nel file [statoPiano.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoPiano.json)
           schema:
             $ref: '#/components/schemas/StatoPianoEnum'
         - in: query
           name: tipo
-          description: tipologia della Pianificazione
+          description: tipologia della Pianificazione - fare riferimento ai valori contenuti nel file [tipoPiano.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoPiano.json)
           schema:
             $ref: '#/components/schemas/TipoPianoEnum'    
         - in: query
@@ -511,7 +511,7 @@ paths:
       tags:
         -  comunicaAppalto
       summary: API Rest per la ricerca delle Gare-Lotto dell'Appalto. SINCRONO
-      description: viene recuperata la lista con i dati di sintesi dell'Appalto e dei rispettivi lotti. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi dell'Appalto e dei rispettivi lotti. Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. SINCRONO
       operationId: idAppaltoRicerca
       parameters:
         - in: query
@@ -533,7 +533,7 @@ paths:
             type: string
         - in: query
           name: stato
-          description: stato dell'Appalto 
+          description: stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
           schema:
             $ref: '#/components/schemas/StatoAppaltoEnum'
         - in: query
@@ -934,7 +934,7 @@ paths:
       tags:
         - pubblicaAvviso
       summary: API Rest per la ricerca degli avvisi dell'appalto. SINCRONO
-      description: viene recuperata la lista con i dati di sintesi degli Avvisi. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi degli Avvisi. Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. SINCRONO
       operationId: idAvvisoRicerca
       parameters:
         - in: query
@@ -958,7 +958,7 @@ paths:
             example: 9050626CD6
         - in: query
           name: stato
-          description: stato dell'Appalto 
+          description: stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
           schema:
             $ref: '#/components/schemas/StatoAppaltoEnum'
         - in: query
@@ -977,14 +977,17 @@ paths:
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: statoAvviso
+          description: Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file [statoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAvviso.json)
           schema:
             $ref: '#/components/schemas/StatoAvvisoEnum'
         - in: query
           name: tipoAvviso
+          description: Tipologia di avviso - fare riferimento ai valori contenuti nel file [tipoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAvviso.json)
           schema:
             $ref: '#/components/schemas/TipoAvvisoEnum'
         - in: query
           name: azioneAvviso
+          description: Tipo di azione dell'avviso - fare riferimento ai valori contenuti nel file [tipoAzioneAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneAvviso.json)
           schema:
             $ref: '#/components/schemas/TipoAzioneAvvisoEnum'
         - in: query
@@ -1243,7 +1246,7 @@ paths:
       tags:
         - comunicaPostPubblicazione
       summary: API Rest per la ricerca delle Schede dati inserite nelle fasi successive alla pubblicazione. SINCRONO
-      description: Viene recuperata la lista con i dati di sintesi delle schede. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi delle schede.Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. SINCRONO
       operationId: idSchedaRicerca
       parameters:
         - in: query    
@@ -1261,7 +1264,7 @@ paths:
             example: 9050626CD6
         - in: query
           name: stato
-          description: stato dell'Appalto
+          description: stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
           schema:
             $ref: '#/components/schemas/StatoAppaltoEnum'
         - in: query
@@ -1280,12 +1283,12 @@ paths:
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: tipoScheda
-          description: Il Tipo di scheda che si vuole recuperare (DA DEFINIRE)
+          description: Tipologia di Scheda - fare riferimento ai valori contenuti nel file [tipoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoScheda.json)
           schema:
             $ref: '#/components/schemas/TipoSchedaEnum'
         - in: query
           name: statoScheda
-          description: stato in cui si trova la scheda (DA DEFINIRE) 
+          description: Stato della Scheda - fare riferimento ai valori contenuti nel file [statoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoScheda.json)
           schema:
             $ref: '#/components/schemas/StatoSchedaEnum'
         - in: query
@@ -1452,22 +1455,16 @@ paths:
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         - in: query
           name: tipoOperazione
-          description: Tipo operazione di cui si vuole conoscere l'esito
+          description: Tipo operazione di cui si vuole conoscere l'esito - fare riferimento ai valori contenuti nel file [tipoOperazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazione.json)
           required: true
           schema:
             $ref: '#/components/schemas/TipoOperazioneEnum'
         - in: query
           name: tipoRicerca
-          description: Tipo di ricerca da eseguire
+          description: Tipo di ricerca da eseguire - fare riferimento ai valori contenuti nel file [tipoRicercaOperazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRicercaOperazione.json)
           required: true
           schema:
-            type: string
-            minimum: 1
-            enum: ['ULTIMO_ESITO','TUTTI_ESITI']
-            description: >
-                tipoRicerca - Tipo Ricerca da eseguire :
-                 * 'ULTIMO_ESITO' - viene estratto l'ultimo esito . DEFAULT
-                 * 'TUTTI_ESITI' - vengono estratti tutti gli esiti per l'operazione richiesta ordinati per data emissione decrescente 
+            $ref: '#/components/schemas/TipoRicercaOperazioneEnum'
       responses:
         '200':
           description: Esecuzione avvenuta con successo
@@ -1718,7 +1715,7 @@ paths:
     get:
       tags:
         -  gestioneUtenti
-      summary: API Rest per la ricerca dei soggetti incaricati. SINCRONO
+      summary: API Rest per la ricerca dei soggetti incaricati.Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. SINCRONO
       description: viene recuperata la lista con i dati di sintesi dei soggetti incaricati. SINCRONO
       operationId: idIncaricatoRicerca
       parameters:
@@ -1743,17 +1740,17 @@ paths:
             example: 'RSSMRA94E07A511G'
         - in: query
           name: ruolo
-          description: ruolo del soggetto
+          description: Ruolo di un soggetto - fare riferimento ai valori contenuti nel file [tipoRuolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRuolo.json)
           schema:
             $ref: '#/components/schemas/TipoRuoloEnum' 
         - in: query
           name: servizio
-          description: servizio delegato al soggetto
+          description: servizio delegato al soggetto - fare riferimento ai valori contenuti nel file [tipoFunzione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoScheda.json)
           schema:
             $ref: '#/components/schemas/TipoServizioSoggettoEnum'
         - in: query
           name: operazione
-          description: operazione delegata al soggetto
+          description: operazione delegata al soggetto - fare riferimento ai valori contenuti nel file [tipoOperazioneSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
           schema:
             $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'            
         - in: query
@@ -2002,6 +1999,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoSchedaEnum'
     TipoOperazioneEnum:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoOperazioneEnum'
+    TipoRicercaOperazioneEnum:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoRicercaOperazioneEnum'
     TipoServizioSoggettoEnum:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipoServizioSoggettoEnum'
     TipoOperazioneSoggettoEnum:
