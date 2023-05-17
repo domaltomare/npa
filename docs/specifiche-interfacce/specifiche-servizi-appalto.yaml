@@ -533,7 +533,7 @@ paths:
             type: string
         - in: query
           name: stato
-          description: stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
+          description: Stato dell'Appalto - Se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione di almeno un altro parametro - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
           schema:
             $ref: '#/components/schemas/StatoAppaltoEnum'
         - in: query
