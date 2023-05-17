@@ -194,6 +194,8 @@ components:
         description: Tipologia di Operazioni delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoFunzione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
       TipoOperazioneEnum:
         description: Tipo Operazione di cui si richiedere l'esito dell'operazione - fare riferimento ai valori contenuti nel file [tipoOperazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazione.json)
+      TipoRicercaOperazioneEnum:
+        description: Tipo di ricerca da eseguire - fare riferimento ai valori contenuti nel file [tipoRicercaOperazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRicercaOperazione.json)
       TipoPianoEnum:
         description: Tipo di pianificazione - fare riferimento ai valori contenuti nel file [tipoPiano.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoPiano.json)
       TipoAzioneAvvisoEnum:
