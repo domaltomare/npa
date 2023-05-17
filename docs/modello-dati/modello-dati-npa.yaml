@@ -187,11 +187,11 @@ components:
       StatoSchedaEnum:
         description: Stato della Scheda - fare riferimento ai valori contenuti nel file [statoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoScheda.json)
       TipoSchedaEnum:
-        description: Tipologia di Scheda - fare riferimento ai valori contenuti nel file [tipoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoScheda.json)
+        description: Tipologia di Scheda - fare riferimento ai valori contenuti nel file [tipoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoScheda.json)
       TipoServizioSoggettoEnum:
-        description: Tipologia di Servizi delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoFunzione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoScheda.json)
+        description: Tipologia di Servizi delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoServizioSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoServizioSoggetto.json)
       TipoOperazioneSoggettoEnum:
-        description: Tipologia di Operazioni delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoFunzione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
+        description: Tipologia di Operazioni delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoOperazioneSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
       TipoOperazioneEnum:
         description: Tipo Operazione di cui si richiedere l'esito dell'operazione - fare riferimento ai valori contenuti nel file [tipoOperazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazione.json)
       TipoRicercaOperazioneEnum:
@@ -213,7 +213,7 @@ components:
       StatoLottoEnum:
         description: Stato in cui si trova il Lotto - fare riferimento ai valori contenuti nel file [statoLotto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoLotto.json)
       OggettoPrincipaleContrattoEnum:
-        description:  Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [statoLotto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json)
+        description:  Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [oggettoPrincipaleContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json)
       EsitoEnum:
         description: Esito dell'operazione
         type: string
