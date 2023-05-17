@@ -18,11 +18,15 @@ components:
           _origineScheda:
             description: origine Scheda 
             type: string
-            example: ''          
-          _versione:
+            example: ''
+          _schedaCodice:
+            description: codice della scheda.
+            type: string
+            example: 'P1.10'            
+          _schedaVersione:
             description: versione della scheda. necessaria al motore interno ANAC.
             type: string
-            example: '01.00.00'
+            example: '1.0'
           dataCreazione:
             description: data creazione della scheda (A datetime specified by ISO 8601 as profiled by RFC 3339)
             type: string
