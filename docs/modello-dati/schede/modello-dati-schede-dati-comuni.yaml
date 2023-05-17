@@ -2034,7 +2034,43 @@ components:
           $ref: '#/components/schemas/SceltaContraenteEnum'
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
-          type: string          
+          type: string  
+    DatiBaseProceduraA2.34Type:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      additionalProperties: false
+      properties:
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'
+        giustificazioneProceduraAccelerata:
+          description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
+          type: string     
+    DatiBaseProceduraA2.35Type:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      additionalProperties: false
+      properties:
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'
+        giustificazioneProceduraAccelerata:
+          description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
+          type: string  
+    DatiBaseProceduraA2.36Type:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      additionalProperties: false
+      reuired: [sceltaContraente]
+      properties:
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'     
+    DatiBaseProceduraA2.37Type:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      additionalProperties: false
+      reuired: [sceltaContraente]
+      properties:
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'            
     DatiBaseContrattoType:
       description: Dato in comune con il Business Group Place of Performance delle eforms
       type: object
