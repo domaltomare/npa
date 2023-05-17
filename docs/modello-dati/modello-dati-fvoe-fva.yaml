@@ -14,10 +14,44 @@ components:
       description: Stato in cui si trova la richiesta di accesso al fvoe - fare riferimento ai valori contenuti nel file [statoRichiesta.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoRichiesta.json)
     TipoDocumentoEnum: 
       description: tipologie di documento - fare riferimento ai valori contenuti nel file [tipoDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoDocumento.json)
+    TipoFascicoloEnum:
+      description: tipologie di fascicolo - fare riferimento ai valori contenuti nel file [tipoFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoFascicolo.json)
+    TipoOggettoFascicoloEnum:
+      description: tipologie dell''oggetto fascicolo - Identificativo per determinare il tipo di modello dati del Fascicolo- fare riferimento ai valori contenuti nel file [tipoOggettoFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOggettoFascicolo.json)
+    TipoAzioneFascicoloEnum:
+      description: tipologie delle azioni eseguite sul fascicolo - fare riferimento ai valori contenuti nel file [tipoAzioneFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneFascicolo.json)    
+    AppaltoType : 
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
     FascicoloType: 
       description: Oggetto che riporta i dati del Fascicolo generico
       type: object
       additionalProperties: false
+      properties:
+        idFascicolo:
+          description: identificativo univoco del Fascicolo
+          type: string
+          example: "507f1f77bcf86cd799439011"
+        codiceFascicolo:
+          description: codice univoco esterno del Fascicolo . Se tipoFascicolo='FVA' é valorizzato con il codiceAppalto
+          type: string
+          example: "FAS_202301_45632342"  
+        tipoOggetto:
+          $ref: '#/components/schemas/TipoOggettoFascicoloEnum' 
+        tipoFascicolo:
+          $ref: '#/components/schemas/TipoFascicoloEnum'
+        stato:
+          $ref: '#/components/schemas/StatoFascicoloEnum' 
+        azione:
+          $ref: '#/components/schemas/TipoAzioneFascicoloEnum'  
+        utente:
+          description: utente di creazione/modifica del fascicolo 
+          type: string
+          example: "UDI.8909"
+        data:
+          description: data di inserimento/modifica del fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: "2022-01-23T12:02:05Z"      
     FVOEType:
       allOf: # estende lo schema dati di FascicoloType
         - $ref: '#/components/schemas/FascicoloType'
@@ -30,6 +64,14 @@ components:
       description: Oggetto che riporta i dati del FVA
       type: object
       additionalProperties: false
+      properties:
+        appalto:
+          $ref: '#/components/schemas/AppaltoType' 
+        documenti:
+          description: Lista documenti
+          type: array
+          items:
+            $ref: '#/components/schemas/DocumentoAType'      
     DocumentoType:
       description: Oggetto che riporta i dati del Documento
       type: object
