@@ -1385,6 +1385,14 @@ components:
       properties: 
         modalitaRiaggiudicazioneAffidamento:
           $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'          
+    AggiudicazioneA.33Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
+      allOf: # estende la classe AggiudicazioneBaseType
+      - $ref: '#/components/schemas/AggiudicazioneBaseType'  
+    AggiudicazioneA.34Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
+      allOf: # estende la classe AggiudicazioneBaseType
+      - $ref: '#/components/schemas/AggiudicazioneBaseType' 
     QuadroEconomicoBaseType:
       description: Oggetto che riporta tutti i dati del quadro economico standard
       type: object
