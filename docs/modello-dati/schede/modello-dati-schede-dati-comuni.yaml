@@ -2024,6 +2024,16 @@ components:
           $ref: '#/components/schemas/SceltaContraenteEnum'
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
+          type: string   
+    DatiBaseProceduraA2.33Type:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      additionalProperties: false
+      properties:
+        sceltaContraente:
+          $ref: '#/components/schemas/SceltaContraenteEnum'
+        giustificazioneProceduraAccelerata:
+          description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string          
     DatiBaseContrattoType:
       description: Dato in comune con il Business Group Place of Performance delle eforms
