@@ -1699,6 +1699,15 @@ components:
         dataAggiudicazione:
           description: Data della decisione ufficiale di selezione dell'offerta vincitrice - corrisponde al campo bt-1451 - Winner Decision Date del TED
           type: string
+          format: datetime      
+    DatiBaseAggiudicazioneAppaltoA3.5Type:
+      description:  Dato in comune con il Business Group Contract delle eforms
+      required: [dataAggiudicazione]
+      additionalProperties: false
+      properties:
+        dataAggiudicazione:
+          description: Data della decisione ufficiale di selezione dell'offerta vincitrice - corrisponde al campo bt-1451 - Winner Decision Date del TED
+          type: string
           format: datetime            
     DatiBaseAggiudicazioneAppaltoA2.36Type:
       description:  Dato in comune con il Business Group Contract delle eforms
