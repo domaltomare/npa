@@ -2339,10 +2339,10 @@ components:
     DatiBaseStrumentiProceduraA3.4Type:
       description: Dato in comune con il Business Group Techniques delle eforms 
       additionalProperties: false
-      required: [modalitaRealizzazione,strumentiSvolgimentoProcedure,astaElettronica]
+      required: [accordoQuadro,sistemaDinamicoAcquisizione,astaElettronica]
       properties:
-        modalitaRealizzazione: 
-          $ref: '#/components/schemas/ModalitaRealizzazioneEnum'    
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'    
         sistemaDinamicoAcquisizione: 
           $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
         astaElettronica:
