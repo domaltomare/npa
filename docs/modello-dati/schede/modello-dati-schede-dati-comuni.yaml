@@ -1642,7 +1642,49 @@ components:
       - $ref: '#/components/schemas/QuadroEconomicoBaseType'        
       type: object
       required: [impLavori, impServizi, impForniture,sommeADisposizione]
-      additionalProperties: false        
+      additionalProperties: false  
+    QuadroEconomicoModificaContrattualeType:
+      description: Oggetto che riporta tutti i dati del quadro economico standard per la modifica contrattuale
+      type: object
+      additionalProperties: false
+      required: [impLavori,impServizi,impForniture]
+      properties:
+        impLavori:
+          description: Importo componente lavori in € 
+          type: string
+          format: decimal
+        impServizi:
+          description: Importo componente servizi in € 
+          type: string
+          format: decimal
+        impForniture:
+          description: Importo componente forniture in €
+          type: string
+          format: decimal
+        impTotaleSicurezza: 
+          description: Importo totale per l'attuazione della sicurezza
+          type: string
+          format: decimal
+        impProgettazione:
+          description: Importo della progettazione in caso di appalto integrato
+          type: string
+          format: decimal          
+        ulterioriSommeNoRibasso:
+          description: Ulteriori somme non soggette a ribasso
+          type: string
+          format: decimal
+        sommeADisposizione:
+          description: Somme a disposizione - Iva e altre Imposte e tasse
+          type: string
+          format: decimal          
+        importoComplessivo:
+          description: Importo complessivo dell'intervento 
+          type: string
+          format: decimal
+        numGiorniProroga:
+          description: Numero di giorni di proroga concessi/tempo aggiuntivo rispetto ai termini contrattuali 
+          type: string
+          format: integer      
     DatiBaseAvvisoType:
       description: Dato in comune con il Business Group Notice delle eforms
       type: object
