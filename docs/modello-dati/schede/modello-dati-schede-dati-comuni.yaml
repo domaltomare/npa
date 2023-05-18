@@ -2441,7 +2441,16 @@ components:
         esito:
           $ref: '#/components/schemas/EsitoProceduraEnum'
         giustificazione:
-          $ref: '#/components/schemas/GiustificazioneEsitoProceduraEnum'                     
+          $ref: '#/components/schemas/GiustificazioneEsitoProceduraEnum'   
+    DatiBaseRisultatoProceduraA3.5Type:
+      description:  Dato in comune con il Business Group Procedure Lot Result delle eforms
+      required: [esito,giustificazione]
+      additionalProperties: false
+      properties:
+        esito:
+          $ref: '#/components/schemas/EsitoProceduraEnum'
+        giustificazione:
+          $ref: '#/components/schemas/GiustificazioneEsitoProceduraEnum'            
     AnacFormP2DatiBaseType:
       description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia > 5K
       type: object
