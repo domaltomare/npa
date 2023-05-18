@@ -23,7 +23,7 @@ info:
     - public
   # Ogni API deve avere un UUID, invariante nel tempo e
   #   rispetto al `title`.
-  x-api-id: 00000000-0000-0000-0000-000000000000
+  x-api-id: fb4f8763-679b-4398-958e-fbd93ccd40e1
   license:
     name: Licenza Pubblica dell'Unione Europea v. 1.2
     url: 'https://eupl.eu/1.2/it/'
