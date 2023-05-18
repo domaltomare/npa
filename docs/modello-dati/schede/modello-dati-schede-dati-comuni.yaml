@@ -1708,7 +1708,7 @@ components:
         dataAggiudicazione:
           description: Data della decisione ufficiale di selezione dell'offerta vincitrice - corrisponde al campo bt-1451 - Winner Decision Date del TED
           type: string
-          format: datetime 	      
+          format: datetime 	  	          
     DatiBaseAggiudicazioneSubappaltoType:
       description:  Dato in comune con il Business Group Subcontracting delle eforms
       additionalProperties: false
@@ -1733,6 +1733,14 @@ components:
           description: L'affidatario ha richiesto in sede di offerta la possibilità di subappaltare parte delle prestazioni?
           type: boolean 
     DatiBaseAggiudicazioneSubappaltoA2.31Type:
+      description:  Dato in comune con il Business Group Subcontracting delle eforms
+      additionalProperties: false
+      required: [subAppalto]
+      properties:
+        subAppalto:
+          description: L'affidatario ha richiesto in sede di offerta la possibilità di subappaltare parte delle prestazioni?
+          type: boolean   
+    DatiBaseAggiudicazioneSubappaltoA3.4Type:
       description:  Dato in comune con il Business Group Subcontracting delle eforms
       additionalProperties: false
       required: [subAppalto]
