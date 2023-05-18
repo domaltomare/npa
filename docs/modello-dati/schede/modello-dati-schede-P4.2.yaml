@@ -14,31 +14,13 @@ components:
       properties:     
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean   
-    AnacFormP4.2Type:
-      description: Contiene i dati relativi alle adesioni AQ/convenzione con successivo confronto competitivo (ordinario/speciale) - Articolo 49 della direttiva 2014/24/UE e Articolo 69 della direttiva 2014/25/UE
-      allOf: # estende la classe AnacFormBaseType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType' 
-      - $ref: '#/components/schemas/AnacFormP4.2DatiBaseType'      
-      type: object
-      required: [categoria, finanziamenti, opzioni/rinnovi, appalto,lotti]
-      additionalProperties: false
-      properties:  
-        appalto:
-          $ref: '#/components/schemas/AppaltoP4.2Type'
-        lotti:
-          description: Dati relativi ai lotti
-          type: array
-          items:
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP4BaseType'         
-        quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType'      
+          type: boolean  
     AnacFormP4.2DatiBaseType:
       description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni delle adesione AQ/convenzione con successivo confronto competitivo
       type: object
       #required: []
       additionalProperties: false
-      properties:
+      properties: 
         datiBase:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseType'      
         datiBaseAvviso:
@@ -56,7 +38,25 @@ components:
         datiBaseTerminiInvio:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseTerminiInvioP4Type'   
         datiBaseAccessibilita:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'                
+    AnacFormP4.2Type:
+      description: Contiene i dati relativi alle adesioni AQ/convenzione con successivo confronto competitivo (ordinario/speciale) - Articolo 49 della direttiva 2014/24/UE e Articolo 69 della direttiva 2014/25/UE
+      allOf: # estende la classe AnacFormBaseType
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType' 
+      - $ref: '#/components/schemas/AnacFormP4.2DatiBaseType'      
+      type: object
+      required: [categoria, finanziamenti, opzioni/rinnovi, appalto,lotti]
+      additionalProperties: false
+      properties:  
+        appalto:
+          $ref: '#/components/schemas/AppaltoP4.2Type'
+        lotti:
+          description: Dati relativi ai lotti
+          type: array
+          items:
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP4BaseType'         
+        quadroEconomicoStandard:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType' 
     SchedaP4.2Type:
       description: Scheda relativa alle adesioni AQ/convenzione con successivo confronto competitivo (es. proc. Negoziata) - Articolo 49 della direttiva 2014/24/UE e Articolo 69 della direttiva 2014/25/UE
       type: object

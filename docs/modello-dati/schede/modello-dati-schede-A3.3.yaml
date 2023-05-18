@@ -4,21 +4,76 @@ info:
   version: 1.0.0
 components:
   schemas:
+    AggiudicatarioA3.3Type:
+      description: Dati dell'aggiudicatario
+      allOf: # estende la classe AggiudicatarioType
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'      
+      type: object
+      additionalProperties: false
+      properties:     
+        ribassoDasta:
+          description: Ribasso d’Asta 
+          type: string
+        offertaInAumento:
+          description: Offerta in Aumento
+          type: string
+        offertaQualitativa:
+          description: Offerta qualitativa
+          type: string
+          format: decimal   
     AggiudicazioneA3.3Type:
-      description: Oggetto che riporta i dati dell'aggiudicazione
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
+      required: [cig, dataAdesione]
+      properties: 
+        cig:
+          description: CIG relativo all’accordo quadro/convenzione cui si aderisce
+          type: string
+        dataAdesione: 
+          description: Data di adesione all'accordo quadro/convenzione
+          type: string
+          format: datetime
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'   
+    AnacFormA3.3DatiBaseType:
+      description: Oggetto che contiene gli oggetti comuni con il TED relativi ai contratti esclusi - Adesione senza confronto competitivo
+      type: object
+      additionalProperties: false
+      properties:
+        datiBaseRisultatoProcedura:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraType'      
+        datiBaseAggiudicazioneSubappalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoType'
+        datiBaseAggiudicazioneAppalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoA3.3Type'          
     AnacFormA3.3Type:
-      description: Contiene tutti i dati di aggiudicazione relativa ai Contratti esclusi - adesione con confronto competitivo
+      description: Contiene tutti i dati relativi all'aggiudicazione per i contratti esclusi - Adesione senza confronto competitivo
       type: object
+      allOf: 
+      - $ref: '#/components/schemas/AnacFormA3.3DatiBaseType'
       additionalProperties: false
-      properties:  
+      properties:
         aggiudicazione:
           $ref: '#/components/schemas/AggiudicazioneA3.3Type'
+        quadroEconomicoStandard:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoAType'
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioA3.3Type'
+        incaricati:
+          description: dati degli incaricati
+          type: array
+          items: 
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IncaricatoType'    
+        quadroEconomicoConcessioni:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType'
     SchedaA3.3Type:
-      description: Scheda di aggiudicazione relativa ai Contratti esclusi - adesione con confronto competitivo
+      description: Scheda di aggiudicazione relativa ai contratti esclusi - Adesione senza confronto competitivo
       type: object
-      required: [anacFormA3.3]
+      required: [anacFormA3]
       additionalProperties: false
       properties:
         anacFormA3:

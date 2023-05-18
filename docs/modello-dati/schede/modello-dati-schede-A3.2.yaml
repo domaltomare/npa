@@ -5,20 +5,73 @@ info:
 components:
   schemas:
     AggiudicazioneA3.2Type:
-      description: Oggetto che riporta i dati dell'aggiudicazione
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
+      properties: 
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'    
+    AggiudicatarioA3.2Type:
+      description: Dati dell'aggiudicatario
+      allOf: # estende la classe AggiudicatarioType
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'      
+      type: object
+      required: [importoAggiudicazioneAffidamento]
+      additionalProperties: false
+      properties:
+        importoAggiudicazioneAffidamento:
+          description: Importo di aggiudicazione/affidamento 
+          type: string
+          format: decimal      
+        ribassoDasta:
+          description: Ribasso d’Asta 
+          type: string
+        offertaInAumento:
+          description: Offerta in Aumento
+          type: string
+        offertaQualitativa:
+          description: Offerta qualitativa
+          type: string
+          format: decimal 
+    AnacFormA3.2DatiBaseType:
+      description: Oggetto che contiene gli oggetti comuni con il TED relativi ai contratti esclusi in Concessione
+    
+      type: object
+      additionalProperties: false
+      properties:
+        datiBaseAggiudicazioneAppalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoA3.2Type'    
+        datiBaseRisultatoProcedura:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraType'      
+        datiBaseSottomissioniRicevute:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSottomissioniRicevuteType'
+        datiBaseAggiudicazioneSubappalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoType'           
     AnacFormA3.2Type:
-      description: Contiene tutti i dati di aggiudicazione relativa ai Contratti esclusi in Concessione o Contratti esclusi in Concessione con la tecnica dell'AQ
+      description: Contiene tutti i dati relativi all'aggiudicazione per i contratti esclusi in Concessione
       type: object
+      allOf: 
+      - $ref: '#/components/schemas/AnacFormA3.2DatiBaseType'      
       additionalProperties: false
-      properties:  
+      properties:
         aggiudicazione:
           $ref: '#/components/schemas/AggiudicazioneA3.2Type'
+        quadroEconomicoConcessioni:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType'
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioA3.2Type'
+        incaricati:
+          description: dati degli incaricati
+          type: array
+          items: 
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IncaricatoType'
     SchedaA3.2Type:
-      description: Scheda di aggiudicazione relativa ai Contratti esclusi in Concessione o Contratti esclusi in Concessione con la tecnica dell'AQ
+      description: Scheda di aggiudicazione relativa ai contratti esclusi in Concessione
       type: object
-      required: [anacFormA3.2]
+      required: [anacFormA3]
       additionalProperties: false
       properties:
         anacFormA3:

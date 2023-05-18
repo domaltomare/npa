@@ -4,21 +4,68 @@ info:
   version: 1.0.0
 components:
   schemas:
+    AggiudicatarioA3.1Type:
+      description: Dati dell'aggiudicatario
+      allOf: # estende la classe AggiudicatarioType
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'      
+      type: object
+      additionalProperties: false
+      properties:
+        ribassoDasta:
+          description: Ribasso d’Asta 
+          type: string
+        offertaInAumento:
+          description: Offerta in Aumento
+          type: string
+        offertaQualitativa:
+          description: Offerta qualitativa
+          type: string
+          format: decimal    
     AggiudicazioneA3.1Type:
-      description: Oggetto che riporta i dati dell'aggiudicazione
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
+      properties: 
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'
+    AnacFormA3.1DatiBaseType:
+      description: Oggetto che contiene gli oggetti comuni con il TED relativi ai contratti esclusi generali
+      type: object
+      additionalProperties: false
+      properties:
+        datiBaseAggiudicazioneAppalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoA3.1Type'      
+        datiBaseRisultatoProcedura:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraType'      
+        datiBaseSottomissioniRicevute:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSottomissioniRicevuteType'
+        datiBaseAggiudicazioneSubappalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoType'      
     AnacFormA3.1Type:
-      description: Contiene tutti i dati di aggiudicazione relativa ai Contratti esclusi (generale o di tipo accordo quadro).
+      description: Contiene tutti i dati relativi all'aggiudicazione per i contratti esclusi generali
       type: object
+      allOf: 
+      - $ref: '#/components/schemas/AnacFormA3.1DatiBaseType'
       additionalProperties: false
-      properties:  
+      properties:
         aggiudicazione:
           $ref: '#/components/schemas/AggiudicazioneA3.1Type'
+        quadroEconomicoStandard:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoAType' 
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioA3.1Type'
+        incaricati:
+          description: Dati degli incaricati
+          type: array
+          items: 
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IncaricatoType'
     SchedaA3.1Type:
       description: Scheda di aggiudicazione relativa ai contratti esclusi generali
       type: object
-      required: [anacFormA3.1, anacFormA3.1DatiBase]
+      required: [anacFormA3.1]
       additionalProperties: false
       properties:
         anacFormA3:

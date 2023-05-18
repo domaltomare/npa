@@ -5,20 +5,77 @@ info:
 components:
   schemas:
     AggiudicazioneA3.5Type:
-      description: Oggetto che riporta i dati dell'aggiudicazione
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
+      required: [relazioneUnicaSulleProcedure,preinformazione,termineRidottoAvvisoPreinformazione]
+      properties: 
+        relazioneUnicaSulleProcedure:
+          description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
+          type: boolean        
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'  
+        preinformazione:
+          description: E' stata effettuata la preinformazione?
+          type: boolean
+        termineRidottoAvvisoPreinformazione:
+          description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
+          type: boolean  
+    AggiudicatarioA3.5Type:
+      description: Dati dell'aggiudicatario
+      allOf: # estende la classe AggiudicatarioType
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'      
+      type: object
+      additionalProperties: false
+      properties:
+        ribassoDasta:
+          description: Ribasso d’Asta 
+          type: string
+        offertaInAumento:
+          description: Offerta in Aumento
+          type: string
+        offertaQualitativa:
+          description: Offerta qualitativa
+          type: string
+          format: decimal        
+    AnacFormA3.5DatiBaseType:
+      description: Oggetto che contiene gli oggetti comuni con il TED relativi alla scelta del socio privato nella società mista.
+      type: object
+      additionalProperties: false
+      properties:
+        datiBaseRisultatoProcedura:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraA3.5Type'          
+        datiBaseAggiudicazioneSubappalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoType'  
+        datiBaseAggiudicazioneAppalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoA3.5Type'          
+        datiBaseAccessibilita:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'             
     AnacFormA3.5Type:
-      description: Contiene tutti i dati di aggiudicazione relativa alla scelta del socio privato nella società mista
+      description: Contiene tutti i dati relativi alla scelta del socio privato nella società mista.
       type: object
+      allOf: 
+      - $ref: '#/components/schemas/AnacFormA3.5DatiBaseType'
       additionalProperties: false
-      properties:  
+      properties:
         aggiudicazione:
           $ref: '#/components/schemas/AggiudicazioneA3.5Type'
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioA3.5Type'
+        incaricati:
+          description: dati degli incaricati
+          type: array
+          items: 
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IncaricatoType' 
+        quadroEconomicoConcessioni:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType'
     SchedaA3.5Type:
-      description: Scheda di aggiudicazione relativa alla scelta del socio privato nella società mista
+      description: Scheda di aggiudicazione relativa alla scelta del socio privato nella società mista.
       type: object
-      required: [anacFormA3.5]
+      required: [anacFormA3]
       additionalProperties: false
       properties:
         anacFormA3:

@@ -4,22 +4,78 @@ info:
   version: 1.0.0
 components:
   schemas:
+    LottoA3.6Type:
+      description: Oggetto che riporta i dati inerenti i lotti
+      type: object
+      additionalProperties: false
+      required: [afferenteInvestimentiPNRR]
+      properties: 
+        afferenteInvestimentiPNRR:
+          description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
+          type: boolean  
+        cupLotto:
+          description: Cup associati al lotto
+          type: array
+          items: 
+            type: string 
+        paritaDiGenereGenerazionale:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ParitaDiGenereGenerazionaleType'            
     AggiudicazioneA3.6Type:
-      description: Oggetto che riporta i dati dell'aggiudicazione
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
+      required: [relazioneUnicaSulleProcedure,preinformazione,termineRidottoAvvisoPreinformazione]
+      properties: 
+        relazioneUnicaSulleProcedure:
+          description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
+          type: boolean        
+        preinformazione:
+          description: E' stata effettuata la preinformazione?
+          type: boolean
+        termineRidottoAvvisoPreinformazione:
+          description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
+          type: boolean   
+    AnacFormA3.6DatiBaseType:
+      description: Oggetto che contiene gli oggetti comuni con il TED relativi alle Società in-house.
+      type: object
+      additionalProperties: false
+      properties:
+        datiBaseAccessibilita:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'
+        datiBaseAggiudicazioneAppalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'          
     AnacFormA3.6Type:
-      description: Contiene tutti i dati di aggiudicazione relativa ad affidamento a soc. inhouse
+      description: Contiene tutti i dati relativi alle Società in-house.
       type: object
+      required: [aggiudicazione, lotti]
+      allOf: 
+      - $ref: '#/components/schemas/AnacFormA3.6DatiBaseType'      
       additionalProperties: false
-      properties:  
+      properties:
         aggiudicazione:
           $ref: '#/components/schemas/AggiudicazioneA3.6Type'
+        lotti:
+          description: Dati relativi ai lotti
+          type: array
+          items:
+            $ref: '#/components/schemas/LottoA3.6Type'              
+        quadroEconomicoStandard:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoAType'          
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'
+        incaricati:
+          description: dati degli incaricati
+          type: array
+          items: 
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IncaricatoType' 
     SchedaA3.6Type:
-      description: Scheda di aggiudicazione relativa ad affidamento a soc. inhouse
+      description: Scheda di aggiudicazione relativa alle Società in-house
       type: object
-      required: [anacFormA3.6]
+      required: [anacFormA3]
       additionalProperties: false
       properties:
         anacFormA3:
-          $ref: '#/components/schemas/AnacFormA3.6Type'
+          $ref: '#/components/schemas/AnacFormA3.6Type' 
