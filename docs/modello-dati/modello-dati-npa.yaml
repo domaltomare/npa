@@ -215,12 +215,14 @@ components:
       OggettoPrincipaleContrattoEnum:
         description:  Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [oggettoPrincipaleContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json)
       EsitoEnum:
-        description: Esito dell'operazione
         type: string
-        enum:
-          - 'SUCCESS'
-          - 'ERROR'
-          - 'WARNING'
+        minimum: 1
+        enum: ['OK','KO','WN']
+        description: >
+            Esito dell'operazione:
+             * 'OK' - SUCCESS
+             * 'KO' - ERROR
+             * 'WN' - WARNING
       CigType:
         description: coppia lotIdentifier-cig
         type: object
