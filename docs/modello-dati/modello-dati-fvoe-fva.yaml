@@ -140,9 +140,11 @@ components:
       type: object
       additionalProperties: false
       properties:
-        appalto:
-          $ref: '#/components/schemas/AppaltoType'
-        fascicoliA:
+        appalti:
+          type: array
+          items:
+            $ref: '#/components/schemas/AppaltoType'
+        fascicoli:
           type: array
           items:
             $ref: '#/components/schemas/FVAType'
