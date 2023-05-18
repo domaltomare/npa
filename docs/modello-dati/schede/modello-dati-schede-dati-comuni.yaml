@@ -2335,7 +2335,19 @@ components:
       properties:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
-          type: boolean                 
+          type: boolean    
+    DatiBaseStrumentiProceduraA3.4Type:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      additionalProperties: false
+      required: [modalitaRealizzazione,strumentiSvolgimentoProcedure,astaElettronica]
+      properties:
+        modalitaRealizzazione: 
+          $ref: '#/components/schemas/ModalitaRealizzazioneEnum'    
+        sistemaDinamicoAcquisizione: 
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean          
     DatiTerminiInvioType:
       description: Dato in comune con il Business Group Submission Terms delle eforms 
       additionalProperties: false
