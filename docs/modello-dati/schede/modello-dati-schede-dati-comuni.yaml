@@ -2527,7 +2527,21 @@ components:
         esito:
           $ref: '#/components/schemas/EsitoProceduraEnum'
         giustificazione:
-          $ref: '#/components/schemas/GiustificazioneEsitoProceduraEnum'          
+          $ref: '#/components/schemas/GiustificazioneEsitoProceduraEnum' 
+    DatiBaseModificaContrattualeType:
+      description:  Dato in comune con i Business Group Contract e Modification delle eforms
+      required: [dataSottoscrizione,motiviModifica,causaModifica]
+      additionalProperties: false
+      properties:
+        dataSottoscrizione:
+          description: Data sottoscrizione eventuale atto aggiuntivo/ sottomissione - corrisponde al campo bt-145 - Contract Conclusion Date del TED
+          type: string
+          format: datetime  
+        motiviModifica:
+          $ref: '#/components/schemas/MotiviModificaContrattualeEnum'
+        causaModifica:
+          description: Cause della modifica contrattuale
+          type: string          
     AnacFormP2DatiBaseType:
       description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia > 5K
       type: object
