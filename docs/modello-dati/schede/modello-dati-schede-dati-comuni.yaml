@@ -1647,22 +1647,22 @@ components:
       description: Oggetto che riporta tutti i dati del quadro economico standard per la modifica contrattuale
       type: object
       additionalProperties: false
-      required: [impLavori,impServizi,impForniture]
+      required: [impRideterminatoLavori,impRideterminatoServizi,impRideterminatoForniture]
       properties:
-        impLavori:
-          description: Importo componente lavori in € 
+        impRideterminatoLavori:
+          description: Importo contrattuale rideterminato componente lavori in € (al netto dell’IVA e degli oneri di sicurezza)
           type: string
           format: decimal
-        impServizi:
-          description: Importo componente servizi in € 
+        impRideterminatoServizi:
+          description: Importo contrattuale rideterminato  componente servizi in € (al netto dell’IVA e degli oneri di sicurezza) 
           type: string
           format: decimal
-        impForniture:
-          description: Importo componente forniture in €
+        impRideterminatoForniture:
+          description: Importo contrattuale rideterminato  componente forniture in € (al netto dell’IVA e degli oneri di sicurezza)
           type: string
           format: decimal
         impTotaleSicurezza: 
-          description: Importo totale per l'attuazione della sicurezza
+          description: Nuovo importo totale per l’attuazione della sicurezza (non soggetto a ribasso)
           type: string
           format: decimal
         impProgettazione:
@@ -1674,7 +1674,7 @@ components:
           type: string
           format: decimal
         sommeADisposizione:
-          description: Somme a disposizione - Iva e altre Imposte e tasse
+          description: Nuovo importo totale somme a disposizione 
           type: string
           format: decimal          
         importoComplessivo:
