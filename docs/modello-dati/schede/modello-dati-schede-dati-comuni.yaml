@@ -169,7 +169,11 @@ components:
     GiustificazioneEsitoProceduraEnum:
       description: Giustificazione esito procedura - corrisponde al campo bt-144 - Not Awarded Reason del TED - fare riferimento ai valori contenuti nel file [giustificazioneEsitoProcedura.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/giustificazioneEsitoProcedura.json) 
       allOf: 
-      - $ref: '#/components/schemas/TipologicaType'       
+      - $ref: '#/components/schemas/TipologicaType'      
+    MotiviModificaContrattualeEnum:
+      description: Motivi modifica contrattuale - corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motiviModificaContrattuale.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviModificaContrattuale.json) 
+      allOf: 
+      - $ref: '#/components/schemas/TipologicaType'      
     MotivoDerogaType:
       type: array
       items:
