@@ -532,7 +532,7 @@ components:
         additionalProperties: false
         description: Stato dell'appalto, del lotto o del contratto
         properties:
-          stato:
+          esitoStato:
             oneOf:
               - $ref: '#/components/schemas/StatoAppaltoType' 
               - $ref: '#/components/schemas/StatoLottoType'      
