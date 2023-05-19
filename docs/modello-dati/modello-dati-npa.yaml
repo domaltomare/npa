@@ -582,6 +582,10 @@ components:
         type: object
         additionalProperties: false
         properties:
+          idAvviso:
+            description: identificativo univoco dell'Avviso generato da ANAC.
+            type: string
+            format: uuid          
           dataControllo:
             description: data in cui è stato effettuato il controllo sullo stato dell'avviso (A datetime specified by ISO 8601 as profiled by RFC 3339)
           stato:  
