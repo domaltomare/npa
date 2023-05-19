@@ -2209,7 +2209,7 @@ components:
         status: 200
         title: "Operazione Effettuata"
     StatoResponse: 
-      allOf: # estende lo schema dati di BaseResponse
+      allOf: # estende lo schema dati di BaseResponse e StatoType
         - $ref: '#/components/schemas/BaseResponse'
         - $ref: '#/components/schemas/StatoType'
       type: object
