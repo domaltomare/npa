@@ -532,8 +532,6 @@ components:
         additionalProperties: false
         description: Stato dell'appalto, del lotto o del contratto
         properties:
-          dataControllo:
-            description: data in cui è stato effettuato il controllo sullo stato dell'appalto, lotto o contratto (A datetime specified by ISO 8601 as profiled by RFC 3339)
           stato:
             oneOf:
               - $ref: '#/components/schemas/StatoAppaltoType' 
@@ -549,6 +547,8 @@ components:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          dataControllo:
+            description: data in cui è stato effettuato il controllo sullo stato dell'appalto, lotto o contratto (A datetime specified by ISO 8601 as profiled by RFC 3339)            
           stato:
             $ref: '#/components/schemas/StatoAppaltoEnum'              
       StatoLottoType:
@@ -560,6 +560,8 @@ components:
             description: codice identificativo lotto
             type: string
             example: '9050626CD6'
+          dataControllo:
+            description: data in cui è stato effettuato il controllo sullo stato dell'appalto, lotto o contratto (A datetime specified by ISO 8601 as profiled by RFC 3339)             
           stato:
             $ref: '#/components/schemas/StatoLottoEnum' 
       StatoContrattoType:
@@ -571,7 +573,9 @@ components:
             description: identificativo univoco del Contratto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
             type: string
             format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          dataControllo:
+            description: data in cui è stato effettuato il controllo sullo stato dell'appalto, lotto o contratto (A datetime specified by ISO 8601 as profiled by RFC 3339)             
           stato:
             $ref: '#/components/schemas/StatoContrattoEnum'            
       StatoAvvisoType:
