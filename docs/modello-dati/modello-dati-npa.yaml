@@ -530,7 +530,7 @@ components:
         additionalProperties: false
         properties:
           dataControllo:
-            description: data in cui è stato effettuato il controllo sullo stato dell'appalto/lotto/contratto (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            description: data in cui è stato effettuato il controllo sullo stato dell'appalto, lotto o contratto (A datetime specified by ISO 8601 as profiled by RFC 3339)
           stato:  
              $ref: '#/components/schemas/StatoAppaltoEnum'
       StatoAvvisoType:
