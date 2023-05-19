@@ -530,6 +530,7 @@ components:
       StatoType:
         type: object
         additionalProperties: false
+        description: Stato dell'appalto, del lotto o del contratto
         properties:
           dataControllo:
             description: data in cui è stato effettuato il controllo sullo stato dell'appalto, lotto o contratto (A datetime specified by ISO 8601 as profiled by RFC 3339)
