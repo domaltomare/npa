@@ -597,7 +597,7 @@ paths:
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         - in: query
-          name: CIG
+          name: cig
           description: Identificativo univoco Gara-Lotto rilasciato da ANAC, alternativo all'idAppalto
           schema:
             type: string
@@ -705,12 +705,26 @@ paths:
       parameters:
         - in: query
           name: idAppalto
-          description: Identificativo univoco dell'Appalto definito da ANAC
+          description: Identificativo univoco dell'Appalto definito da ANAC. Parametro obbligatorio se non sono stati valorizzati gli altri.
           required: true
           schema:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        - in: query
+          name: cig
+          description: Identificativo univoco Gara-Lotto rilasciato da ANAC. Parametro obbligatorio se non sono stati valorizzati gli altri.
+          schema:
+            type: string
+            example: 9050626CD6
+        - in: query
+          name: idContratto
+          description: Identificativo univoco del Contratto definito da ANAC. Parametro obbligatorio se non sono stati valorizzati gli altri.
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"            
       responses:
         '200':
           description: Operazione terminato con successo
@@ -951,7 +965,7 @@ paths:
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
         - in: query
-          name: CIG
+          name: cig
           description: Identificativo univoco Gara-Lotto rilasciato da ANAC
           schema:
             type: string
@@ -1257,7 +1271,7 @@ paths:
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
         - in: query
-          name: CIG
+          name: cig
           description: Identificativo univoco Gara-Lotto rilasciato da ANAC
           schema:
             type: string
@@ -1688,7 +1702,7 @@ paths:
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         - in: query
-          name: CIG
+          name: cig
           description: Identificativo univoco Gara-Lotto generato da ANAC. Alternativo all'idAppalto
           schema:
             type: string
@@ -1727,7 +1741,7 @@ paths:
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
         - in: query
-          name: CIG
+          name: cig
           description: Identificativo univoco Gara-Lotto rilasciato da ANAC
           schema:
             type: string
@@ -2019,6 +2033,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoType'
     DatiAvvisoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAvvisoType'
+    StatoAvvisoType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAvvisoType'
     CigType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/CigType'
     DatiAppaltoBaseType:
@@ -2037,6 +2053,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/ContentDocumentType'
     EsitoOperazioneType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EsitoOperazioneType'
+    StatoAppaltoType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAppaltoType'
     TipologicaBaseType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaBaseType'      
     TipologicaType:
@@ -2161,20 +2179,21 @@ components:
           type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        stato:  
-           $ref: '#/components/schemas/StatoAppaltoEnum'
+        statoAppalto:  
+           $ref: '#/components/schemas/StatoAppaltoType'
     StatoAvvisoResponse: 
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       type: object
       additionalProperties: false
       properties:
-        stato:  
-          $ref: '#/components/schemas/StatoAvvisoEnum' 
-      example:
-        status: 200
-        title: "Operazione Effettuata" 
-        stato: 'PUBBLICAZIONE FERMATA'
+        idAvviso:
+          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        statoAvviso:  
+           $ref: '#/components/schemas/StatoAvvisoType'
     AppaltoListaResponse :
       allOf: # estende la classe PaginazioneType
         - $ref: '#/components/schemas/PaginazioneType'
@@ -2284,7 +2303,7 @@ components:
           description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        CIG:
+        cig:
           description: Identificativo univoco Gara-Lotto generato da ANAC. Alternativo all'idAppalto
           type: string
           example: "9050626CD6"
