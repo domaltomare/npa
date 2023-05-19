@@ -23,6 +23,10 @@ components:
       allOf: # estende lo schema dati di TipologicaType
         - $ref: '#/components/schemas/TipologicaType'
       description: Stato in cui si trova il fascicolo - fare riferimento ai valori contenuti nel file [statoFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoFascicolo.json)    StatoDocumentoEnum:
+    StatoDocumentoEnum:
+      allOf: # estende lo schema dati di TipologicaType
+        - $ref: '#/components/schemas/TipologicaType'
+      description: Stato in cui si trova il documento - fare riferimento ai valori contenuti nel file [statoDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoDocumento.json)
     StatoRichiestaEnum:
       allOf: # estende lo schema dati di TipologicaType
         - $ref: '#/components/schemas/TipologicaType'   
