@@ -527,7 +527,7 @@ components:
             description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Pianificazione. (A UUID specified by RFC4122)
         required:
           - idPianificazione
-      StatoAppaltoType:
+      StatoType:
         type: object
         additionalProperties: false
         properties:
