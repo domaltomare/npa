@@ -2211,11 +2211,9 @@ components:
     StatoResponse: 
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/StatoType'
       type: object
       additionalProperties: false
-      properties:
-        esitoStato: 
-          $ref: '#/components/schemas/StatoType'
     StatoAvvisoResponse: 
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
