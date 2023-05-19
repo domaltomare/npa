@@ -22,7 +22,7 @@ components:
     StatoFascicoloEnum:
       allOf: # estende lo schema dati di TipologicaType
         - $ref: '#/components/schemas/TipologicaType'
-      description: Stato in cui si trova il fascicolo - fare riferimento ai valori contenuti nel file [statoFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoFascicolo.json)    StatoDocumentoEnum:
+      description: Stato in cui si trova il fascicolo - fare riferimento ai valori contenuti nel file [statoFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoFascicolo.json) 
     StatoDocumentoEnum:
       allOf: # estende lo schema dati di TipologicaType
         - $ref: '#/components/schemas/TipologicaType'
