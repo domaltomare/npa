@@ -212,6 +212,8 @@ components:
         description: Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file [statoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAvviso.json)
       StatoLottoEnum:
         description: Stato in cui si trova il Lotto - fare riferimento ai valori contenuti nel file [statoLotto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoLotto.json)
+      StatoContrattoEnum:
+        description: Stato in cui si trova il Contratto - fare riferimento ai valori contenuti nel file [statoContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoContratto.json)        
       OggettoPrincipaleContrattoEnum:
         description:  Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [oggettoPrincipaleContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json)
       EsitoEnum:
@@ -531,8 +533,11 @@ components:
         properties:
           dataControllo:
             description: data in cui è stato effettuato il controllo sullo stato dell'appalto, lotto o contratto (A datetime specified by ISO 8601 as profiled by RFC 3339)
-          stato:  
-             $ref: '#/components/schemas/StatoAppaltoEnum'
+          stato:
+            oneOf:
+              - $ref: '#/components/schemas/StatoAppaltoEnum' 
+              - $ref: '#/components/schemas/StatoLottoEnum'      
+              - $ref: '#/components/schemas/StatoContrattoEnum'
       StatoAvvisoType:
         type: object
         additionalProperties: false
