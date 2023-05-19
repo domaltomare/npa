@@ -2177,6 +2177,16 @@ components:
           type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        cig:
+          description: Identificativo univoco Gara-Lotto rilasciato da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idContratto:
+          description: Identificativo univoco del Contratto definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         statoAppalto:  
            $ref: '#/components/schemas/StatoAppaltoType'
     StatoAvvisoResponse: 
