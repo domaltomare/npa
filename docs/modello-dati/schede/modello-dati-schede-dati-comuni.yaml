@@ -465,7 +465,7 @@ components:
       allOf: # estende la classe AppaltoBaseType
         - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,ripetizioniEConsegneComplementari, prestazioniComprese]
+      required: [categorieMerceologiche, prestazioniComprese]
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -479,15 +479,12 @@ components:
           type: boolean
         prestazioniComprese:
           $ref: '#/components/schemas/PrestazioniEnum'
-        ripetizioniEConsegneComplementari:
-          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean                  
     AppaltoP.11Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,ripetizioniEConsegneComplementari,prestazioniComprese]
+      required: [categorieMerceologiche,prestazioniComprese]
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -498,15 +495,12 @@ components:
           format: url      
         prestazioniComprese:
           $ref: '#/components/schemas/PrestazioniEnum'
-        ripetizioniEConsegneComplementari:
-          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean   
     AppaltoP.12Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari, servizioPubblicoLocale,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR,modalitaAcquisizione]
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari, servizioPubblicoLocale, afferenteInvestimentiPNRR,modalitaAcquisizione]
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -518,15 +512,12 @@ components:
         servizioPubblicoLocale:
           description: Flag servizio pubblico locale
           type: boolean  
-        ripetizioniEConsegneComplementari:
-          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean           
     AppaltoP.13Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR,modalitaAcquisizione]
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale, afferenteInvestimentiPNRR,modalitaAcquisizione]
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -538,9 +529,6 @@ components:
         servizioPubblicoLocale:
           description: Flag servizio pubblico locale
           type: boolean   
-        ripetizioniEConsegneComplementari:
-          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean           
     AppaltoP.14Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -557,7 +545,7 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR,prestazioniComprese]
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR,prestazioniComprese]
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -571,15 +559,12 @@ components:
           type: boolean
         prestazioniComprese:
           $ref: '#/components/schemas/PrestazioniEnum'
-        ripetizioniEConsegneComplementari:
-          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean           
     AppaltoP.17Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR,prestazioniComprese] 
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR,prestazioniComprese] 
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -593,9 +578,6 @@ components:
           format: url           
         prestazioniComprese:
           $ref: '#/components/schemas/PrestazioniEnum'
-        ripetizioniEConsegneComplementari:
-          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean          
     AppaltoP.18Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
@@ -616,7 +598,7 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR] 
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR] 
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -628,7 +610,7 @@ components:
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
       required: [
-        categorieMerceologiche,servizioPubblicoLocale,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR,modalitaAcquisizione]       
+        categorieMerceologiche,servizioPubblicoLocale, afferenteInvestimentiPNRR,modalitaAcquisizione]       
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -640,15 +622,12 @@ components:
         servizioPubblicoLocale:
           description: Flag servizio pubblico locale
           type: boolean
-        ripetizioniEConsegneComplementari:
-          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean           
     AppaltoP.21Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR,modalitaAcquisizione] 
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR,modalitaAcquisizione] 
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -660,9 +639,6 @@ components:
         servizioPubblicoLocale:
           description: Flag servizio pubblico locale
           type: boolean
-        ripetizioniEConsegneComplementari:
-          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean          
     AppaltoP.23Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
@@ -726,9 +702,12 @@ components:
       allOf: # estende la classe LottoBaseType
         - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
       additionalProperties: false
       properties:
+        ripetizioniEConsegneComplementari:
+          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
+          type: boolean      
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
           type: boolean
@@ -757,9 +736,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
       additionalProperties: false
       properties:
+        ripetizioniEConsegneComplementari:
+          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
+          type: boolean        
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
           type: boolean
@@ -788,9 +770,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,contrattiDisposizioniParticolari]
+      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,contrattiDisposizioniParticolari,ripetizioniEConsegneComplementari]
       additionalProperties: false
       properties:
+        ripetizioniEConsegneComplementari:
+          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
+          type: boolean        
         lavoroOAcquistoPrevistoInProgrammazione:
           description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
           type: boolean  
@@ -818,9 +803,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione]
+      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,ripetizioniEConsegneComplementari]
       additionalProperties: false
       properties:
+        ripetizioniEConsegneComplementari:
+          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
+          type: boolean        
         lavoroOAcquistoPrevistoInProgrammazione:
           description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
           type: boolean 
@@ -878,9 +866,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
       additionalProperties: false
       properties:
+        ripetizioniEConsegneComplementari:
+          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
+          type: boolean       
         lavoroOAcquistoPrevistoInProgrammazione:
           description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
           type: boolean  
@@ -913,9 +904,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
       additionalProperties: false
       properties:
+        ripetizioniEConsegneComplementari:
+          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
+          type: boolean       
         lavoroOAcquistoPrevistoInProgrammazione:
           description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
           type: boolean  
@@ -1005,9 +999,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
       additionalProperties: false
       properties:
+        ripetizioniEConsegneComplementari:
+          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
+          type: boolean       
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
           type: boolean
@@ -1035,9 +1032,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
       additionalProperties: false
       properties:
+        ripetizioniEConsegneComplementari:
+          description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
+          type: boolean        
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
           type: boolean
