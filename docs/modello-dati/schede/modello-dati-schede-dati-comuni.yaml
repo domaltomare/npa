@@ -191,7 +191,9 @@ components:
       properties:
         cigCollegato:
           description: CIG collegato
-          type: string
+          type: array
+          items: 
+            type: string
         appaltoDerivato:
           $ref: '#/components/schemas/MotivoCollegamentoEnum'
     TipologiaLavoroType:
@@ -1780,7 +1782,7 @@ components:
         dataAggiudicazione:
           description: Data della decisione ufficiale di selezione dell'offerta vincitrice - corrisponde al campo bt-1451 - Winner Decision Date del TED
           type: string
-          format: datetime 	  	          
+          format: datetime                 
     DatiBaseAggiudicazioneSubappaltoType:
       description:  Dato in comune con il Business Group Subcontracting delle eforms
       additionalProperties: false
