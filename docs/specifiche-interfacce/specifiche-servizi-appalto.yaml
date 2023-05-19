@@ -2071,7 +2071,49 @@ components:
     DatiPianoRequest:
       allOf: # estende la classe DatiPianoType
         - $ref: '#/components/schemas/DatiPianoType'
-    ConsultaAppaltoResponse :
+    SoggettoRequest:
+      description: Oggetto generico di ritorno di una risposta con paginazione
+      type: object
+      additionalProperties: false
+      properties:
+        codice:
+          description: identificativo univoco del soggetto.
+          type: string
+          example: "AAA345FRT565"
+        idAppalto:
+          description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        cig:
+          description: Identificativo univoco Gara-Lotto generato da ANAC. Alternativo all'idAppalto
+          type: string
+          example: "9050626CD6"
+        ruolo:  
+          $ref: '#/components/schemas/TipoRuoloEnum'
+        servizio:  
+          $ref: '#/components/schemas/TipoServizioSoggettoEnum'
+        operazione:  
+          $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'          
+        dataInizio: 
+          description: Data di inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z'
+        dataFine: 
+          description: Data di fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z'
+    CreaSchedaRequest:
+      allOf: # estende la classe DatiSchedaType
+        - $ref: '#/components/schemas/DatiSchedaBaseType'
+    DatiSchedaRequest:
+      allOf: # estende la classe DatiSchedaType
+        - $ref: '#/components/schemas/DatiSchedaType'
+    AvvisoRequest:
+      allOf: # estende la classe AvvisoType
+        - $ref: '#/components/schemas/AvvisoType'        
+    ConsultaAppaltoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       properties:  
@@ -2172,34 +2214,14 @@ components:
       type: object
       additionalProperties: false
       properties:
-        idAppalto:
-          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        cig:
-          description: Identificativo univoco Gara-Lotto rilasciato da ANAC. (A UUID specified by RFC4122)
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        idContratto:
-          description: Identificativo univoco del Contratto definito da ANAC. (A UUID specified by RFC4122)
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        statoAppalto:  
-           $ref: '#/components/schemas/StatoType'
+        esitoStato: 
+          $ref: '#/components/schemas/StatoType'
     StatoAvvisoResponse: 
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       type: object
       additionalProperties: false
       properties:
-        idAvviso:
-          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         statoAvviso:  
            $ref: '#/components/schemas/StatoAvvisoType'
     AppaltoListaResponse :
@@ -2250,7 +2272,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/DatiAvvisoType'  
-    CigListaResponse :
+    CigListaResponse:
       allOf: # estende la classe PaginazioneType
         - $ref: '#/components/schemas/PaginazioneType'
       description: Oggetto generico di ritorno di una risposta con paginazione
@@ -2298,48 +2320,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/DatiSchedaType'
-    SoggettoRequest:
-      description: Oggetto generico di ritorno di una risposta con paginazione
-      type: object
-      additionalProperties: false
-      properties:
-        codice:
-          description: identificativo univoco del soggetto.
-          type: string
-          example: "AAA345FRT565"
-        idAppalto:
-          description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        cig:
-          description: Identificativo univoco Gara-Lotto generato da ANAC. Alternativo all'idAppalto
-          type: string
-          example: "9050626CD6"
-        ruolo:  
-          $ref: '#/components/schemas/TipoRuoloEnum'
-        servizio:  
-          $ref: '#/components/schemas/TipoServizioSoggettoEnum'
-        operazione:  
-          $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'          
-        dataInizio: 
-          description: Data di inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
-          type: string
-          format: datetime
-          example: '2022-01-23T12:02:05Z'
-        dataFine: 
-          description: Data di fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
-          type: string
-          format: datetime
-          example: '2022-01-23T12:02:05Z'
-    CreaSchedaRequest:
-      allOf: # estende la classe DatiSchedaType
-        - $ref: '#/components/schemas/DatiSchedaBaseType'
-    DatiSchedaRequest:
-      allOf: # estende la classe DatiSchedaType
-        - $ref: '#/components/schemas/DatiSchedaType'
-    AvvisoRequest:
-      allOf: # estende la classe AvvisoType
-        - $ref: '#/components/schemas/AvvisoType'
     ConsultaAvvisoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2372,10 +2352,8 @@ components:
         scheda:
           $ref: '#/components/schemas/DatiSchedaType'
     EsitoOperazioneListaResponse:
-      type: object
-      additionalProperties: false
-      required:  # List the required properties here
-        - idAppalto
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
       properties:
         idAppalto:
           description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
