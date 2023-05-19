@@ -267,6 +267,9 @@ components:
       type: object
       additionalProperties: false
       properties:
+        quota30PerCento:
+          description: Previsione nel bando di gara, nell’avviso o nell’invito, dell’obbligo di assicurare, in caso di aggiudicazione del contratto, una quota pari almeno al 30 per cento, delle assunzioni necessarie per l'esecuzione del contratto o per la realizzazione di attività ad esso connesse o strumentali, sia all'occupazione giovanile sia all'occupazione femminile (articolo 47, comma 4, D.L. 77/2021)?
+          type: boolean          
         quotaInferioreOccupFemminile:
           description: Previsione di una quota inferiore con riferimento all’occupazione femminile
           type: string
