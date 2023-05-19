@@ -2051,8 +2051,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/ContentDocumentType'
     EsitoOperazioneType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EsitoOperazioneType'
-    StatoAppaltoType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAppaltoType'
+    StatoType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoType'
     TipologicaBaseType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaBaseType'      
     TipologicaType:
@@ -2188,7 +2188,7 @@ components:
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         statoAppalto:  
-           $ref: '#/components/schemas/StatoAppaltoType'
+           $ref: '#/components/schemas/StatoType'
     StatoAvvisoResponse: 
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
