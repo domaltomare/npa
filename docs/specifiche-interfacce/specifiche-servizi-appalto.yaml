@@ -729,7 +729,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/StatoAppaltoResponse'  
+                $ref: '#/components/schemas/StatoResponse'  
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -2166,7 +2166,7 @@ components:
         detail: "Cancellazione eseguita con successo"
         status: 200
         title: "Operazione Effettuata"
-    StatoAppaltoResponse : 
+    StatoResponse: 
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       type: object
