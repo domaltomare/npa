@@ -290,7 +290,13 @@ paths:
           name: tipo  
           description: tipo del documento
           schema:
-            $ref: '#/components/schemas/TipoDocumentoEnum'            
+            $ref: '#/components/schemas/TipoDocumentoEnum' 
+        - in: query
+          name: datiAggiuntivi
+          description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON
+          schema:
+            type: string
+          example: "{id=45, { persona{codice=45} } }"      
         - in: query
           name: page
           description: numero della pagina da visualizzare.
@@ -314,6 +320,28 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DocumentiListaResponse'
+              example:
+                status: 200
+                title: "Operazione terminata correttamente"
+                totRows: 2
+                totPages: 1
+                currentPage: 1
+                elementPage": 2
+                result: 
+                  - idDocumento: "507f1f77bcf86cd799439011"
+                    tipoDcumento: "DURC"
+                    statoDocumento: "IN LAVORAZIONE"
+                    oggetto: ""
+                    dataInserimento: "2014-02-28T18:07:17Z"
+                    fascicoloOE: 
+                      idFascicolo: "507f1f77bcf86cd799439011"
+                  - idDocumento: "507f1f77bcf86cd799888889"
+                    tipoDcumento: "DURC"
+                    statoDocumento: "IN LAVORAZIONE"
+                    oggetto: ""
+                    dataInserimento: "2014-02-28T18:07:17Z"
+                    fascicoloOE: 
+                      idFascicolo: "507f1f77cdf86cd799489011"  
           links:
             RecuperaDocumentoFVOEIdLink:  
               operationId: idDocumentoFVOEDettaglio
@@ -354,6 +382,30 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/RecuperaDocumentoResponse'
+              example:
+                status: 200
+                title: "Operazione Effettuata"
+                documento:
+                  idDocumento: "775f1f88bcf86cd987639011"
+                  tipoDcumento: "DURC"
+                  statoDocumento: "IN LAVORAZIONE"
+                  tipoOggetto: "DocumentoAType"
+                  dataInserimento: '2022-01-23T12:02:05Z' 
+                  dataEmissione: '2022-01-23T12:02:05Z' 
+                  dataFineValidita: '2022-01-23T12:02:05Z' 
+                  numeroProtocollo: '2342344342'
+                  dataProtocollo: '2022-01-23T12:02:05Z' 
+                  utenteCreazione: "UDI.8909"  
+                  dataCreazione: '2022-01-23T12:02:05Z'
+                  anagraficaOE:
+                    codice: "zxczczcz"
+                  fascicoloVOE: 
+                    idFascicolo: "890f1f77bcf86cd799888888"
+                  contenutoDocumento: 
+                    nomeFile: "Allegato8989.pdf"
+                    estensione: "PDF"
+                    size: 2313
+                    contenuto: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"                 
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -560,7 +612,13 @@ paths:
           description: tipo del documento
           schema:
             $ref: '#/components/schemas/TipoDocumentoEnum' 
-          example: 'VISURA_CAMERALE' 
+          example: 'VISURA_CAMERALE'
+        - in: query
+          name: datiAggiuntivi
+          description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON
+          schema:
+            type: string
+          example: "{id=45, { persona{codice=45} } }"          
         - in: query
           name: page
           description: numero della pagina da visualizzare. 
@@ -584,6 +642,29 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DocumentiListaResponse' 
+              example:
+                status: 200
+                title: "Operazione terminata correttamente"
+                totRows: 2
+                totPages: 1
+                currentPage: 1
+                elementPage": 2
+                result: 
+                  - idDocumento: "507f1f77bcf86cd799439011"
+                    tipoDcumento: "DURC"
+                    statoDocumento: "IN LAVORAZIONE"
+                    oggetto: ""
+                    dataInserimento: "2014-02-28T18:07:17Z"
+                    fascicoliVA: 
+                      - idFascicolo: "507f1f77bcf86cd799439011"
+                      - idFascicolo: "507f1f77bcf86cd799439011"
+                  - idDocumento: "507f1f77bcf86cd799888889"
+                    tipoDcumento: "DURC"
+                    statoDocumento: "IN LAVORAZIONE"
+                    oggetto: ""
+                    dataInserimento: "2014-02-28T18:07:17Z"
+                    fascicoliVA: 
+                      - idFascicolo: "507f1f77cdf86cd799489011"      
           links:
             RecuperaDocumentoFVAIdLink:  
               operationId: idDocumentoFVADettaglio
@@ -597,8 +678,6 @@ paths:
             $ref: '#/components/responses/404NotFound'
         '429':
             $ref: '#/components/responses/429TooManyRequests'
-        '500':
-          $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
   /recupera-documento-fva:
@@ -623,6 +702,37 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/RecuperaDocumentoResponse'
+              example:
+                status: 200
+                title: "Operazione Effettuata"
+                documento:
+                  idDocumento: "775f1f88bcf86cd987639011"
+                  tipoDcumento: "DURC"
+                  statoDocumento: "IN LAVORAZIONE"
+                  tipoOggetto: "DocumentoAType"
+                  dataInserimento: '2022-01-23T12:02:05Z' 
+                  dataEmissione: '2022-01-23T12:02:05Z' 
+                  dataFineValidita: '2022-01-23T12:02:05Z' 
+                  numeroProtocollo: '2342344342'
+                  dataProtocollo: '2022-01-23T12:02:05Z' 
+                  utenteCreazione: "UDI.8909"  
+                  dataCreazione: '2022-01-23T12:02:05Z'
+                  anagraficaOE:
+                    codice: "zxczczcz"
+                  fascicoloVOE: 
+                    idFascicolo: "890f1f77bcf86cd799888888"
+                  appalti:
+                    - idAppalto: "a772eb29-accd-4ee2-b9c7-1cf0faf47b6a"
+                    - idAppalto: "fab25b53-0e5f-40d6-888d-f97ba33574e5"
+                  fascicoliVA:
+                    - idFascicolo: "507f1f77bcf86cd799439011"
+                    - idFascicolo: "878f1f77bcf86cd799439056"
+                  contenutoDocumento: 
+                    nomeFile: "Allegato8989.pdf"
+                    estensione: "PDF"
+                    size: 2313
+                    contenuto: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+   
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -684,7 +794,6 @@ paths:
           description: stato del fascicolo
           schema:
             $ref: '#/components/schemas/StatoFascicoloEnum'
-          example: 'APERTO'  
         - in: query
           name: dataCreazioneDa
           description: Data di crezione del Fascicolo - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
@@ -937,6 +1046,10 @@ components:
         application/problem+json:
           schema:
             $ref: '#/components/schemas/ErrorResponse'
+          example:
+            detail: "Request took too long to complete."
+            status: 503
+            title: "Hai superato la quota di richieste."  
     500InternalServerError:
       description: Errore generico. Operazione terminato con errore. Viene restituito il dettaglio dell'errore
       headers: *ratelimit_headers
@@ -992,12 +1105,13 @@ components:
       allOf: # estende il modello dati RichiestaAccessoType
         - $ref: '#/components/schemas/RichiestaAccessoType'
       example:
-        dataCreazione: "2022-01-23T12:02:05Z"
-        dataScadenza: "2022-01-23T12:02:05Z"
+        dataInizioAutorizzazione: "2022-01-23T12:02:05Z"
+        dataFineAutorizzazione: "2023-01-23T12:02:05Z"
         anagraficaOE:
-            codice: "UI78588658"
-        lottoType:
-          CIG: "ACD4546346A"
+          - codice: "UI78588658"
+          - codice: "TI78588699"
+        appalto:
+          idAppalto: "ACD4546346A"
     AutorizzaAccessoRequest:
       allOf: # estende il modello dati AutorizzaAccessoType
         - $ref: '#/components/schemas/AutorizzazioneAccessoType' 
@@ -1059,27 +1173,14 @@ components:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       properties:  
-        document: 
+        documento: 
           oneOf:
             - $ref: '#/components/schemas/DocumentoOEType'
             - $ref: '#/components/schemas/DocumentoAType'
           discriminator:
             propertyName: tipoOggetto
-        content:
+        contenutoDocumento:
           $ref: '#/components/schemas/ContentDocumentType'
-      example:
-        status: 200
-        title: "Operazione Effettuata"
-        document:
-          idDocument: "507f1f88bcf86cd987639011"
-          tipoDcumento: "DURC"
-          statoDocumento: "IN LAVORAZIONE"
-          fascicoloOE:
-            idFascicolo: "507f1f77bcf86cd799439011"
-        content: 
-          estensione: "PDF"
-          size: 2313
-          content: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     RecuperaFascicoloResponse :
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -1135,6 +1236,28 @@ components:
       properties:
         stato:
           $ref: '#/components/schemas/StatoRichiestaEnum'
+      example: 
+        status: 200
+        title: "Richiesta acquisita"
+        result:
+          - idAutorizzazione : 2323
+            dataInizio: '2022-01-23T12:02:05Z'
+            dataFine: '2023-01-23T12:02:05Z'
+            stato: 
+              codice: "01"
+              descrizione: "Autorizzato"
+            motivo: ""
+            autorizzante:
+              codice : "UI78588658"
+          - idAutorizzazione : 2323
+            dataInizio: '2022-01-23T12:02:05Z'
+            dataFine: '2022-08-23T12:02:05Z'
+            stato: 
+              codice: "01"
+              descrizione: "Autorizzato"
+            motivo: ""  
+            autorizzante:
+              codice : "TI78588699"
     FVAListaResponse :
       allOf: # estende la classe BaseResponse e PaginazioneType
         - $ref: '#/components/schemas/BaseResponse'
@@ -1212,23 +1335,12 @@ components:
           description: risposta di una lista di oggetti paginati specifica del servizio SINCRONO
           type: array
           items:
-            $ref: '#/components/schemas/DocumentoType'
-      example:
-        totRows: 2
-        totPages: 1
-        currentPage: 1
-        elementPage": 2
-        result: 
-          - idDocument: "507f1f77bcf86cd799439011"
-            tipoDcumento: "DURC"
-            statoDocumento: "IN LAVORAZIONE"
-            fascicoloOE: 
-              idFascicolo: "507f1f77bcf86cd799439011"
-          - idDocument: "507f1f77bcf86cd799888889"
-            tipoDcumento: "DURC"
-            statoDocumento: "IN LAVORAZIONE"
-            fascicoloOE: 
-              idFascicolo: "507f1f77cdf86cd799489011"
+            #$ref: '#/components/schemas/DocumentoType'
+            oneOf:
+              - $ref: '#/components/schemas/DocumentoOEType'
+              - $ref: '#/components/schemas/DocumentoAType'
+            discriminator:
+              propertyName: tipoOggetto 
     ConsultaStoricoOEResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -1238,6 +1350,22 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/DocumentoOEType'
+      example:
+        status: 200
+        title: "Operazione terminata correttamente"
+        result: 
+          - idDocumento: "45353@#sdF"
+            azione : "Aperto"
+            utenteCreazione : "X4563X"
+            dataCreazione : "2014-02-28T18:07:17Z"
+          - idDocumento: "45353@#sdF"
+            azione : "Aggiunto documento"
+            utenteCreazione : "X4578X"
+            dataCreazione : "2015-05-28T14:07:17Z"      
+          - idDocumento: "45353@#sdF"
+            azione : "Aggiunto documento"
+            utenteCreazione : "Y67854"
+            dataCreazione : "2016-07-12T14:07:17Z"         
     ConsultaStoricoAResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -1247,6 +1375,22 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/DocumentoAType'
+      example:
+        status: 200
+        title: "Operazione terminata correttamente"
+        result: 
+          - idDocumento: "45353@#sdF"
+            azione : "Aperto"
+            utenteCreazione : "X4563X"
+            dataCreazione : "2014-02-28T18:07:17Z"
+          - idDocumento: "45353@#sdF"
+            azione : "Aggiunto documento"
+            utenteCreazione : "X4578X"
+            dataCreazione : "2015-05-28T14:07:17Z"      
+          - idDocumento: "45353@#sdF"
+            azione : "Aggiunto documento"
+            utenteCreazione : "Y67854"
+            dataCreazione : "2016-07-12T14:07:17Z"              
     ConsultaStoricoFVAResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
