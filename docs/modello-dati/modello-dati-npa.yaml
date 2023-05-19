@@ -525,10 +525,26 @@ components:
             description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Pianificazione. (A UUID specified by RFC4122)
         required:
           - idPianificazione
+      StatoAppaltoType:
+        type: object
+        additionalProperties: false
+        properties:
+          dataControllo:
+            description: data in cui è stato effettuato il controllo sullo stato dell'appalto/lotto/contratto (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          stato:  
+             $ref: '#/components/schemas/StatoAppaltoEnum'
+      StatoAvvisoType:
+        type: object
+        additionalProperties: false
+        properties:
+          dataControllo:
+            description: data in cui è stato effettuato il controllo sullo stato dell'avviso (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          stato:  
+             $ref: '#/components/schemas/StatoAvvisoEnum'             
       EsitoOperazioneBaseType:
         type: object
         additionalProperties: false
-        required:  # List the required properties hereddd
+        required:  # List the required properties here
           - codice
           - descrizione
           - esito
@@ -543,6 +559,11 @@ components:
             description: descrizione dell'esito dell'operazione
             type: string
             example: 'AVVISO PUBBLICATO'
+          dataControllo:
+            description: data in cui è stato effettuato il controllo dell'esito dell'operazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
           dettaglio:
             description: descrizione dettagliata dell'esito dell'operazione
             type: string
