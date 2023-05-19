@@ -536,9 +536,44 @@ components:
             description: data in cui è stato effettuato il controllo sullo stato dell'appalto, lotto o contratto (A datetime specified by ISO 8601 as profiled by RFC 3339)
           stato:
             oneOf:
-              - $ref: '#/components/schemas/StatoAppaltoEnum' 
-              - $ref: '#/components/schemas/StatoLottoEnum'      
-              - $ref: '#/components/schemas/StatoContrattoEnum'
+              - $ref: '#/components/schemas/StatoAppaltoType' 
+              - $ref: '#/components/schemas/StatoLottoType'      
+              - $ref: '#/components/schemas/StatoContrattoType'
+      StatoAppaltoType:
+        type: object
+        additionalProperties: false
+        description: Stato dell'appalto
+        properties:
+          idAppalto:
+            description: identificativo univoco dell'Appalto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          stato:
+            $ref: '#/components/schemas/StatoAppaltoEnum'              
+      StatoLottoType:
+        type: object
+        additionalProperties: false
+        description: Stato del lotto
+        properties:
+          cig:
+            description: codice identificativo lotto
+            type: string
+            example: '9050626CD6'
+          stato:
+            $ref: '#/components/schemas/StatoLottoEnum' 
+      StatoContrattoType:
+        type: object
+        additionalProperties: false
+        description: Stato del contratto
+        properties:
+          idContratto:
+            description: identificativo univoco del Contratto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+          stato:
+            $ref: '#/components/schemas/StatoContrattoEnum'            
       StatoAvvisoType:
         type: object
         additionalProperties: false
