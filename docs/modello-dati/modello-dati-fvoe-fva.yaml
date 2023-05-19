@@ -62,6 +62,14 @@ components:
       description: Oggetto che riporta i dati del FVOE
       type: object
       additionalProperties: false
+      properties:
+        anagraficaOE: 
+          $ref: '#/components/schemas/AnagraficaOEType'
+        documenti:
+          description: Lista documenti
+          type: array
+          items:
+            $ref: '#/components/schemas/DocumentoOEType' 
     FVAType:
       allOf: # estende lo schema dati di FascicoloType
         - $ref: '#/components/schemas/FascicoloType'
@@ -81,7 +89,7 @@ components:
       type: object
       additionalProperties: false
       properties:
-        idDocument:
+        idDocumento:
           description: identificativo univoco del documento
           type: string
           example: "507f1f77bcf86cd799439011"
@@ -125,18 +133,27 @@ components:
           description: data di registrazione del documento  (A datetime specified by RF3339)
           type: string
           format: datetime
-          example: '2022-01-23T12:02:05Z'        
+          example: '2022-01-23T12:02:05Z' 
+        datiAggiuntivi:
+          description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON
+          type: string
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
     DocumentoOEType:
       description: Oggetto che riporta i dati del Documento dell'OE
       allOf: # estende lo schema dati di DocumentoType
         - $ref: '#/components/schemas/DocumentoType'
       type: object
       additionalProperties: false
+      properties:
+        anagraficaOE: 
+          $ref: '#/components/schemas/AnagraficaOEType'
+        fascicoloVOE:
+          $ref: '#/components/schemas/FVOEType'      
     DocumentoAType:
       description: Oggetto che riporta i dati del Documento dell'Appalto
       allOf: 
-        - $ref: '#/components/schemas/DocumentoType' # estende lo schema dati di DocumentoType
-        # TBD POSSIBILI PROBLEMI APPLICATIVI LATO CLIENT- $ref: '#/components/schemas/DocumentoOEType' #estende lo schema dati di DocumentoOE perché potrebbe essere un Documento dell' Operatore Economico
+        - $ref: '#/components/schemas/DocumentoOEType' # estende lo schema dati di DocumentoType
+        # TBD POSSIBILI PROBLEMI APPLICATIVI LATO CLIENT- $ref: '#/components/schemas/DocumentoType' #estende lo schema dati di DocumentoOE perché potrebbe essere un Documento dell' Operatore Economico
       type: object
       additionalProperties: false
       properties:
@@ -147,15 +164,30 @@ components:
         fascicoli:
           type: array
           items:
-            $ref: '#/components/schemas/FVAType'
-        datiAggiuntivi:
-          description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON
-          type: string
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"       
+            $ref: '#/components/schemas/FVAType'       
     ContentDocumentType:
       description: Oggetto che riporta il contenuto del
       type: object
       additionalProperties: false
+      properties:
+        nomefile:
+          description: nomeFile originale
+          type: string
+          example: "Allegato5674.pdf"
+        estensione:
+          description: estensione file
+          type: string
+          example: "PDF"
+        dimensione:
+          description: grandezza del documento
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        contenuto:
+          description: Contenuto in formato Binario del documento
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
     AutorizzazioneAccessoType:
       description: Oggetto che riporta tutti i dati della Pianificazione
       type: object
@@ -168,6 +200,11 @@ components:
       description: Oggetto generico dell'anagrafica
       type: object
       additionalProperties: false
+      properties:
+        codice:
+          description: codice identificativo anagrafica
+          type: string
+          example: xcdsd5#3346
     AnagraficaOEType:
       allOf: # estende la classe AnagraficaType
         - $ref: '#/components/schemas/AnagraficaType'
