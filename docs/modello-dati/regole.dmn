@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Pubblicazione" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="14.1.1" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
+  <decision id="Decision_14u7jel" name="StazioneAppaltante">
+    <informationRequirement id="InformationRequirement_1wzawpc">
+      <requiredInput href="#InputData_039xwk8" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0fcteid">
+      <requiredInput href="#InputData_0d5eewv" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0xynjzo">
+      <requiredInput href="#InputData_0638q0m" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_02i3nxj" hitPolicy="ANY">
+      <input id="InputClause_18lhanp" biodi:width="192">
+        <inputExpression id="LiteralExpression_13bittw" typeRef="string">
+          <text>StazioneAppaltante</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_1lmtz48" name="Errore" typeRef="string" biodi:width="544" />
+      <rule id="DecisionRule_00ugo4x">
+        <description>E' stata indicata la funzione ma non è stato indicato il codice fiscale della stazione appaltante</description>
+        <inputEntry id="UnaryTests_06npj3z">
+          <text>is defined(funzioniSvolte) and codiceFiscale=null</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ovg49e">
+          <text>"{\"codice\":\"002\",\"Attenzione, non è stato indicato il codice fiscale del soggetto\",\"en\":\"Attenzione, non è stato indicato il codice fiscale del soggetto\"}}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1a24frx">
+        <description>Il codice fiscale della stazione appaltante delegante non puo' essere uguale al codice fiscale della stazione appaltante delegata</description>
+        <inputEntry id="UnaryTests_086k452">
+          <text>matches(codiceFiscale,codiceAusa,"i")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0kphlr3">
+          <text>"{\"codice\":\"001\",\"descrizione\":{\"it\":\"Il codice fiscale della stazione appaltante delegante non puo' essere uguale al codice fiscale della stazione appaltante delegata\",\"en\":\"Il codice fiscale della stazione appaltante delegante non puo' essere uguale al codice fiscale della stazione appaltante delegata\"}}"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_039xwk8" name="codiceFiscale" />
+  <inputData id="InputData_0d5eewv" name="codiceAusa" />
+  <inputData id="InputData_0638q0m" name="funzioniSvolte" />
+  <decision id="decision_0drewrm" name="Appalto">
+    <informationRequirement id="InformationRequirement_19i7kk7">
+      <requiredInput href="#InputData_055kut8" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_10l7ibh">
+      <requiredInput href="#InputData_01am2df" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0a8vv25">
+      <requiredInput href="#InputData_0o5t3n0" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_0pj6mfl" hitPolicy="ANY">
+      <input id="InputClause_06t9utn" biodi:width="300">
+        <inputExpression id="LiteralExpression_0b3zwo1" typeRef="string">
+          <text>Appalto</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_0yie9hb" name="Errore" typeRef="string" biodi:width="510" />
+      <rule id="DecisionRule_0f1yd1l">
+        <description>Tipologica motivazioneCig: la motivazione è richiesta solo se la categoria merceologica è diversa dal valore "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015". Se la categoria merceologica è "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015" allora Motivazione Richiesta Cig è null.</description>
+        <inputEntry id="UnaryTests_1xzwgce">
+          <text>categoriaMerceologica.codice != 999 and motivazioneCig.codice = null</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15lyens">
+          <text>"{\"codice\":\"001\",\"descrizione\":{\"it\":\"Non e' stato indicato il campo Motivazione richiesta CIG\",\"en\":\"Non e' stato indicato il campo Motivazione richiesta CIG\"}}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_098oh4x">
+        <description>Tipologica motivazioneCig: la motivazione è richiesta solo se la categoria merceologica è diversa dal valore "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015". Se la categoria merceologica è "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015" allora Motivazione Richiesta Cig è null.</description>
+        <inputEntry id="UnaryTests_09if15p">
+          <text>categoriaMerceologica.codice = 999 and motivazioneCig.codice != null</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1kw3x7h">
+          <text>"{\"codice\":\"002\",\"descrizione\":{\"it\":\"La motivazione richiesta CIG non deve essere inserita per la categoria \"Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015\",\"en\":\"La motivazione richiesta CIG non deve essere inserita per la categoria \"Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015\"}}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_064qru8">
+        <description>Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile: deve essere una url valida e quindi iniziare con http o https.</description>
+        <inputEntry id="UnaryTests_03zsedp">
+          <text>starts with(linkDocumenti,"http:") = false and starts with(linkDocumenti,"https:") = false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0szst4h">
+          <text>"{\"codice\":\"003\",\"descrizione\":{\"it\":\"Il campo deve essere una url valida e iniziare per http oppure per https.\",\"en\":\"Il campo deve essere una url valida e iniziare per http oppure per https.\"}}"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_0nbbbjo" name="cpv" />
+  <inputData id="InputData_0twuolq" name="cpvsecondaria" />
+  <inputData id="InputData_055kut8" name="categoriaMerceologica" />
+  <inputData id="InputData_01am2df" name="motivazioneCig" />
+  <inputData id="InputData_133jhpl" name="oggettoPrincipaleContratto" />
+  <inputData id="InputData_0sndcx0" name="strumentiElettroniciSpecifici" />
+  <decision id="Decision_1emgruu" name="Lotto">
+    <informationRequirement id="InformationRequirement_1xodxxk">
+      <requiredInput href="#InputData_133jhpl" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0octfkk">
+      <requiredInput href="#InputData_0sndcx0" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_14cpux1">
+      <requiredInput href="#InputData_0h9mko3" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_16ksjwg">
+      <requiredInput href="#InputData_1l4b4oj" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_01w2o0s">
+      <requiredInput href="#InputData_1dsuzlq" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0unn3y5">
+      <requiredInput href="#InputData_0burooy" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_1qp31av">
+      <requiredInput href="#InputData_1suzb8i" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_1luh18p">
+      <requiredInput href="#InputData_1fvzm5g" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_166n2ku">
+      <requiredInput href="#InputData_13j8y0d" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_09jrsfm">
+      <requiredInput href="#InputData_1usdf4q" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_15ljbr5">
+      <requiredInput href="#InputData_0dkxit4" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_16s908k">
+      <requiredInput href="#InputData_0gc9pdd" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_1n8r4d0" hitPolicy="ANY">
+      <input id="InputClause_13hrgtu" biodi:width="399">
+        <inputExpression id="LiteralExpression_0r2nyfn" typeRef="string">
+          <text>Lotto</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1lchb51">
+        <inputExpression id="LiteralExpression_1llxdy5" typeRef="string">
+          <text>DatiBase</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_052yi52" name="Errore" typeRef="string" biodi:width="353" />
+      <output id="OutputClause_1ufem00" name="OggettoPrincipaleContratto" typeRef="string" />
+      <rule id="DecisionRule_1nz6ycf">
+        <description>Uso di metodi e degli strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche: obbligatorio se l'ggetto principale del contratto è uguale a “Lavori” e la somma di tutti i campi del quadro economico standard tranne somme a disposizione è maggiore della soglia europea 5.382.000.</description>
+        <inputEntry id="UnaryTests_0uwmoup">
+          <text>oggettoPrincipaleContratto.codice = "L" and importo&gt; 5382000 and strumentiElettroniciSpecifici=null</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0homeq0">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1aldavw">
+          <text>"{\"codice\":\"001\",\"descrizione\":{\"it\":\"Il campo strumentiElettroniciSpecifici non può essere null\",\"en\":\"Il campo strumentiElettroniciSpecifici non può essere null\"}}"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1gfycz9">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1439qpq">
+        <description>Condizioni Negoziata: se il valore del tipo di procedura (scelta contraente) è "Negoziata senza previa indizione di gara" allora il campo condizioniNegoziata deve essere valorizzato.</description>
+        <inputEntry id="UnaryTests_1lwabhv">
+          <text>sceltaContraente.codice = "neg-wo-call" and condizioniNegoziata=null</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1it43l2">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0uwch07">
+          <text>"{\"codice\":\"002\",\"descrizione\":{\"it\":\"Il campo condizioniNegoziata non può essere null\",\"en\":\"Il campo condizioniNegoziata non può essere null\"}}"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0a6koem">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1h2ds1g">
+        <description>Condizioni Negoziata: se il valore del tipo di procedura (scelta contraente) è diverso da "Negoziata senza previa indizione di gara" allora il campo condizioniNegoziata non deve essere valorizzato.</description>
+        <inputEntry id="UnaryTests_0vekz2q">
+          <text>sceltaContraente.codice != "neg-wo-call" and condizioniNegoziata != null</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mxnxi7">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ab4xvj">
+          <text>"{\"codice\":\"003\",\"descrizione\":{\"it\":\"Campo condizioniNegoziata non previsto\",\"en\":\"Campo condizioniNegoziata non previsto\"}}"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0no89it">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07sk3tk">
+        <description>Motivo Esclusione Settore Ordinario e Speciale: non è consensito per organi non costituzionali.</description>
+        <inputEntry id="UnaryTests_05b3q7f">
+          <text>motivoEsclusioneOrdinarioSpeciale= "12"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_051eyty">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0l6tipd">
+          <text>"{\"codice\":\"004\",\"descrizione\":{\"it\":\"Il campo ‘Esclusione o regime speciale’ non è richiesto\",\"en\":\"Il campo ‘Esclusione o regime speciale’ non è richiesto\"}}"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1cybjp3">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1p8r7hq">
+        <description>Oggetto Principale del Contratto: deve essere calcolato dal campo oggetto contratto del ted. Altrimenti deve essere inserito esplicitamente. È obbligatorio.</description>
+        <inputEntry id="UnaryTests_09wpw4o">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0isfzcz">
+          <text>oggettoContratto.codice = "works"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vzag42">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_07ejf5b">
+          <text>"L"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0b4xy4z">
+        <description>Oggetto Principale del Contratto: deve essere calcolato dal campo oggetto contratto del ted. Altrimenti deve essere inserito esplicitamente. È obbligatorio.</description>
+        <inputEntry id="UnaryTests_01qqksp">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ccgjf9">
+          <text>oggettoContratto.codice = "supplies"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0i2cemo">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1fh2mp0">
+          <text>"F"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0v6fy38">
+        <description>Oggetto Principale del Contratto: deve essere calcolato dal campo oggetto contratto del ted. Altrimenti deve essere inserito esplicitamente. È obbligatorio.</description>
+        <inputEntry id="UnaryTests_1m61hv5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hnshk6">
+          <text>oggettoContratto.codice = "services"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1k5xquq">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1gweens">
+          <text>"S"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05abgmb">
+        <description>Oggetto Principale del Contratto: deve essere calcolato dal campo oggetto contratto del ted. Altrimenti deve essere inserito esplicitamente. È obbligatorio.</description>
+        <inputEntry id="UnaryTests_1hehkno">
+          <text>oggettoPrincipaleContratto = null</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_012fuvk">
+          <text>oggettoContratto.codice = "combined"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_19xjxvn">
+          <text>"{\"codice\":\"005\",\"descrizione\":{\"it\":\"Il campo oggettoPrincipaleContratto è obbligatorio\",\"en\":\"Il campo oggettoPrincipaleContratto è obbligatorio\"}}"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1wlpz37">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0cup86j">
+        <description>Servizio Pubblico Locale: il campo è obbligatorio solo se l'oggetto del contratto = servizi</description>
+        <inputEntry id="UnaryTests_0dh28p4">
+          <text>servizioPubblicoLocale = null</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ahbnvi">
+          <text>oggettoContratto.codice = "services"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1o86zas">
+          <text>"{\"codice\":\"006\",\"descrizione\":{\"it\":\"Il campo servizioPubblicoLocale è obbligatorio\",\"en\":\"Il campo servizioPubblicoLocale è obbligatorio\"}}"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0fipwmq">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0sw160y">
+        <description>Cui: Obbligatorio se Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione</description>
+        <inputEntry id="UnaryTests_0hkaa6u">
+          <text>lavoroOAcquistoPrevistoInProgrammazione and cui = null</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e3c672">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04o6lt4">
+          <text>"{\"codice\":\"007\",\"descrizione\":{\"it\":\"Non è stato indicato il CUI\",\"en\":\"Non è stato indicato il CUI\"}}"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0cfyrvz">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0wx171w">
+        <description>L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari? se sì deve essere valorizzato a sì anche il campo 'L'appalto prevede opzioni/rinnovi?'</description>
+        <inputEntry id="UnaryTests_1nni8rh">
+          <text>ripetizioniEConsegneComplementari and opzioniRinnovi = false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qe9uy9">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_107l05o">
+          <text>"{\"codice\":\"008\",\"descrizione\":{\"it\":\"Non è stato valorizzato il campo opzioni/rinnovi?\",\"en\":\"Non è stato valorizzato il campo opzioni/rinnovi?\"}}"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_135meh7">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0h7saqh">
+        <description>Appalto Derivato: Se l'appalto prevede ripetizioni, il motivo collegamento CIG deve essere 'No, nessuna ipotesi di collegamento' </description>
+        <inputEntry id="UnaryTests_14ucutk">
+          <text>ripetizioniEConsegneComplementari and appaltoDerivato.codice != "10"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0o2ht3i">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0sb357n">
+          <text>"{\"codice\":\"009\",\"descrizione\":{\"it\":\"Se l'appalto prevede ripetizioni, il motivo collegamento CIG deve essere :No, nessuna ipotesi di collegamento\",\"en\":\"Se l'appalto prevede ripetizioni, il motivo collegamento CIG deve essere :No, nessuna ipotesi di collegamento\"}}"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0wbehbc">
+          <text></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_0h9mko3" name="importo" />
+  <inputData id="InputData_1l4b4oj" name="sceltaContraente" />
+  <inputData id="InputData_1dsuzlq" name="condizioniNegoziata" />
+  <inputData id="InputData_0o5t3n0" name="linkDocumenti" />
+  <inputData id="InputData_0burooy" name="motivoEsclusioneOrdinarioSpeciale" />
+  <decision id="Decision_05ghhc7" name="DatiBase">
+    <informationRequirement id="InformationRequirement_0py1akf">
+      <requiredInput href="#InputData_0nbbbjo" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0d75ow0">
+      <requiredInput href="#InputData_0twuolq" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_07ukie0" hitPolicy="ANY">
+      <input id="InputClause_05lqm7n">
+        <inputExpression id="LiteralExpression_0st1pb0" typeRef="string">
+          <text>DatiBase</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_0jee8x5" name="Errore" typeRef="string" />
+      <rule id="DecisionRule_1v6110r">
+        <description>CPV Secondarie: l'elenco delle cpv secondarie non deve contenere il valore indicato come cpv prevalente.</description>
+        <inputEntry id="UnaryTests_0qk01hb">
+          <text>list contains(cpvsecondaria, cpv)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0zhb0ek">
+          <text>"{\"codice\":\"001\",\"descrizione\":{\"it\":\"Cpv già inserita come cpv prevalente\",\"en\":\"Cpv già inserita come cpv prevalente\"}}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_08lbzxw">
+        <description>CPV Secondarie: l'elenco delle cpv secondarie non deve contenere valori replicati.</description>
+        <inputEntry id="UnaryTests_14s1uky">
+          <text>count(cpvsecondaria) &gt; count(distinct values(cpvsecondaria))</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1vmmqsg">
+          <text>"{\"codice\":\"002\",\"descrizione\":{\"it\":\"Cpv gia' inserita come cpv secondaria\",\"en\":\"Cpv gia' inserita come cpv secondaria\"}}"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_1suzb8i" name="servizioPubblicoLocale" />
+  <inputData id="InputData_1fvzm5g" name="lavoroOAcquistoPrevistoInProgrammazione" />
+  <inputData id="InputData_13j8y0d" name="cui" />
+  <inputData id="InputData_1usdf4q" name="ripetizioniEConsegneComplementari" />
+  <inputData id="InputData_0dkxit4" name="opzioniRinnovi" />
+  <inputData id="InputData_0gc9pdd" name="appaltoDerivato" />
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="DMNDiagram_15do7a0">
+      <dmndi:DMNShape id="DMNShape_0aej6zx" dmnElementRef="Decision_14u7jel">
+        <dc:Bounds height="80" width="180" x="730" y="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_13p2n9y" dmnElementRef="InputData_039xwk8">
+        <dc:Bounds height="45" width="125" x="707" y="247" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0wr7sep" dmnElementRef="InformationRequirement_1wzawpc">
+        <di:waypoint x="770" y="247" />
+        <di:waypoint x="775" y="180" />
+        <di:waypoint x="775" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_16nmlug" dmnElementRef="InputData_0d5eewv">
+        <dc:Bounds height="45" width="125" x="847" y="247" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0qouoh3" dmnElementRef="InformationRequirement_0fcteid">
+        <di:waypoint x="910" y="247" />
+        <di:waypoint x="820" y="180" />
+        <di:waypoint x="820" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1srqhce" dmnElementRef="InputData_0638q0m">
+        <dc:Bounds height="45" width="125" x="987" y="247" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0gpm3jl" dmnElementRef="InformationRequirement_0xynjzo">
+        <di:waypoint x="1050" y="247" />
+        <di:waypoint x="865" y="180" />
+        <di:waypoint x="865" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0maufn1" dmnElementRef="decision_0drewrm">
+        <dc:Bounds height="80" width="180" x="370" y="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0gt6h5f" dmnElementRef="InputData_0nbbbjo">
+        <dc:Bounds height="45" width="125" x="917" y="507" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1y6yven" dmnElementRef="InformationRequirement_0py1akf">
+        <di:waypoint x="980" y="507" />
+        <di:waypoint x="960" y="490" />
+        <di:waypoint x="960" y="470" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1jq95gt" dmnElementRef="InputData_0twuolq">
+        <dc:Bounds height="45" width="125" x="1067" y="507" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1rca981" dmnElementRef="InformationRequirement_0d75ow0">
+        <di:waypoint x="1130" y="507" />
+        <di:waypoint x="1020" y="490" />
+        <di:waypoint x="1020" y="470" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1n16bmv" dmnElementRef="InputData_055kut8">
+        <dc:Bounds height="45" width="125" x="407" y="227" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0vd1b1x" dmnElementRef="InformationRequirement_19i7kk7">
+        <di:waypoint x="470" y="227" />
+        <di:waypoint x="460" y="180" />
+        <di:waypoint x="460" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0s1b7id" dmnElementRef="InputData_01am2df">
+        <dc:Bounds height="45" width="125" x="547" y="237" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0pv0jmh" dmnElementRef="InformationRequirement_10l7ibh">
+        <di:waypoint x="610" y="237" />
+        <di:waypoint x="505" y="180" />
+        <di:waypoint x="505" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_09ywsi7" dmnElementRef="InputData_133jhpl">
+        <dc:Bounds height="45" width="125" x="327" y="597" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0d7xd74" dmnElementRef="InformationRequirement_1xodxxk">
+        <di:waypoint x="390" y="597" />
+        <di:waypoint x="455" y="450" />
+        <di:waypoint x="455" y="430" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1yb5fvn" dmnElementRef="InputData_0sndcx0">
+        <dc:Bounds height="45" width="125" x="437" y="507" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1w24zfq" dmnElementRef="InformationRequirement_0octfkk">
+        <di:waypoint x="500" y="507" />
+        <di:waypoint x="470" y="450" />
+        <di:waypoint x="470" y="430" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1bb1k32" dmnElementRef="Decision_1emgruu">
+        <dc:Bounds height="80" width="180" x="380" y="350" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0vivtm3" dmnElementRef="InputData_0h9mko3">
+        <dc:Bounds height="45" width="125" x="547" y="577" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_102annk" dmnElementRef="InformationRequirement_14cpux1">
+        <di:waypoint x="610" y="577" />
+        <di:waypoint x="500" y="450" />
+        <di:waypoint x="500" y="430" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1sl1i8m" dmnElementRef="InputData_1l4b4oj">
+        <dc:Bounds height="45" width="125" x="197" y="407" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_02lm1cw" dmnElementRef="InformationRequirement_16ksjwg">
+        <di:waypoint x="322" y="430" />
+        <di:waypoint x="360" y="390" />
+        <di:waypoint x="380" y="390" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1q32brg" dmnElementRef="InputData_1dsuzlq">
+        <dc:Bounds height="45" width="125" x="247" y="527" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_073266a" dmnElementRef="InformationRequirement_01w2o0s">
+        <di:waypoint x="310" y="527" />
+        <di:waypoint x="440" y="450" />
+        <di:waypoint x="440" y="430" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1n1igw6" dmnElementRef="InputData_0o5t3n0">
+        <dc:Bounds height="45" width="125" x="277" y="227" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0vxtm9y" dmnElementRef="InformationRequirement_0a8vv25">
+        <di:waypoint x="340" y="227" />
+        <di:waypoint x="415" y="180" />
+        <di:waypoint x="415" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0n9nqo5" dmnElementRef="InputData_0burooy">
+        <dc:Bounds height="45" width="125" x="627" y="497" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1ym60ni" dmnElementRef="InformationRequirement_0unn3y5">
+        <di:waypoint x="690" y="497" />
+        <di:waypoint x="515" y="450" />
+        <di:waypoint x="515" y="430" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0g0r5o1" dmnElementRef="Decision_05ghhc7">
+        <dc:Bounds height="80" width="180" x="900" y="390" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_1ldxvxj" dmnElementRef="InputData_1suzb8i">
+        <dc:Bounds height="45" width="125" x="137" y="477" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1waobr6" dmnElementRef="InformationRequirement_1qp31av">
+        <di:waypoint x="200" y="477" />
+        <di:waypoint x="410" y="450" />
+        <di:waypoint x="410" y="430" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0kw6kyo" dmnElementRef="InputData_1fvzm5g">
+        <dc:Bounds height="45" width="125" x="87" y="557" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_10esxmz" dmnElementRef="InformationRequirement_1luh18p">
+        <di:waypoint x="150" y="557" />
+        <di:waypoint x="395" y="450" />
+        <di:waypoint x="395" y="430" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1bxmskx" dmnElementRef="InputData_13j8y0d">
+        <dc:Bounds height="45" width="125" x="157" y="627" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0xxovdy" dmnElementRef="InformationRequirement_166n2ku">
+        <di:waypoint x="220" y="627" />
+        <di:waypoint x="425" y="450" />
+        <di:waypoint x="425" y="430" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0zix46j" dmnElementRef="InputData_1usdf4q">
+        <dc:Bounds height="45" width="125" x="787" y="627" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1m291h1" dmnElementRef="InformationRequirement_09jrsfm">
+        <di:waypoint x="850" y="627" />
+        <di:waypoint x="545" y="450" />
+        <di:waypoint x="545" y="430" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1y2bq78" dmnElementRef="InputData_0dkxit4">
+        <dc:Bounds height="45" width="125" x="657" y="627" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0308oqt" dmnElementRef="InformationRequirement_15ljbr5">
+        <di:waypoint x="720" y="627" />
+        <di:waypoint x="530" y="450" />
+        <di:waypoint x="530" y="430" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1k1cl4p" dmnElementRef="InputData_0gc9pdd">
+        <dc:Bounds height="45" width="125" x="517" y="627" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_15vyaw4" dmnElementRef="InformationRequirement_16s908k">
+        <di:waypoint x="580" y="627" />
+        <di:waypoint x="485" y="450" />
+        <di:waypoint x="485" y="430" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
