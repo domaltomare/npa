@@ -9,9 +9,12 @@ components:
       allOf: # estende la classe LottoP3BaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP3BaseType'    
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,regimeParticolare,afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,motivoEsclusioneOrdinarioSpeciale,ripetizioniEConsegneComplementari]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,regimeParticolare,afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,motivoEsclusioneOrdinarioSpeciale,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean       
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
           type: boolean       
@@ -31,6 +34,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$           
           example: ''  
         ipotesiCollegamento:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IpotesiCollegamentoType'
@@ -42,12 +46,8 @@ components:
       allOf: # estende la classe AppaltoP3BaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP3BaseType'
       type: object
-      required: [servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,afferenteInvestimentiPNRR]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,afferenteInvestimentiPNRR]
       additionalProperties: false
-      properties:     
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean           
     AnacFormP3.5Type:
       description: Contiene i dati relativi alla scelta del socio privato nella società mista.
       allOf: # estende la classe AnacFormP3.5DatiBaseType
