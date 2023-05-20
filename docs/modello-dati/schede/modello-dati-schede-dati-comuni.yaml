@@ -432,7 +432,7 @@ components:
     AppaltoP4BaseType:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sotto soglia per le adesioni AQ/convenzione con successivo confronto competitivo 
       type: object
-      required: [cigAccordoQuadro,servizioPubblicoLocale,ripetizioniEConsegneComplementari,afferenteInvestimentiPNRR]
+      required: [cigAccordoQuadro,ripetizioniEConsegneComplementari,afferenteInvestimentiPNRR]
       additionalProperties: false
       properties:  
         idAppalto:
@@ -444,13 +444,10 @@ components:
           example: '' 
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'  
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean            
     AppaltoP6BaseType:
       description: Oggetto che riporta i dati dell'appalto all'interno della scheda di Finanza di progetto
       type: object
-      required: [prelazionePromotore,servizioPubblicoLocale]
+      required: [prelazionePromotore]
       additionalProperties: false
       properties:
         idAppalto:
@@ -461,9 +458,6 @@ components:
           type: boolean  
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'          
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean          
     AppaltoP.10Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -478,9 +472,6 @@ components:
           description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
           type: string
           format: url      
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean
         prestazioniComprese:
           $ref: '#/components/schemas/PrestazioniEnum'
     AppaltoP.11Type:
@@ -504,7 +495,7 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari, servizioPubblicoLocale, afferenteInvestimentiPNRR,modalitaAcquisizione]
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari, afferenteInvestimentiPNRR,modalitaAcquisizione]
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -513,15 +504,12 @@ components:
           description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
           type: string
           format: url      
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean  
     AppaltoP.13Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale, afferenteInvestimentiPNRR,modalitaAcquisizione]
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari, afferenteInvestimentiPNRR,modalitaAcquisizione]
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -530,26 +518,19 @@ components:
           description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
           type: string
           format: url   
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean   
     AppaltoP.14Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR,modalitaAcquisizione]
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,ripetizioniEConsegneComplementari, afferenteInvestimentiPNRR,modalitaAcquisizione]
       additionalProperties: false
-      properties:
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean            
     AppaltoP.16Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR,prestazioniComprese]
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR,prestazioniComprese]
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -558,9 +539,6 @@ components:
           description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
           type: string
           format: url           
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean
         prestazioniComprese:
           $ref: '#/components/schemas/PrestazioniEnum'
     AppaltoP.17Type:
@@ -568,14 +546,11 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR,prestazioniComprese] 
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR,prestazioniComprese] 
       additionalProperties: false
       properties:
         motivoUrgenza:
-          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'    
         linkDocumenti:
           description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
           type: string
@@ -602,19 +577,15 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR] 
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR] 
       additionalProperties: false
-      properties:
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean          
     AppaltoP.20Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
       required: [
-        categorieMerceologiche,servizioPubblicoLocale, afferenteInvestimentiPNRR,modalitaAcquisizione]       
+        categorieMerceologiche, afferenteInvestimentiPNRR,modalitaAcquisizione]       
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -623,15 +594,12 @@ components:
           description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
           type: string
           format: url      
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean
     AppaltoP.21Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [categorieMerceologiche,contrattiDisposizioniParticolari,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR,modalitaAcquisizione] 
+      required: [categorieMerceologiche,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione, afferenteInvestimentiPNRR,modalitaAcquisizione] 
       additionalProperties: false
       properties:
         motivoUrgenza:
@@ -640,9 +608,6 @@ components:
           description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
           type: string
           format: url      
-        servizioPubblicoLocale:
-          description: Flag servizio pubblico locale
-          type: boolean
     AppaltoP.23Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
@@ -709,9 +674,12 @@ components:
       allOf: # estende la classe LottoBaseType
         - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
+      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean      
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
           type: boolean      
@@ -743,7 +711,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
+      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro]
       additionalProperties: false
       properties:
         ripetizioniEConsegneComplementari:
@@ -777,9 +745,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,contrattiDisposizioniParticolari,ripetizioniEConsegneComplementari]
+      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,contrattiDisposizioniParticolari,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean       
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
           type: boolean        
@@ -810,9 +781,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,ripetizioniEConsegneComplementari]
+      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean        
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
           type: boolean        
@@ -843,9 +817,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione]
+      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean      
         lavoroOAcquistoPrevistoInProgrammazione:
           description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
           type: boolean  
@@ -873,9 +850,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean      
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
           type: boolean       
@@ -911,9 +891,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean      
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
           type: boolean       
@@ -971,9 +954,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,tipologiaLavoro,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean       
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
           type: boolean
@@ -1006,9 +992,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
+      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean      
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
           type: boolean       
@@ -1039,9 +1028,12 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari]
+      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean      
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
           type: boolean        
@@ -1144,7 +1136,7 @@ components:
       type: object
       additionalProperties: false
       required:
-        - lotIdentifier
+        - lotIdentifier,tipologiaLavoro
       properties:
         cig:
           description: codice identificativo lotto
@@ -1179,9 +1171,12 @@ components:
     LottoP4BaseType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [lotIdentifier, regimeParticolare,afferenteInvestimentiPNRR,opzioni/rinnovi, categoria]
+      required: [lotIdentifier, regimeParticolare,afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,tipologiaLavoro,servizioPubblicoLocale]
       additionalProperties: false
       properties:
+        servizioPubblicoLocale:
+          description: Flag servizio pubblico locale
+          type: boolean       
         cig:
           description: codice identificativo lotto
           type: string
@@ -1227,9 +1222,12 @@ components:
     LottoP6BaseType:
         description: Oggetto che riporta i dati del lotto all'interno della scheda di tracciabilità
         type: object
-        required: [lotIdentifier,regimeParticolare,lavoroOAcquistoPrevistoInProgrammazione, opzioni/rinnovi,afferenteInvestimentiPNRR,categoria]
+        required: [lotIdentifier,regimeParticolare,lavoroOAcquistoPrevistoInProgrammazione, opzioni/rinnovi,afferenteInvestimentiPNRR,categoria,tipologiaLavoro,servizioPubblicoLocale]
         additionalProperties: false
         properties:
+          servizioPubblicoLocale:
+            description: Flag servizio pubblico locale
+            type: boolean        
           cig:
             description: codice identificativo lotto
             type: string
@@ -1261,9 +1259,9 @@ components:
           afferenteInvestimentiPNRR:
             description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
             type: boolean    
-        acquisizioneCup:
-          description: Il contratto è finalizzato alla realizzazione di progetti d'investimento pubblico per i quali è prevista l'acquisizione del codice CUP ai sensi dell'art. 11 L. 3/2003 e ss.mm.? (E' necessario acquisire e comunicare il CUP per interventi finanziati, anche in parte, con risorse Comunitarie) (Si/No)
-          type: boolean            
+          acquisizioneCup:
+            description: Il contratto è finalizzato alla realizzazione di progetti d'investimento pubblico per i quali è prevista l'acquisizione del codice CUP ai sensi dell'art. 11 L. 3/2003 e ss.mm.? (E' necessario acquisire e comunicare il CUP per interventi finanziati, anche in parte, con risorse Comunitarie) (Si/No)
+            type: boolean            
           cupLotto:
             description: Cup associati al lotto
             type: array
