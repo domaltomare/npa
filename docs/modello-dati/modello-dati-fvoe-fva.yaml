@@ -39,8 +39,6 @@ components:
       description: tipologie dell''oggetto fascicolo - Identificativo per determinare il tipo di modello dati del Fascicolo- fare riferimento ai valori contenuti nel file [tipoOggettoFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOggettoFascicolo.json)
     TipoAzioneFascicoloEnum:
       description: tipologie delle azioni eseguite sul fascicolo - fare riferimento ai valori contenuti nel file [tipoAzioneFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneFascicolo.json)
-    TipoOggettoDocumentoEnum:
-      description: tipologie dell''oggetto documento - Identificativo per determinare il tipo di modello dati del Documento- fare riferimento ai valori contenuti nel file [tipoOggettoDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOggettoDocumento.json)
     TipoAzioneDocumentoEnum:
       description: tipologie delle azioni eseguite sul fascicolo - fare riferimento ai valori contenuti nel file [tipoAzioneDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneDocumento.json)   
     AppaltoType : 
@@ -74,7 +72,29 @@ components:
           description: data di registrazione del fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
-          example: "2022-01-23T12:02:05Z"      
+          example: "2022-01-23T12:02:05Z"
+        numDocumenti:
+            description: numero della pagina da visualizzare.
+            type: integer
+            format: int32
+            minimum: 10
+            default: 0
+        documenti:
+          description: Lista documenti
+          type: array
+          items:
+            $ref: '#/components/schemas/DocumentoType'    
+        numSottoFascicoli:
+            description: numero della pagina da visualizzare.
+            type: integer
+            format: int32
+            minimum: 10
+            default: 0
+        SottoFascicoli:
+          description: Lista Sotto Fascicoli
+          type: array
+          items:
+            $ref: '#/components/schemas/FascicoloType'    
     FVOEType:
       allOf: # estende lo schema dati di FascicoloType
         - $ref: '#/components/schemas/FascicoloType'
@@ -84,11 +104,6 @@ components:
       properties:
         anagraficaOE: 
           $ref: '#/components/schemas/AnagraficaOEType'
-        documenti:
-          description: Lista documenti
-          type: array
-          items:
-            $ref: '#/components/schemas/DocumentoOEType' 
     FVAType:
       allOf: # estende lo schema dati di FascicoloType
         - $ref: '#/components/schemas/FascicoloType'
@@ -97,12 +112,7 @@ components:
       additionalProperties: false
       properties:
         appalto:
-          $ref: '#/components/schemas/AppaltoType' 
-        documenti:
-          description: Lista documenti
-          type: array
-          items:
-            $ref: '#/components/schemas/DocumentoAType'      
+          $ref: '#/components/schemas/AppaltoType'
     DocumentoType:
       description: Oggetto che riporta i dati del Documento
       type: object
@@ -112,11 +122,9 @@ components:
           description: identificativo univoco del documento
           type: string
           example: "507f1f77bcf86cd799439011"
-        tipoOggetto:
-          $ref: '#/components/schemas/TipoOggettoDocumentoEnum'
-        tipoDcumento:
+        tipo:
           $ref: '#/components/schemas/TipoDocumentoEnum'
-        statoDocumento:
+        stato:
           $ref: '#/components/schemas/StatoDocumentoEnum'
         dataInserimento:
           description: data di inserimento del documento (A datetime specified by RF3339)
@@ -156,34 +164,12 @@ components:
         datiAggiuntivi:
           description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON
           type: string
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
-    DocumentoOEType:
-      description: Oggetto che riporta i dati del Documento dell'OE
-      allOf: # estende lo schema dati di DocumentoType
-        - $ref: '#/components/schemas/DocumentoType'
-      type: object
-      additionalProperties: false
-      properties:
-        anagraficaOE: 
-          $ref: '#/components/schemas/AnagraficaOEType'
-        fascicoloVOE:
-          $ref: '#/components/schemas/FVOEType'      
-    DocumentoAType:
-      description: Oggetto che riporta i dati del Documento dell'Appalto
-      allOf: 
-        - $ref: '#/components/schemas/DocumentoOEType' # estende lo schema dati di DocumentoType
-        # TBD POSSIBILI PROBLEMI APPLICATIVI LATO CLIENT- $ref: '#/components/schemas/DocumentoType' #estende lo schema dati di DocumentoOE perché potrebbe essere un Documento dell' Operatore Economico
-      type: object
-      additionalProperties: false
-      properties:
-        appalti:
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        fascicoli: 
           type: array
+          minItems: 0
           items:
-            $ref: '#/components/schemas/AppaltoType'
-        fascicoli:
-          type: array
-          items:
-            $ref: '#/components/schemas/FVAType'       
+            $ref: '#/components/schemas/FascicoloType' 
     ContentDocumentType:
       description: Oggetto che riporta il contenuto del
       type: object
@@ -235,7 +221,7 @@ components:
         stato:
           $ref: '#/components/schemas/StatoAutorizzazioneEnum'
         motivo:
-          description: motivo dell'autorizzazione o del rifiuto
+          description: motivo dell''autorizzazione o del rifiuto
           type: string
           maxLength: 255
         autorizzante: 
