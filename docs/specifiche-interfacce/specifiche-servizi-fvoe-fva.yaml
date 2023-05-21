@@ -329,19 +329,27 @@ paths:
                 elementPage": 2
                 result: 
                   - idDocumento: "507f1f77bcf86cd799439011"
-                    tipoDcumento: "DURC"
-                    statoDocumento: "IN LAVORAZIONE"
+                    tipo: 
+                      codice: "01"
+                      descrizione: "DURC"
+                    stato: 
+                      codice: "21"
+                      descrizione: "IN LAVORAZIONE"
                     oggetto: ""
                     dataInserimento: "2014-02-28T18:07:17Z"
-                    fascicoloOE: 
-                      idFascicolo: "507f1f77bcf86cd799439011"
+                    fascicoli: 
+                      idFascicolo: "878g1j75bcf86cd799439022"
                   - idDocumento: "507f1f77bcf86cd799888889"
-                    tipoDcumento: "DURC"
-                    statoDocumento: "IN LAVORAZIONE"
+                    tipo: 
+                      codice: "01"
+                      descrizione: "DURC"
+                    stato: 
+                      codice: "01"
+                      descrizione: "IN LAVORAZIONE"
                     oggetto: ""
                     dataInserimento: "2014-02-28T18:07:17Z"
-                    fascicoloOE: 
-                      idFascicolo: "507f1f77cdf86cd799489011"  
+                    fascicoli: 
+                      idFascicolo: "999f1f77cdf86cd799489011"  
           links:
             RecuperaDocumentoFVOEIdLink:  
               operationId: idDocumentoFVOEDettaglio
@@ -387,9 +395,12 @@ paths:
                 title: "Operazione Effettuata"
                 documento:
                   idDocumento: "775f1f88bcf86cd987639011"
-                  tipoDcumento: "DURC"
-                  statoDocumento: "IN LAVORAZIONE"
-                  tipoOggetto: "DocumentoAType"
+                  tipo: 
+                      codice: "01"
+                      descrizione: "DURC"
+                  stato: 
+                      codice: "21"
+                      descrizione: "IN LAVORAZIONE"
                   dataInserimento: '2022-01-23T12:02:05Z' 
                   dataEmissione: '2022-01-23T12:02:05Z' 
                   dataFineValidita: '2022-01-23T12:02:05Z' 
@@ -397,9 +408,8 @@ paths:
                   dataProtocollo: '2022-01-23T12:02:05Z' 
                   utenteCreazione: "UDI.8909"  
                   dataCreazione: '2022-01-23T12:02:05Z'
-                  anagraficaOE:
-                    codice: "zxczczcz"
-                  fascicoloVOE: 
+                  datiAggiuntivi: "{id=45, { persona{codice=45} } }"
+                  fascicoli: 
                     idFascicolo: "890f1f77bcf86cd799888888"
                   contenutoDocumento: 
                     nomeFile: "Allegato8989.pdf"
@@ -612,7 +622,6 @@ paths:
           description: tipo del documento
           schema:
             $ref: '#/components/schemas/TipoDocumentoEnum' 
-          example: 'VISURA_CAMERALE'
         - in: query
           name: datiAggiuntivi
           description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON
@@ -651,19 +660,27 @@ paths:
                 elementPage": 2
                 result: 
                   - idDocumento: "507f1f77bcf86cd799439011"
-                    tipoDcumento: "DURC"
-                    statoDocumento: "IN LAVORAZIONE"
+                    tipo: 
+                      codice: "01"
+                      descrizione: "DURC"
+                    stato: 
+                      codice: "21"
+                      descrizione: "IN LAVORAZIONE"
                     oggetto: ""
                     dataInserimento: "2014-02-28T18:07:17Z"
-                    fascicoliVA: 
+                    fascicoli: 
                       - idFascicolo: "507f1f77bcf86cd799439011"
                       - idFascicolo: "507f1f77bcf86cd799439011"
                   - idDocumento: "507f1f77bcf86cd799888889"
-                    tipoDcumento: "DURC"
-                    statoDocumento: "IN LAVORAZIONE"
+                    tipo: 
+                      codice: "01"
+                      descrizione: "DURC"
+                    stato: 
+                      codice: "21"
+                      descrizione: "IN LAVORAZIONE"
                     oggetto: ""
                     dataInserimento: "2014-02-28T18:07:17Z"
-                    fascicoliVA: 
+                    fascicoli: 
                       - idFascicolo: "507f1f77cdf86cd799489011"      
           links:
             RecuperaDocumentoFVAIdLink:  
@@ -707,9 +724,12 @@ paths:
                 title: "Operazione Effettuata"
                 documento:
                   idDocumento: "775f1f88bcf86cd987639011"
-                  tipoDcumento: "DURC"
-                  statoDocumento: "IN LAVORAZIONE"
-                  tipoOggetto: "DocumentoAType"
+                  tipo: 
+                    codice: "01"
+                    descrizione: "DURC"
+                  stato: 
+                    codice: "21"
+                    descrizione: "IN LAVORAZIONE"
                   dataInserimento: '2022-01-23T12:02:05Z' 
                   dataEmissione: '2022-01-23T12:02:05Z' 
                   dataFineValidita: '2022-01-23T12:02:05Z' 
@@ -717,16 +737,9 @@ paths:
                   dataProtocollo: '2022-01-23T12:02:05Z' 
                   utenteCreazione: "UDI.8909"  
                   dataCreazione: '2022-01-23T12:02:05Z'
-                  anagraficaOE:
-                    codice: "zxczczcz"
-                  fascicoloVOE: 
+                  datiAggiuntivi: "{id=45, { persona{codice=45} } }"  
+                  fascicoli: 
                     idFascicolo: "890f1f77bcf86cd799888888"
-                  appalti:
-                    - idAppalto: "a772eb29-accd-4ee2-b9c7-1cf0faf47b6a"
-                    - idAppalto: "fab25b53-0e5f-40d6-888d-f97ba33574e5"
-                  fascicoliVA:
-                    - idFascicolo: "507f1f77bcf86cd799439011"
-                    - idFascicolo: "878f1f77bcf86cd799439056"
                   contenutoDocumento: 
                     nomeFile: "Allegato8989.pdf"
                     estensione: "PDF"
@@ -1116,11 +1129,12 @@ components:
       allOf: # estende il modello dati AutorizzaAccessoType
         - $ref: '#/components/schemas/AutorizzazioneAccessoType' 
       example:
-        stato: "AUTORIZZATO"
+        stato:
+          codice: "03"
+          descrizione: "AUTORIZZATO"
         dataScadenza: "2022-01-23T12:02:05Z"
         richiestaAccesso: 
           idRichiesta: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-
     PaginazioneType:
       description: Oggetto per la paginazione dei risultati
       type: object
@@ -1174,11 +1188,7 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       properties:  
         documento: 
-          oneOf:
-            - $ref: '#/components/schemas/DocumentoOEType'
-            - $ref: '#/components/schemas/DocumentoAType'
-          discriminator:
-            propertyName: tipoOggetto
+          $ref: '#/components/schemas/DocumentoType'
         contenutoDocumento:
           $ref: '#/components/schemas/ContentDocumentType'
     RecuperaFascicoloResponse :
@@ -1197,21 +1207,42 @@ components:
         fascicolo:
           idFascicolo: "507f1f77hcf86cd799765676"
           codiceFascicolo : "2397879"
-          stato : "Aperto"
+          stato : 
+            codice: "01"
+            descrizione: "Aperto"
           dataCreazione : "2015-05-28T14:07:17Z"
           appalto :
             idAppalto : "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
           documenti :
             - idDocumento : "c3425891-1e8c-42ba-a64e-4f0d77cf1f99"
-              tipoDocumento : "DURC"
-              stato : "Creato"
+              tipo: 
+                codice: "01"
+                descrizione: "DURC"
+              stato: 
+                codice: "01"
+                descrizione: "Creato"
               oggetto : ""
               datacreazione : "2016-07-03T15:04:00Z"
             - idDocumento : "24f209fb-5f48-4793-8e3f-45d9f57d1997"
-              tipoDocumento : "Visura camerale"
+              tipo : "Visura camerale"
               stato : "Creato"
               oggetto : ""
               datacreazione : "2016-07-03T15:04:00Z"
+          sottoFascicoli :
+            - idFascicolo : "c3425891-1e8c-42ba-a64e-4f0d77cf1f99"
+              tipo : "FVVerificaOE"
+              stato: 
+                codice: "01"
+                descrizione: "Creato"
+              oggetto : ""
+              datacreazione : "2016-07-03T15:04:00Z"
+            - idFascicolo : "24f209fb-5f48-4793-8e3f-45d9f57d1997"
+              tipo : "FVVerificaOE"
+              stato: 
+                codice: "01"
+                descrizione: "Creato"
+              oggetto : ""
+              datacreazione : "2016-07-03T15:04:00Z"    
     ConsultaAnagraficaOEResponse :
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -1281,48 +1312,24 @@ components:
           result: 
               - idFascicolo: "45353@#sdF"
                 codiceFascicolo : "2397879"
-                stato : "Aperto"
+                stato : 
+                  codice: "01"
+                  descrizione: "Aperto"
                 dataCreazione : "2015-05-28T14:07:17Z"
                 appalto :
                   idAppalto : "y71d4fae-7dec-11d0-a765-00a0c93f6bf6"
-                documenti :
-                  - idDocumento : "c3425891-1e8c-42ba-a64e-4f0d77cf1f99"
-                    tipoDocumento : "DURC"
-                    stato : "Creato"
-                    oggetto : ""
-                    datacreazione : "2016-07-03T15:04:00Z"
-                  - idDocumento : "24f209fb-5f48-4793-8e3f-45d9f57d1997"
-                    tipoDocumento : "Visura camerale"
-                    stato : "Creato"
-                    oggetto : ""
-                    datacreazione : "2016-07-03T15:04:00Z"
+                numDocumenti : 24
+                numSottoFascicoli : 0
               - idFascicolo: "453jkui853"
                 codiceFascicolo : "239786"
-                stato : "Aperto"
+                stato : 
+                  codice: "01"
+                  descrizione: "Aperto"
                 dataCreazione : "2015-04-01T14:07:17Z"
                 appalto :
                   idAppalto : "8a5cfb85-1013-4070-868a-52eebd5c77e6"
-                documenti :
-                  - idDocumento : "ec407fc5-6319-47bf-a0ac-2cf81753f5a1"
-                    tipoDocumento : "DURC"
-                    stato : "Creato"
-                    oggetto : ""
-                    datacreazione : "2016-09-11T20:04:00Z" 
-                  - idDocumento : "7a6c564b-d922-4fb2-a794-293fbab38350"
-                    tipoDocumento : "Certificato Antimafia"
-                    stato : "Creato"
-                    oggetto : ""
-                    datacreazione : "2016-09-11T20:10:00Z" 
-                  - idDocumento : "7d917724-2a30-46ba-80a3-e997512e39a0"
-                    tipoDocumento : "Casellario Giudiziale"
-                    stato : "Creato"
-                    oggetto : ""
-                    datacreazione : "2016-09-11T20:04:00Z"   
-                  - idDocumento : "b6232764-cac7-466f-b682-fe58f883b030"
-                    tipoDocumento : "Certificato dei carichi pendenti degli illeciti amministrativi"
-                    stato : "Creato"
-                    oggetto : ""
-                    datacreazione : "2016-09-11T20:04:00Z"   
+                numDocumenti : 150  
+                numSottoFascicoli : 4
     DocumentiListaResponse :
       allOf: # estende la classe BaseResponse e PaginazioneType
         - $ref: '#/components/schemas/BaseResponse'
@@ -1335,12 +1342,7 @@ components:
           description: risposta di una lista di oggetti paginati specifica del servizio SINCRONO
           type: array
           items:
-            #$ref: '#/components/schemas/DocumentoType'
-            oneOf:
-              - $ref: '#/components/schemas/DocumentoOEType'
-              - $ref: '#/components/schemas/DocumentoAType'
-            discriminator:
-              propertyName: tipoOggetto 
+            $ref: '#/components/schemas/DocumentoType'
     ConsultaStoricoOEResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -1349,21 +1351,27 @@ components:
           description: Lista documenti
           type: array
           items:
-            $ref: '#/components/schemas/DocumentoOEType'
+            $ref: '#/components/schemas/DocumentoType'
       example:
         status: 200
         title: "Operazione terminata correttamente"
         result: 
           - idDocumento: "45353@#sdF"
-            azione : "Aperto"
+            azione : 
+              codice: "01"
+              descrizione: "Aperto"
             utenteCreazione : "X4563X"
             dataCreazione : "2014-02-28T18:07:17Z"
           - idDocumento: "45353@#sdF"
-            azione : "Aggiunto documento"
+            azione : 
+              codice: "04"
+              descrizione: "Aggiunto documento"
             utenteCreazione : "X4578X"
             dataCreazione : "2015-05-28T14:07:17Z"      
           - idDocumento: "45353@#sdF"
-            azione : "Aggiunto documento"
+            azione : 
+              codice: "04"
+              descrizione: "Aggiunto documento"
             utenteCreazione : "Y67854"
             dataCreazione : "2016-07-12T14:07:17Z"         
     ConsultaStoricoAResponse:
@@ -1374,21 +1382,27 @@ components:
           description: Lista documenti
           type: array
           items:
-            $ref: '#/components/schemas/DocumentoAType'
+            $ref: '#/components/schemas/DocumentoType'
       example:
         status: 200
         title: "Operazione terminata correttamente"
         result: 
           - idDocumento: "45353@#sdF"
-            azione : "Aperto"
+            azione : 
+              codice: "01"
+              descrizione: "Aperto"
             utenteCreazione : "X4563X"
             dataCreazione : "2014-02-28T18:07:17Z"
           - idDocumento: "45353@#sdF"
-            azione : "Aggiunto documento"
+            azione : 
+              codice: "04"
+              descrizione: "Aggiunto documento"
             utenteCreazione : "X4578X"
             dataCreazione : "2015-05-28T14:07:17Z"      
           - idDocumento: "45353@#sdF"
-            azione : "Aggiunto documento"
+            azione : 
+              codice: "04"
+              descrizione: "Aggiunto documento"
             utenteCreazione : "Y67854"
             dataCreazione : "2016-07-12T14:07:17Z"              
     ConsultaStoricoFVAResponse:
@@ -1405,15 +1419,21 @@ components:
         title: "Operazione terminata correttamente"
         result: 
           - idFascicolo: "45353@#sdF"
-            azione : "Aperto"
+            azione : 
+              codice: "01"
+              descrizione: "Aperto"
             utenteCreazione : "X4563X"
             dataCreazione : "2014-02-28T18:07:17Z"
           - idFascicolo: "45353@#sdF"
-            azione : "Aggiunto documento"
+            azione : 
+              codice: "04"
+              descrizione: "Aggiunto documento"
             utenteCreazione : "X4578X"
             dataCreazione : "2015-05-28T14:07:17Z"      
           - idFascicolo: "45353@#sdF"
-            azione : "Aggiunto documento"
+            azione : 
+              codice: "04"
+              descrizione: "Aggiunto documento"
             utenteCreazione : "Y67854"
             dataCreazione : "2016-07-12T14:07:17Z"        
     BaseResponse:
