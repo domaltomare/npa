@@ -173,6 +173,10 @@ components:
     MotiviModificaContrattualeEnum:
       description: Motivi modifica contrattuale - corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motiviModificaContrattuale.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviModificaContrattuale.json) 
       allOf: 
+      - $ref: '#/components/schemas/TipologicaType' 
+    MotiviRevisionePrezziEnum:
+      description: Motivo di revisione dei prezzi - fare riferimento ai valori contenuti nel file [motiviRevisionePrezzi.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviRevisionePrezzi.json) 
+      allOf: 
       - $ref: '#/components/schemas/TipologicaType'      
     MotivoDerogaType:
       type: array
@@ -665,6 +669,7 @@ components:
           type: array
           items:
             type: string
+            pattern: ^[a-zA-Z0-9]{15}$
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         oggettoPrincipaleContratto:
@@ -760,6 +765,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$
           example: ''       
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
@@ -796,6 +802,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''       
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
@@ -829,6 +836,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''       
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
@@ -865,6 +873,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''        
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
@@ -906,6 +915,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''        
         saNonSoggettaObblighi24Dicembre2015:
           description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
@@ -975,6 +985,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''           
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
@@ -1013,6 +1024,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''           
         opzioni/rinnovi:
           description: L’appalto prevede opzioni/rinnovi?
@@ -1049,6 +1061,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''           
         opzioni/rinnovi:
           description: L’appalto prevede opzioni/rinnovi?
@@ -1080,6 +1093,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''      
         afferenteInvestimentiPNRR:
           description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
@@ -1091,7 +1105,8 @@ components:
           description: Cup associati al lotto
           type: array
           items:
-            type: string  
+            type: string 
+            pattern: ^[a-zA-Z0-9]{15}$
         motivoEsclusioneOrdinarioSpeciale:
           $ref: '#/components/schemas/MotivoEsclusioneOrdinarioSpecialeEnum'           
     LottoP.24Type:
@@ -1115,6 +1130,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''      
         afferenteInvestimentiPNRR:
           description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
@@ -1128,7 +1144,8 @@ components:
           description: Cup associati al lotto
           type: array
           items:
-            type: string   
+            type: string 
+            pattern: ^[a-zA-Z0-9]{15}$
         contrattiDisposizioniParticolari:
           $ref: '#/components/schemas/ContrattiDisposizioniParticolariEnum'          
     LottoP3BaseType:
@@ -1158,6 +1175,7 @@ components:
           type: array
           items:
             type: string
+            pattern: ^[a-zA-Z0-9]{15}$
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         tipologiaLavoro:
@@ -1194,6 +1212,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
+          pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''  
         ipotesiCollegamento:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
@@ -1210,7 +1229,8 @@ components:
           description: Cup associati al lotto
           type: array
           items: 
-            type: string   
+            type: string 
+            pattern: ^[a-zA-Z0-9]{15}$
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         tipologiaLavoro:
@@ -1250,6 +1270,7 @@ components:
           cui:
             description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
             type: string
+            pattern: ^[a-zA-Z0-9]{20,22}$            
             example: '' 
           ipotesiCollegamento:
             $ref: '#/components/schemas/IpotesiCollegamentoType'  
@@ -1267,6 +1288,7 @@ components:
             type: array
             items: 
               type: string 
+              pattern: ^[a-zA-Z0-9]{15}$
           paritaDiGenereGenerazionale:
             $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
           modalitaAcquisizione:
