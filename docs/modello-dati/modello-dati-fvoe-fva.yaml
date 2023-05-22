@@ -15,6 +15,14 @@ components:
         descrizione:
           description: descrizione
           type: string
+        datainizio:
+          description: data inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+        datafine:
+          description: data fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
     StatoAutorizzazioneEnum:  
       allOf: # estende lo schema dati di TipologicaType
         - $ref: '#/components/schemas/TipologicaType'
