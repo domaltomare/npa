@@ -1,1 +1,32 @@
-
+openapi: 3.0.3
+info:
+  title: Modello Dati Common - OpenAPI 3.0
+  version: 1.0.0
+  description: |-
+   Vengono riportati gli oggetti comuni
+components:
+  schemas:
+    TipologicaSchemaType:
+        type: object
+        properties:
+          codice:
+            type: string
+          descrizione:
+            $ref: '#/components/schemas/I18NType'
+          dataInizio:
+            description: data inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+          dataFine:
+            description: data fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+    I18NType:
+        type: object
+        properties:
+          it:
+            type: string
+          en:
+            type: string
