@@ -236,13 +236,6 @@ components:
             example: '9050626CD6'
           lotIdentifier:
             description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-      I18NType:
-        type: object
-        properties:
-          it:
-            type: string
-          en:
-            type: string
       TipologicaBaseType:
         description: Oggetto generico di una tipologica
         type: object
@@ -268,24 +261,10 @@ components:
             description: Elenco di una tipologica
             type: array
             items:
-              $ref: '#/components/schemas/DatiTipologicaType'
+              $ref: '#/components/schemas/TipologicaSchemaType'
       DatiTipologicaType:
-        type: object
-        properties:
-          codice:
-            type: string
-          descrizione:
-            $ref: '#/components/schemas/I18NType'
-          dataInizio:
-            description: data inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
-            type: string
-            format: datetime
-            example: '2022-01-23T12:02:05Z'
-          dataFine:
-            description: data fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
-            type: string
-            format: datetime
-            example: '2022-01-23T12:02:05Z'
+        allOf: # estende lo schema dati di TipologicaType
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-common.yaml#/components/schemas/TipologicaSchemaType'
       AnagraficaType:
         description: oggetto generico dell'anagrafica
         type: object
