@@ -158,14 +158,6 @@ components:
         type: string
         format: uuid
         example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-      StatoFascicoloEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/StatoFascicoloEnum'
-      StatoDocumentoEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/StatoDocumentoEnum'
-      StatoRichiestaEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/StatoRichiestaEnum'
-      TipoDocumentoEnum: 
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/TipoDocumentoEnum'
       AnagraficaOEType:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/AnagraficaOEType' 
       FVOEType:
@@ -184,47 +176,22 @@ components:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/AutorizzazioneAccessoType' 
       RichiestaAccessoType:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/RichiestaAccessoType'
-      StatoSchedaEnum:
-        description: Stato della Scheda - fare riferimento ai valori contenuti nel file [statoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoScheda.json)
-      TipoSchedaEnum:
-        description: Tipologia di Scheda - fare riferimento ai valori contenuti nel file [tipoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoScheda.json)
-      TipoServizioSoggettoEnum:
-        description: Tipologia di Servizi delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoServizioSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoServizioSoggetto.json)
-      TipoOperazioneSoggettoEnum:
-        description: Tipologia di Operazioni delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoOperazioneSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
-      TipoOperazioneEnum:
-        description: Tipo Operazione di cui si richiedere l'esito dell'operazione - fare riferimento ai valori contenuti nel file [tipoOperazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazione.json)
-      TipoRicercaOperazioneEnum:
-        description: Tipo di ricerca da eseguire - fare riferimento ai valori contenuti nel file [tipoRicercaOperazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRicercaOperazione.json)
-      TipoPianoEnum:
-        description: Tipo di pianificazione - fare riferimento ai valori contenuti nel file [tipoPiano.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoPiano.json)
       TipoAzioneAvvisoEnum:
-        description: Tipo di azione dell'avviso - fare riferimento ai valori contenuti nel file [tipoAzioneAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneAvviso.json)
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneAvvisoEnum'
       TipoAvvisoEnum:
-        description: Tipologia di avviso - fare riferimento ai valori contenuti nel file [tipoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAvviso.json)
-      TipoRuoloEnum:
-        description: Tipo di ruolo di un soggetto - fare riferimento ai valori contenuti nel file [tipoRuolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRuolo.json)
-      StatoPianoEnum:  
-        description: Stato della pianificazione - fare riferimento ai valori contenuti nel file [statoPiano.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoPiano.json)
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAvvisoEnum'
       StatoAppaltoEnum: 
-        description: Stato in cui si trova l' Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoAppaltoEnum'
       StatoAvvisoEnum:
-        description: Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file [statoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAvviso.json)
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoAvvisoEnum'
       StatoLottoEnum:
-        description: Stato in cui si trova il Lotto - fare riferimento ai valori contenuti nel file [statoLotto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoLotto.json)
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoLottoEnum'
       StatoContrattoEnum:
-        description: Stato in cui si trova il Contratto - fare riferimento ai valori contenuti nel file [statoContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoContratto.json)        
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoContrattoEnum'    
       OggettoPrincipaleContrattoEnum:
-        description:  Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [oggettoPrincipaleContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json)
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoPrincipaleContrattoEnum'
       EsitoEnum:
-        type: string
-        minimum: 1
-        enum: ['OK','KO','WN']
-        description: >
-            Esito dell'operazione:
-             * 'OK' - SUCCESS
-             * 'KO' - ERROR
-             * 'WN' - WARNING
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoEnum'
       CigType:
         description: coppia lotIdentifier-cig
         type: object
