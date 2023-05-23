@@ -46,6 +46,26 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'     
       description: tipologie di documento - fare riferimento ai valori contenuti nel file [tipoDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoDocumento.jsoN)
+    StatoAutorizzazioneEnum:  
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: '#/components/schemas/TipologicaSchemaType'
+      description: Stato in cui si trova l'Autorizzazione - fare riferimento ai valori contenuti nel file [statoAutorizzazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAutorizzazione.json)
+    TipoFascicoloEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: '#/components/schemas/TipologicaSchemaType'     
+      description: tipologie di fascicolo - fare riferimento ai valori contenuti nel file [tipoFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoFascicolo.json)
+    TipoOggettoFascicoloEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: '#/components/schemas/TipologicaSchemaType'    
+      description: tipologie dell''oggetto fascicolo - Identificativo per determinare il tipo di modello dati del Fascicolo- fare riferimento ai valori contenuti nel file [tipoOggettoFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOggettoFascicolo.json)
+    TipoAzioneFascicoloEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: '#/components/schemas/TipologicaSchemaType'    
+      description: tipologie delle azioni eseguite sul fascicolo - fare riferimento ai valori contenuti nel file [tipoAzioneFascicolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneFascicolo.json)
+    TipoAzioneDocumentoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: '#/components/schemas/TipologicaSchemaType'    
+      description: tipologie delle azioni eseguite sul fascicolo - fare riferimento ai valori contenuti nel file [tipoAzioneDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneDocumento.json)
     StatoSchedaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'     
