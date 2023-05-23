@@ -2223,7 +2223,8 @@ components:
         statoAvviso:  
            $ref: '#/components/schemas/StatoAvvisoType'
     AppaltoListaResponse :
-      allOf: # estende la classe PaginazioneType
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
         - $ref: '#/components/schemas/PaginazioneType'
       description: Oggetto generico di ritorno di una risposta con paginazione
       type: object
@@ -2235,7 +2236,8 @@ components:
           items:
             $ref: '#/components/schemas/AppaltoType'
     SoggettoListaResponse :
-      allOf: # estende la classe PaginazioneType
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
         - $ref: '#/components/schemas/PaginazioneType'
       description: Oggetto generico di ritorno di una risposta con paginazione
       type: object
@@ -2247,7 +2249,8 @@ components:
           items:
             $ref: '#/components/schemas/AnagraficaSoggettoType'        
     PianoListaResponse:
-      allOf: # estende il modello dati PaginazioneType
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
         - $ref: '#/components/schemas/PaginazioneType'
       description: Oggetto generico di ritorno di una risposta con paginazione
       type: object
@@ -2259,7 +2262,8 @@ components:
           items:
             $ref: '#/components/schemas/PianoType'
     AvvisoListaResponse:
-      allOf: # estende la classe PaginazioneType
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
         - $ref: '#/components/schemas/PaginazioneType'
       description: Oggetto generico di ritorno di una risposta con paginazione
       type: object
@@ -2271,7 +2275,8 @@ components:
           items:
             $ref: '#/components/schemas/DatiAvvisoType'  
     CigListaResponse:
-      allOf: # estende la classe PaginazioneType
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
         - $ref: '#/components/schemas/PaginazioneType'
       description: Oggetto generico di ritorno di una risposta con paginazione
       type: object
@@ -2295,7 +2300,8 @@ components:
         tipologica:  
           $ref: '#/components/schemas/DatiTipologicaType'       
     TipologicaListaResponse:
-      allOf: # estende la classe PaginazioneType
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
         - $ref: '#/components/schemas/PaginazioneType'
       description: Oggetto generico di ritorno di una risposta con paginazione
       type: object
@@ -2307,8 +2313,9 @@ components:
           items:
             $ref: '#/components/schemas/TipologicaBaseType' 
     SchedaListaResponse:
-      allOf: # estende la classe PaginazioneType
-          - $ref: '#/components/schemas/PaginazioneType'
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/PaginazioneType'
       description: Oggetto generico di ritorno di una risposta con paginazione
       type: object
       additionalProperties: false
@@ -2415,21 +2422,22 @@ components:
               maxLength: 2048
               type: string
               example: 'https://tools.ietf.org/html/rfc7231#section-6.6.4'
-          errori:
-            description: elenco degli errori
-            type: object
-            properties:
-              codice:
-                type: string
-                example: '001'
-              descrizione:
-                maxLength: 4096
-                pattern: ^.{0,1024}$
-                type: string
-                example: 'Non è stato indicato il campo Motivazione richiesta CIG.'
     ErrorResponse:
       allOf: # estende la classe BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
+      properties:
+        errori:
+          description: elenco degli errori
+          type: object
+          properties:
+            codice:
+              type: string
+              example: '001'
+            descrizione:
+              maxLength: 4096
+              pattern: ^.{0,1024}$
+              type: string
+              example: 'Non è stato indicato il campo Motivazione richiesta CIG.'        
     AckResponse:
       allOf: # estende la classe BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
