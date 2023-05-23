@@ -505,23 +505,18 @@ components:
           stato:  
              $ref: '#/components/schemas/StatoAvvisoEnum'             
       EsitoOperazioneBaseType:
+        allOf: # estende la classe EsitoOperazioneBaseType
+          - $ref: '#/components/schemas/EsitoOperazioneEnum'
         type: object
         additionalProperties: false
         required:  # List the required properties here
           - codice
           - descrizione
           - esito
+          - dataControllo
         properties:
           esito:
             $ref: '#/components/schemas/EsitoEnum'
-          codice: 
-            description: codice dell'esito dell'operazione
-            type: string
-            example: '01'
-          descrizione:
-            description: descrizione dell'esito dell'operazione
-            type: string
-            example: 'AVVISO PUBBLICATO'
           dataControllo:
             description: data in cui è stato effettuato il controllo dell'esito dell'operazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
             type: string
@@ -536,12 +531,17 @@ components:
             properties:
               codice:
                 type: string
-                example: '001'
               descrizione:
                 maxLength: 4096
                 pattern: ^.{0,1024}$
                 type: string
-                example: 'Non è stato indicato il campo Motivazione richiesta CIG.'            
+        example:
+            codice: '01'
+            descrizione: 
+              it: 'AVVISO PUBBLICATO'
+              en: 'AVVISO PUBBLICATO'
+            dataControllo: '2022-01-23T12:02:05Z'
+            esito: 'OK'
       EsitoOperazioneAvvisoType:
         allOf: # estende la classe EsitoOperazioneBaseType
           - $ref: '#/components/schemas/EsitoOperazioneBaseType'
@@ -579,5 +579,7 @@ components:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoContrattoEnum'    
       OggettoPrincipaleContrattoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoPrincipaleContrattoEnum'
+      EsitoOperazioneEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoOperazioneEnum'        
       EsitoEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoEnum'          
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoEnum'
