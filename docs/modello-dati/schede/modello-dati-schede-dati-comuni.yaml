@@ -454,6 +454,12 @@ components:
           example: '' 
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'  
+        datiBase:
+          $ref: '#/components/schemas/DatiBaseAppaltoP4.1Type'  
+        datiBaseProcedura:
+          $ref: '#/components/schemas/DatiBaseProceduraP4.1Type' 
+        datiBaseStrumentiProcedura:
+          $ref: '#/components/schemas/DatiBaseStrumentiProceduraP4Type'          
     AppaltoP6BaseType:
       description: Oggetto che riporta i dati dell'appalto all'interno della scheda di Finanza di progetto
       type: object
@@ -467,7 +473,13 @@ components:
           description: E' previsto il diritto di prelazione per il promotore?
           type: boolean  
         strumentiSvolgimentoProcedure: 
-          $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'          
+          $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'
+        datiBase:
+          $ref: '#/components/schemas/DatiBaseAppaltoType'
+        datiBaseProcedura:
+          $ref: '#/components/schemas/DatiBaseProceduraP6Type'     
+        datiBaseStrumentiProcedura:
+          $ref: '#/components/schemas/DatiBaseStrumentiProceduraP6Type'         
     AppaltoP.10Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -1289,7 +1301,19 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'          
+            $ref: '#/components/schemas/FinanziamentoType'   
+        datiBase:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseLottoP4.1Type'      
+        datiBaseCPV:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseCPVType'
+        datiBaseContratto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseContrattoType'
+        datiBaseAggiudicazione:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneP4.1Type'
+        datiBaseTerminiInvio:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseTerminiInvioP4Type'   
+        datiBaseAccessibilita:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'              
     LottoP6BaseType:
         description: Oggetto che riporta i dati del lotto all'interno della scheda di tracciabilità
         type: object
@@ -1352,7 +1376,21 @@ components:
             description: Dati relativi ai finanziamenti
             type: array
             items:
-              $ref: '#/components/schemas/FinanziamentoType'            
+              $ref: '#/components/schemas/FinanziamentoType' 
+          datiBase:
+            $ref: '#/components/schemas/DatiBaseLottoType'
+          datiBaseCPV:
+            $ref: '#/components/schemas/DatiBaseCPVType'
+          datiBaseContratto:
+            $ref: '#/components/schemas/DatiBaseContrattoType' 
+          datiBaseAggiudicazione:
+            $ref: '#/components/schemas/DatiBaseAggiudicazioneType'  
+          datiBaseAggiuntivi:
+            $ref: '#/components/schemas/DatiBaseAggiuntiviType'       
+          datiBaseTerminiInvio:
+            $ref: '#/components/schemas/DatiTerminiInvioType' 
+          datiBaseAccessibilita:
+            $ref: '#/components/schemas/DatiBaseAccessibilitaType'              
     ModificaContrattualeType: 
       description: Oggetto che riporta tutti i dati della modifica contrattuale
       type: object
@@ -1396,25 +1434,15 @@ components:
           description: Offerta in aumento
           type: string
           format: decimal              
-    PrestazioneProgettualeType:
-      description: Dati relativi alla prestazione progettuale
+    PrestazioneIncaricoType:
+      description: Dati relativi alle prestazioni progettuali e agli incarichi tecnici
       type: object
       #required: []
       additionalProperties: false
       properties:
         progettazioneInternaEsterna:
           description: La progettazione è interna/esterna? 
-          type: boolean      
-        soggetti:
-          type: array
-          items:
-            $ref: '#/components/schemas/SoggettoPrestazioneProgettualeType' 
-    SoggettoPrestazioneProgettualeType:
-      description: Dati relativi alla prestazione progettuale
-      type: object
-      #required: []
-      additionalProperties: false
-      properties: 
+          type: boolean  
         tipo:
           $ref: '#/components/schemas/TipoSoggettoEnum'
         datiPersonaFisica:
@@ -1433,7 +1461,7 @@ components:
           description: Data di consegna progetto (per progettazione esterna)
           type: string
           format: datetime
-          example: '2022-01-23T12:02:05Z'               
+          example: '2022-01-23T12:02:05Z'           
     SoggettoType:
       description: Dati del soggetto
       type: object
