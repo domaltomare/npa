@@ -190,7 +190,7 @@ components:
       description: ipotesi di collegamento
       type: object
       required:
-        - appaltoDerivato
+        - motivoCollegamento
       additionalProperties: false
       properties:
         cigCollegato:
@@ -198,7 +198,7 @@ components:
           type: array
           items: 
             type: string
-        appaltoDerivato:
+        motivoCollegamento:
           $ref: '#/components/schemas/MotivoCollegamentoEnum'
     TipologiaLavoroType:
       type: array
@@ -382,8 +382,10 @@ components:
       type: object
       additionalProperties: false
       properties:
-        datiSoggettoIncaricato:
+        datiPersonaFisica:
           $ref: '#/components/schemas/DatiPersonaFisicaType'
+        datiPersonaGiuridica:
+          $ref: '#/components/schemas/DatiPersonaGiuridicaType'          
         ruolo: 
           $ref: '#/components/schemas/RuoloOEEnum'  
     AggiudicatarioType:
@@ -666,6 +668,11 @@ components:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         oggettoPrincipaleContratto:
           $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: '#/components/schemas/FinanziamentoType'          
     LottoP.10Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -1108,7 +1115,12 @@ components:
             type: string 
             pattern: ^[a-zA-Z0-9]{15}$
         motivoEsclusioneOrdinarioSpeciale:
-          $ref: '#/components/schemas/MotivoEsclusioneOrdinarioSpecialeEnum'           
+          $ref: '#/components/schemas/MotivoEsclusioneOrdinarioSpecialeEnum' 
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: '#/components/schemas/FinanziamentoType'          
     LottoP.24Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
@@ -1147,7 +1159,12 @@ components:
             type: string 
             pattern: ^[a-zA-Z0-9]{15}$
         contrattiDisposizioniParticolari:
-          $ref: '#/components/schemas/ContrattiDisposizioniParticolariEnum'          
+          $ref: '#/components/schemas/ContrattiDisposizioniParticolariEnum'  
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: '#/components/schemas/FinanziamentoType'          
     LottoP3BaseType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione
       type: object
@@ -1185,7 +1202,12 @@ components:
         oggettoPrincipaleContratto:
           $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'          
         paritaDiGenereGenerazionale:
-          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'          
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: '#/components/schemas/FinanziamentoType'          
     LottoP4BaseType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
@@ -1238,7 +1260,12 @@ components:
         categoria:
           $ref: '#/components/schemas/CategoriaEnum'  
         oggettoPrincipaleContratto:
-          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'           
+          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: '#/components/schemas/FinanziamentoType'          
     LottoP6BaseType:
         description: Oggetto che riporta i dati del lotto all'interno della scheda di tracciabilità
         type: object
@@ -1296,7 +1323,12 @@ components:
           tipologiaLavoro:
             $ref: '#/components/schemas/TipologiaLavoroType'
           categoria:
-            $ref: '#/components/schemas/CategoriaEnum'   
+            $ref: '#/components/schemas/CategoriaEnum' 
+          finanziamenti:
+            description: Dati relativi ai finanziamenti
+            type: array
+            items:
+              $ref: '#/components/schemas/FinanziamentoType'            
     ModificaContrattualeType: 
       description: Oggetto che riporta tutti i dati della modifica contrattuale
       type: object
@@ -1393,13 +1425,23 @@ components:
         ruolo: 
           $ref: '#/components/schemas/RuoloOEEnum'
         tipo: 
-          $ref: '#/components/schemas/TipoOEEnum'            
+          $ref: '#/components/schemas/TipoOEEnum'
+        idGruppo:
+          description: id gruppo
+          type: string           
     AggiudicazioneBaseType:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
-      required: [relazioneUnicaSulleProcedure]
+      required: [lotIdentifier,relazioneUnicaSulleProcedure]
       properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string      
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:
@@ -1461,6 +1503,8 @@ components:
     QuadroEconomicoBaseType:
       description: Oggetto che riporta tutti i dati del quadro economico standard
       type: object
+      required:
+        - sommeADisposizione      
       additionalProperties: false
       properties:
         impLavori:
@@ -1526,18 +1570,20 @@ components:
       allOf: # estende la classe QuadroEconomicoBaseType
         - $ref: '#/components/schemas/QuadroEconomicoBaseType'        
       type: object
-      required: [sommeRipetizioni]
+      #required: [sommeRipetizioni]
       additionalProperties: false           
     QuadroEconomicoP.11Type:
       description: Oggetto che riporta tutti i dati del quadro economico standard
       allOf: # estende la classe QuadroEconomicoBaseType
       - $ref: '#/components/schemas/QuadroEconomicoBaseType'        
       type: object
-      required: [sommeRipetizioni]
+      #required: [sommeRipetizioni]
       additionalProperties: false           
     QuadroEconomicoP3ContrattiEsclusiType:
       description: Oggetto che riporta tutti i dati del quadro economico standard 
       type: object
+      required:
+        - sommeADisposizione      
       additionalProperties: false
       properties:
         impLavori:
@@ -1575,6 +1621,8 @@ components:
     QuadroEconomicoP3.4Type:
       description: Oggetto che riporta tutti i dati del quadro economico standard 
       type: object
+      required:
+        - sommeADisposizione      
       additionalProperties: false
       properties:
         impLavori:
@@ -2217,7 +2265,7 @@ components:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
       additionalProperties: false
-      reuired: [sceltaContraente]
+      required: [sceltaContraente]
       properties:
         sceltaContraente:
           $ref: '#/components/schemas/SceltaContraenteEnum'     
@@ -2225,7 +2273,7 @@ components:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
       additionalProperties: false
-      reuired: [sceltaContraente]
+      required: [sceltaContraente]
       properties:
         sceltaContraente:
           $ref: '#/components/schemas/SceltaContraenteEnum'            
@@ -2742,11 +2790,6 @@ components:
         - finanziamenti
       additionalProperties: false
       properties:
-        finanziamenti:
-          description: Dati relativi ai finanziamenti
-          type: array
-          items:
-            $ref: '#/components/schemas/FinanziamentoType'
         stazioniAppaltanti:
           description: Dati relativi alle stazioni appaltanti
           type: array
