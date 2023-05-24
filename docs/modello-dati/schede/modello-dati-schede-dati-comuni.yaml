@@ -1399,7 +1399,15 @@ components:
       description: Oggetto che riporta tutti i dati della modifica contrattuale
       type: object
       additionalProperties: false
+      required: [lotIdentifier]
       properties: 
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string      
         dataApprovazione:
           description: Data di approvazione della modifica contrattuale
           type: string
@@ -1411,7 +1419,9 @@ components:
           $ref: '#/components/schemas/MotiviRevisionePrezziEnum'
         cigNuovaProcedura:
           description: CIG della nuova procedura avviata
-          type: string            
+          type: string   
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoModificaContrattualeType'          
     PartecipanteType:
       description: Dati del partecipante
       type: object
