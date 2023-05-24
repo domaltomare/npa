@@ -109,7 +109,11 @@ components:
     TipoSoggettoEnum:
       description: Tipologia del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [tipoSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoSoggetto.json) 
       allOf: 
-      - $ref: '#/components/schemas/TipologicaType'        
+      - $ref: '#/components/schemas/TipologicaType' 
+    TipoProgettazioneEnum:
+      description: Tipologia di progettazione - fare riferimento ai valori contenuti nel file [tipoProgettazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoProgettazione.json) 
+      allOf: 
+      - $ref: '#/components/schemas/TipologicaType'      
     CPVEnum:
       description: Classificazione - fare riferimento ai valori contenuti nel file [CPV.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/CPV.json) 
       allOf:
@@ -1449,6 +1453,8 @@ components:
           $ref: '#/components/schemas/DatiPersonaFisicaType'
         datiPersonaGiuridica:
           $ref: '#/components/schemas/DatiPersonaGiuridicaType'
+        tipoProgettazione:
+          $ref: '#/components/schemas/TipoProgettazioneEnum'
         cig:
           description: CIG affidamento incarico esterno di progettazione (in caso di progettista esterno)
           type: string
