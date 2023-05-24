@@ -503,7 +503,7 @@ components:
           stato:  
              $ref: '#/components/schemas/StatoAvvisoEnum'             
       EsitoOperazioneBaseType:
-        allOf: # estende la classe EsitoOperazioneBaseType
+        allOf: # estende la classe EsitoOperazioneEnum
           - $ref: '#/components/schemas/EsitoOperazioneEnum'
         type: object
         additionalProperties: false
