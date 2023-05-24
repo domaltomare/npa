@@ -177,6 +177,10 @@ components:
     MotiviRevisionePrezziEnum:
       description: Motivo di revisione dei prezzi - fare riferimento ai valori contenuti nel file [motiviRevisionePrezzi.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviRevisionePrezzi.json) 
       allOf: 
+      - $ref: '#/components/schemas/TipologicaType' 
+    TipoRealizzazioneContrattoEnum:
+      description: Tipo modalità di realizzazione contratto - fare riferimento ai valori contenuti nel file [tipoRealizzazioneContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRealizzazioneContratto.json) 
+      allOf: 
       - $ref: '#/components/schemas/TipologicaType'      
     MotivoDerogaType:
       type: array
