@@ -207,7 +207,7 @@ components:
           maxLength: 255
         autorizzante: 
           $ref: '#/components/schemas/AnagraficaOEType'
-        richiestaAccesso :
+        richiestaAccesso:
           $ref: '#/components/schemas/RichiestaAccessoType' 
     RichiestaAccessoType:
       description: Oggetto che riporta i dati della Richiesta di Accesso
@@ -242,10 +242,10 @@ components:
           $ref: '#/components/schemas/AppaltoType' 
         richiedente : 
           $ref: '#/components/schemas/AnagraficaSAType'   
-        autorizzazioni :
-          type: array
-          items:
-            $ref: '#/components/schemas/AutorizzazioneAccessoType'
+        #autorizzazioni:
+          #type: array
+          #items:
+            #$ref: '#/components/schemas/AutorizzazioneAccessoType'
     AnagraficaType:
       description: Oggetto generico dell'anagrafica
       type: object
