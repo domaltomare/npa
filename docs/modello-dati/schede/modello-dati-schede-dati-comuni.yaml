@@ -711,7 +711,9 @@ components:
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
         paritaDiGenereGenerazionale:
-          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'          
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoP.10Type'          
     LottoP.11Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -747,7 +749,9 @@ components:
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
         paritaDiGenereGenerazionale:
-          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'          
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoP.11Type'          
     LottoP.12Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -784,7 +788,9 @@ components:
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
         paritaDiGenereGenerazionale:
-          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'          
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'   
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType'          
     LottoP.13Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -821,7 +827,9 @@ components:
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
         paritaDiGenereGenerazionale:
-          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'           
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType'           
     LottoP.14Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -899,7 +907,9 @@ components:
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
         paritaDiGenereGenerazionale:
-          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'            
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'  
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType'           
     LottoP.17Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -943,7 +953,9 @@ components:
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
         paritaDiGenereGenerazionale:
-          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'            
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'  
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType'           
     LottoP.18Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
@@ -1041,7 +1053,9 @@ components:
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
         paritaDiGenereGenerazionale:
-          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'          
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'  
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType'           
     LottoP.21Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -1078,7 +1092,9 @@ components:
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
         paritaDiGenereGenerazionale:
-          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'          
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'  
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType'          
     LottoP.23Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
@@ -1120,7 +1136,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'          
+            $ref: '#/components/schemas/FinanziamentoType'  
+        quadroEconomicoConcorsiProgettazione:
+          $ref: '#/components/schemas/QuadroEconomicoConcorsiProgettazioneType'            
     LottoP.24Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
@@ -1164,7 +1182,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'          
+            $ref: '#/components/schemas/FinanziamentoType'   
+        quadroEconomicoConcorsiProgettazione:
+          $ref: '#/components/schemas/QuadroEconomicoConcorsiProgettazioneType'            
     LottoP3BaseType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione
       type: object
@@ -1919,141 +1939,256 @@ components:
           description: Offerta di massimo ribasso - corrisponde ai campi bt-710 e bt-711 del TED.
           type: string
           format: decimal          
-    DatiBaseType:
+    DatiBaseAppaltoType:
       description: Dato in comune con il Business Group Purpose delle eforms
       type: object
       required:
-        - oggettoLotto
+        - oggetto
       additionalProperties: false
       properties:
-        oggettoContratto:
-          $ref: '#/components/schemas/OggettoContrattoEnum'
-        oggettoLotto:
-          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
           type: string
-        importoGara:
+        importo:
           description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED
-    DatiBaseP2.12Type:
+    DatiBaseLottoType:
       description: Dato in comune con il Business Group Purpose delle eforms
       type: object
       required:
-        - oggettoLotto
-        - importoGara
+        - oggetto
       additionalProperties: false
       properties:
         oggettoContratto:
           $ref: '#/components/schemas/OggettoContrattoEnum'
-        oggettoLotto:
+        oggetto:
           description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
           type: string
-        importoGara:
+        importo:
+          description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED          
+    DatiBaseAppaltoP2.12Type:
+      description: Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required:
+        - oggetto
+        - importo
+      additionalProperties: false
+      properties:
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo:
           description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED
-    DatiBaseP2.13Type:
-      description:  Dato in comune con il Business Group Purpose delle eforms
-      type: object
-      required: [oggettoLotto,importoGara]
-      additionalProperties: false
-      properties:
-        oggettoContratto: 
-          $ref: '#/components/schemas/OggettoContrattoEnum'
-        oggettoLotto:
-          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
-          type: string
-        importoGara: 
-          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED          
-    DatiBaseP2.14Type:
-      description:  Dato in comune con il Business Group Purpose delle eforms
-      type: object
-      required: [oggettoLotto,importoGara]
-      additionalProperties: false
-      properties:
-        oggettoContratto: 
-          $ref: '#/components/schemas/OggettoContrattoEnum'
-        oggettoLotto:
-          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
-          type: string
-        importoGara: 
-          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED           
-    DatiBaseP2.20Type:
-      description:  Dato in comune con il Business Group Purpose delle eforms
-      type: object
-      required: [oggettoLotto,importoGara]
-      additionalProperties: false
-      properties:
-        oggettoContratto: 
-          $ref: '#/components/schemas/OggettoContrattoEnum'
-        oggettoLotto:
-          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
-          type: string
-        importoGara: 
-          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED            
-    DatiBaseP2.21Type:
-      description:  Dato in comune con il Business Group Purpose delle eforms
-      type: object
-      required: [oggettoLotto,importoGara]
-      additionalProperties: false
-      properties:
-        oggettoContratto: 
-          $ref: '#/components/schemas/OggettoContrattoEnum'
-        oggettoLotto:
-          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
-          type: string
-        importoGara: 
-          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED             
-    DatiBaseP2.23Type:
-      description:  Dato in comune con il Business Group Purpose delle eforms
-      type: object
-      required: [oggettoLotto,importoGara]
-      additionalProperties: false
-      properties:
-        oggettoContratto: 
-          $ref: '#/components/schemas/OggettoContrattoEnum'
-        oggettoLotto:
-          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
-          type: string
-        importoGara: 
-          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED           
-    DatiBaseP2.24Type:
-      description:  Dato in comune con il Business Group Purpose delle eforms
-      type: object
-      required: [oggettoLotto,importoGara]
-      additionalProperties: false
-      properties:
-        oggettoContratto: 
-          $ref: '#/components/schemas/OggettoContrattoEnum'
-        oggettoLotto:
-          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
-          type: string
-        importoGara: 
-          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED          
-    DatiBaseP4.1Type:
-      description:  Dato in comune con il Business Group Purpose delle eforms
-      type: object
-      required: [oggettoLotto,importoGara]
-      additionalProperties: false
-      properties:
-        oggettoContratto: 
-          $ref: '#/components/schemas/OggettoContrattoEnum'
-        oggettoLotto:
-          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
-          type: string
-        importoGara: 
-          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED    
-    DatiBaseP3.5Type:
+    DatiBaseLottoP2.12Type:
       description: Dato in comune con il Business Group Purpose delle eforms
       type: object
       required:
-        - oggettoLotto
-        - importoGara
+        - oggetto
+        - importo
       additionalProperties: false
       properties:
         oggettoContratto:
           $ref: '#/components/schemas/OggettoContrattoEnum'
-        oggettoLotto:
+        oggetto:
           description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
           type: string
-        importoGara:
-          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED          
+        importo:
+          description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED          
+    DatiBaseAppaltoP2.13Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED  
+    DatiBaseLottoP2.13Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggetto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED           
+    DatiBaseAppaltoP2.14Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED 
+    DatiBaseLottoP2.14Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggetto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED          
+    DatiBaseAppaltoP2.20Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED  
+    DatiBaseLottoP2.20Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggetto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED           
+    DatiBaseAppaltoP2.21Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED 
+    DatiBaseLottoP2.21Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggetto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED           
+    DatiBaseAppaltoP2.23Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED  
+    DatiBaseLottoP2.23Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggetto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED            
+    DatiBaseAppaltoP2.24Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED 
+    DatiBaseLottoP2.24Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggetto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED          
+    DatiBaseAppaltoP4.1Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED 
+    DatiBaseLottoP4.1Type:
+      description:  Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required: [oggetto,importo]
+      additionalProperties: false
+      properties:
+        oggettoContratto: 
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggetto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo: 
+          description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED           
+    DatiBaseAppaltoP3.5Type:
+      description: Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required:
+        - oggetto
+        - importo
+      additionalProperties: false
+      properties:
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo:
+          description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED  
+    DatiBaseLottoP3.5Type:
+      description: Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required:
+        - oggetto
+        - importo
+      additionalProperties: false
+      properties:
+        oggettoContratto:
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggetto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string
+        importo:
+          description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED           
     DatiBaseProceduraType:
       description: Dato in comune con il Business Group Procedure delle eforms
       type: object
