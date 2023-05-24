@@ -2786,7 +2786,7 @@ components:
           $ref: '#/components/schemas/EsitoProceduraEnum'
         giustificazione:
           $ref: '#/components/schemas/GiustificazioneEsitoProceduraEnum'     
-    DatiBaseRisultatoProceduraNAG1Type:
+    DatiBaseRisultatoProceduraNAGType:
       description:  Dato in comune con il Business Group Procedure Lot Result delle eforms
       required: [esito,giustificazione]
       additionalProperties: false
