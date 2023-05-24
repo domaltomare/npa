@@ -108,17 +108,17 @@ components:
         stato:
           $ref: '#/components/schemas/StatoDocumentoEnum'
         dataInserimento:
-          description: data di inserimento del documento (A datetime specified by RF3339)
+          description: data di inserimento del documento (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z' 
         dataEmissione:
-          description: data di emissione del documento (A datetime specified by RF3339)
+          description: data di emissione del documento (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z' 
         dataFineValidita:
-          description: data fine validità del documento(A datetime specified by RF3339)
+          description: data fine validità del documento(A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z' 
@@ -127,7 +127,7 @@ components:
           type: string
           example: '2342344342'
         dataProtocollo:
-          description: data di registrazione del documento  (A datetime specified by RF3339)
+          description: data di registrazione del documento  (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z' 
@@ -138,7 +138,7 @@ components:
           type: string
           example: "UDI.8909"  
         dataCreazione:
-          description: data di registrazione del documento  (A datetime specified by RF3339)
+          description: data di registrazione del documento  (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z' 
@@ -190,12 +190,12 @@ components:
         anagraficaOE:
           $ref: '#/components/schemas/AnagraficaOEType'
         dataInizio:
-          description: data inizio autorizzazione (A datetime specified by RF3339)
+          description: data inizio autorizzazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'
         dataFine:
-          description: data fine autorizzazione (A datetime specified by RF3339)
+          description: data fine autorizzazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'  
@@ -224,12 +224,12 @@ components:
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         dataInizioAutorizzazione:
-          description: data richiesta dal SA per accedere al FVOE (A datetime specified by RF3339)
+          description: data richiesta dal SA per accedere al FVOE (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z' 
         dataFineAutorizzazione:
-          description: data richiesta dal SA come termine all'autorizzaione al FVOE(A datetime specified by RF3339)
+          description: data richiesta dal SA come termine all'autorizzaione al FVOE(A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'
@@ -240,12 +240,12 @@ components:
             $ref: '#/components/schemas/AnagraficaOEType' 
         appalto:
           $ref: '#/components/schemas/AppaltoType' 
-        richiedente : 
+        richiedente: 
           $ref: '#/components/schemas/AnagraficaSAType'   
-        #autorizzazioni:
-          #type: array
-          #items:
-            #$ref: '#/components/schemas/AutorizzazioneAccessoType'
+        autorizzazioni:
+          type: array
+          items:
+            $ref: '#/components/schemas/AutorizzazioneAccessoType'
     AnagraficaType:
       description: Oggetto generico dell'anagrafica
       type: object
