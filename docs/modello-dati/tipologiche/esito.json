@@ -17,6 +17,15 @@
     "datafine":null
 },
 {
+    "codice":"WT",
+    "descrizione": {
+		"it": "IN ATTESA",
+		"en": "PENDING"
+		},
+    "datainizio":null,
+    "datafine":null
+}, 
+{
     "codice":"WN",
     "descrizione": {
 		"it": "WARNING",
