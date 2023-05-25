@@ -150,13 +150,7 @@ components:
           type: array
           minItems: 0
           items:
-            $ref: '#/components/schemas/FascicoloType' 
-    DocumentoOEType:
-      allOf: # estende la classe DocumentoType
-        - $ref: '#/components/schemas/DocumentoType'
-    DocumentoAType:
-      allOf: # estende la classe DocumentoType
-        - $ref: '#/components/schemas/DocumentoType'        
+            $ref: '#/components/schemas/FascicoloType'
     ContentDocumentType:
       description: Oggetto che riporta il contenuto del
       type: object
