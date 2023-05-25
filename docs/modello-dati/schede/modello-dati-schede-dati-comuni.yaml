@@ -185,7 +185,23 @@ components:
     TipoRealizzazioneContrattoEnum:
       description: Tipo modalità di realizzazione contratto - fare riferimento ai valori contenuti nel file [tipoRealizzazioneContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRealizzazioneContratto.json) 
       allOf: 
-      - $ref: '#/components/schemas/TipologicaType'      
+      - $ref: '#/components/schemas/TipologicaType'   
+    EsitoGaraAnacEnum:
+      description: Esito gara ANAC - fare riferimento ai valori contenuti nel file [esitoGaraAnac.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esitoGaraAnac.json) 
+      allOf: 
+      - $ref: '#/components/schemas/TipologicaType'    
+    AvanzamentoEnum:
+      description: L'avanzamento raggiunto, rispetto al cronoprogramma di previsione registrato - fare riferimento ai valori contenuti nel file [avanzamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/avanzamento.json) 
+      allOf: 
+      - $ref: '#/components/schemas/TipologicaType'  
+    ModalitaPagamentoEnum:
+      description: Modalità di pagamento - fare riferimento ai valori contenuti nel file [modalitaPagamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modalitaPagamento.json)  
+      allOf: 
+      - $ref: '#/components/schemas/TipologicaType' 
+    TipologiaComunicazioneEnum:
+      description: Tipologia di comunicazione - fare riferimento ai valori contenuti nel file [tipologiaComunicazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipologiaComunicazione.json) 
+      allOf: 
+      - $ref: '#/components/schemas/TipologicaType'       
     MotivoDerogaType:
       type: array
       items:
@@ -1586,7 +1602,19 @@ components:
       additionalProperties: false
       properties: 
         modalitaRiaggiudicazioneAffidamento:
-          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'          
+          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum' 
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioType'
+        incaricati:
+          description: dati degli incaricati
+          type: array
+          items: 
+            $ref: '#/components/schemas/IncaricatoType'   
+        quadroEconomicoConcessioni:
+          $ref: '#/components/schemas/QuadroEconomicoConcessioniType'          
     AggiudicazioneA.33Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
