@@ -1566,12 +1566,27 @@ components:
           $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'                   
     AggiudicatarioA.29Type:
       description: Dati dell'aggiudicatario
-      allOf: # estende la classe AggiudicatarioType
-      - $ref: '#/components/schemas/AggiudicatarioType'      
       type: object
       required: [importoAggiudicazioneAffidamento]
       additionalProperties: false
       properties:
+        cf:
+          description: codice fiscale del soggetto interessato
+          type: string
+        denominazione: 
+          description: denominazione del soggetto interessato
+          type: string  
+        ruolo: 
+          $ref: '#/components/schemas/RuoloOEEnum'
+        tipo: 
+          $ref: '#/components/schemas/TipoOEEnum'
+        idGruppo:
+          description: id gruppo
+          type: string 
+        importo:
+          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
+          type: string
+          format: decimal      
         ribassoDasta:
           description: Ribasso d’Asta 
           type: string
@@ -1619,7 +1634,7 @@ components:
           type: string
           format: integer           
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoAType' 
+          $ref: '#/components/schemas/QuadroEconomicoBaseType' 
         aggiudicatari:
           description: Dati degli aggiudicatari
           type: array
