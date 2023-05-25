@@ -1791,7 +1791,7 @@ components:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
           type: string      
         modalitaRiaggiudicazioneAffidamento:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum' 
+          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum' 
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
           type: string
