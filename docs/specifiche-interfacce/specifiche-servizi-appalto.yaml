@@ -627,14 +627,21 @@ paths:
       summary: API Rest per la validazione dell'Appalto. ASINCRONO - ASIMMETRICO
       description: L'ultima istanza di appalto inviata viene validata. In base alla tipologia dell'appalto viene eseguita una validazione sintattica dei dati di input dell'appalto (eForm, ESPDRequest, anacForm). ASINCRONO - ASIMMETRICO 
       operationId: idAppaltoVerifica
-      parameters:
-        - in: query
-          name: idAppalto
-          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
-          schema:
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              properties:
+                idAppalto:
+                  description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+                  type: string
+                  format: uuid
+                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+              required:
+                - idAppalto
+        required: true
       responses:
         '200':
             $ref: '#/components/responses/200AckResponse'
