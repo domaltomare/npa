@@ -1722,6 +1722,61 @@ components:
           type: array
           items: 
             $ref: '#/components/schemas/IncaricatoType'              
+    AggiudicatarioA.31Type:
+      description: Dati dell'aggiudicatario
+      type: object
+      additionalProperties: false
+      properties:
+        cf:
+          description: codice fiscale del soggetto interessato
+          type: string
+        denominazione: 
+          description: denominazione del soggetto interessato
+          type: string  
+        ruolo: 
+          $ref: '#/components/schemas/RuoloOEEnum'
+        tipo: 
+          $ref: '#/components/schemas/TipoOEEnum'
+        idGruppo:
+          description: id gruppo
+          type: string 
+        importo:
+          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
+          type: string
+          format: decimal      
+        identificativoCfEstero:
+            description: Identificativo codice fiscale estero
+            type: string            
+        dataInizio:
+            description: Data inizio
+            type: string
+            format: datetime
+        dataUltimazione:
+            description: Data ultimazione
+            type: string
+            format: datetime
+        impSommeLiquidate:
+            description: importo delle somme liquidate
+            type: string
+            format: decimal  
+    AggiudicazioneA.31Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
+      type: object
+      required: [lotIdentifier]
+      additionalProperties: false
+      properties: 
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string       
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioA.31Type'             
     AggiudicazioneA.32Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia    
       type: object
