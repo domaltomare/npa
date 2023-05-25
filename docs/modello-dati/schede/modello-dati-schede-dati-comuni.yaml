@@ -1812,10 +1812,77 @@ components:
             $ref: '#/components/schemas/IncaricatoType'   
         quadroEconomicoConcessioni:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType'  
-    AggiudicazioneA.33Type:
+    AggiudicatarioA.33Type:
+      description: Dati dell'aggiudicatario
+      type: object
+      additionalProperties: false
+      properties:
+        cf:
+          description: codice fiscale del soggetto interessato
+          type: string
+        denominazione: 
+          description: denominazione del soggetto interessato
+          type: string  
+        ruolo: 
+          $ref: '#/components/schemas/RuoloOEEnum'
+        tipo: 
+          $ref: '#/components/schemas/TipoOEEnum'
+        idGruppo:
+          description: id gruppo
+          type: string 
+        importo:
+          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
+          type: string
+          format: decimal      
+        ribassoDasta:
+          description: Ribasso d’Asta 
+          type: string
+        offertaInAumento:
+          description: Offerta in Aumento
+          type: string
+        offertaQualitativa:
+          description: Offerta qualitativa
+          type: string
+          format: decimal  
+    AggiudicazioneA1.33Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
-      - $ref: '#/components/schemas/AggiudicazioneBaseType'  
+      - $ref: '#/components/schemas/AggiudicazioneBaseType' 
+      type: object
+      required: [aggiudicazione]
+      additionalProperties: false
+      properties:  
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
+          type: string
+          format: integer 
+        valoreSogliaAnomalia:
+          description: Valore soglia anomalia
+          type: string
+        nOfferte:
+          description: N.offerte >= soglia anomalia
+          type: string
+          format: integer
+        nImpreseEscluseAutomaticamente: 
+          description: Numero imprese escluse automaticamente
+          type: string
+          format: integer
+        nImpreseEscluseInsufficientiGiustificazioni: 
+          description: Numero imprese escluse per insufficienti giustificazioni
+          type: string
+          format: integer         
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoBaseType' 
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioA.33Type'
+        incaricati:
+          description: dati degli incaricati
+          type: array
+          items: 
+            $ref: '#/components/schemas/IncaricatoType'   
     AggiudicazioneA.34Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
