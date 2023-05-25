@@ -1104,10 +1104,6 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/FVAType'
     DocumentoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/DocumentoType'
-    DocumentoOEType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/DocumentoOEType'
-    DocumentoAType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/DocumentoAType'
     AutorizzazioneAccessoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/AutorizzazioneAccessoType' 
     RichiestaAccessoType:
