@@ -1564,12 +1564,30 @@ components:
           type: boolean  
         modalitaRiaggiudicazioneAffidamento:
           $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'                   
+    AggiudicatarioA.29Type:
+      description: Dati dell'aggiudicatario
+      allOf: # estende la classe AggiudicatarioType
+      - $ref: '#/components/schemas/AggiudicatarioType'      
+      type: object
+      required: [importoAggiudicazioneAffidamento]
+      additionalProperties: false
+      properties:
+        ribassoDasta:
+          description: Ribasso d’Asta 
+          type: string
+        offertaInAumento:
+          description: Offerta in Aumento
+          type: string
+        offertaQualitativa:
+          description: Offerta qualitativa
+          type: string
+          format: decimal            
     AggiudicazioneA.29Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
       - $ref: '#/components/schemas/AggiudicazioneBaseType'        
       type: object
-      required: [opereUrbanizzazioneScomputo,preinformazione,termineRidottoAvvisoPreinformazione]
+      required: [opereUrbanizzazioneScomputo,preinformazione,termineRidottoAvvisoPreinformazione,nImpreseEscluseInsufficientiGiustificazioni,numeroOfferteAmmesse]
       additionalProperties: false
       properties: 
         opereUrbanizzazioneScomputo:
@@ -1580,7 +1598,38 @@ components:
           type: boolean
         termineRidottoAvvisoPreinformazione:
           description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
-          type: boolean  
+          type: boolean 
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
+          type: string
+          format: integer 
+        valoreSogliaAnomalia:
+          description: Valore soglia anomalia
+          type: string
+        nOfferte:
+          description: N.offerte >= soglia anomalia
+          type: string
+          format: integer
+        nImpreseEscluseAutomaticamente: 
+          description: Numero imprese escluse automaticamente
+          type: string
+          format: integer
+        nImpreseEscluseInsufficientiGiustificazioni: 
+          description: Numero imprese escluse per insufficienti giustificazioni
+          type: string
+          format: integer           
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoAType' 
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioA.29Type'
+        incaricati:
+          description: Dati degli incaricati
+          type: array
+          items: 
+            $ref: '#/components/schemas/IncaricatoType'          
     AggiudicazioneA.30Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia    
       allOf: # estende la classe AggiudicazioneBaseType
@@ -1602,19 +1651,7 @@ components:
       additionalProperties: false
       properties: 
         modalitaRiaggiudicazioneAffidamento:
-          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
-          type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioType'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: '#/components/schemas/IncaricatoType'   
-        quadroEconomicoConcessioni:
-          $ref: '#/components/schemas/QuadroEconomicoConcessioniType'          
+          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'          
     AggiudicazioneA.33Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
