@@ -20,7 +20,7 @@
     "codice":"WT",
     "descrizione": {
 		"it": "IN ATTESA",
-		"en": "PENDING"
+		"en": "WAITING"
 		},
     "datainizio":null,
     "datafine":null
