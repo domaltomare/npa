@@ -1539,7 +1539,22 @@ components:
           $ref: '#/components/schemas/TipoOEEnum'
         idGruppo:
           description: id gruppo
-          type: string           
+          type: string  
+    AppaltoA.30Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
+      type: object
+      additionalProperties: false
+      required: [lotIdentifier,relazioneUnicaSulleProcedure]
+      properties:
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
+          type: string
+          format: url  
+        relazioneUnicaSulleProcedure:
+          description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
+          type: boolean  
     AggiudicazioneBaseType:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
@@ -1553,15 +1568,6 @@ components:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
           type: string      
-        motivoUrgenza:
-          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
-        linkDocumenti:
-          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
-          type: string
-          format: url  
-        relazioneUnicaSulleProcedure:
-          description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
-          type: boolean  
         modalitaRiaggiudicazioneAffidamento:
           $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'                   
     AggiudicatarioA.29Type:
@@ -1640,11 +1646,6 @@ components:
           type: array
           items: 
             $ref: '#/components/schemas/AggiudicatarioA.29Type'
-        incaricati:
-          description: Dati degli incaricati
-          type: array
-          items: 
-            $ref: '#/components/schemas/IncaricatoType'          
     AggiudicatarioA.30Type:
       description: Dati dell'aggiudicatario
       type: object
@@ -1717,11 +1718,6 @@ components:
           type: array
           items: 
             $ref: '#/components/schemas/AggiudicatarioA.30Type'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: '#/components/schemas/IncaricatoType'              
     AggiudicatarioA.31Type:
       description: Dati dell'aggiudicatario
       type: object
