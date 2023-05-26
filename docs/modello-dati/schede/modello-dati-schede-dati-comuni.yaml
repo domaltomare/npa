@@ -185,23 +185,7 @@ components:
     TipoRealizzazioneContrattoEnum:
       description: Tipo modalità di realizzazione contratto - fare riferimento ai valori contenuti nel file [tipoRealizzazioneContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRealizzazioneContratto.json) 
       allOf: 
-      - $ref: '#/components/schemas/TipologicaType'   
-    EsitoGaraAnacEnum:
-      description: Esito gara ANAC - fare riferimento ai valori contenuti nel file [esitoGaraAnac.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esitoGaraAnac.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'    
-    AvanzamentoEnum:
-      description: L'avanzamento raggiunto, rispetto al cronoprogramma di previsione registrato - fare riferimento ai valori contenuti nel file [avanzamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/avanzamento.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'  
-    ModalitaPagamentoEnum:
-      description: Modalità di pagamento - fare riferimento ai valori contenuti nel file [modalitaPagamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modalitaPagamento.json)  
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType' 
-    TipologiaComunicazioneEnum:
-      description: Tipologia di comunicazione - fare riferimento ai valori contenuti nel file [tipologiaComunicazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipologiaComunicazione.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'       
+      - $ref: '#/components/schemas/TipologicaType'      
     MotivoDerogaType:
       type: array
       items:
@@ -1491,8 +1475,8 @@ components:
           description: Offerta in aumento
           type: string
           format: decimal              
-    PrestazioneIncaricoType:
-      description: Dati relativi alle prestazioni progettuali e agli incarichi tecnici
+    PrestazioneType:
+      description: Dati relativi alle prestazioni progettuali
       type: object
       #required: []
       additionalProperties: false
@@ -1520,7 +1504,19 @@ components:
           description: Data di consegna progetto (per progettazione esterna)
           type: string
           format: datetime
-          example: '2022-01-23T12:02:05Z'           
+          example: '2022-01-23T12:02:05Z'
+    IncaricoType:
+      description: Dati relativi agli incarichi tecnici
+      type: object
+      #required: []
+      additionalProperties: false
+      properties:
+        tipoIncarico:
+          $ref: '#/components/schemas/RuoloOEEnum'
+        datiPersonaFisica:
+          $ref: '#/components/schemas/DatiPersonaFisicaType'
+        datiPersonaGiuridica:
+          $ref: '#/components/schemas/DatiPersonaGiuridicaType'
     SoggettoType:
       description: Dati del soggetto
       type: object
@@ -1564,45 +1560,12 @@ components:
           type: boolean  
         modalitaRiaggiudicazioneAffidamento:
           $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'                   
-    AggiudicatarioA.29Type:
-      description: Dati dell'aggiudicatario
-      type: object
-      required: [importoAggiudicazioneAffidamento]
-      additionalProperties: false
-      properties:
-        cf:
-          description: codice fiscale del soggetto interessato
-          type: string
-        denominazione: 
-          description: denominazione del soggetto interessato
-          type: string  
-        ruolo: 
-          $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
-          $ref: '#/components/schemas/TipoOEEnum'
-        idGruppo:
-          description: id gruppo
-          type: string 
-        importo:
-          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
-          type: string
-          format: decimal      
-        ribassoDasta:
-          description: Ribasso d’Asta 
-          type: string
-        offertaInAumento:
-          description: Offerta in Aumento
-          type: string
-        offertaQualitativa:
-          description: Offerta qualitativa
-          type: string
-          format: decimal            
     AggiudicazioneA.29Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
       - $ref: '#/components/schemas/AggiudicazioneBaseType'        
       type: object
-      required: [opereUrbanizzazioneScomputo,preinformazione,termineRidottoAvvisoPreinformazione,nImpreseEscluseInsufficientiGiustificazioni,numeroOfferteAmmesse]
+      required: [opereUrbanizzazioneScomputo,preinformazione,termineRidottoAvvisoPreinformazione]
       additionalProperties: false
       properties: 
         opereUrbanizzazioneScomputo:
@@ -1613,70 +1576,7 @@ components:
           type: boolean
         termineRidottoAvvisoPreinformazione:
           description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
-          type: boolean 
-        numeroOfferteAmmesse:
-          description: numero di offerte ammesse
-          type: string
-          format: integer 
-        valoreSogliaAnomalia:
-          description: Valore soglia anomalia
-          type: string
-        nOfferte:
-          description: N.offerte >= soglia anomalia
-          type: string
-          format: integer
-        nImpreseEscluseAutomaticamente: 
-          description: Numero imprese escluse automaticamente
-          type: string
-          format: integer
-        nImpreseEscluseInsufficientiGiustificazioni: 
-          description: Numero imprese escluse per insufficienti giustificazioni
-          type: string
-          format: integer           
-        quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoBaseType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
-          type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioA.29Type'
-        incaricati:
-          description: Dati degli incaricati
-          type: array
-          items: 
-            $ref: '#/components/schemas/IncaricatoType'          
-    AggiudicatarioA.30Type:
-      description: Dati dell'aggiudicatario
-      type: object
-      additionalProperties: false
-      properties:
-        cf:
-          description: codice fiscale del soggetto interessato
-          type: string
-        denominazione: 
-          description: denominazione del soggetto interessato
-          type: string  
-        ruolo: 
-          $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
-          $ref: '#/components/schemas/TipoOEEnum'
-        idGruppo:
-          description: id gruppo
-          type: string 
-        importo:
-          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
-          type: string
-          format: decimal      
-        ribassoDasta:
-          description: Ribasso d’Asta 
-          type: string
-        offertaInAumento:
-          description: Offerta in Aumento
-          type: string
-        offertaQualitativa:
-          description: Offerta qualitativa
-          type: string
-          format: decimal   
+          type: boolean  
     AggiudicazioneA.30Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia    
       allOf: # estende la classe AggiudicazioneBaseType
@@ -1690,199 +1590,19 @@ components:
           type: boolean
         preinformazione:
           description: E' stata effettuata la preinformazione?
-          type: boolean    
-        numeroOfferteAmmesse:
-          description: numero di offerte ammesse
-          type: string
-          format: integer 
-        valoreSogliaAnomalia:
-          description: Valore soglia anomalia
-          type: string
-        nOfferte:
-          description: N.offerte >= soglia anomalia
-          type: string
-          format: integer
-        nImpreseEscluseAutomaticamente: 
-          description: Numero imprese escluse automaticamente
-          type: string
-          format: integer
-        nImpreseEscluseInsufficientiGiustificazioni: 
-          description: Numero imprese escluse per insufficienti giustificazioni
-          type: string
-          format: integer   
-        quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoBaseType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
-          type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioA.30Type'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: '#/components/schemas/IncaricatoType'              
-    AggiudicatarioA.31Type:
-      description: Dati dell'aggiudicatario
-      type: object
-      additionalProperties: false
-      properties:
-        cf:
-          description: codice fiscale del soggetto interessato
-          type: string
-        denominazione: 
-          description: denominazione del soggetto interessato
-          type: string  
-        ruolo: 
-          $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
-          $ref: '#/components/schemas/TipoOEEnum'
-        idGruppo:
-          description: id gruppo
-          type: string 
-        importo:
-          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
-          type: string
-          format: decimal      
-        identificativoCfEstero:
-            description: Identificativo codice fiscale estero
-            type: string            
-        dataInizio:
-            description: Data inizio
-            type: string
-            format: datetime
-        dataUltimazione:
-            description: Data ultimazione
-            type: string
-            format: datetime
-        impSommeLiquidate:
-            description: importo delle somme liquidate
-            type: string
-            format: decimal  
-    AggiudicazioneA.31Type:
-      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
-      type: object
-      required: [lotIdentifier]
-      additionalProperties: false
-      properties: 
-        cig:
-          description: codice identificativo lotto
-          type: string
-          example: 
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string       
-        aggiudicatari:
-          description: Dati degli aggiudicatari
-          type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioA.31Type'             
+          type: boolean          
     AggiudicazioneA.32Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia    
       type: object
-      required: [lotIdentifier]
+      #required: []
       additionalProperties: false
       properties: 
-        cig:
-          description: codice identificativo lotto
-          type: string
-          example: 
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string      
         modalitaRiaggiudicazioneAffidamento:
-          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum' 
-        numeroOfferteAmmesse:
-          description: numero di offerte ammesse
-          type: string
-          format: integer 
-        nImpreseEscluseInsufficientiGiustificazioni: 
-          description: Numero imprese escluse per insufficienti giustificazioni
-          type: string
-          format: integer           
-        aggiudicatari:
-          description: Dati degli aggiudicatari
-          type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioType'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: '#/components/schemas/IncaricatoType'   
-        quadroEconomicoConcessioni:
-          $ref: '#/components/schemas/QuadroEconomicoConcessioniType'  
-    AggiudicatarioA.33Type:
-      description: Dati dell'aggiudicatario
-      type: object
-      additionalProperties: false
-      properties:
-        cf:
-          description: codice fiscale del soggetto interessato
-          type: string
-        denominazione: 
-          description: denominazione del soggetto interessato
-          type: string  
-        ruolo: 
-          $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
-          $ref: '#/components/schemas/TipoOEEnum'
-        idGruppo:
-          description: id gruppo
-          type: string 
-        importo:
-          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
-          type: string
-          format: decimal      
-        ribassoDasta:
-          description: Ribasso d’Asta 
-          type: string
-        offertaInAumento:
-          description: Offerta in Aumento
-          type: string
-        offertaQualitativa:
-          description: Offerta qualitativa
-          type: string
-          format: decimal  
+          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'          
     AggiudicazioneA.33Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
-      - $ref: '#/components/schemas/AggiudicazioneBaseType' 
-      type: object
-      required: [aggiudicazione]
-      additionalProperties: false
-      properties:  
-        numeroOfferteAmmesse:
-          description: numero di offerte ammesse
-          type: string
-          format: integer 
-        valoreSogliaAnomalia:
-          description: Valore soglia anomalia
-          type: string
-        nOfferte:
-          description: N.offerte >= soglia anomalia
-          type: string
-          format: integer
-        nImpreseEscluseAutomaticamente: 
-          description: Numero imprese escluse automaticamente
-          type: string
-          format: integer
-        nImpreseEscluseInsufficientiGiustificazioni: 
-          description: Numero imprese escluse per insufficienti giustificazioni
-          type: string
-          format: integer         
-        quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoBaseType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
-          type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioA.33Type'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: '#/components/schemas/IncaricatoType'   
+      - $ref: '#/components/schemas/AggiudicazioneBaseType'  
     AggiudicazioneA.34Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
