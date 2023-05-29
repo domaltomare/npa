@@ -110,6 +110,10 @@ components:
       description: Tipologia del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [tipoSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoSoggetto.json) 
       allOf: 
       - $ref: '#/components/schemas/TipologicaType' 
+    TipoIncaricoEnum:
+      description: Tipologia dell'incarico - fare riferimento ai valori contenuti nel file [tipoIncarico.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoIncarico.json) 
+      allOf: 
+      - $ref: '#/components/schemas/TipologicaType'       
     TipoProgettazioneEnum:
       description: Tipologia di progettazione - fare riferimento ai valori contenuti nel file [tipoProgettazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoProgettazione.json) 
       allOf: 
@@ -127,9 +131,13 @@ components:
       allOf:
         - $ref: '#/components/schemas/TipologicaType'
     SceltaContraenteEnum:
-      description: Il tipo di procedura di appalto (ad es. secondo i tipi indicati nelle direttive sugli appalti citate nei considerando del presente documento). - corrisponde al campo bt-105 - Procedure Type del TED - fare riferimento ai valori contenuti nel file [sceltaContraente.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/sceltaContraente.json) 
+      description: Scelta del contraente - fare riferimento ai valori contenuti nel file [sceltaContraente.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/sceltaContraente.json) 
       allOf:
         - $ref: '#/components/schemas/TipologicaType'
+    TipoProceduraEnum:
+      description: Il tipo di procedura di appalto (ad es. secondo i tipi indicati nelle direttive sugli appalti citate nei considerando del presente documento). - corrisponde al campo bt-105 - Procedure Type del TED - fare riferimento ai valori contenuti nel file [tipoProcedura.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoProcedura.json) 
+      allOf:
+        - $ref: '#/components/schemas/TipologicaType'        
     AffidamentiRiservatiEnum:
       description: Indicare se la partecipazione è riservata a specifiche organizzazioni (ad es. laboratori protetti, organizzazioni con missione di servizio pubblico) - corrisponde al campo bt-71 - Reserved Participation del TED - fare riferimento ai valori contenuti nel file [affidamentiRiservati.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/affidamentiRiservati.json) 
       allOf:
@@ -186,8 +194,8 @@ components:
       description: Tipo modalità di realizzazione contratto - fare riferimento ai valori contenuti nel file [tipoRealizzazioneContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRealizzazioneContratto.json) 
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'   
-    EsitoGaraAnacEnum:
-      description: Esito gara ANAC - fare riferimento ai valori contenuti nel file [esitoGaraAnac.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esitoGaraAnac.json) 
+    EsitoProceduraNagEnum:
+      description: Esito procedura NAG - fare riferimento ai valori contenuti nel file [esitoProceduraNag.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esitoProceduraNag.json) 
       allOf: 
       - $ref: '#/components/schemas/TipologicaType'    
     AvanzamentoEnum:
@@ -749,7 +757,7 @@ components:
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoP.10Type'          
+          $ref: '#/components/schemas/QuadroEconomicoType'          
     LottoP.11Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -787,7 +795,7 @@ components:
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoP.11Type'          
+          $ref: '#/components/schemas/QuadroEconomicoType'          
     LottoP.12Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -1491,7 +1499,7 @@ components:
           description: Offerta in aumento
           type: string
           format: decimal              
-    PrestazioneIncaricoType:
+    PrestazioneType:
       description: Dati relativi alle prestazioni progettuali e agli incarichi tecnici
       type: object
       #required: []
@@ -1520,7 +1528,19 @@ components:
           description: Data di consegna progetto (per progettazione esterna)
           type: string
           format: datetime
-          example: '2022-01-23T12:02:05Z'           
+          example: '2022-01-23T12:02:05Z' 
+    IncaricoType:
+      description: Dati relativi alle prestazioni progettuali e agli incarichi tecnici
+      type: object
+      #required: []
+      additionalProperties: false
+      properties:
+        tipoIncarico:
+          $ref: '#/components/schemas/TipoIncaricoEnum'
+        datiPersonaFisica:
+          $ref: '#/components/schemas/DatiPersonaFisicaType'
+        datiPersonaGiuridica:
+          $ref: '#/components/schemas/DatiPersonaGiuridicaType'
     SoggettoType:
       description: Dati del soggetto
       type: object
@@ -1646,7 +1666,7 @@ components:
           type: string
           format: integer           
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoBaseType' 
+          $ref: '#/components/schemas/QuadroEconomicoType' 
         aggiudicatari:
           description: Dati degli aggiudicatari
           type: array
@@ -1719,7 +1739,7 @@ components:
           type: string
           format: integer   
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoBaseType' 
+          $ref: '#/components/schemas/QuadroEconomicoType' 
         aggiudicatari:
           description: Dati degli aggiudicatari
           type: array
@@ -1808,11 +1828,6 @@ components:
           type: array
           items: 
             $ref: '#/components/schemas/AggiudicatarioType'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: '#/components/schemas/IncaricatoType'   
         quadroEconomicoConcessioni:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType'  
     AggiudicatarioA.33Type:
@@ -1875,17 +1890,12 @@ components:
           type: string
           format: integer         
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoBaseType' 
+          $ref: '#/components/schemas/QuadroEconomicoType' 
         aggiudicatari:
           description: Dati degli aggiudicatari
           type: array
           items: 
             $ref: '#/components/schemas/AggiudicatarioA.33Type'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: '#/components/schemas/IncaricatoType'   
     AggiudicazioneA.34Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
@@ -1935,12 +1945,48 @@ components:
           format: decimal
     QuadroEconomicoType:
       description: Oggetto che riporta tutti i dati del quadro economico standard
-      allOf:
-        - $ref: '#/components/schemas/QuadroEconomicoBaseType'
       type: object
       required:
-        - sommeADisposizione
+        - sommeADisposizione      
       additionalProperties: false
+      properties:
+        impLavori:
+          description: Importo componente lavori in €
+          type: string
+          format: decimal
+        impServizi:
+          description: Importo componente servizi in €
+          type: string
+          format: decimal
+        impForniture:
+          description: Importo componente forniture in €
+          type: string
+          format: decimal
+        impTotaleSicurezza:
+          description: Importo totale per l'attuazione della sicurezza
+          type: string
+          format: decimal
+        ulterioriSommeNoRibasso:
+          description: Ulteriori somme non soggette a ribasso
+          type: string
+          format: decimal
+        impProgettazione:
+          description: Importo della progettazione in caso di appalto integrato
+          type: string
+          format: decimal
+        sommeOpzioniRinnovi:
+          description: Somme per opzioni/rinnovi
+          type: string
+          format: decimal
+        sommeRipetizioni:
+          description: Somme per ripetizione servizi/forniture/lavori analoghi e consegne complementari
+          type: string
+          format: decimal
+        sommeADisposizione:
+          description: Somme a disposizione - Iva e altre Imposte e tasse
+          type: string
+          format: decimal
+
     QuadroEconomicoConcorsiProgettazioneType:
       description: Quadro economico concorsi progettazione
       type: object
@@ -1955,20 +2001,6 @@ components:
           description: Importo stimato del servizio di progettazione successiva
           type: string
           format: decimal
-    QuadroEconomicoP.10Type:
-      description: Oggetto che riporta tutti i dati del quadro economico standard 
-      allOf: # estende la classe QuadroEconomicoBaseType
-        - $ref: '#/components/schemas/QuadroEconomicoBaseType'        
-      type: object
-      #required: [sommeRipetizioni]
-      additionalProperties: false           
-    QuadroEconomicoP.11Type:
-      description: Oggetto che riporta tutti i dati del quadro economico standard
-      allOf: # estende la classe QuadroEconomicoBaseType
-      - $ref: '#/components/schemas/QuadroEconomicoBaseType'        
-      type: object
-      #required: [sommeRipetizioni]
-      additionalProperties: false           
     QuadroEconomicoP3ContrattiEsclusiType:
       description: Oggetto che riporta tutti i dati del quadro economico standard 
       type: object
@@ -2563,19 +2595,19 @@ components:
       description: Dato in comune con il Business Group Procedure delle eforms
       type: object
       required:
-        - sceltaContraente
+        - tipoProcedura
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
     DatiBaseProceduraP2.16Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2585,11 +2617,11 @@ components:
     DatiBaseProceduraP2.17Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2599,11 +2631,11 @@ components:
     DatiBaseProceduraP2.18Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2615,24 +2647,24 @@ components:
       type: object
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'          
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'          
     DatiBaseProceduraP3ContrattiEsclusiType:
       description: Dato in comune con il Business Group Procedure dell'eform 10
       type: object
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'           
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'           
     DatiBaseProceduraP3.4Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
-      required: [sceltaContraente,proceduraAccelerata]
+      required: [tipoProcedura,proceduraAccelerata]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2642,11 +2674,11 @@ components:
     DatiBaseProceduraP3.5Type:
       description: Dato in comune con il Business Group Procedure dell'eform 10
       type: object
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2656,19 +2688,19 @@ components:
     DatiBaseProceduraP6Type:
       description: Dato in comune con il Business Group Procedure dell'eform 10
       type: object
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'          
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'          
     DatiBaseProceduraP4.1Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2687,11 +2719,11 @@ components:
     DatiBaseProceduraA2.29Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2701,11 +2733,11 @@ components:
     DatiBaseProceduraA2.30Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2715,11 +2747,11 @@ components:
     DatiBaseProceduraA2.31Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2731,8 +2763,8 @@ components:
       type: object
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string   
@@ -2741,8 +2773,8 @@ components:
       type: object
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string  
@@ -2751,8 +2783,8 @@ components:
       type: object
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string     
@@ -2761,8 +2793,8 @@ components:
       type: object
       additionalProperties: false
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string  
@@ -2770,18 +2802,18 @@ components:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
       additionalProperties: false
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'     
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'     
     DatiBaseProceduraA2.37Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
       additionalProperties: false
-      required: [sceltaContraente]
+      required: [tipoProcedura]
       properties:
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'            
+        tipoProcedura:
+          $ref: '#/components/schemas/tipoProceduraEnum'            
     DatiBaseContrattoType:
       description: Dato in comune con il Business Group Place of Performance delle eforms
       type: object
