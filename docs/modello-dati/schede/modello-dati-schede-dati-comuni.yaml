@@ -26,196 +26,484 @@ components:
           type: string
     FunzioniDelegateEnum:
       description: Ruolo svolto dalla S.A. nell'appalto - fare riferimento ai valori contenuti nel file [funzioniDelegate.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/funzioniDelegate.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     CategorieMerceologicheEnum:
       description: Categorie merceologiche oggetto della fornitura di cui al DPCM soggetti aggregatori - fare riferimento ai valori contenuti nel file [categorieMerceologiche.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/categorieMerceologiche.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     MotivazioneCIGEnum:
       description: Motivazione richiesta CIG - fare riferimento ai valori contenuti nel file [motivazioneCig.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivazioneCig.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     StrumentiSvolgimentoProcedureEnum:
       description: Strumenti per lo svolgimento delle procedure - fare riferimento ai valori contenuti nel file [strumentiSvolgimentoProcedure.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/strumentiSvolgimentoProcedure.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     TipoAggiudicatarioEnum:
       description: Tipo di soggetto aggiudicatario - fare riferimento ai valori contenuti nel file [tipoAggiudicatario.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAggiudicatario.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'        
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string        
     MotivoUrgenzaEnum:
       description: Motivo urgenza - fare riferimento ai valori contenuti nel file [motivoUrgenza.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoUrgenza.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     PrestazioniEnum:
       description: Prestazioni comprese nell'appalto - fare riferimento ai valori contenuti nel file [prestazioni.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/prestazioni.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     CondizioniNegoziataEnum:
       description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/condizioniNegoziata.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     ContrattiDisposizioniParticolariEnum:
       description: Contratti nei settori ordinari assoggettati a disposizioni particolari - fare riferimento ai valori contenuti nel file [contrattiDisposizioniParticolari.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/contrattiDisposizioniParticolari.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     CodIstatEnum:
       description: Codice ISTAT - fare riferimento ai valori contenuti nel file [codIstat.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/codIstat.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     CodNUTSEnum:
       description: Il luogo di esecuzione secondo la classificazione comune delle unità territoriali per la statistica (NUTS). Va indicato il codice di livello NUTS 3 - corrisponde al campo bt-5071 - Place Performance Country Subdivision del TED - fare riferimento ai valori contenuti nel file [codNUTS.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/codNUTS.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     RuoloOEEnum:
       description: Ruolo del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [ruoloOE.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/ruoloOE.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     ModalitaRealizzazioneEnum: 
       description: Modalità di realizzazione - corrisponde al campo bt-765 - Framework Agreement del TED  - fare riferimento ai valori contenuti nel file [modalitaRealizzazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modalitaRealizzazione.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'       
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string      
     TipoOEEnum:
       description: Tipo soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [tipoOE.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOE.json)
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'        
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string       
     ModalitaAcquisizioneEnum:
       description: Modalità di acquisizione (per servizi e forniture) - fare riferimento ai valori contenuti nel file  [modalitaAcquisizione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modalitaAcquisizione.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     OggettoPrincipaleContrattoEnum:
       description: Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [oggettoPrincipaleContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     TipologiaLavoroEnum:
       description: Tipologia lavoro - fare riferimento ai valori contenuti nel file [tipologiaLavoro.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipologiaLavoro.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     MotivoCollegamentoEnum:
       description: Motivo di collegamento - fare riferimento ai valori contenuti nel file [motivoCollegamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoCollegamento.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     CategoriaEnum:
       description: Categoria - fare riferimento ai valori contenuti nel file [categoria.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/categoria.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     MotivoDerogaEnum:
       description: Motivo deroga che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii. - fare riferimento ai valori contenuti nel file [motivoDeroga.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoDeroga.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     MisurePremialiEnum:
       description: Misure Premiali - fare riferimento ai valori contenuti nel file [misurePremiali.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/misurePremiali.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     TipoClassificazioneEnum:
       description: Il tipo di classificazione che descrive l'appalto (ad es. CPV) - fare riferimento ai valori contenuti nel file [tipoClassificazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoClassificazione.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     TipoSoggettoEnum:
       description: Tipologia del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [tipoSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoSoggetto.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType' 
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string 
     TipoIncaricoEnum:
       description: Tipologia dell'incarico - fare riferimento ai valori contenuti nel file [tipoIncarico.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoIncarico.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'       
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string       
     TipoProgettazioneEnum:
       description: Tipologia di progettazione - fare riferimento ai valori contenuti nel file [tipoProgettazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoProgettazione.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'      
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string      
     CPVEnum:
       description: Classificazione - fare riferimento ai valori contenuti nel file [CPV.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/CPV.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     AccessibilitaEnum:
       description: Richiamo nel bando di gara, nell’avviso o nell’invito alla necessità da parte del concorrente o dell’offerente di aver assolto, al momento della presentazione dell'offerta, agli obblighi in materia di lavoro delle persone con disabilità di cui alla legge 12 marzo 1999, n. 68 - corrisponde al campo bt-754 - Accessibility del TED - fare riferimento ai valori contenuti nel file [accessibilita.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/accessibilita.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     OggettoContrattoEnum:
       description: Oggetto del contratto - corrisponde al campo bt-23 - Main Nature del TED - fare riferimento ai valori contenuti nel file [oggettoContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoContratto.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     SceltaContraenteEnum:
       description: Scelta del contraente - fare riferimento ai valori contenuti nel file [sceltaContraente.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/sceltaContraente.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     TipoProceduraEnum:
       description: Il tipo di procedura di appalto (ad es. secondo i tipi indicati nelle direttive sugli appalti citate nei considerando del presente documento). - corrisponde al campo bt-105 - Procedure Type del TED - fare riferimento ai valori contenuti nel file [tipoProcedura.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoProcedura.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'        
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string       
     AffidamentiRiservatiEnum:
       description: Indicare se la partecipazione è riservata a specifiche organizzazioni (ad es. laboratori protetti, organizzazioni con missione di servizio pubblico) - corrisponde al campo bt-71 - Reserved Participation del TED - fare riferimento ai valori contenuti nel file [affidamentiRiservati.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/affidamentiRiservati.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     CriteriAggiudicazioneEnum:
       description: criteri di aggiudicazione - corrisponde al campo bt-539 - Award Criterion Type del TED - fare riferimento ai valori contenuti nel file [criteriAggiudicazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/criteriAggiudicazione.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     SistemaDinamicoAcquisizioneEnum:
       description: Sistema dinamico di acquisizione - corrisponde al campo bt-766 - Dynamic Purchasing System del TED  - fare riferimento ai valori contenuti nel file [sistemaDinamicoAcquisizione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/sistemaDinamicoAcquisizione.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     AccordoQuadroEnum:
       description: Accordo quadro - corrisponde al campo bt-765 - Framework agreement del TED  - fare riferimento ai valori contenuti nel file [accordoQuadro.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/accordoQuadro.json) 
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     MotivoEsclusioneOrdinarioSpecialeEnum:
       description: Motivo di esclusione settore ordinario e speciale - fare riferimento ai valori contenuti nel file [motivoEsclusioneOrdinarioSpeciale.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoEsclusioneOrdinarioSpeciale.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'        
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string       
     MotivoEsclusioneConcessioneEnum:
       description: Motivo di esclusione concessione - fare riferimento ai valori contenuti nel file [motivoEsclusioneConcessione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoEsclusioneConcessione.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'        
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string        
     MotivoEsclusioneTracciabilitaEnum:
       description: Motivo di esclusione tracciabilita - fare riferimento ai valori contenuti nel file [motivoEsclusioneTracciabilita.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoEsclusioneTracciabilita.json)
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'       
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string      
     FattispecieContrattualeEnum:
       description: Fattispecie contrattuale - fare riferimento ai valori contenuti nel file [fattispecieContrattuale.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/fattispecieContrattuale.json)  
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'      
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string      
     ModalitaRiaggiudicazioneAffidamentoEnum:
       description: Modalità di riaggiudicazione/affidamento dell'appalto - fare riferimento ai valori contenuti nel file [ModalitaRiaggiudicazioneAffidamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/ModalitaRiaggiudicazioneAffidamento.json)    
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'       
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string       
     EsitoProceduraEnum:
       description: Esito procedura - corrisponde al campo bt-142 - Winner Chosen del TED - fare riferimento ai valori contenuti nel file [esitoProcedura.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esitoProcedura.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType' 
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string 
     GiustificazioneEsitoProceduraEnum:
       description: Giustificazione esito procedura - corrisponde al campo bt-144 - Not Awarded Reason del TED - fare riferimento ai valori contenuti nel file [giustificazioneEsitoProcedura.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/giustificazioneEsitoProcedura.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'      
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string      
     MotiviModificaContrattualeEnum:
       description: Motivi modifica contrattuale - corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motiviModificaContrattuale.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviModificaContrattuale.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType' 
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     MotiviRevisionePrezziEnum:
       description: Motivo di revisione dei prezzi - fare riferimento ai valori contenuti nel file [motiviRevisionePrezzi.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviRevisionePrezzi.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType' 
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string 
     TipoRealizzazioneContrattoEnum:
       description: Tipo modalità di realizzazione contratto - fare riferimento ai valori contenuti nel file [tipoRealizzazioneContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRealizzazioneContratto.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'   
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string  
     EsitoProceduraNagEnum:
       description: Esito procedura NAG - fare riferimento ai valori contenuti nel file [esitoProceduraNag.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esitoProceduraNag.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'    
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string   
     AvanzamentoEnum:
       description: L'avanzamento raggiunto, rispetto al cronoprogramma di previsione registrato - fare riferimento ai valori contenuti nel file [avanzamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/avanzamento.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'  
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string  
     ModalitaPagamentoEnum:
       description: Modalità di pagamento - fare riferimento ai valori contenuti nel file [modalitaPagamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modalitaPagamento.json)  
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType' 
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string 
     TipologiaComunicazioneEnum:
       description: Tipologia di comunicazione - fare riferimento ai valori contenuti nel file [tipologiaComunicazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipologiaComunicazione.json) 
-      allOf: 
-      - $ref: '#/components/schemas/TipologicaType'       
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string      
     MotivoDerogaType:
       type: array
       items:
