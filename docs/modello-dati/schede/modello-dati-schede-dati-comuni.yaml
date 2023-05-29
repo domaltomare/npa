@@ -16,8 +16,14 @@ components:
           type: string
     TipoFinanziamentoEnum:
       description: Tipo di finanziamento - fare riferimento ai valori contenuti nel file [tipoFinanziamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoFinanziamento.json)
-      allOf:
-        - $ref: '#/components/schemas/TipologicaType'
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string
     FunzioniDelegateEnum:
       description: Ruolo svolto dalla S.A. nell'appalto - fare riferimento ai valori contenuti nel file [funzioniDelegate.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/funzioniDelegate.json)
       allOf:
