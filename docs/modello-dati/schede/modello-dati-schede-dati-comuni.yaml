@@ -2272,7 +2272,6 @@ components:
           description: Somme a disposizione - Iva e altre Imposte e tasse
           type: string
           format: decimal
-
     QuadroEconomicoConcorsiProgettazioneType:
       description: Quadro economico concorsi progettazione
       type: object
@@ -2365,14 +2364,6 @@ components:
           description: Somme a disposizione - Iva e altre Imposte e tasse
           type: string
           format: decimal             
-    QuadroEconomicoP3.5Type:
-      description: Oggetto che riporta tutti i dati del quadro economico standard
-      allOf:
-        - $ref: '#/components/schemas/QuadroEconomicoBaseType'
-      type: object
-      required:
-        - sommeRipetizioni
-      additionalProperties: false          
     QuadroEconomicoADType:
       description: Oggetto che riporta tutti i dati del quadro economico standard 
       allOf: # estende la classe QuadroEconomicoBaseType
@@ -3459,141 +3450,6 @@ components:
         causaModifica:
           description: Cause della modifica contrattuale
           type: string          
-    AnacFormP2DatiBaseType:
-      description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia > 5K
-      type: object
-      additionalProperties: false
-      properties:
-        datiBaseAvviso:
-          $ref: '#/components/schemas/DatiBaseAvvisoType'
-        datiBaseCPV:
-          type: array
-          items:
-            $ref: '#/components/schemas/DatiBaseCPVType'
-        datiBaseAccessibilita:
-          type: array
-          items:
-            $ref: '#/components/schemas/DatiBaseAccessibilitaType'
-    AnacFormP3ContrattiEsclusiDatiBaseType:
-      description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia dei contratti esclusi
-      type: object
-      additionalProperties: false
-      properties:
-        #datiBase:
-         # $ref: '#/components/schemas/DatiBaseType'
-        datiBaseAvviso:
-          $ref: '#/components/schemas/DatiBaseAvvisoType'
-        datiBaseCPV:
-          $ref: '#/components/schemas/DatiBaseCPVType'
-        datiBaseContratto:
-          $ref: '#/components/schemas/DatiBaseContrattoType' 
-        datiBaseProcedura:
-          $ref: '#/components/schemas/DatiBaseProceduraP3ContrattiEsclusiType'
-        datiBaseAggiudicazione:
-          $ref: '#/components/schemas/DatiBaseAggiudicazioneP3ContrattiEsclusiType'  
-        datiBaseAggiuntivi:
-          $ref: '#/components/schemas/DatiBaseAggiuntiviType'       
-        datiBaseStrumentiProcedura:
-          $ref: '#/components/schemas/DatiBaseStrumentiProceduraType'
-        datiBaseTerminiInvio:
-          $ref: '#/components/schemas/DatiTerminiInvioType' 
-    AnacFormP3.3DatiBaseType:
-      description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia dei contratti esclusi
-      type: object
-      additionalProperties: false
-      properties:
-        #datiBase:
-         # $ref: '#/components/schemas/DatiBaseType'
-        datiBaseAvviso:
-          $ref: '#/components/schemas/DatiBaseAvvisoType'
-        datiBaseCPV:
-          $ref: '#/components/schemas/DatiBaseCPVType'
-        datiBaseContratto:
-          $ref: '#/components/schemas/DatiBaseContrattoType' 
-        datiBaseProcedura:
-          $ref: '#/components/schemas/DatiBaseProceduraP3ContrattiEsclusiType'
-        datiBaseAggiudicazione:
-          $ref: '#/components/schemas/DatiBaseAggiudicazioneP3ContrattiEsclusiType'  
-        datiBaseAggiuntivi:
-          $ref: '#/components/schemas/DatiBaseAggiuntiviType'       
-        datiBaseStrumentiProcedura:
-          $ref: '#/components/schemas/DatiBaseStrumentiProceduraP3.3Type'
-        datiBaseTerminiInvio:
-          $ref: '#/components/schemas/DatiTerminiInvioType'          
-    AnacFormP3.4DatiBaseType:
-      description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia del contraente generale.
-      type: object
-      #required: []
-      additionalProperties: false
-      properties:
-        #datiBase:
-         # $ref: '#/components/schemas/DatiBaseType'
-        datiBaseAvviso:
-          $ref: '#/components/schemas/DatiBaseAvvisoType'
-        datiBaseCPV:
-          $ref: '#/components/schemas/DatiBaseCPVType'
-        datiBaseContratto:
-          $ref: '#/components/schemas/DatiBaseContrattoType' 
-        datiBaseProcedura:
-          $ref: '#/components/schemas/DatiBaseProceduraP3.4Type'
-        datiBaseAggiudicazione:
-          $ref: '#/components/schemas/DatiBaseAggiudicazioneP3.4Type'  
-        datiBaseStrumentiProcedura:
-          $ref: '#/components/schemas/DatiBaseStrumentiProceduraP3.4Type'
-        datiBaseTerminiInvio:
-          $ref: '#/components/schemas/DatiTerminiInvioType' 
-        datiBaseAccessibilita:
-          $ref: '#/components/schemas/DatiBaseAccessibilitaType'          
-    AnacFormP3.5DatiBaseType:
-      description: Oggetto che contiene gli oggetti comuni con il TED per le pubblicazioni sottosoglia relativi alla scelta del socio privato nella società mista  
-      type: object
-      #required: []
-      additionalProperties: false
-      properties:
-        #datiBase:
-         # $ref: '#/components/schemas/DatiBaseP3.5Type'
-        datiBaseAvviso:
-          $ref: '#/components/schemas/DatiBaseAvvisoType'
-        datiBaseCPV:
-          $ref: '#/components/schemas/DatiBaseCPVType'
-        datiBaseContratto:
-          $ref: '#/components/schemas/DatiBaseContrattoType' 
-        datiBaseProcedura:
-          $ref: '#/components/schemas/DatiBaseProceduraP3.5Type'
-        datiBaseAggiudicazione:
-          $ref: '#/components/schemas/DatiBaseAggiudicazioneP3.5Type'  
-        datiBaseStrumentiProcedura:
-          $ref: '#/components/schemas/DatiBaseStrumentiProceduraP3.5Type'
-        datiBaseTerminiInvio:
-          $ref: '#/components/schemas/DatiTerminiInvioType' 
-        datiBaseAccessibilita:
-          $ref: '#/components/schemas/DatiBaseAccessibilitaType'    
-    AnacFormP6DatiBaseType:
-      description: Oggetto che contiene gli oggetti comuni con il TED per le schede relative ai Contratti di Partenariato Pubblico Privato 
-      type: object
-      #required: []
-      additionalProperties: false
-      properties:
-        #datiBase:
-         # $ref: '#/components/schemas/DatiBaseType'
-        datiBaseAvviso:
-          $ref: '#/components/schemas/DatiBaseAvvisoType'
-        datiBaseCPV:
-          $ref: '#/components/schemas/DatiBaseCPVType'
-        datiBaseContratto:
-          $ref: '#/components/schemas/DatiBaseContrattoType' 
-        datiBaseProcedura:
-          $ref: '#/components/schemas/DatiBaseProceduraP6Type'
-        datiBaseAggiudicazione:
-          $ref: '#/components/schemas/DatiBaseAggiudicazioneType'  
-        datiBaseAggiuntivi:
-          $ref: '#/components/schemas/DatiBaseAggiuntiviType'       
-        datiBaseStrumentiProcedura:
-          $ref: '#/components/schemas/DatiBaseStrumentiProceduraP6Type'
-        datiBaseTerminiInvio:
-          $ref: '#/components/schemas/DatiTerminiInvioType' 
-        datiBaseAccessibilita:
-          $ref: '#/components/schemas/DatiBaseAccessibilitaType'          
     AnacFormA2DatiBaseType:
       description: Oggetto che contiene gli oggetti comuni con il TED per le aggiudicazioni sottosoglia
       type: object
