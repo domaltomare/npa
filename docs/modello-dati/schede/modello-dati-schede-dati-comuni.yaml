@@ -2895,7 +2895,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
     DatiBaseProceduraP2.16Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
@@ -2903,7 +2903,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2917,7 +2917,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2931,7 +2931,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2944,7 +2944,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'          
+          $ref: '#/components/schemas/TipoProceduraEnum'          
     DatiBaseProceduraP3ContrattiEsclusiType:
       description: Dato in comune con il Business Group Procedure dell'eform 10
       type: object
@@ -2952,7 +2952,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'           
+          $ref: '#/components/schemas/TipoProceduraEnum'           
     DatiBaseProceduraP3.4Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
@@ -2960,7 +2960,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2974,7 +2974,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -2988,7 +2988,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'          
+          $ref: '#/components/schemas/TipoProceduraEnum'          
     DatiBaseProceduraP4.1Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
@@ -2996,7 +2996,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -3019,7 +3019,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -3033,7 +3033,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -3047,7 +3047,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
@@ -3060,7 +3060,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string   
@@ -3070,7 +3070,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string  
@@ -3080,7 +3080,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string     
@@ -3090,7 +3090,7 @@ components:
       additionalProperties: false
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'
+          $ref: '#/components/schemas/TipoProceduraEnum'
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string  
@@ -3101,7 +3101,7 @@ components:
       required: [tipoProcedura]
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'     
+          $ref: '#/components/schemas/TipoProceduraEnum'     
     DatiBaseProceduraA2.37Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
@@ -3109,7 +3109,7 @@ components:
       required: [tipoProcedura]
       properties:
         tipoProcedura:
-          $ref: '#/components/schemas/tipoProceduraEnum'            
+          $ref: '#/components/schemas/TipoProceduraEnum'            
     DatiBaseContrattoType:
       description: Dato in comune con il Business Group Place of Performance delle eforms
       type: object
@@ -3489,8 +3489,8 @@ components:
       type: object
       additionalProperties: false
       properties:
-        datiBase:
-          $ref: '#/components/schemas/DatiBaseType'
+        #datiBase:
+         # $ref: '#/components/schemas/DatiBaseType'
         datiBaseAvviso:
           $ref: '#/components/schemas/DatiBaseAvvisoType'
         datiBaseCPV:
@@ -3512,8 +3512,8 @@ components:
       type: object
       additionalProperties: false
       properties:
-        datiBase:
-          $ref: '#/components/schemas/DatiBaseType'
+        #datiBase:
+         # $ref: '#/components/schemas/DatiBaseType'
         datiBaseAvviso:
           $ref: '#/components/schemas/DatiBaseAvvisoType'
         datiBaseCPV:
@@ -3536,8 +3536,8 @@ components:
       #required: []
       additionalProperties: false
       properties:
-        datiBase:
-          $ref: '#/components/schemas/DatiBaseType'
+        #datiBase:
+         # $ref: '#/components/schemas/DatiBaseType'
         datiBaseAvviso:
           $ref: '#/components/schemas/DatiBaseAvvisoType'
         datiBaseCPV:
@@ -3560,8 +3560,8 @@ components:
       #required: []
       additionalProperties: false
       properties:
-        datiBase:
-          $ref: '#/components/schemas/DatiBaseP3.5Type'
+        #datiBase:
+         # $ref: '#/components/schemas/DatiBaseP3.5Type'
         datiBaseAvviso:
           $ref: '#/components/schemas/DatiBaseAvvisoType'
         datiBaseCPV:
@@ -3584,8 +3584,8 @@ components:
       #required: []
       additionalProperties: false
       properties:
-        datiBase:
-          $ref: '#/components/schemas/DatiBaseType'
+        #datiBase:
+         # $ref: '#/components/schemas/DatiBaseType'
         datiBaseAvviso:
           $ref: '#/components/schemas/DatiBaseAvvisoType'
         datiBaseCPV:
