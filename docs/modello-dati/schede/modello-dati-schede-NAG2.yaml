@@ -1,24 +1,20 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda NAG2 - Scheda di mancata aggiudicazione della gara - procedura nazionale
+  title: Modello Dati - Scheda NAG2 - Scheda di mancata aggiudicazione della gara - sotto soglia europea
   version: 1.0.0
 components:
   schemas:
-    AnacFormNAG2DatiBaseType:
-      description: Oggetto che contiene gli oggetti comuni con il TED relativi alla mancata aggiudicazione della gara - procedura nazionale
+    AnacFormNAG2Type:
+      description: Contiene tutti i dati relativi alla mancata aggiudicazione della gara - sotto soglia europea
       type: object
       additionalProperties: false
       properties:
-        datiBaseRisultatoProceduraNAG2:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraNAG2Type'        
-    AnacFormNAG2Type:
-      description: Contiene tutti i dati relativi alla mancata aggiudicazione della gara - procedura nazionale
-      type: object
-      allOf: 
-      - $ref: '#/components/schemas/AnacFormNAG2DatiBaseType'      
-      additionalProperties: false
+        datiBaseRisultatoProcedura:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraNAGType'
+        esitoProceduraNag:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EsitoProceduraNagEnum'
     SchedaNAG2Type:
-      description: Scheda di mancata aggiudicazione della gara - procedura nazionale
+      description: Scheda di mancata aggiudicazione della gara - sotto soglia europea
       type: object
       required: [anacFormNAG2]
       additionalProperties: false
