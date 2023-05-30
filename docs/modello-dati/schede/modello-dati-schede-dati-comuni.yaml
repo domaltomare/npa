@@ -740,6 +740,25 @@ components:
           description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
           type: string
           format: decimal
+    AggiudicatarioA1.35Type:
+      description: Dati dell'aggiudicatario
+      type: object
+      required: [cf,denominazione,ruolo,tipo,importo]
+      additionalProperties: false
+      properties:
+        cf:
+          description: codice fiscale del soggetto interessato
+          type: string
+        denominazione: 
+          description: denominazione del soggetto interessato
+          type: string  
+        ruolo: 
+          $ref: '#/components/schemas/RuoloOEEnum'
+        tipo: 
+          $ref: '#/components/schemas/TipoOEEnum'
+        idGruppo:
+          description: id gruppo
+          type: string 
     AppaltoBaseType:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione
       type: object
@@ -1856,6 +1875,19 @@ components:
         idGruppo:
           description: id gruppo
           type: string  
+    AggiudicazioneBaseType:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
+      type: object
+      additionalProperties: false
+      required: [lotIdentifier]
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string                                   
     AggiudicazioneAD1.25Type:
       description: Oggetto che riporta i dati di aggiudicazione per gli affidamenti diretti.
       type: object
@@ -2114,11 +2146,11 @@ components:
           type: array
           items: 
             $ref: '#/components/schemas/AggiudicatarioType'          
-    AppaltoA.30Type:
+    AppaltoA1.30Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
-      required: [lotIdentifier,relazioneUnicaSulleProcedure]
+      required: [relazioneUnicaSulleProcedure,opereUrbanizzazioneScomputo,preinformazione]
       properties:
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
@@ -2132,112 +2164,19 @@ components:
         opereUrbanizzazioneScomputo:
           description: Opere di urbanizzazione a scomputo
           type: boolean
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'          
         preinformazione:
           description: E' stata effettuata la preinformazione?
           type: boolean           
-    AggiudicazioneBaseType:
-      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
-      type: object
-      additionalProperties: false
-      required: [lotIdentifier]
-      properties:
-        cig:
-          description: codice identificativo lotto
-          type: string
-          example: 
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string                         
-    AggiudicazioneA.29Type:
-      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
+    AggiudicazioneA1.30Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia   
       allOf: # estende la classe AggiudicazioneBaseType
-      - $ref: '#/components/schemas/AggiudicazioneBaseType'        
+      - $ref: '#/components/schemas/AggiudicazioneBaseType'       
       type: object
-      required: [opereUrbanizzazioneScomputo,preinformazione,termineRidottoAvvisoPreinformazione,nImpreseEscluseInsufficientiGiustificazioni,numeroOfferteAmmesse]
+      required: [nImpreseEscluseInsufficientiGiustificazioni,numeroOfferteAmmesse]
       additionalProperties: false
       properties: 
-        opereUrbanizzazioneScomputo:
-          description: Opere di urbanizzazione a scomputo
-          type: boolean
-        preinformazione:
-          description: E' stata effettuata la preinformazione?
-          type: boolean
-        termineRidottoAvvisoPreinformazione:
-          description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
-          type: boolean 
-        numeroOfferteAmmesse:
-          description: numero di offerte ammesse
-          type: string
-          format: integer 
-        valoreSogliaAnomalia:
-          description: Valore soglia anomalia
-          type: string
-        nOfferte:
-          description: N.offerte >= soglia anomalia
-          type: string
-          format: integer
-        nImpreseEscluseAutomaticamente: 
-          description: Numero imprese escluse automaticamente
-          type: string
-          format: integer
-        nImpreseEscluseInsufficientiGiustificazioni: 
-          description: Numero imprese escluse per insufficienti giustificazioni
-          type: string
-          format: integer           
-        quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
-          type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioA.29Type'
-    AggiudicatarioA.30Type:
-      description: Dati dell'aggiudicatario
-      type: object
-      additionalProperties: false
-      properties:
-        cf:
-          description: codice fiscale del soggetto interessato
-          type: string
-        denominazione: 
-          description: denominazione del soggetto interessato
-          type: string  
-        ruolo: 
-          $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
-          $ref: '#/components/schemas/TipoOEEnum'
-        idGruppo:
-          description: id gruppo
-          type: string 
-        importo:
-          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
-          type: string
-          format: decimal      
-        ribassoDasta:
-          description: Ribasso d’Asta 
-          type: string
-        offertaInAumento:
-          description: Offerta in Aumento
-          type: string
-        offertaQualitativa:
-          description: Offerta qualitativa
-          type: string
-          format: decimal   
-    AggiudicazioneA.30Type:
-      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia    
-      type: object
-      required: [opereUrbanizzazioneScomputo,preinformazione]
-      additionalProperties: false
-      properties: 
-        cig:
-          description: codice identificativo lotto
-          type: string
-          example: 
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string      
-        modalitaRiaggiudicazioneAffidamento:
-          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'       
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
           type: string
@@ -2263,77 +2202,35 @@ components:
           description: Dati degli aggiudicatari
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioA.30Type'
-    AggiudicatarioA.31Type:
-      description: Dati dell'aggiudicatario
-      type: object
-      additionalProperties: false
-      properties:
-        cf:
-          description: codice fiscale del soggetto interessato
-          type: string
-        denominazione: 
-          description: denominazione del soggetto interessato
-          type: string  
-        ruolo: 
-          $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
-          $ref: '#/components/schemas/TipoOEEnum'
-        idGruppo:
-          description: id gruppo
-          type: string 
-        importo:
-          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
-          type: string
-          format: decimal      
-        identificativoCfEstero:
-            description: Identificativo codice fiscale estero
-            type: string            
-        dataInizio:
-            description: Data inizio
-            type: string
-            format: datetime
-        dataUltimazione:
-            description: Data ultimazione
-            type: string
-            format: datetime
-        impSommeLiquidate:
-            description: importo delle somme liquidate
-            type: string
-            format: decimal  
-    AggiudicazioneA.31Type:
+            $ref: '#/components/schemas/AggiudicatarioType'
+    AggiudicazioneA1.31Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
+      allOf: # estende la classe AggiudicazioneBaseType
+      - $ref: '#/components/schemas/AggiudicazioneBaseType'      
       type: object
       required: [lotIdentifier]
       additionalProperties: false
       properties: 
-        cig:
-          description: codice identificativo lotto
-          type: string
-          example: 
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string       
         aggiudicatari:
           description: Dati degli aggiudicatari
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioA.31Type'             
-    AggiudicazioneA.32Type:
-      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia    
+            $ref: '#/components/schemas/AggiudicatarioType'             
+    AppaltoA1.32Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
-      required: [lotIdentifier]
+      additionalProperties: false
+      properties:    
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'      
+    AggiudicazioneA1.32Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia    
+      allOf: # estende la classe AggiudicazioneBaseType
+      - $ref: '#/components/schemas/AggiudicazioneBaseType'      
+      type: object
+      required: [nImpreseEscluseInsufficientiGiustificazioni,numeroOfferteAmmesse]      
       additionalProperties: false
       properties: 
-        cig:
-          description: codice identificativo lotto
-          type: string
-          example: 
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string      
-        modalitaRiaggiudicazioneAffidamento:
-          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum' 
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
           type: string
@@ -2349,44 +2246,29 @@ components:
             $ref: '#/components/schemas/AggiudicatarioType'
         quadroEconomicoConcessioni:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType'  
-    AggiudicatarioA.33Type:
-      description: Dati dell'aggiudicatario
+    AppaltoA1.33Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
+      required: [relazioneUnicaSulleProcedure,opereUrbanizzazioneScomputo,preinformazione]
       properties:
-        cf:
-          description: codice fiscale del soggetto interessato
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
           type: string
-        denominazione: 
-          description: denominazione del soggetto interessato
-          type: string  
-        ruolo: 
-          $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
-          $ref: '#/components/schemas/TipoOEEnum'
-        idGruppo:
-          description: id gruppo
-          type: string 
-        importo:
-          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
-          type: string
-          format: decimal      
-        ribassoDasta:
-          description: Ribasso d’Asta 
-          type: string
-        offertaInAumento:
-          description: Offerta in Aumento
-          type: string
-        offertaQualitativa:
-          description: Offerta qualitativa
-          type: string
-          format: decimal  
-    AggiudicazioneA.33Type:
+          format: url  
+        relazioneUnicaSulleProcedure:
+          description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
+          type: boolean  
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'          
+    AggiudicazioneA1.33Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
       - $ref: '#/components/schemas/AggiudicazioneBaseType' 
       type: object
-      required: [aggiudicazione]
+      required: [nImpreseEscluseInsufficientiGiustificazioni,numeroOfferteAmmesse]
       additionalProperties: false
       properties:  
         numeroOfferteAmmesse:
@@ -2414,11 +2296,115 @@ components:
           description: Dati degli aggiudicatari
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioA.33Type'
-    AggiudicazioneA.34Type:
+            $ref: '#/components/schemas/AggiudicatarioType'
+    AppaltoA1.34Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
+      type: object
+      additionalProperties: false
+      required: [relazioneUnicaSulleProcedure,opereUrbanizzazioneScomputo,preinformazione]
+      properties:
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
+          type: string
+          format: url  
+        relazioneUnicaSulleProcedure:
+          description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
+          type: boolean  
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'             
+    AggiudicazioneA1.34Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
       - $ref: '#/components/schemas/AggiudicazioneBaseType' 
+      type: object
+      additionalProperties: false
+      required: [nImpreseEscluseInsufficientiGiustificazioni,numeroOfferteAmmesse]      
+      properties:      
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
+          type: string
+          format: integer 
+        valoreSogliaAnomalia:
+          description: Valore soglia anomalia
+          type: string
+        nOfferte:
+          description: N.offerte >= soglia anomalia
+          type: string
+          format: integer
+        nImpreseEscluseAutomaticamente: 
+          description: Numero imprese escluse automaticamente
+          type: string
+          format: integer
+        nImpreseEscluseInsufficientiGiustificazioni: 
+          description: Numero imprese escluse per insufficienti giustificazioni
+          type: string
+          format: integer  
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoA.34Type' 
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioType'
+    AggiudicazioneA1.35Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
+      allOf: # estende la classe AggiudicazioneBaseType
+      - $ref: '#/components/schemas/AggiudicazioneBaseType' 
+      type: object
+      additionalProperties: false
+      required: [nImpreseEscluseInsufficientiGiustificazioni,numeroOfferteAmmesse]      
+      properties:      
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
+          type: string
+          format: integer 
+        nImpreseEscluseInsufficientiGiustificazioni: 
+          description: Numero imprese escluse per insufficienti giustificazioni
+          type: string
+          format: integer  
+        quadroEconomicoConcessioni:
+          $ref: '#/components/schemas/QuadroEconomicoConcessioniType' 
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioA1.35Type'
+    AggiudicazioneA1.36Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
+      allOf: # estende la classe AggiudicazioneBaseType
+      - $ref: '#/components/schemas/AggiudicazioneBaseType' 
+      type: object
+      additionalProperties: false
+      required: [numeroOfferteAmmesse]      
+      properties:      
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
+          type: string
+          format: integer 
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioType'     
+    AggiudicazioneA1.37Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
+      allOf: # estende la classe AggiudicazioneBaseType
+      - $ref: '#/components/schemas/AggiudicazioneBaseType' 
+      type: object
+      additionalProperties: false
+      required: [numeroOfferteAmmesse]      
+      properties:      
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
+          type: string
+          format: integer 
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioType'      
     QuadroEconomicoBaseType:
       description: Oggetto che riporta tutti i dati del quadro economico standard
       type: object
