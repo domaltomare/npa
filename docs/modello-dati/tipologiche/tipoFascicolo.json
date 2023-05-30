@@ -1,8 +1,8 @@
 [{
-    "codice":"FV",
+    "codice":"FVP",
     "descrizione": {
-		"it": "Fascicolo Virtuale Generico",
-		"en": "Fascicolo Virtuale Generico"
+		"it": "Fascicolo Virtuale di Partecipazione",
+		"en": "Fascicolo Virtuale di Partecipazione"
 		},
     "datainizio":null,
     "datafine":null
