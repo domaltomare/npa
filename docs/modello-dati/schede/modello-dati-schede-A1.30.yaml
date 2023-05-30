@@ -4,43 +4,19 @@ info:
   version: 1.0.0
 components:
   schemas:
-    AggiudicatarioA1.30Type:
-      description: Dati dell'aggiudicatario
-      allOf: # estende la classe AggiudicatarioType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'      
-      type: object
-      additionalProperties: false
-      properties:
-        ribassoDasta:
-          description: Ribasso d’Asta 
-          type: string
-        offertaInAumento:
-          description: Offerta in Aumento
-          type: string
-        offertaQualitativa:
-          description: Offerta qualitativa
-          type: string
-          format: decimal   
     AnacFormA1.30Type:
       description: Contiene tutti i dati relativi all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso di aggiudicazione di un appalto — direttiva settoriale, regime ordinario. Articolo 70 della direttiva 2014/25/UE
       type: object
-      required: [aggiudicazione]
+      required: [appalto, aggiudicazioni]
       additionalProperties: false
       properties:
-        aggiudicazione:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA.30Type'
-        quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoAType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        appalto:
+         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1.30Type'
+        aggiudicazioni:
+          description: Dati relativi alle aggiudicazioni
           type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioA1.30Type'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IncaricatoType'    
+          items:
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1.30Type'
     SchedaA1.30Type:
       description: Scheda relativa all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso di aggiudicazione di un appalto — direttiva settoriale, regime ordinario. Articolo 70 della direttiva 2014/25/UE con invio di eform30.
       type: object

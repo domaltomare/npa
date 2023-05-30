@@ -7,23 +7,17 @@ components:
     AnacFormA1.32Type:
       description: Contiene tutti i dati relativi all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso di aggiudicazione di una concessione — direttiva sulle concessioni, regime ordinario. Articolo 32, paragrafo 2 (riferimento all’allegato VII), della direttiva 2014/23/UE
       type: object
-      required: [aggiudicazione]
+      required: [appalto,aggiudicazioni]
       additionalProperties: false
       properties:
-        aggiudicazione:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA.32Type'
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        appalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1.32Type'      
+        aggiudicazioni:
+          description: Dati relativi alle aggiudicazioni
           type: array
-          items: 
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IncaricatoType'   
-        quadroEconomicoConcessioni:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType' 
+          items:        
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1.32Type'
+ 
     SchedaA1.32Type:
       description: Scheda relativa all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso di aggiudicazione di una concessione — direttiva sulle concessioni, regime ordinario. Articolo 32, paragrafo 2 (riferimento all’allegato VII), della direttiva 2014/23/UE con invio di eform32.
       type: object

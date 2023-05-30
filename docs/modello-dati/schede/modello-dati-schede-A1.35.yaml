@@ -4,42 +4,17 @@ info:
   version: 1.0.0
 components:
   schemas:
-    AggiudicatarioA1.35Type:
-      description: Dati dell'aggiudicatario
-      type: object
-      additionalProperties: false 
-      properties:
-        cf:
-          description: codice fiscale del soggetto interessato
-          type: string
-        denominazione: 
-          description: denominazione del soggetto interessato
-          type: string  
-        ruolo: 
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/RuoloOEEnum'
-        tipo: 
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipoOEEnum'
-        idGruppo:
-          description: id gruppo
-          type: string       
     AnacFormA1.35Type:
       description: Contiene tutti i dati relativi all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso di aggiudicazione di una concessione — direttiva sulle concessioni, regime alleggerito. Articolo 32, paragrafo 2 (riferimento all’allegato VIII), della direttiva 2014/23/UE
       type: object
-      required: [aggiudicatari]
+      required: [aggiudicazioni]
       additionalProperties: false
       properties:
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        aggiudicazioni:
+          description: Dati relativi alle aggiudicazioni
           type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioA1.35Type'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IncaricatoType'   
-        quadroEconomicoConcessioni:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType'   
+          items:        
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1.35Type'      
     SchedaA1.35Type:
       description: Scheda relativa all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso di aggiudicazione di una concessione — direttiva sulle concessioni, regime alleggerito. Articolo 32, paragrafo 2 (riferimento all’allegato VIII), della direttiva 2014/23/UE con invio di eform35.
       type: object

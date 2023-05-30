@@ -7,14 +7,14 @@ components:
     AnacFormA1.37Type:
       description: Contiene tutti i dati relativi all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso sui risultati di un concorso di progettazione — direttiva settoriale, progettazione. Articolo 96, paragrafo 1, secondo comma, della direttiva 2014/25/UE
       type: object
-      required: [aggiudicatari]
+      required: [aggiudicazioni]
       additionalProperties: false
       properties:
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        aggiudicazioni:
+          description: Dati relativi alle aggiudicazioni
           type: array
-          items: 
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'  
+          items:
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1.37Type'            
     SchedaA1.37Type:
       description: Scheda relativa all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso sui risultati di un concorso di progettazione — direttiva settoriale, progettazione. Articolo 96, paragrafo 1, secondo comma, della direttiva 2014/25/UE con invio di eform37.
       type: object
