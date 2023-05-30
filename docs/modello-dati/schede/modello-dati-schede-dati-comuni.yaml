@@ -385,7 +385,7 @@ components:
           description: descrizione della voce della tipologica
           type: string      
     ModalitaRiaggiudicazioneAffidamentoEnum:
-      description: Modalità di riaggiudicazione/affidamento dell'appalto - fare riferimento ai valori contenuti nel file [ModalitaRiaggiudicazioneAffidamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/ModalitaRiaggiudicazioneAffidamento.json)    
+      description: Modalità di riaggiudicazione/affidamento dell'appalto - fare riferimento ai valori contenuti nel file [modalitaRiaggiudicazioneAffidamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modalitaRiaggiudicazioneAffidamento.json)    
       type: object
       properties:
         codice:
@@ -484,6 +484,16 @@ components:
         descrizione:
           description: descrizione della voce della tipologica
           type: string      
+    SubappaltoEnum:
+      description: Subappalto - corrisponde al campo bt-773 - Subcontracting del TED - fare riferimento ai valori contenuti nel file [subappalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/subappalto.json)  
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string              
     MotivoDerogaType:
       type: array
       items:
@@ -1836,6 +1846,67 @@ components:
         idGruppo:
           description: id gruppo
           type: string  
+    AggiudicazioneAD1.25Type:
+      description: Oggetto che riporta i dati di aggiudicazione per gli affidamenti diretti.
+      type: object
+      required: [afferenteInvestimentiPNRR,lotIdentifier]
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string      
+        afferenteInvestimentiPNRR:
+          description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
+          type: boolean 
+        cupLotto:
+          description: Cup associati al lotto
+          type: array
+          items: 
+            type: string  
+        paritaDiGenereGenerazionale:
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType' 
+        aggiudicatari:
+          description: Aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioType' 
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: '#/components/schemas/FinanziamentoType'             
+    AppaltoAD1.25Type:
+      description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva generale - Articolo 3 bis della direttiva 89/665/CEE
+      type: object
+      required: [relazioneUnicaSulleProcedure,opereUrbanizzazioneScomputo,preinformazione,termineRidottoAvvisoPreinformazione]
+      additionalProperties: false
+      properties:
+        idAppalto:
+          description: Codice univoco dell'appalto. il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
+          type: string        
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
+          type: string
+          format: url       
+        relazioneUnicaSulleProcedure:
+          description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
+          type: boolean
+        opereUrbanizzazioneScomputo:
+          description: Opere di urbanizzazione a scomputo
+          type: boolean
+        preinformazione:
+          description: E' stata effettuata la preinformazione?
+          type: boolean
+        termineRidottoAvvisoPreinformazione:
+          description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
+          type: boolean       
     AppaltoA.30Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
@@ -2602,6 +2673,13 @@ components:
           description: Offerta di massimo ribasso - corrisponde ai campi bt-710 e bt-711 del TED.
           type: string
           format: decimal          
+    DatiBaseSubappaltiType:
+      description: Dato in comune con il Business Group Subcontracting delle eforms
+      #required: []
+      additionalProperties: false
+      properties:
+        subappalto:
+          $ref: '#/components/schemas/SubappaltoEnum'          
     DatiBaseAppaltoType:
       description: Dato in comune con il Business Group Purpose delle eforms
       type: object
@@ -3316,6 +3394,14 @@ components:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
           type: boolean          
+    DatiBaseStrumentiProceduraAD2Type:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      additionalProperties: false
+      properties:
+        accordoQuadro: 
+          $ref: '#/components/schemas/AccordoQuadroEnum'    
+        sistemaDinamicoAcquisizione: 
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'          
     DatiTerminiInvioType:
       description: Dato in comune con il Business Group Submission Terms delle eforms 
       additionalProperties: false
