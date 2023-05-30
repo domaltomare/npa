@@ -87,4 +87,13 @@
 		},	
     "datainizio":null,
     "datafine":null
+},
+{
+    "codice":"11",
+    "descrizione": {
+		"it": "Affidamento diretto in adesione AQ/Convenzione",
+		"en": "Affidamento diretto in adesione AQ/Convenzione"
+		},	
+    "datainizio":null,
+    "datafine":null
 }]
