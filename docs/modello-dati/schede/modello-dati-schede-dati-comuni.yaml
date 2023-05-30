@@ -104,6 +104,16 @@ components:
         descrizione:
           description: descrizione della voce della tipologica
           type: string
+    GiustificazioneAggiudicazioneDirettaEnum:
+      description: Giustificazione del ricorso a una procedura che consente di aggiudicare appalti direttamente, vale a dire che non impone la pubblicazione di un avviso di indizione di gara nella Gazzetta ufficiale dell'Unione europea - corrisponde al campo bt-136 - Direct Award Justification Code del TED - fare riferimento ai valori contenuti nel file [giustificazioneAggiudicazioneDiretta.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/giustificazioneAggiudicazioneDiretta.json) 
+      type: object
+      properties:
+        codice:
+          description: codice della tipologica
+          type: string
+        descrizione:
+          description: descrizione della voce della tipologica
+          type: string          
     ContrattiDisposizioniParticolariEnum:
       description: Contratti nei settori ordinari assoggettati a disposizioni particolari - fare riferimento ai valori contenuti nel file [contrattiDisposizioniParticolari.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/contrattiDisposizioniParticolari.json) 
       type: object
@@ -1886,9 +1896,6 @@ components:
       required: [relazioneUnicaSulleProcedure,opereUrbanizzazioneScomputo,preinformazione,termineRidottoAvvisoPreinformazione]
       additionalProperties: false
       properties:
-        idAppalto:
-          description: Codice univoco dell'appalto. il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
-          type: string        
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:
@@ -1907,6 +1914,206 @@ components:
         termineRidottoAvvisoPreinformazione:
           description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
           type: boolean       
+    AggiudicazioneAD1.26Type:
+      description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
+      type: object
+      required: [afferenteInvestimentiPNRR, lotIdentifier]
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string      
+        afferenteInvestimentiPNRR:
+          description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
+          type: boolean 
+        cupLotto:
+          description: Cup associati al lotto
+          type: array
+          items: 
+            type: string  
+        paritaDiGenereGenerazionale:
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'   
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType' 
+        aggiudicatari:
+          description: Aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioType'  
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: '#/components/schemas/FinanziamentoType'             
+    AppaltoAD1.26Type:
+      description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva settoriale - Articolo 3 bis della direttiva 92/13/CEE 
+      type: object
+      required: [afferenteInvestimentiPNRR,relazioneUnicaSulleProcedure,opereUrbanizzazioneScomputo,preinformazione,termineRidottoAvvisoPreinformazione]
+      additionalProperties: false
+      properties: 
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
+          type: string
+          format: url      
+        relazioneUnicaSulleProcedure:
+          description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
+          type: boolean
+        opereUrbanizzazioneScomputo:
+          description: Opere di urbanizzazione a scomputo
+          type: boolean
+        preinformazione:
+          description: E' stata effettuata la preinformazione?
+          type: boolean
+        termineRidottoAvvisoPreinformazione:
+          description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
+          type: boolean                    
+    AggiudicazioneAD1.27Type:
+      description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
+      type: object
+      required: [lotIdentifier,oggettoLotto,sceltaContraente]
+      properties:  
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 9050626CD6
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string      
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: '#/components/schemas/FinanziamentoType'           
+    AppaltoAD1.27Type:
+      description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva per il settore della difesa - Articolo 64 della direttiva 2009/81/CE
+      type: object
+      additionalProperties: false 
+      properties:
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
+          type: string
+          format: url          
+    AggiudicazioneAD1.28Type:
+      description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
+      type: object
+      required: [afferenteInvestimentiPNRR,lotIdentifier]
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 9050626CD6
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string       
+        afferenteInvestimentiPNRR:
+          description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
+          type: boolean 
+        cupLotto:
+          description: Cup associati al lotto
+          type: array
+          items: 
+            type: string  
+        paritaDiGenereGenerazionale:
+          $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'  
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType'
+        quadroEconomicoConcessioni:
+          $ref: '#/components/schemas/QuadroEconomicoConcessioniType'          
+        aggiudicatari:
+          description: Aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioType' 
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: '#/components/schemas/FinanziamentoType'             
+    AppaltoAD1.28Type:
+      description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva sulle concessioni. Articolo 3 bis delle direttive 89/665/CEE e 92/13/CEE
+      type: object
+      required: [opereUrbanizzazioneScomputo,preinformazione]
+      additionalProperties: false
+      properties:
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
+          type: string
+          format: url        
+        opereUrbanizzazioneScomputo:
+          description: Opere di urbanizzazione a scomputo
+          type: boolean
+        preinformazione:
+          description: E' stata effettuata la preinformazione?
+          type: boolean                    
+    AppaltoA1.29Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione.
+      type: object
+      additionalProperties: false 
+      required: [relazioneUnicaSulleProcedure,opereUrbanizzazioneScomputo,preinformazione,termineRidottoAvvisoPreinformazione]
+      properties:
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
+          type: string
+          format: url   
+        relazioneUnicaSulleProcedure:
+          description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
+          type: boolean          
+        opereUrbanizzazioneScomputo:
+          description: Opere di urbanizzazione a scomputo
+          type: boolean  
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum' 
+        preinformazione:
+          description: E' stata effettuata la preinformazione?
+          type: boolean
+        termineRidottoAvvisoPreinformazione:
+          description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
+          type: boolean   
+    AggiudicazioneA1.29Type:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
+      allOf: # estende la classe AggiudicazioneBaseType
+      - $ref: '#/components/schemas/AggiudicazioneBaseType'        
+      type: object
+      required: [nImpreseEscluseInsufficientiGiustificazioni,numeroOfferteAmmesse]
+      additionalProperties: false
+      properties: 
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
+          type: string
+          format: integer 
+        valoreSogliaAnomalia:
+          description: Valore soglia anomalia
+          type: string
+        nOfferte:
+          description: N.offerte >= soglia anomalia
+          type: string
+          format: integer
+        nImpreseEscluseAutomaticamente: 
+          description: Numero imprese escluse automaticamente
+          type: string
+          format: integer
+        nImpreseEscluseInsufficientiGiustificazioni: 
+          description: Numero imprese escluse per insufficienti giustificazioni
+          type: string
+          format: integer           
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType' 
+        aggiudicatari:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: '#/components/schemas/AggiudicatarioType'          
     AppaltoA.30Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
@@ -1932,7 +2139,7 @@ components:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
-      required: [lotIdentifier,relazioneUnicaSulleProcedure]
+      required: [lotIdentifier]
       properties:
         cig:
           description: codice identificativo lotto
@@ -1940,42 +2147,7 @@ components:
           example: 
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string      
-        modalitaRiaggiudicazioneAffidamento:
-          $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'                   
-    AggiudicatarioA.29Type:
-      description: Dati dell'aggiudicatario
-      type: object
-      required: [importoAggiudicazioneAffidamento]
-      additionalProperties: false
-      properties:
-        cf:
-          description: codice fiscale del soggetto interessato
-          type: string
-        denominazione: 
-          description: denominazione del soggetto interessato
-          type: string  
-        ruolo: 
-          $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
-          $ref: '#/components/schemas/TipoOEEnum'
-        idGruppo:
-          description: id gruppo
-          type: string 
-        importo:
-          description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
-          type: string
-          format: decimal      
-        ribassoDasta:
-          description: Ribasso d’Asta 
-          type: string
-        offertaInAumento:
-          description: Offerta in Aumento
-          type: string
-        offertaQualitativa:
-          description: Offerta qualitativa
-          type: string
-          format: decimal            
+          type: string                         
     AggiudicazioneA.29Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
@@ -2425,12 +2597,6 @@ components:
           description: Somme a disposizione - Iva e altre Imposte e tasse
           type: string
           format: decimal             
-    QuadroEconomicoAType:
-      description: Oggetto che riporta tutti i dati del quadro economico standard 
-      allOf: # estende la classe QuadroEconomicoBaseType
-      - $ref: '#/components/schemas/QuadroEconomicoBaseType'        
-      type: object
-      additionalProperties: false
     QuadroEconomicoConcessioniType:
       description: Oggetto che riporta tutti i dati del quadro economico per le concessioni. 
       type: object
@@ -2567,7 +2733,9 @@ components:
       additionalProperties: false
       properties:
         accessibilita:
-          $ref: '#/components/schemas/AccessibilitaEnum'
+          type: array
+          items:        
+            $ref: '#/components/schemas/AccessibilitaEnum'
         giustificazione:
           description: giustificazione
           type: string
@@ -2580,6 +2748,24 @@ components:
           description: Data della decisione ufficiale di selezione dell'offerta vincitrice - corrisponde al campo bt-1451 - Winner Decision Date del TED
           type: string
           format: datetime  
+    DatiBaseAggiudicazioneAppaltoAD3Type:
+      description:  Dato in comune con il Business Group Contract delle eforms
+      required: [dataAggiudicazione]
+      additionalProperties: false
+      properties:
+        dataAggiudicazione:
+          description: Data della decisione ufficiale di selezione dell'offerta vincitrice - corrisponde al campo bt-1451 - Winner Decision Date del TED
+          type: string
+          format: datetime    
+    DatiBaseAggiudicazioneAppaltoAD4Type:
+      description:  Dato in comune con il Business Group Contract delle eforms
+      required: [dataAggiudicazione]
+      additionalProperties: false
+      properties:
+        dataAggiudicazione:
+          description: Data della decisione ufficiale di selezione dell'offerta vincitrice - corrisponde al campo bt-1451 - Winner Decision Date del TED
+          type: string
+          format: datetime           
     DatiBaseAggiudicazioneAppaltoA3.1Type:
       description:  Dato in comune con il Business Group Contract delle eforms
       required: [dataAggiudicazione]
@@ -3046,6 +3232,19 @@ components:
         giustificazioneProceduraAccelerata:
           description: La giustificazione del ricorso a una procedura accelerata - corrisponde al campo bt-1351 - Procedure Accelerated Justification del TED 
           type: string           
+    DatiBaseProceduraAD2Type:
+      description: Dato in comune con il Business Group Procedure delle eforms
+      type: object
+      required:
+        - tipoProcedura
+      additionalProperties: false
+      properties:
+        tipoProcedura:
+          $ref: '#/components/schemas/TipoProceduraEnum'  
+        giustificazioniAggiudicazioneDiretta:
+          type: array
+          items:        
+            $ref: '#/components/schemas/GiustificazioneAggiudicazioneDirettaEnum'
     DatiBaseProceduraA2Type:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
@@ -3167,7 +3366,9 @@ components:
       additionalProperties: false
       properties:
         affidamentiRiservati:
-          $ref: '#/components/schemas/AffidamentiRiservatiEnum'
+          type: array
+          items:        
+           $ref: '#/components/schemas/AffidamentiRiservatiEnum'
     DatiBaseAggiudicazioneType:
       description: Dato in comune con il Business Group Award Criterion delle eforms
       additionalProperties: false
