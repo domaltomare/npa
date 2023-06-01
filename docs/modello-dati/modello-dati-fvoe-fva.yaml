@@ -75,7 +75,18 @@ components:
           description: Lista Sotto Fascicoli
           type: array
           items:
-            $ref: '#/components/schemas/FascicoloType'    
+            $ref: '#/components/schemas/FascicoloType' 
+        datiAggiuntivi:
+          description: dati aggiuntivi del Fascicolo. Definiti in JSON
+          type: string
+          example: "{appalto : {idAppalto: 35553535K},
+                    	schede:[{
+                    		id:566eb3c704c7b31facbb0007,
+                    		nome:P1.10,
+                    		dataInserimento:2015-05-28T14:07:17Z,
+                    		idAppalto:35553535K,
+                        espd:54495ad94c934721ede76d90,
+		                    eform:566eb3c704c7b31facbb0007}]}"    
     FVOEType:
       allOf: # estende lo schema dati di FascicoloType
         - $ref: '#/components/schemas/FascicoloType'
