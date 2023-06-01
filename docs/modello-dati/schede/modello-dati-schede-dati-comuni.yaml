@@ -740,6 +740,36 @@ components:
           description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
           type: string
           format: decimal
+    OfferteType:
+      description: Dati delle offerte
+      type: object
+      required: [importo]
+      additionalProperties: false
+      properties:
+        idPartecipante:
+          description: id partecipante
+          type: string 
+        importo:
+          description: Importo
+          type: string
+          format: decimal  
+        aggiudicatario:
+          description: indicare se è un aggiudicatario
+          type: boolean
+        posizioneGraduatoria: 
+          description: Posizione in graduatoria
+          type: number
+        offertaEconomica:
+          description: Offerta economica ribasso
+          type: string
+        offertaQualitativa:
+          description: Offerta qualitativa
+          type: string
+          format: decimal
+        offertaInAumento:
+          description: Offerta in aumento
+          type: string
+          format: decimal          
     AggiudicatarioA1.35Type:
       description: Dati dell'aggiudicatario
       type: object
@@ -1802,18 +1832,7 @@ components:
         ruolo: 
           $ref: '#/components/schemas/RuoloOEEnum'
         tipo: 
-          $ref: '#/components/schemas/TipoOEEnum'  
-        offertaEconomica:
-          description: Offerta economica ribasso
-          type: string
-        offertaQualitativa:
-          description: Offerta qualitativa
-          type: string
-          format: decimal
-        offertaInAumento:
-          description: Offerta in aumento
-          type: string
-          format: decimal              
+          $ref: '#/components/schemas/TipoOEEnum' 
     PrestazioneType:
       description: Dati relativi alle prestazioni progettuali e agli incarichi tecnici
       type: object
@@ -2342,7 +2361,7 @@ components:
           type: string
           format: integer  
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoA.34Type' 
+          $ref: '#/components/schemas/QuadroEconomicoType' 
         aggiudicatari:
           description: Dati degli aggiudicatari
           type: array
@@ -2405,49 +2424,6 @@ components:
           type: array
           items: 
             $ref: '#/components/schemas/AggiudicatarioType'      
-    QuadroEconomicoBaseType:
-      description: Oggetto che riporta tutti i dati del quadro economico standard
-      type: object
-      required:
-        - sommeADisposizione      
-      additionalProperties: false
-      properties:
-        impLavori:
-          description: Importo componente lavori in €
-          type: string
-          format: decimal
-        impServizi:
-          description: Importo componente servizi in €
-          type: string
-          format: decimal
-        impForniture:
-          description: Importo componente forniture in €
-          type: string
-          format: decimal
-        impTotaleSicurezza:
-          description: Importo totale per l'attuazione della sicurezza
-          type: string
-          format: decimal
-        ulterioriSommeNoRibasso:
-          description: Ulteriori somme non soggette a ribasso
-          type: string
-          format: decimal
-        impProgettazione:
-          description: Importo della progettazione in caso di appalto integrato
-          type: string
-          format: decimal
-        sommeOpzioniRinnovi:
-          description: Somme per opzioni/rinnovi
-          type: string
-          format: decimal
-        sommeRipetizioni:
-          description: Somme per ripetizione servizi/forniture/lavori analoghi e consegne complementari
-          type: string
-          format: decimal
-        sommeADisposizione:
-          description: Somme a disposizione - Iva e altre Imposte e tasse
-          type: string
-          format: decimal
     QuadroEconomicoType:
       description: Oggetto che riporta tutti i dati del quadro economico standard
       type: object
@@ -2629,20 +2605,6 @@ components:
           description: Somme a disposizione - Iva e altre Imposte e tasse
           type: string
           format: decimal         
-    QuadroEconomicoA.33Type:
-      description: Oggetto che riporta tutti i dati del quadro economico standard 
-      allOf: # estende la classe QuadroEconomicoBaseType
-      - $ref: '#/components/schemas/QuadroEconomicoBaseType'        
-      type: object
-      required: [sommeADisposizione]
-      additionalProperties: false
-    QuadroEconomicoA.34Type:
-      description: Oggetto che riporta tutti i dati del quadro economico standard 
-      allOf: # estende la classe QuadroEconomicoBaseType
-      - $ref: '#/components/schemas/QuadroEconomicoBaseType'        
-      type: object
-      required: [sommeADisposizione]
-      additionalProperties: false  
     QuadroEconomicoModificaContrattualeType:
       description: Oggetto che riporta tutti i dati del quadro economico standard per la modifica contrattuale
       type: object
