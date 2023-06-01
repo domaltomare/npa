@@ -228,7 +228,7 @@ components:
         - anagraficaOE
         - appalto
         - richiedente
-	- dataInizioAutorizzazione
+        - dataInizioAutorizzazione
       properties:
         idRichiesta:
             description: identificativo univoco della richiesta restituito da ANAC.
