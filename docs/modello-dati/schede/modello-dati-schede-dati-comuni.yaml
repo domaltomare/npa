@@ -1989,11 +1989,10 @@ components:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'   
         quadroEconomicoStandard:
           $ref: '#/components/schemas/QuadroEconomicoType' 
-        aggiudicatari:
-          description: Aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType'  
+            $ref: '#/components/schemas/OfferteType' 
         finanziamenti:
           description: Dati relativi ai finanziamenti
           type: array
@@ -2077,11 +2076,10 @@ components:
           $ref: '#/components/schemas/QuadroEconomicoType'
         quadroEconomicoConcessioni:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType'          
-        aggiudicatari:
-          description: Aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType' 
+            $ref: '#/components/schemas/OfferteType'
         finanziamenti:
           description: Dati relativi ai finanziamenti
           type: array
@@ -2216,11 +2214,10 @@ components:
           format: integer   
         quadroEconomicoStandard:
           $ref: '#/components/schemas/QuadroEconomicoType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType'
+            $ref: '#/components/schemas/OfferteType'
     AggiudicazioneA1.31Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
@@ -2229,11 +2226,10 @@ components:
       required: [lotIdentifier]
       additionalProperties: false
       properties: 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType'             
+            $ref: '#/components/schemas/OfferteType'             
     AppaltoA1.32Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
@@ -2257,11 +2253,10 @@ components:
           description: Numero imprese escluse per insufficienti giustificazioni
           type: string
           format: integer           
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType'
+            $ref: '#/components/schemas/OfferteType'
         quadroEconomicoConcessioni:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType'  
     AppaltoA1.33Type:
@@ -2310,11 +2305,10 @@ components:
           format: integer         
         quadroEconomicoStandard:
           $ref: '#/components/schemas/QuadroEconomicoType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType'
+            $ref: '#/components/schemas/OfferteType'
     AppaltoA1.34Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
@@ -2361,11 +2355,10 @@ components:
           format: integer  
         quadroEconomicoStandard:
           $ref: '#/components/schemas/QuadroEconomicoType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType'
+            $ref: '#/components/schemas/OfferteType'
     AggiudicazioneA1.35Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
@@ -2384,11 +2377,10 @@ components:
           format: integer  
         quadroEconomicoConcessioni:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioA1.35Type'
+            $ref: '#/components/schemas/OfferteType'
     AggiudicazioneA1.36Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
@@ -2401,11 +2393,10 @@ components:
           description: numero di offerte ammesse
           type: string
           format: integer 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType'     
+            $ref: '#/components/schemas/OfferteType'     
     AggiudicazioneA1.37Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
@@ -2418,11 +2409,10 @@ components:
           description: numero di offerte ammesse
           type: string
           format: integer 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType'      
+            $ref: '#/components/schemas/OfferteType'      
     QuadroEconomicoType:
       description: Oggetto che riporta tutti i dati del quadro economico standard
       type: object
