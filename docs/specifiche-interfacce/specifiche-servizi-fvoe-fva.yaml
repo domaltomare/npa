@@ -286,11 +286,15 @@ paths:
           description: stato del documento
           schema:
             $ref: '#/components/schemas/StatoDocumentoEnum'
+          example:
+            codice: "01"  
         - in: query  
           name: tipo  
           description: tipo del documento
           schema:
-            $ref: '#/components/schemas/TipoDocumentoEnum' 
+            $ref: '#/components/schemas/TipoDocumentoEnum'
+          example:
+            codice: "06"   
         - in: query
           name: datiAggiuntivi
           description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON
@@ -331,10 +335,12 @@ paths:
                   - idDocumento: "507f1f77bcf86cd799439011"
                     tipo: 
                       codice: "01"
-                      descrizione: "DURC"
+                      descrizione: 
+                        it: "DURC"
                     stato: 
                       codice: "21"
-                      descrizione: "IN LAVORAZIONE"
+                      descrizione: 
+                        it: "IN LAVORAZIONE"
                     oggetto: ""
                     dataInserimento: "2014-02-28T18:07:17Z"
                     fascicoli: 
@@ -342,10 +348,12 @@ paths:
                   - idDocumento: "507f1f77bcf86cd799888889"
                     tipo: 
                       codice: "01"
-                      descrizione: "DURC"
+                      descrizione: 
+                        it: "DURC"
                     stato: 
                       codice: "01"
-                      descrizione: "IN LAVORAZIONE"
+                      descrizione: 
+                        it: "IN LAVORAZIONE"
                     oggetto: ""
                     dataInserimento: "2014-02-28T18:07:17Z"
                     fascicoli: 
@@ -381,6 +389,7 @@ paths:
           schema:
             type: string
             example: "507f1f77bcf86cd799439011"
+          required: true  
       responses:
         '200':
           description: Operazione terminato con successo. Viene restituito il Documento del Fascicolo Virtuale dell'Operatore Economico
@@ -396,10 +405,12 @@ paths:
                   idDocumento: "775f1f88bcf86cd987639011"
                   tipo: 
                       codice: "01"
-                      descrizione: "DURC"
+                      descrizione: 
+                        it: "DURC"
                   stato: 
                       codice: "21"
-                      descrizione: "IN LAVORAZIONE"
+                      descrizione: 
+                        it: "IN LAVORAZIONE"
                   dataInserimento: '2022-01-23T12:02:05Z' 
                   dataEmissione: '2022-01-23T12:02:05Z' 
                   dataFineValidita: '2022-01-23T12:02:05Z' 
@@ -485,6 +496,7 @@ paths:
           schema:
             type: string
             example: "507f1f77bcf86cd799439011"
+          required: true   
       responses:
         '200':
           description: Operazione terminato con successo
@@ -616,14 +628,18 @@ paths:
           description: stato del documento
           schema:
             $ref: '#/components/schemas/StatoDocumentoEnum'
+          example:
+            codice: "01"
         - in: query  
           name: tipo  
           description: tipo del documento
           schema:
-            $ref: '#/components/schemas/TipoDocumentoEnum' 
+            $ref: '#/components/schemas/TipoDocumentoEnum'
+          example:
+            codice: "13"  
         - in: query
           name: datiAggiuntivi
-          description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON
+          description: dati aggiuntivi del documento. Definiti in JSON
           schema:
             type: string
           example: "{id=45, { persona{codice=45} } }"          
@@ -661,10 +677,12 @@ paths:
                   - idDocumento: "507f1f77bcf86cd799439011"
                     tipo: 
                       codice: "01"
-                      descrizione: "DURC"
+                      descrizione: 
+                        it: "DURC"
                     stato: 
                       codice: "21"
-                      descrizione: "IN LAVORAZIONE"
+                      descrizione: 
+                        it: "IN LAVORAZIONE"
                     oggetto: ""
                     dataInserimento: "2014-02-28T18:07:17Z"
                     fascicoli: 
@@ -673,10 +691,12 @@ paths:
                   - idDocumento: "507f1f77bcf86cd799888889"
                     tipo: 
                       codice: "01"
-                      descrizione: "DURC"
+                      descrizione: 
+                        it: "DURC"
                     stato: 
                       codice: "21"
-                      descrizione: "IN LAVORAZIONE"
+                      descrizione: 
+                        it: "IN LAVORAZIONE"
                     oggetto: ""
                     dataInserimento: "2014-02-28T18:07:17Z"
                     fascicoli: 
@@ -710,6 +730,7 @@ paths:
           schema:
             type: string
             example: "507f1f77bcf86cd799439011"
+          required: true   
       responses:
         '200':
           description: Operazione terminato con successo. Viene restituito il Documento del Fascicolo Virtuale dell'Appalto
@@ -725,10 +746,12 @@ paths:
                   idDocumento: "775f1f88bcf86cd987639011"
                   tipo: 
                     codice: "01"
-                    descrizione: "DURC"
+                    descrizione: 
+                      it: "DURC"
                   stato: 
                     codice: "21"
-                    descrizione: "IN LAVORAZIONE"
+                    descrizione: 
+                      it : "IN LAVORAZIONE"
                   dataInserimento: '2022-01-23T12:02:05Z' 
                   dataEmissione: '2022-01-23T12:02:05Z' 
                   dataFineValidita: '2022-01-23T12:02:05Z' 
@@ -769,6 +792,7 @@ paths:
           schema:
             type: string
             example: "507f1f77bcf86cd799439011"
+          required: true   
       responses:
         '200':
           description: Operazione terminato con successo
@@ -805,6 +829,8 @@ paths:
           description: stato del fascicolo
           schema:
             $ref: '#/components/schemas/StatoFascicoloEnum'
+          example: 
+            codice: "01"
         - in: query
           name: dataCreazioneDa
           description: Data di crezione del Fascicolo - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
@@ -1047,6 +1073,10 @@ components:
         application/problem+json:
           schema:
             $ref: '#/components/schemas/ErrorResponse'
+          example:
+            detail: "File not found."
+            status: 404
+            title: "Oggetto non trovato."    
     429TooManyRequests:
       description: Limite di richieste raggiunto
       headers:
@@ -1124,7 +1154,8 @@ components:
       example:
         stato:
           codice: "03"
-          descrizione: "AUTORIZZATO"
+          descrizione: 
+            it: "AUTORIZZATO"
         dataScadenza: "2022-01-23T12:02:05Z"
         richiestaAccesso: 
           idRichiesta: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
@@ -1202,7 +1233,8 @@ components:
           codiceFascicolo : "2397879"
           stato : 
             codice: "01"
-            descrizione: "Aperto"
+            descrizione: 
+              it: "Aperto"
           dataCreazione : "2015-05-28T14:07:17Z"
           appalto :
             idAppalto : "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
@@ -1210,30 +1242,45 @@ components:
             - idDocumento : "c3425891-1e8c-42ba-a64e-4f0d77cf1f99"
               tipo: 
                 codice: "01"
-                descrizione: "DURC"
+                descrizione: 
+                  it: "DURC"
               stato: 
                 codice: "01"
-                descrizione: "Creato"
+                descrizione: 
+                  it: "Creato"
               oggetto : ""
               datacreazione : "2016-07-03T15:04:00Z"
             - idDocumento : "24f209fb-5f48-4793-8e3f-45d9f57d1997"
-              tipo : "Visura camerale"
-              stato : "Creato"
+              tipo : 
+                codice: "01"
+                descrizione: 
+                  it: "Visura camerale"
+              stato : 
+                codice: "01"
+                descrizione: 
+                  it: "Creato"
               oggetto : ""
               datacreazione : "2016-07-03T15:04:00Z"
           sottoFascicoli :
             - idFascicolo : "c3425891-1e8c-42ba-a64e-4f0d77cf1f99"
-              tipo : "FVVerificaOE"
+              tipo :
+                codice: "FVP"
+                descrizione: 
+                  it: "Fascicolo Virtuale di Partecipazione"
               stato: 
                 codice: "01"
-                descrizione: "Creato"
+                descrizione: 
+                  it: "Creato"
               oggetto : ""
               datacreazione : "2016-07-03T15:04:00Z"
             - idFascicolo : "24f209fb-5f48-4793-8e3f-45d9f57d1997"
-              tipo : "FVVerificaOE"
+              tipo : 
+                codice: "FVP"
+                descrizione: "it:Fascicolo Virtuale di Partecipazione"
               stato: 
                 codice: "01"
-                descrizione: "Creato"
+                descrizione: 
+                  it: "Creato"
               oggetto : ""
               datacreazione : "2016-07-03T15:04:00Z"    
     ConsultaAnagraficaOEResponse :
@@ -1269,7 +1316,8 @@ components:
             dataFine: '2023-01-23T12:02:05Z'
             stato: 
               codice: "01"
-              descrizione: "Autorizzato"
+              descrizione: 
+                it: "Autorizzato"
             motivo: ""
             autorizzante:
               codice : "UI78588658"
@@ -1278,7 +1326,8 @@ components:
             dataFine: '2022-08-23T12:02:05Z'
             stato: 
               codice: "01"
-              descrizione: "Autorizzato"
+              descrizione: 
+                it: "Autorizzato"
             motivo: ""  
             autorizzante:
               codice : "TI78588699"
@@ -1307,7 +1356,8 @@ components:
                 codiceFascicolo : "2397879"
                 stato : 
                   codice: "01"
-                  descrizione: "Aperto"
+                  descrizione: 
+                    it: "Aperto"
                 dataCreazione : "2015-05-28T14:07:17Z"
                 appalto :
                   idAppalto : "y71d4fae-7dec-11d0-a765-00a0c93f6bf6"
@@ -1317,7 +1367,8 @@ components:
                 codiceFascicolo : "239786"
                 stato : 
                   codice: "01"
-                  descrizione: "Aperto"
+                  descrizione: 
+                    it: "Aperto"
                 dataCreazione : "2015-04-01T14:07:17Z"
                 appalto :
                   idAppalto : "8a5cfb85-1013-4070-868a-52eebd5c77e6"
@@ -1352,19 +1403,22 @@ components:
           - idDocumento: "45353@#sdF"
             azione : 
               codice: "01"
-              descrizione: "Aperto"
+              descrizione: 
+                it: "Aperto"
             utenteCreazione : "X4563X"
             dataCreazione : "2014-02-28T18:07:17Z"
           - idDocumento: "45353@#sdF"
             azione : 
               codice: "04"
-              descrizione: "Aggiunto documento"
+              descrizione: 
+                it: "Aggiunto documento"
             utenteCreazione : "X4578X"
             dataCreazione : "2015-05-28T14:07:17Z"      
           - idDocumento: "45353@#sdF"
             azione : 
               codice: "04"
-              descrizione: "Aggiunto documento"
+              descrizione: 
+                it: "Aggiunto documento"
             utenteCreazione : "Y67854"
             dataCreazione : "2016-07-12T14:07:17Z"         
     ConsultaStoricoAResponse:
@@ -1383,19 +1437,22 @@ components:
           - idDocumento: "45353@#sdF"
             azione : 
               codice: "01"
-              descrizione: "Aperto"
+              descrizione: 
+                it: "Aperto"
             utenteCreazione : "X4563X"
             dataCreazione : "2014-02-28T18:07:17Z"
           - idDocumento: "45353@#sdF"
             azione : 
               codice: "04"
-              descrizione: "Aggiunto documento"
+              descrizione: 
+                it: "Aggiunto documento"
             utenteCreazione : "X4578X"
             dataCreazione : "2015-05-28T14:07:17Z"      
           - idDocumento: "45353@#sdF"
             azione : 
               codice: "04"
-              descrizione: "Aggiunto documento"
+              descrizione: 
+                it: "Aggiunto documento"
             utenteCreazione : "Y67854"
             dataCreazione : "2016-07-12T14:07:17Z"              
     ConsultaStoricoFVAResponse:
