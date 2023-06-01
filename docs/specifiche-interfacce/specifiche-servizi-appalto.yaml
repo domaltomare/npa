@@ -1596,6 +1596,20 @@ paths:
             type: string
             format: datetime
             example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: page
+          description: numero della pagina da visualizzare
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - in: query  
+          name: perPage
+          description: numero di elementi per pagina
+          schema:
+            type: integer
+            format: int32
+            default: 20            
       responses:
         '200':
           description: Operazione terminato con successo
