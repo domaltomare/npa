@@ -136,7 +136,7 @@ paths:
       parameters:
         - in: query
           name: codiceOE
-          description: identificativo univoco dell'Operatore Economico. (P.IVA/CF)
+          description: identificativo univoco dell'Operatore Economico (P.IVA/CF). 
           schema:
             type: string
             example: "MNNFRC78D14H501A"
@@ -156,6 +156,13 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/StatoRichiestaResponse'
+          links:
+            RicercaDocumentiFVOEIdLink:  
+              operationId: idDocumentiFVOERicerca
+              parameters:
+                idFascicolo: '$response.body#/autorizzazione.fascicolo.idFascicolo'
+              description: >
+                Il valore di `idFascicolo` restituito nella riposta può essere usato per richiamare `GET /ricerca-documenti-fvoe`.       
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -202,8 +209,8 @@ paths:
     get:
       tags:
         - SA
-      summary: API Rest per la ricerca dei documenti di un Fascicolo Virtuale di Partecipazione dell'Operatore Economico se il chiamante è SA o OE oppure del Fascicolo virtuale dell'OE se il chiamante è OE. SINCRONO
-      description: viene recuperata la lista con i dati di sintesi dei documenti presenti nel Fascicolo Virtuale di Partecipazione dell'Operatore Economico per un Appalto o la lista dei documenti di sintesi presenti nell'FVOE. SINCRONO
+      summary: API Rest per la ricerca dei documenti di un Fascicolo Virtuale di Partecipazione dell'Operatore Economico. SINCRONO
+      description: viene recuperata la lista con i dati di sintesi dei documenti presenti nel Fascicolo Virtuale di Partecipazione dell'Operatore Economico per un Appalto. SINCRONO
       operationId: idDocumentiFVOERicerca
       parameters:
         - in: query  
@@ -387,7 +394,7 @@ paths:
     get:
       tags:
         - SA
-      summary: API Rest per il recupero del documento dal FVOE. SINCRONO
+      summary: API Rest per il recupero del documento dal Fascicolo Virtuale di Partecipazione dell'Operatore Economico. SINCRONO
       description: Viene resituita il Documento (Metadati e Binario). SINCRONO
       operationId: idDocumentoFVOEDettaglio
       parameters:
@@ -494,8 +501,8 @@ paths:
     get:
       tags:
         - SA
-      summary: API Rest per il recupero dello storico di un documento del FVOE. SINCRONO
-      description: viene resituito il dettaglio dello storico di un documento del FVOE.
+      summary: API Rest per il recupero dello storico di un documento del Fascicolo Virtuale di Partecipazione dell'Operatore Economico. SINCRONO
+      description: viene resituito il dettaglio dello storico di un documento del Fascicolo Virtuale di Partecipazione dell'Operatore Economico.
       operationId: idStoricoDocumentoFVOEDettaglio
       parameters:
         - in: query
@@ -1152,8 +1159,8 @@ components:
         dataInizioAutorizzazione: "2022-01-23T12:02:05Z"
         dataFineAutorizzazione: "2023-01-23T12:02:05Z"
         anagraficaOE:
-          - codice: "UI78588658"
-          - codice: "TI78588699"
+          - codice: "MFNFRC87D04H501C"
+          - codice: "03283450239"
         appalto:
           idAppalto: "ACD4546346A"
     AutorizzaAccessoRequest:
@@ -1313,32 +1320,30 @@ components:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       properties:
-        stato:
-          $ref: '#/components/schemas/StatoRichiestaEnum'
+        autorizzazione:
+          $ref: '#/components/schemas/AutorizzazioneAccessoType'
       example: 
         status: 200
-        title: "Richiesta acquisita"
-        result:
-          - idAutorizzazione : 2323
+        title: "Operazione Effettuata"
+        autorizzazione:
+            idAutorizzazione: "1789c793-bdbe-4e8c-aa7e-4117145c739b"
             dataInizio: '2022-01-23T12:02:05Z'
             dataFine: '2023-01-23T12:02:05Z'
+            anagraficaOE:
+              codice: "MFNFRC87D04H501C"
+            appalto:
+              idAppalto: "ACD4546346A"
             stato: 
               codice: "01"
               descrizione: 
                 it: "Autorizzato"
             motivo: ""
             autorizzante:
-              codice : "UI78588658"
-          - idAutorizzazione : 2323
-            dataInizio: '2022-01-23T12:02:05Z'
-            dataFine: '2022-08-23T12:02:05Z'
-            stato: 
-              codice: "01"
-              descrizione: 
-                it: "Autorizzato"
-            motivo: ""  
-            autorizzante:
-              codice : "TI78588699"
+              codice: "UI78588658"
+            richiestaAccesso:
+              idRichiesta: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+            fascicolo:
+              idFascicolo: "507f1f77bcf86cd799439011"
     FVAListaResponse :
       allOf: # estende la classe BaseResponse e PaginazioneType
         - $ref: '#/components/schemas/BaseResponse'
@@ -1361,27 +1366,27 @@ components:
           elementPage: 2
           result: 
               - idFascicolo: "45353@#sdF"
-                codiceFascicolo : "2397879"
-                stato : 
+                codiceFascicolo: "2397879"
+                stato: 
                   codice: "01"
                   descrizione: 
                     it: "Aperto"
-                dataCreazione : "2015-05-28T14:07:17Z"
-                appalto :
-                  idAppalto : "y71d4fae-7dec-11d0-a765-00a0c93f6bf6"
-                numDocumenti : 24
-                numSottoFascicoli : 0
+                dataCreazione: "2015-05-28T14:07:17Z"
+                appalto:
+                  idAppalto: "y71d4fae-7dec-11d0-a765-00a0c93f6bf6"
+                numDocumenti: 24
+                numSottoFascicoli: 0
               - idFascicolo: "453jkui853"
                 codiceFascicolo : "239786"
-                stato : 
+                stato: 
                   codice: "01"
                   descrizione: 
                     it: "Aperto"
-                dataCreazione : "2015-04-01T14:07:17Z"
+                dataCreazione: "2015-04-01T14:07:17Z"
                 appalto :
-                  idAppalto : "8a5cfb85-1013-4070-868a-52eebd5c77e6"
-                numDocumenti : 150  
-                numSottoFascicoli : 4
+                  idAppalto: "8a5cfb85-1013-4070-868a-52eebd5c77e6"
+                numDocumenti: 150  
+                numSottoFascicoli: 4
     DocumentiListaResponse :
       allOf: # estende la classe BaseResponse e PaginazioneType
         - $ref: '#/components/schemas/BaseResponse'
@@ -1413,10 +1418,10 @@ components:
               codice: "01"
               descrizione: 
                 it: "Aperto"
-            utenteCreazione : "X4563X"
-            dataCreazione : "2014-02-28T18:07:17Z"
+            utenteCreazione: "X4563X"
+            dataCreazione: "2014-02-28T18:07:17Z"
           - idDocumento: "45353@#sdF"
-            azione : 
+            azione: 
               codice: "04"
               descrizione: 
                 it: "Aggiunto documento"
@@ -1442,21 +1447,21 @@ components:
         status: 200
         title: "Operazione terminata correttamente"
         result: 
-          - idDocumento: "45353@#sdF"
+          - idDocumento: "654g1f77bcf86cd799487678"
             azione : 
               codice: "01"
               descrizione: 
                 it: "Aperto"
             utenteCreazione : "X4563X"
             dataCreazione : "2014-02-28T18:07:17Z"
-          - idDocumento: "45353@#sdF"
+          - idDocumento: "120g1h67bcf86cd79909121"
             azione : 
               codice: "04"
               descrizione: 
                 it: "Aggiunto documento"
             utenteCreazione : "X4578X"
             dataCreazione : "2015-05-28T14:07:17Z"      
-          - idDocumento: "45353@#sdF"
+          - idDocumento: "430h1f77bcf86cd799480007"
             azione : 
               codice: "04"
               descrizione: 
@@ -1476,22 +1481,25 @@ components:
         status: 200
         title: "Operazione terminata correttamente"
         result: 
-          - idFascicolo: "45353@#sdF"
+          - idFascicolo: "807f1f77bcf86cd799439011"
             azione : 
               codice: "01"
-              descrizione: "Aperto"
+              descrizione: 
+                it: "Aperto"
             utenteCreazione : "X4563X"
             dataCreazione : "2014-02-28T18:07:17Z"
-          - idFascicolo: "45353@#sdF"
+          - idFascicolo: "507f191e810c19729de860ea"
             azione : 
               codice: "04"
-              descrizione: "Aggiunto documento"
+              descrizione: 
+                it: "Aggiunto documento"
             utenteCreazione : "X4578X"
             dataCreazione : "2015-05-28T14:07:17Z"      
-          - idFascicolo: "45353@#sdF"
+          - idFascicolo: "78600020f51bb4362eee2a4d"
             azione : 
               codice: "04"
-              descrizione: "Aggiunto documento"
+              descrizione: 
+                it: "Aggiunto documento"
             utenteCreazione : "Y67854"
             dataCreazione : "2016-07-12T14:07:17Z"        
     BaseResponse:
