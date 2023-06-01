@@ -135,12 +135,21 @@ paths:
       operationId: idAccessoVerificaRichiestaFVOE
       parameters:
         - in: query
-          name: idRichiesta
-          description: identificativo univoco della Richiesta di accesso definito da ANAC. (A UUID specified by RFC4122)
+          name: codiceOE
+          description: identificativo univoco dell'Operatore Economico. (A UUID specified by RFC4122)
           schema:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          required: true
+        - in: query
+          name: idAppalto
+          description: Identificativo univoco dell'Appalto
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+          required: true  
       responses:
         '200':
           description: Operazione terminato con successo
