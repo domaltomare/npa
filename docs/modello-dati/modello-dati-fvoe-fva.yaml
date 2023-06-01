@@ -186,7 +186,7 @@ components:
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
     AutorizzazioneAccessoType:
-      description: Oggetto che descrive l'autorizzazione concessa dal' OE verso il SA per poter accedere al proprio FVOE
+      description: Oggetto che descrive l'autorizzazione concessa dall' OE verso il SA per poter accedere al proprio FVOE
       type: object
       additionalProperties: false
       required:
@@ -200,6 +200,8 @@ components:
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         anagraficaOE:
           $ref: '#/components/schemas/AnagraficaOEType'
+        appalto:
+          $ref: '#/components/schemas/AppaltoType'  
         dataInizio:
           description: data inizio autorizzazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
@@ -220,6 +222,8 @@ components:
           $ref: '#/components/schemas/AnagraficaOEType'
         richiestaAccesso:
           $ref: '#/components/schemas/RichiestaAccessoType' 
+        fascicolo:
+          $ref: '#/components/schemas/FVOEType'
     RichiestaAccessoType:
       description: Oggetto che riporta i dati della Richiesta di Accesso al Fascicolo di Partecipazione dell'OE
       type: object
