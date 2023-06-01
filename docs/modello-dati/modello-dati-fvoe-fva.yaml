@@ -221,13 +221,14 @@ components:
         richiestaAccesso:
           $ref: '#/components/schemas/RichiestaAccessoType' 
     RichiestaAccessoType:
-      description: Oggetto che riporta i dati della Richiesta di Accesso
+      description: Oggetto che riporta i dati della Richiesta di Accesso al Fascicolo di Partecipazione dell'OE
       type: object
       additionalProperties: false
       required:
         - anagraficaOE
         - appalto
         - richiedente
+	- dataInizioAutorizzazione
       properties:
         idRichiesta:
             description: identificativo univoco della richiesta restituito da ANAC.
@@ -235,12 +236,12 @@ components:
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         dataInizioAutorizzazione:
-          description: data richiesta dal SA per accedere al FVOE (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: data richiesta dal SA per accedere al Fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z' 
         dataFineAutorizzazione:
-          description: data richiesta dal SA come termine all'autorizzaione al FVOE(A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: data richiesta dal SA come termine all' autorizzaione al Fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'
@@ -253,10 +254,6 @@ components:
           $ref: '#/components/schemas/AppaltoType' 
         richiedente: 
           $ref: '#/components/schemas/AnagraficaSAType'   
-        autorizzazioni:
-          type: array
-          items:
-            $ref: '#/components/schemas/AutorizzazioneAccessoType'
     AnagraficaType:
       description: Oggetto generico dell'anagrafica
       type: object
