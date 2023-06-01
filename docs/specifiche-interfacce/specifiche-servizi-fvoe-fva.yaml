@@ -162,8 +162,8 @@ paths:
     post:
       tags:
          - OE
-      summary: API Rest per la conferma di accesso al FVOE. SINCRONO 
-      description: Il servizio permette all'OE di autorizzare l'accesso al FVOE da parte della SA. SINCRONO 
+      summary: API Rest per la conferma di accesso al FVOE. SINCRONO . RISERVATO USO INTERNO 
+      description: Il servizio permette all'OE di autorizzare l'accesso al FVOE da parte della SA utilizzando il nuovo FrontEnd di ANAC. SINCRONO 
       operationId: idAccessoAutorizza
       requestBody:
         description: Inserimento Autorizzazione 
@@ -194,7 +194,6 @@ paths:
     get:
       tags:
         - SA
-        - OE
       summary: API Rest per la ricerca dei documenti di un FVOE. SINCRONO
       description: viene recuperata la lista con i dati di sintesi dei documenti presenti nel Fascicolo Virtuale dell'Operatore Economico. SINCRONO
       operationId: idDocumentiFVOERicerca
@@ -371,7 +370,6 @@ paths:
     get:
       tags:
         - SA
-        - OE
       summary: API Rest per il recupero del documento dal FVOE. SINCRONO
       description: Viene resituita il Documento (Metadati e Binario). SINCRONO
       operationId: idDocumentoFVOEDettaglio
@@ -760,7 +758,6 @@ paths:
     get:
       tags:
         - SA
-        - OE
       summary: API Rest per il recupero dello storico di un documento del Fascicolo Virtuale dell'Appalto. SINCRONO
       description: viene resituito il dettaglio dello storico di un documento del Fascicolo Virtuale dell'Appalto.
       operationId: idStoricoDocumentoFVADettaglio
@@ -949,7 +946,6 @@ paths:
     get:
       tags:
         - SA
-        - OE
       summary: API Rest per il recupero dell’anagrafica degli OE. SINCRONO
       description: vengono restituito i dati anagrafici dell'OE. SINCRONO
       operationId: idAnagraficaOERicerca
