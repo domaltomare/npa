@@ -162,8 +162,8 @@ paths:
     post:
       tags:
          - OE
-      summary: API Rest per la conferma di accesso al FVOE. SINCRONO . RISERVATO USO INTERNO 
-      description: Il servizio permette all'OE di autorizzare l'accesso al FVOE da parte della SA utilizzando il nuovo FrontEnd di ANAC. SINCRONO 
+      summary: API Rest per la conferma di accesso al FVOE. SINCRONO 
+      description: Il servizio permette all'OE di autorizzare l'accesso al FVOE da parte della SA. SINCRONO 
       operationId: idAccessoAutorizza
       requestBody:
         description: Inserimento Autorizzazione 
@@ -194,16 +194,18 @@ paths:
     get:
       tags:
         - SA
-      summary: API Rest per la ricerca dei documenti di un FVOE. SINCRONO
-      description: viene recuperata la lista con i dati di sintesi dei documenti presenti nel Fascicolo Virtuale dell'Operatore Economico. SINCRONO
+        - OE
+      summary: API Rest per la ricerca dei documenti di un Fascicolo Virtuale di Partecipazione dell'Operatore Economico se il chiamante è SA o OE oppure del Fascicolo virtuale dell'OE se il chiamante è OE. SINCRONO
+      description: viene recuperata la lista con i dati di sintesi dei documenti presenti nel Fascicolo Virtuale di Partecipazione dell'Operatore Economico per un Appalto o la lista dei documenti di sintesi presenti nell'FVOE. SINCRONO
       operationId: idDocumentiFVOERicerca
       parameters:
         - in: query  
           name: idFascicolo
-          description: identificativo univoco del Fascicolo dell'OE
+          description: identificativo univoco del Fascicolo di Partecipazione dell'OE o dell'FVOE.
           schema:
             type: string
             example: "507f1f77bcf86cd799439011"
+          required: true
         - in: query
           name: dataInserimentoDa
           description: data di inserimento del documento - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
@@ -370,6 +372,7 @@ paths:
     get:
       tags:
         - SA
+        - OE
       summary: API Rest per il recupero del documento dal FVOE. SINCRONO
       description: Viene resituita il Documento (Metadati e Binario). SINCRONO
       operationId: idDocumentoFVOEDettaglio
@@ -380,6 +383,7 @@ paths:
           schema:
             type: string
             example: "507f1f77bcf86cd799439011"
+          required: true  
       responses:
         '200':
           description: Operazione terminato con successo. Viene restituito il Documento del Fascicolo Virtuale dell'Operatore Economico
@@ -758,6 +762,7 @@ paths:
     get:
       tags:
         - SA
+        - OE
       summary: API Rest per il recupero dello storico di un documento del Fascicolo Virtuale dell'Appalto. SINCRONO
       description: viene resituito il dettaglio dello storico di un documento del Fascicolo Virtuale dell'Appalto.
       operationId: idStoricoDocumentoFVADettaglio
@@ -946,6 +951,7 @@ paths:
     get:
       tags:
         - SA
+        - OE
       summary: API Rest per il recupero dell’anagrafica degli OE. SINCRONO
       description: vengono restituito i dati anagrafici dell'OE. SINCRONO
       operationId: idAnagraficaOERicerca
