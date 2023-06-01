@@ -2160,11 +2160,10 @@ components:
           format: integer           
         quadroEconomicoStandard:
           $ref: '#/components/schemas/QuadroEconomicoType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType'          
+            $ref: '#/components/schemas/OfferteType'          
     AppaltoA1.30Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
