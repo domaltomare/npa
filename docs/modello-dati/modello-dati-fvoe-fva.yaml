@@ -227,7 +227,6 @@ components:
       required:
         - anagraficaOE
         - appalto
-        - richiedente
         - dataInizioAutorizzazione
       properties:
         idRichiesta:
