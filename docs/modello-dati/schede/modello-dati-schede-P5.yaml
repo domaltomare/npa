@@ -40,7 +40,7 @@ components:
         sceltaContraente:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SceltaContraenteEnum'
         cup:
-          description: Cup associato al lotto
+          description: Cup
           type: string
    AnacFormP5Type:
       description: Contiene i dati per la tracciabilità

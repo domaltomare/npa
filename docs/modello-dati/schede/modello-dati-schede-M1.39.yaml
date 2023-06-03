@@ -7,13 +7,13 @@ components:
     AnacFormM1.39Type:
       description: Contiene tutti i dati relativi alle modifiche contrattuali con invio al TED - Avviso di modifica di un appalto — direttiva settoriale - Articolo 89, paragrafo 1, della direttiva 2014/25/UE
       type: object
-      required: [modificaContrattuale]
+      required: [modificheContrattuali]
       additionalProperties: false
       properties:
-        modificaContrattuale:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattualeType' 
-        quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoModificaContrattualeType' 
+        modificheContrattuali:
+         type: array
+         items:          
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattualeType'  
     SchedaM1.39Type:
       description: Scheda relativa alle modifiche contrattuali con invio al TED - Avviso di modifica di un appalto — direttiva settoriale - Articolo 89, paragrafo 1, della direttiva 2014/25/UE con invio di eform39.
       type: object

@@ -4,61 +4,46 @@ info:
   version: 1.0.0
 components:
   schemas:
-    AggiudicatarioA2.29Type:
-      description: Dati dell'aggiudicatario
-      allOf: # estende la classe AggiudicatarioType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'      
-      type: object
-      required: [importoAggiudicazioneAffidamento]
-      additionalProperties: false
-      properties:
-        ribassoDasta:
-          description: Ribasso d’Asta 
-          type: string
-        offertaInAumento:
-          description: Offerta in Aumento
-          type: string
-        offertaQualitativa:
-          description: Offerta qualitativa
-          type: string
-          format: decimal     
-    AnacFormA2.29DatiBaseType:
-      description: Oggetto che contiene gli oggetti comuni con il TED relativi alle aggiudicazioni sottosoglia - Avviso relativo all’appalto aggiudicato — direttiva generale, regime ordinario. Articolo 50 della direttiva 2014/24/UE
-      allOf: # estende la classe AnacFormA2DatiBaseType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormA2DatiBaseType'       
+    AppaltoA2.29Type:
+      allOf: 
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1.29Type'
       type: object
       additionalProperties: false
-      properties:
+      properties: 
         datiBaseProcedura:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraA2.29Type'
         datiBaseStrumentiProcedura:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraA2.29Type'
-        datiBaseSottomissioniRicevute:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSottomissioniRicevuteType'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraA2.29Type'  
         datiBaseAggiudicazioneSubappalto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoA2.29Type'
-    AnacFormA2.29Type:
-      description: Contiene tutti i dati relativi all'aggiudicazione sottosoglia senza invio al TED - Avviso relativo all’appalto aggiudicato — direttiva generale, regime ordinario. Articolo 50 della direttiva 2014/24/UE
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoA2.29Type'          
+    AggiudicazioneA2.29Type:
       allOf: 
-      - $ref: '#/components/schemas/AnacFormA2.29DatiBaseType'
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1.29Type'
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneBaseType' 
       type: object
       additionalProperties: false
-      required: [aggiudicazione]
+      properties:   
+        datiBaseRisultatoProcedura:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraType'
+        datiBaseAggiudicazioneAppalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'
+        datiBaseAccessibilita:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType' 
+        datiBaseSottomissioniRicevute:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSottomissioniRicevuteType'          
+    AnacFormA2.29Type:
+      description: Contiene tutti i dati relativi all'aggiudicazione sottosoglia senza invio al TED - Avviso relativo all’appalto aggiudicato — direttiva generale, regime ordinario. Articolo 50 della direttiva 2014/24/UE
+      type: object
+      additionalProperties: false
+      required: [appalto,aggiudicazioni]
       properties:
-        aggiudicazione:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA.29Type'
-        quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoAType' 
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        appalto:
+          $ref: '#/components/schemas/AppaltoA2.29Type'
+        aggiudicazioni:
+          description: Dati relativi alle aggiudicazioni
           type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioA2.29Type'
-        incaricati:
-          description: Dati degli incaricati
-          type: array
-          items: 
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IncaricatoType'      
+          items:
+            $ref: '#/components/schemas/AggiudicazioneA2.29Type'       
     SchedaA2.29Type:
       description: Scheda relativa all'aggiudicazione sottosoglia senza invio al TED - Avviso relativo all’appalto aggiudicato — direttiva generale, regime ordinario. Articolo 50 della direttiva 2014/24/UE
       type: object

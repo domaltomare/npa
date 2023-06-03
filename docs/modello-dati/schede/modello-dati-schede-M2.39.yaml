@@ -4,18 +4,24 @@ info:
   version: 1.0.0
 components:
   schemas:
+    ModificaContrattualeType:
+      allOf: 
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattualeType'
+      type: object
+      additionalProperties: false
+      properties:    
+        datiBaseModificaContrattuale:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseModificaContrattualeType'   
     AnacFormM2.39Type:
       description: Contiene tutti i dati di modifica contrattuale
       type: object
       additionalProperties: false
-      required: [modificaContrattuale]
+      required: [modificheContrattuali]
       properties:
-        modificaContrattuale:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattualeType' 
-        quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoModificaContrattualeType'
-        datiBaseModificaContrattuale:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseModificaContrattualeType'         
+        modificheContrattuali:
+         type: array
+         items:          
+          $ref: '#/components/schemas/ModificaContrattualeType' 
     SchedaM2.39Type:
       description: Scheda di modifica contrattuale - Avviso di modifica di un appalto — direttiva settoriale - Articolo 89, paragrafo 1, della direttiva 2014/25/UE
       type: object

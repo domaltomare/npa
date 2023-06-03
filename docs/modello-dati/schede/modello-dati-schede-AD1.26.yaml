@@ -13,7 +13,7 @@ components:
         appalto:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoAD1.26Type'
         aggiudicazioni:
-          description: Dati relativi ai lotti
+          description: Dati relativi alle aggiudicazioni
           type: array
           items:
             $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneAD1.26Type'        

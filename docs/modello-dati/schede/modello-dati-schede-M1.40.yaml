@@ -9,10 +9,10 @@ components:
       type: object
       additionalProperties: false
       properties:
-        modificaContrattuale:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattualeType' 
-        quadroEconomicoConcessioni:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType'
+        modificheContrattuali:
+         type: array
+         items:          
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattuale.40Type' 
     SchedaM1.40Type:
       description: Scheda di modifica contrattuale con invio al TED - Avviso di modifica di un appalto — direttiva sulle concessioni - Articolo 43, paragrafo 1, della direttiva 2014/23/UE
       type: object
