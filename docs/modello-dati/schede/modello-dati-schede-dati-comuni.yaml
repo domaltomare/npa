@@ -1933,11 +1933,10 @@ components:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'
         quadroEconomicoStandard:
           $ref: '#/components/schemas/QuadroEconomicoType' 
-        aggiudicatari:
-          description: Aggiudicatari
+        offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/AggiudicatarioType' 
+            $ref: '#/components/schemas/OfferteType'  
         finanziamenti:
           description: Dati relativi ai finanziamenti
           type: array
