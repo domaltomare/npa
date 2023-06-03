@@ -948,18 +948,12 @@ components:
     AppaltoP.18Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [idAppalto,cfSA,denominazioneSA]
+      required: [idAppalto]
       additionalProperties: false    
       properties:
         idAppalto:
           description: Codice univoco dell'appalto
           type: string 
-        cfSA: 
-          description: Codice fiscale SA
-          type: string
-        denominazioneSA: 
-          description: Denominazione SA
-          type: string            
     AppaltoP.19Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -1363,11 +1357,16 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
-        oggettoLotto:
-          description: oggetto del lotto
-          type: string          
-        sceltaContraente:
-          $ref: '#/components/schemas/SceltaContraenteEnum'            
+        acquisizioneCup:
+          description: Il contratto è finalizzato alla realizzazione di progetti d'investimento pubblico per i quali è prevista l'acquisizione del codice CUP ai sensi dell'art. 11 L. 3/2003 e ss.mm.? (E' necessario acquisire e comunicare il CUP per interventi finanziati, anche in parte, con risorse Comunitarie) (Si/No)
+          type: boolean          
+        cupLotto:
+          description: Cup associati al lotto
+          type: array
+          items:
+            type: string
+            pattern: ^[a-zA-Z0-9]{15}$          
+           
     LottoP.19Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -1789,7 +1788,7 @@ components:
         cigNuovaProcedura:
           description: CIG della nuova procedura avviata
           type: string   
-        quadroEconomicoStandard:
+        quadroEconomicoStandardRideterminato:
           $ref: '#/components/schemas/QuadroEconomicoModificaContrattualeType' 
     ModificaContrattuale.40Type: 
       description: Oggetto che riporta tutti i dati della modifica contrattuale
@@ -1816,7 +1815,7 @@ components:
         cigNuovaProcedura:
           description: CIG della nuova procedura avviata
           type: string   
-        quadroEconomicoConcessioni:
+        quadroEconomicoConcessioniRideterminato:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType'           
     PartecipanteType:
       description: Dati del partecipante
@@ -1833,6 +1832,9 @@ components:
           $ref: '#/components/schemas/RuoloOEEnum'
         tipo: 
           $ref: '#/components/schemas/TipoOEEnum' 
+        idPartecipante: 
+          description: id partecipante
+          type: string
     PrestazioneType:
       description: Dati relativi alle prestazioni progettuali e agli incarichi tecnici
       type: object
@@ -2600,16 +2602,16 @@ components:
       additionalProperties: false
       required: [impRideterminatoLavori,impRideterminatoServizi,impRideterminatoForniture]
       properties:
-        impRideterminatoLavori:
-          description: Importo contrattuale rideterminato componente lavori in € (al netto dell’IVA e degli oneri di sicurezza)
+        impLavori:
+          description: Importo contrattuale componente lavori in € (al netto dell’IVA e degli oneri di sicurezza)
           type: string
           format: decimal
-        impRideterminatoServizi:
-          description: Importo contrattuale rideterminato  componente servizi in € (al netto dell’IVA e degli oneri di sicurezza) 
+        impServizi:
+          description: Importo contrattuale componente servizi in € (al netto dell’IVA e degli oneri di sicurezza) 
           type: string
           format: decimal
-        impRideterminatoForniture:
-          description: Importo contrattuale rideterminato  componente forniture in € (al netto dell’IVA e degli oneri di sicurezza)
+        impForniture:
+          description: Importo contrattuale componente forniture in € (al netto dell’IVA e degli oneri di sicurezza)
           type: string
           format: decimal
         impTotaleSicurezza: 
@@ -2617,7 +2619,7 @@ components:
           type: string
           format: decimal
         impProgettazione:
-          description: Importo della progettazione in caso di appalto integrato
+          description: Importo progettazione
           type: string
           format: decimal          
         ulterioriSommeNoRibasso:
@@ -2628,10 +2630,6 @@ components:
           description: Nuovo importo totale somme a disposizione 
           type: string
           format: decimal          
-        importoComplessivo:
-          description: Importo complessivo dell'intervento 
-          type: string
-          format: decimal
         numGiorniProroga:
           description: Numero di giorni di proroga concessi/tempo aggiuntivo rispetto ai termini contrattuali 
           type: string
