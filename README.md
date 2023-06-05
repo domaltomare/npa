@@ -87,7 +87,7 @@ Nella tabella seguente sono disciplinati i tempi massimi e minimi per l'adozione
 
 ## Standard adottati
  - eForms sdk versione 1.7;
- - Espd versione 2.11;
+ - ESPD versione 2.11;
 
 * NB: Nel momento in cui il sistema sarà in esercizio, l'upgrade delle versioni utilizzate è pubblicato con almeno 90 giorni di anticipo.
 
