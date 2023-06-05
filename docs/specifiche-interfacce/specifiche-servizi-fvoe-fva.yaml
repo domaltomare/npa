@@ -135,8 +135,8 @@ paths:
       operationId: idAccessoVerificaRichiestaFVOE
       parameters:
         - in: query
-          name: codiceOE
-          description: identificativo univoco dell'Operatore Economico (P.IVA/CF). 
+          name: cf
+          description: codice fiscale dell'Operatore Economico. 
           schema:
             type: string
             example: "MNNFRC78D14H501A"
@@ -160,9 +160,9 @@ paths:
             RicercaDocumentiFVOEIdLink:  
               operationId: idDocumentiFVOERicerca
               parameters:
-                idFascicolo: '$response.body#/autorizzazione.fascicolo.idFascicolo'
+                chiaveAccesso: '$response.body#/autorizzazione.chiaveAccesso'
               description: >
-                Il valore di `idFascicolo` restituito nella riposta può essere usato per richiamare `GET /ricerca-documenti-fvoe`.       
+                Il valore di `chiaveAccesso` restituito nella riposta può essere usato per richiamare `GET /ricerca-documenti-fvoe`.       
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -214,8 +214,8 @@ paths:
       operationId: idDocumentiFVOERicerca
       parameters:
         - in: query  
-          name: idFascicolo
-          description: identificativo univoco del Fascicolo di Partecipazione dell'OE
+          name: chiaveAccesso
+          description: chiave per accedere al Fascicolo di Partecipazione dell'OE
           schema:
             type: string
             example: "507f1f77bcf86cd799439011"
@@ -455,9 +455,8 @@ paths:
     get:
       tags:
         - SA
-      summary: API Rest per la richiesta del documento agli enti certificatori. ASINCRONO - ASIMMETRICO
-      description: viene richiesta la produzione di un nuovo documento agli enti certificatori.
-         ASINCRONO - ASIMMETRICO
+      summary: API Rest per la richiesta del documento agli enti certificatori. ASINCRONO - ASIMMETRICO. SERVIZIO IN FASE DI DEFINIZIONE
+      description: viene richiesta la produzione di un nuovo documento agli enti certificatori. ASINCRONO - ASIMMETRICO. SERVIZIO IN FASE DI DEFINIZIONE
       operationId: idDocumentoRichiedi
       parameters:
         - in: query
@@ -993,8 +992,8 @@ paths:
       operationId: idAnagraficaOERicerca
       parameters:
         - in: query    
-          name: codiceFiscale
-          description: Codice Fiscale OE.
+          name: cf
+          description: Codice Fiscale dell' Operatore Economico
           required: true
           schema:
             type: string
@@ -1159,8 +1158,8 @@ components:
         dataInizioAutorizzazione: "2022-01-23T12:02:05Z"
         dataFineAutorizzazione: "2023-01-23T12:02:05Z"
         anagraficaOE:
-          - codice: "MFNFRC87D04H501C"
-          - codice: "03283450239"
+          - cf: "MFNFRC87D04H501C"
+          - cf: "80140110588"
         appalto:
           idAppalto: "ACD4546346A"
     AutorizzaAccessoRequest:
@@ -1330,7 +1329,7 @@ components:
             dataInizio: '2022-01-23T12:02:05Z'
             dataFine: '2023-01-23T12:02:05Z'
             anagraficaOE:
-              codice: "MFNFRC87D04H501C"
+              cf: "MFNFRC87D04H501C"
             appalto:
               idAppalto: "ACD4546346A"
             stato: 
@@ -1339,11 +1338,11 @@ components:
                 it: "Autorizzato"
             motivo: ""
             autorizzante:
-              codice: "UI78588658"
+              cf: "UI78588658"
             richiestaAccesso:
               idRichiesta: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-            fascicolo:
-              idFascicolo: "507f1f77bcf86cd799439011"
+            chaveAccesso:
+               "507f1f77bcf86cd799439011"
     FVAListaResponse :
       allOf: # estende la classe BaseResponse e PaginazioneType
         - $ref: '#/components/schemas/BaseResponse'
