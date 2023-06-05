@@ -244,7 +244,7 @@ components:
           format: datetime
           example: '2022-01-23T12:02:05Z' 
         dataFineAutorizzazione:
-          description: data richiesta dal SA come termine all' autorizzaione al Fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: data richiesta dal SA come termine all' autorizzazione al Fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'
@@ -262,10 +262,10 @@ components:
       type: object
       additionalProperties: false
       properties:
-        codice:
-          description: codice identificativo anagrafica. Se 'SA' é il codiceAUSA se 'OE' é il CF/PIVA
+        cf:
+          description: Codice fiscale dell'anagrafica 
           type: string
-          example: xcdsd5#3346
+          example: 'MRORSS77T05E472I'
     AnagraficaOEType:
       allOf: # estende la classe AnagraficaType
         - $ref: '#/components/schemas/AnagraficaType'
@@ -278,3 +278,9 @@ components:
       description: Oggetto specifico dell'anagrafica dell'SA
       type: object
       additionalProperties: false
+      properties:
+        codiceAusa:
+          description: Codice univovo specifico dell'anagrafica dell'SA
+          type: string
+          pattern: '[0-9]{10}'
+          example: '0000247847'
