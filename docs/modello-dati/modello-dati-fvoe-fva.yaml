@@ -222,8 +222,10 @@ components:
           $ref: '#/components/schemas/AnagraficaOEType'
         richiestaAccesso:
           $ref: '#/components/schemas/RichiestaAccessoType' 
-        fascicolo:
-          $ref: '#/components/schemas/FVOEType'
+        chiaveAccesso:
+          description: chiave per accedere al fascicolo di Partecipazione
+          type: string
+          example: "507f1f77bcf86cd799439011"
     RichiestaAccessoType:
       description: Oggetto che riporta i dati della Richiesta di Accesso al Fascicolo di Partecipazione dell'OE
       type: object
