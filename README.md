@@ -83,13 +83,13 @@ Nella tabella seguente sono disciplinati i tempi massimi e minimi per l'adozione
  - Aggiornamento modello dati: non meno di 30 giorni e non più di 90 giorni dal rilascio della specifica
  - Aggiornamento del flusso di monitoraggio*: non meno di 30 giorni e non più di 90 giorni dal rilascio della specifica
 
-*NB: l'aggiornamento del flusso di monitoraggio può includere l'aggiornamento o l'estensione del modello dati anche mediante l'introduzione di nuove schede.
+**NB**: l'aggiornamento del flusso di monitoraggio può includere l'aggiornamento o l'estensione del modello dati anche mediante l'introduzione di nuove schede.
 
 ## Standard adottati
  - eForms sdk versione 1.7;
  - ESPD versione 2.11;
 
-*NB: nel momento in cui il sistema sarà in esercizio, l'upgrade delle versioni utilizzate sarà pubblicato con almeno 90 giorni di anticipo.
+**NB**: nel momento in cui il sistema sarà in esercizio, l'upgrade delle versioni utilizzate sarà pubblicato con almeno 90 giorni di anticipo.
 
 ## Domande, chiarimenti e ulteriori infomazioni
 Il canale di comunicazione con ANAC è rappresentato dall'apposita sezione [Issues](https://github.com/domaltomare/npa/issues) nella quale sarà possibile inserire una richiesta.
