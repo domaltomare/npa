@@ -135,7 +135,7 @@ paths:
       operationId: idAccessoVerificaRichiestaFVOE
       parameters:
         - in: query
-          name: cf
+          name: codiceFiscale
           description: codice fiscale dell'Operatore Economico. 
           schema:
             type: string
@@ -209,13 +209,13 @@ paths:
     get:
       tags:
         - SA
-      summary: API Rest per la ricerca dei documenti di un Fascicolo Virtuale di Partecipazione dell'Operatore Economico. SINCRONO
-      description: viene recuperata la lista con i dati di sintesi dei documenti presenti nel Fascicolo Virtuale di Partecipazione dell'Operatore Economico per un Appalto. SINCRONO
+      summary: API Rest per la ricerca dei documenti di un Fascicolo Virtuale dell'Operatore Economico. SINCRONO
+      description: viene recuperata la lista con i dati di sintesi dei documenti presenti nel Fascicolo Virtuale dell'Operatore Economico per un Appalto. SINCRONO
       operationId: idDocumentiFVOERicerca
       parameters:
         - in: query  
           name: chiaveAccesso
-          description: chiave per accedere al Fascicolo di Partecipazione dell'OE
+          description: chiave per accedere al FVOE
           schema:
             type: string
             example: "507f1f77bcf86cd799439011"
@@ -394,7 +394,7 @@ paths:
     get:
       tags:
         - SA
-      summary: API Rest per il recupero del documento dal Fascicolo Virtuale di Partecipazione dell'Operatore Economico. SINCRONO
+      summary: API Rest per il recupero del documento dal Fascicolo Virtuale dell'Operatore Economico. SINCRONO
       description: Viene resituita il Documento (Metadati e Binario). SINCRONO
       operationId: idDocumentoFVOEDettaglio
       parameters:
@@ -460,18 +460,35 @@ paths:
       operationId: idDocumentoRichiedi
       parameters:
         - in: query
-          name: idFascicolo
-          description: identificativo univoco del FVOE.
+          name: chiaveAccesso
+          description: chiave di accesso per poter accedere al FVOE.
           required: true
           schema:
             type: string
             example: "507f1f77bcf86cd799439011"
+        - in: query
+          name: codiceFiscale
+          description: il cf. dell'Operatore Economico
+          required: true
+          schema:
+            type: string 
+            example: "MNNRSS89D12H501R"
+        - in: query
+          name: codiceFiscaleSoggetti
+          description: la lista dei  cf. dei soggetto sui cui si rihiede il documento.
+          schema:
+            type: array
+            items:
+              description: il cf. dell' soggetto su cui si rihiede il documento.
+            example: "[80090909]"
         - in: query
           name: tipoDocumento
           description: tipologia del documento da richiedere.
           required: true
           schema:
             $ref: '#/components/schemas/TipoDocumentoEnum'
+          example:
+            codice: "01"
       responses:
         '200':
           description: Operazione terminato con successo
@@ -496,12 +513,63 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
+  /verifica-stato-richiesta-documento-fvoe:
+    get:
+      tags:
+        - SA
+      summary: API Rest per verificare l'esito della richiesta del documento. SINCRONO. SERVIZIO IN FASE DI DEFINIZIONE
+      description: API Rest per il recupero dell'esito della richiesta del documento. SINCRONO. SERVIZIO IN FASE DI DEFINIZIONE
+      operationId: idDocumentoVerificaRichiestaFVOE
+      parameters:
+        - in: query
+          name: chiaveAccesso
+          description: chiave di accesso per poter accedere al FVOE.
+          required: true
+          schema:
+            type: string
+            example: "507f1f77bcf86cd799439011"
+        - in: query
+          name: codiceFiscale
+          description: il cf. dell'Operatore Economico
+          required: true
+          schema:
+            type: string 
+        - in: query
+          name: codiceFiscaleSoggetto
+          description: il cf. dell' soggetto sui cui si é rihiesto in precedenza il documento.
+          schema:
+            type: string     
+        - in: query
+          name: tipoDocumento
+          description: tipologia del documento da richiedere.
+          required: true
+          schema:
+            $ref: '#/components/schemas/TipoDocumentoEnum'
+          example:
+            codice: "01"  
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatoRichiestaDocumentoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []        
   /recupera-storico-documento-fvoe:
     get:
       tags:
         - SA
-      summary: API Rest per il recupero dello storico di un documento del Fascicolo Virtuale di Partecipazione dell'Operatore Economico. SINCRONO
-      description: viene resituito il dettaglio dello storico di un documento del Fascicolo Virtuale di Partecipazione dell'Operatore Economico.
+      summary: API Rest per il recupero dello storico di un documento del Fascicolo Virtuale dell'Operatore Economico. SINCRONO
+      description: viene resituito il dettaglio dello storico di un documento del Fascicolo Virtuale dell'Operatore Economico.
       operationId: idStoricoDocumentoFVOEDettaglio
       parameters:
         - in: query
@@ -828,7 +896,7 @@ paths:
     get:
       tags:
         -  SA
-      summary: API Rest per la ricerca dei fascicoli degli appalti. SINCRONO
+      summary: API Rest per la ricerca dei Fascicoli Virtuale degli Appalti. SINCRONO
       description: viene recuperata la lista con i dati di sintesi dei FVA. SINCRONO
       operationId: idFascicoliRicerca
       parameters:
@@ -992,7 +1060,7 @@ paths:
       operationId: idAnagraficaOERicerca
       parameters:
         - in: query    
-          name: cf
+          name: codiceFiscale
           description: Codice Fiscale dell' Operatore Economico
           required: true
           schema:
@@ -1133,8 +1201,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoFascicoloEnum'
     StatoDocumentoEnum:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoDocumentoEnum'
-    StatoRichiestaEnum:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoRichiestaEnum'
+    StatoRichiestaDocumentoEnum:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoRichiestaDocumentoEnum'
     TipoDocumentoEnum: 
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoDocumentoEnum'
     AnagraficaOEType:
@@ -1158,8 +1226,8 @@ components:
         dataInizioAutorizzazione: "2022-01-23T12:02:05Z"
         dataFineAutorizzazione: "2023-01-23T12:02:05Z"
         anagraficaOE:
-          - cf: "MFNFRC87D04H501C"
-          - cf: "80140110588"
+          - codiceFiscale: "MFNFRC87D04H501C"
+          - codiceFiscale: "80140110588"
         appalto:
           idAppalto: "ACD4546346A"
     AutorizzaAccessoRequest:
@@ -1278,9 +1346,9 @@ components:
           sottoFascicoli :
             - idFascicolo : "c3425891-1e8c-42ba-a64e-4f0d77cf1f99"
               tipo :
-                codice: "FVP"
+                codice: "FVC"
                 descrizione: 
-                  it: "Fascicolo Virtuale di Partecipazione"
+                  it: "Fascicolo Virtuale del Concorrente"
               stato: 
                 codice: "01"
                 descrizione: 
@@ -1289,8 +1357,9 @@ components:
               datacreazione : "2016-07-03T15:04:00Z"
             - idFascicolo : "24f209fb-5f48-4793-8e3f-45d9f57d1997"
               tipo : 
-                codice: "FVP"
-                descrizione: "it:Fascicolo Virtuale di Partecipazione"
+                codice: "FVC"
+                descrizione: 
+                  it: "Fascicolo Virtuale del Concorrente"
               stato: 
                 codice: "01"
                 descrizione: 
@@ -1329,7 +1398,7 @@ components:
             dataInizio: '2022-01-23T12:02:05Z'
             dataFine: '2023-01-23T12:02:05Z'
             anagraficaOE:
-              cf: "MFNFRC87D04H501C"
+              codiceFiscale: "MFNFRC87D04H501C"
             appalto:
               idAppalto: "ACD4546346A"
             stato: 
@@ -1338,10 +1407,57 @@ components:
                 it: "Autorizzato"
             motivo: ""
             autorizzante:
-              cf: "UI78588658"
+              codiceFiscale: "UI78588658"
             richiestaAccesso:
               idRichiesta: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-            chaveAccesso:
+            chiaveAccesso:
+               "507f1f77bcf86cd799439011"
+    StatoRichiestaDocumentoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:
+        autorizzazione:
+          $ref: '#/components/schemas/AutorizzazioneAccessoType'
+        chiaveAccesso:
+          description: identificativo univoco del Fascicolo
+          type: string
+          example: "507f1f77bcf86cd799439011"
+        operatoreEconomico:
+          $ref: '#/components/schemas/AnagraficaOEType' 
+        soggetto:
+          $ref: '#/components/schemas/AnagraficaOEType' 
+        tipoDocumento:
+          $ref: '#/components/schemas/TipoDocumentoEnum'
+        idRichiesta:
+          description: identificativo univoco della richiesta
+          type: string
+          example: "1789c793-bdbe-4e8c-aa7e-4117145c739b" 
+        stato:
+          $ref: '#/components/schemas/StatoRichiestaDocumentoEnum'  
+        idDocumento:
+          description: identificativo univoco del documento 
+          type: string
+          example: "507f1f77bcf86cd799439011" 
+      example: 
+        status: 200
+        title: "Operazione Effettuata"
+        esitoElaborazione:
+            chiaveAccesso:
+               "507f1f77bcf86cd799439011"
+            operatoreEconomico:
+              codiceFiscale: "MFNFRC87D04H501C"
+            soggetto:
+              codiceFiscale: "MFNFRC87D04H501C" 
+            tipoDocumento: 
+              codice: "01"
+              descrizione: 
+                it: "DURC"
+            idRichiesta: "1789c793-bdbe-4e8c-aa7e-4117145c739b"            
+            stato: 
+              codice: "01"
+              descrizione: 
+                it: "Risposta Inoltrata"
+            idDocumento:
                "507f1f77bcf86cd799439011"
     FVAListaResponse :
       allOf: # estende la classe BaseResponse e PaginazioneType
