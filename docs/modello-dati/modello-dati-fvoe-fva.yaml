@@ -71,7 +71,7 @@ components:
             format: int32
             minimum: 10
             default: 0
-        SottoFascicoli:
+        sottoFascicoli:
           description: Lista Sotto Fascicoli
           type: array
           items:
@@ -223,11 +223,11 @@ components:
         richiestaAccesso:
           $ref: '#/components/schemas/RichiestaAccessoType' 
         chiaveAccesso:
-          description: chiave per accedere al fascicolo di Partecipazione
+          description: chiave per accedere al Fascicolo Virtuale dell'OE
           type: string
           example: "507f1f77bcf86cd799439011"
     RichiestaAccessoType:
-      description: Oggetto che riporta i dati della Richiesta di Accesso al Fascicolo di Partecipazione dell'OE
+      description: Oggetto che riporta i dati della Richiesta di Accesso al Fascicolo Virtuale dell'OE
       type: object
       additionalProperties: false
       required:
@@ -264,7 +264,7 @@ components:
       type: object
       additionalProperties: false
       properties:
-        cf:
+        codiceFiscale:
           description: Codice fiscale dell'anagrafica 
           type: string
           example: 'MRORSS77T05E472I'
@@ -282,7 +282,7 @@ components:
       additionalProperties: false
       properties:
         codiceAusa:
-          description: Codice univovo specifico dell'anagrafica dell'SA
+          description: Codice univoco specifico dell'anagrafica dell'SA
           type: string
           pattern: '[0-9]{10}'
           example: '0000247847'
