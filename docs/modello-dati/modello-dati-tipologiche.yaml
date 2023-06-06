@@ -38,10 +38,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'
       description: Stato in cui si trova il documento - fare riferimento ai valori contenuti nel file [statoDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoDocumento.json)
-    StatoRichiestaEnum:
+    StatoRichiestaDocumentoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'   
-      description: Stato in cui si trova la richiesta di accesso al fvoe - fare riferimento ai valori contenuti nel file [statoRichiesta.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoRichiesta.json)
+      description: Stato in cui si trova la richiesta di recupero del documento certificato del oe - fare riferimento ai valori contenuti nel file [statoRichiestaDocumento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoRichiestaDocumento.json)
     TipoDocumentoEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'     
