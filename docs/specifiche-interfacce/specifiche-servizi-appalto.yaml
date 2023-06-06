@@ -98,7 +98,7 @@ paths:
       tags:
          - pianificazioneAppalto
       summary: API Rest per la creazione della Pianificazione. SINCRONO 
-      description: Inserimento della Pianificazione nel formato definito da Anac e Inserimento dell'eventuale avviso di pre-informazione in TED nel formato eForm. SINCRONO 
+      description: Il servizio permette di inviare la scheda per l'inserimento della Pianificazione nel formato definito da Anac e dell'eventuale avviso di pre-informazione in TED nel formato eForm. SINCRONO 
       operationId: idPianoCrea
       requestBody:
         description: Inserimento piano con tutti i dati aggiuntivi
@@ -130,7 +130,7 @@ paths:
       tags:
          - pianificazioneAppalto
       summary: API Rest per la modifica della Pianificazione. SINCRONO 
-      description: Sostituisce la precedentemente Pianificazione inviata. SINCRONO 
+      description: Il servizio permette di inviare la scheda per sostituire la precedentemente Pianificazione in lavorazione. SINCRONO 
       operationId: idPianoModifica
       requestBody:
         description: Oggetto generico in ingresso al servizio
@@ -383,7 +383,7 @@ paths:
       tags:
          - comunicaAppalto
       summary: API Rest per la creazione di un Appalto. SINCRONO 
-      description: Il servizio permette l'inserimento della prima istanza in lavorazione di un Appalto nel formato ESPD-Request, per tutte le tipologie anche affidamento diretto per le pubblicazioni nazionali, nel formato eForm per le pubblicazioni europee in TED, più un formato definito da ANAC con le informazioni aggiuntive. SINCRONO 
+      description: Il servizio permette di inviare la scheda per l'inserimento della prima istanza in lavorazione di un Appalto nel formato ESPD-Request, per tutte le tipologie anche affidamento diretto per le pubblicazioni nazionali, nel formato eForm per le pubblicazioni europee in TED, più un formato definito da ANAC con le informazioni aggiuntive. SINCRONO 
       operationId: idAppaltoCrea
       requestBody:
         description: Inserimento Appalto con tutti i dati aggiuntivi
@@ -434,7 +434,7 @@ paths:
       tags:
          - comunicaAppalto
       summary: API Rest per la modifica dell'Appalto. SINCRONO 
-      description: Il servizio permette la sostituzione della precedente istanza dell’Appalto con una nuova. L'Appalto è nel formato ESPD-Request, per tutte le tipologie anche affidamento diretto per le pubblicazioni nazionali, nel formato eForm per le pubblicazioni europee in TED, più un formato definito da ANAC con le informazioni aggiuntive. SINCRONO 
+      description: Il servizio permette di inviare la scheda per sostituire la precedente istanza dell’Appalto in lavorazione. L'Appalto è nel formato ESPD-Request, per tutte le tipologie anche affidamento diretto per le pubblicazioni nazionali, nel formato eForm per le pubblicazioni europee in TED, più un formato definito da ANAC con le informazioni aggiuntive. SINCRONO 
       operationId: idAppaltoModifica
       requestBody:
         description: Modifica dell'Appalto con tutti i dati aggiuntivi
@@ -1189,7 +1189,7 @@ paths:
       tags:
         - comunicaPostPubblicazione
       summary: API Rest generica per la modifica di una scheda dati per le fasi successive alla pubblicazione. SINCRONO
-      description: Il servizio sostituisce la precedentemente Scheda inviata. SINCRONO
+      description: Il servizio sostituisce la precedentemente Scheda in lavorazione. SINCRONO
       operationId: idSchedaModifica
       requestBody:
         description: Oggetto in ingresso al servizio
