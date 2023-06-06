@@ -1522,7 +1522,7 @@ components:
       type: object
       additionalProperties: false
       properties:
-        cf:
+        codiceFiscale:
           description: Codice fiscale del soggetto interessato
           type: string
         denominazione: 
@@ -1540,7 +1540,7 @@ components:
           type: boolean
         tipologiaAvvalimento:
           $ref: '#/components/schemas/TipologiaAvvalimentoEnum' 
-        cfAusiliaria:
+        codiceFiscaleAusiliaria:
           description: Codice fiscale impresa ausiliaria
           type: string
         denominazioneAusiliaria:
