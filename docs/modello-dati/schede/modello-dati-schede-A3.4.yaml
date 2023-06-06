@@ -79,7 +79,7 @@ components:
         aggiudicazione:
           $ref: '#/components/schemas/AggiudicazioneA3.4Type'
         quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoAType'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType'
         aggiudicatari:
           description: Dati degli aggiudicatari
           type: array
