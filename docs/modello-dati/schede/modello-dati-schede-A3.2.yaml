@@ -4,70 +4,70 @@ info:
   version: 1.0.0
 components:
   schemas:
+    AppaltoA3.2Type:
+      type: object
+      additionalProperties: false
+      properties:  
+        datiBaseAggiudicazioneSubappalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoType'       
     AggiudicazioneA3.2Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
       properties: 
+        cig:
+          description: codice identificativo lotto
+          type: string
+          example: 
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          type: string      
         modalitaRiaggiudicazioneAffidamento:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'    
-    AggiudicatarioA3.2Type:
-      description: Dati dell'aggiudicatario
-      allOf: # estende la classe AggiudicatarioType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicatarioType'      
-      type: object
-      required: [importoAggiudicazioneAffidamento]
-      additionalProperties: false
-      properties:
-        importoAggiudicazioneAffidamento:
-          description: Importo di aggiudicazione/affidamento 
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum' 
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
           type: string
-          format: decimal      
-        ribassoDasta:
-          description: Ribasso d’Asta 
+          format: integer 
+        valoreSogliaAnomalia:
+          description: Valore soglia anomalia
           type: string
-        offertaInAumento:
-          description: Offerta in Aumento
+        nOfferte:
+          description: N.offerte >= soglia anomalia
           type: string
-        offertaQualitativa:
-          description: Offerta qualitativa
+          format: integer
+        nImpreseEscluseAutomaticamente: 
+          description: Numero imprese escluse automaticamente
           type: string
-          format: decimal 
-    AnacFormA3.2DatiBaseType:
-      description: Oggetto che contiene gli oggetti comuni con il TED relativi ai contratti esclusi in Concessione
-    
-      type: object
-      additionalProperties: false
-      properties:
+          format: integer
+        nImpreseEscluseInsufficientiGiustificazioni: 
+          description: Numero imprese escluse per insufficienti giustificazioni
+          type: string
+          format: integer           
+        quadroEconomicoConcessioni:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType'
+        offertePresentate:
+          description: Dati degli aggiudicatari
+          type: array
+          items: 
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OfferteType'          
         datiBaseAggiudicazioneAppalto:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoA3.2Type'    
         datiBaseRisultatoProcedura:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraType'      
         datiBaseSottomissioniRicevute:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSottomissioniRicevuteType'
-        datiBaseAggiudicazioneSubappalto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoType'           
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSottomissioniRicevuteType'          
     AnacFormA3.2Type:
       description: Contiene tutti i dati relativi all'aggiudicazione per i contratti esclusi in Concessione
       type: object
-      allOf: 
-      - $ref: '#/components/schemas/AnacFormA3.2DatiBaseType'      
-      additionalProperties: false
+      required: [appalto,aggiudicazioni]
       properties:
-        aggiudicazione:
-          $ref: '#/components/schemas/AggiudicazioneA3.2Type'
-        quadroEconomicoConcessioni:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType'
-        aggiudicatari:
-          description: Dati degli aggiudicatari
+        appalto:
+          $ref: '#/components/schemas/AppaltoA3.2Type'
+        aggiudicazioni:
+          description: Dati relativi alle aggiudicazioni
           type: array
-          items: 
-            $ref: '#/components/schemas/AggiudicatarioA3.2Type'
-        incaricati:
-          description: dati degli incaricati
-          type: array
-          items: 
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IncaricatoType'
+          items:
+            $ref: '#/components/schemas/AggiudicazioneA3.2Type'
     SchedaA3.2Type:
       description: Scheda di aggiudicazione relativa ai contratti esclusi in Concessione
       type: object
