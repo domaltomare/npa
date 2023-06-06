@@ -780,17 +780,6 @@ components:
           description: Offerta in aumento
           type: string
           format: decimal  
-        avvalimento:
-          description: Flag avvalimento
-          type: boolean
-        tipologiaAvvalimento:
-          $ref: '#/components/schemas/TipologiaAvvalimentoEnum' 
-        cfAusiliaria:
-          description: Codice fiscale impresa ausiliaria
-          type: string
-        denominazioneAusiliaria:
-          description: Denominazione impresa ausiliaria
-          type: string
     AggiudicatarioA1.35Type:
       description: Dati dell'aggiudicatario
       type: object
@@ -1856,6 +1845,17 @@ components:
         idPartecipante: 
           description: id partecipante
           type: string
+        avvalimento:
+          description: Flag avvalimento
+          type: boolean
+        tipologiaAvvalimento:
+          $ref: '#/components/schemas/TipologiaAvvalimentoEnum' 
+        cfAusiliaria:
+          description: Codice fiscale impresa ausiliaria
+          type: string
+        denominazioneAusiliaria:
+          description: Denominazione impresa ausiliaria
+          type: string          
     PrestazioneType:
       description: Dati relativi alle prestazioni progettuali e agli incarichi tecnici
       type: object
