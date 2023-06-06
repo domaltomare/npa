@@ -330,7 +330,7 @@ paths:
       tags:
         - pianificazioneAppalto
       summary: API Rest per la conferma dei dati inviati per una specifica Pianificazione. ASINCRONO - ASIMMETRICO
-      description: Il servizio consente di confermare i dati inviati per una specifica Pianificazione. Qualora il tipo di piano lo consente, il servizio restituisce l'identificativo dell'avviso ad esso assegnato che la SA potrà utilizzare per la successiva invocazione di pubblica-avviso. ASINCRONO - ASIMMETRICO
+      description: Il servizio consente di confermare i dati inviati per una specifica Pianificazione. Qualora il tipo di piano lo consente, il servizio esito-operazione restituisce l'identificativo dell'avviso ad esso assegnato che la SA potrà utilizzare per la successiva invocazione di pubblica-avviso. ASINCRONO - ASIMMETRICO
       operationId: idPianoConferma
       requestBody:
         content:
@@ -660,7 +660,7 @@ paths:
       tags:
         - comunicaAppalto
       summary: API Rest per la conferma dei dati di Appalto propedeutica alla generazione dei CIG. ASINCRONO - ASIMMETRICO
-      description: Il servizio permette la conferma dei dati dell'Appalto inviati e avvia la fase di validazione e assegnazione dei CIG. ASINCRONO - ASIMMETRICO 
+      description: Il servizio permette la conferma dei dati dell'Appalto inviati, avvia la fase di validazione e assegnazione dei CIG ed inizializza il Fascicolo Virtuale dell'Appalto. ASINCRONO - ASIMMETRICO 
       operationId: idAppaltoConferma
       requestBody:
         content:
@@ -707,7 +707,7 @@ paths:
       tags:
          - serviziComuni
       summary: API Rest per il recupero dello stato dell'Appalto, del Lotto o del Contratto. SINCRONO
-      description: Servizio per il recupero dello stato in cui si trova l’Appalto, il Lotto o il Contratto. SINCRONO
+      description: Servizio per il recupero dello stato in cui si trova l’Appalto, il Lotto o il Contratto. Il compito dispositivo di aggiornare lo stato proveniente dai sistemi esterni, TED e/o PPL-ANAC, sarà in carico ad un task schedulato NPA. Pertanto il recupero dello stato da parte del servizio insiste su uno stato NPA che restituisce anche la data in cui il task schedulato ha effettuato il controllo sui sistemi esterni. SINCRONO
       operationId: idAppaltoStato
       parameters:
         - in: query
@@ -1125,7 +1125,7 @@ paths:
       tags:
          - pubblicaAvviso
       summary: API Rest per il recupero dello stato dell'Avviso. SINCRONO
-      description: Servizio per il recupero dello stato in cui si trova l’Avviso. SINCRONO
+      description: Il compito dispositivo di aggiornare lo stato dell'avviso proveniente dai sistemi esterni, TED e/o PPL-ANAC, sarà in carico ad un task schedulato NPA. Pertanto il recupero dello stato da parte del servizio insiste su uno stato avviso NPA che restituisce anche la data in cui il task schedulato ha effettuato il controllo sui sistemi esterni. SINCRONO
       operationId: idAvvisoStato
       parameters:
         - in: query
@@ -1408,7 +1408,7 @@ paths:
       tags:
         - comunicaPostPubblicazione
       summary: API Rest per la conferma dei dati inviati per una specifica Scheda. ASINCRONO - ASIMMETRICO
-      description: Il servizio consente di confermare i dati inviati per una specifica Scheda e, qualora il tipo di scheda lo consente, avvia la fase di pubblicazione dell'avviso e restituisce l'identificativo ad esso assegnato. ASINCRONO - ASIMMETRICO 
+      description: Il servizio consente di confermare i dati inviati per una specifica Scheda e, qualora il tipo di scheda lo consente, avvia la fase di pubblicazione dell'avviso. Con la successiva chiamata al servizio esito-operazione è possibile recuperare l'idAvviso assegnato. ASINCRONO - ASIMMETRICO 
       operationId: idSchedaConferma
       requestBody:
         content:
@@ -1461,7 +1461,7 @@ paths:
       tags:
         - serviziComuni
       summary: API Rest per il recupero dell'esito dell'operazione. SINCRONO
-      description: In base all'operazione viene restituita l'esito. SINCRONO
+      description: Il compito dispositivo di aggiornare l'esito delle operazioni provenienti dai sistemi esterni, TED e/o PPL-ANAC, sarà in carico ad un task schedulato NPA. Pertanto il recupero dell'esito operazione da parte del servizio insiste su uno stato dell'esito NPA che restituisce anche la data in cui il task schedulato ha effettuato il controllo sui sistemi esterni. SINCRONO
       operationId: idOperazioneEsito
       parameters:
         - in: query
