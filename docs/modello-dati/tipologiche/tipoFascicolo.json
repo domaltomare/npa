@@ -1,8 +1,8 @@
 [{
-    "codice":"FVP",
+    "codice":"FVC",
     "descrizione": {
-		"it": "Fascicolo Virtuale di Partecipazione",
-		"en": "Fascicolo Virtuale di Partecipazione"
+		"it": "Fascicolo Virtuale del Concorrente",
+		"en": "Fascicolo Virtuale del Concorrente"
 		},
     "datainizio":null,
     "datafine":null
@@ -10,7 +10,7 @@
     "codice":"FVOE",
     "descrizione": {
 		"it": "Fascicolo Virtuale Operatore Economico",
-		"en": "Fascicolo Virtuale Operatore Economicoa"
+		"en": "Fascicolo Virtuale Operatore Economico"
 		},
     "datainizio":null,
     "datafine":null
