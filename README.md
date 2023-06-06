@@ -89,7 +89,7 @@ Nella tabella seguente sono disciplinati i tempi massimi e minimi per l'adozione
  - eForms sdk versione 1.7;
  - ESPD versione 2.11;
 
-* NB: Nel momento in cui il sistema sarà in esercizio, l'upgrade delle versioni utilizzate sarà pubblicato con almeno 90 giorni di anticipo.
+NB: Dal momento in cui il sistema sarà in esercizio, l'upgrade delle versioni utilizzate sarà pubblicato con almeno 90 giorni di anticipo.
 
 ## Domande, chiarimenti e ulteriori infomazioni
 Il canale di comunicazione con ANAC è rappresentato dall'apposita sezione [Issues](https://github.com/domaltomare/npa/issues) nella quale sarà possibile inserire una richiesta.
