@@ -4,528 +4,206 @@ info:
   version: 1.0.0
 components:
   schemas:
-    TipologicaSchemaType:
-        type: object
-        properties:
-          codice:
-            type: string
-          descrizione:
-            $ref: '#/components/schemas/I18NType'
-          dataInizio:
-            description: data inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
-            type: string
-            format: datetime
-            example: '2022-01-23T12:02:05Z'
-          dataFine:
-            description: data fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
-            type: string
-            format: datetime
-            example: '2022-01-23T12:02:05Z'    
-    I18NType:
-        type: object
-        properties:
-          it:
-            type: string
-          en:
-            type: string            
-    TipologicaType:
-      description: oggetto che contiene i valori delle tipologiche
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     TipoFinanziamentoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Tipo di finanziamento - fare riferimento ai valori contenuti nel file [tipoFinanziamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoFinanziamento.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     FunzioniDelegateEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Ruolo svolto dalla S.A. nell'appalto - fare riferimento ai valori contenuti nel file [funzioniDelegate.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/funzioniDelegate.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     CategorieMerceologicheEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: '#/components/schemas/TipologicaSchemaType'
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
       description: Categorie merceologiche oggetto della fornitura di cui al DPCM soggetti aggregatori - fare riferimento ai valori contenuti nel file [categorieMerceologiche.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/categorieMerceologiche.json)
     MotivazioneCIGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivazione richiesta CIG - fare riferimento ai valori contenuti nel file [motivazioneCig.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivazioneCig.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     StrumentiSvolgimentoProcedureEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Strumenti per lo svolgimento delle procedure - fare riferimento ai valori contenuti nel file [strumentiSvolgimentoProcedure.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/strumentiSvolgimentoProcedure.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     MotivoUrgenzaEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo urgenza - fare riferimento ai valori contenuti nel file [motivoUrgenza.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoUrgenza.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     PrestazioniEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Prestazioni comprese nell'appalto - fare riferimento ai valori contenuti nel file [prestazioni.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/prestazioni.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     CondizioniNegoziataEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/condizioniNegoziata.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     GiustificazioneAggiudicazioneDirettaEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Giustificazione del ricorso a una procedura che consente di aggiudicare appalti direttamente, vale a dire che non impone la pubblicazione di un avviso di indizione di gara nella Gazzetta ufficiale dell'Unione europea - corrisponde al campo bt-136 - Direct Award Justification Code del TED - fare riferimento ai valori contenuti nel file [giustificazioneAggiudicazioneDiretta.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/giustificazioneAggiudicazioneDiretta.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string          
     ContrattiDisposizioniParticolariEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Contratti nei settori ordinari assoggettati a disposizioni particolari - fare riferimento ai valori contenuti nel file [contrattiDisposizioniParticolari.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/contrattiDisposizioniParticolari.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     CodIstatEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Codice ISTAT - fare riferimento ai valori contenuti nel file [codIstat.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/codIstat.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     CodNUTSEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Il luogo di esecuzione secondo la classificazione comune delle unità territoriali per la statistica (NUTS). Va indicato il codice di livello NUTS 3 - corrisponde al campo bt-5071 - Place Performance Country Subdivision del TED - fare riferimento ai valori contenuti nel file [codNUTS.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/codNUTS.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     RuoloOEEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Ruolo del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [ruoloOE.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/ruoloOE.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     TipoOEEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Tipo soggetto - fare riferimento ai valori contenuti nel file [tipoOE.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOE.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string       
     ModalitaAcquisizioneEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Modalità di acquisizione (per servizi e forniture) - fare riferimento ai valori contenuti nel file  [modalitaAcquisizione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modalitaAcquisizione.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     OggettoPrincipaleContrattoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: '#/components/schemas/TipologicaSchemaType'
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
       description: Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [oggettoPrincipaleContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json)
     TipologiaLavoroEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Tipologia lavoro - fare riferimento ai valori contenuti nel file [tipologiaLavoro.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipologiaLavoro.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     MotivoCollegamentoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo di collegamento - fare riferimento ai valori contenuti nel file [motivoCollegamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoCollegamento.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     CategoriaEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Categoria - fare riferimento ai valori contenuti nel file [categoria.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/categoria.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     MotivoDerogaEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo deroga che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii. - fare riferimento ai valori contenuti nel file [motivoDeroga.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoDeroga.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     MisurePremialiEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Misure Premiali - fare riferimento ai valori contenuti nel file [misurePremiali.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/misurePremiali.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     TipoClassificazioneEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Il tipo di classificazione che descrive l'appalto (ad es. CPV) - fare riferimento ai valori contenuti nel file [tipoClassificazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoClassificazione.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     TipoSoggettoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Tipologia del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [tipoSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoSoggetto.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string 
     TipoIncaricoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Tipologia dell'incarico - fare riferimento ai valori contenuti nel file [tipoIncarico.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoIncarico.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string       
     TipoProgettazioneEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Tipologia di progettazione - fare riferimento ai valori contenuti nel file [tipoProgettazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoProgettazione.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string      
     CPVEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Classificazione - fare riferimento ai valori contenuti nel file [CPV.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/CPV.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     AccessibilitaEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Richiamo nel bando di gara, nell’avviso o nell’invito alla necessità da parte del concorrente o dell’offerente di aver assolto, al momento della presentazione dell'offerta, agli obblighi in materia di lavoro delle persone con disabilità di cui alla legge 12 marzo 1999, n. 68 - corrisponde al campo bt-754 - Accessibility del TED - fare riferimento ai valori contenuti nel file [accessibilita.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/accessibilita.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     OggettoContrattoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Oggetto del contratto - corrisponde al campo bt-23 - Main Nature del TED - fare riferimento ai valori contenuti nel file [oggettoContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoContratto.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     SceltaContraenteEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Scelta del contraente - fare riferimento ai valori contenuti nel file [sceltaContraente.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/sceltaContraente.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     TipoProceduraEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Il tipo di procedura di appalto (ad es. secondo i tipi indicati nelle direttive sugli appalti citate nei considerando del presente documento). - corrisponde al campo bt-105 - Procedure Type del TED - fare riferimento ai valori contenuti nel file [tipoProcedura.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoProcedura.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string       
     AffidamentiRiservatiEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Indicare se la partecipazione è riservata a specifiche organizzazioni (ad es. laboratori protetti, organizzazioni con missione di servizio pubblico) - corrisponde al campo bt-71 - Reserved Participation del TED - fare riferimento ai valori contenuti nel file [affidamentiRiservati.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/affidamentiRiservati.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     CriteriAggiudicazioneEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: criteri di aggiudicazione - corrisponde al campo bt-539 - Award Criterion Type del TED - fare riferimento ai valori contenuti nel file [criteriAggiudicazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/criteriAggiudicazione.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     SistemaDinamicoAcquisizioneEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Sistema dinamico di acquisizione - corrisponde al campo bt-766 - Dynamic Purchasing System del TED  - fare riferimento ai valori contenuti nel file [sistemaDinamicoAcquisizione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/sistemaDinamicoAcquisizione.json)
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     AccordoQuadroEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Accordo quadro - corrisponde al campo bt-765 - Framework agreement del TED  - fare riferimento ai valori contenuti nel file [accordoQuadro.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/accordoQuadro.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     MotivoEsclusioneOrdinarioSpecialeEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo di esclusione settore ordinario e speciale - fare riferimento ai valori contenuti nel file [motivoEsclusioneOrdinarioSpeciale.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoEsclusioneOrdinarioSpeciale.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string       
     MotivoEsclusioneConcessioneEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo di esclusione concessione - fare riferimento ai valori contenuti nel file [motivoEsclusioneConcessione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoEsclusioneConcessione.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string        
     FattispecieTracciabilitaEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Fattispecie tracciabilità - fare riferimento ai valori contenuti nel file [fattispecieTracciabilita.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/fattispecieTracciabilita.json)  
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string      
     ModalitaRiaggiudicazioneAffidamentoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Modalità di riaggiudicazione/affidamento dell'appalto - fare riferimento ai valori contenuti nel file [modalitaRiaggiudicazioneAffidamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modalitaRiaggiudicazioneAffidamento.json)    
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string       
     EsitoProceduraEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Esito procedura - corrisponde al campo bt-142 - Winner Chosen del TED - fare riferimento ai valori contenuti nel file [esitoProcedura.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esitoProcedura.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string 
     GiustificazioneEsitoProceduraEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Giustificazione esito procedura - corrisponde al campo bt-144 - Not Awarded Reason del TED - fare riferimento ai valori contenuti nel file [giustificazioneEsitoProcedura.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/giustificazioneEsitoProcedura.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string      
     MotiviModificaContrattualeEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivi modifica contrattuale - corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motiviModificaContrattuale.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviModificaContrattuale.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string
     MotiviRevisionePrezziEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo di revisione dei prezzi - fare riferimento ai valori contenuti nel file [motiviRevisionePrezzi.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviRevisionePrezzi.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string 
     TipoRealizzazioneContrattoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Tipo modalità di realizzazione contratto - fare riferimento ai valori contenuti nel file [tipoRealizzazioneContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRealizzazioneContratto.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string  
     EsitoProceduraNagEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Esito procedura NAG - fare riferimento ai valori contenuti nel file [esitoProceduraNag.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esitoProceduraNag.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string   
     AvanzamentoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: L'avanzamento raggiunto, rispetto al cronoprogramma di previsione registrato - fare riferimento ai valori contenuti nel file [avanzamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/avanzamento.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string  
     ModalitaPagamentoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Modalità di pagamento - fare riferimento ai valori contenuti nel file [modalitaPagamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modalitaPagamento.json)  
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string 
     TipologiaComunicazioneEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Tipologia di comunicazione - fare riferimento ai valori contenuti nel file [tipologiaComunicazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipologiaComunicazione.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string      
     SubappaltoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Subappalto - corrisponde al campo bt-773 - Subcontracting del TED - fare riferimento ai valori contenuti nel file [subappalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/subappalto.json)  
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string              
     MotivoSospensioneEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo di sospensione - fare riferimento ai valori contenuti nel file [motivoSospensione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoSospensione.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string 
-    TipologiaAvvalimentoEnum:          
+    TipologiaAvvalimentoEnum: 
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Tipologia di avvalimento - fare riferimento ai valori contenuti nel file [tipologiaAvvalimento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipologiaAvvalimento.json) 
-      type: object
-      properties:
-        codice:
-          description: codice della tipologica
-          type: string
-        descrizione:
-          description: descrizione della voce della tipologica
-          type: string     
     MotivoDerogaType:
       type: array
       items:
@@ -1084,7 +762,7 @@ components:
       allOf: # estende la classe LottoBaseType
         - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,prestazioniComprese]
+      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,prestazioniComprese]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -1109,7 +787,7 @@ components:
           type: boolean
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean 
         ipotesiCollegamento:
@@ -1125,7 +803,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,prestazioniComprese]
+      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,prestazioniComprese]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -1147,7 +825,7 @@ components:
           type: boolean
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean 
         ipotesiCollegamento:
@@ -1163,7 +841,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,contrattiDisposizioniParticolari,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
+      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,contrattiDisposizioniParticolari,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1186,7 +864,7 @@ components:
         iniziativeNonSoddisfacenti:
           description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
           type: boolean          
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
         ipotesiCollegamento:
@@ -1202,7 +880,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
+      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1225,7 +903,7 @@ components:
         iniziativeNonSoddisfacenti:
           description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
           type: boolean          
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
         ipotesiCollegamento:
@@ -1241,7 +919,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,servizioPubblicoLocale]
+      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,servizioPubblicoLocale]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1261,7 +939,7 @@ components:
         iniziativeNonSoddisfacenti:
           description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
           type: boolean          
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean 
         ipotesiCollegamento:
@@ -1275,7 +953,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale,prestazioniComprese]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale,prestazioniComprese]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -1305,7 +983,7 @@ components:
           type: boolean
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
         ipotesiCollegamento:
@@ -1321,7 +999,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale,prestazioniComprese]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale,prestazioniComprese]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -1351,7 +1029,7 @@ components:
           type: boolean
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
         ipotesiCollegamento:
@@ -1394,7 +1072,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,tipologiaLavoro,servizioPubblicoLocale]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,tipologiaLavoro,servizioPubblicoLocale]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1419,7 +1097,7 @@ components:
           example: ''           
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean 
         ipotesiCollegamento:
@@ -1433,7 +1111,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
+      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1456,7 +1134,7 @@ components:
           type: string
           pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''           
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
         ipotesiCollegamento:
@@ -1472,7 +1150,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
+      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1495,7 +1173,7 @@ components:
           type: string
           pattern: ^[a-zA-Z0-9]{20,22}$          
           example: ''           
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
         ipotesiCollegamento:
@@ -1509,7 +1187,7 @@ components:
     LottoP.23Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,lotIdentifier,acquisizioneCup]
+      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,lotIdentifier,acquisizioneCup]
       additionalProperties: false
       properties:
         cig:
@@ -1553,7 +1231,7 @@ components:
     LottoP.24Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [lotIdentifier,categorieMerceologiche, afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,acquisizioneCup]
+      required: [lotIdentifier,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,acquisizioneCup]
       additionalProperties: false
       properties:
         cig:
@@ -1641,7 +1319,7 @@ components:
     LottoP4BaseType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [lotIdentifier, regimeParticolare,afferenteInvestimentiPNRR,opzioni/rinnovi, categoria,tipologiaLavoro,servizioPubblicoLocale]
+      required: [lotIdentifier, regimeParticolare,afferenteInvestimentiPNRR,opzioniRinnovi, categoria,tipologiaLavoro,servizioPubblicoLocale]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1668,7 +1346,7 @@ components:
           example: ''  
         ipotesiCollegamento:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
-        opzioni/rinnovi:
+        opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
         afferenteInvestimentiPNRR:
@@ -1711,7 +1389,7 @@ components:
     LottoP6BaseType:
         description: Oggetto che riporta i dati del lotto all'interno della scheda di tracciabilità
         type: object
-        required: [lotIdentifier,regimeParticolare,lavoroOAcquistoPrevistoInProgrammazione, opzioni/rinnovi,afferenteInvestimentiPNRR,categoria,tipologiaLavoro,servizioPubblicoLocale]
+        required: [lotIdentifier,regimeParticolare,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi,afferenteInvestimentiPNRR,categoria,tipologiaLavoro,servizioPubblicoLocale]
         additionalProperties: false
         properties:
           servizioPubblicoLocale:
@@ -1743,7 +1421,7 @@ components:
             example: '' 
           ipotesiCollegamento:
             $ref: '#/components/schemas/IpotesiCollegamentoType'  
-          opzioni/rinnovi:
+          opzioniRinnovi:
             description: L’appalto prevede opzioni/rinnovi?
             type: boolean   
           afferenteInvestimentiPNRR:
