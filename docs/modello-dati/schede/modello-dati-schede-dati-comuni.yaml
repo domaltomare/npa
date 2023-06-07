@@ -322,7 +322,7 @@ components:
       #required: []
       additionalProperties: false
       properties: 
-        cf:
+        codiceFiscale:
           description: Codice fiscale
           type: string
         cognome:
@@ -362,7 +362,7 @@ components:
       #required: []
       additionalProperties: false
       properties: 
-        cf/piva:
+        codiceFiscalePartitaIva:
           description: Codice fiscale / Partita IVA 
           type: string
         denominazione:
@@ -403,7 +403,7 @@ components:
         nome:
           description: Nome
           type: string          
-        cfLegaleRappresentante:
+        codiceFiscaleLegaleRappresentante:
           description: Codice Fiscale del legale Rappresentante
           type: string          
     IncaricatoType:
@@ -420,10 +420,10 @@ components:
     AggiudicatarioType:
       description: Dati dell'aggiudicatario
       type: object
-      required: [cf,denominazione,ruolo,tipo,importo]
+      required: [codiceFiscale,denominazione,ruolo,tipo,importo]
       additionalProperties: false
       properties:
-        cf:
+        codiceFiscale:
           description: codice fiscale del soggetto interessato
           type: string
         denominazione: 
@@ -473,10 +473,10 @@ components:
     AggiudicatarioA1.35Type:
       description: Dati dell'aggiudicatario
       type: object
-      required: [cf,denominazione,ruolo,tipo,importo]
+      required: [codiceFiscale,denominazione,ruolo,tipo,importo]
       additionalProperties: false
       properties:
-        cf:
+        codiceFiscale:
           description: codice fiscale del soggetto interessato
           type: string
         denominazione: 
@@ -1637,7 +1637,7 @@ components:
       #required: []
       additionalProperties: false
       properties:
-        cf:
+        codiceFiscale:
           description: codice fiscale del soggetto interessato
           type: string
         denominazione: 
