@@ -286,3 +286,32 @@ components:
           type: string
           pattern: '[0-9]{10}'
           example: '0000247847'
+    StatoRichiestaDocumentoType: 
+      description: Oggetto che riporta i dati dello stato del documento di cui si é richiesta la produzione
+      type: object
+      additionalProperties: false
+      required:
+        - operatoreEconomico
+        - tipoDocumento
+        - stato
+      properties:
+        chiaveAccesso:
+          description: chiave di accesso del SA per accedere al FVOE
+          type: string
+          example: "507f1f77bcf86cd799439011"
+        operatoreEconomico:
+          $ref: '#/components/schemas/AnagraficaOEType' 
+        soggetto:
+          $ref: '#/components/schemas/AnagraficaOEType' 
+        tipoDocumento:
+          $ref: '#/components/schemas/TipoDocumentoEnum'
+        idRichiesta:
+          description: identificativo univoco della richiesta di recupero del documento 
+          type: string
+          example: "1789c793-bdbe-4e8c-aa7e-4117145c739b" 
+        stato:
+          $ref: '#/components/schemas/StatoRichiestaDocumentoEnum'  
+        idDocumento:
+          description: identificativo univoco del documento 
+          type: string
+          example: "507f1f77bcf86cd799439011"           
