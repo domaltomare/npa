@@ -496,13 +496,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/RichiediDocumentoResponse'
-          links:
-            RecuperaDocumentoFVOEIdLink:  
-              operationId: idDocumentoFVOEDettaglio
-              parameters:
-                idDocumento: '$response.body#/result.idDocumento'
-              description: >
-                Il valore di `idDocumento` restituito nella riposta può essere usato per richiamare `GET /recupera-documento-fvoe`.  
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -554,6 +547,13 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/StatoRichiestaDocumentoResponse'
+          links:
+            StatoRichiestaDocumentoFVOEIdLink:  
+              operationId: idDocumentoFVOEDettaglio
+              parameters:
+                idDocumento: '$response.body#/statoRichiestaDocumento.idDocumento'
+              description: >
+                Il valore di `idDocumento` restituito nella riposta può essere usato per richiamare `GET /recupera-documento-fvoe`.          
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -1065,8 +1065,7 @@ paths:
           required: true
           schema:
             type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
+            example: "CCCNNN00A01A000A"  
       responses:
         '200':
           description: Operazione terminato con successo
