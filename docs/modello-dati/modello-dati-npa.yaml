@@ -10,7 +10,7 @@ components:
         additionalProperties: false
         required: [versione,codice]
         properties:
-          idScheda:
+          _idScheda:
             $ref: '#/components/schemas/IdSchedaType'
           codice:
             $ref: '#/components/schemas/CodiceSchedaEnum'           
