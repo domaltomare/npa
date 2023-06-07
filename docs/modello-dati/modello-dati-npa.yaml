@@ -18,7 +18,7 @@ components:
             description: versione della scheda. necessaria al motore interno ANAC.
             type: string
             example: '1.0'
-          dataCreazione:
+          _dataCreazione:
             description: data creazione della scheda (A datetime specified by ISO 8601 as profiled by RFC 3339)
             type: string
             format: datetime
