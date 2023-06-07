@@ -8,7 +8,7 @@ components:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
         type: object
         additionalProperties: false
-        required: [schedaVersione,schedaCodice]
+        required: [versione,codice]
         properties:
           idScheda:
             $ref: '#/components/schemas/IdSchedaType'
