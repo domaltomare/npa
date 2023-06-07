@@ -26,9 +26,9 @@ components:
     SchedaM2.38Type:
       description: Scheda relativa alle modifiche contrattuali senza invio al TED - Avviso di modifica di un appalto — direttiva generaleArticolo 72, paragrafo 1, della direttiva 2014/24/UE
       type: object
-      required: [anacFormM2]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormM2:
+        anacForm:
           $ref: '#/components/schemas/AnacFormM2.38Type'
          

@@ -50,10 +50,10 @@ components:
     SchedaP2.18Type:
       description: Scheda di pubblicazione avviso per un bando di gara sottosoglia maggiore di 5K - Bando di gara — direttiva per il settore della difesa, regime ordinario. Articolo 30, paragrafo 2, della direttiva 2009/81/CE
       type: object
-      required: [anacFormP2,espd]
+      required: [anacForm,espd]
       additionalProperties: false
       properties:
-        anacFormP2:
+        anacForm:
           $ref: '#/components/schemas/AnacFormP2.18Type'
         espd:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'         

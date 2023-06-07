@@ -14,10 +14,10 @@ components:
     SchedaNAG1Type:
       description: Scheda di mancata aggiudicazione della gara - sopra soglia europea
       type: object
-      required: [anacFormNAG1]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormNAG1:
+        anacForm:
           $ref: '#/components/schemas/AnacFormNAG1Type'
         eform:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'          

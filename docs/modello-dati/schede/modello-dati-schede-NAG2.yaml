@@ -16,8 +16,8 @@ components:
     SchedaNAG2Type:
       description: Scheda di mancata aggiudicazione della gara - sotto soglia europea
       type: object
-      required: [anacFormNAG2]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormNAG2:
+        anacForm:
           $ref: '#/components/schemas/AnacFormNAG2Type' 

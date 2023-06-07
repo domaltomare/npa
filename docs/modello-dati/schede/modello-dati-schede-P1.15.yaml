@@ -7,7 +7,7 @@ components:
     SchedaP1.15Type:
       description: Scheda di pubblicazione avviso sull'esistenza di un sistema di qualificazione, con invio al TED dell'eform15. 
       type: object
-      required: [anacFormP1, eform]
+      required: [eform]
       additionalProperties: false
       properties:
         eform:

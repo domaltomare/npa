@@ -64,8 +64,8 @@ components:
     SchedaIR1Type:
       description: Scheda di istanza di recesso
       type: object
-      required: [anacFormIR1]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormIR1:
+        anacForm:
           $ref: '#/components/schemas/AnacFormIR1Type'

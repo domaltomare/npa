@@ -46,8 +46,8 @@ components:
     SchedaSO1Type:
       description: Scheda di sospensione
       type: object
-      required: [anacFormSO1]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormSO1:
+        anacForm:
           $ref: '#/components/schemas/AnacFormSO1Type'

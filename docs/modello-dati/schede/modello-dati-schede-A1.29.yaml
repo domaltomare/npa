@@ -20,10 +20,10 @@ components:
     SchedaA1.29Type:
       description: Scheda relativa all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso relativo all’appalto aggiudicato — direttiva generale, regime ordinario. Articolo 50 della direttiva 2014/24/UE con invio di eform29.
       type: object
-      required: [anacFormA1, eform]
+      required: [anacForm, eform]
       additionalProperties: false
       properties:
-        anacFormA1:
+        anacForm:
           $ref: '#/components/schemas/AnacFormA1.29Type'
         eform:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'           

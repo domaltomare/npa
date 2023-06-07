@@ -34,8 +34,8 @@ components:
     SchedaSTAQType:
       description: Scheda di Stipula AQ/Convenzione
       type: object
-      required: [anacFormSTAQ]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormSTAQ:
+        anacForm:
           $ref: '#/components/schemas/AnacFormSTAQType'

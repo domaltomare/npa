@@ -60,8 +60,8 @@ components:
     SchedaA3.3Type:
       description: Scheda di aggiudicazione relativa ai contratti esclusi - Adesione senza confronto competitivo
       type: object
-      required: [anacFormA3]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormA3:
+        anacForm:
           $ref: '#/components/schemas/AnacFormA3.3Type'

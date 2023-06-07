@@ -21,10 +21,10 @@ components:
     SchedaA1.33Type:
       description: Scheda relativa all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso di aggiudicazione di un appalto — direttiva generale, regime alleggerito. Articolo 75, paragrafo 2, della direttiva 2014/24/UE con invio di eform33.
       type: object
-      required: [anacFormA1, eform]
+      required: [anacForm, eform]
       additionalProperties: false
       properties:
-        anacFormA1:
+        anacForm:
           $ref: '#/components/schemas/AnacFormA1.33Type'
         eform:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         

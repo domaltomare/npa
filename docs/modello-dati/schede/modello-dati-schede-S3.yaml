@@ -26,8 +26,8 @@ components:
     SchedaS3Type:
       description: Scheda relativa agli incarichi tecnici e alle prestazioni progettuali.
       type: object
-      #required: []
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormS3:
+        anacForm:
           $ref: '#/components/schemas/AnacFormS3Type'        

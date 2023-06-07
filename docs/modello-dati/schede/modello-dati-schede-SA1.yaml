@@ -70,8 +70,8 @@ components:
     SchedaSA1Type:
       description: Scheda di avanzamento
       type: object
-      required: [anacFormSA1]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormSA1:
+        anacForm:
           $ref: '#/components/schemas/AnacFormSA1Type'          

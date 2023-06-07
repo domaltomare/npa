@@ -71,8 +71,8 @@ components:
     SchedaA3.1Type:
       description: Scheda di aggiudicazione relativa ai contratti esclusi generali
       type: object
-      required: [anacFormA3]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormA3:
+        anacForm:
           $ref: '#/components/schemas/AnacFormA3.1Type'

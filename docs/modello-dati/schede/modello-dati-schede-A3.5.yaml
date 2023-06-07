@@ -75,8 +75,8 @@ components:
     SchedaA3.5Type:
       description: Scheda di aggiudicazione relativa alla scelta del socio privato nella società mista.
       type: object
-      required: [anacFormA3]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormA3:
+        anacForm:
           $ref: '#/components/schemas/AnacFormA3.5Type'

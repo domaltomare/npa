@@ -41,10 +41,10 @@ components:
     SchedaP4.2Type:
       description: Scheda relativa alle adesioni AQ/convenzione con successivo confronto competitivo (es. proc. Negoziata) - Articolo 49 della direttiva 2014/24/UE e Articolo 69 della direttiva 2014/25/UE
       type: object
-      required: [anacFormP4,anacFormP4DatiBase]
+      required: [anacForm,anacFormP4DatiBase]
       additionalProperties: false
       properties:
-        anacFormP4:
+        anacForm:
           $ref: '#/components/schemas/AnacFormP4.2Type'      
         espd:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'         

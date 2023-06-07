@@ -18,10 +18,10 @@ components:
     SchedaA1.31Type:
       description: Scheda relativa all'aggiudicazione soprasoglia e sottosoglia con invio al TED - Avviso di aggiudicazione di una concessione — direttiva per il settore della difesa. Articolo 30, paragrafo 3, della direttiva 2009/81/CE con invio di eform31.
       type: object
-      required: [anacFormA1, eform]
+      required: [anacForm, eform]
       additionalProperties: false
       properties:
-        anacFormA1:
+        anacForm:
           $ref: '#/components/schemas/AnacFormA1.31Type'
         eform:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         

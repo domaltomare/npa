@@ -20,10 +20,10 @@ components:
     SchedaAD1.26Type:
       description: Scheda di affidamento diretto (EU), valida per i soprasoglia e sottoglia con invio al TED con eform26.
       type: object
-      required: [anacFormAD1.26, eform]
+      required: [anacForm, eform]
       additionalProperties: false
       properties:
-        anacFormAD1.26:
+        anacForm:
           $ref: '#/components/schemas/AnacFormAD1.26Type'
         eform:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'          

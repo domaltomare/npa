@@ -61,10 +61,10 @@ components:
     SchedaP3.2Type:
       description: Scheda di pubblicazione relativa ai contratti esclusi in Concessione o Contratti esclusi in Concessione con la tecnica dell'AQ
       type: object
-      required: [anacFormP3, anacFormP3DatiBase]
+      required: [anacForm, anacFormP3DatiBase]
       additionalProperties: false
       properties:
-        anacFormP3:
+        anacForm:
           $ref: '#/components/schemas/AnacFormP3.2Type' 
         espd:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'        

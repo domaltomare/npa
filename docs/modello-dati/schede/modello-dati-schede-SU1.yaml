@@ -51,8 +51,8 @@ components:
     SchedaSU1Type:
       description: Scheda di subappalto
       type: object
-      required: [anacFormSU1]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormSU1:
+        anacForm:
           $ref: '#/components/schemas/AnacFormSU1Type'

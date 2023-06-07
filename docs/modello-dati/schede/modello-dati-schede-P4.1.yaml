@@ -22,10 +22,10 @@ components:
     SchedaP4.1Type:
       description: Scheda relativa alle adesioni AQ/convenzione con successivo confronto competitivo (concessioni) - Articolo 31, paragrafo 3, della direttiva 2014/23/UE
       type: object
-      required: [anacFormP4]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormP4:
+        anacForm:
           $ref: '#/components/schemas/AnacFormP4.1Type'
         espd:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'             

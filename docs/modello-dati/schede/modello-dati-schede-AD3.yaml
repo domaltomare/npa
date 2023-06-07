@@ -73,10 +73,10 @@ components:
     SchedaAD3Type:
       description: Scheda di affidamento diretto (EU), valida per affidamento diretto < limite massimo dell'affidamento diretto, senza invio al TED.
       type: object
-      required: [anacFormAD3]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormAD3:
+        anacForm:
           $ref: '#/components/schemas/AnacFormAD3Type'
         espd:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'          

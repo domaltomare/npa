@@ -5,7 +5,7 @@ info:
 components:
   schemas:
     InvitatiType:
-      description: Elenco di soggetti invitati a presentare offerta.
+      description: Elenco di soggetti invitati che non hanno presentato offerta.
       type: object
       additionalProperties: false
       properties: 
@@ -16,7 +16,6 @@ components:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
           type: string
         invitati:
-          description: Dati relativi ai soggetti invitati a presentare offerta
           type: array
           items:
             $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/InvitatoType'  
@@ -32,46 +31,36 @@ components:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
           type: string
         partecipanti:
-          description: Dati relativi ai soggetti che hanno presentato offerta.
           type: array
           items:
             $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/PartecipanteType'              
-    AnacFormS2.InvitatiType:
-      description: Elenco di soggetti invitati a presentare offerta.
-      type: object
-      additionalProperties: false
-      properties:      
-        invitati:
-          description: Dati relativi ai soggetti invitati a presentare offerta
-          type: array
-          items:
-            $ref: '#/components/schemas/InvitatiType'
-    AnacFormS2.PartecipantiType:
-      description: Elenco di soggetti che hanno presentato offerta.
-      type: object
-      additionalProperties: false
-      properties: 
-        partecipanti:
-          description: Dati relativi ai partecipanti
-          type: array
-          items:          
-            $ref: '#/components/schemas/PartecipantiType'
     SchedaS2Type:
-      description: Elenco di soggetti invitati a presentare offerta o che hanno presentato offerta
+      description: Elenco di soggetti che hanno presentato offerta e di ulteriori invitati che non hanno presentato offerta.
       type: object
       additionalProperties: false
+      required: [anacForm]
       properties:
-        anacFormInvitati:
-          $ref: '#/components/schemas/AnacFormS2.InvitatiType'
-        anacFormPartecipanti:
-          $ref: '#/components/schemas/AnacFormS2.PartecipantiType'
-        dataInvito: 
-          description: Data della lettera di invito
-          type: string
-          format: datetime
-          example: '2022-01-23T12:02:05Z'
-        dataScadenzaPresentazioneOfferta: 
-          description: Data della scadenza di presentazione dell'offerta
-          type: string
-          format: datetime
-          example: '2022-01-23T12:02:05Z'            
+        anacForm:
+          type: object
+          additionalProperties: false
+          properties:
+            invitatiCheNonHannoPresentatoOfferta:
+              description: Dati relativi ai soggetti invitati che non hanno presentato offerta
+              type: array
+              items:
+                $ref: '#/components/schemas/InvitatiType'
+            partecipanti:
+              description: Dati relativi ai partecipanti
+              type: array
+              items:          
+                $ref: '#/components/schemas/PartecipantiType'              
+            dataInvito: 
+              description: Data della lettera di invito
+              type: string
+              format: datetime
+              example: '2022-01-23T12:02:05Z'
+            dataScadenzaPresentazioneOfferta: 
+              description: Data della scadenza di presentazione dell'offerta
+              type: string
+              format: datetime
+              example: '2022-01-23T12:02:05Z'            

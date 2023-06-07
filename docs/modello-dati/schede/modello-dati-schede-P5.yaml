@@ -58,8 +58,8 @@ components:
    SchedaP5Type:
       description: Scheda di tracciabilità.
       type: object
-      required: [anacFormP5]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormP5:
+        anacForm:
           $ref: '#/components/schemas/AnacFormP5Type'          

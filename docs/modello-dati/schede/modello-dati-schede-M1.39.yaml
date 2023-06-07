@@ -17,10 +17,10 @@ components:
     SchedaM1.39Type:
       description: Scheda relativa alle modifiche contrattuali con invio al TED - Avviso di modifica di un appalto — direttiva settoriale - Articolo 89, paragrafo 1, della direttiva 2014/25/UE con invio di eform39.
       type: object
-      required: [anacFormM1]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormM1:
+        anacForm:
           $ref: '#/components/schemas/AnacFormM1.39Type'
         eform:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'           

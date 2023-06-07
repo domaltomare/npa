@@ -39,8 +39,8 @@ components:
     SchedaAC1Type:
       description: Scheda di accordo bonario
       type: object
-      required: [anacFormAC1]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormAC1:
+        anacForm:
           $ref: '#/components/schemas/AnacFormAC1Type'

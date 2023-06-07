@@ -83,10 +83,10 @@ components:
     SchedaAD4Type:
       description: Scheda di adesione AQ/convenzione senza successivo confronto competitivo, senza invio al TED.
       type: object
-      required: [anacFormAD4]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormAD4:
+        anacForm:
           $ref: '#/components/schemas/AnacFormAD4Type'
         espd:
          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'          

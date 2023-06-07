@@ -22,8 +22,8 @@ components:
     SchedaM2.40Type:
       description: Scheda di modifica contrattuale - Avviso di modifica di un appalto — direttiva sulle concessioni - Articolo 43, paragrafo 1, della direttiva 2014/23/UE
       type: object
-      required: [anacFormM2]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormM2:
+        anacForm:
           $ref: '#/components/schemas/AnacFormM2.40Type'

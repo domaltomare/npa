@@ -62,8 +62,8 @@ components:
     SchedaAD5Type:
       description: Scheda relativa gli appalti di importo inferiore a 5K, senza invio al TED.
       type: object
-      required: [anacFormAD5]
+      required: [anacForm]
       additionalProperties: false
       properties:
-        anacFormAD5:
+        anacForm:
           $ref: '#/components/schemas/AnacFormAD5Type'
