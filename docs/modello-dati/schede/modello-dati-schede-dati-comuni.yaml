@@ -1516,7 +1516,18 @@ components:
           description: CIG della nuova procedura avviata
           type: string   
         quadroEconomicoConcessioniRideterminato:
-          $ref: '#/components/schemas/QuadroEconomicoConcessioniType'           
+          $ref: '#/components/schemas/QuadroEconomicoConcessioniType' 
+    AusiliariaType:
+      description: Dati del partecipante
+      type: object
+      additionalProperties: false
+      properties:    
+        cfAusiliaria:
+          description: Codice fiscale impresa ausiliaria
+          type: string
+        denominazioneAusiliaria:
+          description: Denominazione impresa ausiliaria
+          type: string          
     PartecipanteType:
       description: Dati del partecipante
       type: object
@@ -1540,12 +1551,11 @@ components:
           type: boolean
         tipologiaAvvalimento:
           $ref: '#/components/schemas/TipologiaAvvalimentoEnum' 
-        codiceFiscaleAusiliaria:
-          description: Codice fiscale impresa ausiliaria
-          type: string
-        denominazioneAusiliaria:
-          description: Denominazione impresa ausiliaria
-          type: string          
+        impreseAusiliarie:
+          description: Dati relativi alle imprese ausiliarie
+          type: array
+          items:
+            $ref: '#/components/schemas/AusiliariaType'     
     PrestazioneType:
       description: Dati relativi alle prestazioni progettuali e agli incarichi tecnici
       type: object
