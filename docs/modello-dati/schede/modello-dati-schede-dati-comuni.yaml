@@ -261,7 +261,7 @@ components:
       #required: []
       additionalProperties: false
       properties:
-        cf:
+        codiceFiscale:
           description: codice fiscale del soggetto interessato
           type: string
         denominazione: 
