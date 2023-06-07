@@ -215,7 +215,7 @@ paths:
       parameters:
         - in: query  
           name: chiaveAccesso
-          description: chiave per accedere al FVOE
+          description: chiave dell'SA necessaria per accedere al FVOE
           schema:
             type: string
             example: "507f1f77bcf86cd799439011"
@@ -461,7 +461,7 @@ paths:
       parameters:
         - in: query
           name: chiaveAccesso
-          description: chiave di accesso per poter accedere al FVOE.
+          description: chiave dell'SA necessaria per accedere al FVOE.
           required: true
           schema:
             type: string
@@ -517,13 +517,13 @@ paths:
     get:
       tags:
         - SA
-      summary: API Rest per verificare l'esito della richiesta del documento. SINCRONO. SERVIZIO IN FASE DI DEFINIZIONE
-      description: API Rest per il recupero dell'esito della richiesta del documento. SINCRONO. SERVIZIO IN FASE DI DEFINIZIONE
+      summary: API Rest per verificare lo stato della richiesta di generazione del documento. SINCRONO. SERVIZIO IN FASE DI DEFINIZIONE
+      description: API Rest per il recupero dello stato in cui si trova il documento di cui si é richiesto la generazione dagli enti certificatori. SINCRONO. SERVIZIO IN FASE DI DEFINIZIONE
       operationId: idDocumentoVerificaRichiestaFVOE
       parameters:
         - in: query
           name: chiaveAccesso
-          description: chiave di accesso per poter accedere al FVOE.
+          description: chiave dell'SA necessaria per accedere al FVOE.
           required: true
           schema:
             type: string
@@ -1218,14 +1218,16 @@ components:
     RichiestaAccessoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/RichiestaAccessoType'
     ContentDocumentType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/ContentDocumentType'        
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/ContentDocumentType' 
+    StatoRichiestaDocumentoType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/StatoRichiestaDocumentoType'
     RichiestaAccessoRequest:
       allOf: # estende il modello dati RichiestaAccessoType
         - $ref: '#/components/schemas/RichiestaAccessoType'
       example:
         dataInizioAutorizzazione: "2022-01-23T12:02:05Z"
         dataFineAutorizzazione: "2023-01-23T12:02:05Z"
-        anagraficaOE:
+        operatoriEconomici:
           - codiceFiscale: "MFNFRC87D04H501C"
           - codiceFiscale: "80140110588"
         appalto:
@@ -1397,7 +1399,7 @@ components:
             idAutorizzazione: "1789c793-bdbe-4e8c-aa7e-4117145c739b"
             dataInizio: '2022-01-23T12:02:05Z'
             dataFine: '2023-01-23T12:02:05Z'
-            anagraficaOE:
+            operatoreEconomico:
               codiceFiscale: "MFNFRC87D04H501C"
             appalto:
               idAppalto: "ACD4546346A"
@@ -1416,32 +1418,12 @@ components:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       properties:
-        autorizzazione:
-          $ref: '#/components/schemas/AutorizzazioneAccessoType'
-        chiaveAccesso:
-          description: identificativo univoco del Fascicolo
-          type: string
-          example: "507f1f77bcf86cd799439011"
-        operatoreEconomico:
-          $ref: '#/components/schemas/AnagraficaOEType' 
-        soggetto:
-          $ref: '#/components/schemas/AnagraficaOEType' 
-        tipoDocumento:
-          $ref: '#/components/schemas/TipoDocumentoEnum'
-        idRichiesta:
-          description: identificativo univoco della richiesta
-          type: string
-          example: "1789c793-bdbe-4e8c-aa7e-4117145c739b" 
-        stato:
-          $ref: '#/components/schemas/StatoRichiestaDocumentoEnum'  
-        idDocumento:
-          description: identificativo univoco del documento 
-          type: string
-          example: "507f1f77bcf86cd799439011" 
+        statoRichiestaDocumento:
+          $ref: '#/components/schemas/StatoRichiestaDocumentoType'
       example: 
         status: 200
         title: "Operazione Effettuata"
-        esitoElaborazione:
+        statoRichiestaDocumento:
             chiaveAccesso:
                "507f1f77bcf86cd799439011"
             operatoreEconomico:
