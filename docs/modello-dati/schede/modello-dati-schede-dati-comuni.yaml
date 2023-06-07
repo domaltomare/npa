@@ -1522,10 +1522,10 @@ components:
       type: object
       additionalProperties: false
       properties:    
-        cfAusiliaria:
+        codiceFiscale:
           description: Codice fiscale impresa ausiliaria
           type: string
-        denominazioneAusiliaria:
+        denominazione:
           description: Denominazione impresa ausiliaria
           type: string          
     PartecipanteType:
