@@ -8,22 +8,15 @@ components:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
         type: object
         additionalProperties: false
+        required: [schedaVersione,schedaCodice]
         properties:
           idScheda:
             $ref: '#/components/schemas/IdSchedaType'
-          _idStatoScheda:
-            description: identificativo dello stato della Scheda 
-            type: string
-            example: '1'
-          _origineScheda:
-            description: origine Scheda 
-            type: string
-            example: ''
-          _schedaCodice:
+          schedaCodice:
             description: codice della scheda.
             type: string
             example: 'P1.10'            
-          _schedaVersione:
+          schedaVersione:
             description: versione della scheda. necessaria al motore interno ANAC.
             type: string
             example: '1.0'
