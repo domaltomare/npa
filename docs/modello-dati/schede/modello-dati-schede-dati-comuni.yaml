@@ -762,7 +762,7 @@ components:
       allOf: # estende la classe LottoBaseType
         - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,prestazioniComprese]
+      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,prestazioniComprese,ccnl]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -785,6 +785,9 @@ components:
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
         opzioniRinnovi:
@@ -803,7 +806,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,prestazioniComprese]
+      required: [regimeParticolare,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,prestazioniComprese,ccnl]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -823,6 +826,9 @@ components:
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string          
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
         opzioniRinnovi:
@@ -841,7 +847,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,contrattiDisposizioniParticolari,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
+      required: [categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,contrattiDisposizioniParticolari,ripetizioniEConsegneComplementari,servizioPubblicoLocale,ccnl]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -863,7 +869,10 @@ components:
           type: boolean
         iniziativeNonSoddisfacenti:
           description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean          
+          type: boolean 
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string          
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
@@ -880,7 +889,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
+      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,ripetizioniEConsegneComplementari,servizioPubblicoLocale,ccnl]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -902,7 +911,10 @@ components:
           type: boolean
         iniziativeNonSoddisfacenti:
           description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean          
+          type: boolean 
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string          
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
@@ -919,7 +931,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,servizioPubblicoLocale]
+      required: [contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,lavoroOAcquistoPrevistoInProgrammazione,modalitaAcquisizione,servizioPubblicoLocale,ccnl]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -938,7 +950,10 @@ components:
           type: boolean
         iniziativeNonSoddisfacenti:
           description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean          
+          type: boolean    
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string          
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean 
@@ -953,7 +968,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale,prestazioniComprese]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale,prestazioniComprese,ccnl]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -981,6 +996,9 @@ components:
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string          
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
         opzioniRinnovi:
@@ -999,7 +1017,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale,prestazioniComprese]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale,prestazioniComprese,ccnl]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -1027,6 +1045,9 @@ components:
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string          
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
         opzioniRinnovi:
@@ -1043,7 +1064,7 @@ components:
     LottoP.18Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [lotIdentifier, categoria,sceltaContraente,oggettoLotto]
+      required: [lotIdentifier, categoria,sceltaContraente,oggettoLotto,ccnl]
       additionalProperties: false
       properties:
         cig:
@@ -1065,14 +1086,17 @@ components:
           type: array
           items:
             type: string
-            pattern: ^[a-zA-Z0-9]{15}$          
+            pattern: ^[a-zA-Z0-9]{15}$  
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string            
            
     LottoP.19Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,tipologiaLavoro,servizioPubblicoLocale]
+      required: [lavoroOAcquistoPrevistoInProgrammazione,contrattiDisposizioniParticolari,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,tipologiaLavoro,servizioPubblicoLocale,ccnl]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1094,7 +1118,10 @@ components:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
           pattern: ^[a-zA-Z0-9]{20,22}$          
-          example: ''           
+          example: ''   
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string          
         tipologiaLavoro:
           $ref: '#/components/schemas/TipologiaLavoroType'
         opzioniRinnovi:
@@ -1111,7 +1138,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
+      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale,ccnl]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1137,6 +1164,9 @@ components:
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string          
         ipotesiCollegamento:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
@@ -1150,7 +1180,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale]
+      required: [modalitaAcquisizione,contrattiDisposizioniParticolari,lavoroOAcquistoPrevistoInProgrammazione,categorieMerceologiche, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale,ccnl]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1176,6 +1206,9 @@ components:
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
+        ccnl:
+          description: contratto collettivo nazionale lavoro
+          type: string          
         ipotesiCollegamento:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
