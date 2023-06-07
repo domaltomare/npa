@@ -12,11 +12,9 @@ components:
         properties:
           idScheda:
             $ref: '#/components/schemas/IdSchedaType'
-          schedaCodice:
-            description: codice della scheda.
-            type: string
-            example: 'P1.10'            
-          schedaVersione:
+          codice:
+            $ref: '#/components/schemas/CodiceSchedaEnum'           
+          versione:
             description: versione della scheda. necessaria al motore interno ANAC.
             type: string
             example: '1.0'
@@ -581,3 +579,5 @@ components:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoOperazioneEnum'        
       EsitoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoEnum'
+      CodiceSchedaEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/CodiceSchedaEnum'        
