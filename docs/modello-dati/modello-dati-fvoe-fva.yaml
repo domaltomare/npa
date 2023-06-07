@@ -24,6 +24,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneDocumentoEnum'
     AppaltoType : 
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
+    StatoRichiestaDocumentoEnum:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoRichiestaDocumentoEnum'
     FascicoloType: 
       description: Oggetto che riporta i dati del Fascicolo generico
       type: object
