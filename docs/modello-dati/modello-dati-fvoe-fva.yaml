@@ -94,7 +94,7 @@ components:
       type: object
       additionalProperties: false
       properties:
-        anagraficaOE: 
+        operatoreEconomico: 
           $ref: '#/components/schemas/AnagraficaOEType'
     FVAType:
       allOf: # estende lo schema dati di FascicoloType
@@ -198,7 +198,7 @@ components:
             type: string
             format: uui
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        anagraficaOE:
+        operatoreEconomico:
           $ref: '#/components/schemas/AnagraficaOEType'
         appalto:
           $ref: '#/components/schemas/AppaltoType'  
@@ -231,7 +231,7 @@ components:
       type: object
       additionalProperties: false
       required:
-        - anagraficaOE
+        - operatoriEconomici
         - appalto
         - dataInizioAutorizzazione
       properties:
@@ -250,7 +250,7 @@ components:
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'
-        anagraficaOE: 
+        operatoriEconomici: 
           type: array
           minItems: 1
           items:
