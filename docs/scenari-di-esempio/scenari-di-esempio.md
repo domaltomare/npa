@@ -24,20 +24,21 @@ La tabella di orchestrazione riporta, tra le altre, le indicazioni per gestire c
 
 # 3 Esempi di flusso
 ## 3.1 Flusso tipo
-il flusso di un appalto tipo può essere organizzato come segue:
+il flusso di un appalto è essere organizzato come segue:
 
-| Step | Azione | Servizio e sequenza di operazioni | Payload | Nota |
+| Step | Descrizione | Servizio | Payload | Nota |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| 1 | pubblicazione di un bando o avviso di indizione| | Una delle schede che consentono l’avvio della procedura. Sulla tabella di orchestrazione sono contrassegnate dalla colonna||
-| 2 | S1 per i partecipanti che hanno manifestato interesse alla partecipazione |||
-| 3 |  sottoscrizione del contratto | | | |
-| 4 |  inizio esecuzione | | | |
-| 5 | monitoraggio esecuzione | | | |
-| 6 | inizio esecuzione | | | |
-| 7 | conclusione | | | |
+| 1 | Creazione di un bando o avviso di indizione| comunicaAppalto <br>operazioni:<br> <ul><li>crea-appalto</li><li>conferma-appalto</li></ul> |  Una delle schede dove schedaIndizione = "SI".||
+| 2 | Pubblicazione di un bando o avviso di indizione| pubblicaAvviso <br>operazioni:<br> <ul><li>pubblica-avviso</li></ul> |||
+| 3 | Comunicazione partecipanti | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | scheda S2 | |
+| 4 | Comunicazione esito | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | | |
+| 3 | Sottoscrizione del contratto | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | | |
+| 4 | Inizio esecuzione | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | | |
+| 5 | Monitoraggio esecuzione | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | | |
+| 6 | Conclusione | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | | |
 
 ## 3.2 - scenari di esempio
-Negli scenari successivi vengono affrontati i casi di dettaglio e gli scenari alternativi possibili per ciascuno step
+Nei paragrafi successivi vengono affrontati i principali casi e gli scenari alternativi possibili nel flusso 
 
 ### 3.2.1 Richiesta CIG e pubblicazione su TED e sistema nazionale
 
