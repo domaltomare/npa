@@ -130,6 +130,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'     
       description:  Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [oggettoPrincipaleContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json)
+    OggettoContrattoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: '#/components/schemas/TipologicaSchemaType'     
+      description:  Oggetto del contratto - fare riferimento ai valori contenuti nel file [oggettoContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoContratto.json)      
     EsitoOperazioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'   
