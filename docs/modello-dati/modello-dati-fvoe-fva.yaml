@@ -293,8 +293,10 @@ components:
       type: object
       additionalProperties: false
       required:
+        - chiaveAccesso
         - operatoreEconomico
         - tipoDocumento
+        - idRichiesta
         - stato
       properties:
         chiaveAccesso:
