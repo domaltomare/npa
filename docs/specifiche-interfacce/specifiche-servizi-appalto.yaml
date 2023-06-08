@@ -828,12 +828,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Operazione terminato con successo. Viene restituito l'idAvviso generato da ANAC
-          headers: *ratelimit_headers
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ModificaAvvisoResponse'
+            $ref: '#/components/responses/200AckResponse'
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -860,12 +855,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Operazione terminato con successo. Viene restituito l'idAvviso generato da ANAC
-          headers: *ratelimit_headers
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/RettificaAvvisoResponse'
+            $ref: '#/components/responses/200AckResponse'
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -2405,35 +2395,7 @@ components:
       example:
         detail: "Cancellazione eseguita con successo"
         status: 200
-        title: "Operazione Effettuata"  
-    ModificaAvvisoResponse:
-      description: Risposta all'operazione Modifica Avviso
-      allOf: # estende la classe BaseResponse
-        - $ref: '#/components/schemas/BaseResponse'
-      type: object
-      additionalProperties: false
-      required:  # List the required properties here
-        - idAvviso
-      properties:
-        idAvviso:
-          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-    RettificaAvvisoResponse:
-      description: Risposta all'operazione Rettifica Avviso
-      allOf: # estende la classe BaseResponse
-        - $ref: '#/components/schemas/BaseResponse'
-      type: object
-      additionalProperties: false
-      required:  # List the required properties here
-        - idAvviso
-      properties:
-        idAvviso:
-          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
+        title: "Operazione Effettuata"
   securitySchemes:
     apiKeyAuth:
       type: apiKey
