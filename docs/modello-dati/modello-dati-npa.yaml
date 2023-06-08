@@ -197,19 +197,27 @@ components:
         allOf: # estende lo schema dati di TipologicaType
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-common.yaml#/components/schemas/TipologicaSchemaType'
       AnagraficaType:
-        description: oggetto generico dell'anagrafica
+        description: Oggetto generico dell'anagrafica
         type: object
         additionalProperties: false
+        properties:
+          codiceFiscale:
+            description: Codice fiscale del soggetto
+            type: string
+            example: 'MRORSS77T05E472I'
       RuoloType:
         description: ruolo
         type: object
         additionalProperties: false
-      AnagraficaSoggettoType:
+      SoggettoType:
         allOf: # estende la classe AnagraficaType
           - $ref: '#/components/schemas/AnagraficaType'
         description: Oggetto specifico dell'anagrafica
         type: object
         additionalProperties: false
+        properties:
+          ruolo:  
+            $ref: '#/components/schemas/TipoRuoloEnum'
       LottoType:
         description: Oggetto che riporta i dati del lotto
         type: object
@@ -584,4 +592,6 @@ components:
       EsitoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoEnum'
       CodiceSchedaEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/CodiceSchedaEnum'        
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/CodiceSchedaEnum'   
+      TipoRuoloEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoRuoloEnum'
