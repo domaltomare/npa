@@ -926,7 +926,13 @@ paths:
           schema:
             type: string
             format: datetime
-          example: '2015-05-28T14:07:17Z'  
+          example: '2015-05-28T14:07:17Z' 
+        - in: query
+          name: datiAggiuntivi
+          description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON. Alternativo a tutti i campi filtro ad eccezione del codiceSA
+          schema:
+            type: string
+          example: "{id=45, { persona{codice=45} } }"    
         - in: query
           name: page
           description: numero della pagina da visualizzare.
