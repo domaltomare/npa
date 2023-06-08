@@ -196,8 +196,8 @@ components:
       DatiTipologicaType:
         allOf: # estende lo schema dati di TipologicaType
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-common.yaml#/components/schemas/TipologicaSchemaType'
-      AnagraficaType:
-        description: Oggetto generico dell'anagrafica
+      SoggettoType:
+        description: Oggetto generico del soggetto
         type: object
         additionalProperties: false
         properties:
@@ -205,19 +205,16 @@ components:
             description: Codice fiscale del soggetto
             type: string
             example: 'MRORSS77T05E472I'
+          ruolo:  
+            $ref: '#/components/schemas/TipoRuoloEnum'
+          servizio:
+            $ref: '#/components/schemas/TipoServizioSoggettoEnum'
+          operazione: 
+             $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'
       RuoloType:
         description: ruolo
         type: object
         additionalProperties: false
-      SoggettoType:
-        allOf: # estende la classe AnagraficaType
-          - $ref: '#/components/schemas/AnagraficaType'
-        description: Oggetto specifico dell'anagrafica
-        type: object
-        additionalProperties: false
-        properties:
-          ruolo:  
-            $ref: '#/components/schemas/TipoRuoloEnum'
       LottoType:
         description: Oggetto che riporta i dati del lotto
         type: object
@@ -595,3 +592,7 @@ components:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/CodiceSchedaEnum'   
       TipoRuoloEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoRuoloEnum'
+      TipoServizioSoggettoEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoServizioSoggettoEnum'
+      TipoOperazioneSoggettoEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOperazioneSoggettoEnum'         
