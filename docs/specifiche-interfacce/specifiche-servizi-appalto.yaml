@@ -679,19 +679,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Operazione terminato con successo. Se previsto viene restituito l'idAvviso generato da ANAC.
-          headers: *ratelimit_headers
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ConfermaAppaltoResponse'
-          links:
-            StatoAvvisoIdLink:  
-              operationId: idAvvisoStato
-              parameters:
-                idAvviso: '$response.body#/idAvviso'
-              description: >
-                Il valore di `idAvviso` restituito nella riposta può essere usato per richiamare `GET /stato-avviso`.
+            $ref: '#/components/responses/200AckResponse'
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -1407,25 +1395,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Operazione terminato con successo. Se previsto Viene restituito l'idAvviso generato da ANAC
-          headers: *ratelimit_headers
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ConfermaSchedaResponse'
-          links:
-            StatoAvvisoIdLink:  
-              operationId: idAvvisoStato
-              parameters:
-                idAvviso: '$response.body#/idAvviso'
-              description: >
-                Il valore di `idAvviso` restituito nella riposta può essere usato per richiamare `GET /stato-avviso`.  
-            PubblicaAvvisoIdLink:  
-              operationId: idAvvisoPubblica
-              parameters:
-                idAvviso: '$response.body#/idAvviso'
-              description: >
-                Il valore di `idAvviso` restituito nella riposta può essere usato per richiamare `GET /pubblica-avviso`.          
+            $ref: '#/components/responses/200AckResponse'           
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -2385,15 +2355,6 @@ components:
       example:
         status: 200
         title: "Richiesta acquisita"
-    ConfermaAppaltoResponse:
-      description: Risposta all'operazione Conferma Appalto
-      allOf: # estende la classe BaseResponse
-        - $ref: '#/components/schemas/BaseResponse'
-      type: object
-      additionalProperties: false
-      example:
-        status: 200
-        title: "Operazione Effettuata"
     CreaSchedaResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2427,16 +2388,7 @@ components:
         detail: "Sostituzione eseguita con successo"
         status: 200
         title: "Operazione Effettuata"
-        idScheda: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"    
-    ConfermaSchedaResponse:
-      description: Risposta all'operazione Conferma Scheda
-      allOf: # estende la classe BaseResponse
-        - $ref: '#/components/schemas/BaseResponse'
-      type: object
-      additionalProperties: false
-      example:
-        status: 200
-        title: "Operazione Effettuata"
+        idScheda: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     ConfermaPianoResponse:
       description: Risposta all'operazione Conferma Piano
       allOf: # estende la classe BaseResponse
@@ -2445,7 +2397,7 @@ components:
       additionalProperties: false
       example:
         status: 200
-        title: "Operazione Effettuata" 
+        title: "Richiesta acquisita" 
     CancellaSchedaResponse:
       description: Risposta all'operazione Cancella Scheda
       allOf: # estende lo schema dati di BaseResponse
