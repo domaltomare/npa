@@ -23,15 +23,15 @@ La tabella di orchestrazione riporta, tra le altre, le indicazioni per gestire c
 | dataFine | Data dalla quale il sistema non accetta questa versione della scheda |
 
 # 3 Esempi di flusso
-## 3.1 Flusso tipo
-il flusso di un appalto è essere organizzato come segue:
+## 3.1 Flusso minimale
+Il flusso per la comunicazione dei dati relativi ad una procedura prevede, nel caso più essenziale, i passi seguenti:
 
 | Step | Descrizione | Servizio | Payload | Nota |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| 1 | Creazione di un bando o avviso di indizione| comunicaAppalto <br>operazioni:<br> <ul><li>crea-appalto</li><li>conferma-appalto</li></ul> |  Una delle schede dove schedaIndizione = "SI".||
-| 2 | Pubblicazione di un bando o avviso di indizione| pubblicaAvviso <br>operazioni:<br> <ul><li>pubblica-avviso</li></ul> |||
-| 3 | Comunicazione partecipanti | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | scheda S2 | |
-| 4 | Comunicazione esito | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | | |
+| 1 | Creazione di un bando o avviso di indizione| comunicaAppalto <br>operazioni:<br> <ul><li>crea-appalto</li><li>conferma-appalto</li></ul> |  Una delle schede dove schedaIndizione = "SI".| Tutte le schede di indizione prevedono l'invio di un documento ESPD di tipo request, nel caso si tratti di una procedura oltre la soglia europea è necessaria la trasmissione della eForm coerente con il tipo di procedura scelto |
+| 2 | Pubblicazione di un bando o avviso di indizione| pubblicaAvviso <br>operazioni:<br> <ul><li>pubblica-avviso</li></ul> | L'identificativo dell'avviso ottenuto allo step 1 | Il sistema effettua la pubblicazione a livello nazionale e, se previsto, verso il TED nelle modalità previste |
+| 3 | Comunicazione partecipanti | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | scheda S2 | L'invio della scheda S2 attiva le funzioni erogate dal servizio FVOE per i soli Operatori Economici riportati in elenco |
+| 4 | Comunicazione esito | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | Una delle schede previste per la fasi: "affidamento", "aggiudicazione" | L'invio di una scheda di mancata aggiudicazione NAG1, NAG2 termina la procedura |
 | 3 | Sottoscrizione del contratto | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | | |
 | 4 | Inizio esecuzione | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | | |
 | 5 | Monitoraggio esecuzione | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | | |
