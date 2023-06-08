@@ -784,27 +784,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/CigListaResponse' 
-            application/xml:
-              schema:
-                description: Risposta generica servizio
-                type: object
-                additionalProperties: false
-                properties:
-                  code:
-                    description: codice di ritorno dell'operazione 
-                    type: integer
-                    format: int32
-                    example: 200
-                  type:
-                    description: descrizione dell'esito dell'operazione eseguita
-                    type: string
-                    example: operazione terminata con successo
-                  message:
-                    description: messaggio di errore in caso di operazione non venga eseguita correttamente  
-                    type: string
-                xml:
-                  name: '##default'
+                $ref: '#/components/schemas/CigListaResponse'
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -1537,26 +1517,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TipologicaListaResponse' 
-            application/xml:
-              schema:
-                description: Risposta generica servizio
-                type: object
-                additionalProperties: false
-                properties:
-                  code:
-                    description: codice di ritorno dell'operazione 
-                    type: integer
-                    format: int32
-                    example: 200
-                  type:
-                    description: descrizione dell'esito dell'operazione eseguita
-                    type: string
-                    example: operazione terminata con successo
-                  message:
-                    description: messaggio di errore in caso di operazione non venga eseguita correttamente  
-                    type: string
-                xml:
-                  name: '##default'
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -1616,27 +1576,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/TipologicaResponse' 
-            application/xml:
-              schema:
-                description: Risposta generica servizio
-                type: object
-                additionalProperties: false
-                properties:
-                  code:
-                    description: codice di ritorno dell'operazione 
-                    type: integer
-                    format: int32
-                    example: 200
-                  type:
-                    description: descrizione dell'esito dell'operazione eseguita
-                    type: string
-                    example: operazione terminata con successo
-                  message:
-                    description: messaggio di errore in caso di operazione non venga eseguita correttamente  
-                    type: string
-                xml:
-                  name: '##default'
+                $ref: '#/components/schemas/TipologicaResponse'
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -1674,27 +1614,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/TipologicaItemResponse' 
-            application/xml:
-              schema:
-                description: Risposta generica servizio
-                type: object
-                additionalProperties: false
-                properties:
-                  code:
-                    description: codice di ritorno dell'operazione 
-                    type: integer
-                    format: int32
-                    example: 200
-                  type:
-                    description: descrizione dell'esito dell'operazione eseguita
-                    type: string
-                    example: operazione terminata con successo
-                  message:
-                    description: messaggio di errore in caso di operazione non venga eseguita correttamente  
-                    type: string
-                xml:
-                  name: '##default'
+                $ref: '#/components/schemas/TipologicaItemResponse'
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -2114,7 +2034,7 @@ components:
         servizio:  
           $ref: '#/components/schemas/TipoServizioSoggettoEnum'
         operazione:  
-          $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'          
+          $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'      
         dataInizio: 
           description: Data di inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
           type: string
