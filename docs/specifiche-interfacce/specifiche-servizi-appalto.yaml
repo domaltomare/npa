@@ -349,25 +349,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Operazione terminato con successo. Se previsto viene restituito l'idAvviso generato da ANAC.
-          headers: *ratelimit_headers
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ConfermaPianoResponse'
-          links:
-            StatoAvvisoIdLink:  
-              operationId: idAvvisoStato
-              parameters:
-                idAvviso: '$response.body#/idAvviso'
-              description: >
-                Il valore di `idAvviso` restituito nella riposta può essere usato per richiamare `GET /stato-avviso`.  
-            PubblicaAvvisoIdLink:  
-              operationId: idAvvisoPubblica
-              parameters:
-                idAvviso: '$response.body#/idAvviso'
-              description: >
-                Il valore di `idAvviso` restituito nella riposta può essere usato per richiamare `GET /pubblica-avviso`.         
+            $ref: '#/components/responses/200AckResponse'        
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
