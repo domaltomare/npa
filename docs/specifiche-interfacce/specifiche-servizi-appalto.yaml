@@ -1617,6 +1617,7 @@ paths:
         - in: query    
           name: idAppalto
           description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by FC4122).
+          required: true
           schema:
             type: string
             format: uuid
@@ -1628,8 +1629,8 @@ paths:
             type: string
             example: '9050626CD6'
         - in: query
-          name: codice
-          description: identificativo univoco del soggetto
+          name: codiceFiscale
+          description: codice fiscale del soggetto
           schema:
             type: string
             example: 'RSSMRA94E07A511G'
@@ -1676,20 +1677,6 @@ paths:
             type: string
             format: datetime
           example: '2015-05-28T14:07:17Z'
-        - in: query
-          name: page
-          description: numero della pagina da visualizzare
-          schema:
-            type: integer
-            format: int32
-            default: 1
-        - in: query  
-          name: perPage
-          description: numero di elementi per pagina
-          schema:
-            type: integer
-            format: int32
-            default: 20
       responses:
         '200':
           description: Operazione terminato con successo
@@ -1959,8 +1946,8 @@ components:
       type: object
       additionalProperties: false
       properties:
-        codice:
-          description: identificativo univoco del soggetto.
+        codiceFiscale:
+          description: codice fiscale del soggetto.
           type: string
           example: "AAA345FRT565"
         idAppalto:
@@ -2119,9 +2106,8 @@ components:
           items:
             $ref: '#/components/schemas/AppaltoType'
     SoggettoListaResponse :
-      allOf: # estende la classe BaseResponse e PaginazioneType
+      allOf: # estende la classe BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
-        - $ref: '#/components/schemas/PaginazioneType'
       description: Oggetto generico di ritorno di una risposta con paginazione
       type: object
       additionalProperties: false
