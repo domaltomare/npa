@@ -211,6 +211,16 @@ components:
             $ref: '#/components/schemas/TipoServizioSoggettoEnum'
           operazione: 
              $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'
+          dataInizio:
+            description: data inizio incarico soggetto (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+          dataFine:
+            description: data fine incarico soggetto (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
       RuoloType:
         description: ruolo
         type: object
