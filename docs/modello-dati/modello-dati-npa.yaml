@@ -231,6 +231,8 @@ components:
             format: decimal
           oggettoPrincipaleContratto:
             $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
+          oggettoContratto:
+            $ref: '#/components/schemas/OggettoContrattoEnum'            
           appalto:
             $ref: '#/components/schemas/AppaltoBaseType' 
           #avvisi: 
@@ -575,6 +577,8 @@ components:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoContrattoEnum'    
       OggettoPrincipaleContrattoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoPrincipaleContrattoEnum'
+      OggettoContrattoEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoContrattoEnum'        
       EsitoOperazioneEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoOperazioneEnum'        
       EsitoEnum:
