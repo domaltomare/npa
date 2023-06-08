@@ -1906,8 +1906,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
     PianoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PianoType'
-    AnagraficaSoggettoType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AnagraficaSoggettoType'
+    SoggettoType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SoggettoType'
     PaginazioneType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PaginazioneType'
     AvvisoType:
@@ -2130,7 +2130,7 @@ components:
           description: risposta di una lista di soggetti incaricati. SINCRONO
           type: array
           items:
-            $ref: '#/components/schemas/AnagraficaSoggettoType'        
+            $ref: '#/components/schemas/SoggettoType'        
     PianoListaResponse:
       allOf: # estende la classe BaseResponse e PaginazioneType
         - $ref: '#/components/schemas/BaseResponse'
