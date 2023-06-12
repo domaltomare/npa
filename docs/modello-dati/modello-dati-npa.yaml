@@ -525,14 +525,11 @@ components:
           - $ref: '#/components/schemas/EsitoOperazioneAvvisoType'      
           - $ref: '#/components/schemas/EsitoOperazioneContrattoType'      
       EsitoOperazioneBaseType:
-        allOf: # estende la classe EsitoOperazioneEnum
-          - $ref: '#/components/schemas/EsitoOperazioneEnum'
         type: object
         additionalProperties: false
         required:  # List the required properties here
-          - codice
-          - descrizione
           - esito
+          - dettaglio
           - dataControllo
         properties:
           esito:
@@ -544,19 +541,12 @@ components:
             example: '2022-01-23T12:02:05Z'
           dettaglio:
             description: descrizione dettagliata dell'esito dell'operazione
-            type: string
+            $ref: '#/components/schemas/EsitoOperazioneEnum'
           errori: 
             description: elenco degli errori
             type: array
             items:
               $ref: '#/components/schemas/ErroriEnum'
-        example:
-            codice: '01'
-            descrizione: 
-              it: 'AVVISO PUBBLICATO'
-              en: 'AVVISO PUBBLICATO'
-            dataControllo: '2022-01-23T12:02:05Z'
-            esito: 'OK'
       EsitoOperazioneAvvisoType:
         allOf: # estende la classe EsitoOperazioneBaseType
           - $ref: '#/components/schemas/EsitoOperazioneBaseType'
