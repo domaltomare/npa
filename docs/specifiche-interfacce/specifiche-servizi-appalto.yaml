@@ -1889,6 +1889,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOperazioneSoggettoEnum'      
     TipoRuoloEnum:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoRuoloEnum'
+    ErroriEnum:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'      
     AppaltoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
     PianoType:
@@ -2295,18 +2297,11 @@ components:
       allOf: # estende la classe BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       properties:
-        errori:
+        errori: 
           description: elenco degli errori
-          type: object
-          properties:
-            codice:
-              type: string
-              example: '001'
-            descrizione:
-              maxLength: 4096
-              pattern: ^.{0,1024}$
-              type: string
-              example: 'Non è stato indicato il campo Motivazione richiesta CIG.'        
+          type: array
+          items:
+            $ref: '#/components/schemas/ErroriEnum'
     AckResponse:
       allOf: # estende la classe BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
