@@ -545,16 +545,11 @@ components:
           dettaglio:
             description: descrizione dettagliata dell'esito dell'operazione
             type: string
-          errori:
+          errori: 
             description: elenco degli errori
-            type: object
-            properties:
-              codice:
-                type: string
-              descrizione:
-                maxLength: 4096
-                pattern: ^.{0,1024}$
-                type: string
+            type: array
+            items:
+              $ref: '#/components/schemas/ErroriEnum'
         example:
             codice: '01'
             descrizione: 
@@ -605,4 +600,6 @@ components:
       TipoServizioSoggettoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoServizioSoggettoEnum'
       TipoOperazioneSoggettoEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOperazioneSoggettoEnum'         
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOperazioneSoggettoEnum'
+      ErroriEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'        
