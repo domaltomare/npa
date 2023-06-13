@@ -192,10 +192,10 @@ components:
             description: Elenco di una tipologica
             type: array
             items:
-              $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-common.yaml#/components/schemas/TipologicaSchemaType'
+              $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
       DatiTipologicaType:
         allOf: # estende lo schema dati di TipologicaType
-          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-common.yaml#/components/schemas/TipologicaSchemaType'
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
       SoggettoType:
         description: Oggetto generico del soggetto
         type: object
