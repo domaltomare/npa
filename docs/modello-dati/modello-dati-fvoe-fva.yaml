@@ -187,14 +187,13 @@ components:
           example: "PDF"
         dimensione:
           description: grandezza del documento
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          type: integer
+          format: int32
+          example: 5565
         contenuto:
           description: Contenuto in formato Binario del documento
           type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
+          format: binary    
     AutorizzazioneAccessoType:
       description: Oggetto che descrive l'autorizzazione concessa dall' OE verso il SA per poter accedere al proprio FVOE
       type: object
