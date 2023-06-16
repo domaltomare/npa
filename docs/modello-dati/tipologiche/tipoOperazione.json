@@ -1,1 +1,133 @@
-TBD
+[{
+    "codice":"AP_CREA",
+    "descrizione": {
+		"it": "Crea appalto",
+		"en": "Crea appalto"
+	}
+},
+{
+    "codice":"AP_MOD",
+    "descrizione": {
+		"it": "Modifica appalto",
+		"en": "Modifica appalto"
+	}
+},
+{
+    "codice":"AP_CANC",
+    "descrizione": {
+		"it": "Cancella appalto",
+		"en": "Cancella appalto"
+	}
+},
+{
+    "codice":"AP_VERIF",
+    "descrizione": {
+		"it": "Verifica appalto",
+		"en": "Verifica appalto"
+	}
+},
+{
+    "codice":"AP_CONF",
+    "descrizione": {
+		"it": "Conferma appalto",
+		"en": "Conferma appalto"
+	}
+},
+{
+    "codice":"SC_CREA",
+    "descrizione": {
+		"it": "Crea scheda",
+		"en": "Crea scheda"
+	}
+},
+{
+    "codice":"SC_MOD",
+    "descrizione": {
+		"it": "Modifica scheda",
+		"en": "Modifica scheda"
+	}
+},
+{
+    "codice":"SC_CANC",
+    "descrizione": {
+		"it": "Cancella scheda",
+		"en": "Cancella scheda"
+	}
+},
+{
+    "codice":"SC_VERIF",
+    "descrizione": {
+		"it": "Verifica scheda",
+		"en": "Verifica scheda"
+	}
+},
+{
+    "codice":"SC_CONF",
+    "descrizione": {
+		"it": "Conferma scheda",
+		"en": "Conferma scheda"
+	}
+},
+{
+    "codice":"PI_CREA",
+    "descrizione": {
+		"it": "Crea piano",
+		"en": "Crea piano"
+	}
+},
+{
+    "codice":"PI_MOD",
+    "descrizione": {
+		"it": "Modifica piano",
+		"en": "Modifica piano"
+	}
+},
+{
+    "codice":"PI_CANC",
+    "descrizione": {
+		"it": "Cancella piano",
+		"en": "Cancella piano"
+	}
+},
+{
+    "codice":"PI_VERIF",
+    "descrizione": {
+		"it": "Verifica piano",
+		"en": "Verifica piano"
+	}
+},
+{
+    "codice":"PI_CONF",
+    "descrizione": {
+		"it": "Conferma piano",
+		"en": "Conferma piano"
+	}
+},
+{
+    "codice":"AV_PUBB",
+    "descrizione": {
+		"it": "Pubblicazione avviso",
+		"en": "Pubblicazione avviso"
+	}
+},
+{
+    "codice":"AV_MOD",
+    "descrizione": {
+		"it": "Modifica avviso",
+		"en": "Modifica avviso"
+	}
+},
+{
+    "codice":"AV_RETT",
+    "descrizione": {
+		"it": "Rettifica avviso",
+		"en": "Rettifica avviso"
+	}
+},
+{
+    "codice":"AV_SOSP",
+    "descrizione": {
+		"it": "Sospensione avviso",
+		"en": "Sospensione avviso"
+	}
+}]

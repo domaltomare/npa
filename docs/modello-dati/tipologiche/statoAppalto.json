@@ -1,1 +1,56 @@
-TBD
+[{
+	"codice":"IN_LAV",
+    "descrizione": {
+		"it": "In lavorazione",
+		"en": "In lavorazione"
+	}
+},
+{
+    "gruppo":"STATO_AP",
+	"codice":"CONF",
+    "descrizione": {
+		"it": "Confermato",
+		"en": "Confermato"
+	}
+},
+{
+    "gruppo":"STATO_AP",
+	"codice":"CANC",
+    "descrizione": {
+		"it": "Cancellato",
+		"en": "Cancellato"
+	}
+},
+{
+    "gruppo":"STATO_AP",
+	"codice":"IN_ATT_PUBB",
+    "descrizione": {
+		"it": "In attesa pubblicazione",
+		"en": "In attesa pubblicazione"
+	}
+},
+{
+    "gruppo":"STATO_AP",
+	"codice":"IN_STOP_PUBB",
+    "descrizione": {
+		"it": "In stop pubblicazione",
+		"en": "In stop pubblicazione"
+	}
+},
+{
+    "gruppo":"STATO_AP",
+	"codice":"PUBB",
+    "descrizione": {
+		"it": "Pubblicato",
+		"en": "Pubblicato"
+	}
+},
+{
+    "gruppo":"STATO_AP",
+	"codice":"NON_AGG",
+    "descrizione": {
+		"it": "Non aggiudicato",
+		"en": "Non aggiudicato"
+	}
+}
+]

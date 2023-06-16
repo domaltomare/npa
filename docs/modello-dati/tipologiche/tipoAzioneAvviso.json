@@ -1,1 +1,22 @@
-TBD
+[{
+    "codice":"AZ_PUBB",
+    "descrizione": {
+		"it": "Pubblicazione",
+		"en": "Pubblicazione"
+	}
+},
+{
+    "codice":"AZ_MOD",
+    "descrizione": {
+		"it": "Modifica",
+		"en": "Modifica"
+	}
+},
+{
+    "codice":"AZ_RETT",
+    "descrizione": {
+		"it": "Rettifica",
+		"en": "Rettifica"
+	}
+}
+]

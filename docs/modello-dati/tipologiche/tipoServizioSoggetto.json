@@ -1,1 +1,59 @@
-TBD
+[
+{
+    "codice":"GE_UT",
+    "descrizione": {
+		"it": "Gestione utenti",
+		"en": "Gestione utenti"
+	}
+},
+{
+    "codice":"PI_AP",
+    "descrizione": {
+		"it": "Pianificazione appalto",
+		"en": "Pianificazione appalto"
+	}
+},
+{
+    "codice":"CO_AP",
+    "descrizione": {
+		"it": "Comunica appalto",
+		"en": "Comunica appalto"
+	}
+},
+{
+    "codice":"PUB_AV",
+    "descrizione": {
+		"it": "Pubblica avviso",
+		"en": "Pubblica avviso"
+	}
+},
+{
+    "codice":"POST_PUB",
+    "descrizione": {
+		"it": "Comunica post pubblicazione",
+		"en": "Comunica post pubblicazione"
+	}
+},
+{
+    "codice":"SERV_COM",
+    "descrizione": {
+		"it": "Servizi comuni",
+		"en": "Servizi comuni"
+	}
+},
+{
+    "codice":"FVA",
+    "descrizione": {
+		"it": "Fascicolo Virtuale Appalto",
+		"en": "Fascicolo Virtuale Appalto"
+	}
+}
+,
+{
+    "codice":"FVOE",
+    "descrizione": {
+		"it": "Fascicolo Virtuale Operatore Econimico",
+		"en": "Fascicolo Virtuale Operatore Econimico"
+	}
+}
+]

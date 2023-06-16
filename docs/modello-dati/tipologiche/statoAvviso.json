@@ -1,1 +1,38 @@
-TBD
+[{
+    "codice":"CREATO",
+    "descrizione": {
+		"it": "Creato",
+		"en": "Creato"
+	}
+},
+{
+    "codice":"IN_ATT_PUBB",
+    "descrizione": {
+		"it": "In attesa pubblicazione",
+		"en": "In attesa pubblicazione"
+	}
+},
+{
+    "codice":"NON_PUBB",
+    "descrizione": {
+		"it": "Non pubblicato",
+		"en": "Non pubblicato"
+	}
+}
+,
+{
+    "codice":"STOP_PUBB",
+    "descrizione": {
+		"it": "In stop pubblicazione",
+		"en": "In stop pubblicazione"
+	}
+}
+,
+{
+    "codice":"PUBB",
+    "descrizione": {
+		"it": "Pubblicato",
+		"en": "Pubblicato"
+	}
+}
+]

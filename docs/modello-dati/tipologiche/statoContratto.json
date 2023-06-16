@@ -1,1 +1,38 @@
-TBD
+[{
+    "codice":"INT_ANT",
+    "descrizione": {
+		"it": "Interruzione anticipata",
+		"en": "Interruzione anticipata"
+	}
+},
+{
+    "codice":"IN_ESEC",
+    "descrizione": {
+		"it": "In esecuzione",
+		"en": "In esecuzione"
+	}
+},
+{
+    "codice":"SOSP",
+    "descrizione": {
+		"it": "Sospeso",
+		"en": "Sospeso"
+	}
+}
+,
+{
+    "codice":"CONCL",
+    "descrizione": {
+		"it": "Concluso",
+		"en": "Concluso"
+	}
+}
+,
+{
+    "codice":"COLL",
+    "descrizione": {
+		"it": "Collaudato",
+		"en": "Collaudato"
+	}
+}
+]

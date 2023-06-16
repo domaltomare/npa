@@ -1,1 +1,85 @@
-TBD
+[{
+    "codice":"AV1",
+    "descrizione": {
+		"it": "Preinformazione",
+		"en": "Preinformazione"
+	}
+},
+{
+    "codice":"AV2",
+    "descrizione": {
+		"it": "Pubblicazione bando",
+		"en": "Pubblicazione bando"
+	}
+},
+{
+    "codice":"AV3",
+    "descrizione": {
+		"it": "Pubblicazione avviso",
+		"en": "Pubblicazione avviso"
+	}
+},
+{
+    "codice":"AV4",
+    "descrizione": {
+		"it": "Avvio dell'indagine di mercato",
+		"en": "Avvio dell'indagine di mercato"
+	}
+},
+{
+    "codice":"AV5",
+    "descrizione": {
+		"it": "Costituzione elenco fornitori",
+		"en": "Costituzione elenco fornitori"
+	}
+},
+{
+    "codice":"AV6",
+    "descrizione": {
+		"it": "Affidamento diretto",
+		"en": "Affidamento diretto"
+	}
+},
+{
+    "codice":"AV7",
+    "descrizione": {
+		"it": "Pubblicazione avviso di aggiudicazione soprasoglia",
+		"en": "Pubblicazione avviso di aggiudicazione soprasoglia"
+	}
+},
+{
+    "codice":"AV8",
+    "descrizione": {
+		"it": "Pubblicazione avviso di aggiudicazione sottosoglia",
+		"en": "Pubblicazione avviso di aggiudicazione sottosoglia"
+	}
+},
+{
+    "codice":"AV9",
+    "descrizione": {
+		"it": "Avviso di aggiudicazione sottosoglia",
+		"en": "Avviso di aggiudicazione sottosoglia"
+	}
+},
+{
+    "codice":"AV10",
+    "descrizione": {
+		"it": "Aggiudicazione",
+		"en": "Aggiudicazione"
+	}
+},
+{
+    "codice":"AV11",
+    "descrizione": {
+		"it": "Mancata aggiudicazione procedura europea",
+		"en": "Mancata aggiudicazione procedura europea"
+	}
+},
+{
+    "codice":"AV12",
+    "descrizione": {
+		"it": "Modifica contrattuale",
+		"en": "Modifica contrattuale"
+	}
+}
+]

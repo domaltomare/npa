@@ -1,1 +1,22 @@
-TBD
+[{
+    "codice":"AGG",
+    "descrizione": {
+		"it": "Aggiudicato",
+		"en": "Aggiudicato"
+	}
+},
+{
+    "codice":"ANN",
+    "descrizione": {
+		"it": "Annullato",
+		"en": "Annullato"
+	}
+},
+{
+    "codice":"SOTT_CONTR",
+    "descrizione": {
+		"it": "Sottoscrizione contratto",
+		"en": "Sottoscrizione contratto"
+	}
+}
+]

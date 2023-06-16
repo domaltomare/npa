@@ -1,1 +1,267 @@
-TBD
+[{
+    "codice":"AP_CRE",
+    "descrizione": {
+		"it": "Appalto creato",
+		"en": "Appalto creato"
+	}
+},
+{
+    "codice":"AP_N_CRE",
+    "descrizione": {
+		"it": "Appalto non creato",
+		"en": "Appalto non creato"
+	}
+},
+{
+    "codice":"AP_MOD",
+    "descrizione": {
+		"it": "Appalto modificato",
+		"en": "Appalto modificato"
+	}
+},
+{
+    "codice":"AP_N_MOD",
+    "descrizione": {
+		"it": "Appalto non modificato",
+		"en": "Appalto non modificato"
+	}
+},
+{
+    "codice":"AP_CANC",
+    "descrizione": {
+		"it": "Appalto cancellato",
+		"en": "Appalto cancellato"
+	}
+},
+{
+    "codice":"AP_N_CANC",
+    "descrizione": {
+		"it": "Appalto non cancellato",
+		"en": "Appalto non cancellato"
+	}
+},
+{
+    "codice":"AP_VERIF",
+    "descrizione": {
+		"it": "Appalto verificato",
+		"en": "Appalto verificato"
+	}
+},
+{
+    "codice":"AP_N_VERIF",
+    "descrizione": {
+		"it": "Appalto non verificato",
+		"en": "Appalto non verificato"
+	}
+},
+{
+    "codice":"AP_CONF",
+    "descrizione": {
+		"it": "Appalto confermato",
+		"en": "Appalto confermato"
+	}
+},
+{
+    "codice":"AP_N_CONF",
+    "descrizione": {
+		"it": "Appalto non confermato",
+		"en": "Appalto non confermato"
+	}
+},
+{
+    "codice":"SC_CRE",
+    "descrizione": {
+		"it": "Scheda creata",
+		"en": "Scheda creata"
+	}
+},
+{
+    "codice":"SC_N_CRE",
+    "descrizione": {
+		"it": "Scheda non creata",
+		"en": "Scheda non creata"
+	}
+},
+{
+    "codice":"SC_MOD",
+    "descrizione": {
+		"it": "Scheda modificata",
+		"en": "Scheda modificata"
+	}
+},
+{
+    "codice":"SC_N_MOD",
+    "descrizione": {
+		"it": "Scheda non modificata",
+		"en": "Scheda non modificata"
+	}
+},
+{
+    "codice":"SC_CANC",
+    "descrizione": {
+		"it": "Scheda cancellata",
+		"en": "Scheda cancellata"
+	}
+},
+{
+    "codice":"SC_N_CANC",
+    "descrizione": {
+		"it": "Scheda non cancellata",
+		"en": "Scheda non cancellata"
+	}
+},
+{
+    "codice":"SC_VERIF",
+    "descrizione": {
+		"it": "Scheda verificata",
+		"en": "Scheda verificata"
+	}
+},
+{
+    "codice":"SC_N_VERIF",
+    "descrizione": {
+		"it": "Scheda non verificata",
+		"en": "Scheda non verificata"
+	}
+},
+{
+    "codice":"SC_CONF",
+    "descrizione": {
+		"it": "Scheda confermata",
+		"en": "Scheda confermata"
+	}
+},
+{
+    "codice":"SC_N_CONF",
+    "descrizione": {
+		"it": "Scheda non confermata",
+		"en": "Scheda non confermata"
+	}
+},
+{
+    "codice":"PI_CRE",
+    "descrizione": {
+		"it": "Piano creato",
+		"en": "Piano creato"
+	}
+},
+{
+    "codice":"PI_N_CRE",
+    "descrizione": {
+		"it": "Piano non creato",
+		"en": "Piano non creato"
+	}
+},
+{
+    "codice":"PI_MOD",
+    "descrizione": {
+		"it": "Piano modificato",
+		"en": "Piano modificato"
+	}
+},
+{
+    "codice":"PI_N_MOD",
+    "descrizione": {
+		"it": "Piano non modificato",
+		"en": "Piano non modificato"
+	}
+},
+{
+    "codice":"PI_CANC",
+    "descrizione": {
+		"it": "Piano cancellato",
+		"en": "Piano cancellato"
+	}
+},
+{
+    "codice":"PI_N_CANC",
+    "descrizione": {
+		"it": "Piano non cancellato",
+		"en": "Piano non cancellato"
+	}
+},
+{
+    "codice":"PI_VERIF",
+    "descrizione": {
+		"it": "Piano verificato",
+		"en": "Piano verificato"
+	}
+},
+{
+    "codice":"PI_N_VERIF",
+    "descrizione": {
+		"it": "Piano non verificato",
+		"en": "Piano non verificato"
+	}
+},
+{
+    "codice":"PI_CONF",
+    "descrizione": {
+		"it": "Piano confermato",
+		"en": "Piano confermato"
+	}
+},
+{
+    "codice":"PI_N_CONF",
+    "descrizione": {
+		"it": "Piano non confermato",
+		"en": "Piano non confermato"
+	}
+},
+{
+    "codice":"AV_PUBB",
+    "descrizione": {
+		"it": "Avviso pubblicato",
+		"en": "Avviso pubblicato"
+	}
+},
+{
+    "codice":"AV_N_PUBB",
+    "descrizione": {
+		"it": "Avviso non pubblicato",
+		"en": "Avviso non pubblicato"
+	}
+},
+{
+    "codice":"AV_MOD",
+    "descrizione": {
+		"it": "Avviso modificato",
+		"en": "Avviso modificato"
+	}
+},
+{
+    "codice":"AV_N_MOD",
+    "descrizione": {
+		"it": "Avviso non modificato",
+		"en": "Avviso non modificato"
+	}
+},
+{
+    "codice":"AV_RETT",
+    "descrizione": {
+		"it": "Avviso rettificato",
+		"en": "Avviso rettificato"
+	}
+},
+{
+    "codice":"AV_N_RETT",
+    "descrizione": {
+		"it": "Avviso non rettificato",
+		"en": "Avviso non rettificato"
+	}
+},
+{
+    "codice":"AV_SOSP",
+    "descrizione": {
+		"it": "Avviso sospeso",
+		"en": "Avviso sospeso"
+	}
+},
+{
+    "codice":"AV_N_SOSP",
+    "descrizione": {
+		"it": "Avviso non sospeso",
+		"en": "Avviso non sospeso"
+	}
+}
+]

@@ -1,1 +1,22 @@
-TBD
+[{
+    "codice":"IN_LAV",
+    "descrizione": {
+		"it": "In lavorazione",
+		"en": "In lavorazione"
+	}
+},
+{
+    "codice":"CONF",
+    "descrizione": {
+		"it": "Confermata",
+		"en": "Confermata"
+	}
+},
+{
+    "codice":"CANC",
+    "descrizione": {
+		"it": "Cancellata",
+		"en": "Cancellata"
+	}
+}
+]

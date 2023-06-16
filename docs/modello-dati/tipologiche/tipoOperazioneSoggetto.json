@@ -1,1 +1,316 @@
-TBD
+[{
+    "codice":"RICERCA_SOGGETTO",
+    "descrizione": {
+		"it": "ricerca-soggetto",
+		"en": "ricerca-soggetto"
+	}
+},
+{
+    "codice":"MODIFICA_PIANO",
+    "descrizione": {
+		"it": "modifica-piano",
+		"en": "modifica-piano"
+	}
+},
+{
+    "codice":"CANCELLA_PIANO",
+    "descrizione": {
+		"it": "cancella-piano",
+		"en": "cancella-piano"
+	}
+},
+{
+    "codice":"CONSULTA_PIANO",
+    "descrizione": {
+		"it": "consulta-piano",
+		"en": "consulta-piano"
+	}
+},
+{
+    "codice":"RICERCA_PIANO",
+    "descrizione": {
+		"it": "ricerca-piano",
+		"en": "ricerca-piano"
+	}
+},
+{
+    "codice":"VERIFICA_PIANO",
+    "descrizione": {
+		"it": "verifica-piano",
+		"en": "verifica-piano"
+	}
+},
+{
+    "codice":"CONFERMA_PIANO",
+    "descrizione": {
+		"it": "conferma-piano",
+		"en": "conferma-piano"
+	}
+},
+{
+    "codice":"MODIFICA_APPALTO",
+    "descrizione": {
+		"it": "modifica-appalto",
+		"en": "modifica-appalto"
+	}
+},
+{
+    "codice":"CANCELLA_APPALTO",
+    "descrizione": {
+		"it": "cancella-appalto",
+		"en": "cancella-appalto"
+	}
+},
+{
+    "codice":"RICERCA_APPALTO",
+    "descrizione": {
+		"it": "ricerca-appalto",
+		"en": "ricerca-appalto"
+	}
+},
+{
+    "codice":"CONSULTA_APPALTO",
+    "descrizione": {
+		"it": "consulta-appalto",
+		"en": "consulta-appalto"
+	}
+},
+{
+    "codice":"VERIFICA_APPALTO",
+    "descrizione": {
+		"it": "verifica-appalto",
+		"en": "verifica-appalto"
+	}
+},
+{
+    "codice":"CONFERMA_APPALTO",
+    "descrizione": {
+		"it": "conferma-appalto",
+		"en": "conferma-appalto"
+	}
+},
+{
+    "codice":"RECUPERA_CIG",
+    "descrizione": {
+		"it": "recupera-cig",
+		"en": "recupera-cig"
+	}
+},
+{
+    "codice":"PUBBLICA_AVVISO",
+    "descrizione": {
+		"it": "pubblica-avviso",
+		"en": "pubblica-avviso"
+	}
+},
+{
+    "codice":"MODIFICA_AVVISO",
+    "descrizione": {
+		"it": "modifica-avviso",
+		"en": "modifica-avviso"
+	}
+},
+{
+    "codice":"RETTIFICA_AVVISO",
+    "descrizione": {
+		"it": "rettifica-avviso",
+		"en": "rettifica-avviso"
+	}
+},
+{
+    "codice":"CANCELLA_AVVISO",
+    "descrizione": {
+		"it": "cancella-avviso",
+		"en": "cancella-avviso"
+	}
+},
+{
+    "codice":"RICERCA_AVVISO",
+    "descrizione": {
+		"it": "ricerca-avviso",
+		"en": "ricerca-avviso"
+	}
+},
+{
+    "codice":"CONSULTA_AVVISO",
+    "descrizione": {
+		"it": "consulta-avviso",
+		"en": "consulta-avviso"
+	}
+},
+{
+    "codice":"CONSULTA_RENDERING_AVVISO",
+    "descrizione": {
+		"it": "consulta-rendering-avviso",
+		"en": "consulta-rendering-avviso"
+	}
+},
+{
+    "codice":"STATO_AVVISO",
+    "descrizione": {
+		"it": "stato-avviso",
+		"en": "stato-avviso"
+	}
+},
+{
+    "codice":"CREA_SCHEDA",
+    "descrizione": {
+		"it": "crea-scheda",
+		"en": "crea-scheda"
+	}
+},
+{
+    "codice":"MODIFICA_SCHEDA",
+    "descrizione": {
+		"it": "modifica-scheda",
+		"en": "modifica-scheda"
+	}
+},
+{
+    "codice":"CANCELLA_SCHEDA",
+    "descrizione": {
+		"it": "cancella-scheda",
+		"en": "cancella-scheda"
+	}
+},
+{
+    "codice":"RICERCA_SCHEDA",
+    "descrizione": {
+		"it": "ricerca-scheda",
+		"en": "ricerca-scheda"
+	}
+},
+{
+    "codice":"CONSULTA_SCHEDA",
+    "descrizione": {
+		"it": "consulta-scheda",
+		"en": "consulta-scheda"
+	}
+},
+{
+    "codice":"VERIFICA_SCHEDA",
+    "descrizione": {
+		"it": "verifica-scheda",
+		"en": "verifica-scheda"
+	}
+},
+{
+    "codice":"CONFERMA_SCHEDA",
+    "descrizione": {
+		"it": "conferma-scheda",
+		"en": "conferma-scheda"
+	}
+},
+{
+    "codice":"STATO_APPALTO",
+    "descrizione": {
+		"it": "stato-appalto",
+		"en": "stato-appalto"
+	}
+},
+{
+    "codice":"ESITO_OPERAZIONE",
+    "descrizione": {
+		"it": "esito-operazione",
+		"en": "esito-operazione"
+	}
+},
+{
+    "codice":"RICERCA_FASCICOLI_FVA",
+    "descrizione": {
+		"it": "ricerca-fascicoli-fva",
+		"en": "ricerca-fascicoli-fva"
+	}
+},
+{
+    "codice":"RECUPERA_FASCICOLO_FVA",
+    "descrizione": {
+		"it": "recupera-fascicolo-fva",
+		"en": "recupera-fascicolo-fva"
+	}
+},
+{
+    "codice":"RICERCA_DOCUMENTI_FVA",
+    "descrizione": {
+		"it": "ricerca-documenti-fva",
+		"en": "ricerca-documenti-fva"
+	}
+},
+{
+    "codice":"RECUPERA_DOCUMENTO_FVA",
+    "descrizione": {
+		"it": "recupera-documento-fva",
+		"en": "recupera-documento-fva"
+	}
+},
+{
+    "codice":"RECUPERA_STORICO_FASCICOLO_FVA",
+    "descrizione": {
+		"it": "recupera-storico-fascicolo-fva",
+		"en": "recupera-storico-fascicolo-fva"
+	}
+},
+{
+    "codice":"RECUPERA_STORICO_DOCUMENTO_FVA",
+    "descrizione": {
+		"it": "recupera-storico-documento-fva",
+		"en": "recupera-storico-documento-fva"
+	}
+},
+{
+    "codice":"RICHIESTA_ACCESSO_FVOE",
+    "descrizione": {
+		"it": "richiesta-accesso-fvoe",
+		"en": "richiesta-accesso-fvoe"
+	}
+},
+{
+    "codice":"VERIFICA_RICHIESTA_ACCESSO_FVOE",
+    "descrizione": {
+		"it": "verifica-richiesta-accesso-fvoe",
+		"en": "verifica-richiesta-accesso-fvoe"
+	}
+},
+{
+    "codice":"RICERCA_DOCUMENTI_FVOE",
+    "descrizione": {
+		"it": "ricerca-documenti-fvoe",
+		"en": "ricerca-documenti-fvoe"
+	}
+},
+{
+    "codice":"RECUPERA_DOCUMENTO_FVOE",
+    "descrizione": {
+		"it": "recupera-documento-fvoe",
+		"en": "recupera-documento-fvoe"
+	}
+},
+{
+    "codice":"RICHIEDI_DOCUMENTO",
+    "descrizione": {
+		"it": "richiedi-documento",
+		"en": "richiedi-documento"
+	}
+},
+{
+    "codice":"VERIFICA_STATO_RICHIESTA_DOCUMENTO",
+    "descrizione": {
+		"it": "verifica-stato-richiesta-documento",
+		"en": "verifica-stato-richiesta-documento"
+	}
+},
+{
+    "codice":"RECUPERA_STORICO_DOCUMENTO_FVOE",
+    "descrizione": {
+		"it": "recupera-storico-documento-fvoe",
+		"en": "recupera-storico-documento-fvoe"
+	}
+},
+{
+    "codice":"RECUPERO_ANAGRAFICA_OE",
+    "descrizione": {
+		"it": "recupero-anagrafica-oe",
+		"en": "recupero-anagrafica-oe"
+	}
+}
+]
