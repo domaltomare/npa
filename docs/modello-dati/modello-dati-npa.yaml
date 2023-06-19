@@ -360,10 +360,6 @@ components:
             $ref: '#/components/schemas/LottoType'
           scheda:
             $ref: '#/components/schemas/SchedaGroupType'
-      PianoType:
-        description: Oggetto che riporta tutti i dati della Pianificazione
-        type: object
-        additionalProperties: false
       PaginazioneType:
         description: Oggetto per la paginazione dei risultati
         type: object
@@ -431,21 +427,23 @@ components:
             $ref: '#/components/schemas/StatoSchedaEnum' 
           body:  
             $ref: '#/components/schemas/SchedaPostPubblicazioneType' 
-      DatiPianoBaseType:
+      DatiPianoType:
+        allOf: # estende la classe DatiPianoType
+          - $ref: '#/components/schemas/DatiPianoBaseType'
         description: Oggetto Complesso che riporta tutti i dati base delle schede per il contesto pianificazioneAppalto
         type: object
         additionalProperties: false
         properties:
           scheda:
             $ref: '#/components/schemas/SchedaPianificazioneType' 
-      DatiPianoType :
-        allOf: # estende la classe DatiPianoType
-          - $ref: '#/components/schemas/DatiPianoBaseType'
+      DatiPianoBaseType:
+        type: object
+        additionalProperties: false
         properties:
           idPianificazione:
             description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Pianificazione. (A UUID specified by RFC4122)
-        required:
-          - idPianificazione
+          stato:
+            $ref: '#/components/schemas/StatoPianoEnum' 
       StatoType:
         type: object
         additionalProperties: false
@@ -586,4 +584,6 @@ components:
       ErroriEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'
       StatoSchedaEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoSchedaEnum'        
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoSchedaEnum'
+      StatoPianoEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoPianoEnum'        
