@@ -18,21 +18,18 @@
 		"it": "Non pubblicato",
 		"en": "Non pubblicato"
 	}
-}
-,
+},
 {
     "codice":"STOP_PUBB",
     "descrizione": {
 		"it": "In stop pubblicazione",
 		"en": "In stop pubblicazione"
 	}
-}
-,
+},
 {
     "codice":"PUBB",
     "descrizione": {
 		"it": "Pubblicato",
 		"en": "Pubblicato"
 	}
-}
-]
+}]
