@@ -1,1 +1,239 @@
-TBD
+[{
+    "codice":"ERR1",
+    "descrizione": {
+		"it": "utente non autorizzato alla chiamata del servizio",
+		"en": "utente non autorizzato alla chiamata del servizio"
+	}
+},
+{
+    "codice":"ERR2",
+    "descrizione": {
+		"it": "scheda non ammessa in questa fase dell'appalto",
+		"en": "scheda non ammessa in questa fase dell'appalto"
+	}
+},
+{
+    "codice":"ERR3",
+    "descrizione": {
+		"it": "codice scheda errato",
+		"en": "codice scheda errato"
+	}
+},
+{
+    "codice":"ERR4",
+    "descrizione": {
+		"it": "errore nella conversione della scheda secondo il json schema definito",
+		"en": "errore nella conversione della scheda secondo il json schema definito"
+	}
+},
+{
+    "codice":"ERR5",
+    "descrizione": {
+		"it": "anacForm non è in un formato json valido",
+		"en": "anacForm non è in un formato json valido"
+	}
+},
+{
+    "codice":"ERR6",
+    "descrizione": {
+		"it": "eForm non è in un formato xml base64 valido",
+		"en": "eForm non è in un formato xml base64 valido"
+	}
+},
+{
+    "codice":"ERR7",
+    "descrizione": {
+		"it": "ESPD non è in un formato xml base64 valido",
+		"en": "ESPD non è in un formato xml base64 valido"
+	}
+},
+{
+    "codice":"ERR8",
+    "descrizione": {
+		"it": "eForm obbligatorio",
+		"en": "eForm obbligatorio"
+	}
+},
+{
+    "codice":"ERR9",
+    "descrizione": {
+		"it": "anacForm obbligatorio",
+		"en": "anacForm obbligatorio"
+	}
+},
+{
+    "codice":"ERR10",
+    "descrizione": {
+		"it": "ESPD obbligatorio",
+		"en": "ESPD obbligatorio"
+	}
+},
+{
+    "codice":"ERR11",
+    "descrizione": {
+		"it": "tipo di eForm non ammesso in questa fase dell'appalto",
+		"en": "tipo di eForm non ammesso in questa fase dell'appalto"
+	}
+},
+{
+    "codice":"ERR12",
+    "descrizione": {
+		"it": "versione sdk eForm errata",
+		"en": "versione sdk eForm errata"
+	}
+},
+{
+    "codice":"ERR13",
+    "descrizione": {
+		"it": "versione ESPD errata",
+		"en": "versione ESPD errata"
+	}
+},
+{
+    "codice":"ERR14",
+    "descrizione": {
+		"it": "lotIdentifier duplicati nell'elendo dei lotti",
+		"en": "lotIdentifier duplicati nell'elendo dei lotti"
+	}
+},
+{
+    "codice":"ERR15",
+    "descrizione": {
+		"it": "lotIdentifier non coerenti tra eForm ed anacForm",
+		"en": "lotIdentifier non coerenti tra eForm ed anacForm"
+	}
+},
+{
+    "codice":"ERR16",
+    "descrizione": {
+		"it": "chiamata al servizio non ammessa per lo stato dell'appalto",
+		"en": "chiamata al servizio non ammessa per lo stato dell'appalto"
+	}
+},
+{
+    "codice":"ERR17",
+    "descrizione": {
+		"it": "chiamata al servizio non ammessa: è in corso una richiesta di verifica appalto",
+		"en": "chiamata al servizio non ammessa: è in corso una richiesta di verifica appalto"
+	}
+},
+{
+    "codice":"ERR18",
+    "descrizione": {
+		"it": "chiamata al servizio non ammessa: è in corso una richiesta di conferma appalto",
+		"en": "chiamata al servizio non ammessa: è in corso una richiesta di conferma appalto"
+	}
+},
+{
+    "codice":"ERR19",
+    "descrizione": {
+		"it": "idAppalto non trovato",
+		"en": "idAppalto non trovato"
+	}
+},
+{
+    "codice":"ERR20",
+    "descrizione": {
+		"it": "idScheda non trovato",
+		"en": "idScheda non trovato"
+	}
+},
+{
+    "codice":"ERR21",
+    "descrizione": {
+		"it": "idPianificazione non trovato",
+		"en": "idPianificazione non trovato"
+	}
+},
+{
+    "codice":"ERR22",
+    "descrizione": {
+		"it": "idAvviso non trovato",
+		"en": "idAvviso non trovato"
+	}
+},
+{
+    "codice":"ERR23",
+    "descrizione": {
+		"it": "cig non trovato",
+		"en": "cig non trovato"
+	}
+},
+{
+    "codice":"ERR24",
+    "descrizione": {
+		"it": "codice fiscale non trovato",
+		"en": "codice fiscale non trovato"
+	}
+},
+{
+    "codice":"ERR25",
+    "descrizione": {
+		"it": "lotIdentifier non trovato",
+		"en": "lotIdentifier non trovato"
+	}
+},
+{
+    "codice":"ERR26",
+    "descrizione": {
+		"it": "idAppalto obbligatorio",
+		"en": "idAppalto obbligatorio"
+	}
+},
+{
+    "codice":"ERR27",
+    "descrizione": {
+		"it": "idPianificazione obbligatorio",
+		"en": "idPianificazione obbligatorio"
+	}
+},
+{
+    "codice":"ERR28",
+    "descrizione": {
+		"it": "idAvviso obbligatorio",
+		"en": "idAvviso obbligatorio"
+	}
+},
+{
+    "codice":"ERR29",
+    "descrizione": {
+		"it": "idScheda obbligatorio",
+		"en": "idScheda obbligatorio"
+	}
+},
+{
+    "codice":"ERR30",
+    "descrizione": {
+		"it": "codice scheda obbligatorio",
+		"en": "codice scheda obbligatorio"
+	}
+},
+{
+    "codice":"ERR31",
+    "descrizione": {
+		"it": "versione scheda obbligatorio",
+		"en": "versione scheda obbligatorio"
+	}
+},
+{
+    "codice":"ERR32",
+    "descrizione": {
+		"it": "idTipologica obbligatorio",
+		"en": "idTipologica obbligatorio"
+	}
+},
+{
+    "codice":"ERR33",
+    "descrizione": {
+		"it": "codice tipologica obbligatorio",
+		"en": "codice tipologica obbligatorio"
+	}
+},
+{
+    "codice":"ERR34",
+    "descrizione": {
+		"it": "valorizzare i parametri di ricerca obbligatori",
+		"en": "valorizzare i parametri di ricerca obbligatori"
+	}
+}
+]
