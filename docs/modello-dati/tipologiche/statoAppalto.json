@@ -1,12 +1,11 @@
 [{
 	"codice":"IN_LAV",
-    "descrizione": {
+	"descrizione": {
 		"it": "In lavorazione",
 		"en": "In lavorazione"
 	}
 },
 {
-    "gruppo":"STATO_AP",
 	"codice":"CONF",
     "descrizione": {
 		"it": "Confermato",
@@ -14,7 +13,6 @@
 	}
 },
 {
-    "gruppo":"STATO_AP",
 	"codice":"CANC",
     "descrizione": {
 		"it": "Cancellato",
@@ -22,7 +20,6 @@
 	}
 },
 {
-    "gruppo":"STATO_AP",
 	"codice":"IN_ATT_PUBB",
     "descrizione": {
 		"it": "In attesa pubblicazione",
@@ -30,7 +27,6 @@
 	}
 },
 {
-    "gruppo":"STATO_AP",
 	"codice":"IN_STOP_PUBB",
     "descrizione": {
 		"it": "In stop pubblicazione",
@@ -38,7 +34,6 @@
 	}
 },
 {
-    "gruppo":"STATO_AP",
 	"codice":"PUBB",
     "descrizione": {
 		"it": "Pubblicato",
@@ -46,7 +41,6 @@
 	}
 },
 {
-    "gruppo":"STATO_AP",
 	"codice":"NON_AGG",
     "descrizione": {
 		"it": "Non aggiudicato",
