@@ -24,13 +24,4 @@
 		},
     "datainizio":null,
     "datafine":null
-}, 
-{
-    "codice":"WN",
-    "descrizione": {
-		"it": "WARNING",
-		"en": "WARNING"
-		},	
-    "datainizio":null,
-    "datafine":null
 }]
