@@ -7,42 +7,42 @@
 },
 {
 	"codice":"CONF",
-    "descrizione": {
+	"descrizione": {
 		"it": "Confermato",
 		"en": "Confermato"
 	}
 },
 {
 	"codice":"CANC",
-    "descrizione": {
+	"descrizione": {
 		"it": "Cancellato",
 		"en": "Cancellato"
 	}
 },
 {
 	"codice":"IN_ATT_PUBB",
-    "descrizione": {
+	"descrizione": {
 		"it": "In attesa pubblicazione",
 		"en": "In attesa pubblicazione"
 	}
 },
 {
 	"codice":"IN_STOP_PUBB",
-    "descrizione": {
+	"descrizione": {
 		"it": "In stop pubblicazione",
 		"en": "In stop pubblicazione"
 	}
 },
 {
 	"codice":"PUBB",
-    "descrizione": {
+	"descrizione": {
 		"it": "Pubblicato",
 		"en": "Pubblicato"
 	}
 },
 {
 	"codice":"NON_AGG",
-    "descrizione": {
+	"descrizione": {
 		"it": "Non aggiudicato",
 		"en": "Non aggiudicato"
 	}
