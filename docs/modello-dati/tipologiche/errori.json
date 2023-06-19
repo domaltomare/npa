@@ -235,5 +235,11 @@
 		"it": "valorizzare i parametri di ricerca obbligatori",
 		"en": "valorizzare i parametri di ricerca obbligatori"
 	}
-}
-]
+},
+{
+    "codice":"ERR35",
+    "descrizione": {
+		"it": "restringere i risultati di ricerca",
+		"en": "restringere i risultati di ricerca"
+	}
+}]
