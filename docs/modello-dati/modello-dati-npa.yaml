@@ -403,31 +403,34 @@ components:
         properties:
           scheda:
             $ref: '#/components/schemas/SchedaComunicaAppaltoType'
-      DatiSchedaBaseType:
+      DatiBaseSchedaType:
         description: Oggetto Complesso che riporta tutti i dati delle schede per il contesto comunicaPostPubblicazione
         type: object
         additionalProperties: false
-        properties:
-          idAppalto:
-            description: identificativo univoco dell'Appalto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-          scheda:
-            $ref: '#/components/schemas/SchedaPostPubblicazioneType'
-        required:
-          - idAppalto      
-      DatiSchedaType:
-        allOf: # estende la classe DatiSchedaBaseType
-          - $ref: '#/components/schemas/DatiSchedaBaseType'
         properties:
           idScheda:
             description: identificativo univoco ddella Scheda definito da ANAC. Restituito dall'operazione di creazione Scheda. (A UUID specified by RFC4122)
             type: string
             format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        required:
-          - idScheda  
+          codice:
+            $ref: '#/components/schemas/CodiceSchedaEnum'           
+          versione:
+            description: versione della scheda. necessaria al motore interno ANAC.
+            type: string
+          stato:
+            $ref: '#/components/schemas/StatoSchedaEnum'    
+      DatiSchedaType:
+        type: object
+        additionalProperties: false
+        properties:
+          idScheda:
+            description: identificativo univoco ddella Scheda definito da ANAC. Restituito dall'operazione di creazione Scheda. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+          stato:
+            $ref: '#/components/schemas/StatoSchedaEnum' 
+          body:  
+            $ref: '#/components/schemas/SchedaPostPubblicazioneType' 
       DatiPianoBaseType:
         description: Oggetto Complesso che riporta tutti i dati base delle schede per il contesto pianificazioneAppalto
         type: object
@@ -581,4 +584,6 @@ components:
       TipoOperazioneSoggettoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOperazioneSoggettoEnum'
       ErroriEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'        
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'
+      StatoSchedaEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoSchedaEnum'        
