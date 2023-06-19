@@ -253,7 +253,7 @@ components:
           #avvisi: 
             #type: array
             #items:
-              #$ref: '#/components/schemas/DatiAvvisoType'
+              #$ref: '#/components/schemas/AvvisoType'
       AppaltoBaseType:
         description: Oggetto che riporta tutti i dati dell'Appalto
         type: object
@@ -298,34 +298,17 @@ components:
           stato:
             $ref: '#/components/schemas/StatoAppaltoEnum'
           #avviso:  
-            #$ref: '#/components/schemas/DatiAvvisoType'
+            #$ref: '#/components/schemas/AvvisoType'
           lotti:
             type: array
             items:
               $ref: '#/components/schemas/LottoType'
+      SchedaGroupType:
+        oneOf:
+          - $ref: '#/components/schemas/SchedaPianificazioneType'
+          - $ref: '#/components/schemas/SchedaComunicaAppaltoType'
+          - $ref: '#/components/schemas/SchedaPostPubblicazioneType'
       AvvisoType:
-        type: object
-        additionalProperties: false
-        required:  # List the required properties here
-          - idAvviso
-          - idAppalto
-        properties:
-          idAvviso:
-            description: identificativo univoco dell'Avviso generato da ANAC.
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
-          idAppalto:
-            description: identificativo univoco dell'Avviso generato da ANAC.
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-          scheda:
-            oneOf:
-              - $ref: '#/components/schemas/SchedaPianificazioneType'
-              - $ref: '#/components/schemas/SchedaComunicaAppaltoType'
-              - $ref: '#/components/schemas/SchedaPostPubblicazioneType'
-      DatiAvvisoType:
         type: object
         additionalProperties: false
         properties:
