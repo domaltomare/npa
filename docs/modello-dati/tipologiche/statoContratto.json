@@ -18,21 +18,18 @@
 		"it": "Sospeso",
 		"en": "Sospeso"
 	}
-}
-,
+},
 {
     "codice":"CONCL",
     "descrizione": {
 		"it": "Concluso",
 		"en": "Concluso"
 	}
-}
-,
+},
 {
     "codice":"COLL",
     "descrizione": {
 		"it": "Collaudato",
 		"en": "Collaudato"
 	}
-}
-]
+}]
