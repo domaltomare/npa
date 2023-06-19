@@ -308,9 +308,30 @@ components:
           - $ref: '#/components/schemas/SchedaPianificazioneType'
           - $ref: '#/components/schemas/SchedaComunicaAppaltoType'
           - $ref: '#/components/schemas/SchedaPostPubblicazioneType'
-      AvvisoType:
+      AvvisoBaseType:
         type: object
         additionalProperties: false
+        properties:
+          idAvviso:
+            description: identificativo univoco dell'Avviso generato da ANAC.
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+          dataCreazione:
+            description: Data di crezione dell'Avviso  (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+          dataPubblicazione:
+            description: Data di pubblicazione dell'Avviso  (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: datetime
+            example: '2022-01-23T12:02:05Z'
+          stato:
+            $ref: '#/components/schemas/StatoAvvisoEnum'
+      AvvisoType:
+        allOf: # estende la classe AvvisoBaseType
+          - $ref: '#/components/schemas/AvvisoBaseType'
         properties:
           idAvviso:
             description: identificativo univoco dell'Avviso generato da ANAC.
@@ -338,10 +359,7 @@ components:
           lotto:
             $ref: '#/components/schemas/LottoType'
           scheda:
-            oneOf:
-              - $ref: '#/components/schemas/SchedaPianificazioneType'
-              - $ref: '#/components/schemas/SchedaComunicaAppaltoType'
-              - $ref: '#/components/schemas/SchedaPostPubblicazioneType'
+            $ref: '#/components/schemas/SchedaGroupType'
         example:
             idAvviso: 'f81d4fae-7dec-11d0-a765-00a0c91e6bf6'
             dataCreazione: '2022-01-23T12:02:05Z'
