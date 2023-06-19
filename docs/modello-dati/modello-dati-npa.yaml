@@ -192,7 +192,7 @@ components:
             description: Elenco di una tipologica
             type: array
             items:
-              $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
+               $ref: '#/components/schemas/DatiTipologicaType'
       DatiTipologicaType:
         allOf: # estende lo schema dati di TipologicaType
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
