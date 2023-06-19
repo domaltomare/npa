@@ -1874,8 +1874,10 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'      
     AppaltoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
-    PianoType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PianoType'
+    DatiPianoType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiPianoType'
+    DatiPianoBaseType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiPianoBaseType'      
     SoggettoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SoggettoType'
     PaginazioneType:
@@ -1894,16 +1896,14 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAppaltoBaseType'    
     DatiAppaltoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAppaltoType'
+    SchedaPianificazioneType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPianificazioneType'    
     SchedaPostPubblicazioneType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPostPubblicazioneType'
     DatiSchedaType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiSchedaType'
     DatiBaseSchedaType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiBaseSchedaType'
-    DatiPianoBaseType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiPianoBaseType'      
-    DatiPianoType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiPianoType'
     EsitoOperazioneType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EsitoOperazioneType'
     StatoType:
@@ -1923,11 +1923,24 @@ components:
       allOf: # estende la classe DatiAppaltoType
         - $ref: '#/components/schemas/DatiAppaltoType'
     CreaPianoRequest:
-      allOf: # estende la classe DatiPianoType
-        - $ref: '#/components/schemas/DatiPianoBaseType'
+      type: object
+      additionalProperties: false
+      properties:
+        scheda:
+          $ref: '#/components/schemas/SchedaPianificazioneType'
     DatiPianoRequest:
-      allOf: # estende la classe DatiPianoType
-        - $ref: '#/components/schemas/DatiPianoType'
+      type: object
+      additionalProperties: false
+      required:  # List the required properties here
+        - idPianificazione
+      properties:
+        idPianificazione:
+          description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Pianificazione. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        scheda:
+          $ref: '#/components/schemas/SchedaPianificazioneType'          
     SoggettoRequest:
       description: Oggetto generico di ritorno di una risposta con paginazione
       type: object
@@ -2140,6 +2153,12 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/SoggettoType'        
+    ConsultaPianoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:
+        piano:
+          $ref: '#/components/schemas/DatiPianoType'
     PianoListaResponse:
       allOf: # estende la classe BaseResponse e PaginazioneType
         - $ref: '#/components/schemas/BaseResponse'
@@ -2152,7 +2171,7 @@ components:
           description: risposta di una lista di oggetti paginati specifica del servizio SINCRONO
           type: array
           items:
-            $ref: '#/components/schemas/PianoType'
+            $ref: '#/components/schemas/DatiPianoBaseType'
     AvvisoListaResponse:
       allOf: # estende la classe BaseResponse e PaginazioneType
         - $ref: '#/components/schemas/BaseResponse'
@@ -2236,12 +2255,6 @@ components:
           estensione: "PDF"
           size: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
           content: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-    ConsultaPianoResponse:
-      allOf: # estende lo schema dati di BaseResponse
-        - $ref: '#/components/schemas/BaseResponse'
-      properties:
-        piano:
-          $ref: '#/components/schemas/DatiPianoType'
     ConsultaSchedaResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
