@@ -1568,20 +1568,13 @@ paths:
       summary: API Rest per l’associazione di un Responsabile di Progetto. SINCRONO 
       description: servizio utile per l’associazione di un responsabile di progetto. SINCRONO 
       operationId: idPresaCarico
-      parameters:
-        - in: query
-          name: idAppalto
-          description: Identificativo dell'Appalto generato da ANAC. Alternativo al CIG
-          schema:
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        - in: query
-          name: cig
-          description: Identificativo univoco Gara-Lotto generato da ANAC. Alternativo all'idAppalto
-          schema:
-            type: string
-            example: "9050626CD6"    
+      requestBody:
+        description: Oggetto generico in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PresaCaricoRequest'
+        required: true
       responses:
         '200':
           description: Operazione terminato con successo.
@@ -1954,8 +1947,20 @@ components:
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         scheda:
           $ref: '#/components/schemas/SchedaPianificazioneType'          
-    SoggettoRequest:
+    PresaCaricoRequest:
       description: Oggetto generico di ritorno di una risposta con paginazione
+      type: object
+      additionalProperties: false
+      properties:
+        idAppalto:
+          description: Identificativo univoco dell'Appalto definito da ANAC. Alternativo al CIG
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        cig:
+          description: Identificativo univoco Gara-Lotto generato da ANAC. Alternativo all'idAppalto
+          type: string
+          example: "9050626CD6"    
+    SoggettoRequest:
       type: object
       additionalProperties: false
       properties:
