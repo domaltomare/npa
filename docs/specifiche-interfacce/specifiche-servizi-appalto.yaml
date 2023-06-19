@@ -213,6 +213,7 @@ paths:
         - in: query
           name: idPianificazione
           description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
+          required: true
           schema:
             type: string
             format: uuid
@@ -244,7 +245,7 @@ paths:
       parameters:
         - in: query
           name: stato
-          description: stato della Pianificazione - - fare riferimento ai valori contenuti nel file [statoPiano.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoPiano.json)
+          description: stato della Pianificazione - se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione di almeno un altro parametro -  fare riferimento ai valori contenuti nel file [statoPiano.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoPiano.json)
           schema:
             $ref: '#/components/schemas/StatoPianoEnum'
         - in: query
@@ -304,14 +305,20 @@ paths:
       summary: API Rest per la validazione della Pianificazione. ASINCRONO - ASIMMETRICO
       description: L'ultima istanza della Pianificazione inviata viene validata. In base alla tipologia della Pianificazione viene eseguita una validazione sintattica dei dati di input. ASINCRONO - ASIMMETRICO
       operationId: idPianoVerifica
-      parameters:
-        - in: query
-          name: idPianificazione
-          description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
-          schema:
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              properties:
+                idPianificazione:
+                  description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
+                  type: string
+                  format: uuid
+                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+              required:
+                - idPianificazione
       responses:
         '200':
             $ref: '#/components/responses/200AckResponse'       
@@ -898,7 +905,7 @@ paths:
             example: 9050626CD6
         - in: query
           name: stato
-          description: stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
+          description: stato dell'Appalto - Se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione di almeno un altro parametro -fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
           schema:
             $ref: '#/components/schemas/StatoAppaltoEnum'
         - in: query
@@ -917,7 +924,7 @@ paths:
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: statoAvviso
-          description: Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file [statoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAvviso.json)
+          description: Stato in cui si trova l' Avviso- Se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione di almeno un altro parametro -  fare riferimento ai valori contenuti nel file [statoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAvviso.json)
           schema:
             $ref: '#/components/schemas/StatoAvvisoEnum'
         - in: query
@@ -1204,7 +1211,7 @@ paths:
             example: 9050626CD6
         - in: query
           name: stato
-          description: stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
+          description: stato dell'Appalto - Se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione di almeno un altro parametro - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
           schema:
             $ref: '#/components/schemas/StatoAppaltoEnum'
         - in: query
@@ -1228,7 +1235,7 @@ paths:
             $ref: '#/components/schemas/TipoSchedaEnum'
         - in: query
           name: statoScheda
-          description: Stato della Scheda - fare riferimento ai valori contenuti nel file [statoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoScheda.json)
+          description: Stato della Scheda - Se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione di almeno un altro parametro - fare riferimento ai valori contenuti nel file [statoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoScheda.json)
           schema:
             $ref: '#/components/schemas/StatoSchedaEnum'
         - in: query
@@ -1302,15 +1309,21 @@ paths:
       summary: API Rest per la validazione di una Scheda dati. ASINCRONO - ASIMMETRICO
       description: L'ultimo istanza della Scheda inviata viene validata. La validazione è orchestrata da un Workflow Engine che, tramite il suo motore di regole, verifica sia se la scheda dati è coerente con lo stato dell’Appalto sia la correttezza sintattica dei dati di input.  ASINCRONO - ASIMMETRICO
       operationId: idSchedaVerifica
-      parameters:
-        - in: query
-          name: idScheda
-          description: identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
-          required: true
-          schema:
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              properties:
+                idScheda:
+                  description: identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
+                  type: string
+                  format: uuid
+                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+              required:
+                - idScheda
+        required: true
       responses:
         '200':
             $ref: '#/components/responses/200AckResponse'       
