@@ -88,11 +88,11 @@ components:
     TipoServizioSoggettoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'     
-      description: Tipologia di Servizi delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoServizioSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoServizioSoggetto.json)
+      description: Non gestito nella prima release - Tipologia di Servizi delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoServizioSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoServizioSoggetto.json)
     TipoOperazioneSoggettoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'     
-      description: Tipologia di Operazioni delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoOperazioneSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
+      description: Non gestito nella prima release - Tipologia di Operazioni delegabili ad un Soggetto - fare riferimento ai valori contenuti nel file [tipoOperazioneSoggetto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
     TipoOperazioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'     
