@@ -2002,9 +2002,9 @@ components:
           example: "9050626CD6"
         ruolo:  
           $ref: '#/components/schemas/TipoRuoloEnum'
-        servizio:  
+        servizio: 
           $ref: '#/components/schemas/TipoServizioSoggettoEnum'
-        operazione:  
+        operazione:
           $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'      
         dataInizio: 
           description: Data di inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
