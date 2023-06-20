@@ -9,8 +9,14 @@ components:
     TipologicaSchemaType:
         type: object
         properties:
+          idTipologica:
+            type: string        
           codice:
             type: string
+    TipologicaSchemaEstesoType:
+        allOf: # estende lo schema dati di TipologicaSchemaType
+          - $ref: '#/components/schemas/TipologicaSchemaType'
+        properties:
           descrizione:
             $ref: '#/components/schemas/I18NType'
           dataInizio:
