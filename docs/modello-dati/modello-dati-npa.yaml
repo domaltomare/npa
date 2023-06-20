@@ -271,10 +271,6 @@ components:
             $ref: '#/components/schemas/OggettoContrattoEnum'            
           appalto:
             $ref: '#/components/schemas/AppaltoBaseType' 
-          #avvisi: 
-            #type: array
-            #items:
-              #$ref: '#/components/schemas/AvvisoType'
       AppaltoBaseType:
         description: Oggetto che riporta tutti i dati dell'Appalto
         type: object
@@ -296,8 +292,6 @@ components:
             example: '2022-01-23T12:02:05Z'       
           stato:
             $ref: '#/components/schemas/StatoAppaltoEnum'
-          #avviso:  
-            #$ref: '#/components/schemas/AvvisoType'
       AppaltoType:
         allOf: # estende la classe AppaltoBaseType
           - $ref: '#/components/schemas/AppaltoBaseType'
@@ -318,8 +312,6 @@ components:
             example: '2022-01-23T12:02:05Z'       
           stato:
             $ref: '#/components/schemas/StatoAppaltoEnum'
-          #avviso:  
-            #$ref: '#/components/schemas/AvvisoType'
           lotti:
             type: array
             items:
@@ -377,8 +369,6 @@ components:
             $ref: '#/components/schemas/TipoAzioneAvvisoEnum'            
           appalto:
             $ref: '#/components/schemas/AppaltoBaseType'
-          lotto:
-            $ref: '#/components/schemas/LottoType'
           scheda:
             $ref: '#/components/schemas/SchedaGroupType'
       PaginazioneType:
