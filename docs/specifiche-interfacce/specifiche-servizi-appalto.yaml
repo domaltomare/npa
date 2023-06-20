@@ -1924,12 +1924,14 @@ components:
     ContentDocumentType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/ContentDocumentType'      
     CreaAppaltoRequest:
+      description: Oggetto in ingresso al servizio    
       type: object
       additionalProperties: false
       properties:
         scheda:
           $ref: '#/components/schemas/SchedaComunicaAppaltoType'
     DatiAppaltoRequest:
+      description: Oggetto in ingresso al servizio    
       type: object
       additionalProperties: false
       required:  # List the required properties here
@@ -1943,12 +1945,14 @@ components:
         scheda:
           $ref: '#/components/schemas/SchedaComunicaAppaltoType'
     CreaPianoRequest:
+      description: Oggetto in ingresso al servizio    
       type: object
       additionalProperties: false
       properties:
         scheda:
           $ref: '#/components/schemas/SchedaPianificazioneType'
     DatiPianoRequest:
+      description: Oggetto in ingresso al servizio    
       type: object
       additionalProperties: false
       required:  # List the required properties here
@@ -1962,7 +1966,7 @@ components:
         scheda:
           $ref: '#/components/schemas/SchedaPianificazioneType'          
     PresaCaricoRequest:
-      description: Oggetto generico di ritorno di una risposta con paginazione
+      description: Oggetto in ingresso al servizio
       type: object
       additionalProperties: false
       properties:
@@ -1975,6 +1979,7 @@ components:
           type: string
           example: "9050626CD6"    
     SoggettoRequest:
+      description: Oggetto in ingresso al servizio
       type: object
       additionalProperties: false
       properties:
@@ -2007,6 +2012,7 @@ components:
           format: datetime
           example: '2022-01-23T12:02:05Z'
     CreaSchedaRequest:
+      description: Oggetto in ingresso al servizio    
       type: object
       additionalProperties: false
       required:  # List the required properties here
@@ -2020,6 +2026,7 @@ components:
         scheda:
           $ref: '#/components/schemas/SchedaPostPubblicazioneType' 
     DatiSchedaRequest:
+      description: Oggetto in ingresso al servizio    
       type: object
       additionalProperties: false
       required:  # List the required properties here
@@ -2039,6 +2046,7 @@ components:
         scheda:
           $ref: '#/components/schemas/SchedaPostPubblicazioneType' 
     AvvisoRequest:
+      description: Oggetto in ingresso al servizio    
       type: object
       additionalProperties: false
       required:  # List the required properties here
