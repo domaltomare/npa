@@ -11,7 +11,7 @@ components:
         required: [versione,codice]
         properties:
           _idScheda:
-            description: Identificativo univoco della scheda. Il campo viene determinato da anac e restituito nelle respons e, dunque, viene ignorato il valore inserito nelle put/post.
+            description: Identificativo univoco della scheda. Il campo viene determinato da anac e restituito nelle response. Dunque il valore se inserito viene ignorato put/post.
             $ref: '#/components/schemas/IdSchedaType'
           codice:
             $ref: '#/components/schemas/CodiceSchedaEnum'           
