@@ -11,8 +11,10 @@ components:
         required: [versione,codice]
         properties:
           _idScheda:
-            description:  Codice univoco della scheda. il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
-            $ref: '#/components/schemas/IdSchedaType'
+            description: Codice univoco della scheda. il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
           codice:
             $ref: '#/components/schemas/CodiceSchedaEnum'           
           versione:
@@ -151,12 +153,7 @@ components:
               - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-AC1.yaml#/components/schemas/SchedaAC1Type'  
               - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-IR1.yaml#/components/schemas/SchedaIR1Type' 
               - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-CO1.yaml#/components/schemas/SchedaCO1Type'  
-              - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-CL1.yaml#/components/schemas/SchedaCL1Type'  
-      IdSchedaType:
-        description:  Codice univoco della scheda. il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
-        type: string
-        format: uuid
-        example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+              - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-CL1.yaml#/components/schemas/SchedaCL1Type'
       CigType:
         description: coppia lotIdentifier-cig
         type: object
@@ -568,9 +565,9 @@ components:
       OggettoPrincipaleContrattoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoPrincipaleContrattoEnum'
       OggettoContrattoEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoContrattoEnum'        
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoContrattoEnum'
       EsitoOperazioneEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoOperazioneEnum'        
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoOperazioneEnum'
       EsitoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoEnum'
       CodiceSchedaEnum:
