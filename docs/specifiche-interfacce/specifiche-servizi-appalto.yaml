@@ -2226,7 +2226,7 @@ components:
     SoggettoListaResponse :
       allOf: # estende la classe BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
-      description: Oggetto generico di ritorno di una risposta con paginazione
+      description: Oggetto generico di ritorno di una risposta
       type: object
       additionalProperties: false
       properties:
