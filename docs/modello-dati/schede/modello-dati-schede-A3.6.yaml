@@ -1,10 +1,10 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda A3.6 - Scheda di aggiudicazione relativa ad affidamento a soc. inhouse
+  title: Modello Dati - Scheda A3_6 - Scheda di aggiudicazione relativa ad affidamento a soc. inhouse
   version: 1.0.0
 components:
   schemas:
-    AppaltoA3.6Type:
+    AppaltoA3_6Type:
       type: object
       additionalProperties: false
       required: [relazioneUnicaSulleProcedure,preinformazione,termineRidottoAvvisoPreinformazione]      
@@ -18,7 +18,7 @@ components:
         termineRidottoAvvisoPreinformazione:
           description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
           type: boolean             
-    AggiudicazioneA3.6Type:
+    AggiudicazioneA3_6Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
@@ -52,23 +52,23 @@ components:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'
         datiBaseAggiudicazioneAppalto:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'              
-    AnacFormA3.6Type:
+    AnacFormA3_6Type:
       description: Contiene tutti i dati relativi alle Società in-house.
       type: object
       required: [appalto,aggiudicazioni]
       properties:
         appalto:
-          $ref: '#/components/schemas/AppaltoA3.6Type'
+          $ref: '#/components/schemas/AppaltoA3_6Type'
         aggiudicazioni:
           description: Dati relativi alle aggiudicazioni
           type: array
           items:
-            $ref: '#/components/schemas/AggiudicazioneA3.6Type'      
-    SchedaA3.6Type:
+            $ref: '#/components/schemas/AggiudicazioneA3_6Type'      
+    SchedaA3_6Type:
       description: Scheda di aggiudicazione relativa alle Società in-house
       type: object
       required: [anacForm]
       additionalProperties: false
       properties:
         anacForm:
-          $ref: '#/components/schemas/AnacFormA3.6Type' 
+          $ref: '#/components/schemas/AnacFormA3_6Type' 

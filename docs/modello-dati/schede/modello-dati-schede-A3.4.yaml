@@ -1,14 +1,16 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda A3.4 - Scheda di aggiudicazione relativa al contraente generale 
+  title: Modello Dati - Scheda A3_4 - Scheda di aggiudicazione relativa al contraente generale 
   version: 1.0.0
 components:
   schemas:
-    AppaltoA3.4Type:
+    AppaltoA3_4Type:
       type: object
       additionalProperties: false
       required: [relazioneUnicaSulleProcedure,preinformazione,termineRidottoAvvisoPreinformazione]      
       properties:
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'      
         relazioneUnicaSulleProcedure:
           description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
           type: boolean    
@@ -19,52 +21,22 @@ components:
           description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
           type: boolean           
         datiBaseProcedura:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraA2Type'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraAccelerataType'
         datiBaseStrumentiProcedura:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraA3.4Type'  
+          allOf: 
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraType'
+          required: [accordoQuadro,sistemaDinamicoAcquisizione,astaElettronica]
         datiBaseAggiudicazioneSubappalto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoA3.4Type'           
-    AggiudicazioneA3.4Type:
+          allOf: 
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiType'            
+    AggiudicazioneA3_4Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
+      allOf: # estende la classe AggiudicazioneCompletaType
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneCompletaType'      
       type: object
       additionalProperties: false
       required: [numeroOfferteAmmesse,nImpreseEscluseInsufficientiGiustificazioni]
-      properties:
-        cig:
-          description: codice identificativo lotto
-          type: string
-          example: 
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string      
-        modalitaRiaggiudicazioneAffidamento:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'  
-        numeroOfferteAmmesse:
-          description: numero di offerte ammesse
-          type: string
-          format: integer 
-        valoreSogliaAnomalia:
-          description: Valore soglia anomalia
-          type: string
-        nOfferte:
-          description: N.offerte >= soglia anomalia
-          type: string
-          format: integer
-        nImpreseEscluseAutomaticamente: 
-          description: Numero imprese escluse automaticamente
-          type: string
-          format: integer
-        nImpreseEscluseInsufficientiGiustificazioni: 
-          description: Numero imprese escluse per insufficienti giustificazioni
-          type: string
-          format: integer  
-        quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType'
-        offertePresentate:
-          description: Dati degli aggiudicatari
-          type: array
-          items: 
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OfferteType'          
+      properties:         
         datiBaseRisultatoProcedura:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraType'  
         datiBaseSottomissioniRicevute:
@@ -74,23 +46,23 @@ components:
         datiBaseAccessibilita:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'
 
-    AnacFormA3.4Type:
+    AnacFormA3_4Type:
       description: Contiene tutti i dati relativi al contraente generale
       type: object
       required: [appalto,aggiudicazioni]
       properties:
         appalto:
-          $ref: '#/components/schemas/AppaltoA3.4Type'
+          $ref: '#/components/schemas/AppaltoA3_4Type'
         aggiudicazioni:
           description: Dati relativi alle aggiudicazioni
           type: array
           items:
-            $ref: '#/components/schemas/AggiudicazioneA3.4Type' 
-    SchedaA3.4Type:
+            $ref: '#/components/schemas/AggiudicazioneA3_4Type' 
+    SchedaA3_4Type:
       description: Scheda di aggiudicazione relativa al contraente generale
       type: object
       required: [anacForm]
       additionalProperties: false
       properties:
         anacForm:
-          $ref: '#/components/schemas/AnacFormA3.4Type'
+          $ref: '#/components/schemas/AnacFormA3_4Type'

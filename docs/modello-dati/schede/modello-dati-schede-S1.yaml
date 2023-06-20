@@ -9,6 +9,9 @@ components:
       type: object
       additionalProperties: false
       properties:
+        cig:
+          description: codice identificativo lotto
+          type: string        
         soggettiInteressati:
           description: Dati relativi ai soggetti che hanno presentato manifestazione d'interesse
           type: array

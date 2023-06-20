@@ -1,16 +1,20 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda A3.3 - Scheda di aggiudicazione relativa ai Contratti esclusi - adesione con confronto competitivo
+  title: Modello Dati - Scheda A3_3 - Scheda di aggiudicazione relativa ai Contratti esclusi - adesione con confronto competitivo
   version: 1.0.0
 components:
   schemas:
-    AppaltoA3.3Type:
+    AppaltoA3_3Type:
       type: object
       additionalProperties: false
-      properties:   
+      properties:  
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'      
         datiBaseAggiudicazioneSubappalto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoType'      
-    AggiudicazioneA3.3Type:
+          allOf: 
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiType' 
+          required: [subAppalto]     
+    AggiudicazioneA3_3Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
       additionalProperties: false
@@ -29,9 +33,7 @@ components:
         dataAdesione: 
           description: Data di adesione all'accordo quadro/convenzione
           type: string
-          format: datetime
-        modalitaRiaggiudicazioneAffidamento:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum' 
+          format: datetime 
         quadroEconomicoStandard:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType'
         offertePresentate:
@@ -44,24 +46,24 @@ components:
         datiBaseRisultatoProcedura:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseRisultatoProceduraType'  
         datiBaseAggiudicazioneAppalto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoA3.3Type'         
-    AnacFormA3.3Type:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'         
+    AnacFormA3_3Type:
       description: Contiene tutti i dati relativi all'aggiudicazione per i contratti esclusi - Adesione senza confronto competitivo
       type: object
       required: [appalto,aggiudicazioni]
       properties:
         appalto:
-          $ref: '#/components/schemas/AppaltoA3.3Type'
+          $ref: '#/components/schemas/AppaltoA3_3Type'
         aggiudicazioni:
           description: Dati relativi alle aggiudicazioni
           type: array
           items:
-            $ref: '#/components/schemas/AggiudicazioneA3.3Type'
-    SchedaA3.3Type:
+            $ref: '#/components/schemas/AggiudicazioneA3_3Type'
+    SchedaA3_3Type:
       description: Scheda di aggiudicazione relativa ai contratti esclusi - Adesione senza confronto competitivo
       type: object
       required: [anacForm]
       additionalProperties: false
       properties:
         anacForm:
-          $ref: '#/components/schemas/AnacFormA3.3Type'
+          $ref: '#/components/schemas/AnacFormA3_3Type'
