@@ -1726,7 +1726,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/SoggettoRequest'
+              $ref: '#/components/schemas/EliminaSoggettoRequest'
         required: true
       responses:
         '200':
@@ -1982,13 +1982,16 @@ components:
       description: Oggetto in ingresso al servizio
       type: object
       additionalProperties: false
+      required:
+        - codiceFiscale
+        - ruolo
       properties:
         codiceFiscale:
           description: codice fiscale del soggetto.
           type: string
           example: "AAA345FRT565"
         idAppalto:
-          description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          description: Identificativo univoco dell'Appalto definito da ANAC. Alternativo al cig
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         cig:
@@ -2011,6 +2014,39 @@ components:
           type: string
           format: datetime
           example: '2022-01-23T12:02:05Z'
+    EliminaSoggettoRequest:
+      description: Oggetto in ingresso al servizio
+      type: object
+      additionalProperties: false
+      properties:
+        codiceFiscale:
+          description: codice fiscale del soggetto. Obbligatorio se idAppalto e cig non sono stati valorizzati
+          type: string
+          example: "AAA345FRT565"
+        idAppalto:
+          description: Identificativo univoco dell'Appalto definito da ANAC. Obbligatorio se codiceFiscale e cig non sono stati valorizzati
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        cig:
+          description: Identificativo univoco Gara-Lotto generato da ANAC. Obbligatorio se idAppalto e codiceFiscale non sono stati valorizzati
+          type: string
+          example: "9050626CD6"
+        ruolo:  
+          $ref: '#/components/schemas/TipoRuoloEnum'
+        servizio:  
+          $ref: '#/components/schemas/TipoServizioSoggettoEnum'
+        operazione:  
+          $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'      
+        dataInizio: 
+          description: Data di inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z'
+        dataFine: 
+          description: Data di fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z'          
     CreaSchedaRequest:
       description: Oggetto in ingresso al servizio    
       type: object
