@@ -1473,10 +1473,10 @@ paths:
       parameters:
         - in: query
           name: idTipologica
-          description: Identificativo univoco della tipologica
+          description: Identificativo della tipologica utile per raggruppare i valori di ogni singola tipologica
           schema:
             type: string
-            format: uuid
+            example: 'CPV'
           required: true
         - in: query
           name: dataInizio
@@ -1533,16 +1533,17 @@ paths:
       parameters:
         - in: query
           name: idTipologica
-          description: Identificativo univoco della tipologica
+          description: Identificativo della tipologica utile per raggruppare i valori di ogni singola tipologica
           schema:
             type: string
-            format: uuid
+            example: 'CPV'
           required: true
         - in: query
           name: codice
           description: Codice del valore che si vuole recuperare dalla tipologica
           schema:
             type: string
+            example: '001'
           required: true          
       responses:
         '200':
@@ -1898,12 +1899,12 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAvvisoType'
     CigType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/CigType'
-    DatiAppaltoBaseType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAppaltoBaseType'    
     DatiAppaltoType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAppaltoType'
     SchedaPianificazioneType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPianificazioneType'    
+    SchedaComunicaAppaltoType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaComunicaAppaltoType'
     SchedaPostPubblicazioneType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPostPubblicazioneType'
     DatiSchedaType:
@@ -1923,11 +1924,24 @@ components:
     ContentDocumentType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/ContentDocumentType'      
     CreaAppaltoRequest:
-      allOf: # estende la classe DatiAppaltoBaseType
-        - $ref: '#/components/schemas/DatiAppaltoBaseType'
+      type: object
+      additionalProperties: false
+      properties:
+        scheda:
+          $ref: '#/components/schemas/SchedaComunicaAppaltoType'
     DatiAppaltoRequest:
-      allOf: # estende la classe DatiAppaltoType
-        - $ref: '#/components/schemas/DatiAppaltoType'
+      type: object
+      additionalProperties: false
+      required:  # List the required properties here
+        - idAppalto
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        scheda:
+          $ref: '#/components/schemas/SchedaComunicaAppaltoType'
     CreaPianoRequest:
       type: object
       additionalProperties: false
@@ -1999,25 +2013,31 @@ components:
         - idAppalto
       properties:
         idAppalto:
-          description: identificativo univoco dell'Avviso generato da ANAC.
+          description: identificativo univoco dell'Appalto generato da ANAC.
           type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         scheda:
           $ref: '#/components/schemas/SchedaPostPubblicazioneType' 
     DatiSchedaRequest:
-      allOf: # estende la classe AppaltoBaseType
-        - $ref: '#/components/schemas/CreaSchedaRequest'
       type: object
       additionalProperties: false
       required:  # List the required properties here
         - idScheda
+        - idAppalto
       properties:
-        idScheda:
-          description: identificativo univoco ddella Scheda definito da ANAC. Restituito dall'operazione di creazione Scheda. (A UUID specified by RFC4122)
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
           type: string
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idScheda:
+          description: identificativo univoco della Scheda definito da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        scheda:
+          $ref: '#/components/schemas/SchedaPostPubblicazioneType' 
     AvvisoRequest:
       type: object
       additionalProperties: false
@@ -2031,7 +2051,7 @@ components:
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
         idAppalto:
-          description: identificativo univoco dell'Avviso generato da ANAC.
+          description: identificativo univoco dell'Appalto generato da ANAC.
           type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
@@ -2386,7 +2406,7 @@ components:
         - idScheda
       properties:
         idScheda:
-          description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          description: Identificativo univoco della scheda definito da ANAC. (A UUID specified by RFC4122)
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
       example:
