@@ -17,9 +17,11 @@ components:
           - idTipologica
           - codice
     TipologicaSchemaEstesoType:
-        allOf: # estende lo schema dati di TipologicaSchemaType
-          - $ref: '#/components/schemas/TipologicaSchemaType'
         properties:
+          idTipologica:
+            type: string
+          codice:
+            type: string
           descrizione:
             $ref: '#/components/schemas/I18NType'
           dataInizio:
