@@ -1,63 +1,70 @@
 [{
+    "idTipologica":"MOTIVO_URGENZA",
     "codice":"1",
     "descrizione": {
 		"it": "Somma urgenza beni culturali",
 		"en": "Somma urgenza beni culturali"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"MOTIVO_URGENZA",
     "codice":"2",
     "descrizione": {
 		"it": "Somma urgenza e protezione civile",
 		"en": "Somma urgenza e protezione civile"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"MOTIVO_URGENZA",
     "codice":"3",
     "descrizione": {
 		"it": "Estrema urgenza settori speciali",
 		"en": "Estrema urgenza settori speciali"
 		},	
-    "datainizio":null,
-    "datafine":"2023-12-31T00:00:00Z"
+    "dataInizio":null,
+    "dataFine":"2023-12-31T00:00:00Z"
 },
 {
+    "idTipologica":"MOTIVO_URGENZA",
     "codice":"4",
     "descrizione": {
 		"it": "Procedura negoziata per estrema urgenza",
 		"en": "Procedura negoziata per estrema urgenza"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"MOTIVO_URGENZA",
     "codice":"5",
     "descrizione": {
 		"it": "Estrema urgenza per vincolo idrogeologico, normativa antisismica e messa in sicurezza edifici scolastici",
 		"en": "Estrema urgenza per vincolo idrogeologico, normativa antisismica e messa in sicurezza edifici scolastici"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"MOTIVO_URGENZA",
     "codice":"6",
     "descrizione": {
 		"it": "L. 120 del 11/09/2020",
 		"en": "L. 120 del 11/09/2020"
 		},	
-    "datainizio":"2022-03-03T00:00:00Z",
-    "datafine":"2023-06-30T00:00:00Z"
+    "dataInizio":"2022-03-03T00:00:00Z",
+    "dataFine":"2023-06-30T00:00:00Z"
 },
 {
+    "idTipologica":"MOTIVO_URGENZA",
     "codice":"7",
     "descrizione": {
 		"it": "no",
 		"en": "no"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

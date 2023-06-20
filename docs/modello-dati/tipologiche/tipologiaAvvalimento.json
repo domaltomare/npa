@@ -1,18 +1,20 @@
 [{
+    "idTipologica":"TIPOLOGIA_AVVALIMENTO",
     "codice":"1",
     "descrizione": {
 		"it": "Requisito",
 		"en": "Requisito"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPOLOGIA_AVVALIMENTO",
     "codice":"2",
     "descrizione": {
 		"it": "Miglioramento offerta",
 		"en": "Miglioramento offerta"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

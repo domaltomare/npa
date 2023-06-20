@@ -1,27 +1,30 @@
 [{
+    "idTipologica":"OGGETTO_PRINCIPALE_CONTRATTO",
     "codice":"L",
     "descrizione": {
 		"it": "Lavori",
 		"en": "Lavori"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"OGGETTO_PRINCIPALE_CONTRATTO",
     "codice":"S",
     "descrizione": {
 		"it": "Servizi",
 		"en": "Servizi"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"OGGETTO_PRINCIPALE_CONTRATTO",
     "codice":"F",
     "descrizione": {
 		"it": "Forniture",
 		"en": "Forniture"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

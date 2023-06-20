@@ -1,27 +1,30 @@
 [{
+    "idTipologica":"CRITERI_AGGIUDICAZIONE",
     "codice":"quality",
     "descrizione": {
 		"it": "Qualità",
 		"en": "Quality"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"CRITERI_AGGIUDICAZIONE",
     "codice":"cost",
     "descrizione": {
 		"it": "Costo",
 		"en": "Cost"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"CRITERI_AGGIUDICAZIONE",
     "codice":"price",
     "descrizione": {
 		"it": "Prezzo",
 		"en": "Price"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

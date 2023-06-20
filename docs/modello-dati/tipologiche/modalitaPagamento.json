@@ -1,18 +1,20 @@
 [{
+    "idTipologica":"MODALITA_PAGAMENTO",
     "codice":"1",
     "descrizione": {
 		"it": "Somme in denaro",
 		"en": "Somme in denaro"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"MODALITA_PAGAMENTO",
     "codice":"2",
     "descrizione": {
 		"it": "Trasferimento in proprietà  di  beni immobili",
 		"en": "Trasferimento in proprietà  di  beni immobili"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

@@ -1,81 +1,90 @@
 [{
+    "idTipologica":"TIPO_PROCEDURA",
     "codice":"open",
     "descrizione": {
 		"it": "Aperta",
 		"en": "Open"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPO_PROCEDURA",
     "codice":"restricted",
     "descrizione": {
 		"it": "Ristretta",
 		"en": "Restricted"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPO_PROCEDURA",
     "codice":"neg-w-call",
     "descrizione": {
 		"it": "Negoziata con previa indizione di gara / competitiva con negoziazione",
 		"en": "Negotiated with prior publication of a call for competition / competitive with negotiation"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPO_PROCEDURA",
     "codice":"neg-wo-call",
     "descrizione": {
 		"it": "Negoziata senza previa indizione di gara",
 		"en": "Negotiated without prior call for competition"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPO_PROCEDURA",
     "codice":"comp-dial",
     "descrizione": {
 		"it": "Dialogo competitivo",
 		"en": "Competitive dialogue"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPO_PROCEDURA",
     "codice":"innovation",
     "descrizione": {
 		"it": "Partenariato per l'innovazione",
 		"en": "Innovation partnership"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPO_PROCEDURA",
     "codice":"oth-single",
     "descrizione": {
 		"it": "Altra procedura a fase unica",
 		"en": "Other single stage procedure"
 		},		
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPO_PROCEDURA",
     "codice":"oth-mult",
     "descrizione": {
 		"it": "Altra procedura a più fasi",
 		"en": "Other multiple stage procedure"
 		},			    
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPO_PROCEDURA",
     "codice":"comp-tend",
     "descrizione": {
 		"it": "Procedura di gara",
 		"en": "Competitive tendering"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

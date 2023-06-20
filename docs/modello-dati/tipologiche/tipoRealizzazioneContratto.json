@@ -1,18 +1,20 @@
 [{
+    "idTipologica":"TIPO_REALIZZAZIONE_CONTRATTO",
     "codice":"1",
     "descrizione": {
 		"it": "Contratto d'appalto",
 		"en": "Contratto d'appalto"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPO_REALIZZAZIONE_CONTRATTO",
     "codice":"2",
     "descrizione": {
 		"it": "Concessione",
 		"en": "Concessione"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

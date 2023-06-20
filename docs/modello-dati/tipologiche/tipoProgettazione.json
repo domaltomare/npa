@@ -1,18 +1,20 @@
 [{
+    "idTipologica":"TIPO_PROGETTAZIONE",
     "codice":"1",
     "descrizione": {
 		"it": "Progetto di fattibilità tecnico-economica",
 		"en": "Progetto di fattibilità tecnico-economica"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPO_PROGETTAZIONE",
     "codice":"2",
     "descrizione": {
 		"it": "Progettazione esecutiva",
 		"en": "Progettazione esecutiva"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

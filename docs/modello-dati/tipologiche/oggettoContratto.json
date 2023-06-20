@@ -1,36 +1,40 @@
 [{
+    "idTipologica":"OGGETTO_CONTRATTO",
     "codice":"works",
     "descrizione": {
 		"it": "Lavori",
 		"en": "Works"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"OGGETTO_CONTRATTO",
     "codice":"supplies",
     "descrizione": {
 		"it": "Forniture",
 		"en": "Supplies"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"OGGETTO_CONTRATTO",
     "codice":"services",
     "descrizione": {
 		"it": "Servizi",
 		"en": "Services"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"OGGETTO_CONTRATTO",
     "codice":"combined",
     "descrizione": {
 		"it": "Appalti misti",
 		"en": "Combined"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

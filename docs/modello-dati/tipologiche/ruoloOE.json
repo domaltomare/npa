@@ -1,18 +1,20 @@
 [{
+    "idTipologica":"RUOLO_OE",
     "codice":"1",
     "descrizione": {
 		"it": "Mandataria",
 		"en": "Mandataria"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"RUOLO_OE",
     "codice":"2",
     "descrizione": {
 		"it": "Mandante",
 		"en": "Mandante"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

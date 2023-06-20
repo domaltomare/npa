@@ -1,18 +1,20 @@
 [{
+    "idTipologica":"TIPOLOGIA_COMUNICAZIONE",
     "codice":"R",
     "descrizione": {
 		"it": "ritardo",
 		"en": "ritardo"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"TIPOLOGIA_COMUNICAZIONE",
     "codice":"S",
     "descrizione": {
 		"it": "sospensione",
 		"en": "sospensione"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

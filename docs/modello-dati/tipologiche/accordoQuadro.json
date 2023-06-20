@@ -1,36 +1,40 @@
 [{
+    "idTipologica":"ACCORDO_QUADRO",
     "codice":"fa-wo-rc",
     "descrizione": {
 		"it": "Accordo quadro, senza riapertura della gara",
 		"en": "Framework agreement, without reopening of competition"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"ACCORDO_QUADRO",
     "codice":"fa-w-rc",
     "descrizione": {
 		"it": "Accordo quadro, con riapertura della gara",
 		"en": "Framework agreement, with reopening of competition"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"ACCORDO_QUADRO",
     "codice":"fa-mix",
     "descrizione": {
 		"it": "Accordo quadro, parzialmente senza riapertura della gara e parzialmente con riapertura della gara",
 		"en": "Framework agreement, partly without reopening and partly with reopening of competition"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+    "idTipologica":"ACCORDO_QUADRO",
     "codice":"none",
     "descrizione": {
 		"it": "Nulla",
 		"en": "None"
 		},	
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]
