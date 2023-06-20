@@ -6,7 +6,7 @@ components:
   schemas:
     ModificaContrattualeType:
       allOf: 
-      - $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattuale.40Type'
+      - $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattuale_40Type'
       type: object
       additionalProperties: false
       properties:    

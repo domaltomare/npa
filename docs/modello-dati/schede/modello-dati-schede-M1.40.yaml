@@ -12,7 +12,7 @@ components:
         modificheContrattuali:
          type: array
          items:          
-          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattuale.40Type' 
+          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattuale_40Type' 
     SchedaM1_40Type:
       description: Scheda di modifica contrattuale con invio al TED - Avviso di modifica di un appalto — direttiva sulle concessioni - Articolo 43, paragrafo 1, della direttiva 2014/23/UE
       type: object
