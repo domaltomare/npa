@@ -1,27 +1,30 @@
 [{
-    "codice":"OK",
+    "idTipologica":"ESITO",
+	"codice":"OK",
     "descrizione": {
 		"it": "SUCCESS",
 		"en": "SUCCESS"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"KO",
+    "idTipologica":"ESITO",
+	"codice":"KO",
     "descrizione": {
 		"it": "ERROR",
 		"en": "ERROR"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"WT",
+    "idTipologica":"ESITO",
+	"codice":"WT",
     "descrizione": {
 		"it": "IN ATTESA",
 		"en": "WAITING"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

@@ -1,28 +1,40 @@
 [{
-    "codice":"PREINFORMAZIONE",
+    "idTipologica":"TIPO_PIANO",
+	"codice":"PREINFORMAZIONE",
     "descrizione": {
 		"it": "Preinformazione",
 		"en": "Preinformazione"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"PUBB_AVVISO",
+    "idTipologica":"TIPO_PIANO",
+	"codice":"PUBB_AVVISO",
     "descrizione": {
 		"it": "Pubblicazione avviso",
 		"en": "Pubblicazione avviso"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"BIENNALE",
+    "idTipologica":"TIPO_PIANO",
+	"codice":"BIENNALE",
     "descrizione": {
 		"it": "Programma biennale",
 		"en": "Programma biennale"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"TRIENNALE",
+    "idTipologica":"TIPO_PIANO",
+	"codice":"TRIENNALE",
     "descrizione": {
 		"it": "Programma triennale",
 		"en": "Programma triennale"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 }]

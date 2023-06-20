@@ -1,49 +1,70 @@
 [{
+	"idTipologica":"STATO_APPALTO",
 	"codice":"IN_LAV",
 	"descrizione": {
 		"it": "In lavorazione",
 		"en": "In lavorazione"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+	"idTipologica":"STATO_APPALTO",
 	"codice":"CONF",
 	"descrizione": {
 		"it": "Confermato",
 		"en": "Confermato"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+	"idTipologica":"STATO_APPALTO",
 	"codice":"CANC",
 	"descrizione": {
 		"it": "Cancellato",
 		"en": "Cancellato"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+	"idTipologica":"STATO_APPALTO",
 	"codice":"IN_ATT_PUBB",
 	"descrizione": {
 		"it": "In attesa pubblicazione",
 		"en": "In attesa pubblicazione"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+	"idTipologica":"STATO_APPALTO",
 	"codice":"IN_STOP_PUBB",
 	"descrizione": {
 		"it": "In stop pubblicazione",
 		"en": "In stop pubblicazione"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+	"idTipologica":"STATO_APPALTO",
 	"codice":"PUBB",
 	"descrizione": {
 		"it": "Pubblicato",
 		"en": "Pubblicato"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
+	"idTipologica":"STATO_APPALTO",
 	"codice":"NON_AGG",
 	"descrizione": {
 		"it": "Non aggiudicato",
 		"en": "Non aggiudicato"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 }]

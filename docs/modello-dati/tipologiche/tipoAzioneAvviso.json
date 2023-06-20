@@ -1,21 +1,30 @@
 [{
-    "codice":"AZ_PUBB",
+    "idTipologica":"TIPO_AZ_AVVISO",
+	"codice":"AZ_PUBB",
     "descrizione": {
 		"it": "Pubblicazione",
 		"en": "Pubblicazione"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"AZ_MOD",
+    "idTipologica":"TIPO_AZ_AVVISO",
+	"codice":"AZ_MOD",
     "descrizione": {
 		"it": "Modifica",
 		"en": "Modifica"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"AZ_RETT",
+    "idTipologica":"TIPO_AZ_AVVISO",
+	"codice":"AZ_RETT",
     "descrizione": {
 		"it": "Rettifica",
 		"en": "Rettifica"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 }]

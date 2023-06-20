@@ -1,21 +1,30 @@
 [{
-    "codice":"AGG",
+    "idTipologica":"STATO_LOTTO",
+	"codice":"AGG",
     "descrizione": {
 		"it": "Aggiudicato",
 		"en": "Aggiudicato"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"ANN",
+    "idTipologica":"STATO_LOT",
+	"codice":"ANN",
     "descrizione": {
 		"it": "Annullato",
 		"en": "Annullato"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"SOTT_CONTR",
+    "idTipologica":"STATO_LOT",
+	"codice":"SOTT_CONTR",
     "descrizione": {
 		"it": "Sottoscrizione contratto",
 		"en": "Sottoscrizione contratto"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 }]

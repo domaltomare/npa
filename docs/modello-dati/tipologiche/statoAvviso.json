@@ -1,35 +1,50 @@
 [{
-    "codice":"CREATO",
+    "idTipologica":"STATO_AVVISO",
+	"codice":"CREATO",
     "descrizione": {
 		"it": "Creato",
 		"en": "Creato"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"IN_ATT_PUBB",
+    "idTipologica":"STATO_AVVISO",
+	"codice":"IN_ATT_PUBB",
     "descrizione": {
 		"it": "In attesa pubblicazione",
 		"en": "In attesa pubblicazione"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"NON_PUBB",
+    "idTipologica":"STATO_AVVISO",
+	"codice":"NON_PUBB",
     "descrizione": {
 		"it": "Non pubblicato",
 		"en": "Non pubblicato"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"STOP_PUBB",
+    "idTipologica":"STATO_AVVISO",
+	"codice":"STOP_PUBB",
     "descrizione": {
 		"it": "In stop pubblicazione",
 		"en": "In stop pubblicazione"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
-    "codice":"PUBB",
+    "idTipologica":"STATO_AVVISO",
+	"codice":"PUBB",
     "descrizione": {
 		"it": "Pubblicato",
 		"en": "Pubblicato"
-	}
+	},
+    "dataInizio":null,
+    "dataFine":null
 }]
