@@ -11,6 +11,7 @@ components:
         required: [versione,codice]
         properties:
           _idScheda:
+            description: Identificativo univoco della scheda. Il campo viene determinato da anac e restituito nelle respons e, dunque, viene ignorato il valore inserito nelle put/post.
             $ref: '#/components/schemas/IdSchedaType'
           codice:
             $ref: '#/components/schemas/CodiceSchedaEnum'           
@@ -172,15 +173,14 @@ components:
         type: object
         additionalProperties: false
         properties:
-          id:
+          idTipologica:
             description: Identificativo univoco della tipologica. (A UUID specified by RFC4122)
             type: string
-            format: uuid
-            example: "categoria"
+            example: "CPV"
           descrizione:
             description: Descrizione della tipologica.
             format: string
-            example: "categoria"
+            example: "cpv"
       TipologicaType:
         description: Oggetto generico di una tipologica
         type: object
