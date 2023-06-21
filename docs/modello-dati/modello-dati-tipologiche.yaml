@@ -18,8 +18,6 @@ components:
           - codice
     TipologicaSchemaEstesoType:
         properties:
-          idTipologica:
-            type: string
           codice:
             type: string
           descrizione:
