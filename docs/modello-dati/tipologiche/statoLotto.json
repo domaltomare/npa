@@ -9,7 +9,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_LOT",
+    "idTipologica":"STATO_LOTTO",
 	"codice":"ANN",
     "descrizione": {
 		"it": "Annullato",
@@ -19,7 +19,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_LOT",
+    "idTipologica":"STATO_LOTTO",
 	"codice":"SOTT_CONTR",
     "descrizione": {
 		"it": "Sottoscrizione contratto",
