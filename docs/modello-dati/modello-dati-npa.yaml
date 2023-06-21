@@ -195,7 +195,7 @@ components:
         additionalProperties: false
         properties:
           idTipologica:
-            description: Identificativo univoco della tipologica. (A UUID specified by RFC4122)
+            description: Identificativo della tipologica utile per raggruppare i valori di ogni singola tipologica
             type: string
             example: "CPV"
           descrizione:
