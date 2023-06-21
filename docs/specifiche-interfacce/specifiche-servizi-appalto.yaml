@@ -1473,7 +1473,7 @@ paths:
       parameters:
         - in: query
           name: idTipologica
-          description: Identificativo della tipologica utile per raggruppare i valori di ogni singola tipologica
+          description: Identificativo della tipologica
           schema:
             type: string
             example: 'CPV'
@@ -1533,7 +1533,7 @@ paths:
       parameters:
         - in: query
           name: idTipologica
-          description: Identificativo della tipologica utile per raggruppare i valori di ogni singola tipologica
+          description: Identificativo della tipologica
           schema:
             type: string
             example: 'CPV'
