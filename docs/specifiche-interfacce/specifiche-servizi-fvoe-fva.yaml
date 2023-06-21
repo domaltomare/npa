@@ -1650,7 +1650,6 @@ components:
                 it SHOULD provide human-readable documentation for the problem
                 type
                 (e.g., using HTML).
-              default: about:blank
               format: uri
               maxLength: 2048
               type: string
