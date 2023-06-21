@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"MODALITA_PAGAMENTO",
     "codice":"1",
     "descrizione": {
 		"it": "Somme in denaro",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MODALITA_PAGAMENTO",
     "codice":"2",
     "descrizione": {
 		"it": "Trasferimento in proprietà  di  beni immobili",

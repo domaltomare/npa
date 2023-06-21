@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"MOTIVO_URGENZA",
     "codice":"1",
     "descrizione": {
 		"it": "Somma urgenza beni culturali",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_URGENZA",
     "codice":"2",
     "descrizione": {
 		"it": "Somma urgenza e protezione civile",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_URGENZA",
     "codice":"3",
     "descrizione": {
 		"it": "Estrema urgenza settori speciali",
@@ -29,7 +26,6 @@
     "dataFine":"2023-12-31T00:00:00Z"
 },
 {
-    "idTipologica":"MOTIVO_URGENZA",
     "codice":"4",
     "descrizione": {
 		"it": "Procedura negoziata per estrema urgenza",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_URGENZA",
     "codice":"5",
     "descrizione": {
 		"it": "Estrema urgenza per vincolo idrogeologico, normativa antisismica e messa in sicurezza edifici scolastici",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_URGENZA",
     "codice":"6",
     "descrizione": {
 		"it": "L. 120 del 11/09/2020",
@@ -59,7 +53,6 @@
     "dataFine":"2023-06-30T00:00:00Z"
 },
 {
-    "idTipologica":"MOTIVO_URGENZA",
     "codice":"7",
     "descrizione": {
 		"it": "no",

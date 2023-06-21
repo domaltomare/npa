@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"FATTISPECIE_TRACCIABILITA",
     "codice":"1",
     "descrizione": {
 		"it": "Contratti o concorsi di progettazione aggiudicati in base a norme/accordi internazionali o stabilite da un’organizzazione internazionale o da un’istituzione finanziaria internazionale, quando i contratti sono prevalentemente finanziati da quest’ultime.",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FATTISPECIE_TRACCIABILITA",
     "codice":"2",
     "descrizione": {
 		"it": "contratti aggiudicati a un'impresa collegata",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FATTISPECIE_TRACCIABILITA",
     "codice":"3",
     "descrizione": {
 		"it": "contratti aggiudicati ad una joint-venture composta esclusivamente da più stazioni appaltanti o da più enti concedenti o alla joint venture di cui essi fanno",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FATTISPECIE_TRACCIABILITA",
     "codice":"4",
     "descrizione": {
 		"it": "appalti aventi ad oggetto l'acquisto di prodotti agricoli e alimentari fino a 20.000 euro annui da imprese agricole situate nei comuni individuati dal codice",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FATTISPECIE_TRACCIABILITA",
     "codice":"5",
     "descrizione": {
 		"it": "Acquisto, locazione di terreni e fabbricati esistenti o altri beni immobili o riguardanti diritti su tali beni",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FATTISPECIE_TRACCIABILITA",
     "codice":"6",
     "descrizione": {
 		"it": "Contratti secretati o contratti la cui esecuzione deve essere accompagnata da speciali misure di sicurezza, in conformità a disposizioni legislative, regolamentari o amministrative",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FATTISPECIE_TRACCIABILITA",
     "codice":"7",
     "descrizione": {
 		"it": "Contratti o concorsi di progettazione aggiudicati dalle stazioni appaltanti o enti concedenti per svolgere una delle attività di cui agli articoli da 146 a 152 in un paese terzo in circostanze che non comportino lo sfruttamento materiale di una rete o un’area geografica all’interno dell’Unione europea",
@@ -69,7 +62,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FATTISPECIE_TRACCIABILITA",
     "codice":"8",
     "descrizione": {
 		"it": "Contratti e concorsi di progettazione nel settore della difesa e sicurezza esclusi ai sensi dell’art. 6 del decreto legislativo 15 novembre 2011 n. 208",
@@ -79,7 +71,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FATTISPECIE_TRACCIABILITA",
     "codice":"9",
     "descrizione": {
 		"it": "Co-programmazione/co-progettazione di servizi sociali",
@@ -89,7 +80,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FATTISPECIE_TRACCIABILITA",
     "codice":"10",
     "descrizione": {
 		"it": "Contratti e convenzioni per servizi sociali e sociosanitari interamente sottratti all’applicazione del codice",

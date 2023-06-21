@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"TIPO_PROCEDURA",
     "codice":"open",
     "descrizione": {
 		"it": "Aperta",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PROCEDURA",
     "codice":"restricted",
     "descrizione": {
 		"it": "Ristretta",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PROCEDURA",
     "codice":"neg-w-call",
     "descrizione": {
 		"it": "Negoziata con previa indizione di gara / competitiva con negoziazione",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PROCEDURA",
     "codice":"neg-wo-call",
     "descrizione": {
 		"it": "Negoziata senza previa indizione di gara",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PROCEDURA",
     "codice":"comp-dial",
     "descrizione": {
 		"it": "Dialogo competitivo",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PROCEDURA",
     "codice":"innovation",
     "descrizione": {
 		"it": "Partenariato per l'innovazione",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PROCEDURA",
     "codice":"oth-single",
     "descrizione": {
 		"it": "Altra procedura a fase unica",
@@ -69,7 +62,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PROCEDURA",
     "codice":"oth-mult",
     "descrizione": {
 		"it": "Altra procedura a più fasi",
@@ -79,7 +71,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PROCEDURA",
     "codice":"comp-tend",
     "descrizione": {
 		"it": "Procedura di gara",

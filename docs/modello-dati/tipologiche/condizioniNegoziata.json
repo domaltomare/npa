@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"1",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.2,lett.a). (N.B. per lavori<1.000.000 Euro)",
@@ -9,7 +8,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"2",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.2, lett.b).",
@@ -19,7 +17,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"3",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.2, lett.c).",
@@ -29,7 +26,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"4",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.3, lett.a).(N.B. Solo per forniture)",
@@ -39,7 +35,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"5",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.3, lett.b).(N.B. Solo per forniture)",
@@ -49,7 +44,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"6",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.3, lett.c).(N.B. Solo per forniture)",
@@ -59,7 +53,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"7",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.3, lett.d).(N.B. Solo per forniture)",
@@ -69,7 +62,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"8",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.4.(N.B. Solo per Servizi)",
@@ -79,7 +71,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"9",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.5, lett.a), sub a.1) (N.B. Solo per lavori e servizi)",
@@ -89,7 +80,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"10",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.5, lett.a), sub a.2) (N.B. Solo per lavori e servizi)",
@@ -99,7 +89,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"11",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.57, c.5, lett.b) (N.B. Solo per lavori e servizi)",
@@ -109,7 +98,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"12",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. a) (N.B. Solo Settori Speciali)",
@@ -119,7 +107,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"13",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. b) (N.B. Solo Settori Speciali)",
@@ -129,7 +116,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"14",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. c) (N.B. Solo Settori Speciali)",
@@ -139,7 +125,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"15",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. d) (N.B. Solo Settori Speciali)",
@@ -149,7 +134,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"16",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. e) (N.B. Solo Settori Speciali)",
@@ -159,7 +143,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"17",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. f) (N.B. Solo Settori Speciali)",
@@ -169,7 +152,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"18",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. g) (N.B. Solo Settori Speciali)",
@@ -179,7 +161,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"19",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. h) (N.B. Solo Settori Speciali)",
@@ -189,7 +170,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"20",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. i) (N.B. Solo Settori Speciali)",
@@ -199,7 +179,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"21",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. l) (N.B. Solo Settori Speciali)",
@@ -209,7 +188,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"22",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 204, c. 1",
@@ -219,7 +197,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"23",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. j) (N.B. Solo Settori Speciali)",
@@ -229,7 +206,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"24",
     "descrizione": {
 		"it": "D.Lgs. 163/2006, art. 221, c. 1, lett. k) (N.B. Solo Settori Speciali)",
@@ -239,7 +215,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"25",
     "descrizione": {
 		"it": "Altre motivazioni",
@@ -249,7 +224,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"26",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.122, c.7-bis (N.B. Solo per lavori)",
@@ -259,7 +233,6 @@
     "dataFine":"2012-12-27T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"27",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.122, c.8 (N.B. Solo per lavori)",
@@ -269,7 +242,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"28",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art. 99, c.5 / art. 108 c.6",
@@ -279,7 +251,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"29",
     "descrizione": {
 		"it": "Ricorso al mercato elettronico",
@@ -289,7 +260,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"30",
     "descrizione": {
 		"it": "Adesione ad accordo quadro/convenzione",
@@ -299,7 +269,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"31",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.122, c.7 (N.B. Solo per lavori)",
@@ -309,7 +278,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"32",
     "descrizione": {
 		"it": "D. Lgs. 163/2006, art.91, c.2",
@@ -319,7 +287,6 @@
     "dataFine":"2019-06-26T00:00:00Z"
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"33",
     "descrizione": {
 		"it": "Procedura a seguito di precedente gara annullata o deserta o senza esito",
@@ -329,7 +296,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"34",
     "descrizione": {
 		"it": "Lavori, beni e servizi infungibili per opera d’arte",
@@ -339,7 +305,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"35",
     "descrizione": {
 		"it": "Lavori, beni e servizi infungibili per motivi tecnici",
@@ -349,7 +314,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"36",
     "descrizione": {
 		"it": "Lavori, beni e servizi infungibili per diritti esclusivi",
@@ -359,7 +323,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"37",
     "descrizione": {
 		"it": "Estrema urgenza",
@@ -369,7 +332,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"38",
     "descrizione": {
 		"it": "Scopo di ricerca",
@@ -379,7 +341,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"39",
     "descrizione": {
 		"it": "Consegne complementari",
@@ -389,7 +350,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"40",
     "descrizione": {
 		"it": "Forniture quotate e acquistate sul mercato delle materie prime",
@@ -399,7 +359,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"41",
     "descrizione": {
 		"it": "Condizioni particolarmente vantaggiose",
@@ -409,7 +368,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"42",
     "descrizione": {
 		"it": "Servizio di progettazione discendente da concorso di progettazione e idee",
@@ -419,7 +377,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"43",
     "descrizione": {
 		"it": "Ripetizione lavori o servizi analoghi",
@@ -429,7 +386,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"44",
     "descrizione": {
 		"it": "Procedura di affidamento a contraente vincolato da disposizioni sovraordinate",
@@ -439,7 +395,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CONDIZIONI_NEGOZIATA",
     "codice":"45",
     "descrizione": {
 		"it": "Procedura negoziata sottosoglia",

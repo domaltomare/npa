@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"OGGETTO_PRINCIPALE_CONTRATTO",
     "codice":"L",
     "descrizione": {
 		"it": "Lavori",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"OGGETTO_PRINCIPALE_CONTRATTO",
     "codice":"S",
     "descrizione": {
 		"it": "Servizi",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"OGGETTO_PRINCIPALE_CONTRATTO",
     "codice":"F",
     "descrizione": {
 		"it": "Forniture",

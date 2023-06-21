@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"TIPO_INCARICO",
     "codice":"1",
     "descrizione": {
 		"it": "Progettista interno alla S.A.",
@@ -9,7 +8,6 @@
     "dataFine":"2023-12-31T00:00:00Z"
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"2",
     "descrizione": {
 		"it": "Progettista esterno alla S.A.",
@@ -19,7 +17,6 @@
     "dataFine":"2023-12-31T00:00:00Z"
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"3",
     "descrizione": {
 		"it": "Aggiudicatario qualificato",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"4",
     "descrizione": {
 		"it": "Progettista qualificato incaricato dall'aggiudicatario",
@@ -39,7 +35,6 @@
     "dataFine":"2023-12-31T00:00:00Z"
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"5",
     "descrizione": {
 		"it": "Direttore Lavori",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"6",
     "descrizione": {
 		"it": "Coordinatore della sicurezza in fase di progettazione",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"7",
     "descrizione": {
 		"it": "Coordinatore della sicurezza in corso d'opera",
@@ -69,7 +62,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"8",
     "descrizione": {
 		"it": "Direttore dell'esecuzione del contratto",
@@ -79,7 +71,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"9",
     "descrizione": {
 		"it": "Responsabile subfase del procedimento",
@@ -89,7 +80,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"10",
     "descrizione": {
 		"it": "Collaudatore statico",
@@ -99,7 +89,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"11",
     "descrizione": {
 		"it": "Redattore del certificato di regolare esecuzione",
@@ -109,7 +98,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"12",
     "descrizione": {
 		"it": "Redattore del certificato di regolare esecuzione",
@@ -119,7 +107,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"13",
     "descrizione": {
 		"it": "Componente Commissione di Collaudo",
@@ -129,7 +116,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"14",
     "descrizione": {
 		"it": "Responsabile Unico del progetto",
@@ -139,7 +125,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"15",
     "descrizione": {
 		"it": "Responsabile fase progettazione/predisposizione documentazione tecnico-amministrativa",
@@ -149,7 +134,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"16",
     "descrizione": {
 		"it": "Responsabile fase di affidamento",
@@ -159,7 +143,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"17",
     "descrizione": {
 		"it": "Responsabile fase di esecuzione",
@@ -169,7 +152,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"18",
     "descrizione": {
 		"it": "Referente della Stazione Appaltante",
@@ -179,7 +161,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_INCARICO",
     "codice":"19",
     "descrizione": {
 		"it": "ATI",

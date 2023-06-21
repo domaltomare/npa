@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"TIPO_OE",
     "codice":"1",
     "descrizione": {
 		"it": "imprenditori individuali, anche artigiani, e le società, anche cooperative; professionisti singoli, società di professionisti, società di ingegneria",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OE",
     "codice":"2",
     "descrizione": {
 		"it": "consorzi fra società cooperative di produzione e lavoro; consorzi tra imprese artigiane;",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OE",
     "codice":"3",
     "descrizione": {
 		"it": "consorzi stabili, costituiti anche in forma di società consortili",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OE",
     "codice":"4",
     "descrizione": {
 		"it": "i raggruppamenti temporanei di concorrenti, costituiti o costituendi; professionisti associati",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OE",
     "codice":"5",
     "descrizione": {
 		"it": "consorzi ordinari di concorrenti",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OE",
     "codice":"6",
     "descrizione": {
 		"it": "aggregazioni tra le imprese aderenti al contratto di rete",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OE",
     "codice":"7",
     "descrizione": {
 		"it": "GEIE",

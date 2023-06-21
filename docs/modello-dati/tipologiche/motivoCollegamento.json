@@ -1,6 +1,5 @@
 [
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "1",
     "descrizione": {
       "it": "Ripetizione di lavori o servizi analoghi",
@@ -10,7 +9,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "2",
     "descrizione": {
       "it": "Consegne complementari",
@@ -20,7 +18,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "3",
     "descrizione": {
       "it": "Lavori, servizi o forniture supplementari",
@@ -30,7 +27,6 @@
     "dataFine": "2020-05-12T00:00:00Z"
   },
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "4",
     "descrizione": {
       "it": "Procedura a seguito di precedente revoca di aggiudicazione o di rescissione contrattuale, senza scorrimento graduatoria",
@@ -40,7 +36,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "5",
     "descrizione": {
       "it": "Procedura a seguito di precedente gara annullata o deserta (senza esito)",
@@ -50,7 +45,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "6",
     "descrizione": {
       "it": "Affidamento dell’esecuzione o della progettazione dei lavori successiva a progettazione o livello inferiore di progettazione",
@@ -60,7 +54,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "7",
     "descrizione": {
       "it": "Affidamento da parte di aggiudicatari di contratti di concessione o di project financing",
@@ -70,7 +63,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "8",
     "descrizione": {
       "it": "Modifiche contrattuali o varianti per le quali è necessaria una nuova procedura di affidamento",
@@ -80,7 +72,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "9",
     "descrizione": {
       "it": "Servizio di progettazione discendente da concorso di progettazione e idee",
@@ -90,7 +81,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "10",
     "descrizione": {
       "it": "No, nessuna ipotesi di collegamento",
@@ -100,7 +90,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_COLLEGAMENTO",
     "codice": "11",
     "descrizione": {
       "it": "Affidamento a seguito di appalto pre-commerciale",

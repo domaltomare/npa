@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"ACCORDO_QUADRO",
     "codice":"fa-wo-rc",
     "descrizione": {
 		"it": "Accordo quadro, senza riapertura della gara",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ACCORDO_QUADRO",
     "codice":"fa-w-rc",
     "descrizione": {
 		"it": "Accordo quadro, con riapertura della gara",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ACCORDO_QUADRO",
     "codice":"fa-mix",
     "descrizione": {
 		"it": "Accordo quadro, parzialmente senza riapertura della gara e parzialmente con riapertura della gara",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ACCORDO_QUADRO",
     "codice":"none",
     "descrizione": {
 		"it": "Nulla",

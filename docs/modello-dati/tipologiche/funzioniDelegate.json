@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"FUNZIONI_DELEGATE",
     "codice":"1",
     "descrizione": {
 		"it": "Solo aggiudicazione",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FUNZIONI_DELEGATE",
     "codice":"2",
     "descrizione": {
 		"it": "Aggiudicazione e stipula del contratto",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FUNZIONI_DELEGATE",
     "codice":"3",
     "descrizione": {
 		"it": "Aggiudicazione, stipula ed esecuzione del contratto",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"FUNZIONI_DELEGATE",
     "codice":"4",
     "descrizione": {
 		"it": "Proposta di aggiudicazione",

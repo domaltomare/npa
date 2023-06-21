@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"TIPOLOGIA_COMUNICAZIONE",
     "codice":"R",
     "descrizione": {
 		"it": "ritardo",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPOLOGIA_COMUNICAZIONE",
     "codice":"S",
     "descrizione": {
 		"it": "sospensione",

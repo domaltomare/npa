@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"TIPO_CLASSIFICAZIONE",
     "codice":"cpv",
     "descrizione": {
 		"it": "Common Procurement Vocabulary",

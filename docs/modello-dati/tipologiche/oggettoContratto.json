@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"OGGETTO_CONTRATTO",
     "codice":"works",
     "descrizione": {
 		"it": "Lavori",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"OGGETTO_CONTRATTO",
     "codice":"supplies",
     "descrizione": {
 		"it": "Forniture",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"OGGETTO_CONTRATTO",
     "codice":"services",
     "descrizione": {
 		"it": "Servizi",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"OGGETTO_CONTRATTO",
     "codice":"combined",
     "descrizione": {
 		"it": "Appalti misti",

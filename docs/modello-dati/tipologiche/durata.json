@@ -1,17 +1,17 @@
 [{
-    "codice":"1",
+    "codice":"UNKNOWN",
     "descrizione": {
-		"it": "Requisito",
-		"en": "Requisito"
+		"it": "ignoto",
+		"en": "Unknown"
 		},
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "codice":"2",
+    "codice":"UNLIMITED",
     "descrizione": {
-		"it": "Miglioramento offerta",
-		"en": "Miglioramento offerta"
+		"it": "illimitato",
+		"en": "Unlimited"
 		},
     "dataInizio":null,
     "dataFine":null

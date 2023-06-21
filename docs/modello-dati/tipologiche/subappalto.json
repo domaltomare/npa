@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"SUBAPPALTO",
     "codice":"shar-subc",
     "descrizione": {
 		"it": "Quota dell'appalto che l'offerente intende subappaltare",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SUBAPPALTO",
     "codice":"subc-oblig",
     "descrizione": {
 		"it": "Subappaltatori proposti la cui indicazione è necessaria per adempiere l'obbligo di subappaltare una percentuale minima dell'appalto",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SUBAPPALTO",
     "codice":"subc-noblig",
     "descrizione": {
 		"it": "Subappaltatori proposti in eccesso rispetto all'obbligo di subappaltare una percentuale minima dell'appalto",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SUBAPPALTO",
     "codice":"subj-oblig",
     "descrizione": {
 		"it": "Oggetto dei subappalti la cui indicazione è necessaria per adempiere l'obbligo di subappaltare una percentuale minima dell'appalto",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SUBAPPALTO",
     "codice":"subj-noblig",
     "descrizione": {
 		"it": "Oggetto dei subappalti in eccesso rispetto all'obbligo di subappaltare una percentuale minima dell'appalto",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SUBAPPALTO",
     "codice":"none",
     "descrizione": {
 		"it": "Nulla",

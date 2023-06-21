@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"TIPO_PROGETTAZIONE",
     "codice":"1",
     "descrizione": {
 		"it": "Progetto di fattibilità tecnico-economica",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PROGETTAZIONE",
     "codice":"2",
     "descrizione": {
 		"it": "Progettazione esecutiva",

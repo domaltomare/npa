@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"ESITO_PROCEDURA",
     "codice":"selec-w",
     "descrizione": {
 		"it": "È stato selezionato almeno un vincitore.",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_PROCEDURA",
     "codice":"open-nw",
     "descrizione": {
 		"it": "Non è ancora stato selezionato un vincitore ma la gara è ancora in corso.",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_PROCEDURA",
     "codice":"clos-nw",
     "descrizione": {
 		"it": "Non è stato selezionato nessun vincitore e la gara è chiusa.",

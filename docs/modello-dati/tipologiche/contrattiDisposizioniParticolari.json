@@ -1,6 +1,5 @@
 [
   {
-    "idTipologica":"CONTRATTI_DISPOSIZIONI_PARTICOLARI",
     "codice": "1",
     "descrizione": {
       "it": "Non applicabile",
@@ -10,7 +9,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"CONTRATTI_DISPOSIZIONI_PARTICOLARI",
     "codice": "2",
     "descrizione": {
       "it": "Servizi sociali e altri servizi specifici di cui all’allegato XIV della direttiva 24/2014/UE, compresi servizi alla persona",
@@ -20,7 +18,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"CONTRATTI_DISPOSIZIONI_PARTICOLARI",
     "codice": "3",
     "descrizione": {
       "it": "servizi sanitari, sociali e culturali di cui all’allegato XIV della direttiva 24/2014/UE",
@@ -30,7 +27,6 @@
     "dataFine": "2020-05-12T00:00:00Z"
   },
   {
-    "idTipologica":"CONTRATTI_DISPOSIZIONI_PARTICOLARI",
     "codice": "4",
     "descrizione": {
       "it": "Servizi di ristorazione di cui all’allegato XIV della direttiva 24/2014/UE",
@@ -40,7 +36,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"CONTRATTI_DISPOSIZIONI_PARTICOLARI",
     "codice": "5",
     "descrizione": {
       "it": "Servizi di mensa di cui all’allegato XIV della direttiva 24/2014/UE",
@@ -50,7 +45,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"CONTRATTI_DISPOSIZIONI_PARTICOLARI",
     "codice": "6",
     "descrizione": {
       "it": "Contratti nel settore dei beni culturali",
@@ -60,7 +54,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"CONTRATTI_DISPOSIZIONI_PARTICOLARI",
     "codice": "7",
     "descrizione": {
       "it": "Servizi di ricerca e sviluppo ",

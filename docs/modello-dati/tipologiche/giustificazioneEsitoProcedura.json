@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"no-rece",
     "descrizione": {
 		"it": "Non sono pervenuti offerte, domande di partecipazione o progetti",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"all-rej",
     "descrizione": {
 		"it": "Tutte le offerte, tutte le domande di partecipazione e tutti i progetti sono stati ritirati o ritenuti non ammissibili",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"no-signed",
     "descrizione": {
 		"it": "L'offerente o gli offerenti meglio classificati hanno rifiutato di firmare il contratto",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"ins-fund",
     "descrizione": {
 		"it": "Decisione del committente dovuta a insufficiente disponibilità finanziaria",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"chan-need",
     "descrizione": {
 		"it": "Decisione del committente per sopravvenuti cambiamenti delle esigenze",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"tch-pr-error",
     "descrizione": {
 		"it": "Decisione del committente non correlata a una richiesta dell'offerente di rivedere l'aggiudicazione a causa di errori tecnici o procedurali",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"rev-buyer",
     "descrizione": {
 		"it": "Decisione del committente correlata a una richiesta dell'offerente di rivedere l'aggiudicazione",
@@ -69,7 +62,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"rev-body",
     "descrizione": {
 		"it": "Decisione dell'organismo competente per i ricorsi o di altra autorità giudiziaria",
@@ -79,7 +71,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"one-admis",
     "descrizione": {
 		"it": "È stato ricevuto un solo progetto, una sola offerta o una sola domanda di partecipazione ammissibile",
@@ -89,7 +80,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"other",
     "descrizione": {
 		"it": "Altro",
@@ -99,7 +89,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"GIUSTIFICAZIONE_ESITO_PROCEDURA",
     "codice":"none-rej",
     "descrizione": {
 		"it": "Non sono pervenute o sono state tutte respinte le offerte o domande di partecipazione",

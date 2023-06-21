@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"MOTIVO_DEROGA",
     "codice":"1",
     "descrizione": {
 		"it": "importo ridotto del contratto",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_DEROGA",
     "codice":"2",
     "descrizione": {
 		"it": "mercato di riferimento",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_DEROGA",
     "codice":"3",
     "descrizione": {
 		"it": "affidamento in somma urgenza o per esigenze di protezione civile",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_DEROGA",
     "codice":"4",
     "descrizione": {
 		"it": "adempimento clausola sociale di riassorbimento occupazionale",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_DEROGA",
     "codice":"5",
     "descrizione": {
 		"it": "scarsa occupazione femminile nel settore",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_DEROGA",
     "codice":"6",
     "descrizione": {
 		"it": "necessità di esperienza o di particolari abilitazioni professionali",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_DEROGA",
     "codice":"7",
     "descrizione": {
 		"it": "assunzione di un numero di lavoratori inferiori a tre",
@@ -69,7 +62,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_DEROGA",
     "codice":"8",
     "descrizione": {
 		"it": "altro",
@@ -79,7 +71,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVO_DEROGA",
     "codice":"9",
     "descrizione": {
 		"it": "adesione ad AQ/Convenzione precedente alle linee guida DPO sull’articolo 47 del DL 77/2021 e ss.m.i.",

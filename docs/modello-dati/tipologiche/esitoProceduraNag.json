@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"ESITO_PROCEDURA_NAG",
     "codice":"6",
     "descrizione": {
 		"it": "annullata/revocata prima dell’avvio della procedura di selezione URF",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_PROCEDURA_NAG",
     "codice":"7",
     "descrizione": {
 		"it": "annullata/revocata dopo l’avvio della procedura di selezione",

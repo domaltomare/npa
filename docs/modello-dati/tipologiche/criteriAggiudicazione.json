@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"CRITERI_AGGIUDICAZIONE",
     "codice":"quality",
     "descrizione": {
 		"it": "Qualità",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CRITERI_AGGIUDICAZIONE",
     "codice":"cost",
     "descrizione": {
 		"it": "Costo",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CRITERI_AGGIUDICAZIONE",
     "codice":"price",
     "descrizione": {
 		"it": "Prezzo",

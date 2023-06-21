@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"RUOLO_OE",
     "codice":"1",
     "descrizione": {
 		"it": "Mandataria",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"RUOLO_OE",
     "codice":"2",
     "descrizione": {
 		"it": "Mandante",

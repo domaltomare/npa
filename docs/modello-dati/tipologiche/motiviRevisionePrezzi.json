@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"MOTIVI_REVISIONE_PREZZI",
     "codice":"1",
     "descrizione": {
 		"it": "Revisione dei prezzi sulla base di una clausola presente nel bando di gara",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVI_REVISIONE_PREZZI",
     "codice":"2",
     "descrizione": {
 		"it": "Revisione dei prezzi sulla base di disposizioni normative",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVI_REVISIONE_PREZZI",
     "codice":"3",
     "descrizione": {
 		"it": "Compensazioni per variazioni dei prezzi ",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVI_REVISIONE_PREZZI",
     "codice":"4",
     "descrizione": {
 		"it": "Eccessiva onerosità sopravvenuta contratti energia",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVI_REVISIONE_PREZZI",
     "codice":"5",
     "descrizione": {
 		"it": "Altro",

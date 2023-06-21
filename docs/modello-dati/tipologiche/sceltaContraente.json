@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"1",
     "descrizione": {
 		"it": "Dialogo competitivo",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"2",
     "descrizione": {
 		"it": "Procedura competitiva (per le concessioni)",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"3",
     "descrizione": {
 		"it": "Partenariato per l'innovazione",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"4",
     "descrizione": {
 		"it": "Negoziata con previa indizione di gara / competitiva con negoziazione",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"5",
     "descrizione": {
 		"it": "Negoziata senza previa indizione di gara",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"6",
     "descrizione": {
 		"it": "Aperta",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"7",
     "descrizione": {
 		"it": "Altra procedura a più fasi",
@@ -69,7 +62,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"8",
     "descrizione": {
 		"it": "Altra procedura a fase unica",
@@ -79,7 +71,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"9",
     "descrizione": {
 		"it": "Ristretta",
@@ -89,7 +80,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"10",
     "descrizione": {
 		"it": "Affidamento diretto",
@@ -99,7 +89,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"SCELTA_CONTRAENTE",
     "codice":"11",
     "descrizione": {
 		"it": "Affidamento diretto in adesione AQ/Convenzione",

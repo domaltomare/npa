@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"A",
     "descrizione": {
 		"it": "Fondi di bilancio della stazione appaltante",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"B",
     "descrizione": {
 		"it": "Fondi di bilancio dell'amministrazione competente",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"C01",
     "descrizione": {
 		"it": "Entrate con dest.vincolata - PUBBLICA COMUNITARIA",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"C02",
     "descrizione": {
 		"it": "Entrate con dest.vincolata - PUBBLICA NAZIONALE CENTRALE",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"C03",
     "descrizione": {
 		"it": "Entrate con dest.vincolata - PUBBLICA NAZIONALE REGIONALE",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"C04",
     "descrizione": {
 		"it": "Entrate con dest.vincolata - PUBBLICA NAZIONALE LOCALE",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"C05",
     "descrizione": {
 		"it": "Entrate con dest.vincolata - PUBBLICA NAZIONALE ALTRI",
@@ -69,7 +62,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"C06",
     "descrizione": {
 		"it": "Entrate con dest.vincolata - PRIVATI",
@@ -79,7 +71,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"D",
     "descrizione": {
 		"it": "Mutuo",
@@ -89,7 +80,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"E",
     "descrizione": {
 		"it": "Trasferimento di immobili",
@@ -99,7 +89,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"F",
     "descrizione": {
 		"it": "Economia su stanziamenti non vincolati",
@@ -109,7 +98,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"G",
     "descrizione": {
 		"it": "Apporto di capitali privati",
@@ -119,7 +107,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"H",
     "descrizione": {
 		"it": "Sfruttamento economico e funzionale del bene",
@@ -129,7 +116,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_FINANZIAMENTO",
     "codice":"I",
     "descrizione": {
 		"it": "Altro",

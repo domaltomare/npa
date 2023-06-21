@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"AVANZAMENTO",
     "codice":"9",
     "descrizione": {
 		"it": "Puntuale",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"AVANZAMENTO",
     "codice":"10",
     "descrizione": {
 		"it": "Anticipo",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"AVANZAMENTO",
     "codice":"11",
     "descrizione": {
 		"it": "Ritardo",

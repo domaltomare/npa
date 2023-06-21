@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"LINGUE",
     "codice":"ENG",
     "descrizione": {
 		"it": "inglese",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"AFR",
     "descrizione": {
 		"it": "afrikaans",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"AMH",
     "descrizione": {
 		"it": "amarico",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"ARA",
     "descrizione": {
 		"it": "arabo",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"ARO",
     "descrizione": {
 		"it": "araona",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"AYM",
     "descrizione": {
 		"it": "aymara",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"AYO",
     "descrizione": {
 		"it": "ayoreo",
@@ -69,7 +62,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"AZE",
     "descrizione": {
 		"it": "azerbaigiano",
@@ -79,7 +71,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"BEL",
     "descrizione": {
 		"it": "bielorusso",
@@ -89,7 +80,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"BEN",
     "descrizione": {
 		"it": "bengalese",
@@ -99,7 +89,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"BIS",
     "descrizione": {
 		"it": "bislama",
@@ -109,7 +98,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"BOD",
     "descrizione": {
 		"it": "tibetano",
@@ -119,7 +107,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"BOS",
     "descrizione": {
 		"it": "bosniaco",
@@ -129,7 +116,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"BRE",
     "descrizione": {
 		"it": "bretone",
@@ -139,7 +125,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"BRG",
     "descrizione": {
 		"it": "baure",
@@ -149,7 +134,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"BUL",
     "descrizione": {
 		"it": "bulgaro",
@@ -159,7 +143,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"CAL",
     "descrizione": {
 		"it": "caroliniano",
@@ -169,7 +152,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"CAO",
     "descrizione": {
 		"it": "chácobo",
@@ -179,7 +161,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"CAS",
     "descrizione": {
 		"it": "tsimané",
@@ -189,7 +170,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"CAT",
     "descrizione": {
 		"it": "catalano",
@@ -199,7 +179,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"CAV",
     "descrizione": {
 		"it": "cavineño",
@@ -209,7 +188,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"CAW",
     "descrizione": {
 		"it": "kallawaya",
@@ -219,7 +197,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"CAX",
     "descrizione": {
 		"it": "chiquitano",
@@ -229,7 +206,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"CAZ",
     "descrizione": {
 		"it": "canichana",
@@ -239,7 +215,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"CES",
     "descrizione": {
 		"it": "ceco",
@@ -249,7 +224,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"LINGUE",
     "codice":"CHA",
     "descrizione": {
 		"it": "chamorro",

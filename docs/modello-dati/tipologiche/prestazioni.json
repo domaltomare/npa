@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"PRESTAZIONI",
     "codice":"1",
     "descrizione": {
 		"it": "Sola esecuzione",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"PRESTAZIONI",
     "codice":"2",
     "descrizione": {
 		"it": "Progettazione ed esecuzione",

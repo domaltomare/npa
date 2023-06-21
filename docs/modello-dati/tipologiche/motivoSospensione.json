@@ -1,6 +1,5 @@
 [
   {
-    "idTipologica":"MOTIVO_SOSPENSIONE",
     "codice": "1",
     "descrizione": {
       "it": "Cause di forza maggiore",
@@ -10,7 +9,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_SOSPENSIONE",
     "codice": "2",
     "descrizione": {
       "it": "Interferenze di natura tecnica",
@@ -20,7 +18,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_SOSPENSIONE",
     "codice": "3",
     "descrizione": {
       "it": "Interferenze di natura amministrativa",
@@ -30,7 +27,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_SOSPENSIONE",
     "codice": "4",
     "descrizione": {
       "it": "Redazione di varianti in corso di esecuzione",
@@ -40,7 +36,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_SOSPENSIONE",
     "codice": "5",
     "descrizione": {
       "it": "Intervento Autorità giudiziaria",
@@ -50,7 +45,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_SOSPENSIONE",
     "codice": "6",
     "descrizione": {
       "it": "Avverse condizioni climatiche",
@@ -60,7 +54,6 @@
     "dataFine": null
   },
   {
-    "idTipologica":"MOTIVO_SOSPENSIONE",
     "codice": "7",
     "descrizione": {
       "it": "Pubblico interesse o necessità",

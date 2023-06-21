@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"AFFIDAMENTI_RISERVATI",
     "codice":"res-ws",
     "descrizione": {
 		"it": "Partecipazione riservata a laboratori protetti e ad operatori economici aventi per scopo l'integrazione sociale e professionale delle persone con disabilità o svantaggiate.",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"AFFIDAMENTI_RISERVATI",
     "codice":"res-pub-ser",
     "descrizione": {
 		"it": "Partecipazione riservata a organizzazioni aventi per scopo una missione di servizio pubblico e che soddisfano altre condizioni di legge pertinenti.",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"AFFIDAMENTI_RISERVATI",
     "codice":"none",
     "descrizione": {
 		"it": "Nulla",

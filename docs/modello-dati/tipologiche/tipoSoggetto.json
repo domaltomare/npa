@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"TIPO_SOGGETTO",
     "codice":"1",
     "descrizione": {
 		"it": "Progettista interno alla S.A.",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SOGGETTO",
     "codice":"2",
     "descrizione": {
 		"it": "Progettista esterno alla S.A.",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SOGGETTO",
     "codice":"3",
     "descrizione": {
 		"it": "Aggiudicatario qualificato",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SOGGETTO",
     "codice":"4",
     "descrizione": {
 		"it": "Progettista qualificato incaricato dall'aggiudicatario",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SOGGETTO",
     "codice":"19",
     "descrizione": {
 		"it": "ATI",

@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"MODALITA_ACQUISIZIONE",
     "codice":"1",
     "descrizione": {
 		"it": "Acquisto",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MODALITA_ACQUISIZIONE",
     "codice":"2",
     "descrizione": {
 		"it": "Leasing",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MODALITA_ACQUISIZIONE",
     "codice":"3",
     "descrizione": {
 		"it": "Noleggio",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MODALITA_ACQUISIZIONE",
     "codice":"4",
     "descrizione": {
 		"it": "Acquisto a riscatto",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MODALITA_ACQUISIZIONE",
     "codice":"5",
     "descrizione": {
 		"it": "Misto",

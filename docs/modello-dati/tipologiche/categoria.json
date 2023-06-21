@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"CATEGORIA",
     "codice":"999",
     "descrizione": {
 		"it": "OO.CC. - Categoria non definita",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"AA",
     "descrizione": {
 		"it": "ALTRO (Stazioni appaltanti con sistema di qualificazione proprio)",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"FB",
     "descrizione": {
 		"it": "FORNITURA DI BENI",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"FS",
     "descrizione": {
 		"it": "FORNITURA DI SERVIZI",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 1",
     "descrizione": {
 		"it": "OG 1 - EDIFICI CIVILI E INDUSTRIALI ",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 10",
     "descrizione": {
 		"it": "OG 10 - IMPIANTI PER LA TRASFORMAZIONE ALTA/MEDIA TENSIONE E PER LA DISTRIBUZIONE DI ENERGIA ELETTRICA IN CORRENTE ALTERNATA E CONTINUA ED IMPIANTI DI PUBBLICA ILLUMINAZIONE",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 11",
     "descrizione": {
 		"it": "OG 11 - IMPIANTI TECNOLOGICI",
@@ -69,7 +62,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 12",
     "descrizione": {
 		"it": "OG 12 - OPERE ED IMPIANTI DI BONIFICA E PROTEZIONE AMBIENTALE",
@@ -79,7 +71,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 13",
     "descrizione": {
 		"it": "OG 13 - OPERE DI INGEGNERIA NATURALISTICA",
@@ -89,7 +80,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 2",
     "descrizione": {
 		"it": "OG 2 - RESTAURO E MANUTENZIONE DEI BENI IMMOBILI SOTTOPOSTI A TUTELA",
@@ -99,7 +89,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 3",
     "descrizione": {
 		"it": "OG 3 - STRADE, AUTOSTRADE, PONTI, VIADOTTI, FERROVIE, METROPOLITANE",
@@ -109,7 +98,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 4",
     "descrizione": {
 		"it": "OG 4 - OPERE D’ARTE NEL SOTTOSUOLO",
@@ -119,7 +107,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 5",
     "descrizione": {
 		"it": "OG 5 - DIGHE",
@@ -129,7 +116,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 6",
     "descrizione": {
 		"it": "OG 6 - ACQUEDOTTI, GASDOTTI , OLEODOTTI, OPERE DI IRRIGAZIONE E DI EVACUAZIONE",
@@ -139,7 +125,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 7",
     "descrizione": {
 		"it": "OG 7 - OPERE MARITTIME E LAVORI DI DRAGAGGIO",
@@ -149,7 +134,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 8",
     "descrizione": {
 		"it": "OG 8 - OPERE FLUVIALI, DI DIFESA, DI SISTEMAZIONE IDRAULICA E DI BONIFICA",
@@ -159,7 +143,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG 9",
     "descrizione": {
 		"it": "OG 9 - IMPIANTI PER LA PRODUZIONE DI ENERGIA ELETTRICA",
@@ -169,7 +152,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG1",
     "descrizione": {
 		"it": "OG1 - Edifici civili e industriali",
@@ -179,7 +161,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG10",
     "descrizione": {
 		"it": "OG10 - Impianti per la trasformazione alta/media tensione e per la distribuzione di energia elettrica in corrente alternata e continua",
@@ -189,7 +170,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG11",
     "descrizione": {
 		"it": "OG11 - Impianti tecnologici",
@@ -199,7 +179,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG12",
     "descrizione": {
 		"it": "OG12 - Opere ed impianti di bonifica e protezione ambientale",
@@ -209,7 +188,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG13",
     "descrizione": {
 		"it": "OG13 - Opere di ingegneria naturalistica",
@@ -219,7 +197,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG2",
     "descrizione": {
 		"it": "OG2 - Restauro e manutenzione dei beni immobili sottoposti a tutela ai sensi delle disposizioni in materia di beni culturali e ambientali",
@@ -229,7 +206,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG3",
     "descrizione": {
 		"it": "OG3 - Strade, autostrade, ponti, viadotti, ferrovie, metropolitane, funicolari, piste aeroportuali e relative opere complementari",
@@ -239,7 +215,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG4",
     "descrizione": {
 		"it": "OG4 - Opere d'arte nel sottosuolo",
@@ -249,7 +224,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG5",
     "descrizione": {
 		"it": "OG5 - Dighe",
@@ -259,7 +233,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG6",
     "descrizione": {
 		"it": "OG6 - Acquedotti, gasdotti, oleodotti, opere di irrigazione e di evacuazione",
@@ -269,7 +242,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG7",
     "descrizione": {
 		"it": "OG7 - Opere marittime e lavori di dragaggio",
@@ -279,7 +251,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG8",
     "descrizione": {
 		"it": "OG8 - Opere fluviali, di difesa, di sistemazione idraulica e di bonifica",
@@ -289,7 +260,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OG9",
     "descrizione": {
 		"it": "OG9 - Impianti per la produzione di energia elettrica",
@@ -299,7 +269,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 1",
     "descrizione": {
 		"it": "OS 1 - LAVORI IN TERRA ",
@@ -309,7 +278,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 10",
     "descrizione": {
 		"it": "OS 10 - SEGNALETICA STRADALE NON LUMINOSA",
@@ -319,7 +287,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 11",
     "descrizione": {
 		"it": "OS 11 - APPARECCHIATURE STRUTTURALI SPECIALI",
@@ -329,7 +296,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 12-A",
     "descrizione": {
 		"it": "OS 12-A - BARRIERE STRADALI DI SICUREZZA",
@@ -339,7 +305,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 12-B",
     "descrizione": {
 		"it": "OS 12-B - BARRIERE PARAMASSI, FERMANEVE E SIMILI",
@@ -349,7 +314,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 13",
     "descrizione": {
 		"it": "OS 13 - STRUTTURE PREFABBRICATE IN CEMENTO ARMATO",
@@ -359,7 +323,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 14",
     "descrizione": {
 		"it": "OS 14 - IMPIANTI DI SMALTIMENTO E RECUPERO RIFIUTI",
@@ -369,7 +332,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 15",
     "descrizione": {
 		"it": "OS 15 - PULIZIA DI ACQUE MARINE, LACUSTRI, FLUVIALI",
@@ -379,7 +341,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 16",
     "descrizione": {
 		"it": "OS 16 - IMPIANTI PER CENTRALI PRODUZIONE ENERGIA ELETTRICA",
@@ -389,7 +350,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 17",
     "descrizione": {
 		"it": "OS 17 - LINEE TELEFONICHE ED IMPIANTI DI TELEFONIA",
@@ -399,7 +359,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 18-A",
     "descrizione": {
 		"it": "OS 18-A - COMPONENTI STRUTTURALI IN ACCIAIO",
@@ -409,7 +368,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 18-B",
     "descrizione": {
 		"it": "OS 18-B - COMPONENTI PER FACCIATE CONTINUE",
@@ -419,7 +377,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 19",
     "descrizione": {
 		"it": "OS 19 - IMPIANTI DI RETI DI TELECOMUNICAZIONE E DI TRASMISSIONI E TRATTAMENTO",
@@ -429,7 +386,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 20-A",
     "descrizione": {
 		"it": "OS 20-A - RILEVAMENTI TOPOGRAFICI",
@@ -439,7 +395,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 20-B",
     "descrizione": {
 		"it": "OS 20-B - INDAGINI GEOGNOSTICHE",
@@ -449,7 +404,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 21",
     "descrizione": {
 		"it": "OS 21 - OPERE STRUTTURALI SPECIALI",
@@ -459,7 +413,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 22",
     "descrizione": {
 		"it": "OS 22 - IMPIANTI DI POTABILIZZAZIONE E DEPURAZIONE",
@@ -469,7 +422,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 23",
     "descrizione": {
 		"it": "OS 23 - DEMOLIZIONE DI OPERE",
@@ -479,7 +431,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 24",
     "descrizione": {
 		"it": "OS 24 - VERDE E ARREDO URBANO",
@@ -489,7 +440,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 25",
     "descrizione": {
 		"it": "OS 25 - SCAVI ARCHEOLOGICI",
@@ -499,7 +449,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 26",
     "descrizione": {
 		"it": "OS 26 - PAVIMENTAZIONI E SOVRASTRUTTURE SPECIALI",
@@ -509,7 +458,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 27",
     "descrizione": {
 		"it": "OS 27 - IMPIANTI PER LA TRAZIONE ELETTRICA",
@@ -519,7 +467,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 28",
     "descrizione": {
 		"it": "OS 28 - IMPIANTI TERMICI E DI CONDIZIONAMENTO",
@@ -529,7 +476,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 29",
     "descrizione": {
 		"it": "OS 29 - ARMAMENTO FERROVIARIO",
@@ -539,7 +485,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 2-A",
     "descrizione": {
 		"it": "OS 2-A - SUPERFICI DECORATE DI BENI IMMOBILI DEL PATRIMONIO CULTURALE E BENI CULTURALI MOBILI DI INTERESSE STORICO, ARTISTICO, ARCHEOLOGICO ED ETNOANTROPOLOGICO",
@@ -549,7 +494,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 2-B",
     "descrizione": {
 		"it": "OS 2-B - BENI CULTURALI MOBILI DI INTERESSE ARCHIVISTICO E LIBRARIO",
@@ -559,7 +503,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 3",
     "descrizione": {
 		"it": "OS 3 - IMPIANTI IDRICO-SANITARIO, CUCINE, LAVANDERIE",
@@ -569,7 +512,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 30",
     "descrizione": {
 		"it": "OS 30 - IMPIANTI INTERNI ELETTRICI, TELEFONICI, RADIOTELEFONICI E TELEVISIVI",
@@ -579,7 +521,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 31",
     "descrizione": {
 		"it": "OS 31 - IMPIANTI PER LA MOBILITÀ SOSPESA",
@@ -589,7 +530,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 32",
     "descrizione": {
 		"it": "OS 32 - STRUTTURE IN LEGNO",
@@ -599,7 +539,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 33",
     "descrizione": {
 		"it": "OS 33 - COPERTURE SPECIALI",
@@ -609,7 +548,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 34",
     "descrizione": {
 		"it": "OS 34 - SISTEMI ANTIRUMORE PER INFRASTRUTTURE DI MOBILITÀ",
@@ -619,7 +557,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 35",
     "descrizione": {
 		"it": "OS 35 - INTERVENTI A BASSO IMPATTO AMBIENTALE",
@@ -629,7 +566,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 4",
     "descrizione": {
 		"it": "OS 4 - IMPIANTI ELETTROMECCANICI TRASPORTATORI",
@@ -639,7 +575,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 5",
     "descrizione": {
 		"it": "OS 5 - IMPIANTI PNEUMATICI E ANTINTRUSIONE",
@@ -649,7 +584,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 6",
     "descrizione": {
 		"it": "OS 6 - FINITURE DI OPERE GENERALI IN MATERIALI LIGNEI, PLASTICI, METALLICI E VETROSI",
@@ -659,7 +593,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 7",
     "descrizione": {
 		"it": "OS 7 - FINITURE DI OPERE GENERALI DI NATURA EDILE E TECNICA",
@@ -669,7 +602,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 8",
     "descrizione": {
 		"it": "OS 8 - OPERE DI IMPERMEABILIZZAZIONE",
@@ -679,7 +611,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 9",
     "descrizione": {
 		"it": "OS 9 - IMPIANTI PER LA SEGNALETICA LUMINOSA E LA SICUREZZA DEL TRAFFICO",
@@ -689,7 +620,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS1",
     "descrizione": {
 		"it": "OS1 - Lavori in terra",
@@ -699,7 +629,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS10",
     "descrizione": {
 		"it": "OS10 - Segnaletica stradale non luminosa",
@@ -709,7 +638,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS11",
     "descrizione": {
 		"it": "OS11 - Apparecchiature strutturali speciali",
@@ -719,7 +647,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS12",
     "descrizione": {
 		"it": "OS12 - Barriere e protezioni stradali",
@@ -729,7 +656,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS13",
     "descrizione": {
 		"it": "OS13 - Strutture prefabbricate in cemento armato",
@@ -739,7 +665,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS14",
     "descrizione": {
 		"it": "OS14 - Impianti di smaltimento e recupero rifiuti",
@@ -749,7 +674,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS15",
     "descrizione": {
 		"it": "OS15 - Pulizia di acque marine, lacustri, fluviali",
@@ -759,7 +683,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS16",
     "descrizione": {
 		"it": "OS16 - Impianti per centrali produzione energia elettrica",
@@ -769,7 +692,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS17",
     "descrizione": {
 		"it": "OS17 - Linee telefoniche ed impianti di telefonia",
@@ -779,7 +701,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS18",
     "descrizione": {
 		"it": "OS18 - Componenti strutturali in acciaio o metallo",
@@ -789,7 +710,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS19",
     "descrizione": {
 		"it": "OS19 - Impianti di reti di telecomunicazione e di trasmissione dati",
@@ -799,7 +719,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS2",
     "descrizione": {
 		"it": "OS2 - Superfici decorate e beni mobili di interesse storico e artistico",
@@ -809,7 +728,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS20",
     "descrizione": {
 		"it": "OS20 - Rilevamenti topografici",
@@ -819,7 +737,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS21",
     "descrizione": {
 		"it": "OS21 - Opere strutturali speciali",
@@ -829,7 +746,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS22",
     "descrizione": {
 		"it": "OS22 - Impianti di potabilizzazione e depurazione",
@@ -839,7 +755,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS23",
     "descrizione": {
 		"it": "OS23 - Demolizione di opere",
@@ -849,7 +764,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS24",
     "descrizione": {
 		"it": "OS24 - Verde e arredo urbano",
@@ -859,7 +773,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS 29",
     "descrizione": {
 		"it": "OS 29 - ARMAMENTO FERROVIARIO",
@@ -869,7 +782,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS25",
     "descrizione": {
 		"it": "OS25 - Scavi archeologici",
@@ -879,7 +791,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS26",
     "descrizione": {
 		"it": "OS26 - Pavimentazioni e sovrastrutture speciali",
@@ -889,7 +800,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS27",
     "descrizione": {
 		"it": "OS27 - Impianti per la trazione elettrica",
@@ -899,7 +809,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS28",
     "descrizione": {
 		"it": "OS28 - Impianti termici e di condizionamento",
@@ -909,7 +818,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS29",
     "descrizione": {
 		"it": "OS29 - Armamento ferroviario",
@@ -919,7 +827,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS3",
     "descrizione": {
 		"it": "OS3 - Impianti idrico - sanitario, cucine, lavanderie",
@@ -929,7 +836,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS30",
     "descrizione": {
 		"it": "OS30 - Impianti interni elettrici, telefonici, radiotelefonici e televisivi",
@@ -939,7 +845,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS31",
     "descrizione": {
 		"it": "OS31 - Impianti per la mobilita' sospesa",
@@ -949,7 +854,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS32",
     "descrizione": {
 		"it": "OS32 - Strutture in legno",
@@ -959,7 +863,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS33",
     "descrizione": {
 		"it": "OS33 - Coperture speciali",
@@ -969,7 +872,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS34",
     "descrizione": {
 		"it": "OS34 - Sistemi antirumore per infrastrutture di mobilita'",
@@ -979,7 +881,6 @@
     "dataFine":"2012-12-04T00:00:00Z"
 },
 {
-    "idTipologica":"CATEGORIA",
     "codice":"OS4",
     "descrizione": {
 		"it": "OS4 - Impianti elettromeccanici trasportatori",

@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"1",
     "descrizione": {
 		"it": "Farmaci",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"2",
     "descrizione": {
 		"it": "Vaccini",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"3",
     "descrizione": {
 		"it": "Stent",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"4",
     "descrizione": {
 		"it": "Ausili per incontinenza (ospedalieri e territoriali)",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"5",
     "descrizione": {
 		"it": "Protesi d'anca",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"6",
     "descrizione": {
 		"it": "Medicazioni generali",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"7",
     "descrizione": {
 		"it": "Defibrillatori",
@@ -69,7 +62,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"8",
     "descrizione": {
 		"it": "Pace-maker",
@@ -79,7 +71,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"9",
     "descrizione": {
 		"it": "Aghi e siringhe",
@@ -89,7 +80,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"10",
     "descrizione": {
 		"it": "Servizi integrati per la gestione delle apparecchiature elettromedicali",
@@ -99,7 +89,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"11",
     "descrizione": {
 		"it": "Servizi di pulizia per gli enti del Servizio Sanitario Nazionale",
@@ -109,7 +98,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"12",
     "descrizione": {
 		"it": "Servizi di ristorazione per gli enti del Servizio Sanitario Nazionale",
@@ -119,7 +107,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"13",
     "descrizione": {
 		"it": "Servizi di lavanderia per gli enti del Servizio Sanitario Nazionale",
@@ -129,7 +116,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"14",
     "descrizione": {
 		"it": "Servizi di smaltimento rifiuti sanitari",
@@ -139,7 +125,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"15",
     "descrizione": {
 		"it": "Vigilanza armata",
@@ -149,7 +134,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"16",
     "descrizione": {
 		"it": "Facility management immobili",
@@ -159,7 +143,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"17",
     "descrizione": {
 		"it": "Pulizia immobili",
@@ -169,7 +152,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"18",
     "descrizione": {
 		"it": "Guardiania",
@@ -179,7 +161,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"19",
     "descrizione": {
 		"it": "Manutenzione immobili e impianti",
@@ -189,7 +170,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"20",
     "descrizione": {
 		"it": "Guanti (chirurgici e non)",
@@ -199,7 +179,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"21",
     "descrizione": {
 		"it": "Suture",
@@ -209,7 +188,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"22",
     "descrizione": {
 		"it": "Ossigenoterapia",
@@ -219,7 +197,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"23",
     "descrizione": {
 		"it": "Diabetologia territoriale",
@@ -229,7 +206,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"24",
     "descrizione": {
 		"it": "Servizio di trasporto scolastico",
@@ -239,7 +215,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"25",
     "descrizione": {
 		"it": "Manutenzione strade (servizi e forniture)",
@@ -249,7 +224,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"CATEGORIE_MERCEOLOGICHE",
     "codice":"999",
     "descrizione": {
 		"it": "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015",

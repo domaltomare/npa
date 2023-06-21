@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"MOTIVI_MODIFICA_CONTRATTUALE",
     "codice":"add-wss",
     "descrizione": {
 		"it": "Necessità di ulteriori lavori, forniture e servizi eseguiti dall'appaltatore originale.",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVI_MODIFICA_CONTRATTUALE",
     "codice":"mod-cir",
     "descrizione": {
 		"it": "Necessità di modifiche dovute a circostante non prevedibili da un committente diligente.",
@@ -19,7 +17,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVI_MODIFICA_CONTRATTUALE",
     "codice":"other",
     "descrizione": {
 		"it": "Altro",
@@ -29,7 +26,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVI_MODIFICA_CONTRATTUALE",
     "codice":"mod-rev",
     "descrizione": {
 		"it": "Modifiche basate su clausole di revisione dei prezzi o opzioni.",
@@ -39,7 +35,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVI_MODIFICA_CONTRATTUALE",
     "codice":"mod-repl",
     "descrizione": {
 		"it": "Modifiche dovute al fatto che un nuovo contraente sostituisce l'aggiudicatario iniziale perché gli succede o perché il committente si assume gli obblighi del contraente principale nei confronti dei suoi subappaltatori.",
@@ -49,7 +44,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVI_MODIFICA_CONTRATTUALE",
     "codice":"mod-nons",
     "descrizione": {
 		"it": "Le modifiche non sono sostanziali.",
@@ -59,7 +53,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"MOTIVI_MODIFICA_CONTRATTUALE",
     "codice":"mod-minv",
     "descrizione": {
 		"it": "Modifiche inferiori a una soglia minima ("de minimis").",

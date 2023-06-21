@@ -1,5 +1,4 @@
 [{
-    "idTipologica":"TIPO_REALIZZAZIONE_CONTRATTO",
     "codice":"1",
     "descrizione": {
 		"it": "Contratto d'appalto",
@@ -9,7 +8,6 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_REALIZZAZIONE_CONTRATTO",
     "codice":"2",
     "descrizione": {
 		"it": "Concessione",
