@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"TIPO_AZ_AVVISO",
-	"codice":"AZ_PUBB",
+    "codice":"AZ_PUBB",
     "descrizione": {
 		"it": "Pubblicazione",
 		"en": "Pubblicazione"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AZ_AVVISO",
-	"codice":"AZ_MOD",
+    "codice":"AZ_MOD",
     "descrizione": {
 		"it": "Modifica",
 		"en": "Modifica"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AZ_AVVISO",
-	"codice":"AZ_RETT",
+    "codice":"AZ_RETT",
     "descrizione": {
 		"it": "Rettifica",
 		"en": "Rettifica"

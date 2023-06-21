@@ -1,190 +1,171 @@
 [{
-    "idTipologica":"TIPO_OPERAZIONE",
-	"codice":"AP_CREA",
+    "codice":"AP_CREA",
     "descrizione": {
-		"it": "Crea appalto",
-		"en": "Crea appalto"
-	},
+        "it": "Crea appalto",
+        "en": "Crea appalto"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"AP_MOD",
+    "codice":"AP_MOD",
     "descrizione": {
-		"it": "Modifica appalto",
-		"en": "Modifica appalto"
-	},
+        "it": "Modifica appalto",
+        "en": "Modifica appalto"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"AP_CANC",
+    "codice":"AP_CANC",
     "descrizione": {
-		"it": "Cancella appalto",
-		"en": "Cancella appalto"
-	},
+        "it": "Cancella appalto",
+        "en": "Cancella appalto"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"AP_VERIF",
+    "codice":"AP_VERIF",
     "descrizione": {
-		"it": "Verifica appalto",
-		"en": "Verifica appalto"
-	},
+        "it": "Verifica appalto",
+        "en": "Verifica appalto"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"AP_CONF",
+    "codice":"AP_CONF",
     "descrizione": {
-		"it": "Conferma appalto",
-		"en": "Conferma appalto"
-	},
+        "it": "Conferma appalto",
+        "en": "Conferma appalto"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"SC_CREA",
+    "codice":"SC_CREA",
     "descrizione": {
-		"it": "Crea scheda",
-		"en": "Crea scheda"
-	},
+        "it": "Crea scheda",
+        "en": "Crea scheda"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"SC_MOD",
+    "codice":"SC_MOD",
     "descrizione": {
-		"it": "Modifica scheda",
-		"en": "Modifica scheda"
-	},
+        "it": "Modifica scheda",
+        "en": "Modifica scheda"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"SC_CANC",
+    "codice":"SC_CANC",
     "descrizione": {
-		"it": "Cancella scheda",
-		"en": "Cancella scheda"
-	},
+        "it": "Cancella scheda",
+        "en": "Cancella scheda"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"SC_VERIF",
+    "codice":"SC_VERIF",
     "descrizione": {
-		"it": "Verifica scheda",
-		"en": "Verifica scheda"
-	},
+        "it": "Verifica scheda",
+        "en": "Verifica scheda"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"SC_CONF",
+    "codice":"SC_CONF",
     "descrizione": {
-		"it": "Conferma scheda",
-		"en": "Conferma scheda"
-	},
+        "it": "Conferma scheda",
+        "en": "Conferma scheda"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"PI_CREA",
+    "codice":"PI_CREA",
     "descrizione": {
-		"it": "Crea piano",
-		"en": "Crea piano"
-	},
+        "it": "Crea piano",
+        "en": "Crea piano"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"PI_MOD",
+    "codice":"PI_MOD",
     "descrizione": {
-		"it": "Modifica piano",
-		"en": "Modifica piano"
-	},
+        "it": "Modifica piano",
+        "en": "Modifica piano"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"PI_CANC",
+    "codice":"PI_CANC",
     "descrizione": {
-		"it": "Cancella piano",
-		"en": "Cancella piano"
-	},
+        "it": "Cancella piano",
+        "en": "Cancella piano"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"PI_VERIF",
+    "codice":"PI_VERIF",
     "descrizione": {
-		"it": "Verifica piano",
-		"en": "Verifica piano"
-	},
+        "it": "Verifica piano",
+        "en": "Verifica piano"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"PI_CONF",
+    "codice":"PI_CONF",
     "descrizione": {
-		"it": "Conferma piano",
-		"en": "Conferma piano"
-	},
+        "it": "Conferma piano",
+        "en": "Conferma piano"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"AV_PUBB",
+    "codice":"AV_PUBB",
     "descrizione": {
-		"it": "Pubblicazione avviso",
-		"en": "Pubblicazione avviso"
-	},
+        "it": "Pubblicazione avviso",
+        "en": "Pubblicazione avviso"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"AV_MOD",
+    "codice":"AV_MOD",
     "descrizione": {
-		"it": "Modifica avviso",
-		"en": "Modifica avviso"
-	},
+        "it": "Modifica avviso",
+        "en": "Modifica avviso"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"AV_RETT",
+    "codice":"AV_RETT",
     "descrizione": {
-		"it": "Rettifica avviso",
-		"en": "Rettifica avviso"
-	},
+        "it": "Rettifica avviso",
+        "en": "Rettifica avviso"
+    },
     "dataInizio":null,
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP",
-	"codice":"AV_SOSP",
+    "codice":"AV_SOSP",
     "descrizione": {
-		"it": "Sospensione avviso",
-		"en": "Sospensione avviso"
-	},
+        "it": "Sospensione avviso",
+        "en": "Sospensione avviso"
+    },
     "dataInizio":null,
     "dataFine":null
 }]

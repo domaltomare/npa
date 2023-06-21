@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV1",
+    "codice":"AV1",
     "descrizione": {
 		"it": "Preinformazione",
 		"en": "Preinformazione"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV2",
+    "codice":"AV2",
     "descrizione": {
 		"it": "Pubblicazione bando",
 		"en": "Pubblicazione bando"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV3",
+    "codice":"AV3",
     "descrizione": {
 		"it": "Pubblicazione avviso",
 		"en": "Pubblicazione avviso"
@@ -29,8 +26,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV4",
+    "codice":"AV4",
     "descrizione": {
 		"it": "Avvio dell'indagine di mercato",
 		"en": "Avvio dell'indagine di mercato"
@@ -39,8 +35,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV5",
+    "codice":"AV5",
     "descrizione": {
 		"it": "Costituzione elenco fornitori",
 		"en": "Costituzione elenco fornitori"
@@ -49,8 +44,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV6",
+    "codice":"AV6",
     "descrizione": {
 		"it": "Affidamento diretto",
 		"en": "Affidamento diretto"
@@ -59,8 +53,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV7",
+    "codice":"AV7",
     "descrizione": {
 		"it": "Pubblicazione avviso di aggiudicazione soprasoglia",
 		"en": "Pubblicazione avviso di aggiudicazione soprasoglia"
@@ -69,8 +62,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV8",
+    "codice":"AV8",
     "descrizione": {
 		"it": "Pubblicazione avviso di aggiudicazione sottosoglia",
 		"en": "Pubblicazione avviso di aggiudicazione sottosoglia"
@@ -79,8 +71,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV9",
+    "codice":"AV9",
     "descrizione": {
 		"it": "Avviso di aggiudicazione sottosoglia",
 		"en": "Avviso di aggiudicazione sottosoglia"
@@ -89,8 +80,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV10",
+    "codice":"AV10",
     "descrizione": {
 		"it": "Aggiudicazione",
 		"en": "Aggiudicazione"
@@ -99,8 +89,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV11",
+    "codice":"AV11",
     "descrizione": {
 		"it": "Mancata aggiudicazione procedura europea",
 		"en": "Mancata aggiudicazione procedura europea"
@@ -109,8 +98,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_AVVISO",
-	"codice":"AV12",
+    "codice":"AV12",
     "descrizione": {
 		"it": "Modifica contrattuale",
 		"en": "Modifica contrattuale"

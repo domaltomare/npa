@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"STATO_SCHEDA",
-	"codice":"IN_LAV",
+    "codice":"IN_LAV",
     "descrizione": {
 		"it": "In lavorazione",
 		"en": "In lavorazione"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_SCHEDA",
-	"codice":"CONF",
+    "codice":"CONF",
     "descrizione": {
 		"it": "Confermata",
 		"en": "Confermata"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_SCHEDA",
-	"codice":"CANC",
+    "codice":"CANC",
     "descrizione": {
 		"it": "Cancellata",
 		"en": "Cancellata"

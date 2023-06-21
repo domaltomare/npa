@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"STATO_CONTRATTO",
-	"codice":"INT_ANT",
+    "codice":"INT_ANT",
     "descrizione": {
 		"it": "Interruzione anticipata",
 		"en": "Interruzione anticipata"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_CONTR",
-	"codice":"IN_ESEC",
+    "codice":"IN_ESEC",
     "descrizione": {
 		"it": "In esecuzione",
 		"en": "In esecuzione"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_CONTR",
-	"codice":"SOSP",
+    "codice":"SOSP",
     "descrizione": {
 		"it": "Sospeso",
 		"en": "Sospeso"
@@ -29,8 +26,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_CONTR",
-	"codice":"CONCL",
+    "codice":"CONCL",
     "descrizione": {
 		"it": "Concluso",
 		"en": "Concluso"
@@ -39,8 +35,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_CONTR",
-	"codice":"COLL",
+    "codice":"COLL",
     "descrizione": {
 		"it": "Collaudato",
 		"en": "Collaudato"

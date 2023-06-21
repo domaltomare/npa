@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"STATO_PIANO",
-	"codice":"IN_LAV",
+    "codice":"IN_LAV",
     "descrizione": {
 		"it": "In lavorazione",
 		"en": "In lavorazione"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_PIANO",
-	"codice":"CONF",
+    "codice":"CONF",
     "descrizione": {
 		"it": "Confermato",
 		"en": "Confermato"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_PIANO",
-	"codice":"CANC",
+    "codice":"CANC",
     "descrizione": {
 		"it": "Cancellato",
 		"en": "Cancellato"

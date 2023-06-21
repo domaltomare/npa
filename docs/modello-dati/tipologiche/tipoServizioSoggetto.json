@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"TIPO_SERV_SOGGETTO",
-	"codice":"GE_UT",
+    "codice":"GE_UT",
     "descrizione": {
 		"it": "Gestione utenti",
 		"en": "Gestione utenti"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SERV_SOGGETTO",
-	"codice":"PI_AP",
+    "codice":"PI_AP",
     "descrizione": {
 		"it": "Pianificazione appalto",
 		"en": "Pianificazione appalto"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SERV_SOGGETTO",
-	"codice":"CO_AP",
+    "codice":"CO_AP",
     "descrizione": {
 		"it": "Comunica appalto",
 		"en": "Comunica appalto"
@@ -29,8 +26,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SERV_SOGGETTO",
-	"codice":"PUB_AV",
+    "codice":"PUB_AV",
     "descrizione": {
 		"it": "Pubblica avviso",
 		"en": "Pubblica avviso"
@@ -39,8 +35,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SERV_SOGGETTO",
-	"codice":"POST_PUB",
+    "codice":"POST_PUB",
     "descrizione": {
 		"it": "Comunica post pubblicazione",
 		"en": "Comunica post pubblicazione"
@@ -49,8 +44,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SERV_SOGGETTO",
-	"codice":"SERV_COM",
+    "codice":"SERV_COM",
     "descrizione": {
 		"it": "Servizi comuni",
 		"en": "Servizi comuni"
@@ -59,8 +53,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SERV_SOGGETTO",
-	"codice":"FVA",
+    "codice":"FVA",
     "descrizione": {
 		"it": "Fascicolo Virtuale Appalto",
 		"en": "Fascicolo Virtuale Appalto"
@@ -70,8 +63,7 @@
 }
 ,
 {
-    "idTipologica":"TIPO_SERV_SOGGETTO",
-	"codice":"FVOE",
+    "codice":"FVOE",
     "descrizione": {
 		"it": "Fascicolo Virtuale Operatore Econimico",
 		"en": "Fascicolo Virtuale Operatore Econimico"

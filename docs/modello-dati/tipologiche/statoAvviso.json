@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"STATO_AVVISO",
-	"codice":"CREATO",
+    "codice":"CREATO",
     "descrizione": {
 		"it": "Creato",
 		"en": "Creato"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_AVVISO",
-	"codice":"IN_ATT_PUBB",
+    "codice":"IN_ATT_PUBB",
     "descrizione": {
 		"it": "In attesa pubblicazione",
 		"en": "In attesa pubblicazione"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_AVVISO",
-	"codice":"NON_PUBB",
+    "codice":"NON_PUBB",
     "descrizione": {
 		"it": "Non pubblicato",
 		"en": "Non pubblicato"
@@ -29,8 +26,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_AVVISO",
-	"codice":"STOP_PUBB",
+    "codice":"STOP_PUBB",
     "descrizione": {
 		"it": "In stop pubblicazione",
 		"en": "In stop pubblicazione"
@@ -39,8 +35,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_AVVISO",
-	"codice":"PUBB",
+    "codice":"PUBB",
     "descrizione": {
 		"it": "Pubblicato",
 		"en": "Pubblicato"

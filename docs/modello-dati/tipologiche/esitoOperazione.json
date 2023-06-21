@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"ESITO_OP",
-	"codice":"AP_CRE",
+    "codice":"AP_CRE",
     "descrizione": {
 		"it": "Appalto creato",
 		"en": "Appalto creato"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AP_N_CRE",
+    "codice":"AP_N_CRE",
     "descrizione": {
 		"it": "Appalto non creato",
 		"en": "Appalto non creato"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OPERAZIONE",
-	"codice":"AP_MOD",
+    "codice":"AP_MOD",
     "descrizione": {
 		"it": "Appalto modificato",
 		"en": "Appalto modificato"
@@ -29,8 +26,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AP_N_MOD",
+    "codice":"AP_N_MOD",
     "descrizione": {
 		"it": "Appalto non modificato",
 		"en": "Appalto non modificato"
@@ -39,8 +35,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AP_CANC",
+    "codice":"AP_CANC",
     "descrizione": {
 		"it": "Appalto cancellato",
 		"en": "Appalto cancellato"
@@ -49,8 +44,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AP_N_CANC",
+    "codice":"AP_N_CANC",
     "descrizione": {
 		"it": "Appalto non cancellato",
 		"en": "Appalto non cancellato"
@@ -59,8 +53,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AP_VERIF",
+    "codice":"AP_VERIF",
     "descrizione": {
 		"it": "Appalto verificato",
 		"en": "Appalto verificato"
@@ -69,8 +62,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AP_N_VERIF",
+    "codice":"AP_N_VERIF",
     "descrizione": {
 		"it": "Appalto non verificato",
 		"en": "Appalto non verificato"
@@ -79,8 +71,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AP_CONF",
+    "codice":"AP_CONF",
     "descrizione": {
 		"it": "Appalto confermato",
 		"en": "Appalto confermato"
@@ -89,8 +80,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AP_N_CONF",
+    "codice":"AP_N_CONF",
     "descrizione": {
 		"it": "Appalto non confermato",
 		"en": "Appalto non confermato"
@@ -99,8 +89,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"SC_CRE",
+    "codice":"SC_CRE",
     "descrizione": {
 		"it": "Scheda creata",
 		"en": "Scheda creata"
@@ -109,8 +98,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"SC_N_CRE",
+    "codice":"SC_N_CRE",
     "descrizione": {
 		"it": "Scheda non creata",
 		"en": "Scheda non creata"
@@ -119,8 +107,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"SC_MOD",
+    "codice":"SC_MOD",
     "descrizione": {
 		"it": "Scheda modificata",
 		"en": "Scheda modificata"
@@ -129,8 +116,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"SC_N_MOD",
+    "codice":"SC_N_MOD",
     "descrizione": {
 		"it": "Scheda non modificata",
 		"en": "Scheda non modificata"
@@ -139,8 +125,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"SC_CANC",
+    "codice":"SC_CANC",
     "descrizione": {
 		"it": "Scheda cancellata",
 		"en": "Scheda cancellata"
@@ -149,8 +134,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"SC_N_CANC",
+    "codice":"SC_N_CANC",
     "descrizione": {
 		"it": "Scheda non cancellata",
 		"en": "Scheda non cancellata"
@@ -159,8 +143,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"SC_VERIF",
+    "codice":"SC_VERIF",
     "descrizione": {
 		"it": "Scheda verificata",
 		"en": "Scheda verificata"
@@ -169,8 +152,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"SC_N_VERIF",
+    "codice":"SC_N_VERIF",
     "descrizione": {
 		"it": "Scheda non verificata",
 		"en": "Scheda non verificata"
@@ -179,8 +161,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"SC_CONF",
+    "codice":"SC_CONF",
     "descrizione": {
 		"it": "Scheda confermata",
 		"en": "Scheda confermata"
@@ -189,8 +170,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"SC_N_CONF",
+    "codice":"SC_N_CONF",
     "descrizione": {
 		"it": "Scheda non confermata",
 		"en": "Scheda non confermata"
@@ -199,8 +179,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"PI_CRE",
+    "codice":"PI_CRE",
     "descrizione": {
 		"it": "Piano creato",
 		"en": "Piano creato"
@@ -209,8 +188,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"PI_N_CRE",
+    "codice":"PI_N_CRE",
     "descrizione": {
 		"it": "Piano non creato",
 		"en": "Piano non creato"
@@ -219,8 +197,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"PI_MOD",
+    "codice":"PI_MOD",
     "descrizione": {
 		"it": "Piano modificato",
 		"en": "Piano modificato"
@@ -229,8 +206,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"PI_N_MOD",
+    "codice":"PI_N_MOD",
     "descrizione": {
 		"it": "Piano non modificato",
 		"en": "Piano non modificato"
@@ -239,8 +215,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"PI_CANC",
+    "codice":"PI_CANC",
     "descrizione": {
 		"it": "Piano cancellato",
 		"en": "Piano cancellato"
@@ -249,8 +224,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"PI_N_CANC",
+    "codice":"PI_N_CANC",
     "descrizione": {
 		"it": "Piano non cancellato",
 		"en": "Piano non cancellato"
@@ -259,8 +233,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"PI_VERIF",
+    "codice":"PI_VERIF",
     "descrizione": {
 		"it": "Piano verificato",
 		"en": "Piano verificato"
@@ -269,8 +242,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"PI_N_VERIF",
+    "codice":"PI_N_VERIF",
     "descrizione": {
 		"it": "Piano non verificato",
 		"en": "Piano non verificato"
@@ -279,8 +251,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"PI_CONF",
+    "codice":"PI_CONF",
     "descrizione": {
 		"it": "Piano confermato",
 		"en": "Piano confermato"
@@ -289,8 +260,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"PI_N_CONF",
+    "codice":"PI_N_CONF",
     "descrizione": {
 		"it": "Piano non confermato",
 		"en": "Piano non confermato"
@@ -299,8 +269,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AV_PUBB",
+    "codice":"AV_PUBB",
     "descrizione": {
 		"it": "Avviso pubblicato",
 		"en": "Avviso pubblicato"
@@ -309,8 +278,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AV_N_PUBB",
+    "codice":"AV_N_PUBB",
     "descrizione": {
 		"it": "Avviso non pubblicato",
 		"en": "Avviso non pubblicato"
@@ -319,8 +287,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AV_MOD",
+    "codice":"AV_MOD",
     "descrizione": {
 		"it": "Avviso modificato",
 		"en": "Avviso modificato"
@@ -329,8 +296,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AV_N_MOD",
+    "codice":"AV_N_MOD",
     "descrizione": {
 		"it": "Avviso non modificato",
 		"en": "Avviso non modificato"
@@ -339,8 +305,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AV_RETT",
+    "codice":"AV_RETT",
     "descrizione": {
 		"it": "Avviso rettificato",
 		"en": "Avviso rettificato"
@@ -349,8 +314,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AV_N_RETT",
+    "codice":"AV_N_RETT",
     "descrizione": {
 		"it": "Avviso non rettificato",
 		"en": "Avviso non rettificato"
@@ -359,8 +323,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AV_SOSP",
+    "codice":"AV_SOSP",
     "descrizione": {
 		"it": "Avviso sospeso",
 		"en": "Avviso sospeso"
@@ -369,8 +332,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO_OP",
-	"codice":"AV_N_SOSP",
+    "codice":"AV_N_SOSP",
     "descrizione": {
 		"it": "Avviso non sospeso",
 		"en": "Avviso non sospeso"

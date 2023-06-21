@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"TIPO_PIANO",
-	"codice":"PREINFORMAZIONE",
+    "codice":"PREINFORMAZIONE",
     "descrizione": {
 		"it": "Preinformazione",
 		"en": "Preinformazione"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PIANO",
-	"codice":"PUBB_AVVISO",
+    "codice":"PUBB_AVVISO",
     "descrizione": {
 		"it": "Pubblicazione avviso",
 		"en": "Pubblicazione avviso"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PIANO",
-	"codice":"BIENNALE",
+    "codice":"BIENNALE",
     "descrizione": {
 		"it": "Programma biennale",
 		"en": "Programma biennale"
@@ -29,8 +26,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_PIANO",
-	"codice":"TRIENNALE",
+    "codice":"TRIENNALE",
     "descrizione": {
 		"it": "Programma triennale",
 		"en": "Programma triennale"

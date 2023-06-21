@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC1",
+    "codice":"SC1",
     "descrizione": {
 		"it": "Acquisizione richieste invito",
 		"en": "Acquisizione richieste invito"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC2",
+    "codice":"SC2",
     "descrizione": {
 		"it": "Acquisizione partecipanti",
 		"en": "Acquisizione partecipanti"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC3",
+    "codice":"SC3",
     "descrizione": {
 		"it": "Incarichi tecnici e prestazioni progettuali",
 		"en": "Incarichi tecnici e prestazioni progettuali"
@@ -29,8 +26,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC4",
+    "codice":"SC4",
     "descrizione": {
 		"it": "Costituzione della società di scopo",
 		"en": "Costituzione della società di scopo"
@@ -39,8 +35,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC5",
+    "codice":"SC5",
     "descrizione": {
 		"it": "Pubblicazione avviso di aggiudicazione soprasoglia",
 		"en": "Pubblicazione avviso di aggiudicazione soprasoglia"
@@ -49,8 +44,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC6",
+    "codice":"SC6",
     "descrizione": {
 		"it": "Pubblicazione avviso di aggiudicazione sottosoglia",
 		"en": "Pubblicazione avviso di aggiudicazione sottosoglia"
@@ -59,8 +53,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC7",
+    "codice":"SC7",
     "descrizione": {
 		"it": "Avviso di aggiudicazione sottosoglia",
 		"en": "Avviso di aggiudicazione sottosoglia"
@@ -69,8 +62,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC8",
+    "codice":"SC8",
     "descrizione": {
 		"it": "Aggiudicazione",
 		"en": "Aggiudicazione"
@@ -79,8 +71,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC9",
+    "codice":"SC9",
     "descrizione": {
 		"it": "Mancata aggiudicazione procedura europea",
 		"en": "Mancata aggiudicazione procedura europea"
@@ -89,8 +80,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC10",
+    "codice":"SC10",
     "descrizione": {
 		"it": "Mancata aggiudicazione procedura nazionale",
 		"en": "Mancata aggiudicazione procedura nazionale"
@@ -99,8 +89,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC11",
+    "codice":"SC11",
     "descrizione": {
 		"it": "Sottoscrizione contratto",
 		"en": "Sottoscrizione contratto"
@@ -109,8 +98,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC12",
+    "codice":"SC12",
     "descrizione": {
 		"it": "Inizio esecuzione",
 		"en": "Inizio esecuzione"
@@ -119,8 +107,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC13",
+    "codice":"SC13",
     "descrizione": {
 		"it": "Modifica contrattuale",
 		"en": "Modifica contrattuale"
@@ -129,8 +116,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC14",
+    "codice":"SC14",
     "descrizione": {
 		"it": "Sal",
 		"en": "Sal"
@@ -139,8 +125,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC15",
+    "codice":"SC15",
     "descrizione": {
 		"it": "Richiesta subappalto",
 		"en": "Richiesta subappalto"
@@ -149,8 +134,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC16",
+    "codice":"SC16",
     "descrizione": {
 		"it": "Esito subappalto",
 		"en": "Esito subappalto"
@@ -159,8 +143,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC17",
+    "codice":"SC17",
     "descrizione": {
 		"it": "Sospensione",
 		"en": "Sospensione"
@@ -169,8 +152,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC18",
+    "codice":"SC18",
     "descrizione": {
 		"it": "Riavvio",
 		"en": "Riavvio"
@@ -179,8 +161,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC19",
+    "codice":"SC19",
     "descrizione": {
 		"it": "Accordo bonario",
 		"en": "Accordo bonario"
@@ -189,8 +170,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC20",
+    "codice":"SC20",
     "descrizione": {
 		"it": "Istanza di recesso",
 		"en": "Istanza di recesso"
@@ -199,8 +179,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC21",
+    "codice":"SC21",
     "descrizione": {
 		"it": "Conclusione",
 		"en": "Conclusione"
@@ -209,8 +188,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC22",
+    "codice":"SC22",
     "descrizione": {
 		"it": "Conclusione flusso 1 < 5K",
 		"en": "Conclusione flusso 1 < 5K"
@@ -219,8 +197,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_SCHEDA",
-	"codice":"SC23",
+    "codice":"SC23",
     "descrizione": {
 		"it": "Collaudo",
 		"en": "Collaudo"

@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"STATO_LOTTO",
-	"codice":"AGG",
+    "codice":"AGG",
     "descrizione": {
 		"it": "Aggiudicato",
 		"en": "Aggiudicato"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_LOTTO",
-	"codice":"ANN",
+    "codice":"ANN",
     "descrizione": {
 		"it": "Annullato",
 		"en": "Annullato"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"STATO_LOTTO",
-	"codice":"SOTT_CONTR",
+    "codice":"SOTT_CONTR",
     "descrizione": {
 		"it": "Sottoscrizione contratto",
 		"en": "Sottoscrizione contratto"

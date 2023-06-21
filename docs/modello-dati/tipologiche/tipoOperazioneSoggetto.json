@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"TIPO_OP_SOGGETTO",
-	"codice":"RICERCA_SOG",
+    "codice":"RICERCA_SOG",
     "descrizione": {
 		"it": "ricerca-soggetto",
 		"en": "ricerca-soggetto"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"MODIFICA_PI",
+    "codice":"MODIFICA_PI",
     "descrizione": {
 		"it": "modifica-piano",
 		"en": "modifica-piano"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CANCELLA_PI",
+    "codice":"CANCELLA_PI",
     "descrizione": {
 		"it": "cancella-piano",
 		"en": "cancella-piano"
@@ -29,8 +26,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CONSULTA_PI",
+    "codice":"CONSULTA_PI",
     "descrizione": {
 		"it": "consulta-piano",
 		"en": "consulta-piano"
@@ -39,8 +35,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RICERCA_PI",
+    "codice":"RICERCA_PI",
     "descrizione": {
 		"it": "ricerca-piano",
 		"en": "ricerca-piano"
@@ -49,8 +44,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"VERIFICA_PI",
+    "codice":"VERIFICA_PI",
     "descrizione": {
 		"it": "verifica-piano",
 		"en": "verifica-piano"
@@ -59,8 +53,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CONFERMA_PI",
+    "codice":"CONFERMA_PI",
     "descrizione": {
 		"it": "conferma-piano",
 		"en": "conferma-piano"
@@ -69,8 +62,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"MODIFICA_AP",
+    "codice":"MODIFICA_AP",
     "descrizione": {
 		"it": "modifica-appalto",
 		"en": "modifica-appalto"
@@ -79,8 +71,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CANCELLA_AP",
+    "codice":"CANCELLA_AP",
     "descrizione": {
 		"it": "cancella-appalto",
 		"en": "cancella-appalto"
@@ -89,8 +80,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RICERCA_AP",
+    "codice":"RICERCA_AP",
     "descrizione": {
 		"it": "ricerca-appalto",
 		"en": "ricerca-appalto"
@@ -99,8 +89,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CONSULTA_AP",
+    "codice":"CONSULTA_AP",
     "descrizione": {
 		"it": "consulta-appalto",
 		"en": "consulta-appalto"
@@ -109,8 +98,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"VERIFICA_AP",
+    "codice":"VERIFICA_AP",
     "descrizione": {
 		"it": "verifica-appalto",
 		"en": "verifica-appalto"
@@ -119,8 +107,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CONFERMA_AP",
+    "codice":"CONFERMA_AP",
     "descrizione": {
 		"it": "conferma-appalto",
 		"en": "conferma-appalto"
@@ -129,8 +116,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RECUPERA_CIG",
+    "codice":"RECUPERA_CIG",
     "descrizione": {
 		"it": "recupera-cig",
 		"en": "recupera-cig"
@@ -139,8 +125,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"PUBBLICA_AV",
+    "codice":"PUBBLICA_AV",
     "descrizione": {
 		"it": "pubblica-avviso",
 		"en": "pubblica-avviso"
@@ -149,8 +134,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"MODIFICA_AV",
+    "codice":"MODIFICA_AV",
     "descrizione": {
 		"it": "modifica-avviso",
 		"en": "modifica-avviso"
@@ -159,8 +143,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RETTIFICA_AV",
+    "codice":"RETTIFICA_AV",
     "descrizione": {
 		"it": "rettifica-avviso",
 		"en": "rettifica-avviso"
@@ -169,8 +152,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CANCELLA_AV",
+    "codice":"CANCELLA_AV",
     "descrizione": {
 		"it": "cancella-avviso",
 		"en": "cancella-avviso"
@@ -179,8 +161,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RICERCA_AV",
+    "codice":"RICERCA_AV",
     "descrizione": {
 		"it": "ricerca-avviso",
 		"en": "ricerca-avviso"
@@ -189,8 +170,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CONSULTA_AV",
+    "codice":"CONSULTA_AV",
     "descrizione": {
 		"it": "consulta-avviso",
 		"en": "consulta-avviso"
@@ -199,8 +179,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CONSULTA_REND_AV",
+    "codice":"CONSULTA_REND_AV",
     "descrizione": {
 		"it": "consulta-rendering-avviso",
 		"en": "consulta-rendering-avviso"
@@ -209,8 +188,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"STATO_AV",
+    "codice":"STATO_AV",
     "descrizione": {
 		"it": "stato-avviso",
 		"en": "stato-avviso"
@@ -219,8 +197,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CREA_SC",
+    "codice":"CREA_SC",
     "descrizione": {
 		"it": "crea-scheda",
 		"en": "crea-scheda"
@@ -229,8 +206,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"MODIFICA_SC",
+    "codice":"MODIFICA_SC",
     "descrizione": {
 		"it": "modifica-scheda",
 		"en": "modifica-scheda"
@@ -239,8 +215,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CANCELLA_SC",
+    "codice":"CANCELLA_SC",
     "descrizione": {
 		"it": "cancella-scheda",
 		"en": "cancella-scheda"
@@ -249,8 +224,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RICERCA_SC",
+    "codice":"RICERCA_SC",
     "descrizione": {
 		"it": "ricerca-scheda",
 		"en": "ricerca-scheda"
@@ -259,8 +233,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CONSULTA_SC",
+    "codice":"CONSULTA_SC",
     "descrizione": {
 		"it": "consulta-scheda",
 		"en": "consulta-scheda"
@@ -269,8 +242,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"VERIFICA_SC",
+    "codice":"VERIFICA_SC",
     "descrizione": {
 		"it": "verifica-scheda",
 		"en": "verifica-scheda"
@@ -279,8 +251,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"CONFERMA_SC",
+    "codice":"CONFERMA_SC",
     "descrizione": {
 		"it": "conferma-scheda",
 		"en": "conferma-scheda"
@@ -289,8 +260,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"STATO_AP",
+    "codice":"STATO_AP",
     "descrizione": {
 		"it": "stato-appalto",
 		"en": "stato-appalto"
@@ -299,8 +269,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"ESITO_OP",
+    "codice":"ESITO_OP",
     "descrizione": {
 		"it": "esito-operazione",
 		"en": "esito-operazione"
@@ -309,8 +278,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RICERCA_FA_FVA",
+    "codice":"RICERCA_FA_FVA",
     "descrizione": {
 		"it": "ricerca-fascicoli-fva",
 		"en": "ricerca-fascicoli-fva"
@@ -319,8 +287,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RECUPERA_FA_FVA",
+    "codice":"RECUPERA_FA_FVA",
     "descrizione": {
 		"it": "recupera-fascicolo-fva",
 		"en": "recupera-fascicolo-fva"
@@ -329,8 +296,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RICERCA_DOC_FVA",
+    "codice":"RICERCA_DOC_FVA",
     "descrizione": {
 		"it": "ricerca-documenti-fva",
 		"en": "ricerca-documenti-fva"
@@ -339,8 +305,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RECUPERA_DOC_FVA",
+    "codice":"RECUPERA_DOC_FVA",
     "descrizione": {
 		"it": "recupera-documento-fva",
 		"en": "recupera-documento-fva"
@@ -349,8 +314,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RECUPERA_ST_FA_FVA",
+    "codice":"RECUPERA_ST_FA_FVA",
     "descrizione": {
 		"it": "recupera-storico-fascicolo-fva",
 		"en": "recupera-storico-fascicolo-fva"
@@ -359,8 +323,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RECUPERA_ST_DOC_FVA",
+    "codice":"RECUPERA_ST_DOC_FVA",
     "descrizione": {
 		"it": "recupera-storico-documento-fva",
 		"en": "recupera-storico-documento-fva"
@@ -369,8 +332,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RICHIESTA_ACC_FVOE",
+    "codice":"RICHIESTA_ACC_FVOE",
     "descrizione": {
 		"it": "richiesta-accesso-fvoe",
 		"en": "richiesta-accesso-fvoe"
@@ -379,8 +341,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"VERIFICA_ACC_FVOE",
+    "codice":"VERIFICA_ACC_FVOE",
     "descrizione": {
 		"it": "verifica-richiesta-accesso-fvoe",
 		"en": "verifica-richiesta-accesso-fvoe"
@@ -389,8 +350,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RICERCA_DOC_FVOE",
+    "codice":"RICERCA_DOC_FVOE",
     "descrizione": {
 		"it": "ricerca-documenti-fvoe",
 		"en": "ricerca-documenti-fvoe"
@@ -399,8 +359,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RECUPERA_DOC_FVOE",
+    "codice":"RECUPERA_DOC_FVOE",
     "descrizione": {
 		"it": "recupera-documento-fvoe",
 		"en": "recupera-documento-fvoe"
@@ -409,8 +368,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RICHIEDI_DOC",
+    "codice":"RICHIEDI_DOC",
     "descrizione": {
 		"it": "richiedi-documento",
 		"en": "richiedi-documento"
@@ -419,8 +377,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"VERIFICA_RICH_DOC",
+    "codice":"VERIFICA_RICH_DOC",
     "descrizione": {
 		"it": "verifica-stato-richiesta-documento",
 		"en": "verifica-stato-richiesta-documento"
@@ -429,8 +386,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RECUPERA_ST_DOC_FVOE",
+    "codice":"RECUPERA_ST_DOC_FVOE",
     "descrizione": {
 		"it": "recupera-storico-documento-fvoe",
 		"en": "recupera-storico-documento-fvoe"
@@ -439,8 +395,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"TIPO_OP_SOGG",
-	"codice":"RECUPERA_AN_OE",
+    "codice":"RECUPERA_AN_OE",
     "descrizione": {
 		"it": "recupero-anagrafica-oe",
 		"en": "recupero-anagrafica-oe"

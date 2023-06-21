@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"ESITO",
-	"codice":"OK",
+    "codice":"OK",
     "descrizione": {
 		"it": "SUCCESS",
 		"en": "SUCCESS"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO",
-	"codice":"KO",
+    "codice":"KO",
     "descrizione": {
 		"it": "ERROR",
 		"en": "ERROR"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ESITO",
-	"codice":"WT",
+    "codice":"WT",
     "descrizione": {
 		"it": "IN ATTESA",
 		"en": "WAITING"

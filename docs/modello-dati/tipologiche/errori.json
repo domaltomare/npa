@@ -1,6 +1,5 @@
 [{
-    "idTipologica":"ERROR",
-	"codice":"ERR1",
+    "codice":"ERR1",
     "descrizione": {
 		"it": "utente non autorizzato alla chiamata del servizio",
 		"en": "utente non autorizzato alla chiamata del servizio"
@@ -9,8 +8,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR2",
+    "codice":"ERR2",
     "descrizione": {
 		"it": "scheda non ammessa in questa fase dell'appalto",
 		"en": "scheda non ammessa in questa fase dell'appalto"
@@ -19,8 +17,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR3",
+    "codice":"ERR3",
     "descrizione": {
 		"it": "codice scheda errato",
 		"en": "codice scheda errato"
@@ -29,8 +26,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR4",
+    "codice":"ERR4",
     "descrizione": {
 		"it": "errore nella conversione della scheda secondo il json schema definito",
 		"en": "errore nella conversione della scheda secondo il json schema definito"
@@ -39,8 +35,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR5",
+    "codice":"ERR5",
     "descrizione": {
 		"it": "anacForm non è in un formato json valido",
 		"en": "anacForm non è in un formato json valido"
@@ -49,8 +44,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR6",
+    "codice":"ERR6",
     "descrizione": {
 		"it": "eForm non è in un formato xml base64 valido",
 		"en": "eForm non è in un formato xml base64 valido"
@@ -59,8 +53,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR7",
+    "codice":"ERR7",
     "descrizione": {
 		"it": "ESPD non è in un formato xml base64 valido",
 		"en": "ESPD non è in un formato xml base64 valido"
@@ -69,8 +62,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR8",
+    "codice":"ERR8",
     "descrizione": {
 		"it": "eForm obbligatorio",
 		"en": "eForm obbligatorio"
@@ -79,8 +71,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR9",
+    "codice":"ERR9",
     "descrizione": {
 		"it": "anacForm obbligatorio",
 		"en": "anacForm obbligatorio"
@@ -89,8 +80,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR10",
+    "codice":"ERR10",
     "descrizione": {
 		"it": "ESPD obbligatorio",
 		"en": "ESPD obbligatorio"
@@ -99,8 +89,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR11",
+    "codice":"ERR11",
     "descrizione": {
 		"it": "tipo di eForm non ammesso in questa fase dell'appalto",
 		"en": "tipo di eForm non ammesso in questa fase dell'appalto"
@@ -109,8 +98,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR12",
+    "codice":"ERR12",
     "descrizione": {
 		"it": "versione sdk eForm errata",
 		"en": "versione sdk eForm errata"
@@ -119,8 +107,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR13",
+    "codice":"ERR13",
     "descrizione": {
 		"it": "versione ESPD errata",
 		"en": "versione ESPD errata"
@@ -129,8 +116,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR14",
+    "codice":"ERR14",
     "descrizione": {
 		"it": "lotIdentifier duplicati nell'elendo dei lotti",
 		"en": "lotIdentifier duplicati nell'elendo dei lotti"
@@ -139,8 +125,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR15",
+    "codice":"ERR15",
     "descrizione": {
 		"it": "lotIdentifier non coerenti tra eForm ed anacForm",
 		"en": "lotIdentifier non coerenti tra eForm ed anacForm"
@@ -149,8 +134,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR16",
+    "codice":"ERR16",
     "descrizione": {
 		"it": "chiamata al servizio non ammessa per lo stato dell'appalto",
 		"en": "chiamata al servizio non ammessa per lo stato dell'appalto"
@@ -159,8 +143,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR17",
+    "codice":"ERR17",
     "descrizione": {
 		"it": "chiamata al servizio non ammessa: è in corso una richiesta di verifica appalto",
 		"en": "chiamata al servizio non ammessa: è in corso una richiesta di verifica appalto"
@@ -169,8 +152,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR18",
+    "codice":"ERR18",
     "descrizione": {
 		"it": "chiamata al servizio non ammessa: è in corso una richiesta di conferma appalto",
 		"en": "chiamata al servizio non ammessa: è in corso una richiesta di conferma appalto"
@@ -179,8 +161,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR19",
+    "codice":"ERR19",
     "descrizione": {
 		"it": "idAppalto non trovato",
 		"en": "idAppalto non trovato"
@@ -189,8 +170,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR20",
+    "codice":"ERR20",
     "descrizione": {
 		"it": "idScheda non trovato",
 		"en": "idScheda non trovato"
@@ -199,8 +179,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR21",
+    "codice":"ERR21",
     "descrizione": {
 		"it": "idPianificazione non trovato",
 		"en": "idPianificazione non trovato"
@@ -209,8 +188,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR22",
+    "codice":"ERR22",
     "descrizione": {
 		"it": "idAvviso non trovato",
 		"en": "idAvviso non trovato"
@@ -219,8 +197,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR23",
+    "codice":"ERR23",
     "descrizione": {
 		"it": "cig non trovato",
 		"en": "cig non trovato"
@@ -229,8 +206,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR24",
+    "codice":"ERR24",
     "descrizione": {
 		"it": "codice fiscale non trovato",
 		"en": "codice fiscale non trovato"
@@ -239,8 +215,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR25",
+    "codice":"ERR25",
     "descrizione": {
 		"it": "lotIdentifier non trovato",
 		"en": "lotIdentifier non trovato"
@@ -249,8 +224,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR26",
+    "codice":"ERR26",
     "descrizione": {
 		"it": "idAppalto obbligatorio",
 		"en": "idAppalto obbligatorio"
@@ -259,8 +233,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR27",
+    "codice":"ERR27",
     "descrizione": {
 		"it": "idPianificazione obbligatorio",
 		"en": "idPianificazione obbligatorio"
@@ -269,8 +242,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR28",
+    "codice":"ERR28",
     "descrizione": {
 		"it": "idAvviso obbligatorio",
 		"en": "idAvviso obbligatorio"
@@ -279,8 +251,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR29",
+    "codice":"ERR29",
     "descrizione": {
 		"it": "idScheda obbligatorio",
 		"en": "idScheda obbligatorio"
@@ -289,8 +260,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR30",
+    "codice":"ERR30",
     "descrizione": {
 		"it": "codice scheda obbligatorio",
 		"en": "codice scheda obbligatorio"
@@ -299,8 +269,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR31",
+    "codice":"ERR31",
     "descrizione": {
 		"it": "versione scheda obbligatorio",
 		"en": "versione scheda obbligatorio"
@@ -309,8 +278,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR32",
+    "codice":"ERR32",
     "descrizione": {
 		"it": "idTipologica obbligatorio",
 		"en": "idTipologica obbligatorio"
@@ -319,8 +287,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR33",
+    "codice":"ERR33",
     "descrizione": {
 		"it": "codice tipologica obbligatorio",
 		"en": "codice tipologica obbligatorio"
@@ -329,8 +296,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR34",
+    "codice":"ERR34",
     "descrizione": {
 		"it": "valorizzare i parametri di ricerca obbligatori",
 		"en": "valorizzare i parametri di ricerca obbligatori"
@@ -339,8 +305,7 @@
     "dataFine":null
 },
 {
-    "idTipologica":"ERROR",
-	"codice":"ERR35",
+    "codice":"ERR35",
     "descrizione": {
 		"it": "restringere i risultati di ricerca",
 		"en": "restringere i risultati di ricerca"
