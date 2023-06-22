@@ -24,4 +24,13 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"CANC",
+	"descrizione": {
+		"it": "Cancellato",
+		"en": "Cancellato"
+	},
+    "dataInizio":null,
+    "dataFine":null
 }]
