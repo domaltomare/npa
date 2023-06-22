@@ -670,20 +670,20 @@ paths:
       parameters:
         - in: query
           name: idAppalto
-          description: Identificativo univoco dell'Appalto definito da ANAC. Almeno un parametro di input deve essere valorizzato.
+          description: Identificativo univoco dell'Appalto definito da ANAC. Alternativo agli altri parametri di input.
           schema:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         - in: query
           name: cig
-          description: Identificativo univoco Gara-Lotto rilasciato da ANAC. Almeno un parametro di input deve essere valorizzato.
+          description: Identificativo univoco Gara-Lotto rilasciato da ANAC. Alternativo agli altri parametri di input.
           schema:
             type: string
             example: 9050626CD6
         - in: query
           name: idContratto
-          description: Identificativo univoco del Contratto definito da ANAC. Almeno un parametro di input deve essere valorizzato.
+          description: Identificativo univoco del Contratto definito da ANAC. Alternativo agli altri parametri di input.
           schema:
             type: string
             format: uuid
