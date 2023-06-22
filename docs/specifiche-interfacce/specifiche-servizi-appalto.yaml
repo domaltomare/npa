@@ -630,7 +630,7 @@ paths:
       tags:
         - comunicaAppalto
       summary: API Rest per la conferma dei dati di Appalto propedeutica alla generazione dei CIG. ASINCRONO - ASIMMETRICO
-      description: Il servizio permette la conferma dei dati dell'Appalto inviati, avvia la fase di validazione e assegnazione dei CIG ed inizializza il Fascicolo Virtuale dell'Appalto. ASINCRONO - ASIMMETRICO 
+      description: Il servizio permette la conferma dei dati dell'Appalto inviati, avvia la fase di validazione e assegnazione dei CIG ed inizializza il Fascicolo Virtuale dell'Appalto. Con la successiva chiamata al servizio esito-operazione è possibile recuperare l'idAvviso per invocare il successivo servizio pubblica-avviso. ASINCRONO - ASIMMETRICO 
       operationId: idAppaltoConferma
       requestBody:
         content:
