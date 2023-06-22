@@ -150,4 +150,12 @@
 		},
     "dataInizio":null,
     "dataFine":null
+},{
+    "codice":"00903",
+    "descrizione": {
+		"it": "scheda ANAC",
+		"en": "scheda ANAC"
+		},
+    "dataInizio":null,
+    "dataFine":null
 }]
