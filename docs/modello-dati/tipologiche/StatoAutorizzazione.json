@@ -1,0 +1,33 @@
+[{
+    "codice":"01",
+    "descrizione": {
+		"it": "Richiesta",
+		"en": "Richiesta"
+		},
+    "datainizio":null,
+    "datafine":null
+},{
+    "codice":"02",
+    "descrizione": {
+		"it": "Autorizzata",
+		"en": "Autorizzata"
+		},
+    "datainizio":null,
+    "datafine":null
+},{
+    "codice":"03",
+    "descrizione": {
+		"it": "Revocata",
+		"en": "REvocata"
+		},
+    "datainizio":null,
+    "datafine":null
+},{
+    "codice":"04",
+    "descrizione": {
+		"it": "Negata",
+		"en": "Negata"
+		},
+    "datainizio":null,
+    "datafine":null
+}}
