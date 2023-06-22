@@ -71,10 +71,28 @@
     "dataFine":null
 },
 {
+    "codice":"AP_IN_VERIF",
+    "descrizione": {
+		"it": "Appalto in verifica",
+		"en": "Appalto in verifica"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AP_CONF",
     "descrizione": {
 		"it": "Appalto confermato",
 		"en": "Appalto confermato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"AP_IN_CONF",
+    "descrizione": {
+		"it": "Appalto in conferma",
+		"en": "Appalto in conferma"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -152,6 +170,15 @@
     "dataFine":null
 },
 {
+    "codice":"SC_IN_VERIF",
+    "descrizione": {
+		"it": "Scheda in verifica",
+		"en": "Scheda in verifica"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"SC_N_VERIF",
     "descrizione": {
 		"it": "Scheda non verificata",
@@ -165,6 +192,15 @@
     "descrizione": {
 		"it": "Scheda confermata",
 		"en": "Scheda confermata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SC_IN_CONF",
+    "descrizione": {
+		"it": "Scheda in conferma",
+		"en": "Scheda in conferma"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -242,6 +278,15 @@
     "dataFine":null
 },
 {
+    "codice":"PI_IN_VERIF",
+    "descrizione": {
+		"it": "Piano in verifica",
+		"en": "Piano in verifica"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"PI_N_VERIF",
     "descrizione": {
 		"it": "Piano non verificato",
@@ -255,6 +300,15 @@
     "descrizione": {
 		"it": "Piano confermato",
 		"en": "Piano confermato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"PI_IN_CONF",
+    "descrizione": {
+		"it": "Piano in conferma",
+		"en": "Piano in conferma"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -296,6 +350,15 @@
     "dataFine":null
 },
 {
+    "codice":"AV_IN_MOD",
+    "descrizione": {
+		"it": "Avviso in modifica",
+		"en": "Avviso in modifica"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AV_N_MOD",
     "descrizione": {
 		"it": "Avviso non modificato",
@@ -314,6 +377,15 @@
     "dataFine":null
 },
 {
+    "codice":"AV_IN_RETT",
+    "descrizione": {
+		"it": "Avviso in rettifica",
+		"en": "Avviso in rettifica"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AV_N_RETT",
     "descrizione": {
 		"it": "Avviso non rettificato",
@@ -327,6 +399,15 @@
     "descrizione": {
 		"it": "Avviso sospeso",
 		"en": "Avviso sospeso"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"AV_IN_SOSP",
+    "descrizione": {
+		"it": "Avviso in sospensione",
+		"en": "Avviso in sospensione"
 	},
     "dataInizio":null,
     "dataFine":null
