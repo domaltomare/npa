@@ -4,38 +4,38 @@
 		"it": "aggiornamento fascicolo",
 		"en": "aggiornamento fascicolo"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },{
     "codice":"02",
     "descrizione": {
 		"it": "chiusura fascicolo",
 		"en": "chiusura fascicolo"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },{
     "codice":"03",
     "descrizione": {
 		"it": "inserimento documento",
 		"en": "inserimento documento"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },{
     "codice":"04",
     "descrizione": {
 		"it": "aggiornamento documento",
 		"en": "aggiornamento documento"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },{
     "codice":"05",
     "descrizione": {
 		"it": "cancellazione documento",
 		"en": "cancellazione documento"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

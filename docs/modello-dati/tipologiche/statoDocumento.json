@@ -4,8 +4,8 @@
 		"it": "Creato",
 		"en": "Create"
 		},
-    "datainizio":"2023-03-01T00:00:00Z",
-    "datafine":null
+    "dataInizio":"2023-03-01T00:00:00Z",
+    "dataFine":null
 },
 {
     "codice":"2",
@@ -13,8 +13,8 @@
 		"it": "Aggiornato",
 		"en": "Updated"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
     "codice":"3",
@@ -22,6 +22,6 @@
 		"it": "Eliminato",
 		"en": "Deleted"
 		},
-    "datainizio":"2023-03-01T00:00:00Z",
-    "datafine":null
+    "dataInizio":"2023-03-01T00:00:00Z",
+    "dataFine":null
 }]

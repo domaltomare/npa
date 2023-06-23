@@ -4,22 +4,22 @@
 		"it": "inserito",
 		"en": "inserito"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },{
     "codice":"02",
     "descrizione": {
 		"it": "aggiornato",
 		"en": "aggiornato"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },{
     "codice":"03",
     "descrizione": {
 		"it": "cancellato",
 		"en": "cancellato"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]

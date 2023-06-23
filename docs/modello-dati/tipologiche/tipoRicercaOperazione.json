@@ -4,8 +4,8 @@
 		"it": "ultimo esito per l'operazione richiesta",
 		"en": "ultimo esito per l'operazione richiesta"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 },
 {
     "codice":"TUTTI_ESITI",
@@ -13,6 +13,6 @@
 		"it": "tutti gli esiti per l'operazione richiesta ordinati per data emissione decrescente",
 		"en": "tutti gli esiti per l'operazione richiesta ordinati per data emissione decrescente"
 		},
-    "datainizio":null,
-    "datafine":null
+    "dataInizio":null,
+    "dataFine":null
 }]
