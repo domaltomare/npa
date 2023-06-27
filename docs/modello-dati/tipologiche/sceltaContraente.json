@@ -91,6 +91,15 @@
 {
     "codice":"11",
     "descrizione": {
+		"it": "Accordo Quadro",
+		"en": "Accordo Quadro"
+		},	
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"12",
+    "descrizione": {
 		"it": "Affidamento diretto in adesione AQ/Convenzione",
 		"en": "Affidamento diretto in adesione AQ/Convenzione"
 		},	
