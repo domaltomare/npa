@@ -31,7 +31,7 @@ components:
         datiBaseTerminiInvio:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiTerminiInvioType'
         datiBaseDocumenti:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseDocumenti'          
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseDocumentiType'          
     AppaltoP3_3Type:
       description: Oggetto che riporta i dati dell'appalto relativi ai contratti esclusi - adesione con confronto competitivo
       allOf: # estende la classe AppaltoP3BaseType
