@@ -51,3 +51,5 @@ components:
       properties:
         anacForm:
           $ref: '#/components/schemas/AnacFormSU1Type'
+        espd:
+         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'            

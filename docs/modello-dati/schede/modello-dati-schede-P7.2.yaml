@@ -46,4 +46,6 @@ components:
       additionalProperties: false
       properties:
         anacForm:
-          $ref: '#/components/schemas/AnacFormP7_2Type'          
+          $ref: '#/components/schemas/AnacFormP7_2Type'   
+        espd:
+         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'           
