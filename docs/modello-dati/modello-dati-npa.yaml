@@ -301,10 +301,15 @@ components:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          codiceAppalto:
+            description: identificativo univoco dell'Appalto definito dal SA.
+            type: string
+            maxLength: 128
+            example: 'rt5677tTy7'
           oggetto:
             description: descrizione dell'appalto
             type: string
-            example: Fornitura di strumento XX per XX
+            example: 'Fornitura di strumento XX per XX'
           dataCreazione:
             description: data creazione dell'appalto (A datetime specified by ISO 8601 as profiled by RFC 3339)
             type: string
