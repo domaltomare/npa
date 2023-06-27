@@ -17,7 +17,7 @@ components:
           description: Denominazione dello stato di avanzamento
           type: string
         modalitaPagamento:
-          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaPagamentoEnum'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaPagamentoEnum'
         impAnticipazione:
           description: Eventuale anticipazione 
           type: number
@@ -43,7 +43,7 @@ components:
           type: number
           format: double
         avanzamento:
-          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/AvanzamentoEnum'          
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AvanzamentoEnum'          
         numGiorniScostamento:
           description: Indicare lo scostamento registrato in numero di giorni
           type: number

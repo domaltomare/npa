@@ -22,7 +22,7 @@ components:
           type: string
           format: datetime
         modoCollaudo:
-          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModoCollaudoEnum'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModoCollaudoEnum'
         dataNomina:
           description: Data nomina collaudatore/Commissione
           type: string
@@ -44,9 +44,9 @@ components:
           type: string
           enum: ['Positivo', 'Negativo'] 
         quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType'
         quadroEconomicoConcessioni:
-          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType' 
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType' 
         numeroTotaleRiserve:
           description: Numero totale riserve definite con accordo bonario
           type: number
@@ -58,7 +58,7 @@ components:
         modalitaDefinizione:
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/DefinizioneType'
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DefinizioneType'
     AnacFormCL1Type:
       description: Contiene tutti i dati di collaudo
       type: object

@@ -18,7 +18,7 @@ components:
           type: string
           format: datetime
         motivoMancatoSubappalto: 
-          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoMancatoSubappaltoEnum'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoMancatoSubappaltoEnum'
     AnacFormES1Type:
       description: Contiene tutti i dati relativi alla scheda di Richiesta di Subappalto
       type: object
