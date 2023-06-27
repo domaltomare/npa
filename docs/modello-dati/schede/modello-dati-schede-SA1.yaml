@@ -7,25 +7,21 @@ components:
     AvanzamentoType:
       description: Oggetto che riporta tutti i dati di avanzamento del contratto 
       type: object
-      required: [dataAvanzamento,impSal,avanzamento,denominazioneAvanzamento]
+      required: [codContratto,dataAvanzamento,impSal,denominazioneAvanzamento]
       additionalProperties: false
       properties:
         codContratto:
-          description: identificativo del contratto restituito in response alla scheda di Inizio Lavori.
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
           type: string
-        statoAvanzamento:
-          description: Stato di avanzamento
-          type: string
-          format: number
         denominazioneAvanzamento: 
           description: Denominazione dello stato di avanzamento
           type: string
         modalitaPagamento:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaPagamentoEnum'
+          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaPagamentoEnum'
         impAnticipazione:
           description: Eventuale anticipazione 
-          type: string
-          format: decimal          
+          type: number
+          format: double          
         dataCertificatoAnticipazione:
           description: Data del certificato di pagamento relativo all'anticipazione 
           type: string
@@ -36,25 +32,25 @@ components:
           format: datetime
         impSal:
           description: Importo stato avanzamento progressivo (cumulato)
-          type: string
-          format: decimal
+          type: number
+          format: double
         dataCertificatoMandatoPagamento:
           description: Data di emissione del certificato/mandato di pagamento. Per lavori, indicare la data del certificato. Per servizi e forniture, indicare la data del mandato
           type: string
           format: datetime
         impCertificatoMandatoPagamento:
           description: Importo del certificato/mandato di pagamento. Per lavori, indicare l’importo del certificato. Per servizi e forniture, indicare l’importo del mandato
-          type: string
-          format: decimal
+          type: number
+          format: double
         avanzamento:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AvanzamentoEnum'          
+          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/AvanzamentoEnum'          
         numGiorniScostamento:
           description: Indicare lo scostamento registrato in numero di giorni
-          type: string
+          type: number
           format: integer
         numGiorniProroga:
           description: Indicare il numero di giorni di proroga concessi (non conseguenti a modifiche contrattuali)
-          type: string
+          type: number
           format: integer
     AnacFormSA1Type:
       description: Contiene tutti i dati relativi alla scheda di Avanzamenti

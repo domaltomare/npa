@@ -11,17 +11,17 @@ components:
       additionalProperties: false
       properties:
         codContratto:
-          description: identificativo del contratto restituito in response alla scheda di Inizio Lavori.
-          type: string      
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string         
         dataTermine: 
           description: Termine previsto per la consegna
           type: string
           format: datetime
         tipoComunicazione:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipologiaComunicazioneEnum'  
+          $ref: 'https://raw.githubusercontent.com/ctribo/yaml/main/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipologiaComunicazioneEnum'  
         durataSospensione: 
           description: Durata della sospensione in giorni (in caso di sospensione)
-          type: string
+          type: number
           format: integer
         motivoSospensione:
           description: Motivazione della sospensione/ritardo
@@ -31,7 +31,7 @@ components:
           type: string
           format: datetime
         istanzaAccolta:
-          description: L'istanza di recesso è stata accolta
+          description: L'istanza di recesso è stata accolta?
           type: boolean           
         istanzaTardiva:
           description: Si è proceduto a consegna tardiva (in caso di ritardo)
@@ -44,12 +44,12 @@ components:
           type: boolean   
         impSpese:
           description: Eventuale rimborso delle spese in €
-          type: string
-          format: decimal
+          type: number
+          format: double
         impOneri:
           description: Eventuale compenso degli oneri derivanti dal ritardo in €
-          type: string
-          format: decimal  
+          type: number
+          format: double  
     AnacFormIR1Type:
       description: Contiene tutti i dati relativi alla scheda di Istanza di Recesso
       type: object

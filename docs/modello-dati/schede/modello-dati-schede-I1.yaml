@@ -8,20 +8,11 @@ components:
       description: Oggetto che riporta i dati di inizio prestazione
       type: object
       additionalProperties: false
-      required: [importoCauzione,consegnaFrazionata,avvioPerFasi,consegnaSottoRiserva,dataEffettivoInizio,dataFinePrevista]
+      required: [consegnaFrazionata,avvioPerFasi,consegnaSottoRiserva,dataEffettivoInizio,dataFinePrevista]
       properties:
-        dataStipula:
-          description: Data stipula del contratto
-          type: string
-          format: datetime
-        dataEsecutivita:
-          description: Data esecutività del contratto (ove prevista)
-          type: string
-          format: datetime
-        importoCauzione:
-          description: Importo cauzione definitiva in €
-          type: string
-          format: decimal
+        codContratto:
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string      
         dataDisposizioneInzio:
           description: Data disposizione dell’inizio della prog. Esecutiva
           type: string
@@ -40,15 +31,15 @@ components:
           description: Data verbale prima consegna lavori
           type: string
           format: datetime
-        dataVerbaleAvvioPrimaFase:
-          description: Data verbale di avvio della prima fase dell'esecuzione del contratto
+        dataAvvioPrimaFase:
+          description: Data di avvio della prima fase dell'esecuzione del contratto
           type: string
           format: datetime
         dataVerbaleConsegnaDefinitiva:
           description: Data verbale consegna definitiva
           type: string
           format: datetime
-        consegnaSottoRiserva?:
+        consegnaSottoRiserva:
           description: Consegna sotto riserva di legge?
           type: boolean
         dataEffettivoInizio:
