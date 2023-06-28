@@ -2342,10 +2342,6 @@ components:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
       properties:
-        idAppalto:
-          description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         listaEsiti:
           description: Lista di ritorno esiti operazione
           type: array
