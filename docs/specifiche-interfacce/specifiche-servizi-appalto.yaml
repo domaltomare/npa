@@ -790,7 +790,7 @@ paths:
       tags:
         - pubblicaAvviso
       summary: API Rest per la creazione di un avviso che sostituisce il precedente non ancora pubblicato sia a livello nazionale e sia europeo. ASINCRONO - ASIMMETRICO
-      description: API Rest per la richiesta di pubblicazione di un'avviso sia a livello nazionale sia europeo. L'avviso sostituisce il precedente non ancora pubblicato. Il servizio gestisce la pubblicazione europea mediante l'acquisizione di dati nel formato definito da TED (eForm) e, la pubblicazione nazionale mediante l'acquisizione di dati definiti dall'ESPD Request più dati aggiuntivi richiesti da ANAC. ASINCRONO ASIMMETRICO
+      description: API Rest per la richiesta di pubblicazione di un'avviso sia a livello nazionale sia europeo. L'avviso sostituisce il precedente non ancora pubblicato. Il servizio gestisce la pubblicazione europea mediante l'acquisizione di dati nel formato definito da TED (eForm) e, la pubblicazione nazionale mediante l'acquisizione di dati definiti dall'ESPD Request più dati aggiuntivi richiesti da ANAC. Con la successiva chiamata al servizio esito-operazione è possibile recuperare l'idAvviso di modifica assegnato. ASINCRONO ASIMMETRICO
       operationId: idAvvisoModifica
       requestBody:
         description: Inserimento Avviso con gli oggetti specifici per la pubblicazione in TED o in ambito Nazionale
@@ -817,7 +817,7 @@ paths:
       tags:
         - pubblicaAvviso
       summary: API Rest per la creazione di un avviso che rettifica il precedente pubblicato sia a livello nazionale e sia europeo. ASINCRONO - ASIMMETRICO
-      description: API Rest per la richiesta di pubblicazione di un'avviso di rettifica sia a livello nazionale sia europeo. L'avviso rettifica il precedente già pubblicato. Il servizio gestisce la pubblicazione europea mediante l'acquisizione di dati nel formato definito da TED (eForm) e, la pubblicazione nazionale mediante l'acquisizione di dati definiti dall'ESPD Request più dati aggiuntivi richiesti da ANAC. ASINCRONO ASIMMETRICO
+      description: API Rest per la richiesta di pubblicazione di un'avviso di rettifica sia a livello nazionale sia europeo. L'avviso rettifica il precedente già pubblicato. Il servizio gestisce la pubblicazione europea mediante l'acquisizione di dati nel formato definito da TED (eForm) e, la pubblicazione nazionale mediante l'acquisizione di dati definiti dall'ESPD Request più dati aggiuntivi richiesti da ANAC. Con la successiva chiamata al servizio esito-operazione è possibile recuperare l'idAvviso di rettifica assegnato. ASINCRONO ASIMMETRICO
       operationId: idAvvisoRettifica
       requestBody:
         description: Inserimento Avviso con gli oggetti specifici per la pubblicazione in TED o in ambito Nazionale
