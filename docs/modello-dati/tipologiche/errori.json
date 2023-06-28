@@ -312,4 +312,445 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"REG1",
+    "descrizione": {
+		"it": "La categoria merceologica indicata nei lotti non e' compresa tra quelle indicate nell'appalto",
+		"en": "La categoria merceologica indicata nei lotti non e' compresa tra quelle indicate nell'appalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG2",
+    "descrizione": {
+		"it": "Attenzione, non è stato indicato il codice fiscale del soggetto",
+		"en": "Attenzione, non è stato indicato il codice fiscale del soggetto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG3",
+    "descrizione": {
+		"it": "I codici fiscali indicati nella lista delle stazioni appaltanti devono essere diversi",
+		"en": "I codici fiscali indicati nella lista delle stazioni appaltanti devono essere diversi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG4_1",
+    "descrizione": {
+		"it": "Non e' stato indicato il campo Motivazione richiesta CIG",
+		"en": "Non e' stato indicato il campo Motivazione richiesta CIG"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG4_2",
+    "descrizione": {
+		"it": "La motivazione richiesta CIG non deve essere inserita per la categoria \"Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015",
+		"en": "La motivazione richiesta CIG non deve essere inserita per la categoria \"Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG5",
+    "descrizione": {
+		"it": "Il campo strumentiElettroniciSpecifici non può essere null",
+		"en": "Il campo strumentiElettroniciSpecifici non può essere null"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG6_1",
+    "descrizione": {
+		"it": "Il campo condizioniNegoziata non può essere null",
+		"en": "Il campo condizioniNegoziata non può essere null"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG6_2",
+    "descrizione": {
+		"it": "Campo condizioniNegoziata non previsto",
+		"en": "Campo condizioniNegoziata non previsto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG7",
+    "descrizione": {
+		"it": "E’ stata selezionata la voce Somma urgenza e protezione civile di cui all’art. 163 co. 10 D. Lgs. 50/2016. E’ necessario valorizzare il campo linkDocumenti con la URL della sezione Bandi e Contratti dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC",
+		"en": "E’ stata selezionata la voce Somma urgenza e protezione civile di cui all’art. 163 co. 10 D. Lgs. 50/2016. E’ necessario valorizzare il campo linkDocumenti con la URL della sezione Bandi e Contratti dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG8",
+    "descrizione": {
+		"it": "Il campo deve essere una url valida e iniziare per http oppure per https.",
+		"en": "Il campo deve essere una url valida e iniziare per http oppure per https."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG10",
+    "descrizione": {
+		"it": "Il campo servizioPubblicoLocale è obbligatorio",
+		"en": "Il campo servizioPubblicoLocale è obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG13",
+    "descrizione": {
+		"it": "Non è stato valorizzato il campo opzioniRinnovi",
+		"en": "Non è stato valorizzato il campo opzioniRinnovi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG14",
+    "descrizione": {
+		"it": "Se l'appalto prevede ripetizioni, il motivo collegamento CIG deve essere :No, nessuna ipotesi di collegamento",
+		"en": "Se l'appalto prevede ripetizioni, il motivo collegamento CIG deve essere :No, nessuna ipotesi di collegamento"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG15",
+    "descrizione": {
+		"it": "il campo cigCollegato è obbligatorio se il motivo di collegamento CIG e' valorizzato oppure se l'appalto prevede ripetizioni",
+		"en": "il campo cigCollegato è obbligatorio se il motivo di collegamento CIG e' valorizzato oppure se l'appalto prevede ripetizioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG16",
+    "descrizione": {
+		"it": "il campo cigCollegato deve prevedere ripetizioni",
+		"en": "il campo cigCollegato deve prevedere ripetizioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG18",
+    "descrizione": {
+		"it": "E’ obbligatorio valorizzare a SI il campo acquisizioneCup se il campo afferenteInvestimentiPNRR è valorizzato a SI",
+		"en": "E’ obbligatorio valorizzare a SI il campo acquisizioneCup se il campo afferenteInvestimentiPNRR è valorizzato a SI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG20",
+    "descrizione": {
+		"it": "Il campo cupLotto è obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto principale del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria",
+		"en": "Il campo cupLotto è obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto principale del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG21",
+    "descrizione": {
+		"it": "La sezione paritaDiGenereGenerazionale è obbligatoria se il campo afferenteInvestimentiPNRR è valorizzato a SI",
+		"en": "La sezione paritaDiGenereGenerazionale è obbligatoria se il campo afferenteInvestimentiPNRR è valorizzato a SI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG22",
+    "descrizione": {
+		"it": "il campo quota30PerCento della sezione paritaDiGenereGenerazionale è obbligatorio se il campo afferenteInvestimentiPNRR è valorizzato a SI",
+		"en": "il campo quota30PerCento della sezione paritaDiGenereGenerazionale è obbligatorio se il campo afferenteInvestimentiPNRR è valorizzato a SI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG23",
+    "descrizione": {
+		"it": "E' stato indicato il campo quota30PerCento della sezione paritaDiGenereGenerazionale ma non è stato indicato il valore della Previsione di una quota inferiore con riferimento all'occupazione femminile o giovanile",
+		"en": "E' stato indicato il campo quota30PerCento della sezione paritaDiGenereGenerazionale ma non è stato indicato il valore della Previsione di una quota inferiore con riferimento all'occupazione femminile o giovanile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG24",
+    "descrizione": {
+		"it": "Almeno una quota, tra occupazione femminile e occupazione giovanile, deve essere inferiore al 30%",
+		"en": "Almeno una quota, tra occupazione femminile e occupazione giovanile, deve essere inferiore al 30%"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG27",
+    "descrizione": {
+		"it": "Indicare il motivo della deroga alla previsione dell’obbligo di indicare una quota pari almeno al 30 per cento con riferimento all’occupazione femminile/giovanile",
+		"en": "Indicare il motivo della deroga alla previsione dell’obbligo di indicare una quota pari almeno al 30 per cento con riferimento all’occupazione femminile/giovanile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG28",
+    "descrizione": {
+		"it": "il campo misurePremiali della sezione paritaDiGenereGenerazionale è obbligatorio se il campo afferenteInvestimentiPNRR è valorizzato a SI",
+		"en": "il campo misurePremiali della sezione paritaDiGenereGenerazionale è obbligatorio se il campo afferenteInvestimentiPNRR è valorizzato a SI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG29",
+    "descrizione": {
+		"it": "il campo modalitaAcquisizione è obbligatorio se l'oggetto principale del contratto è Servizi o Forniture",
+		"en": "il campo modalitaAcquisizione è obbligatorio se l'oggetto principale del contratto è Servizi o Forniture"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG30",
+    "descrizione": {
+		"it": "il campo prestazioniComprese è obbligatorio se l'oggetto principale del contratto è Lavori",
+		"en": "il campo prestazioniComprese è obbligatorio se l'oggetto principale del contratto è Lavori"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG31",
+    "descrizione": {
+		"it": "Il campo oggettoPrincipaleContratto è obbligatorio",
+		"en": "Il campo oggettoPrincipaleContratto è obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG32",
+    "descrizione": {
+		"it": "Il valore indicato nel campo accessibilita non è coerente con quanto indicato nel campo afferenteInvestimentiPNRR, valorizzato a SI",
+		"en": "Il valore indicato nel campo accessibilita non è coerente con quanto indicato nel campo afferenteInvestimentiPNRR, valorizzato a SI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG33",
+    "descrizione": {
+		"it": "Il valore indicato nel campo accessibilita prevede che venga indicata la giustificazione",
+		"en": "Il valore indicato nel campo accessibilita prevede che venga indicata la giustificazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG34",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente lavori",
+		"en": "Non è stato indicato il valore dell’importo componente lavori"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG35",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente servizi",
+		"en": "Non è stato indicato il valore dell’importo componente servizi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG36",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente forniture",
+		"en": "Non è stato indicato il valore dell’importo componente forniture"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG37",
+    "descrizione": {
+		"it": "Non è stato indicato il valore relativo alle somme per opzioni e rinnovi",
+		"en": "Non è stato indicato il valore relativo alle somme per opzioni e rinnovi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG38",
+    "descrizione": {
+		"it": "Non è stato indicato il valore relativo alle somme per ripetizione servizi,forniture,lavori analoghi e consegne complementari",
+		"en": "Non è stato indicato il valore relativo alle somme per ripetizione servizi,forniture,lavori analoghi e consegne complementari"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG65",
+    "descrizione": {
+		"it": "Cpv già inserita come cpv prevalente",
+		"en": "Cpv già inserita come cpv prevalente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG66",
+    "descrizione": {
+		"it": "Cpv gia' inserita come cpv secondaria",
+		"en": "Cpv gia' inserita come cpv secondaria"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG67",
+    "descrizione": {
+		"it": ""il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara",
+		"en": ""il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG11",
+    "descrizione": {
+		"it": "Non è stato indicato il CUI",
+		"en": "Non è stato indicato il CUI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG9",
+    "descrizione": {
+		"it": "Il campo ‘Esclusione o regime speciale’ non è richiesto",
+		"en": "Il campo ‘Esclusione o regime speciale’ non è richiesto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG39",
+    "descrizione": {
+		"it": "Indicare l'importo stimato del servizio di progettazione successiva",
+		"en": "Indicare l'importo stimato del servizio di progettazione successiva"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG40",
+    "descrizione": {
+		"it": "Assenza CIG dell’affidamento di incarico esterno di progettazione",
+		"en": "Assenza CIG dell’affidamento di incarico esterno di progettazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG41",
+    "descrizione": {
+		"it": "Indicare la data dell’affidamento di incarico esterno di progettazione",
+		"en": "Indicare la data dell’affidamento di incarico esterno di progettazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG42",
+    "descrizione": {
+		"it": "Indicare la data di consegna del progetto",
+		"en": "Indicare la data di consegna del progetto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG43",
+    "descrizione": {
+		"it": "Indicare il tipo di progettazione",
+		"en": "Indicare il tipo di progettazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG52",
+    "descrizione": {
+		"it": "Non è stato inserito l’importo dell’aggiudicatario",
+		"en": "Non è stato inserito l’importo dell’aggiudicatario"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG53",
+    "descrizione": {
+		"it": "In caso di ditta mandante l’importo non è previsto",
+		"en": "In caso di ditta mandante l’importo non è previsto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG68",
+    "descrizione": {
+		"it": "il campo giustificazione aggiudicazione diretta non va indicato se il tipo di procedura non è Negoziata senza previa indizione di gara",
+		"en": "il campo giustificazione aggiudicazione diretta non va indicato se il tipo di procedura non è Negoziata senza previa indizione di gara"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG69",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente lavori nel quadro economico delle concessioni",
+		"en": "Non è stato indicato il valore dell’importo componente lavori nel quadro economico delle concessioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG70",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente servizi nel quadro economico delle concessioni",
+		"en": "Non è stato indicato il valore dell’importo componente servizi nel quadro economico delle concessioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG71",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente forniture nel quadro economico delle concessioni",
+		"en": "Non è stato indicato il valore dell’importo componente forniture nel quadro economico delle concessioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
 }]
