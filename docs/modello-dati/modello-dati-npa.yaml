@@ -537,8 +537,8 @@ components:
           - dettaglio
           - dataControllo
         properties:
-          idAppalto:
-            description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          idScheda:
+            description: Identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
             format: uuid
           esito:
             $ref: '#/components/schemas/EsitoEnum'
