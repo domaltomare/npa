@@ -935,19 +935,10 @@
     "dataFine":null
 },
 {
-    "codice":"NAG1",
+    "codice":"NAG",
     "descrizione": {
-		"it": "Scheda di pubblicazione avviso di aggiudicazione relativa alla mancata aggiudicazione procedura europea",
-		"en": "Scheda di pubblicazione avviso di aggiudicazione relativa alla mancata aggiudicazione procedura europea"
-		},
-    "dataInizio":null,
-    "dataFine":null
-},
-{
-    "codice":"NAG2",
-    "descrizione": {
-		"it": "Scheda di pubblicazione avviso di aggiudicazione relativa alla mancata aggiudicazione procedura nazionale",
-		"en": "Scheda di pubblicazione avviso di aggiudicazione relativa alla mancata aggiudicazione procedura nazionale"
+		"it": "Scheda di pubblicazione avviso di mancata aggiudicazione della gara",
+		"en": "Scheda di pubblicazione avviso di mancata aggiudicazione della gara"
 		},
     "dataInizio":null,
     "dataFine":null
@@ -1043,6 +1034,15 @@
     "dataFine":null
 },
 {
+    "codice":"ES1",
+    "descrizione": {
+		"it": "Scheda di esito subappalto",
+		"en": "Scheda di esito subappalto"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"SO1",
     "descrizione": {
 		"it": "Scheda di sospensione",
@@ -1052,10 +1052,46 @@
     "dataFine":null
 },
 {
+    "codice":"RI1",
+    "descrizione": {
+		"it": "Scheda di ripresa prestazione",
+		"en": "Scheda di ripresa prestazione"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"AC1",
+    "descrizione": {
+		"it": "Scheda di accordo bonario",
+		"en": "Scheda di accordo bonario"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"IR1",
     "descrizione": {
 		"it": "Scheda di istanza di recesso",
 		"en": "Scheda di istanza di recesso"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"CO1",
+    "descrizione": {
+		"it": "Scheda di conclusione",
+		"en": "Scheda di conclusione"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"CO2",
+    "descrizione": {
+		"it": "Scheda di conclusione per importi<5K",
+		"en": "Scheda di conclusione per importi<5K"
 		},
     "dataInizio":null,
     "dataFine":null
