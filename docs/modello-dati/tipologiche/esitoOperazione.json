@@ -332,6 +332,15 @@
     "dataFine":null
 },
 {
+    "codice":"AV_IN_PUBB",
+    "descrizione": {
+		"it": "Avviso in pubblicazione",
+		"en": "Avviso in pubblicazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AV_N_PUBB",
     "descrizione": {
 		"it": "Avviso non pubblicato",
