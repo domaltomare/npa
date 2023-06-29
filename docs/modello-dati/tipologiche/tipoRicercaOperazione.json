@@ -10,8 +10,8 @@
 {
     "codice":"TUTTI_ESITI",
     "descrizione": {
-		"it": "tutti gli esiti per l'operazione richiesta ordinati per data emissione decrescente",
-		"en": "tutti gli esiti per l'operazione richiesta ordinati per data emissione decrescente"
+		"it": "tutti gli esiti per l'operazione richiesta ordinati per data creazione decrescente",
+		"en": "tutti gli esiti per l'operazione richiesta ordinati per data creazione decrescente"
 		},
     "dataInizio":null,
     "dataFine":null
