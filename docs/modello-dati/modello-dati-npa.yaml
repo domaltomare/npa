@@ -521,56 +521,87 @@ components:
           dataControllo:
             description: data in cui è stato effettuato il controllo sullo stato dell'avviso (A datetime specified by ISO 8601 as profiled by RFC 3339)
           stato:  
-             $ref: '#/components/schemas/StatoAvvisoEnum'             
+             $ref: '#/components/schemas/StatoAvvisoEnum'
       EsitoOperazioneType:
         type: object
         additionalProperties: false
-        oneOf:
-          - $ref: '#/components/schemas/EsitoOperazioneBaseType' 
-          - $ref: '#/components/schemas/EsitoOperazioneAvvisoType'      
-          - $ref: '#/components/schemas/EsitoOperazioneContrattoType'      
-      EsitoOperazioneBaseType:
-        type: object
-        additionalProperties: false
-        required:  # List the required properties here
-          - esito
-          - dettaglio
-          - dataControllo
         properties:
+          idAppalto:
+            description: identificativo univoco dell'Appalto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
           idScheda:
             description: Identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
             format: uuid
+          idAvviso:
+            description: identificativo univoco dell'Avviso generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione delle seguenti operazioni dispositive conferma-piano, conferma-appalto, conferma-scheda, modifica-avviso, rettifica-avviso.
+            type: string
+            format: uuid
+          idContratto:
+            description: identificativo univoco del Contratto generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione dell' operazioni dispositiva conferma-scheda.
+            type: string
+            format: uuid 
           esito:
             $ref: '#/components/schemas/EsitoEnum'
+          dettaglio:
+            description: descrizione dettagliata dell'esito dell'operazione
+            $ref: '#/components/schemas/EsitoOperazioneEnum'
           dataControllo:
             description: data in cui è stato effettuato il controllo dell'esito dell'operazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
             type: string
             format: datetime
-            example: '2022-01-23T12:02:05Z'
-          dettaglio:
-            description: descrizione dettagliata dell'esito dell'operazione
-            $ref: '#/components/schemas/EsitoOperazioneEnum'
+            example: '2022-01-23T12:02:05Z'            
           errori: 
             description: elenco degli errori
             type: array
             items:
               $ref: '#/components/schemas/ErroriEnum'
-      EsitoOperazioneAvvisoType:
-        allOf: # estende la classe EsitoOperazioneBaseType
-          - $ref: '#/components/schemas/EsitoOperazioneBaseType'
-        properties:
-          idAvviso:
-            description: identificativo univoco dell'Avviso generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione delle seguenti operazioni dispositive conferma-piano, conferma-appalto, conferma-scheda, modifica-avviso, rettifica-avviso.
-            type: string
-            format: uuid
-      EsitoOperazioneContrattoType:
-        allOf: # estende la classe EsitoOperazioneBaseType
-          - $ref: '#/components/schemas/EsitoOperazioneBaseType'
-        properties:
-          idContratto:
-            description: identificativo univoco del Contratto generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione dell' operazioni dispositiva conferma-scheda.
-            type: string
-            format: uuid
+      #EsitoOperazioneType:
+        #type: object
+        #additionalProperties: false
+        #oneOf:
+          #- $ref: '#/components/schemas/EsitoOperazioneBaseType' 
+          #- $ref: '#/components/schemas/EsitoOperazioneAvvisoType'      
+          #- $ref: '#/components/schemas/EsitoOperazioneContrattoType'      
+      #EsitoOperazioneBaseType:
+        #type: object
+        #additionalProperties: false
+        #properties:
+          #idScheda:
+            #description: Identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
+            #format: uuid
+         # esito:
+            #$ref: '#/components/schemas/EsitoEnum'
+          #dataControllo:
+            #description: data in cui è stato effettuato il controllo dell'esito dell'operazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
+            #type: string
+            #format: datetime
+            #example: '2022-01-23T12:02:05Z'
+          #dettaglio:
+            #description: descrizione dettagliata dell'esito dell'operazione
+            #$ref: '#/components/schemas/EsitoOperazioneEnum'
+         # errori: 
+            #description: elenco degli errori
+            #type: array
+            #items:
+             # $ref: '#/components/schemas/ErroriEnum'
+      #EsitoOperazioneAvvisoType:
+        #allOf: # estende la classe EsitoOperazioneBaseType
+          #- $ref: '#/components/schemas/EsitoOperazioneBaseType'
+        #properties:
+          #idAvviso:
+            #description: identificativo univoco dell'Avviso generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione delle seguenti operazioni dispositive conferma-piano, conferma-appalto, conferma-scheda, modifica-avviso, rettifica-avviso.
+            #type: string
+            #format: uuid
+      #EsitoOperazioneContrattoType:
+        #allOf: # estende la classe EsitoOperazioneBaseType
+          #- $ref: '#/components/schemas/EsitoOperazioneBaseType'
+        #properties:
+          #idContratto:
+            #description: identificativo univoco del Contratto generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione dell' operazioni dispositiva conferma-scheda.
+            #type: string
+            #format: uuid
       TipoAzioneAvvisoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneAvvisoEnum'
       TipoAvvisoEnum:
