@@ -544,6 +544,8 @@ components:
             format: uuid 
           esito:
             $ref: '#/components/schemas/EsitoEnum'
+          tipoOperazione:
+            $ref: '#/components/schemas/TipoOperazioneEnum'
           dettaglio:
             $ref: '#/components/schemas/DettaglioEsitoOperazioneEnum'
           dataControllo:
@@ -556,51 +558,6 @@ components:
             type: array
             items:
               $ref: '#/components/schemas/ErroriEnum'
-      #EsitoOperazioneType:
-        #type: object
-        #additionalProperties: false
-        #oneOf:
-          #- $ref: '#/components/schemas/EsitoOperazioneBaseType' 
-          #- $ref: '#/components/schemas/EsitoOperazioneAvvisoType'      
-          #- $ref: '#/components/schemas/EsitoOperazioneContrattoType'      
-      #EsitoOperazioneBaseType:
-        #type: object
-        #additionalProperties: false
-        #properties:
-          #idScheda:
-            #description: Identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
-            #format: uuid
-         # esito:
-            #$ref: '#/components/schemas/EsitoEnum'
-          #dataControllo:
-            #description: data in cui è stato effettuato il controllo dell'esito dell'operazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
-            #type: string
-            #format: datetime
-            #example: '2022-01-23T12:02:05Z'
-          #dettaglio:
-            #description: descrizione dettagliata dell'esito dell'operazione
-            #$ref: '#/components/schemas/DettaglioEsitoOperazioneEnum'
-         # errori: 
-            #description: elenco degli errori
-            #type: array
-            #items:
-             # $ref: '#/components/schemas/ErroriEnum'
-      #EsitoOperazioneAvvisoType:
-        #allOf: # estende la classe EsitoOperazioneBaseType
-          #- $ref: '#/components/schemas/EsitoOperazioneBaseType'
-        #properties:
-          #idAvviso:
-            #description: identificativo univoco dell'Avviso generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione delle seguenti operazioni dispositive conferma-piano, conferma-appalto, conferma-scheda, modifica-avviso, rettifica-avviso.
-            #type: string
-            #format: uuid
-      #EsitoOperazioneContrattoType:
-        #allOf: # estende la classe EsitoOperazioneBaseType
-          #- $ref: '#/components/schemas/EsitoOperazioneBaseType'
-        #properties:
-          #idContratto:
-            #description: identificativo univoco del Contratto generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione dell' operazioni dispositiva conferma-scheda.
-            #type: string
-            #format: uuid
       TipoAzioneAvvisoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneAvvisoEnum'
       TipoAvvisoEnum:
@@ -621,6 +578,8 @@ components:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DettaglioEsitoOperazioneEnum'
       EsitoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoEnum'
+      TipoOperazioneEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOperazioneEnum'        
       CodiceSchedaEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/CodiceSchedaEnum'   
       TipoRuoloEnum:
