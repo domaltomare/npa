@@ -264,6 +264,8 @@ components:
             description: Importo lotto in €
             type: string
             format: decimal
+          stato:
+            $ref: '#/components/schemas/StatoLottoEnum'          
           oggettoPrincipaleContratto:
             $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
           oggettoContratto:
