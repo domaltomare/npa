@@ -546,7 +546,7 @@ components:
             $ref: '#/components/schemas/EsitoEnum'
           dettaglio:
             description: descrizione dettagliata dell'esito dell'operazione
-            $ref: '#/components/schemas/EsitoOperazioneEnum'
+            $ref: '#/components/schemas/DettaglioEsitoOperazioneEnum'
           dataControllo:
             description: data in cui è stato effettuato il controllo dell'esito dell'operazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
             type: string
@@ -580,7 +580,7 @@ components:
             #example: '2022-01-23T12:02:05Z'
           #dettaglio:
             #description: descrizione dettagliata dell'esito dell'operazione
-            #$ref: '#/components/schemas/EsitoOperazioneEnum'
+            #$ref: '#/components/schemas/DettaglioEsitoOperazioneEnum'
          # errori: 
             #description: elenco degli errori
             #type: array
@@ -618,8 +618,8 @@ components:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoPrincipaleContrattoEnum'
       OggettoContrattoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoContrattoEnum'
-      EsitoOperazioneEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoOperazioneEnum'
+      DettaglioEsitoOperazioneEnum:
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DettaglioEsitoOperazioneEnum'
       EsitoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/EsitoEnum'
       CodiceSchedaEnum:
