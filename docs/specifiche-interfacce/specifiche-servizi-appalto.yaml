@@ -1412,6 +1412,12 @@ paths:
           schema:
             type: string
             example: "ULTIMO_ESITO"
+        - in: query
+          name: esito
+          description: Codice sintetico esito operazione - fare riferimento ai valori contenuti nel file [esito.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esito.json)
+          schema:
+            type: string
+            example: "OK"
       responses:
         '200':
           description: Esecuzione avvenuta con successo
