@@ -226,7 +226,7 @@ paths:
       tags:
         -  pianificazioneAppalto
       summary: API Rest per la ricerca delle Pianificazioni. SINCRONO
-      description: Viene recuperata la lista con i dati di sintesi delle Pianificazioni.Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base alla competenza della SA che sta operando SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi delle Pianificazioni.Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base alla competenza della SA che sta operando. Almeno un filtro di ricerca deve essere valorizzato. SINCRONO
       operationId: idPianoRicerca
       parameters:
         - in: query
@@ -438,7 +438,7 @@ paths:
       tags:
         -  comunicaAppalto
       summary: API Rest per la ricerca delle Gare-Lotto dell'Appalto. SINCRONO
-      description: Viene recuperata la lista con i dati di sintesi dell'Appalto e dei rispettivi lotti. Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi dell'Appalto e dei rispettivi lotti. Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. Almeno un filtro di ricerca deve essere valorizzato. SINCRONO
       operationId: idAppaltoRicerca
       parameters:
         - in: query
@@ -803,7 +803,7 @@ paths:
       tags:
         - pubblicaAvviso
       summary: API Rest per la ricerca degli avvisi dell'appalto. SINCRONO
-      description: Viene recuperata la lista con i dati di sintesi degli Avvisi. Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi degli Avvisi. Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. Almeno un filtro di ricerca deve essere valorizzato. SINCRONO
       operationId: idAvvisoRicerca
       parameters:
         - in: query
@@ -1105,7 +1105,7 @@ paths:
       tags:
         - comunicaPostPubblicazione
       summary: API Rest per la ricerca delle Schede dati inserite nelle fasi successive alla pubblicazione. SINCRONO
-      description: Viene recuperata la lista con i dati di sintesi delle schede.Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi delle schede.Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. Almeno un filtro di ricerca deve essere valorizzato. SINCRONO
       operationId: idSchedaRicerca
       parameters:
         - in: query    
