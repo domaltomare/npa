@@ -712,7 +712,6 @@ paths:
     get:
       tags:
         - comunicaAppalto
-        - pubblicaAvviso
       summary: API Rest per il recupero dei CIG generati da ANAC e assegnati ai lotti dell’Appalto. SINCRONO
       description: Per un Appalto il servizio restituiti le coppie Lotto - CIG. SINCRONO
       operationId: idCIGRecupera
@@ -1237,8 +1236,8 @@ paths:
             format: datetime
           example: '2022-01-23T12:02:05Z'
         - in: query
-          name: tipoScheda
-          description: Codice Tipologia di Scheda - fare riferimento ai valori contenuti nel file [tipoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoScheda.json)
+          name: codiceScheda
+          description: Codice Scheda - fare riferimento ai valori contenuti nel file [codiceScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/codiceScheda.json)
           schema:
             type: string
             example: 'SC1'
