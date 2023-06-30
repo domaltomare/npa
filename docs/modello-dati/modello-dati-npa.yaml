@@ -348,6 +348,8 @@ components:
             example: '2022-01-23T12:02:05Z'
           stato:
             $ref: '#/components/schemas/StatoAvvisoEnum'
+          tipo:
+            $ref: '#/components/schemas/TipoAvvisoEnum'    
       AvvisoType:
         allOf: # estende la classe AvvisoBaseType
           - $ref: '#/components/schemas/AvvisoBaseType'
