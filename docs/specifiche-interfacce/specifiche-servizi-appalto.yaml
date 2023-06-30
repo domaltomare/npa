@@ -1240,7 +1240,7 @@ paths:
           description: Codice Scheda - fare riferimento ai valori contenuti nel file [codiceScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/codiceScheda.json)
           schema:
             type: string
-            example: 'SC1'
+            example: 'AD1_28'
         - in: query
           name: statoScheda
           description: Codice Stato della Scheda - Se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione di almeno un altro parametro - fare riferimento ai valori contenuti nel file [statoScheda.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoScheda.json)
