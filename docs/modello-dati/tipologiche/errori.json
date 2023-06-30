@@ -314,6 +314,15 @@
     "dataFine":null
 },
 {
+    "codice":"ERR36",
+    "descrizione": {
+		"it": "il body della scheda non è valorizzato",
+		"en": "il body della scheda non è valorizzato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"REG1",
     "descrizione": {
 		"it": "La categoria merceologica indicata nei lotti non e' compresa tra quelle indicate nell'appalto",
@@ -631,8 +640,8 @@
 {
     "codice":"REG67",
     "descrizione": {
-		"it": ""il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara",
-		"en": ""il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara"
+		"it": "il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara",
+		"en": "il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara"
 	},
     "dataInizio":null,
     "dataFine":null
