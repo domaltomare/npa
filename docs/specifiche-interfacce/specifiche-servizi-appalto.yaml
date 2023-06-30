@@ -168,21 +168,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              additionalProperties: false
-              properties:
-                idPianificazione:
-                  description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
-                  type: string
-                  format: uuid
-                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-                motivo:  
-                  description: descrizione del motivo della richiesta di cancellazione
-                  type: string
-                  maxLength: 200
-                  example: 'Pianificazione non approvata'
-              required:
-                - idPianificazione
+              $ref: '#/components/schemas/CancellaPianoRequest'
         required: true
       responses:
         '200':
@@ -311,16 +297,8 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              additionalProperties: false
-              properties:
-                idPianificazione:
-                  description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
-                  type: string
-                  format: uuid
-                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-              required:
-                - idPianificazione
+              $ref: '#/components/schemas/VerificaPianoRequest'
+        required: true
       responses:
         '200':
             $ref: '#/components/responses/200AckResponse'       
@@ -345,16 +323,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              additionalProperties: false
-              properties:
-                idPianificazione:
-                  description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
-                  type: string
-                  format: uuid
-                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-              required:
-                - idPianificazione
+              $ref: '#/components/schemas/ConfermaPianoRequest'
         required: true
       responses:
         '200':
@@ -444,21 +413,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              additionalProperties: false
-              properties:
-                idAppalto:
-                  description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
-                  type: string
-                  format: uuid
-                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-                motivo:  
-                  description: descrizione del motivo della richiesta di cancellazione
-                  type: string
-                  maxLength: 200
-                  example: 'Revoca delle procedure di gara'
-              required:
-                - idAppalto
+              $ref: '#/components/schemas/CancellaAppaltoRequest'
         required: true
       responses:
         '200':
@@ -604,16 +559,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              additionalProperties: false
-              properties:
-                idAppalto:
-                  description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
-                  type: string
-                  format: uuid
-                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-              required:
-                - idAppalto
+              $ref: '#/components/schemas/VerificaAppaltoRequest'
         required: true
       responses:
         '200':
@@ -639,16 +585,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              additionalProperties: false
-              properties:
-                idAppalto:
-                  description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
-                  type: string
-                  format: uuid
-                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-              required:
-                - idAppalto
+              $ref: '#/components/schemas/ConfermaAppaltoRequest'
         required: true
       responses:
         '200':
@@ -762,15 +699,12 @@ paths:
       summary: API Rest per la richiesta di pubblicazione di un'avviso sia a livello nazionale sia europeo. ASINCRONO - ASIMMETRICO
       description: Il servizio avvia la richiesta di pubblicazione di un Avviso, a livello nazionale e/o europeo. A seguito della chiamata a questo servizio, l’avviso transita in stato “IN ATTESA PUBBLICAZIONE”. ASINCRONO - ASIMMETRICO  
       operationId: idAvvisoPubblica
-      parameters:
-        - in: query
-          name: idAvviso
-          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
-          required: true
-          schema:
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PubblicaAvvisoRequest'
+        required: true
       responses:
         '200':
             $ref: '#/components/responses/200AckResponse'        
@@ -849,21 +783,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              additionalProperties: false
-              properties:
-                idAvviso:
-                  description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
-                  type: string
-                  format: uuid
-                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-                motivo:  
-                  description: descrizione del motivo della richiesta di cancellazione
-                  type: string
-                  maxLength: 200
-                  example: 'Revoca delle procedure di gara'
-              required:
-                - idAvviso
+              $ref: '#/components/schemas/CancellaAvvisoRequest'
         required: true
       responses:
         '200':
@@ -1160,21 +1080,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              additionalProperties: false
-              properties:
-                idScheda:
-                  description: identificativo univoco della scheda definita da ANAC. (A UUID specified by RFC4122).
-                  type: string
-                  format: uuid
-                  example: "68aa8c04-0d00-40f6-8d81-b59de3a3dcce"  
-                motivo:  
-                  description: descrizione del motivo della richiesta di cancellazione
-                  type: string
-                  maxLength: 200
-                  example: 'Errore inserimento dati'
-              required:
-                - idScheda
+              $ref: '#/components/schemas/CancellaSchedaRequest'
         required: true
       responses:
         '200':
@@ -1322,16 +1228,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              additionalProperties: false
-              properties:
-                idScheda:
-                  description: identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
-                  type: string
-                  format: uuid
-                  example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-              required:
-                - idScheda
+              $ref: '#/components/schemas/VerificaSchedaRequest'
         required: true
       responses:
         '200':
@@ -1357,16 +1254,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              additionalProperties: false
-              properties:
-                idScheda:
-                  description: identificativo univoco della scheda definita da ANAC. (A UUID specified by RFC4122).
-                  type: string
-                  format: uuid
-                  example: "68aa8c04-0d00-40f6-8d81-b59de3a3dcce" 
-              required:
-                - idScheda
+              $ref: '#/components/schemas/ConfermaSchedaRequest'
         required: true
       responses:
         '200':
@@ -1942,6 +1830,47 @@ components:
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         scheda:
           $ref: '#/components/schemas/SchedaComunicaAppaltoType'
+    CancellaAppaltoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        motivo:  
+          description: descrizione del motivo della richiesta di cancellazione
+          type: string
+          maxLength: 200
+          example: 'Revoca delle procedure di gara'
+      required:
+        - idAppalto
+    VerificaAppaltoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      required:
+        - idAppalto
+    ConfermaAppaltoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      required:
+        - idAppalto        
     CreaPianoRequest:
       description: Oggetto in ingresso al servizio    
       type: object
@@ -1962,7 +1891,48 @@ components:
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         scheda:
-          $ref: '#/components/schemas/SchedaPianificazioneType'          
+          $ref: '#/components/schemas/SchedaPianificazioneType'   
+    CancellaPianoRequest:     
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idPianificazione:
+          description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        motivo:  
+          description: descrizione del motivo della richiesta di cancellazione
+          type: string
+          maxLength: 200
+          example: 'Pianificazione non approvata'
+      required:
+        - idPianificazione
+    VerificaPianoRequest:     
+        description: Oggetto in ingresso al servizio    
+        type: object
+        additionalProperties: false
+        properties:
+          idPianificazione:
+            description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        required:
+          - idPianificazione
+    ConfermaPianoRequest:     
+        description: Oggetto in ingresso al servizio    
+        type: object
+        additionalProperties: false
+        properties:
+          idPianificazione:
+            description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        required:
+          - idPianificazione          
     PresaCaricoRequest:
       description: Oggetto in ingresso al servizio
       type: object
@@ -2081,6 +2051,47 @@ components:
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         scheda:
           $ref: '#/components/schemas/SchedaPostPubblicazioneType' 
+    CancellaSchedaRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idScheda:
+          description: identificativo univoco della scheda definita da ANAC. (A UUID specified by RFC4122).
+          type: string
+          format: uuid
+          example: "68aa8c04-0d00-40f6-8d81-b59de3a3dcce"  
+        motivo:  
+          description: descrizione del motivo della richiesta di cancellazione
+          type: string
+          maxLength: 200
+          example: 'Errore inserimento dati'
+      required:
+        - idScheda
+    VerificaSchedaRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idScheda:
+          description: identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      required:
+        - idScheda
+    ConfermaSchedaRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idScheda:
+          description: identificativo univoco della scheda definita da ANAC. (A UUID specified by RFC4122).
+          type: string
+          format: uuid
+          example: "68aa8c04-0d00-40f6-8d81-b59de3a3dcce" 
+      required:
+        - idScheda        
     AvvisoRequest:
       description: Oggetto in ingresso al servizio    
       type: object
@@ -2101,6 +2112,35 @@ components:
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         scheda:
            $ref: '#/components/schemas/SchedaGroupType'
+    PubblicaAvvisoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idAvviso:
+          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+      required:  # List the required properties here
+        - idAvviso
+    CancellaAvvisoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idAvviso:
+          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        motivo:  
+          description: descrizione del motivo della richiesta di cancellazione
+          type: string
+          maxLength: 200
+          example: 'Revoca delle procedure di gara'
+      required:
+        - idAvviso
     ConsultaAppaltoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
