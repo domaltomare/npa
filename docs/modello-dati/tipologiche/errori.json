@@ -323,6 +323,15 @@
     "dataFine":null
 },
 {
+    "codice":"ERR9999",
+    "descrizione": {
+		"it": "errore generico",
+		"en": "errore generico"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"REG1",
     "descrizione": {
 		"it": "La categoria merceologica indicata nei lotti non e' compresa tra quelle indicate nell'appalto",
