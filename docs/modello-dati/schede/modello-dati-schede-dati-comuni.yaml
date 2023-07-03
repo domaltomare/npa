@@ -552,6 +552,10 @@ components:
           type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64 
         categorieMerceologiche:
           $ref: '#/components/schemas/CategorieMerceologicheType'
         motivazioneCIG:
@@ -584,6 +588,10 @@ components:
           type: string 
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum' 
     AppaltoP6BaseType:
@@ -596,7 +604,11 @@ components:
           description: Codice univoco dell'appalto. il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
           type: string  
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
         cigAccordoQuadro:
           description: CIG relativo all’accordo quadro/convenzione cui si aderisce
           type: string
@@ -623,7 +635,11 @@ components:
           description: Codice univoco dell'appalto.il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
           type: string   
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
         prelazionePromotore:
           description: E' previsto il diritto di prelazione per il promotore?
           type: boolean  
@@ -648,6 +664,10 @@ components:
           type: string   
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
         categorieMerceologiche:
           $ref: '#/components/schemas/CategorieMerceologicheType'
         motivazioneCIG:
@@ -765,7 +785,11 @@ components:
           description: Codice univoco dell'appalto
           type: string
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
     AppaltoP_19Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -812,7 +836,11 @@ components:
           description: Codice univoco dell'appalto
           type: string 
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'  
         contrattiDisposizioniParticolari:
@@ -827,7 +855,11 @@ components:
           description: Codice univoco dell'appalto
           type: string  
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'            
     LottoBaseType:
@@ -2004,7 +2036,11 @@ components:
           description: Codice univoco dell'appalto.il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
           type: string   
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:
@@ -2067,7 +2103,11 @@ components:
           description: Codice univoco dell'appalto.il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
           type: string  
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:
@@ -2112,7 +2152,11 @@ components:
           description: Codice univoco dell'appalto.il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
           type: string     
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:
@@ -2165,7 +2209,11 @@ components:
           description: Codice univoco dell'appalto.il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
           type: string    
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64           
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:
