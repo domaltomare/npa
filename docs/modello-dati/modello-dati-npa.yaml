@@ -394,11 +394,6 @@ components:
             $ref: '#/components/schemas/SchedaComunicaAppaltoType'  
         required:
           - idAppalto
-      DatiSchedaType:
-        allOf: # estende il modello dati SchedaType
-          - $ref: '#/components/schemas/SchedaPostPubblicazioneType'
-        type: object
-        additionalProperties: false
       DatiPianoType:
         allOf: # estende la classe DatiPianoType
           - $ref: '#/components/schemas/DatiPianoBaseType'
