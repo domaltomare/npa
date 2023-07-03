@@ -53,9 +53,9 @@ AvvisoRequest{
          _dataCreazione	{...},
          body	{
            oneOf ->	
-             SchedaA1_29Type{...}
-             SchedaA1_30Type{...}
- 				        ...
+              SchedaA1_29Type{...}
+              SchedaA1_30Type{...}
+              ...
          }
       }
    }
