@@ -31,6 +31,10 @@ components:
         idAppalto:
           description: Codice univoco dell'appalto. il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
           type: string  
+        codiceAppalto:
+          description: Codice dell'appalto.
+          type: string
+          maxLength: 64          
         codiceFiscaleSA: 
           description: Codice fiscale SA
           type: string
