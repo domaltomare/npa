@@ -11,7 +11,7 @@ components:
         required: [versione,codice]
         properties:
           _idScheda:
-            description: Codice univoco della scheda. il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
+            description: Codice univoco della scheda. il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nella post.
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
@@ -21,6 +21,8 @@ components:
             description: versione della scheda. necessaria al motore interno ANAC.
             type: string
             example: '1.0'
+          _stato:
+            $ref: '#/components/schemas/StatoSchedaEnum' 
           _dataCreazione:
             description: data creazione della scheda (A datetime specified by ISO 8601 as profiled by RFC 3339)
             type: string
@@ -382,49 +384,24 @@ components:
             type: integer
             format: int32
       DatiAppaltoType:
-        allOf: # estende la classe DatiAppaltoBaseType
-          - $ref: '#/components/schemas/DatiAppaltoBaseType'
         properties:
           idAppalto:
             description: identificativo univoco dell'Appalto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          scheda:
+            $ref: '#/components/schemas/SchedaComunicaAppaltoType'  
         required:
           - idAppalto
-      DatiAppaltoBaseType:
-        description: Oggetto Complesso che riporta tutti i dati delle schede per il contesto comunicaAppalto
-        type: object
-        additionalProperties: false
-        properties:
-          scheda:
-            $ref: '#/components/schemas/SchedaComunicaAppaltoType'
       DatiBaseSchedaType:
         description: Oggetto Complesso che riporta tutti i dati delle schede per il contesto comunicaPostPubblicazione
-        type: object
-        additionalProperties: false
-        properties:
-          idScheda:
-            description: identificativo univoco ddella Scheda definito da ANAC. Restituito dall'operazione di creazione Scheda. (A UUID specified by RFC4122)
-            type: string
-            format: uuid
-          codice:
-            $ref: '#/components/schemas/CodiceSchedaEnum'           
-          versione:
-            description: versione della scheda. necessaria al motore interno ANAC.
-            type: string
-          stato:
-            $ref: '#/components/schemas/StatoSchedaEnum'    
+        allOf: # estende il modello dati SchedaType
+          - $ref: '#/components/schemas/SchedaType'
       DatiSchedaType:
         type: object
         additionalProperties: false
         properties:
-          idScheda:
-            description: identificativo univoco ddella Scheda definito da ANAC. Restituito dall'operazione di creazione Scheda. (A UUID specified by RFC4122)
-            type: string
-            format: uuid
-          stato:
-            $ref: '#/components/schemas/StatoSchedaEnum' 
           scheda:  
             $ref: '#/components/schemas/SchedaPostPubblicazioneType' 
       DatiPianoType:
