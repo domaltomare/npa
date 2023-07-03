@@ -64,6 +64,9 @@ Il modulo di ochestrazione è un componente di backend che non espone servizi in
 
 Lo schema delle regole di orchestrazione è consultabile nella cartella [orchestratore](/docs/orchestratore/). Le piattaforme fruitrici dei servizi di NPA sono tenute ad adeguare la sequenza di invio delle informazioni al flusso descritto.
 
+Le regole di validazione sintattica (tipo e obbligatorietà del campo) sono definte nelle specifiche al paragrafo [specifiche]([/docs/modello-dati/regole/](https://github.com/anticorruzione/npa/tree/main#specifiche-delle-interfacce)
+La validazione sintattico/semantica è completata tramite regole espresse con annotazione DMN definite nella cartella [regole](/docs/modello-dati/regole/) e sono leggibili attraverso un qualunque interprete DMN come ad esempio [dmn-simulator](https://consulting.camunda.com/dmn-simulator/)
+
 Al pari del modello dati le regole che gestiscono il flusso delle informazioni sono soggette a variazioni continue in adeguamento alla normativa di settore, gli aggiornamenti verranno riportati nel presente repository e la loro efficacia è regolata secondo le specifiche del paragrafo [Termini del servizio](#termini-del-servizio). Le piattaforme interoperabili con NPA sono tenute all'aggiornamento del flusso di lavoro entro i tempi previsti.
 
 ## Modello statico e dinamico
