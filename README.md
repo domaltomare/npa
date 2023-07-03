@@ -18,43 +18,43 @@ AvvisoRequest{
     scheda SchedaGroupType{
       oneOf ->	
         SchedaPianificazioneType{
-          _idScheda{...},
-          codice*{...},
-          versione*[...],
-          _stato{...},
-          _dataCreazione{...},
+          _idScheda	{...},
+          codice*	{...},
+          versione*	[...],
+          _stato	{...},
+          _dataCreazione	{...},
           body	{
             oneOf ->	
-              SchedaPIN_1Type{...}
-              SchedaPIN_2Type{...}
+              SchedaPIN_1Type	{...}
+              SchedaPIN_2Type	{...}
               ...
             }
         }
         SchedaComunicaAppaltoType{
-          _idScheda{...},
-          codice*{...},
-          versione*[...],
-          _stato{...},
-          _dataCreazione{...},
+          _idScheda	{...},
+          codice*	{...},
+          versione*	[...],
+          _stato	{...},
+          _dataCreazione	{...},
           body	{
             oneOf ->	
-              SchedaP1_10Type{...}
-              SchedaP1_11Type{...}
-              SchedaP1_12Type{...}
-              SchedaP1_13Type{...}
+              SchedaP1_10Type	{...}
+              SchedaP1_11Type	{...}
+              SchedaP1_12Type	{...}
+              SchedaP1_13Type	{...}
               ...
           }
        }
        SchedaPostPubblicazioneType{
-         _idScheda{...},
-         codice*{...},
-         versione*[...],
-         _stato{...},
-         _dataCreazione{...},
+         _idScheda	{...},
+         codice*	{...},
+         versione*	[...],
+         _stato	{...},
+         _dataCreazione	{...},
          body	{
            oneOf ->	
-              SchedaA1_29Type{...}
-              SchedaA1_30Type{...}
+              SchedaA1_29Type	{...}
+              SchedaA1_30Type	{...}
               ...
          }
       }
