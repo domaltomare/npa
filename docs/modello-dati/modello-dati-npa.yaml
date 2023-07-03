@@ -394,10 +394,6 @@ components:
             $ref: '#/components/schemas/SchedaComunicaAppaltoType'  
         required:
           - idAppalto
-      DatiBaseSchedaType:
-        description: Oggetto Complesso che riporta tutti i dati delle schede per il contesto comunicaPostPubblicazione
-        allOf: # estende il modello dati SchedaType
-          - $ref: '#/components/schemas/SchedaType'
       DatiSchedaType:
         allOf: # estende il modello dati SchedaType
           - $ref: '#/components/schemas/SchedaPostPubblicazioneType'
