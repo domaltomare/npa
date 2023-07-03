@@ -13,8 +13,8 @@ La superclasse dalla quale derivano tutte le schede è riportata di seguito:
 
 ```shell
 AvvisoRequest{
-  idAvviso	[...],
-  idAppalto	[...],
+  idAvviso*	[...],
+  idAppalto*	[...],
     scheda	SchedaGroupType{
       oneOf ->	
         SchedaPianificazioneType{
