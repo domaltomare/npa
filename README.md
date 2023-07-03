@@ -22,7 +22,7 @@ AvvisoRequest{
           codice*	{...},
           versione*	[...],
           _stato {...},
-          _dataCreazione	{...},
+          _dataCreazione {...},
           body	{
             oneOf ->	
               SchedaPIN_1Type{...}
@@ -35,7 +35,7 @@ AvvisoRequest{
           codice*	{...},
           versione*	[...],
           _stato {...},
-          _dataCreazione	{...},
+          _dataCreazione {...},
           body	{
             oneOf ->	
               SchedaP1_10Type{...}
@@ -50,7 +50,7 @@ AvvisoRequest{
          codice*	{...},
          versione*	[...],
          _stato {...},
-         _dataCreazione	{...},
+         _dataCreazione {...},
          body	{
            oneOf ->	
               SchedaA1_29Type{...}
