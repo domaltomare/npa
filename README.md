@@ -15,7 +15,7 @@ La superclasse dalla quale derivano tutte le schede è riportata di seguito:
 AvvisoRequest{
   idAvviso*	[...],
   idAppalto*	[...],
-    scheda	SchedaGroupType{
+    scheda SchedaGroupType{
       oneOf ->	
         SchedaPianificazioneType{
           _idScheda	{...},
