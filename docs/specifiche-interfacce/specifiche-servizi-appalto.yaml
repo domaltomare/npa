@@ -1795,8 +1795,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPostPubblicazioneType'
     DatiSchedaType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiSchedaType'
-    DatiBaseSchedaType:
-      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiBaseSchedaType'
+    SchedaType:
+      $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaType'
     EsitoOperazioneType:
       $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EsitoOperazioneType'
     StatoType:
@@ -2357,7 +2357,7 @@ components:
           description: Lista di ritorno con la sintesi dei dati delle schede
           type: array
           items:
-            $ref: '#/components/schemas/DatiBaseSchedaType'
+            $ref: '#/components/schemas/SchedaType'
     ConsultaAvvisoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
