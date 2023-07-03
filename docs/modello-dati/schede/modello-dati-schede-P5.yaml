@@ -8,12 +8,13 @@ components:
       description: Oggetto che riporta i dati dell'appalto all'interno della scheda di tracciabilità
       type: object
       additionalProperties: false
+      required: [codiceAppalto]
       properties:
         idAppalto:
           description: Codice univoco dell'appalto. il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
           type: string 
         codiceAppalto:
-          description: Codice dell'appalto.
+          description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           maxLength: 64          
         cigAccordoQuadro:

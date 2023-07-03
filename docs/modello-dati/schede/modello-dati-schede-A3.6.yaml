@@ -7,8 +7,12 @@ components:
     AppaltoA3_6Type:
       type: object
       additionalProperties: false
-      required: [relazioneUnicaSulleProcedure,preinformazione,termineRidottoAvvisoPreinformazione]      
+      required: [relazioneUnicaSulleProcedure,preinformazione,termineRidottoAvvisoPreinformazione,codiceAppalto]      
       properties: 
+        codiceAppalto:
+          description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
+          type: string
+          maxLength: 64      
         relazioneUnicaSulleProcedure:
           description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
           type: boolean        
