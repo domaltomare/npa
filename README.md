@@ -59,7 +59,7 @@ AvvisoRequest{
          }
       }
    }
-}
+ }
  ```
 Durante l'esercizio della piattaforma NPA il processo di aggiornamento del modello dati sarà continuo, gli aggiornamenti verranno riportati nel presente repository e la loro efficacia è regolata secondo le specifiche del paragrafo [Termini del servizio](#termini-del-servizio). Le piattaforme interoperabili con NPA sono tenute all'aggiornamento del payload inviato entro i tempi previsti.
 
