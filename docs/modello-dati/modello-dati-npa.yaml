@@ -361,7 +361,10 @@ components:
           appalto:
             $ref: '#/components/schemas/AppaltoBaseType'
           scheda:
-            $ref: '#/components/schemas/SchedaGroupType'
+            oneOf:
+              - $ref: '#/components/schemas/DatiPianoType'
+              - $ref: '#/components/schemas/DatiAppaltoType'
+              - $ref: '#/components/schemas/SchedaPostPubblicazioneType'
       PaginazioneType:
         description: Oggetto per la paginazione dei risultati
         type: object
