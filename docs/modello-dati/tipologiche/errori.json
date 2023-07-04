@@ -323,6 +323,24 @@
     "dataFine":null
 },
 {
+    "codice":"ERR37",
+    "descrizione": {
+		"it": "codiceAppalto obbligatorio",
+		"en": "codiceAppalto obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR38",
+    "descrizione": {
+		"it": "codiceAppalto già presente",
+		"en": "codiceAppalto già presente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
