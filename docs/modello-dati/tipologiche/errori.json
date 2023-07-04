@@ -118,8 +118,8 @@
 {
     "codice":"ERR14",
     "descrizione": {
-		"it": "lotIdentifier duplicati nell'elendo dei lotti",
-		"en": "lotIdentifier duplicati nell'elendo dei lotti"
+		"it": "lotIdentifier duplicato nell'elendo dei lotti",
+		"en": "lotIdentifier duplicato nell'elendo dei lotti"
 	},
     "dataInizio":null,
     "dataFine":null
