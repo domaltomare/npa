@@ -339,7 +339,16 @@
 	},
     "dataInizio":null,
     "dataFine":null
-},	
+},
+{
+    "codice":"ERR39",
+    "descrizione": {
+		"it": "idContratto non trovato",
+		"en": "idContratto non trovato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
 {
     "codice":"ERR9999",
     "descrizione": {
