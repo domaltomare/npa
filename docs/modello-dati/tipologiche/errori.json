@@ -350,6 +350,24 @@
     "dataFine":null
 },
 {
+    "codice":"ERR40",
+    "descrizione": {
+		"it": "errore durante l'estrazione dei dati della scheda",
+		"en": "errore durante l'estrazione dei dati della scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR41",
+    "descrizione": {
+		"it": "errore durante la validazione dei dati della scheda",
+		"en": "errore durante la validazione dei dati della scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
