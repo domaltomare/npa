@@ -1938,6 +1938,7 @@ components:
       properties:
         idAppalto:
           description: Identificativo univoco dell'Appalto definito da ANAC. Alternativo al CIG
+          type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         cig:
@@ -1960,6 +1961,7 @@ components:
           example: "AAA345FRT565"
         idAppalto:
           description: Identificativo univoco dell'Appalto definito da ANAC.
+          type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         cig:
@@ -1993,6 +1995,7 @@ components:
           example: "AAA345FRT565"
         idAppalto:
           description: Identificativo univoco dell'Appalto definito da ANAC. Obbligatorio se codiceFiscale e cig non sono stati valorizzati
+          type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         cig:
