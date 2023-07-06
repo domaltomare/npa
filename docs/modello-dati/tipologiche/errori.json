@@ -834,4 +834,49 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"AUT01",
+    "descrizione": {
+        "it": "l'utente non è presente tra le stazioni appaltanti",
+        "en": "l'utente non è presente tra le stazioni appaltanti"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT02",
+    "descrizione": {
+        "it": "appalto non trovato per l'id passato in input",
+        "en": "appalto non trovato per l'id passato in input"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT03",
+    "descrizione": {
+        "it": "lotto non trovato per il cig passato in input",
+        "en": "lotto non trovato per il cig passato in input"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT04",
+    "descrizione": {
+        "it": "popolare alternativamente un parametro tra idAppalto e CIG",
+        "en": "popolare alternativamente un parametro tra idAppalto e CIG"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT05",
+    "descrizione": {
+        "it": "uuid in input non formattato correttamente",
+        "en": "uuid in input non formattato correttamente"
+    },
+    "dataInizio":null,
+    "dataFine":null    
 }]
