@@ -879,4 +879,40 @@
     },
     "dataInizio":null,
     "dataFine":null    
+},
+{
+    "codice":"AUT06",  
+    "descrizione": {
+        "it": "CIG non presente nell'Appalto",
+        "en": "CIG non presente nell'Appalto"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT07",  
+    "descrizione": {
+        "it": "tipo ruolo indicato non valido",
+        "en": "tipo ruolo indicato non valido"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT08",  
+    "descrizione": {
+        "it": "date in input non coerenti",
+        "en": "date in input non coerenti"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT09",  
+    "descrizione": {
+        "it": "data in input non formattata correttamente",
+        "en": "data in input non formattata correttamente"
+    },
+    "dataInizio":null,
+    "dataFine":null    
 }]
