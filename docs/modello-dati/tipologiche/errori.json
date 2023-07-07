@@ -924,4 +924,310 @@
    },
    "dataInizio":null,
    "dataFine":null    
+},
+{
+    "codice":"FVX01",
+    "descrizione": {
+		"it": "Documento non presente",
+		"en": "Documento non presente"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX02",
+    "descrizione": {
+		"it": "Fascicolo non presente",
+		"en": "Fascicolo non presente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX03",
+    "descrizione": {
+		"it": "Documenti non presenti",
+		"en": "Documenti non presenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX04",
+    "descrizione": {
+		"it": "Fascicoli non presenti",
+		"en": "Fascicoli non presenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX05",
+    "descrizione": {
+		"it": "Filtro non formattato correttamente",
+		"en": "Filtro non formattato correttamente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX06",
+    "descrizione": {
+		"it": "Filtro non valido",
+		"en": "Filtro non valido"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX07",
+    "descrizione": {
+		"it": "Filtro Stato non formattato correttamente",
+		"en": "Filtro Stato non formattato correttamente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX08",
+    "descrizione": {
+		"it": "Filtro Stato non valido",
+		"en": "Filtro Stato non valido"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX09",
+    "descrizione": {
+		"it": "Filtro Tipo non formattato correttamente",
+		"en": "Filtro Tipo non formattato correttamente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX10",
+    "descrizione": {
+		"it": "Filtro Tipo non valido",
+		"en": "Filtro Tipo non valido"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVA01",
+    "descrizione": {
+		"it": "Criteri di ricerca non ammessi, popolare in modo alternativo codiceAppalto, idAppalto, CIG",
+		"en": "Criteri di ricerca non ammessi, popolare in modo alternativo codiceAppalto, idAppalto, CIG"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVA02",
+    "descrizione": {
+		"it": "Criteri di ricerca non ammessi, popolare in modo alternativo datiAggiuntivi con gli altri campi",
+		"en": "Criteri di ricerca non ammessi, popolare in modo alternativo datiAggiuntivi con gli altri campi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX11",
+    "descrizione": {
+		"it": "Le date inserite non sono coerenti",
+		"en": "Le date inserite non sono coerenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVA03",
+    "descrizione": {
+		"it": "L'utente non è autorizzato ad accedere al FVA richiesto",
+		"en": "L'utente non è autorizzato ad accedere al FVA richiesto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+}, 
+{
+    "codice":"FVA04",
+    "descrizione": {
+		"it": "Operazione non permessa. FVA non attivo",
+		"en": "Operazione non permessa. FVA non attivo"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVA05",
+    "descrizione": {
+		"it": "Operazione non permessa. Fascicolo trovato non é di Appalto",
+		"en": "Operazione non permessa. Fascicolo trovato non é di Appalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX12",
+    "descrizione": {
+		"it": "Trascodifica Fallita. Tipologica non presente",
+		"en": "Trascodifica Fallita. Tipologica non presente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX13",
+    "descrizione": {
+		"it": "Trascodifica Fallita. Codice non presente",
+		"en": "Trascodifica Fallita. Codice non presente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX14",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Ricerca Estensioni Documenti - Non Disponibile",
+		"en": "Errore Servizio esterno. Ricerca Estensioni Documenti - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX15",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Ricerca Documenti - Non Disponibile",
+		"en": "Errore Servizio esterno. Ricerca Documenti - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX16",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Ricerca Estensioni Fascicoli - Non Disponibile",
+		"en": "Errore Servizio esterno. Ricerca Estensioni Fascicoli - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX17",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Ricerca Fascicoli - Non Disponibile",
+		"en": "Errore Servizio esterno. Ricerca Fascicoli - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX18",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Inizializza Fascicoli - Non Disponibile",
+		"en": "Errore Servizio esterno. Inizializza Fascicoli - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX19",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Inserisci Documento - Non Disponibile",
+		"en": "Errore Servizio esterno. Inserisci Documento- Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX20",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Recupera Fascicolo - Non Disponibile",
+		"en": "Errore Servizio esterno. Recupera Fascicolo - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX21",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Recupera Documento - Non Disponibile",
+		"en": "Errore Servizio esterno. Recupera Documento - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX22",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Crea Documento - Non Disponibile",
+		"en": "Errore Servizio esterno. Crea Documento - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX23",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Chiudi Fascicolo - Non Disponibile",
+		"en": "Errore Servizio esterno. Chiudi Fascicolo - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX24",
+    "descrizione": {
+		"it": "Errore Conversione Json",
+		"en": "Errore Conversione Json"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX25",
+    "descrizione": {
+		"it": "Fascicolo mal formattato",
+		"en": "Fascicolo mal formattato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX26",
+    "descrizione": {
+		"it": "Estensione Dati mal formattato",
+		"en": "Estensione Dati mal formattato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX27",
+    "descrizione": {
+		"it": "Stanzioni Appaltanti mal formattato",
+		"en": "Stanzioni Appaltanti mal formattato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX28",
+    "descrizione": {
+		"it": "Stanzioni Appaltanti non presenti",
+		"en": "Stanzioni Appaltanti non presenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVA06",
+    "descrizione": {
+		"it": "Dati trovati incongruenti. Fascicoli trovati >1",
+		"en": "Dati trovati incongruenti. Fascicoli trovati >1"
+	},
+    "dataInizio":null,
+    "dataFine":null
 }]
