@@ -915,4 +915,13 @@
     },
     "dataInizio":null,
     "dataFine":null    
+},
+{
+   "codice":"AUT10",
+   "descrizione": {
+       "it": "nessun soggetto attivo presente",
+       "en": "nessun soggetto attivo presente"
+   },
+   "dataInizio":null,
+   "dataFine":null    
 }]
