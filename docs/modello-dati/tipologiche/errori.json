@@ -1248,4 +1248,49 @@
     },
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"FVC05",
+    "descrizione": {
+        "it": "Richiesta Respinta. Una richiesta per lo stesso CF e tipo documento già presente",
+        "en": "Richiesta Respinta. Una richiesta per lo stesso CF e tipo documento già presente"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+   "codice":"AUT11",
+   "descrizione": {
+       "it": "Filtro non formattato correttamente",
+       "en": "Filtro non formattato correttamente"
+   },
+   "dataInizio":null,
+   "dataFine":null    
+},
+{
+   "codice":"AUT12",
+   "descrizione": {
+       "it": "Filtro non valido",
+       "en": "Filtro non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null    
+},
+{
+    "codice":"AUT13",
+    "descrizione": {
+        "it": "Trascodifica Fallita. Tipologica non presente",
+        "en": "Trascodifica Fallita. Tipologica non presente"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"AUT14",
+    "descrizione": {
+        "it": "Trascodifica Fallita. Codice non presente",
+        "en": "Trascodifica Fallita. Codice non presente"
+    },
+    "dataInizio":null,
+    "dataFine":null
 }]
