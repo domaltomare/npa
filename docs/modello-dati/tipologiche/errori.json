@@ -1230,4 +1230,22 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"FVX29",
+    "descrizione": {
+        "it": "Criteri di ricerca non ammessi, popolare in modo alternativo datiAggiuntivi con gli altri campi",
+        "en": "Criteri di ricerca non ammessi, popolare in modo alternativo datiAggiuntivi con gli altri campi"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVC04",
+    "descrizione": {
+        "it": "Richiesta accesso non trovata",
+        "en": "Richiesta accesso non trovata"
+    },
+    "dataInizio":null,
+    "dataFine":null
 }]
