@@ -386,6 +386,15 @@
     "dataFine":null
 },
 {
+    "codice":"ERR44",
+    "descrizione": {
+		"it": "chiamata al servizio non ammessa: è in corso una richiesta di pubblicazione per l'avviso",
+		"en": "chiamata al servizio non ammessa: è in corso una richiesta di pubblicazione per l'avviso"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
