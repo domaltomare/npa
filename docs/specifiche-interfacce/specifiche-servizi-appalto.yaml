@@ -1517,7 +1517,7 @@ paths:
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
         - in: query
           name: cig
-          description: Identificativo univoco Gara-Lotto rilasciato da ANAC
+          description: Non gestito nella prima release - Identificativo univoco Gara-Lotto rilasciato da ANAC
           schema:
             type: string
             example: '9050626CD6'
@@ -1935,6 +1935,8 @@ components:
       description: Oggetto in ingresso al servizio
       type: object
       additionalProperties: false
+      required:
+        - idAppalto
       properties:
         idAppalto:
           description: Identificativo univoco dell'Appalto definito da ANAC. Alternativo al CIG
@@ -1942,7 +1944,7 @@ components:
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         cig:
-          description: Identificativo univoco Gara-Lotto generato da ANAC. Alternativo all'idAppalto
+          description: Non gestito nella prima release - Identificativo univoco Gara-Lotto generato da ANAC. Alternativo all'idAppalto
           type: string
           example: "9050626CD6"    
     SoggettoRequest:
@@ -1965,7 +1967,7 @@ components:
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         cig:
-          description: Identificativo univoco Gara-Lotto generato da ANAC.
+          description: Non gestito nella prima release - Identificativo univoco Gara-Lotto generato da ANAC.
           type: string
           example: "9050626CD6"
         ruolo:  
@@ -1990,16 +1992,16 @@ components:
       additionalProperties: false
       properties:
         codiceFiscale:
-          description: codice fiscale del soggetto. Obbligatorio se idAppalto e cig non sono stati valorizzati
+          description: codice fiscale del soggetto. Obbligatorio se idAppalto non è stato valorizzato
           type: string
           example: "AAA345FRT565"
         idAppalto:
-          description: Identificativo univoco dell'Appalto definito da ANAC. Obbligatorio se codiceFiscale e cig non sono stati valorizzati
+          description: Identificativo univoco dell'Appalto definito da ANAC. Obbligatorio se codiceFiscale non è stato valorizzato
           type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         cig:
-          description: Identificativo univoco Gara-Lotto generato da ANAC. Obbligatorio se idAppalto e codiceFiscale non sono stati valorizzati
+          description: Non gestito nella prima release - Identificativo univoco Gara-Lotto generato da ANAC.
           type: string
           example: "9050626CD6"
         ruolo:  
