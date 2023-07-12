@@ -395,6 +395,15 @@
     "dataFine":null
 },
 {
+    "codice":"ERR45",
+    "descrizione": {
+		"it": "avviso non ammesso in questa fase dell'appalto",
+		"en": "avviso non ammesso in questa fase dell'appalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
