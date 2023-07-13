@@ -1,8 +1,8 @@
 [{
     "codice":"SOTT",
     "descrizione": {
-		"it": "Sottoscrizione contratto",
-		"en": "Sottoscrizione contratto"
+		"it": "Sottoscritto",
+		"en": "Sottoscritto"
 	},
     "dataInizio":null,
     "dataFine":null
