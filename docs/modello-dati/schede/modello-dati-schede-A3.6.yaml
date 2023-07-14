@@ -24,8 +24,7 @@ components:
       properties: 
         cig:
           description: codice identificativo lotto
-          type: string
-          example:    
+          type: string   
         afferenteInvestimentiPNRR:
           description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
           type: boolean  
