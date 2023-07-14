@@ -3,7 +3,7 @@
   
   | Termine/Acronimo | Descrizione | 
   | ------------- | ------------- | 
-  | ANAC  | Autorità Nazionale domaltomare |  
+  | ANAC  | Autorità Nazionale Anticorruzione |  
   | Autorità  | Si riferisce all’ANAC |
   | USCP  | ANAC - Ufficio Servizi IT per i Contratti Pubblici |  
   | BDNCP  | Banca Dati Nazionale dei Contratti Pubblici Anagrafe unica dei contratti pubblici. È la banca dati di riferimento di ANAC per utenze e soggetti rappresentati. |
