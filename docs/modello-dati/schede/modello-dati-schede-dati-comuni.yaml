@@ -278,7 +278,6 @@ components:
       description: Importo
       type: number
       format: double
-      example: '0'
     FinanziamentoType:
       description: Oggetto che riporta tutti i dati del finanziamento
       type: object
@@ -2045,12 +2044,10 @@ components:
           description: Data di affidamento incarico (per progettazione esterna)
           type: string
           format: datetime
-          example: '2022-01-23T12:02:05Z'
         dataConsegna: 
           description: Data di consegna progetto (per progettazione esterna)
           type: string
           format: datetime
-          example: '2022-01-23T12:02:05Z' 
     IncaricoType:
       description: Dati relativi agli incarichi tecnici
       type: object
