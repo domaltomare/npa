@@ -10,10 +10,8 @@ components:
       required: [appalto,aggiudicazioni] 
       additionalProperties: false
       properties:
-        aggiudicazioni:
-          type: array
-          items:
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA4Type'    
+        appalto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA4Type'
     SchedaA4_1Type:
       description: Scheda di aggiudicazione relativa alla finanza di progetto.
       type: object
@@ -21,4 +19,4 @@ components:
       additionalProperties: false
       properties:
         anacForm:
-          $ref: '#/components/schemas/AnacFormA4_1Type'          
+          $ref: '#/components/schemas/AnacFormA4_1Type'
