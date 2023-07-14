@@ -853,10 +853,10 @@ paths:
             example: 'IN_ATT_PUBB'
         - in: query
           name: tipoAvviso
-          description: Codice Tipologia di avviso - fare riferimento ai valori contenuti nel file [tipoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAvviso.json)
+          description: Codice Tipo di avviso - fare riferimento ai valori contenuti nel file [tipoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAvviso.json)
           schema:
             type: string
-            example: 'AV2'
+            example: 'IT'
         - in: query
           name: azioneAvviso
           description: Codice Tipo di azione dell'avviso - fare riferimento ai valori contenuti nel file [tipoAzioneAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoAzioneAvviso.json)
@@ -2155,8 +2155,6 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       description: Risposta generica servizio
       type: object
-      required:
-        - idPianificazione
       properties:
         idPianificazione:
           description: Identificativo univoco della pianificazione definito da ANAC. (A UUID specified by RFC4122)
@@ -2183,8 +2181,6 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       description: Risposta generica servizio
       type: object
-      required:
-        - idPianificazione
       properties:
         idPianificazione:
           description: Identificativo univoco della pianificazione definito da ANAC. (A UUID specified by RFC4122)
@@ -2203,8 +2199,6 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       description: Risposta generica servizio
       type: object
-      required:
-        - idAppalto
       properties:
         idAppalto:
           description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
@@ -2220,8 +2214,6 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       description: Risposta generica servizio
       type: object
-      required:
-        - idAppalto
       properties:
         idAppalto:
           description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
@@ -2468,8 +2460,6 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       description: Risposta generica servizio
       type: object
-      required:
-        - idScheda
       properties:
         idScheda:
           description: Identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
@@ -2485,8 +2475,6 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       description: Risposta generica servizio
       type: object
-      required:
-        - idScheda
       properties:
         idScheda:
           description: Identificativo univoco della scheda definito da ANAC. (A UUID specified by RFC4122)
