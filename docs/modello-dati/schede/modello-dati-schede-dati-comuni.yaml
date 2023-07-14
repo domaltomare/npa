@@ -405,7 +405,8 @@ components:
           $ref: '#/components/schemas/TipoOEEnum'
         idGruppo:
           description: id gruppo
-          type: number           
+          type: number  
+          format: integer
     IncaricatoType:
       description: Anagrafica e riferimenti dei soggetti ai quali la stazione appaltante ha conferito incarichi
       type: object
@@ -436,6 +437,7 @@ components:
         idGruppo:
           description: id gruppo
           type: number 
+          format: integer
         importo:
           description: Importo di aggiudicazione/affidamento/adesione AQ/premio erogato al netto di opzioni e rinnovi 
           type: number
@@ -478,6 +480,7 @@ components:
         posizioneGraduatoria: 
           description: Posizione in graduatoria
           type: number
+          format: integer
         offertaEconomica:
           description: Offerta economica ribasso
           type: number
@@ -537,6 +540,7 @@ components:
         idGruppo:
           description: id gruppo
           type: number 
+          format: integer
     AppaltoBaseType:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione
       type: object
@@ -1964,6 +1968,7 @@ components:
         idGruppo:
           description: id gruppo
           type: number
+          format: integer
         paeseOperatoreEconomico:
           description: Paese Operatore Economico
           type: string          
@@ -1998,6 +2003,7 @@ components:
         idGruppo:
           description: id gruppo
           type: number
+          format: integer
         paeseOperatoreEconomico:
           description: Paese Operatore Economico
           type: string          
@@ -2074,6 +2080,7 @@ components:
         idGruppo:
           description: id gruppo
           type: number  
+          format: integer
     AggiudicazioneBaseType:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
