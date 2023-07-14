@@ -290,7 +290,7 @@ components:
           oggetto:
             description: descrizione dell'appalto
             type: string
-            example: Fornitura di strumento XX per XX
+            example: 'Fornitura di strumento XX per XX'
           dataCreazione:
             description: data creazione dell'appalto (A datetime specified by ISO 8601 as profiled by RFC 3339)
             type: string
