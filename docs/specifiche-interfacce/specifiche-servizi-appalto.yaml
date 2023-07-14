@@ -2208,7 +2208,6 @@ components:
         detail: "Creazione eseguita con successo"
         status: 200
         title: "Operazione Effettuata"
-        idAppalto: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     ModificaAppaltoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2218,12 +2217,7 @@ components:
         idAppalto:
           description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
-      example:
-        detail: "Sostituzione eseguita con successo"
-        status: 200
-        title: "Operazione Effettuata"
-        idAppalto: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"    
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
     CancellaAppaltoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2365,13 +2359,6 @@ components:
       properties:  
         content:
           $ref: '#/components/schemas/ContentDocumentType'
-      example:
-        status: 200
-        title: "Operazione Effettuata"
-        content: 
-          estensione: "PDF"
-          size: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-          content: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     ConsultaSchedaResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2465,11 +2452,6 @@ components:
           description: Identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-      example:
-        detail: "Creazione eseguita con successo"
-        status: 200
-        title: "Operazione Effettuata"
-        idScheda: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     ModificaSchedaResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
@@ -2479,12 +2461,7 @@ components:
         idScheda:
           description: Identificativo univoco della scheda definito da ANAC. (A UUID specified by RFC4122)
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
-      example:
-        detail: "Sostituzione eseguita con successo"
-        status: 200
-        title: "Operazione Effettuata"
-        idScheda: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     CancellaSchedaResponse:
       description: Risposta all'operazione Cancella Scheda
       allOf: # estende lo schema dati di BaseResponse
