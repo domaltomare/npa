@@ -10,8 +10,6 @@ components:
       required: [appalto,aggiudicazioni] 
       additionalProperties: false
       properties:
-        appalto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA4Type'
         aggiudicazioni:
           type: array
           items:
