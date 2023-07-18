@@ -1311,4 +1311,13 @@
     },
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"FVC03",
+    "descrizione": {
+		"it": "L'utente non è autorizzato ad accedere al FVA richiesto",
+		"en": "L'utente non è autorizzato ad accedere al FVA richiesto"
+    },
+    "dataInizio":null,
+    "dataFine":null
 }]
