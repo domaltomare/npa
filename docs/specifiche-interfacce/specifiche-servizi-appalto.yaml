@@ -14,9 +14,9 @@ info:
   termsOfService: 'https://github.com/domaltomare/npa/blob/main/README.md#termini-del-servizio'
   # Chi posso contattare per informazioni sul servizio e sul suo stato?
   contact:
-    email: ufficio.uscp@anticorruzione.it
+    email: ufficio.uscp@domaltomare.it
     name: ANAC - Ufficio Servizi IT Contratti Pubblici
-    url: https://www.anticorruzione.it
+    url: https://www.domaltomare.it
   # L'audience delle API. Attualmente e' definito solamente
   #   la tipologia `public`.
   x-audience:
@@ -1367,7 +1367,7 @@ paths:
           schema:
             type: integer
             format: int32
-            default: 20
+            default: 20     
       responses:
         '200':
           description: Operazione terminato con successo
@@ -2327,14 +2327,17 @@ components:
           items:
             $ref: '#/components/schemas/CigType' 
     TipologicaResponse:
-      allOf: # estende la classe PaginazioneType
-        - $ref: '#/components/schemas/PaginazioneType'    
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/PaginazioneType'  
       type: object
       additionalProperties: false
       properties:
         tipologica:  
           $ref: '#/components/schemas/TipologicaType'   
     TipologicaItemResponse:
+      allOf: # estende la classe BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
       type: object
       additionalProperties: false
       properties:
