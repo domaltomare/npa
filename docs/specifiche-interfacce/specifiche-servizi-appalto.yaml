@@ -2327,6 +2327,8 @@ components:
           items:
             $ref: '#/components/schemas/CigType' 
     TipologicaResponse:
+      allOf: # estende la classe PaginazioneType
+        - $ref: '#/components/schemas/PaginazioneType'    
       type: object
       additionalProperties: false
       properties:
