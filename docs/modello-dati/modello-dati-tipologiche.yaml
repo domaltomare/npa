@@ -155,3 +155,7 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: '#/components/schemas/TipologicaSchemaType'     
       description:  Elenco Errori - fare riferimento ai valori contenuti nel file [errori.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/errori.json)      
+      additionalProperties: false
+      properties:
+          descrizione:
+            $ref: '#/components/schemas/I18NType'
