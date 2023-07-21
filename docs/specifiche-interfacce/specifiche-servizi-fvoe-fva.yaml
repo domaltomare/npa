@@ -486,7 +486,6 @@ paths:
         - in: query
           name: datiRichiesta
           description: dati necessari alla richiesta specifici per tipoDocumento inviati in formato json.
-          required: true
           schema:
             type: string
           example:
