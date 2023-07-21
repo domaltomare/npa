@@ -402,6 +402,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR46",
+    "descrizione": {
+		"it": "errore generico durante la validazione dell'eForm",
+		"en": "errore generico durante la validazione dell'eForm"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
