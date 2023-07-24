@@ -16,7 +16,7 @@ info:
   contact:
     email: ufficio.uscp@domaltomare.it
     name: ANAC - Ufficio Servizi IT Contratti Pubblici
-    url: https://www.domaltomare.it
+    url: https://www.anticorruzione.it
   # L'audience delle API. Attualmente e' definito solamente
   #   la tipologia `public`.
   x-audience:
