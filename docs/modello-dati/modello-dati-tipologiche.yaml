@@ -13,8 +13,6 @@ components:
             type: string
           codice:
             type: string
-          descrizione:
-            $ref: '#/components/schemas/I18NType'
         required:
           - idTipologica
           - codice
