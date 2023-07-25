@@ -411,6 +411,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR47",
+    "descrizione": {
+		"it": "errore generico durante la pubblicazione dell'avviso",
+		"en": "errore generico durante la pubblicazione dell'avviso"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
