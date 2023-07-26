@@ -420,6 +420,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR48",
+    "descrizione": {
+		"it": "per questo avviso nazionale è prevista anche la pubblicazione a livello Europeo",
+		"en": "per questo avviso nazionale è prevista anche la pubblicazione a livello Europeo"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
