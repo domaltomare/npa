@@ -14,7 +14,7 @@ info:
   termsOfService: 'https://github.com/domaltomare/npa/blob/main/README.md#termini-del-servizio'
   # Chi posso contattare per informazioni sul servizio e sul suo stato?
   contact:
-    email: ufficio.uscp@domaltomare.it
+    email: ufficio.uscp@anticorruzione.it
     name: ANAC - Ufficio Servizi IT Contratti Pubblici
     url: https://www.anticorruzione.it
   # L'audience delle API. Attualmente e' definito solamente
