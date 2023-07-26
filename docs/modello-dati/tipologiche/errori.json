@@ -431,6 +431,42 @@
     "dataFine":null
 },
 {
+    "codice":"TED_NOT_PUBLISHED",
+    "descrizione": {
+		"it": "errore durante la pubblicazione dell'avviso su TED: stato restituito NOT_PUBLISHED",
+		"en": "errore durante la pubblicazione dell'avviso su TED: stato restituito NOT_PUBLISHED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"TED_VALIDATION_FAILED",
+    "descrizione": {
+		"it": "errore durante la pubblicazione dell'avviso su TED: stato restituito VALIDATION_FAILED",
+		"en": "errore durante la pubblicazione dell'avviso su TED: stato restituito VALIDATION_FAILED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"TED_ARCHIVED",
+    "descrizione": {
+		"it": "errore durante la pubblicazione dell'avviso su TED: stato restituito ARCHIVED",
+		"en": "errore durante la pubblicazione dell'avviso su TED: stato restituito ARCHIVED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"TED_DELETED",
+    "descrizione": {
+		"it": "errore durante la pubblicazione dell'avviso su TED: stato restituito DELETED",
+		"en": "errore durante la pubblicazione dell'avviso su TED: stato restituito DELETED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
     "codice":"REG1",
     "descrizione": {
 		"it": "La categoria merceologica indicata nei lotti non e' compresa tra quelle indicate nell'appalto",
