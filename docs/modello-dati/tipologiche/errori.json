@@ -429,6 +429,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR49",
+    "descrizione": {
+		"it": "mancata coerenza tra idAppalto e idAvviso",
+		"en": "mancata coerenza tra idAppalto e idAvviso"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
