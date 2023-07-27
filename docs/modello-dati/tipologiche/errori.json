@@ -438,6 +438,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR50",
+    "descrizione": {
+		"it": "chiamata al servizio non ammessa per lo stato dell'avviso",
+		"en": "chiamata al servizio non ammessa per lo stato dell'avviso"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
