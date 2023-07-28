@@ -1306,8 +1306,8 @@
 {
     "codice":"FVX27",
     "descrizione": {
-		"it": "Stanzioni Appaltanti mal formattato",
-		"en": "Stanzioni Appaltanti mal formattato"
+		"it": "Stazioni Appaltanti mal formattato",
+		"en": "Stazioni Appaltanti mal formattato"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -1315,8 +1315,8 @@
 {
     "codice":"FVX28",
     "descrizione": {
-		"it": "Stanzioni Appaltanti non presenti",
-		"en": "Stanzioni Appaltanti non presenti"
+		"it": "Stazioni Appaltanti non presenti",
+		"en": "Stazioni Appaltanti non presenti"
 	},
     "dataInizio":null,
     "dataFine":null
