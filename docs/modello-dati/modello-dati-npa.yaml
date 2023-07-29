@@ -531,7 +531,12 @@ components:
           idAvviso:
             description: identificativo univoco dell'Avviso generato da ANAC.
             type: string
-            format: uuid          
+            format: uuid
+          idAppalto:
+            description: identificativo univoco dell'Appalto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"            
           dataControllo:
             description: data in cui è stato effettuato il controllo sullo stato dell'avviso (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
