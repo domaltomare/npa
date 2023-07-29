@@ -380,7 +380,12 @@ components:
             description: data in cui è stato effettuato l'invio dell'avviso al TED (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
             format: date-time
-            example: '2022-01-23T12:02:05Z'            
+            example: '2022-01-23T12:02:05Z' 
+          dataRicezionePubblicazione:
+            description: data in cui è stata confermata dal TED la ricezione dell'avviso (A date-time specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: date-time
+            example: '2022-01-23T12:02:05Z'             
           dataPubblicazione:
             description: data di pubblicazione dell'Avviso comunicata dal TED (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
