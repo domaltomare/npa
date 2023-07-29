@@ -465,6 +465,24 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR53",
+    "descrizione": {
+		"it": "operazione non consentita per lo stato dell'avviso sulla PPL",
+		"en": "operazione non consentita per lo stato dell'avviso sulla PPL"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR54",
+    "descrizione": {
+		"it": "errore generico durante il controllo dello stato sulla PPL",
+		"en": "errore generico durante il controllo dello stato sulla PPL"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
