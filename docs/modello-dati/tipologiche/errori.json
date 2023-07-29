@@ -424,8 +424,8 @@
 {
     "codice":"ERR48",
     "descrizione": {
-		"it": "per questo avviso nazionale è prevista anche la pubblicazione a livello Europeo",
-		"en": "per questo avviso nazionale è prevista anche la pubblicazione a livello Europeo"
+		"it": "operazione non consentita per la tipologia di avviso nazionale",
+		"en": "operazione non consentita per la tipologia di avviso nazionale"
 	},
     "dataInizio":null,
     "dataFine":null
