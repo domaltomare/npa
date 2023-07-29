@@ -330,10 +330,15 @@ components:
             format: date-time
             example: '2022-01-23T12:02:05Z'
           dataPubblicazione:
-            description: Data di pubblicazione dell'Avviso  (A date-time specified by ISO 8601 as profiled by RFC 3339)
+            description: Data di pubblicazione dell'Avviso. (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
             format: date-time
             example: '2022-01-23T12:02:05Z'
+          dataControllo:
+            description: data in cui è stato effettuato il controllo dello stato avviso (A date-time specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: date-time
+            example: '2022-01-23T12:02:05Z'            
           stato:
             $ref: '#/components/schemas/StatoAvvisoEnum'
           tipo:
