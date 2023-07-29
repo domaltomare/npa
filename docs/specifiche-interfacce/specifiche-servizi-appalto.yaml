@@ -2141,9 +2141,15 @@ components:
           description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
           type: string
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
       required:  # List the required properties here
         - idAvviso
+        - idAppalto
     CancellaAvvisoRequest:
       description: Oggetto in ingresso al servizio    
       type: object
