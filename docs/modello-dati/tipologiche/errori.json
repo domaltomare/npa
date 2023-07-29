@@ -447,7 +447,16 @@
 	},
     "dataInizio":null,
     "dataFine":null
-},	
+},
+{
+    "codice":"ERR51",
+    "descrizione": {
+		"it": "operazione non consentita per lo stato dell'avviso sul TED",
+		"en": "operazione non consentita per lo stato dell'avviso sul TED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
 {
     "codice":"ERR9999",
     "descrizione": {
