@@ -808,20 +808,20 @@ paths:
       parameters:
         - in: query
           name: codiceAppalto
-          description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
+          description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante. Obbligatorio se idAppalto e cig non sono stati valorizzati.
           schema:
             type: string
             maxLength: 64
         - in: query    
           name: idAppalto
-          description: Identificativo univoco dell' Appalto definito da ANAC. (A UUID specified by FC4122).
+          description: Identificativo univoco dell' Appalto definito da ANAC. (A UUID specified by FC4122). Obbligatorio se codiceAppalto e cig non sono stati valorizzati.
           schema:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
         - in: query
           name: cig
-          description: Identificativo univoco Gara-Lotto rilasciato da ANAC
+          description: Identificativo univoco Gara-Lotto rilasciato da ANAC. Obbligatorio se idAppalto e cig non sono stati valorizzati.
           schema:
             type: string
             example: 9050626CD6
