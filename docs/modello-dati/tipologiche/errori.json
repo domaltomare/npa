@@ -136,8 +136,8 @@
 {
     "codice":"ERR16",
     "descrizione": {
-		"it": "chiamata al servizio non ammessa per lo stato dell'appalto",
-		"en": "chiamata al servizio non ammessa per lo stato dell'appalto"
+		"it": "operazione non consentita per lo stato dell'appalto",
+		"en": "operazione non consentita per lo stato dell'appalto"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -145,8 +145,8 @@
 {
     "codice":"ERR17",
     "descrizione": {
-		"it": "chiamata al servizio non ammessa: è in corso una richiesta di verifica appalto",
-		"en": "chiamata al servizio non ammessa: è in corso una richiesta di verifica appalto"
+		"it": "operazione non consentita: è in corso una richiesta di verifica appalto",
+		"en": "operazione non consentita: è in corso una richiesta di verifica appalto"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -154,8 +154,8 @@
 {
     "codice":"ERR18",
     "descrizione": {
-		"it": "chiamata al servizio non ammessa: è in corso una richiesta di conferma appalto",
-		"en": "chiamata al servizio non ammessa: è in corso una richiesta di conferma appalto"
+		"it": "operazione non consentita: è in corso una richiesta di conferma appalto",
+		"en": "operazione non consentita: è in corso una richiesta di conferma appalto"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -442,8 +442,8 @@
 {
     "codice":"ERR50",
     "descrizione": {
-		"it": "chiamata al servizio non ammessa per lo stato dell'avviso",
-		"en": "chiamata al servizio non ammessa per lo stato dell'avviso"
+		"it": "operazione non consentita per lo stato dell'avviso",
+		"en": "operazione non consentita per lo stato dell'avviso"
 	},
     "dataInizio":null,
     "dataFine":null
