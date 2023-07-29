@@ -243,17 +243,17 @@ paths:
             example: 'PREINFORMAZIONE'  
         - in: query
           name: dataCreazioneDa
-          description: Data di crezione della Pianificazione - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di crezione della Pianificazione - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataCreazioneA
-          description: Data di crezione della Pianificazione - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339) 
+          description: Data di crezione della Pianificazione - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339) 
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2015-05-28T14:07:17Z'  
         - in: query
           name: page
@@ -466,17 +466,17 @@ paths:
             example: 'IN_LAV'
         - in: query
           name: dataCreazioneDa
-          description: Data di crezione dell'Appalto - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di crezione dell'Appalto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataCreazioneA
-          description: Data di crezione dell'Appalto - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di crezione dell'Appalto - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2015-05-28T14:07:17Z'  
         - in: query
           name: page
@@ -833,17 +833,17 @@ paths:
             example: 'IN_ATT_PUBB'
         - in: query
           name: dataCreazioneDa
-          description: Data di crezione dell'Appalto - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di crezione dell'Appalto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: dataCreazioneA
-          description: Data di crezione della Appalto - intervallo precedente (A datetime specified by RF333)
+          description: Data di crezione della Appalto - intervallo precedente (A date-time specified by RF333)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: statoAvviso
@@ -865,17 +865,17 @@ paths:
             example: 'AZ_PUBB'
         - in: query
           name: dataCreazioneAvvisoDa
-          description: Data di crezione dell'Avviso - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di crezione dell'Avviso - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: dataCreazioneAvvisoA
-          description: Data di crezione della Avviso - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di crezione della Avviso - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2022-01-23T12:02:05Z'    
         - in: query
           name: page
@@ -1129,17 +1129,17 @@ paths:
             example: 'IN_ATT_PUBB'
         - in: query
           name: dataCreazioneDa
-          description: Data di crezione dell'Appalto - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di crezione dell'Appalto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: dataCreazioneA
-          description: Data di crezione della Gara - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339) 
+          description: Data di crezione della Gara - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339) 
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: codiceScheda
@@ -1402,17 +1402,17 @@ paths:
           required: true
         - in: query
           name: dataInizio
-          description: Data di inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
             example: '2022-01-23T12:02:05Z'
         - in: query
           name: dataFine
-          description: Data di fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
             example: '2022-01-23T12:02:05Z'
         - in: query
           name: page
@@ -1562,31 +1562,31 @@ paths:
             type: string           
         - in: query
           name: dataInizioDa
-          description: Data inizio incarico soggetto - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data inizio incarico soggetto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataInizioA
-          description: Data inizio incarico soggetto - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data inizio incarico soggetto - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataFineDa
-          description: Data fine incarico soggetto - intervallo successivo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data fine incarico soggetto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2015-05-28T14:07:17Z'
         - in: query
           name: dataFineA
-          description: data fine incarico soggetto - intervallo precedente (A datetime specified by ISO 8601 as profiled by RFC 3339) 
+          description: data fine incarico soggetto - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339) 
           schema:
             type: string
-            format: datetime
+            format: date-time
           example: '2015-05-28T14:07:17Z'
       responses:
         '200':
@@ -1994,14 +1994,14 @@ components:
         operazione:
           $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'      
         dataInizio: 
-          description: Data di inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339)
           type: string
-          format: datetime
+          format: date-time
           example: '2022-01-23T12:02:05Z'
         dataFine: 
-          description: Data di fine (A datetime specified by ISO 8601 as profiled by RFC 3339). Se il valore non è indicato la delega è a tempo indeterminato.
+          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339). Se il valore non è indicato la delega è a tempo indeterminato.
           type: string
-          format: datetime
+          format: date-time
           example: '2022-01-23T12:02:05Z'
     EliminaSoggettoRequest:
       description: Oggetto in ingresso al servizio
@@ -2028,14 +2028,14 @@ components:
         operazione:  
           $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'      
         dataInizio: 
-          description: Data di inizio (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339)
           type: string
-          format: datetime
+          format: date-time
           example: '2022-01-23T12:02:05Z'
         dataFine: 
-          description: Data di fine (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339)
           type: string
-          format: datetime
+          format: date-time
           example: '2022-01-23T12:02:05Z'          
     CreaSchedaRequest:
       description: Oggetto in ingresso al servizio    
@@ -2154,6 +2154,11 @@ components:
           type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
         motivo:  
           description: descrizione del motivo della richiesta di cancellazione
           type: string
@@ -2161,6 +2166,7 @@ components:
           example: 'Revoca delle procedure di gara'
       required:
         - idAvviso
+        - idAppalto
     ConsultaAppaltoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
