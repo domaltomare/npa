@@ -458,6 +458,15 @@
     "dataFine":null
 },
 {
+    "codice":"ERR52",
+    "descrizione": {
+		"it": "errore generico durante il controllo dello stato avviso sul TED",
+		"en": "errore generico durante il controllo dello stato avviso sul TED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
