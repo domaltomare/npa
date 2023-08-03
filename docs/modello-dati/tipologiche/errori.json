@@ -91,8 +91,8 @@
 {
     "codice":"ERR11",
     "descrizione": {
-		"it": "tipo di eForm non ammesso in questa fase dell'appalto",
-		"en": "tipo di eForm non ammesso in questa fase dell'appalto"
+		"it": "tipo di eForm non coerente per la scheda",
+		"en": "tipo di eForm non coerente per la scheda"
 	},
     "dataInizio":null,
     "dataFine":null
