@@ -483,6 +483,24 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR55",
+    "descrizione": {
+		"it": "cig duplicato nell'elendo dei lotti",
+		"en": "cig duplicato nell'elendo dei lotti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR56",
+    "descrizione": {
+		"it": "cig non coerenti nell'elendo dei lotti",
+		"en": "cig non coerenti nell'elendo dei lotti"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
