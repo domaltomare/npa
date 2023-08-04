@@ -9,12 +9,6 @@ components:
       type: object
       additionalProperties: false
       properties: 
-        cig:
-          description: codice identificativo lotto
-          type: string
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string
         invitati:
           type: array
           items:
@@ -24,12 +18,6 @@ components:
       type: object
       additionalProperties: false
       properties: 
-        cig:
-          description: codice identificativo lotto
-          type: string
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string
         partecipanti:
           type: array
           items:
@@ -45,6 +33,12 @@ components:
           additionalProperties: false
           required: [dataScadenzaPresentazioneOfferta]
           properties:
+            cig:
+              description: codice identificativo lotto
+              type: string
+            lotIdentifier:
+              description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+              type: string           
             invitatiCheNonHannoPresentatoOfferta:
               description: Dati relativi ai soggetti invitati che non hanno presentato offerta
               type: array
@@ -58,8 +52,8 @@ components:
             dataInvito: 
               description: Data della lettera di invito
               type: string
-              format: date-time
+              format: datetime
             dataScadenzaPresentazioneOfferta: 
               description: Data della scadenza di presentazione dell'offerta
               type: string
-              format: date-time            
+              format: datetime            
