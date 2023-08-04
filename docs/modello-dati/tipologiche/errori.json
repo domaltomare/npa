@@ -496,8 +496,8 @@
 {
     "codice":"ERR56",
     "descrizione": {
-		"it": "cig non coerenti nell'elendo dei lotti",
-		"en": "cig non coerenti nell'elendo dei lotti"
+		"it": "cig non coerenti nell'elenco dei lotti",
+		"en": "cig non coerenti nell'elenco dei lotti"
 	},
     "dataInizio":null,
     "dataFine":null
