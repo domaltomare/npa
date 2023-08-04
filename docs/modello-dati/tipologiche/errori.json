@@ -501,6 +501,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR57",
+    "descrizione": {
+		"it": "mancata coerenza tra idAppalto e idScheda",
+		"en": "mancata coerenza tra idAppalto e idScheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
