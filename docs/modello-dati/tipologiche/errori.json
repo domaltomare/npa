@@ -510,6 +510,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR58",
+    "descrizione": {
+		"it": "operazione non consentita per lo stato della scheda",
+		"en": "operazione non consentita per lo stato della scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
