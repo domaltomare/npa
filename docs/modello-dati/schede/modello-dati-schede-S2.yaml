@@ -31,14 +31,11 @@ components:
         anacForm:
           type: object
           additionalProperties: false
-          required: [dataScadenzaPresentazioneOfferta]
+          required: [cig, dataScadenzaPresentazioneOfferta]
           properties:
             cig:
               description: codice identificativo lotto
               type: string
-            lotIdentifier:
-              description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-              type: string           
             invitatiCheNonHannoPresentatoOfferta:
               description: Dati relativi ai soggetti invitati che non hanno presentato offerta
               type: array
