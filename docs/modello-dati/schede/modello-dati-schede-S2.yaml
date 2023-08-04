@@ -4,24 +4,6 @@ info:
   version: 1.0.0
 components:
   schemas:
-    InvitatiType:
-      description: Elenco di soggetti invitati che non hanno presentato offerta.
-      type: object
-      additionalProperties: false
-      properties: 
-        invitati:
-          type: array
-          items:
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/InvitatoType'  
-    PartecipantiType:
-      description: Elenco di soggetti che hanno presentato offerta.
-      type: object
-      additionalProperties: false
-      properties: 
-        partecipanti:
-          type: array
-          items:
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/PartecipanteType'              
     SchedaS2Type:
       description: Elenco di soggetti che hanno presentato offerta e di ulteriori invitati che non hanno presentato offerta.
       type: object
@@ -40,12 +22,12 @@ components:
               description: Dati relativi ai soggetti invitati che non hanno presentato offerta
               type: array
               items:
-                $ref: '#/components/schemas/InvitatiType'
+                $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/InvitatoType'
             partecipanti:
               description: Dati relativi ai partecipanti
               type: array
-              items:          
-                $ref: '#/components/schemas/PartecipantiType'              
+              items:
+                $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/PartecipanteType'              
             dataInvito: 
               description: Data della lettera di invito
               type: string
