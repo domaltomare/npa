@@ -519,6 +519,24 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR59",
+    "descrizione": {
+		"it": "operazione non consentita: è in corso una richiesta di verifica scheda",
+		"en": "operazione non consentita: è in corso una richiesta di verifica scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR60",
+    "descrizione": {
+		"it": "operazione non consentita: è in corso una richiesta di conferma scheda",
+		"en": "operazione non consentita: è in corso una richiesta di conferma scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
