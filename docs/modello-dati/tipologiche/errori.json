@@ -487,8 +487,8 @@
 {
     "codice":"ERR55",
     "descrizione": {
-		"it": "cig duplicato nell'elendo dei lotti",
-		"en": "cig duplicato nell'elendo dei lotti"
+		"it": "cig duplicato nell'elenco dei lotti",
+		"en": "cig duplicato nell'elenco dei lotti"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -534,6 +534,24 @@
     "descrizione": {
 		"it": "operazione non consentita: è in corso una richiesta di conferma scheda",
 		"en": "operazione non consentita: è in corso una richiesta di conferma scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR61",
+    "descrizione": {
+		"it": "cig duplicato nell'elenco aggiudicazioni",
+		"en": "cig duplicato nell'elenco aggiudicazioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR62",
+    "descrizione": {
+		"it": "cig non coerenti nell'elenco aggiudicazioni",
+		"en": "cig non coerenti nell'elenco aggiudicazioni"
 	},
     "dataInizio":null,
     "dataFine":null
