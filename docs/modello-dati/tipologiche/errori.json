@@ -298,8 +298,8 @@
 {
     "codice":"ERR34",
     "descrizione": {
-		"it": "valorizzare i parametri di ricerca obbligatori",
-		"en": "valorizzare i parametri di ricerca obbligatori"
+		"it": "verificare i criteri di ricerca",
+		"en": "verificare i criteri di ricerca"
 	},
     "dataInizio":null,
     "dataFine":null
