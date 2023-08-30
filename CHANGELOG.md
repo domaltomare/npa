@@ -4,16 +4,7 @@
 
 ## Modello Dati
 
-* Sche
-
-
-### File modello-dati-npa.yaml
-
-* File modello-dati-npa.yaml:
-  * D
- 
-### File modello-dati-tipologiche.yaml
-* :
+* File modello-dati-tipologiche.yaml:
   * Creato un nuovo oggetto TipologicaSchemaErroriType
   * ErroriEnum: modificato l'attributo $ref per estendere il nuovo oggetto ($ref: '#/components/schemas/TipologicaSchemaErroriType')
     
