@@ -3,11 +3,15 @@
 
 
 ## Modello Dati
-* File modello-dati-tipologiche.yaml:
+
+### modello-dati-tipologiche.yaml:
   * Creato un nuovo oggetto TipologicaSchemaErroriType
   * ErroriEnum: modificato l'attributo $ref per estendere il nuovo oggetto ($ref: '#/components/schemas/TipologicaSchemaErroriType')
     
 ### Schede
+
+* modello-dati-schede-SC1.yaml:
+  * modificato.....
 
 ## Documentation
 
