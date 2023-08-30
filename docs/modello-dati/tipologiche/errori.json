@@ -676,8 +676,8 @@
 {
     "codice":"REG7",
     "descrizione": {
-		"it": "E’ stata selezionata la voce Somma urgenza e protezione civile di cui all’art. 163 co. 10 D. Lgs. 50/2016. E’ necessario valorizzare il campo linkDocumenti con la URL della sezione Bandi e Contratti dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC",
-		"en": "E’ stata selezionata la voce Somma urgenza e protezione civile di cui all’art. 163 co. 10 D. Lgs. 50/2016. E’ necessario valorizzare il campo linkDocumenti con la URL della sezione Bandi e Contratti dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC"
+		"it": "E’ stata selezionata la voce Somma urgenza e protezione civile di cui all’art. 140 co. 10 D. Lgs. 36/2023. E’ necessario valorizzare il campo linkDocumenti con la URL della sezione Bandi e Contratti dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC",
+		"en": "E’ stata selezionata la voce Somma urgenza e protezione civile di cui all’art. 140 co. 10 D. Lgs. 36/2023. E’ necessario valorizzare il campo linkDocumenti con la URL della sezione Bandi e Contratti dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -989,6 +989,33 @@
     "dataFine":null
 },
 {
+    "codice":"REG47",
+    "descrizione": {
+		"it": "Il numero di offerte presentate non deve essere superiore al numero di offerte ammesse",
+		"en": "Il numero di offerte presentate non deve essere superiore al numero di offerte ammesse"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG50",
+    "descrizione": {
+		"it": "Il valore del campo offertaEconomica non è coerente",
+		"en": "Il valore del campo offertaEconomica non è coerente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG51",
+    "descrizione": {
+		"it": "Richiesto almeno un valore tra offertaEconomica e offertaInAumento",
+		"en": "Richiesto almeno un valore tra offertaEconomica e offertaInAumento"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"REG52",
     "descrizione": {
 		"it": "Non è stato inserito l’importo dell’aggiudicatario",
@@ -1002,6 +1029,33 @@
     "descrizione": {
 		"it": "In caso di ditta mandante l’importo non è previsto",
 		"en": "In caso di ditta mandante l’importo non è previsto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG54",
+    "descrizione": {
+		"it": "Selezionare un motivo di revisione prezzi",
+		"en": "Selezionare un motivo di revisione prezzi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG55",
+    "descrizione": {
+		"it": "In caso di proroga tecnica Indicare il CIG della nuova procedura avviata ovvero indicare le motivazioni della proroga nel campo Cause della modifica contrattuale",
+		"en": "In caso di proroga tecnica Indicare il CIG della nuova procedura avviata ovvero indicare le motivazioni della proroga nel campo Cause della modifica contrattuale"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG56",
+    "descrizione": {
+		"it": "Il campo cignuovaProcedura non è previsto",
+		"en": "Il campo cignuovaProcedura non è previsto"
 	},
     "dataInizio":null,
     "dataFine":null
