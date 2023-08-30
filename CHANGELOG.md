@@ -10,7 +10,7 @@
   * Creato un nuovo oggetto TipologicaSchemaErroriType
   * ErroriEnum: modificato l'attributo $ref per estendere il nuovo oggetto ($ref: '#/components/schemas/TipologicaSchemaErroriType')
     
-### Schede
+### schede
 
 * modello-dati-schede-SC1.yaml:
   * modificato.....
