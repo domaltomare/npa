@@ -310,6 +310,7 @@ components:
       description: Stazione Appaltante e ruoli ricoperti nell'appalto
       type: object
       additionalProperties: false
+      required: [codiceFiscale]
       properties:
         codiceFiscale:
           description: Codice fiscale della S.A.
@@ -1890,11 +1891,8 @@ components:
       description: Oggetto che riporta tutti i dati della modifica contrattuale
       type: object
       additionalProperties: false
-      required: [lotIdentifier,idContratto]
+      required: [idContratto]
       properties: 
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string 
         idContratto:
           description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
           type: string   
@@ -1918,11 +1916,8 @@ components:
       description: Oggetto che riporta tutti i dati della modifica contrattuale
       type: object
       additionalProperties: false
-      required: [lotIdentifier,idContratto]
+      required: [idContratto]
       properties: 
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string  
         idContratto:
           description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
           type: string   
@@ -2415,6 +2410,7 @@ components:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       type: object
       additionalProperties: false
+      required: [cig]
       properties: 
         cig:
           description: codice identificativo lotto
@@ -2557,11 +2553,11 @@ components:
     AggiudicazioneA7Type:
       description: Oggetto che riporta i dati di aggiudicazione per procedura negoziata senza bando pari o sopra soglia.
       type: object
-      required: [afferenteInvestimentiPNRR,lotIdentifier]
+      required: [afferenteInvestimentiPNRR,cig]
       properties:
-        lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string      
+        cig:
+          description: CIG affidamento incarico esterno di progettazione (in caso di progettista esterno)
+          type: string              
         afferenteInvestimentiPNRR:
           description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
           type: boolean 
@@ -2596,11 +2592,6 @@ components:
       required: [motivoUrgenza]
       additionalProperties: false
       properties:
-        idAppalto:
-          description: Codice univoco dell'appalto.il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
-          type: string   
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:

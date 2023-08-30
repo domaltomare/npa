@@ -8,21 +8,16 @@ components:
       description: Oggetto che riporta i dati di inizio prestazione
       type: object
       additionalProperties: false
-      required: [consegnaFrazionata,avvioPerFasi,consegnaSottoRiserva,dataEffettivoInizio,dataFinePrevista, idContratto]
+      required: [consegnaFrazionata,avvioPerFasi,consegnaSottoRiserva,dataEffettivoInizio,dataFinePrevista]
       properties:
-        idContratto:
-          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
-          type: string   
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
         dataDisposizioneInzio:
           description: Data disposizione dell’inizio della prog. Esecutiva
           type: string
-          format: date-time
+          format: datetime
         dataApprovazione:
           description: Data approvazione del  progetto Esecutivo
           type: string
-          format: date-time  
+          format: datetime  
         consegnaFrazionata:
           description: Consegna frazionata
           type: boolean
@@ -32,31 +27,37 @@ components:
         dataVerbalePrimaConsegna:
           description: Data verbale prima consegna lavori
           type: string
-          format: date-time
+          format: datetime
         dataAvvioPrimaFase:
           description: Data di avvio della prima fase dell'esecuzione del contratto
           type: string
-          format: date-time
+          format: datetime
         dataVerbaleConsegnaDefinitiva:
           description: Data verbale consegna definitiva
           type: string
-          format: date-time
+          format: datetime
         consegnaSottoRiserva:
           description: Consegna sotto riserva di legge?
           type: boolean
         dataEffettivoInizio:
           description: Data di effettivo inizio lavori/servizi/forniture (consegna completa/avvio di tutte le prestazioni del contratto)
           type: string
-          format: date-time
+          format: datetime
         dataFinePrevista:
           description: Data fine prevista per dare ultimazione ai lavori/servizi/forniture 
           type: string
-          format: date-time
+          format: datetime
     AnacFormI1Type:
       description: Contiene tutti i dati di inizio prestazione
       type: object
       additionalProperties: false
-      properties:  
+      required: [idContratto]
+      properties: 
+        idContratto:
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
         datiInizio:
           $ref: '#/components/schemas/DatiInizioType'
     SchedaI1Type:

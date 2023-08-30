@@ -8,39 +8,34 @@ components:
       description: Oggetto che riporta i dati di collaudo.
       type: object
       additionalProperties: false
-      required: [idContratto, esito]
+      required: [esito]
       properties:
-        idContratto:
-          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
-          type: string   
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         dataCollaudo:
           description: Data del collaudo statico (ove ricorra)
           type: string
-          format: date-time
+          format: datetime
         dataCertificato:
           description: Data del certificato di regolare esecuzione
           type: string
-          format: date-time
+          format: datetime
         modoCollaudo:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModoCollaudoEnum'
         dataNomina:
           description: Data nomina collaudatore/Commissione
           type: string
-          format: date-time
+          format: datetime
         dataInizio:
           description: Data inizio operazioni di collaudo 
           type: string
-          format: date-time
+          format: datetime
         dataRedazioneCertificato:
           description: Data redazione certificato di collaudo/ verifica di conformità
           type: string
-          format: date-time
+          format: datetime
         dataDeliberaAmmissibilita:
           description: Data delibera di ammissibilità del collaudo (ove prevista)
           type: string
-          format: date-time
+          format: datetime
         esito:
           description: Esito del collaudo/ verifica di conformità
           type: string
@@ -65,8 +60,13 @@ components:
       description: Contiene tutti i dati di collaudo
       type: object
       additionalProperties: false
-      required: [collaudo]
-      properties:  
+      required: [idContratto,collaudo]
+      properties: 
+        idContratto:
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
         collaudo:
           $ref: '#/components/schemas/CollaudoType'
     SchedaCL1Type:

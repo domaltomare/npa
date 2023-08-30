@@ -1,13 +1,13 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda RI1 - Scheda di ripresa prestazione.
+  title: Modello Dati - Scheda SQ1 - Scheda di superamento del quarto del tempo contrattuale.
   version: 1.0.0
 components:
   schemas:
     SospensioneType:
       description: Oggetto che riporta tutti i dati delle Sospensioni
       type: object
-      required: [idContratto,idScheda, superatoTempo, riserve, verbaleNonSottoscritto]
+      required: [idContratto,idScheda, dataSuperamento]
       additionalProperties: false
       properties:
         idContratto:
@@ -20,26 +20,12 @@ components:
           type: string   
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
-        dataVerbaleRipresa:
-          description: Data del verbale di ripresa
+        dataSuperamento:
+          description: Data del superamento del quarto contrattuale
           type: string
           format: datetime
-        incidenzaCronoprogramma: 
-          description: Incidenza sul croprogramma (nel caso di sospensione parziale)
-          type: number
-          format: double
-          pattern: (^100([.]0{1,2})?)$|(^\d{1,2}([.]\d{0,5})?)$     
-        superatoTempo:
-          description: E’ stato superato il quarto del tempo contrattuale
-          type: boolean   
-        riserve:
-          description: Iscrizione di riserve dell’appaltatore nei verbali di sospensione e/o ripresa lavori 
-          type: boolean   
-        verbaleNonSottoscritto:
-          description: Verbale/i non sottoscritti dall’appaltatore
-          type: boolean
-    AnacFormRI1Type:
-      description: Contiene tutti i dati relativi alla scheda di ripresa prestazioni
+    AnacFormSQ1Type:
+      description: Contiene tutti i dati relativi alla scheda di superamento del quarto del tempo contrattuale
       type: object
       required: [sospensioni]
       additionalProperties: false
@@ -49,11 +35,11 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/SospensioneType'           
-    SchedaRI1Type:
-      description: Scheda di ripresa prestazioni
+    SchedaSQ1Type:
+      description: Scheda di superamento del quarto del tempo contrattuale
       type: object
       required: [anacForm]
       additionalProperties: false
       properties:
         anacForm:
-          $ref: '#/components/schemas/AnacFormRI1Type'
+          $ref: '#/components/schemas/AnacFormSQ1Type'
