@@ -1,4 +1,4 @@
-# Note di rilascio in data dd/mm/aaaa
+# Note di rilascio del dd/mm/aaaa
 
 
 
