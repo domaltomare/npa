@@ -1,19 +1,17 @@
 # Note di rilascio del dd/mm/aaaa
 
-
-
 ## Modello Dati
 
- ### regole
+### regole
 
- ### schede
+### schede
 
 * modello-dati-schede-SC1.yaml:
   * modificato.....
  
- ### tipologiche
+### tipologiche
 
- ### modello-dati-tipologiche.yaml:
+### modello-dati-tipologiche.yaml:
 
   * Creato un nuovo oggetto TipologicaSchemaErroriType
   * ErroriEnum: modificato l'attributo $ref per estendere il nuovo oggetto ($ref: '#/components/schemas/TipologicaSchemaErroriType')
