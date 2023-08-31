@@ -7,19 +7,9 @@ components:
     SospensioneType:
       description: Oggetto che riporta tutti i dati delle Sospensioni
       type: object
-      required: [idContratto,idScheda, dataSuperamento]
+      required: [dataSuperamento]
       additionalProperties: false
       properties:
-        idContratto:
-          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
-          type: string   
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        idScheda: 
-          description: identificativo restituito dal servizio all’invio della scheda di sospensione
-          type: string   
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
         dataSuperamento:
           description: Data del superamento del quarto contrattuale
           type: string
@@ -27,14 +17,16 @@ components:
     AnacFormSQ1Type:
       description: Contiene tutti i dati relativi alla scheda di superamento del quarto del tempo contrattuale
       type: object
-      required: [sospensioni]
+      required: [sospensione, idScheda]
       additionalProperties: false
       properties:
-         sospensioni:
-          description: Sospensioni
-          type: array
-          items:
-            $ref: '#/components/schemas/SospensioneType'           
+        idScheda: 
+          description: identificativo restituito dal servizio all’invio della scheda di sospensione
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
+        sospensione:
+          $ref: '#/components/schemas/SospensioneType'           
     SchedaSQ1Type:
       description: Scheda di superamento del quarto del tempo contrattuale
       type: object

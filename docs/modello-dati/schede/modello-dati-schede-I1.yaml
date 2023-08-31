@@ -51,7 +51,7 @@ components:
       description: Contiene tutti i dati di inizio prestazione
       type: object
       additionalProperties: false
-      required: [idContratto]
+      required: [idContratto, datiInizio]
       properties: 
         idContratto:
           description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
