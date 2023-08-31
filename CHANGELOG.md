@@ -94,7 +94,7 @@
 ### Tipologiche
 
 * errori.json
- * corretto con art. 140 co. 10 D. Lgs. 36/2023
+	* corretto con art. 140 co. 10 D. Lgs. 36/2023
 
 ## Orchestratore
 
