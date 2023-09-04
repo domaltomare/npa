@@ -10,7 +10,173 @@
   * aggiunta nuova scheda SQ1
       
 ### Regole
+* A1_29.dmn:
+	* aggiunte nuove regole 
 
+* A1_30.dmn:
+	* aggiunte nuove regole 
+
+* A1_31.dmn:
+	* aggiunte nuove regole 
+
+* A1_32.dmn:
+	* aggiunte nuove regole 
+	
+* A1_33.dmn:
+	* aggiunte nuove regole 
+
+* A1_34.dmn:
+	* aggiunte nuove regole 
+
+* A1_35.dmn:
+	* aggiunte nuove regole 
+
+* A1_36.dmn:
+	* aggiunte nuove regole 
+
+* A1_37.dmn:
+	* aggiunte nuove regole 
+
+* A2_29.dmn:
+	* aggiunte nuove regole 
+
+* A2_30.dmn:
+	* aggiunte nuove regole 
+
+* A2_31.dmn:
+	* aggiunte nuove regole 
+
+* A2_32.dmn:
+	* aggiunte nuove regole 
+	
+* A2_33.dmn:
+	* aggiunte nuove regole 
+
+* A2_34.dmn:
+	* aggiunte nuove regole 
+
+* A2_35.dmn:
+	* aggiunte nuove regole 
+
+* A2_36.dmn:
+	* aggiunte nuove regole 
+
+* A2_37.dmn:
+	* aggiunte nuove regole 
+
+* A3_1.dmn:
+	* aggiunte nuove regole
+
+* A3_2.dmn:
+	* aggiunte nuove regole
+
+* A3_3.dmn:
+	* aggiunte nuove regole
+
+* A3_4.dmn:
+	* aggiunte nuove regole
+
+* A3_5.dmn:
+	* aggiunte nuove regole
+
+* A3_6.dmn:
+	* aggiunte nuove regole
+
+* AD1_25.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+	
+* AD1_26.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* AD1_27.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* AD1_28.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023	
+	
+* AD2_25.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+	
+* AD2_26.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* AD2_27.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* AD2_28.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023	
+
+* AD3.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P1_10.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P1_11.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P1_12.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P1_13.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P1_16.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P1_17.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P1_20.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P1_21.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P2_10.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P2_11.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P2_12.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P2_13.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P2_16.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P2_17.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P2_20.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P2_21.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* P3_4.dmn:
+	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
+
+* M1_38.dmn:
+	* aggiunte nuove regole
+	
+* M1_39.dmn:	
+	* aggiunte nuove regole
+
+* M1_40.dmn:	
+	* aggiunte nuove regole
+
+* M2_38.dmn:	
+	* aggiunte nuove regole
+
+* M2_39.dmn:	
+	* aggiunte nuove regole
+
+* M2_40.dmn:	
+	* aggiunte nuove regole
 ### Schede
 
 * modello-dati-schede-dati-comuni.yaml:
