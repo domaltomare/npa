@@ -310,7 +310,7 @@ components:
       description: Stazione Appaltante e ruoli ricoperti nell'appalto
       type: object
       additionalProperties: false
-      required: [codiceFiscale]
+      required: [codiceFiscale,codiceAusa,codiceCentroCosto,saTitolare]
       properties:
         codiceFiscale:
           description: Codice fiscale della S.A.
@@ -651,7 +651,7 @@ components:
     AppaltoP4BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [prelazionePromotore,codiceAppalto]
+      required: [prelazionePromotore,codiceAppalto,costituzioneSocietaDiScopo]
       additionalProperties: false
       properties:
         idAppalto:
@@ -674,7 +674,10 @@ components:
           format: uuid
         termineRidottoAvvisoPreinformazione:
           description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
-          type: boolean           
+          type: boolean 
+        costituzioneSocietaDiScopo:
+          description: Indicare se è prevista la costituzione di una società di scopo
+          type: boolean
         datiBase:
           $ref: '#/components/schemas/DatiBaseAppaltoType'
         datiBaseProcedura:
