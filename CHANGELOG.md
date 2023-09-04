@@ -14,12 +14,13 @@
 ### Schede
 
 * modello-dati-schede-dati-comuni.yaml:
-  * modificato l'oggetto StazioneAppaltanteType rendendo il codiceFiscale obbligatorio
+  * modificato l'oggetto StazioneAppaltanteType rendendo tutti i campi obbligatori tranne funzionisvolte
   * modificato l'oggetto AggiudicazioneA1_31Type rendendo il cig obbligatorio
   * modificato l'oggetto ModificaContrattualeType togliendo lotidentifier
   * modificato l'oggetto ModificaContrattuale_40Type togliendo lotidentifier
   * modificato l'oggetto AggiudicazioneA7Type togliendo il lotidentifier e inserendo il cig obbligatorio
   * modificato l'oggetto AppaltoA7Type togliendo l'idappalto
+  * aggiunto all'oggetto AppaltoP4BaseType il campo boolean costituzioneSocietaDiScopo obbligatorio
 
 * modello-dati-schede-A2.31.yaml:
   * reso il cig obbligatorio
@@ -90,6 +91,9 @@
 
 * modello-dati-schede-SU1.yaml:
   * eliminato l'array sospensioni e inserito l'elemento sospensione. tolto l'idcontratto dall'oggetto sospensioneType e inserito nell'anac form
+ 
+* modello-dati-schede-P3.3.yaml:	
+	 * modificata label cigAccordoQuadro in cigAccordoQuadroConvenzione
  
 ### Tipologiche
 
