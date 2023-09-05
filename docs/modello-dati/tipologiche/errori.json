@@ -555,6 +555,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR63",
+    "descrizione": {
+		"it": "tipologica non valida",
+		"en": "tipologica non valida"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
