@@ -293,6 +293,7 @@
 * errori.json:
   * corretto con art. 140 co. 10 D. Lgs. 36/2023
   * inserito nuovo messaggio di errore REG77
+  * inserito nuovo messaggio di errore ERR63
 
 * codiceScheda.json: 
   * aggiunta la nuova scheda SQ1.
