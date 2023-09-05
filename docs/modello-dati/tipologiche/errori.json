@@ -564,6 +564,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR64",
+    "descrizione": {
+		"it": "errore TED",
+		"en": "errore TED"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
