@@ -12,10 +12,8 @@
 ### Regole
 * A1_29.dmn:
 	* aggiunte nuove regole 
-
 * A1_30.dmn:
 	* aggiunte nuove regole 
-
 * A1_31.dmn:
 	* aggiunte nuove regole 
 
