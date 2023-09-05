@@ -5,176 +5,123 @@
 * modello-dati-tipologiche.yaml:
   * creato un nuovo oggetto TipologicaSchemaErroriType
   * modificato l'attributo $ref dell'oggetto ErroriEnum per estendere il nuovo schema dati ($ref: '#/components/schemas/TipologicaSchemaErroriType')
-
 * modello-dati-npa.yaml:
   * aggiunta nuova scheda SQ1
       
 ### Regole
 * A1_29.dmn:
-	* aggiunte nuove regole 
+  * aggiunte nuove regole 
 * A1_30.dmn:
-	* aggiunte nuove regole 
+  * aggiunte nuove regole 
 * A1_31.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A1_32.dmn:
-	* aggiunte nuove regole 
-	
+  * aggiunte nuove regole	
 * A1_33.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A1_34.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A1_35.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A1_36.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A1_37.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A2_29.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A2_30.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A2_31.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A2_32.dmn:
-	* aggiunte nuove regole 
-	
+  * aggiunte nuove regole	
 * A2_33.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A2_34.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A2_35.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A2_36.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A2_37.dmn:
-	* aggiunte nuove regole 
-
+  * aggiunte nuove regole
 * A3_1.dmn:
-	* aggiunte nuove regole
-
+  * aggiunte nuove regole
 * A3_2.dmn:
-	* aggiunte nuove regole
-
+  * aggiunte nuove regole
 * A3_3.dmn:
-	* aggiunte nuove regole
-
+  * aggiunte nuove regole
 * A3_4.dmn:
-	* aggiunte nuove regole
-
+  * aggiunte nuove regole
 * A3_5.dmn:
-	* aggiunte nuove regole
-
+  * aggiunte nuove regole
 * A3_6.dmn:
-	* aggiunte nuove regole
-
+  * aggiunte nuove regole
 * AD1_25.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-	
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023	
 * AD1_26.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * AD1_27.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * AD1_28.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023	
-	
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * AD2_25.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-	
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * AD2_26.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * AD2_27.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * AD2_28.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023	
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * AD3.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P1_10.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P1_11.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P1_12.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P1_13.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P1_16.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P1_17.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P1_20.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P1_21.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P2_10.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P2_11.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P2_12.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P2_13.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P2_16.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P2_17.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P2_20.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P2_21.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * P3_4.dmn:
-	* regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
-
+  * regola REG7 corretto il messaggio con art. 140 co. 10 D. Lgs. 36/2023
 * M1_38.dmn:
-	* aggiunte nuove regole
-	
+  * aggiunte nuove regole	
 * M1_39.dmn:	
-	* aggiunte nuove regole
-
+  * aggiunte nuove regole
 * M1_40.dmn:	
-	* aggiunte nuove regole
-
+  * aggiunte nuove regole
 * M2_38.dmn:	
-	* aggiunte nuove regole
-
+  * aggiunte nuove regole
 * M2_39.dmn:	
-	* aggiunte nuove regole
-
+  * aggiunte nuove regole
 * M2_40.dmn:	
-	* aggiunte nuove regole
+  * aggiunte nuove regole
+    
 ### Schede
 
 * modello-dati-schede-dati-comuni.yaml:
@@ -190,101 +137,77 @@
 * modello-dati-schede-A2.31.yaml:
   * reso il cig obbligatorio
 * modello-dati-schede-A3.3.yaml:
-	* modificato il format datetime in date-time
+  * modificato il format datetime in date-time
 * modello-dati-schede-A3.5.yaml:
   * reso il cig obbligatorio
-
 * modello-dati-schede-A3.6.yaml:
   * reso il cig obbligatorio
-
 * modello-dati-schede-AD3.yaml:
   * reso il lotidentifier obbligatorio
-
 * modello-dati-schede-AD4.yaml:
   * reso il lotidentifier obbligatorio
   * modificato il format datetime in date-time
-
 * modello-dati-schede-CL1.yaml:
   * tolto l'idcontratto dall'oggetto CollaudoType e inserito nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-CO1.yaml:
   * tolto l'idcontratto dall'oggetto ConclusioneType e inserito nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-CO2.yaml:
   * tolto l'idcontratto dall'oggetto ConclusioneType e inserito nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-I1.yaml:
   * tolto l'idcontratto dall'oggetto DatiInizioType e inserito nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-NAG.yaml:
   * reso obbligatorio il cig e i lotti
-
 * modello-dati-schede-SC1.yaml:
   * tolto l'idcontratto dall'oggetto DatiContrattoType
   * modificato il format datetime in date-time
-
 * modello-dati-schede-RI1.yaml:
   * aggiunto l'attributo incidenzaCronoprogramma
   * eliminato l'array sospensioni e inserito l'elemento sospensione. tolto l'idcontratto dall'oggetto sospensioneType. inserito l'idscheda nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-SQ1.yaml:
   * aggiunta nuova scheda di superamento del quarto del tempo contrattuale
-
 * modello-dati-schede-AC1.yaml:
   * eliminato l'array accordiBonari e inserito l'elemento accordoBonario. tolto l'idcontratto dall'oggetto AccordoBonarioType e inserito nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-IR1.yaml:
   * eliminato l'array ritardi e inserito l'elemento ritardo. tolto l'idcontratto dall'oggetto RitardoType e inserito nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-S2.yaml:
-	* modificato il format datetime in date-time
-
+  * modificato il format datetime in date-time
 * modello-dati-schede-RSU1.yaml:
   * eliminato l'array subappalti e inserito l'elemento subappalto. tolto l'idcontratto dall'oggetto subappaltotype e inserito nell'anac form
-
 * modello-dati-schede-CS1.yaml:
   * eliminato l'array subappalti e inserito l'elemento subappalto. tolto l'idcontratto dall'oggetto subappaltotype e inserito nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-ES1.yaml:
   * eliminato l'array subappalti e inserito l'elemento subappalto. tolto l'idcontratto dall'oggetto subappaltotype. aggiunto l'idScheda nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-S3.yaml:
   * tolto lotidentifier. reso il cig obbligatorio
-
 * modello-dati-schede-S4.yaml:
   * tolto lotidentifier. reso il cig obbligatorio
-
 * modello-dati-schede-SA1.yaml:
   * eliminato l'array avanzamenti e inserito l'elemento avanzamento. tolto l'idcontratto dall'oggetto avanzamentotype e inserito nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-SO1.yaml:
   * eliminato l'array sospensioni e inserito l'elemento sospensione. tolto l'idcontratto dall'oggetto sospensioneType e inserito nell'anac form
   * modificato il format datetime in date-time
-
 * modello-dati-schede-SU1.yaml:
-  * eliminato l'array sospensioni e inserito l'elemento sospensione. tolto l'idcontratto dall'oggetto sospensioneType e inserito nell'anac form
- 
+  * eliminato l'array sospensioni e inserito l'elemento sospensione. tolto l'idcontratto dall'oggetto sospensioneType e inserito nell'anac form 
 * modello-dati-schede-P3.3.yaml:	
-	 * modificata label cigAccordoQuadro in cigAccordoQuadroConvenzione
-
+  * modificata label cigAccordoQuadro in cigAccordoQuadroConvenzione
 * modello-dati-schede-P6.3.yaml:
-	* eliminato
+  * eliminato
 * modello-dati-schede-P6.4.yaml:
-	* eliminato
+  * eliminato
 * modello-dati-schede-P6.5.yaml:
-	* eliminato
+  * eliminato
 * modello-dati-schede-P6.6.yaml:
-	* eliminato
+  * eliminato
   
 ### Tipologiche
 
@@ -293,10 +216,8 @@
   * inserito nuovo messaggio di errore REG77
   * inserito nuovo messaggio di errore ERR63
   * modificato messaggio dell'errore ERR46
-
 * codiceScheda.json: 
-  * aggiunta la nuova scheda SQ1.
- 
+  * aggiunta la nuova scheda SQ1. 
 * erroriEform.json:
   * eliminato file non utilizzato
 
