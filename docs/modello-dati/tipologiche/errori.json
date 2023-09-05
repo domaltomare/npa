@@ -406,8 +406,8 @@
 {
     "codice":"ERR46",
     "descrizione": {
-		"it": "errore generico durante la validazione dell'eForm",
-		"en": "errore generico durante la validazione dell'eForm"
+		"it": "errore durante la validazione dell'eForm",
+		"en": "errore durante la validazione dell'eForm"
 	},
     "dataInizio":null,
     "dataFine":null
