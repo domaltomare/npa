@@ -263,8 +263,11 @@
  
 ### Tipologiche
 
-* errori.json
+* errori.json:
   * corretto con art. 140 co. 10 D. Lgs. 36/2023
+
+* codiceScheda.json: 
+  * aggiunta la nuova scheda SQ1.
 
 ## Orchestratore
 
