@@ -1,7 +1,6 @@
 # Note di rilascio del dd/mm/aaaa
 
 ## Modello Dati
-
 * modello-dati-tipologiche.yaml:
   * creato un nuovo oggetto TipologicaSchemaErroriType
   * modificato l'attributo $ref dell'oggetto ErroriEnum per estendere il nuovo schema dati ($ref: '#/components/schemas/TipologicaSchemaErroriType')
@@ -123,7 +122,6 @@
   * aggiunte nuove regole
     
 ### Schede
-
 * modello-dati-schede-dati-comuni.yaml:
   * modificato l'oggetto StazioneAppaltanteType rendendo tutti i campi obbligatori tranne funzionisvolte
   * modificato l'oggetto AggiudicazioneA1_31Type rendendo il cig obbligatorio
@@ -133,7 +131,6 @@
   * modificato l'oggetto AppaltoA7Type togliendo l'idappalto
   * aggiunto all'oggetto AppaltoP4BaseType il campo boolean costituzioneSocietaDiScopo obbligatorio
   * modificato il format datetime in date-time su tutti gli oggetti
-
 * modello-dati-schede-A2.31.yaml:
   * reso il cig obbligatorio
 * modello-dati-schede-A3.3.yaml:
@@ -210,7 +207,6 @@
   * eliminato
   
 ### Tipologiche
-
 * errori.json:
   * corretto con art. 140 co. 10 D. Lgs. 36/2023
   * inserito nuovo messaggio di errore REG77
@@ -226,5 +222,4 @@
 ## Specifiche Interfacce
 
 ## Documentazione
-
 * Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare.
