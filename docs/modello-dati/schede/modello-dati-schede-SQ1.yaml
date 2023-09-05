@@ -13,7 +13,7 @@ components:
         dataSuperamento:
           description: Data del superamento del quarto contrattuale
           type: string
-          format: datetime
+          format: date-time
     AnacFormSQ1Type:
       description: Contiene tutti i dati relativi alla scheda di superamento del quarto del tempo contrattuale
       type: object

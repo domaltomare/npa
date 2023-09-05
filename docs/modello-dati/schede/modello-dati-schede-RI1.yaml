@@ -13,7 +13,7 @@ components:
         dataVerbaleRipresa:
           description: Data del verbale di ripresa
           type: string
-          format: datetime
+          format: date-time
         incidenzaCronoprogramma: 
           description: Incidenza sul croprogramma (nel caso di sospensione parziale)
           type: number

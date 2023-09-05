@@ -14,7 +14,7 @@ components:
         dataInterruzioneAnticipata:
           description: Data di interruzione anticipata
           type: string
-          format: datetime
+          format: date-time
         oneriEconomiciRisoluzioneRecesso:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OneriEconomiciRisoluzioneRecessoEnum'      
         importo: 
@@ -27,7 +27,7 @@ components:
         dataUltimazione:
           description: Data di ultimazione della prestazione
           type: string
-          format: datetime          
+          format: date-time          
         numeroInfortuni:
           description: Numero di infortuni
           type: number
