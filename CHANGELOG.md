@@ -131,6 +131,8 @@
   * modificato l'oggetto AppaltoA7Type togliendo l'idappalto
   * aggiunto all'oggetto AppaltoP4BaseType il campo boolean costituzioneSocietaDiScopo obbligatorio
   * modificato il format datetime in date-time su tutti gli oggetti
+  * modificato l'oggetto DatiTerminiInvioType: oraScadenzaPresentazioneOfferte diventa date-time
+  * modificato l'oggetto DatiBaseTerminiInvioSoloOraType: oraScadenzaPresentazioneOfferte diventa date-time
   * eliminato l'oggetto MisurePremialiType
   * eliminato l'oggetto MotivoDerogaType
   * eliminato l'oggetto LingueType
