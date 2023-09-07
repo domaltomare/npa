@@ -131,6 +131,22 @@
   * modificato l'oggetto AppaltoA7Type togliendo l'idappalto
   * aggiunto all'oggetto AppaltoP4BaseType il campo boolean costituzioneSocietaDiScopo obbligatorio
   * modificato il format datetime in date-time su tutti gli oggetti
+  * eliminato l'oggetto MisurePremialiType
+  * eliminato l'oggetto MotivoDerogaType
+  * eliminato l'oggetto LingueType
+  * eliminato l'oggetto TipologiaLavoroType
+  * eliminato l'oggetto CondizioniNegoziataType
+  * modificato l'oggetto ParitaDiGenereGenerazionaleType:
+   * l'attributo misurePremiali diventa array di MisurePremialiEnum
+		 * l'attributo motivoDeroga diventa array di MotivoDerogaEnum
+  * modificato l'oggetto DatiBaseDocumentiType:
+		 * l'attributo lingue diventa array di LingueEnum
+	* modificati gli oggetti LottoP_10Type, LottoP_11Type, LottoP_15Type,	LottoP_16Type, LottoP_17Type, LottoP_19Type,  LottoP3BaseType, LottoP6BaseType, LottoP4BaseType,LottoP7BaseType:
+   * l'attributo tipologiaLavoro diventa array di TipologiaLavoroEnum
+	* modificati gli oggetti LottoBaseType, LottoP4BaseType, LottoP7BaseType:
+		 * l'attributo condizioniNegoziata diventa array di CondizioniNegoziataEnum
+* modello-dati-schede-P3.5.yaml:
+ * l'attributo condizioniNegoziata diventa array di CondizioniNegoziataEnum
 * modello-dati-schede-A2.31.yaml:
   * reso il cig obbligatorio
 * modello-dati-schede-A3.3.yaml:
