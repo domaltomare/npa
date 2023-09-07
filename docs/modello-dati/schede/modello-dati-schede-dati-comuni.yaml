@@ -236,18 +236,6 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Modalità del collaudo tecnico/amministrativo/ verifica di conformità - fare riferimento ai valori contenuti nel file [modoCollaudo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modoCollaudo.json)   
-    LingueType:
-      type: array
-      items:
-        $ref: '#/components/schemas/LingueEnum'    
-    MotivoDerogaType:
-      type: array
-      items:
-        $ref: '#/components/schemas/MotivoDerogaEnum'
-    MisurePremialiType:
-      type: array
-      items:
-        $ref: '#/components/schemas/MisurePremialiEnum'
     IpotesiCollegamentoType:
       description: ipotesi di collegamento
       type: object
@@ -262,18 +250,6 @@ components:
             type: string
         motivoCollegamento:
           $ref: '#/components/schemas/MotivoCollegamentoEnum'
-    TipologiaLavoroType:
-      type: array
-      items:
-        $ref: '#/components/schemas/TipologiaLavoroEnum'
-    CondizioniNegoziataType:
-      type: array
-      items:
-        $ref: '#/components/schemas/CondizioniNegoziataEnum'
-    CategorieMerceologicheType:
-      type: array
-      items:
-        $ref: '#/components/schemas/CategorieMerceologicheEnum'
     ImportoType:
       description: Importo
       type: number
@@ -351,9 +327,13 @@ components:
           format: double
           pattern: (^100([.]0{1,2})?)$|(^\d{1,2}([.]\d{0,5})?)$
         motivoDeroga:
-          $ref: '#/components/schemas/MotivoDerogaType'
+          type: array
+          items:
+            $ref: '#/components/schemas/MotivoDerogaEnum'
         misurePremiali:
-          $ref: '#/components/schemas/MisurePremialiType'
+          type: array
+          items:
+            $ref: '#/components/schemas/MisurePremialiEnum'
     DatiPersonaFisicaType:
       description: Dati relativi alla persona fisica
       type: object
@@ -954,7 +934,9 @@ components:
           items:
             $ref: '#/components/schemas/CategorieMerceologicheEnum'
         condizioniNegoziata:
-          $ref: '#/components/schemas/CondizioniNegoziataType'
+          type: array
+          items:
+            $ref: '#/components/schemas/CondizioniNegoziataEnum'
         contrattiDisposizioniParticolari:
           $ref: '#/components/schemas/ContrattiDisposizioniParticolariEnum'
         codIstat:
@@ -1037,7 +1019,9 @@ components:
           description: indicare il codice CNEL o non applicabile
           type: string
         tipologiaLavoro:
-          $ref: '#/components/schemas/TipologiaLavoroType'
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologiaLavoroEnum'
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean 
@@ -1075,7 +1059,9 @@ components:
           description: indicare il codice CNEL o non applicabile
           type: string          
         tipologiaLavoro:
-          $ref: '#/components/schemas/TipologiaLavoroType'
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologiaLavoroEnum'          
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean 
@@ -1265,7 +1251,9 @@ components:
           description: indicare il codice CNEL o non applicabile
           type: string   
         tipologiaLavoro:
-          $ref: '#/components/schemas/TipologiaLavoroType'
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologiaLavoroEnum'
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         categoria:
@@ -1317,7 +1305,9 @@ components:
           description: indicare il codice CNEL o non applicabile
           type: string          
         tipologiaLavoro:
-          $ref: '#/components/schemas/TipologiaLavoroType'
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologiaLavoroEnum'
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
@@ -1365,7 +1355,9 @@ components:
           description: indicare il codice CNEL o non applicabile
           type: string          
         tipologiaLavoro:
-          $ref: '#/components/schemas/TipologiaLavoroType'
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologiaLavoroEnum'
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
@@ -1433,7 +1425,9 @@ components:
           description: indicare il codice CNEL o non applicabile
           type: string          
         tipologiaLavoro:
-          $ref: '#/components/schemas/TipologiaLavoroType'
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologiaLavoroEnum'
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean 
@@ -1631,7 +1625,9 @@ components:
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         tipologiaLavoro:
-          $ref: '#/components/schemas/TipologiaLavoroType'
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologiaLavoroEnum'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum'           
         oggettoPrincipaleContratto:
@@ -1683,7 +1679,9 @@ components:
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         tipologiaLavoro:
-          $ref: '#/components/schemas/TipologiaLavoroType'
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologiaLavoroEnum'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum'  
         oggettoPrincipaleContratto:
@@ -1724,7 +1722,9 @@ components:
             description: Id univoco del lotto generato dalla stazione appaltante
             type: string  
           condizioniNegoziata:
-            $ref: '#/components/schemas/CondizioniNegoziataType'  
+            type: array
+            items:
+              $ref: '#/components/schemas/CondizioniNegoziataEnum' 
           codIstat:
             $ref: '#/components/schemas/CodIstatEnum'      
           contrattiDisposizioniParticolari:
@@ -1758,7 +1758,9 @@ components:
           modalitaAcquisizione:
             $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
           tipologiaLavoro:
-            $ref: '#/components/schemas/TipologiaLavoroType'
+            type: array
+            items:
+              $ref: '#/components/schemas/TipologiaLavoroEnum'
           categoria:
             $ref: '#/components/schemas/CategoriaEnum' 
           finanziamenti:
@@ -1811,7 +1813,9 @@ components:
         motivoEsclusioneConcessione:
           $ref: '#/components/schemas/MotivoEsclusioneConcessioneEnum'
         condizioniNegoziata:
-          $ref: '#/components/schemas/CondizioniNegoziataType'  
+          type: array
+          items:
+            $ref: '#/components/schemas/CondizioniNegoziataEnum' 
         contrattiDisposizioniParticolari:
           $ref: '#/components/schemas/ContrattiDisposizioniParticolariEnum'  
         codIstat:
@@ -1854,7 +1858,9 @@ components:
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         tipologiaLavoro:
-          $ref: '#/components/schemas/TipologiaLavoroType'
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologiaLavoroEnum'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
         prestazioniComprese:
@@ -3009,13 +3015,13 @@ components:
       additionalProperties: false
       properties:
         scadenzaPresentazioneInvito:
-          description: Data di scadenza per la presentazione della richiesta di invito - corrisponde ai campi bt-630 - Deadline Receipt Expressions e bt-1311 - Deadline Receipt Requests del TED
+          description: Data e ora di scadenza per la presentazione della richiesta di invito - corrisponde ai campi bt-630 - Deadline Receipt Expressions e bt-1311 - Deadline Receipt Requests del TED
           type: string
           format: date-time
         oraScadenzaPresentazioneOfferte: 
-          description: Ora scadenza per la presentazione delle offerte (hh:mm) - corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
+          description: Date e ora di scadenza per la presentazione delle offerte - corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
           type: string
-          format: time   
+          format: date-time   
     DatiBaseTerminiInvioSoloScadenzaType:
       description: Dato in comune con il Business Group Submission Terms delle eforms
       required:
@@ -3032,9 +3038,9 @@ components:
       additionalProperties: false
       properties:
         oraScadenzaPresentazioneOfferte: 
-          description: Ora scadenza per la presentazione delle offerte (hh:mm) - corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
+          description: Date e ora di scadenza per la presentazione delle offerte (hh:mm) - corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
           type: string
-          format: time            
+          format: date-time            
     DatiBaseImportoType:
       description: Dato in comune con il Business Group Prize delle eforms 
       additionalProperties: false
@@ -3095,7 +3101,9 @@ components:
           type: string
           format: url
         lingue:
-          $ref: '#/components/schemas/LingueType'
+          type: array
+          items:
+            $ref: '#/components/schemas/LingueEnum' 
     DatiBaseDurataType:
       description:  Dato in comune con il Business Group Duration delle eforms
       additionalProperties: false
