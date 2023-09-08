@@ -235,6 +235,8 @@
   * aggiunta la nuova scheda SQ1. 
 * erroriEform.json:
   * eliminato file non utilizzato
+* lingue.json:
+	* aggiornati i valori della tipologica 
 
 ## Orchestratore
 
