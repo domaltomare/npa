@@ -238,7 +238,9 @@
 * erroriEform.json:
   * eliminato file non utilizzato
 * lingue.json:
-	* aggiornati i valori della tipologica 
+  * aggiornati i valori della tipologica
+* statoScheda.json: 
+  * aggiornati i valori della tipologica
 
 ## Orchestratore
 
