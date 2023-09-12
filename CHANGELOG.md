@@ -7,7 +7,7 @@
   * creato un nuovo oggetto TipoContenuto
 * modello-dati-npa.yaml:
   * aggiunta nuova scheda SQ1
-  * Nell' oggetto EsitoOperazioneType aggiunti gli attributi idNuovaScheda e idNuovoAvviso
+  * aggiunti gli attributi idNuovaScheda e idNuovoAvviso in EsitoOperazioneType
       
 ### Regole
 * A1_29.dmn:
