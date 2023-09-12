@@ -555,10 +555,17 @@ components:
           idScheda:
             description: Identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
             format: uuid
+          idNuovaScheda:
+            description: Identificativo univoco della nuova Scheda definito da ANAC a seguito delle operazioni di modifica-avviso e rettifica-avviso. (A UUID specified by RFC4122)
+            format: uuid            
           idAvviso:
-            description: identificativo univoco dell'Avviso generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione delle operazioni dispositive conferma-piano, conferma-appalto, conferma-scheda, modifica-avviso, rettifica-avviso.
+            description: identificativo univoco dell'Avviso generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione delle operazioni dispositive conferma-piano, conferma-appalto, conferma-scheda.
             type: string
             format: uuid
+          idNuovoAvviso:
+            description: identificativo univoco del nuovo Avviso generato da ANAC a seguito delle operazioni di modifica-avviso e rettifica-avviso.
+            type: string
+            format: uuid            
           idContratto:
             description: identificativo univoco del Contratto generato da ANAC, qualora il tipo di scheda lo consente, durante l'invocazione dell' operazione dispositiva conferma-scheda.
             type: string
