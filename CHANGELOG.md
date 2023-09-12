@@ -241,6 +241,8 @@
   * aggiornati i valori della tipologica
 * statoScheda.json: 
   * aggiornati i valori della tipologica
+* statoAvviso.json: 
+  * aggiornati i valori della tipologica
 
 ## Orchestratore
 
