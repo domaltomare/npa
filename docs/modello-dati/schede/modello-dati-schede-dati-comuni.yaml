@@ -11,7 +11,7 @@ components:
     FunzioniDelegateEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Ruolo svolto dalla S.A. nell'appalto - fare riferimento ai valori contenuti nel file [funzioniDelegate.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/funzioniDelegate.json)
+      description: Ruolo svolto dalla S.A. nell'appalto - fare riferimento ai valori contenuti nel file [funzioniSvolte.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/funzioniSvolte.json)
     CategorieMerceologicheEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
@@ -31,7 +31,7 @@ components:
     PrestazioniEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Prestazioni comprese nell'appalto - fare riferimento ai valori contenuti nel file [prestazioni.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/prestazioni.json)
+      description: Prestazioni comprese nell'appalto - fare riferimento ai valori contenuti nel file [prestazioniComprese.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/prestazioniComprese.json)
     CondizioniNegoziataEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -39,7 +39,7 @@ components:
     GiustificazioneAggiudicazioneDirettaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Giustificazione del ricorso a una procedura che consente di aggiudicare appalti direttamente, vale a dire che non impone la pubblicazione di un avviso di indizione di gara nella Gazzetta ufficiale dell'Unione europea - corrisponde al campo bt-136 - Direct Award Justification Code del TED - fare riferimento ai valori contenuti nel file [giustificazioneAggiudicazioneDiretta.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/giustificazioneAggiudicazioneDiretta.json) 
+      description: Giustificazione del ricorso a una procedura che consente di aggiudicare appalti direttamente, vale a dire che non impone la pubblicazione di un avviso di indizione di gara nella Gazzetta ufficiale dell'Unione europea - corrisponde al campo bt-136 - Direct Award Justification Code del TED - fare riferimento ai valori contenuti nel file [giustificazioniAggiudicazioneDiretta.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/giustificazioniAggiudicazioneDiretta.json) 
     ContrattiDisposizioniParticolariEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -55,7 +55,7 @@ components:
     RuoloOEEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Ruolo del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [ruoloOE.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/ruoloOE.json) 
+      description: Ruolo del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [ruolo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/ruolo.json) 
     TipoOEEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -159,15 +159,15 @@ components:
     EsitoProceduraEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Esito procedura - corrisponde al campo bt-142 - Winner Chosen del TED - fare riferimento ai valori contenuti nel file [esitoProcedura.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esitoProcedura.json) 
+      description: Esito procedura - corrisponde al campo bt-142 - Winner Chosen del TED - fare riferimento ai valori contenuti nel file [esito.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/esito.json) 
     GiustificazioneEsitoProceduraEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Giustificazione esito procedura - corrisponde al campo bt-144 - Not Awarded Reason del TED - fare riferimento ai valori contenuti nel file [giustificazioneEsitoProcedura.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/giustificazioneEsitoProcedura.json) 
+      description: Giustificazione esito procedura - corrisponde al campo bt-144 - Not Awarded Reason del TED - fare riferimento ai valori contenuti nel file [giustificazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/giustificazione.json) 
     MotiviModificaContrattualeEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivi modifica contrattuale - corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motiviModificaContrattuale.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviModificaContrattuale.json) 
+      description: Motivi modifica contrattuale - corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motiviModifica.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviModifica.json) 
     MotiviRevisionePrezziEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -175,7 +175,7 @@ components:
     TipoRealizzazioneContrattoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipo modalità di realizzazione contratto - fare riferimento ai valori contenuti nel file [tipoRealizzazioneContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRealizzazioneContratto.json) 
+      description: Tipo modalità di realizzazione contratto - fare riferimento ai valori contenuti nel file [tipoRealizzazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoRealizzazione.json) 
     EsitoProceduraAnnullataEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -191,7 +191,7 @@ components:
     TipologiaComunicazioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipologia di comunicazione - fare riferimento ai valori contenuti nel file [tipologiaComunicazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipologiaComunicazione.json) 
+      description: Tipologia di comunicazione - fare riferimento ai valori contenuti nel file [tipoComunicazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoComunicazione.json) 
     SubappaltoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -207,7 +207,7 @@ components:
     MotiviVariazioneAnagraficaEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivi di variazione anagrafica - fare riferimento ai valori contenuti nel file [motiviVariazioneAnagrafica.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviVariazioneAnagrafica.json)       
+      description: Motivi di variazione anagrafica - fare riferimento ai valori contenuti nel file [motivoVariazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoVariazione.json)       
     LingueEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -223,7 +223,7 @@ components:
     MotiviInterruzioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivi dell'interruzione - fare riferimento ai valori contenuti nel file [motiviInterruzione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motiviInterruzione.json)
+      description: Motivi dell'interruzione - fare riferimento ai valori contenuti nel file [causaInterruzioneAnticipata.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/causaInterruzioneAnticipata.json)
     MotiviRisoluzioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
@@ -262,7 +262,7 @@ components:
         - importo
       additionalProperties: false
       properties:
-        tipo:
+        tipoFinanziamento:
           $ref: '#/components/schemas/TipoFinanziamentoEnum'
         importo:
           $ref: '#/components/schemas/ImportoType'
@@ -280,7 +280,7 @@ components:
           type: string  
         ruolo: 
           $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
+        tipoOE: 
           $ref: '#/components/schemas/TipoOEEnum'          
     StazioneAppaltanteType:
       description: Stazione Appaltante e ruoli ricoperti nell'appalto
@@ -381,7 +381,7 @@ components:
           type: string
         ruolo: 
           $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
+        tipoOE: 
           $ref: '#/components/schemas/TipoOEEnum'
         idGruppo:
           description: id gruppo
@@ -412,7 +412,7 @@ components:
           type: string  
         ruolo: 
           $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
+        tipoOE: 
           $ref: '#/components/schemas/TipoOEEnum'
         idGruppo:
           description: id gruppo
@@ -515,7 +515,7 @@ components:
           type: string  
         ruolo: 
           $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
+        tipoOE: 
           $ref: '#/components/schemas/TipoOEEnum'
         idGruppo:
           description: id gruppo
@@ -1970,7 +1970,7 @@ components:
           type: string  
         ruolo: 
           $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
+        tipoOE: 
           $ref: '#/components/schemas/TipoOEEnum' 
         idPartecipante: 
           description: id partecipante
@@ -2005,7 +2005,7 @@ components:
           type: string  
         ruolo: 
           $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
+        tipoOE: 
           $ref: '#/components/schemas/TipoOEEnum' 
         idPartecipante: 
           description: id partecipante
@@ -2040,7 +2040,7 @@ components:
           description: La progettazione è interna o esterna? 
           type: string
           enum: ['interna', 'esterna']  
-        tipo:
+        tipoSoggetto:
           $ref: '#/components/schemas/TipoSoggettoEnum'
         datiPersonaFisica:
           $ref: '#/components/schemas/DatiPersonaFisicaType'
@@ -2083,7 +2083,7 @@ components:
           type: string
         ruolo: 
           $ref: '#/components/schemas/RuoloOEEnum'
-        tipo: 
+        tipoOE: 
           $ref: '#/components/schemas/TipoOEEnum'
         idGruppo:
           description: id gruppo
@@ -2814,9 +2814,7 @@ components:
       additionalProperties: false
       properties:
         accessibilita:
-          type: array
-          items:        
-            $ref: '#/components/schemas/AccessibilitaEnum'
+          $ref: '#/components/schemas/AccessibilitaEnum'
         giustificazione:
           description: giustificazione
           type: string
