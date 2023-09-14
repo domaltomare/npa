@@ -141,14 +141,14 @@
   * eliminato l'oggetto TipologiaLavoroType
   * eliminato l'oggetto CondizioniNegoziataType
   * modificato l'oggetto ParitaDiGenereGenerazionaleType:
-   * l'attributo misurePremiali diventa array di MisurePremialiEnum
-		 * l'attributo motivoDeroga diventa array di MotivoDerogaEnum
+	* l'attributo misurePremiali diventa array di MisurePremialiEnum
+	* l'attributo motivoDeroga diventa array di MotivoDerogaEnum
   * modificato l'oggetto DatiBaseDocumentiType:
-		 * l'attributo lingue diventa array di LingueEnum
-	* modificati gli oggetti LottoP_10Type, LottoP_11Type, LottoP_15Type,	LottoP_16Type, LottoP_17Type, LottoP_19Type,  LottoP3BaseType, LottoP6BaseType, LottoP4BaseType,LottoP7BaseType:
-  * l'attributo tipologiaLavoro diventa array di TipologiaLavoroEnum
-	* modificati gli oggetti LottoBaseType, LottoP4BaseType, LottoP7BaseType:
-		 * l'attributo condizioniNegoziata diventa array di CondizioniNegoziataEnum
+	* l'attributo lingue diventa array di LingueEnum
+  * modificati gli oggetti LottoP_10Type, LottoP_11Type, LottoP_15Type,	LottoP_16Type, LottoP_17Type, LottoP_19Type,  LottoP3BaseType, LottoP6BaseType, LottoP4BaseType,LottoP7BaseType:
+  	* l'attributo tipologiaLavoro diventa array di TipologiaLavoroEnum
+  * modificati gli oggetti LottoBaseType, LottoP4BaseType, LottoP7BaseType:
+	* l'attributo condizioniNegoziata diventa array di CondizioniNegoziataEnum
   * modificato l'oggetto DatiBaseAccessibilitaType: il campo accessibilita non è più array, secondo quanto indicato nel ted con la sdk 1.8
   * modificato l'oggetto PrestazioniEnum: rinominato il riferimento al json
   * modificato l'oggetto TipoRealizzazioneContrattoEnum: rinominato il riferimento al json
@@ -271,15 +271,15 @@
 * tipologiaComunicazione.json rinominata in tipoComunicazione.json
 * cancellate le seguenti tipologiche perché rinominate:
 	* prestazioni.json
- * tipoRealizzazioneContratto.json
- * ruoloOE.json
- * funzioniDelegate.json
- * giustificazioneAggiudicazioneDiretta.json
- * esitoProcedura.json
- * giustificazioneEsitoProcedura.json
- * motiviModificaContrattuale.json
- * motiviVariazioneAnagrafica.json
- * motiviInterruzione.json
+ 	* tipoRealizzazioneContratto.json
+ 	* ruoloOE.json
+ 	* funzioniDelegate.json
+ 	* giustificazioneAggiudicazioneDiretta.json
+ 	* esitoProcedura.json
+ 	* giustificazioneEsitoProcedura.json
+ 	* motiviModificaContrattuale.json
+ 	* motiviVariazioneAnagrafica.json
+ 	* motiviInterruzione.json
 
 ## Orchestratore
 
