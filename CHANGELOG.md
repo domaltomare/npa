@@ -149,23 +149,38 @@
   	* l'attributo tipologiaLavoro diventa array di TipologiaLavoroEnum
 * modificati gli oggetti LottoBaseType, LottoP4BaseType, LottoP7BaseType:
 	* l'attributo condizioniNegoziata diventa array di CondizioniNegoziataEnum
-  * modificato l'oggetto DatiBaseAccessibilitaType: il campo accessibilita non è più array, secondo quanto indicato nel ted con la sdk 1.8
-  * modificato l'oggetto PrestazioniEnum: rinominato il riferimento al json
-  * modificato l'oggetto TipoRealizzazioneContrattoEnum: rinominato il riferimento al json
-  * modificato l'oggetto RuoloOEEnum: rinominato il riferimento al json
-  * modificato l'oggetto FunzioniDelegateEnum: rinominato il riferimento al json
-  * modificato l'oggetto GiustificazioneAggiudicazioneDirettaEnum: rinominato il riferimento al json
-  * modificato l'oggetto EsitoProceduraEnum: rinominato il riferimento al json
-  * modificato l'oggetto GiustificazioneEsitoProceduraEnum: rinominato il riferimento al json
-  * modificato l'oggetto MotiviModificaContrattualeEnum: rinominato il riferimento al json
-  * modificato l'oggetto MotiviVariazioneAnagraficaEnum: rinominato il riferimento al json
-  * modificato l'oggetto MotiviInterruzioneEnum: rinominato il riferimento al json
-  * modificato l'oggetto TipologiaComunicazioneEnum: rinominato il riferimento al json
-  * modificati gli oggetti InvitatoType, DatiPersonaGiuridicaType, AggiudicatarioType, AggiudicatarioA1_35Type, PartecipanteType, PartecipanteADType, SoggettoType: rinominato l'attributo tipo in tipoOE
-  * modificato l'oggetto PrestazioneType: rinominato l'attributo tipo in tipoSoggetto
-  * modificato l'oggetto FinanziamentoType: rinominato l'attributo tipo in tipoFinanziamento	 
+  * modificato l'oggetto DatiBaseAccessibilitaType:
+  	* il campo accessibilita non è più array, secondo quanto indicato nel ted con la sdk 1.8
+  * modificato l'oggetto PrestazioniEnum:
+  	* rinominato il riferimento al json
+  * modificato l'oggetto TipoRealizzazioneContrattoEnum:
+  	* rinominato il riferimento al json
+  * modificato l'oggetto RuoloOEEnum:
+  	* rinominato il riferimento al json
+  * modificato l'oggetto FunzioniDelegateEnum:
+  	* rinominato il riferimento al json
+  * modificato l'oggetto GiustificazioneAggiudicazioneDirettaEnum:
+  	* rinominato il riferimento al json
+  * modificato l'oggetto EsitoProceduraEnum:
+  	* rinominato il riferimento al json
+  * modificato l'oggetto GiustificazioneEsitoProceduraEnum:
+  	* rinominato il riferimento al json
+  * modificato l'oggetto MotiviModificaContrattualeEnum:
+  	* rinominato il riferimento al json
+  * modificato l'oggetto MotiviVariazioneAnagraficaEnum:
+  	* rinominato il riferimento al json
+  * modificato l'oggetto MotiviInterruzioneEnum:
+  	* rinominato il riferimento al json
+  * modificato l'oggetto TipologiaComunicazioneEnum:
+  	* rinominato il riferimento al json
+  * modificati gli oggetti InvitatoType, DatiPersonaGiuridicaType, AggiudicatarioType, AggiudicatarioA1_35Type, PartecipanteType, PartecipanteADType, SoggettoType:
+  	* rinominato l'attributo tipo in tipoOE
+  * modificato l'oggetto PrestazioneType:
+  	* rinominato l'attributo tipo in tipoSoggetto
+  * modificato l'oggetto FinanziamentoType:
+  	* rinominato l'attributo tipo in tipoFinanziamento	 
 * modello-dati-schede-P3.5.yaml:
- * l'attributo condizioniNegoziata diventa array di CondizioniNegoziataEnum
+	* l'attributo condizioniNegoziata diventa array di CondizioniNegoziataEnum
 * modello-dati-schede-A2.31.yaml:
   * reso il cig obbligatorio
 * modello-dati-schede-A3.3.yaml:
