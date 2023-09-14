@@ -297,15 +297,15 @@
 	* rinominata in tipoComunicazione.json
 * cancellate le seguenti tipologiche perché rinominate:
 	* prestazioni.json
- 	* tipoRealizzazioneContratto.json
- 	* ruoloOE.json
- 	* funzioniDelegate.json
- 	* giustificazioneAggiudicazioneDiretta.json
- 	* esitoProcedura.json
- 	* giustificazioneEsitoProcedura.json
- 	* motiviModificaContrattuale.json
- 	* motiviVariazioneAnagrafica.json
- 	* motiviInterruzione.json
+	* tipoRealizzazioneContratto.json
+	* ruoloOE.json
+	* funzioniDelegate.json
+	* giustificazioneAggiudicazioneDiretta.json
+	* esitoProcedura.json
+	* giustificazioneEsitoProcedura.json
+	* motiviModificaContrattuale.json
+	* motiviVariazioneAnagrafica.json
+	* motiviInterruzione.json
     
 ## Orchestratore
 
