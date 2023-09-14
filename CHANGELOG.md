@@ -273,29 +273,40 @@
   * aggiornati i valori della tipologica
 * statoAvviso.json: 
   * aggiornati i valori della tipologica
-* prestazioni.json: rinominata in prestazioniComprese.json
-* tipoRealizzazioneContratto.json rinominata in tipoRealizzazione.json
-* ruoloOE.json rinominata in ruolo.json
-* funzioniDelegate.json rinominata in funzioniSvolte.json
-* giustificazioneAggiudicazioneDiretta.json rinominata in giustificazioniAggiudicazioneDiretta.json
-* esitoProcedura.json rinominata in esito.json
-* giustificazioneEsitoProcedura.json rinominata in giustificazione.json
-* motiviModificaContrattuale.json rinominata in motiviModifica.json
-* motiviVariazioneAnagrafica.json rinominata in motivoVariazione.json
-* motiviInterruzione.json rinominata in causaInterruzioneAnticipata.json
-* tipologiaComunicazione.json rinominata in tipoComunicazione.json
+* prestazioni.json:
+	* rinominata in prestazioniComprese.json
+* tipoRealizzazioneContratto.json:
+	* rinominata in tipoRealizzazione.json
+* ruoloOE.json:
+	* rinominata in ruolo.json
+* funzioniDelegate.json:
+	* rinominata in funzioniSvolte.json
+* giustificazioneAggiudicazioneDiretta.json:
+	* rinominata in giustificazioniAggiudicazioneDiretta.json
+* esitoProcedura.json:
+	* rinominata in esito.json
+* giustificazioneEsitoProcedura.json:
+	* rinominata in giustificazione.json
+* motiviModificaContrattuale.json:
+	* rinominata in motiviModifica.json
+* motiviVariazioneAnagrafica.json:
+	* rinominata in motivoVariazione.json
+* motiviInterruzione.json:
+	* rinominata in causaInterruzioneAnticipata.json
+* tipologiaComunicazione.json:
+	* rinominata in tipoComunicazione.json
 * cancellate le seguenti tipologiche perché rinominate:
 	* prestazioni.json
- * tipoRealizzazioneContratto.json
- * ruoloOE.json
- * funzioniDelegate.json
- * giustificazioneAggiudicazioneDiretta.json
- * esitoProcedura.json
- * giustificazioneEsitoProcedura.json
- * motiviModificaContrattuale.json
- * motiviVariazioneAnagrafica.json
- * motiviInterruzione.json
-
+ 	* tipoRealizzazioneContratto.json
+ 	* ruoloOE.json
+ 	* funzioniDelegate.json
+ 	* giustificazioneAggiudicazioneDiretta.json
+ 	* esitoProcedura.json
+ 	* giustificazioneEsitoProcedura.json
+ 	* motiviModificaContrattuale.json
+ 	* motiviVariazioneAnagrafica.json
+ 	* motiviInterruzione.json
+    
 ## Orchestratore
 
 ## Specifiche Interfacce
