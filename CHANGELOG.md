@@ -274,38 +274,40 @@
 * statoAvviso.json: 
   * aggiornati i valori della tipologica
 * prestazioni.json:
-	* rinominata in prestazioniComprese.json
+  * rinominata in prestazioniComprese.json
 * tipoRealizzazioneContratto.json:
-	* rinominata in tipoRealizzazione.json
+  * rinominata in tipoRealizzazione.json
 * ruoloOE.json:
-	* rinominata in ruolo.json
+  * rinominata in ruolo.json
 * funzioniDelegate.json:
-	* rinominata in funzioniSvolte.json
+  * rinominata in funzioniSvolte.json
 * giustificazioneAggiudicazioneDiretta.json:
-	* rinominata in giustificazioniAggiudicazioneDiretta.json
+  * rinominata in giustificazioniAggiudicazioneDiretta.json
 * esitoProcedura.json:
-	* rinominata in esito.json
+  * rinominata in esito.json
 * giustificazioneEsitoProcedura.json:
-	* rinominata in giustificazione.json
+  * rinominata in giustificazione.json
 * motiviModificaContrattuale.json:
-	* rinominata in motiviModifica.json
+  * rinominata in motiviModifica.json
 * motiviVariazioneAnagrafica.json:
-	* rinominata in motivoVariazione.json
+  * rinominata in motivoVariazione.json
 * motiviInterruzione.json:
-	* rinominata in causaInterruzioneAnticipata.json
+  * rinominata in causaInterruzioneAnticipata.json
 * tipologiaComunicazione.json:
-	* rinominata in tipoComunicazione.json
+  * rinominata in tipoComunicazione.json
+* esitoOperazione.json:
+  * aggiornati i valori della tipologica
 * cancellate le seguenti tipologiche perché rinominate:
-	* prestazioni.json
-	* tipoRealizzazioneContratto.json
-	* ruoloOE.json
-	* funzioniDelegate.json
-	* giustificazioneAggiudicazioneDiretta.json
-	* esitoProcedura.json
-	* giustificazioneEsitoProcedura.json
-	* motiviModificaContrattuale.json
-	* motiviVariazioneAnagrafica.json
-	* motiviInterruzione.json
+  * prestazioni.json
+  * tipoRealizzazioneContratto.json
+  * ruoloOE.json
+  * funzioniDelegate.json
+  * giustificazioneAggiudicazioneDiretta.json
+  * esitoProcedura.json
+  * giustificazioneEsitoProcedura.json
+  * motiviModificaContrattuale.json
+  * motiviVariazioneAnagrafica.json
+  * motiviInterruzione.json
     
 ## Orchestratore
 
