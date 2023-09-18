@@ -155,8 +155,6 @@
   	* rinominato il riferimento al json
   * modificato l'oggetto TipoRealizzazioneContrattoEnum:
   	* rinominato il riferimento al json
-  * modificato l'oggetto RuoloOEEnum:
-  	* rinominato il riferimento al json
   * modificato l'oggetto FunzioniDelegateEnum:
   	* rinominato il riferimento al json
   * modificato l'oggetto GiustificazioneAggiudicazioneDirettaEnum:
@@ -277,8 +275,6 @@
   * rinominata in prestazioniComprese.json
 * tipoRealizzazioneContratto.json:
   * rinominata in tipoRealizzazione.json
-* ruoloOE.json:
-  * rinominata in ruolo.json
 * funzioniDelegate.json:
   * rinominata in funzioniSvolte.json
 * giustificazioneAggiudicazioneDiretta.json:
@@ -300,7 +296,6 @@
 * cancellate le seguenti tipologiche perché rinominate:
   * prestazioni.json
   * tipoRealizzazioneContratto.json
-  * ruoloOE.json
   * funzioniDelegate.json
   * giustificazioneAggiudicazioneDiretta.json
   * esitoProcedura.json
