@@ -261,6 +261,7 @@
   * inserito nuovo messaggio di errore ERR63
   * inserito nuovo messaggio di errore ERR64
   * modificato messaggio dell'errore ERR46
+  * inserito nuovo messaggio di errore FVX30 
 * codiceScheda.json: 
   * aggiunta la nuova scheda SQ1. 
 * erroriEform.json:
