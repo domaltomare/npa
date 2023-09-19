@@ -1115,7 +1115,7 @@
     "dataFine":null
 },
 {
-    "codice":"C01",
+    "codice":"CO1",
     "descrizione": {
 		"it": "Scheda di conclusione",
 		"en": "Scheda di conclusione"
@@ -1124,7 +1124,7 @@
     "dataFine":null
 },
 {
-    "codice":"C02",
+    "codice":"CO2",
     "descrizione": {
 		"it": "Scheda di conclusione per flussi < 5K",
 		"en": "Scheda di conclusione per flussi < 5K"
