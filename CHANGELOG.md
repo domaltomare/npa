@@ -4,7 +4,6 @@
 * modello-dati-tipologiche.yaml:
   * creato un nuovo oggetto TipologicaSchemaErroriType
   * modificato l'attributo $ref dell'oggetto ErroriEnum per estendere il nuovo schema dati ($ref: '#/components/schemas/TipologicaSchemaErroriType')
-  * creato un nuovo oggetto TipoContenuto
 * modello-dati-npa.yaml:
   * aggiunta nuova scheda SQ1
   * aggiunti gli attributi idNuovaScheda e idNuovoAvviso in EsitoOperazioneType
