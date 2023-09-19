@@ -294,6 +294,10 @@
   * rinominata in tipoComunicazione.json
 * esitoOperazione.json:
   * aggiornati i valori della tipologica
+* codNUTS.json:
+  * aggiornati i valori della tipologica
+* codIstat.json:
+  * aggiornati i valori della tipologica        
 * cancellate le seguenti tipologiche perché rinominate:
   * prestazioni.json
   * tipoRealizzazioneContratto.json
