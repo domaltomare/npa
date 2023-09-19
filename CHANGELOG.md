@@ -308,6 +308,8 @@
   * motiviModificaContrattuale.json
   * motiviVariazioneAnagrafica.json
   * motiviInterruzione.json
+ * tipoContenuto.json: 
+  * nuova tipologica ad uso interno
     
 ## Orchestratore
 
