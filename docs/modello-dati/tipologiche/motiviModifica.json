@@ -19,8 +19,8 @@
 {
     "codice":"mod-minv",
     "descrizione": {
-		"it": "Modifiche inferiori a una soglia minima ("de minimis").",
-		"en": "Modifications under a minimal value ("de minimis")."
+		"it": "Modifiche inferiori a una soglia minima ('de minimis').",
+		"en": "Modifications under a minimal value ('de minimis')."
 		},		
     "dataInizio":null,
     "dataFine":null
