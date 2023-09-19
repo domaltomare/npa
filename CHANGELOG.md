@@ -263,7 +263,8 @@
   * modificato messaggio dell'errore ERR46
   * inserito nuovo messaggio di errore FVX30 
 * codiceScheda.json: 
-  * aggiunta la nuova scheda SQ1. 
+  * aggiunta la nuova scheda SQ1.
+  * modificato codice C01 e C02 in CO1 e CO2
 * erroriEform.json:
   * eliminato file non utilizzato
 * lingue.json:
