@@ -33,7 +33,7 @@
 },{
     "codice":"005",
     "descrizione": {
-		"it": "text/plain"
+		"it": "text/plain",
  		"en": "text/plain"
 	},
     "dataInizio":null,
@@ -41,7 +41,7 @@
 },{
     "codice":"006",
     "descrizione": {
-		"it": "application/xml"
+		"it": "application/xml",
  		"en": "application/xml"
 	},
     "dataInizio":null,
