@@ -63,7 +63,8 @@
   * modificato il format datetime in date-time
 * modello-dati-schede-RI1.yaml:
   * aggiunto l'attributo incidenzaCronoprogramma
-  * eliminato l'array sospensioni e inserito l'elemento sospensione. tolto l'idcontratto dall'oggetto sospensioneType. inserito l'idscheda nell'anacForm
+  * eliminato l'array sospensioni e inserito l'elemento sospensione.
+  * tolto l'idcontratto dall'oggetto sospensioneType. inserito l'idscheda nell'anacForm
   * modificato il format datetime in date-time
 * modello-dati-schede-SQ1.yaml:
   * aggiunta nuova scheda di superamento del quarto del tempo contrattuale
@@ -72,28 +73,35 @@
   * tolto l'idcontratto dall'oggetto AccordoBonarioType e inserito nell'anacForm
   * modificato il format datetime in date-time
 * modello-dati-schede-IR1.yaml:
-  * eliminato l'array ritardi e inserito l'elemento ritardo. tolto l'idcontratto dall'oggetto RitardoType e inserito nell'anacForm
+  * eliminato l'array ritardi e inserito l'elemento ritardo.
+  * tolto l'idcontratto dall'oggetto RitardoType e inserito nell'anacForm
   * modificato il format datetime in date-time
 * modello-dati-schede-S2.yaml:
   * modificato il format datetime in date-time
 * modello-dati-schede-RSU1.yaml:
-  * eliminato l'array subappalti e inserito l'elemento subappalto. tolto l'idcontratto dall'oggetto subappaltotype e inserito nell'anacForm
+  * eliminato l'array subappalti e inserito l'elemento subappalto.
+  * tolto l'idcontratto dall'oggetto subappaltotype e inserito nell'anacForm
 * modello-dati-schede-CS1.yaml:
-  * eliminato l'array subappalti e inserito l'elemento subappalto. tolto l'idcontratto dall'oggetto subappaltotype e inserito nell'anacForm
+  * eliminato l'array subappalti e inserito l'elemento subappalto.
+  * tolto l'idcontratto dall'oggetto subappaltotype e inserito nell'anacForm
   * modificato il format datetime in date-time
 * modello-dati-schede-ES1.yaml:
-  * eliminato l'array subappalti e inserito l'elemento subappalto. tolto l'idcontratto dall'oggetto subappaltotype. aggiunto l'idScheda nell'anacForm
+  * eliminato l'array subappalti e inserito l'elemento subappalto.
+  * tolto l'idcontratto dall'oggetto subappaltotype. aggiunto l'idScheda nell'anacForm
   * modificato il format datetime in date-time
 * modello-dati-schede-S3.yaml, modello-dati-schede-S4.yaml:
   * tolto lotidentifier. reso il cig obbligatorio
 * modello-dati-schede-SA1.yaml:
-  * eliminato l'array avanzamenti e inserito l'elemento avanzamento. tolto l'idcontratto dall'oggetto avanzamentotype e inserito nell'anacForm
+  * eliminato l'array avanzamenti e inserito l'elemento avanzamento.
+  * tolto l'idcontratto dall'oggetto avanzamentotype e inserito nell'anacForm
   * modificato il format datetime in date-time
 * modello-dati-schede-SO1.yaml:
-  * eliminato l'array sospensioni e inserito l'elemento sospensione. tolto l'idcontratto dall'oggetto sospensioneType e inserito nell'anacForm
+  * eliminato l'array sospensioni e inserito l'elemento sospensione.
+  * tolto l'idcontratto dall'oggetto sospensioneType e inserito nell'anacForm
   * modificato il format datetime in date-time
 * modello-dati-schede-SU1.yaml:
-  * eliminato l'array sospensioni e inserito l'elemento sospensione. tolto l'idcontratto dall'oggetto sospensioneType e inserito nell'anacForm 
+  * eliminato l'array sospensioni e inserito l'elemento sospensione.
+  * tolto l'idcontratto dall'oggetto sospensioneType e inserito nell'anacForm 
 * modello-dati-schede-P3.3.yaml:	
   * modificata label cigAccordoQuadro in cigAccordoQuadroConvenzione
 * modello-dati-schede-P6.3.yaml, modello-dati-schede-P6.4.yaml, modello-dati-schede-P6.5.yaml, modello-dati-schede-P6.6.yaml:
