@@ -16,21 +16,17 @@
     
 ### Schede
 * modello-dati-schede-dati-comuni.yaml:
-  * modificato l'oggetto StazioneAppaltanteType rendendo tutti i campi obbligatori tranne funzionisvolte
+  * modificato l'oggetto StazioneAppaltanteType rendendo tutti i campi obbligatori tranne funzioniSvolte
   * modificato l'oggetto AggiudicazioneA1_31Type rendendo il cig obbligatorio
-  * modificato l'oggetto ModificaContrattualeType togliendo lotidentifier
-  * modificato l'oggetto ModificaContrattuale_40Type togliendo lotidentifier
-  * modificato l'oggetto AggiudicazioneA7Type togliendo il lotidentifier e inserendo il cig obbligatorio
-  * modificato l'oggetto AppaltoA7Type togliendo l'idappalto
+  * modificato l'oggetto ModificaContrattualeType togliendo lotIdentifier
+  * modificato l'oggetto ModificaContrattuale_40Type togliendo lotIdentifier
+  * modificato l'oggetto AggiudicazioneA7Type togliendo il lotIdentifier e inserendo il cig obbligatorio
+  * modificato l'oggetto AppaltoA7Type togliendo l'idAppalto
   * aggiunto all'oggetto AppaltoP4BaseType il campo boolean costituzioneSocietaDiScopo obbligatorio
   * modificato il format datetime in date-time su tutti gli oggetti
   * modificato l'oggetto DatiTerminiInvioType: oraScadenzaPresentazioneOfferte diventa date-time
   * modificato l'oggetto DatiBaseTerminiInvioSoloOraType: oraScadenzaPresentazioneOfferte diventa date-time
-  * eliminato l'oggetto MisurePremialiType
-  * eliminato l'oggetto MotivoDerogaType
-  * eliminato l'oggetto LingueType
-  * eliminato l'oggetto TipologiaLavoroType
-  * eliminato l'oggetto CondizioniNegoziataType
+  * eliminati gli oggetti MisurePremialiType, MotivoDerogaType, LingueType, TipologiaLavoroType, CondizioniNegoziataType
   * modificato l'oggetto ParitaDiGenereGenerazionaleType: l'attributo misurePremiali diventa array di MisurePremialiEnum e motivoDeroga diventa array di MotivoDerogaEnum
   * modificato l'oggetto DatiBaseDocumentiType: l'attributo lingue diventa array di LingueEnum
   * modificati gli oggetti LottoP_10Type, LottoP_11Type, LottoP_15Type,	LottoP_16Type, LottoP_17Type, LottoP_19Type,  LottoP3BaseType, LottoP6BaseType, LottoP4BaseType,LottoP7BaseType: l'attributo tipologiaLavoro diventa array di TipologiaLavoroEnum
@@ -41,7 +37,7 @@
   * modificato l'oggetto PrestazioneType: rinominato l'attributo tipo in tipoSoggetto
   * modificato l'oggetto FinanziamentoType: rinominato l'attributo tipo in tipoFinanziamento	 
 * modello-dati-schede-P3.5.yaml:
-	* l'attributo condizioniNegoziata diventa array di CondizioniNegoziataEnum
+  * l'attributo condizioniNegoziata diventa array di CondizioniNegoziataEnum
 * modello-dati-schede-A2.31.yaml:
   * reso il cig obbligatorio
 * modello-dati-schede-A3.3.yaml:
