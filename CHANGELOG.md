@@ -159,4 +159,4 @@
 ## Specifiche Interfacce
 
 ## Documentazione
-* Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare.
+* Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.8.0).
