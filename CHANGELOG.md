@@ -68,7 +68,8 @@
 * modello-dati-schede-SQ1.yaml:
   * aggiunta nuova scheda di superamento del quarto del tempo contrattuale
 * modello-dati-schede-AC1.yaml:
-  * eliminato l'array accordiBonari e inserito l'elemento accordoBonario. tolto l'idcontratto dall'oggetto AccordoBonarioType e inserito nell'anacForm
+  * eliminato l'array accordiBonari e inserito l'elemento accordoBonario.
+  * tolto l'idcontratto dall'oggetto AccordoBonarioType e inserito nell'anacForm
   * modificato il format datetime in date-time
 * modello-dati-schede-IR1.yaml:
   * eliminato l'array ritardi e inserito l'elemento ritardo. tolto l'idcontratto dall'oggetto RitardoType e inserito nell'anacForm
