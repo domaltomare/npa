@@ -1,4 +1,4 @@
-# Note di rilascio del dd/mm/aaaa
+# Note di rilascio del 22/09/2023
 
 ## Modello Dati
 * modello-dati-tipologiche.yaml:
