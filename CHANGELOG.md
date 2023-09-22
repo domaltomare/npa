@@ -1,4 +1,5 @@
-# Note di rilascio del 22/09/2023
+<details>
+<summary><h1>Note di rilascio del 22/09/2023</h1></summary>
 
 ## Modello Dati
 * modello-dati-tipologiche.yaml:
@@ -160,3 +161,20 @@
 
 ## Documentazione
 * Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.8.0).
+</details>
+
+# Note di rilascio del gg/mm/aaaa
+
+## Modello Dati
+      
+### Regole
+    
+### Schede
+  
+### Tipologiche
+    
+## Orchestratore
+
+## Specifiche Interfacce
+
+## Documentazione
