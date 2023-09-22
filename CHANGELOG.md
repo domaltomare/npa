@@ -152,6 +152,7 @@
   * motiviVariazioneAnagrafica.json
   * motiviInterruzione.json
   * erroriEform.json
+  * tipologiaComunicazione.json
 * tipoContenuto.json: 
   * nuova tipologica ad uso interno
     
