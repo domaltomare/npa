@@ -17,7 +17,7 @@ components:
         datiBaseStrumentiProcedura:
           allOf: 
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraAccordoQuadroSistemaDinamicoType' 
-        datiBaseAggiudicazioneSubappalto:
+        datiBaseSubappalti:
           allOf: 
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiType' 
     AggiudicazioneA7_1_2Type:

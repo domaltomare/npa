@@ -2553,7 +2553,7 @@ components:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType'          
         datiBaseRisultatoProcedura:
           $ref: '#/components/schemas/DatiBaseRisultatoProceduraType'
-        datibaseSubappalti:
+        datiBaseSubappalti:
           $ref: '#/components/schemas/DatiBaseSubappaltiType'
         datibaseAggiudicazioneAppalto:
           $ref: '#/components/schemas/DatiBaseAggiudicazioneAppaltoType' 
@@ -2827,13 +2827,6 @@ components:
           description: Data della decisione ufficiale di selezione dell'offerta vincitrice - corrisponde al campo bt-1451 - Winner Decision Date del TED
           type: string
           format: date-time 
-    DatiBaseAggiudicazioneSubappaltoType:
-      description:  Dato in comune con il Business Group Subcontracting delle eforms
-      additionalProperties: false
-      properties:
-        subAppalto:
-          description: L'affidatario ha richiesto in sede di offerta la possibilità di subappaltare parte delle prestazioni?
-          type: boolean          
     DatiBaseSottomissioniRicevuteType:
       description:  Dato in comune con il Business Group Received Submissions delle eforms
       additionalProperties: false

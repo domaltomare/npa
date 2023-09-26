@@ -10,8 +10,8 @@ components:
       type: object
       additionalProperties: false
       properties:
-        datiBaseAggiudicazioneSubappalto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneSubappaltoType'
+        datiBaseSubappalti:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiType'
         datiBaseProcedura:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraAType'          
     AggiudicazioneA2_33Type:
