@@ -164,12 +164,18 @@
 * Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.8.0).
 </details>
 
-# Note di rilascio del 25/09/2023
+<details>
+<summary><h1>Note di rilascio del 25/09/2023</h1></summary>
 
 ## JWS token 
 ref. /docs/specifiche-jws/
 
-* jws.yaml:
-  * creato un nuovo file con le specifiche openAPI 3 del modello dati dell'oggetto body del token
-* roadmap.md:
-  * creato un nuovo file con la roadmap prevista per l'attivazione dei controlli di correttezza formale e sostanziale del JWS token
+</details>
+
+# Note di rilascio del gg/mm/aaaa
+
+## Modello Dati 
+
+### Regole
+
+### Schede
