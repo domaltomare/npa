@@ -183,3 +183,11 @@ ref. /docs/specifiche-jws/
 ### Regole
 
 ### Schede
+
+### Tipologiche
+
+## Orchestratore
+
+## Specifiche Interfacce
+
+## Documentazione
