@@ -169,7 +169,6 @@
 
 ## JWS token 
 ref. /docs/specifiche-jws/
-
 </details>
 
 # Note di rilascio del gg/mm/aaaa
