@@ -5,7 +5,7 @@ info:
 components:
   schemas:
     LottoP3_2Type:
-      description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
+      description: Oggetto che riporta i dati del lotto
       allOf: # estende la classe LottoP3BaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP3BaseType'      
       type: object
@@ -31,7 +31,7 @@ components:
         datiBaseDocumenti:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseDocumentiType'          
     AppaltoP3_2Type:
-      description: Oggetto che riporta i dati dell'appalto relativi ai contratti esclusi in Concessione o Contratti esclusi in Concessione con la tecnica dell'AQ
+      description: Oggetto che riporta i dati dell'appalto
       allOf: # estende la classe AppaltoP3BaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP3BaseType'      
       type: object
@@ -64,7 +64,7 @@ components:
           items:
             $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/StazioneAppaltanteType'    
     SchedaP3_2Type:
-      description: Scheda di pubblicazione relativa ai contratti esclusi in Concessione o Contratti esclusi in Concessione con la tecnica dell'AQ
+      description: Contratti esclusi in Concessione o Contratti esclusi in Concessione con la tecnica dell'AQ. Articolo 10 della direttiva 2014/23/UE.
       type: object
       required: [anacForm]
       additionalProperties: false

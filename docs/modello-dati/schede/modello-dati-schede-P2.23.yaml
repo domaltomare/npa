@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda P2_23 - Scheda di pubblicazione avviso per un bando di gara sottosoglia maggiore di 5K - Avviso o bando di concorso di progettazione — direttiva generale, progettazione (appalto integrato). Articolo 79, paragrafo 1, della direttiva 2014/24/UE. 
+  title: Modello Dati - Scheda P2_23 - Scheda di pubblicazione avviso per un bando di gara sottosoglia. 
   version: 1.0.0
 components:
   schemas:
@@ -45,7 +45,7 @@ components:
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseDocumentiType' 
           required: [url]          
     AnacFormP2_23Type:
-      description: Contiene tutti i dati necessari per la pubblicazione nazionale di un bando di gara sottosoglia maggiore di 5K - Avviso o bando di concorso di progettazione — direttiva generale, progettazione (appalto integrato). Articolo 79, paragrafo 1, della direttiva 2014/24/UE
+      description: Contiene tutti i dati necessari per la pubblicazione nazionale.
       allOf:  
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'      
       type: object
@@ -60,7 +60,7 @@ components:
           items:
             $ref: '#/components/schemas/LottoP2_23Type'          
     SchedaP2_23Type:
-      description: Scheda di pubblicazione avviso per un bando di gara sottosoglia maggiore di 5K - Avviso o bando di concorso di progettazione — direttiva generale, progettazione (appalto integrato). Articolo 79, paragrafo 1, della direttiva 2014/24/UE
+      description: Avviso o bando di concorso di progettazione - settori ordinari. Articolo 46 decreto legislativo 36/2023.
       type: object
       required: [anacForm,espd]
       additionalProperties: false

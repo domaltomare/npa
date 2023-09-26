@@ -5,7 +5,7 @@ info:
 components:
   schemas:
     LottoP3_5Type:
-      description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
+      description: Oggetto che riporta i dati del lotto.
       allOf: # estende la classe LottoP3BaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP3BaseType'    
       type: object
@@ -62,7 +62,7 @@ components:
         datiBaseDocumenti:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseDocumentiType'          
     AppaltoP3_5Type:
-      description: Oggetto che riporta i dati dell'appalto relativi alla scelta del socio privato nella società mista  
+      description: Oggetto che riporta i dati dell'appalto. 
       allOf: # estende la classe AppaltoP3BaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP3BaseType'
       type: object
@@ -97,7 +97,7 @@ components:
           items:
             $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/StazioneAppaltanteType'    
     SchedaP3_5Type:
-      description: Scheda di pubblicazione relativa alla scelta del socio privato nella società mista.
+      description: Scelta del socio privato nella società mista. Art. 13 comma 3 decreto legislativo 36/2023. Articolo 17 decreto legislativo 175/2016.
       type: object
       required: [anacForm]
       additionalProperties: false

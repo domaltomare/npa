@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda P2_11 - Scheda di pubblicazione avviso per un bando di gara sottosoglia maggiore di 5K - Avviso periodico indicativo utilizzato come avviso di indizione di gara — direttiva settoriale, regime ordinario. Articolo 67, paragrafo 2, della direttiva 2014/25/UE.
+  title: Modello Dati - Scheda P2_11 - Scheda di pubblicazione avviso per un bando di gara sottosoglia.
   version: 1.0.0
 components:
   schemas:
@@ -47,7 +47,7 @@ components:
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseDocumentiType' 
           required: [url]         
     AnacFormP2_11Type:
-      description: Contiene tutti i dati necessari per la pubblicazione nazionale di un bando di gara sottosoglia maggiore di 5K - Avviso periodico indicativo utilizzato come avviso di indizione di gara — direttiva settoriale, regime ordinario direttiva settoriale, regime ordinario. Articolo 67, paragrafo 2, della direttiva 2014/25/UE
+      description: Contiene tutti i dati necessari per la pubblicazione nazionale.
       allOf: 
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'    
       type: object
@@ -62,7 +62,7 @@ components:
           items:
             $ref: '#/components/schemas/LottoP2_11Type'                        
     SchedaP2_11Type:
-      description: Scheda di pubblicazione avviso per un bando di gara sottosoglia maggiore di 5K - Avviso periodico indicativo utilizzato come avviso di indizione di gara — direttiva settoriale, regime ordinario. Articolo 67, paragrafo 2, della direttiva 2014/25/UE
+      description: Avviso periodico indicativo utilizzato come avviso di indizione di gara — settori speciali. Articolo 50 decreto legislativo 36/2023. Articolo 50 comma 5 decreto legislativo 36/2023.
       type: object
       required: [anacForm,espd]
       additionalProperties: false
