@@ -573,6 +573,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR65",
+    "descrizione": {
+		"it": "errore nell'estrazione dei lotti dall'eForm",
+		"en": "errore nell'estrazione dei lotti dall'eForm"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
