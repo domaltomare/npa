@@ -201,7 +201,7 @@ ref. /docs/specifiche-jws/
 * subappalto.json:
   * modificati i valori secondo la codelist Applicability del TED
 * errori.json
-  * aggiornata descrizione errori
+  * aggiornate descrizioni
     
 ## Orchestratore
 
