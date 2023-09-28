@@ -202,6 +202,7 @@ ref. /docs/specifiche-jws/
   * modificati i valori secondo la codelist Applicability del TED
 * errori.json
   * aggiornate descrizioni
+  * inserito nuovo messaggio di errore ERR65
     
 ## Orchestratore
 
