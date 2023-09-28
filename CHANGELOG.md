@@ -203,6 +203,7 @@ ref. /docs/specifiche-jws/
 * errori.json
   * aggiornate descrizioni
   * inserito nuovo messaggio di errore ERR65
+  * inserito nuovo messaggio di errore ERR66
     
 ## Orchestratore
 
