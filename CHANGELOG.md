@@ -184,22 +184,25 @@ ref. /docs/specifiche-jws/
 
 ### Schede
 * modello-dati-schede-P1.10.yaml, modello-dati-schede-P1.11.yaml, modello-dati-schede-P1.12.yaml, modello-dati-schede-P1.13.yaml, modello-dati-schede-P1.14.yaml, modello-dati-schede-P1.15.1.yaml, modello-dati-schede-P1.15.2.yaml, modello-dati-schede-P1.16.yaml, modello-dati-schede-P1.17.yaml, modello-dati-schede-P1.18.yaml, modello-dati-schede-P1.19.yaml, modello-dati-schede-P1.20.yaml, modello-dati-schede-P1.21.yaml, modello-dati-schede-P1.23.yaml, modello-dati-schede-P1.24.yaml, modello-dati-schede-PL1.1.yaml, modello-dati-schede-PL1.2.yaml, modello-dati-schede-PL1.3.yaml, modello-dati-schede-PL1.4.yaml, modello-dati-schede-PL1.5.yaml, modello-dati-schede-PL1.6.yaml, modello-dati-schede-PL1.7.yaml, modello-dati-schede-PL1.8.yaml, modello-dati-schede-PL1.9.yaml, modello-dati-schede-PL2.1.yaml, modello-dati-schede-PL2.2.yaml, modello-dati-schede-PL2.3.yaml, modello-dati-schede-PL2.7.yaml, modello-dati-schede-PL2.8.yaml, modello-dati-schede-PL2.9.yaml, modello-dati-schede-P2.10.yaml, modello-dati-schede-P2.11.yaml, modello-dati-schede-P2.12.yaml, modello-dati-schede-P2.13.yaml, modello-dati-schede-P2.14.yaml, modello-dati-schede-P2.16.yaml, modello-dati-schede-P2.17.yaml, modello-dati-schede-P2.18.yaml, modello-dati-schede-P2.19.yaml, modello-dati-schede-P2.20.yaml, modello-dati-schede-P2.21.yaml, modello-dati-schede-P2.23.yaml, modello-dati-schede-P2.24.yaml, modello-dati-schede-P3.1.yaml, modello-dati-schede-P3.2.yaml, modello-dati-schede-P3.3.yaml, modello-dati-schede-P3.4.yaml, modello-dati-schede-P3.5.yaml, modello-dati-schede-P4.1.yaml, modello-dati-schede-P4.2.yaml, modello-dati-schede-P4.3.yaml, modello-dati-schede-P4.4.yaml, modello-dati-schede-P4.5.yaml, modello-dati-schede-P4.6.yaml, modello-dati-schede-P5.yaml, modello-dati-schede-P6.1.yaml, modello-dati-schede-P6.2.yaml, modello-dati-schede-P7.1.1.yaml, modello-dati-schede-P7.1.2.yaml, modello-dati-schede-P7.1.3.yaml, modello-dati-schede-P7.2.yaml, modello-dati-schede-P7.3.yaml, modello-dati-schede-AD1.25.yaml, modello-dati-schede-AD1.26.yaml, modello-dati-schede-AD1.27.yaml, modello-dati-schede-AD1.28.yaml, modello-dati-schede-AD2_25.yaml, modello-dati-schede-AD2.26.yaml, modello-dati-schede-AD2.27.yaml, modello-dati-schede-AD2.28.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A1.29.yaml, modello-dati-schede-A1.30.yaml, modello-dati-schede-A1.31.yaml, modello-dati-schede-A1.32.yaml, modello-dati-schede-A1.33.yaml, modello-dati-schede-A1.34.yaml, modello-dati-schede-A1.35.yaml, modello-dati-schede-A1.36.yaml, modello-dati-schede-A1.37.yaml, modello-dati-schede-A2.29.yaml, modello-dati-schede-A2.30.yaml, modello-dati-schede-A2.31.yaml, modello-dati-schede-A2.32.yaml, modello-dati-schede-A2.33.yaml, modello-dati-schede-A2.34.yaml, modello-dati-schede-A2.35.yaml, modello-dati-schede-A2.36.yaml, modello-dati-schede-A2.37.yaml, modello-dati-schede-A3.1.yaml, modello-dati-schede-A3.2.yaml, modello-dati-schede-A3.3.yaml, modello-dati-schede-A3.4.yaml, modello-dati-schede-A3.5.yaml, modello-dati-schede-A3.6.yaml, modello-dati-schede-A4.1.yaml, modello-dati-schede-A4.2.yaml, modello-dati-schede-A4.3.yaml, modello-dati-schede-A4.4.yaml, modello-dati-schede-A4.5.yaml, modello-dati-schede-A4.6.yaml, modello-dati-schede-A7.1.1.yaml, modello-dati-schede-A7.1.2.yaml, modello-dati-schede-M1.yaml, modello-dati-schede-M1.40.yaml, modello-dati-schede-M2.yaml, modello-dati-schede-M2.40.yaml, modello-dati-schede-SA1.yaml, modello-dati-schede-RSU1.yaml, modello-dati-schede-ES1.yaml, modello-dati-schede-CS1.yaml, modello-dati-schede-SO1.yaml, modello-dati-schede-SQ1.yaml, modello-dati-schede-RI1.yaml, modello-dati-schede-AC1.yaml, modello-dati-schede-CL1.yaml:
-	* modificata la descrizione della scheda uniformandola al file Cronologia-schede-finale.xlsx
+  * modificata la descrizione della scheda uniformandola al file Cronologia-schede-finale.xlsx
 
 * modello-dati-schede-dati-comuni.yaml:
-	* eliminato l'oggetto DatiBaseAggiudicazioneSubappaltoType
-	* modificato l'oggetto AggiudicazioneA4Type: rinominata la property datibaseSubappalti in datiBaseSubappalti
+  * eliminato l'oggetto DatiBaseAggiudicazioneSubappaltoType
+  * modificato l'oggetto AggiudicazioneA4Type: rinominata la property datibaseSubappalti in datiBaseSubappalti
 
 * modello-dati-schede-A2.32.yaml, modello-dati-schede-A2.33.yaml, modello-dati-schede-A2.34.yaml, modello-dati-schede-A2.35.yaml:
-	* modificata la property datiBaseAggiudicazioneSubappalto: sostituito il puntamento all'oggetto DatiBaseAggiudicazioneSubappaltoType con DatiBaseSubappaltiType
-	* rinominata la property datibaseSubappalti in datiBaseSubappalti
+  * modificata la property datiBaseAggiudicazioneSubappalto: sostituito il puntamento all'oggetto DatiBaseAggiudicazioneSubappaltoType con DatiBaseSubappaltiType
+  * rinominata la property datibaseSubappalti in datiBaseSubappalti
 
 * modello-dati-schede-A2.29.yaml, modello-dati-schede-A2.30.yaml, modello-dati-schede-A2.31.yaml, modello-dati-schede-A7.1.2.yaml, modello-dati-schede-A3.1.yaml, modello-dati-schede-A3.2.yaml, modello-dati-schede-A3.3.yaml, modello-dati-schede-A3.4.yaml, modello-dati-schede-A3.5.yaml:
-	* rinominata la property datiBaseAggiudicazioneSubappalto in datiBaseSubappalti
+  * rinominata la property datiBaseAggiudicazioneSubappalto in datiBaseSubappalti
 
 ### Tipologiche
 * subappalto.json:
-	* modificati i valori secondo la codelist Applicability del TED
+  * modificati i valori secondo la codelist Applicability del TED
+* errori.json
+  * aggiornata descrizione errori
+    
 ## Orchestratore
 
 ## Specifiche Interfacce
