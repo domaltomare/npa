@@ -550,8 +550,8 @@
 {
     "codice":"ERR62",
     "descrizione": {
-		"it": "cig non coerenti nell'elenco aggiudicazioni",
-		"en": "cig non coerenti nell'elenco aggiudicazioni"
+		"it": "cig non coerenti nell'elenco",
+		"en": "cig non coerenti nell'elenco"
 	},
     "dataInizio":null,
     "dataFine":null
