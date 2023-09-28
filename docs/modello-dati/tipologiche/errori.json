@@ -541,8 +541,8 @@
 {
     "codice":"ERR61",
     "descrizione": {
-		"it": "cig duplicato nell'elenco aggiudicazioni",
-		"en": "cig duplicato nell'elenco aggiudicazioni"
+		"it": "cig duplicato nell'elenco",
+		"en": "cig duplicato nell'elenco"
 	},
     "dataInizio":null,
     "dataFine":null
