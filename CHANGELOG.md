@@ -238,6 +238,31 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-A2.29.yaml, modello-dati-schede-A2.30.yaml, modello-dati-schede-A2.31.yaml, modello-dati-schede-A7.1.2.yaml, modello-dati-schede-A3.1.yaml, modello-dati-schede-A3.2.yaml, modello-dati-schede-A3.3.yaml, modello-dati-schede-A3.4.yaml, modello-dati-schede-A3.5.yaml:
   * rinominata la property datiBaseAggiudicazioneSubappalto in datiBaseSubappalti
 
+* modello-dati-schede-PL2.7.yaml,modello-dati-schede-PL2.8.yaml,modello-dati-schede-PL2.9.yaml:
+ * eliminati i required dei campi accordoQuadro, sistemaDinamicoAcquisizione dalla property datiBaseStrumentiProcedura
+
+* modello-dati-schede-A2.37.yaml,modello-dati-schede-A2.36.yaml:
+	* modificata la property datiBaseProcedura tolto il required perché inserito nell'oggetto DatiBaseProceduraType referenziato
+
+* modello-dati-schede-P3.5.yaml,modello-dati-schede-P3.4.yaml,modello-dati-schede-P3.3.yaml,modello-dati-schede-P3.2.yaml,modello-dati-schede-P3.1.yaml: 
+	* modificato l'oggetto lotti: 
+	 * cambiata la reference di datiBaseDocumenti da DatiBaseDocumentiType a DatiBaseDocumentiOptionalType
+	 * aggiunti i campi afferenteInvestimentiPNRR, categoria
+	 * aggiornata la reference di datiBase
+	 * eliminati i required da datiBase e DatiBaseAggiudicazioneType perché già presenti nell'oggetto referenziato
+
+* modello-dati-schede-P2.24.yaml,modello-dati-schede-P2.23.yaml,modello-dati-schede-P2.21.yaml,modello-dati-schede-P2.20.yaml,modello-dati-schede-P2.19.yaml,modello-dati-schede-P2.14.yaml,modello-dati-schede-P2.13.yaml,modello-dati-schede-P2.12.yaml,modello-dati-schede-P2.11.yaml,modello-dati-schede-P2.10.yaml:
+	* modificato l'oggetto appalto: modificate le property datiBaseProcedura e datiBase: tolto il required perché inserito inserito negli oggetti referenziati
+	* modificato l'oggetto lotti eliminando il required perché già presente nell'oggetto DatiBaseDocumentiType referenziato 
+
+* modello-dati-schede-P2.18.yaml,modello-dati-schede-P2.17.yaml,modello-dati-schede-P2.16.yaml:
+	* aggiunto l'oggetto DatiBaseStrumentiProceduraType con i required richiesti
+	* modificato l'oggetto appalto:		
+		modificata la property datiBaseStrumentiProcedura referenziando il nuovo oggetto DatiBaseStrumentiProceduraType
+		modificata la property datiBase aggiornando la reference all'oggetto DatiBaseAppaltoOptionalType
+	* modificato l'oggetto lotti:
+		modificato l'oggetto lotto eliminando il required perché già presente nell'oggetto DatiBaseDocumentiType referenziato
+		modificata la property datiBase aggiornando la reference all'oggetto DatiBaseLottoOptionalType
 ### Tipologiche
 * subappalto.json:
   * modificati i valori secondo la codelist Applicability del TED
