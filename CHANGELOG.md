@@ -189,6 +189,45 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-dati-comuni.yaml:
   * eliminato l'oggetto DatiBaseAggiudicazioneSubappaltoType
   * modificato l'oggetto AggiudicazioneA4Type: rinominata la property datibaseSubappalti in datiBaseSubappalti
+	* modificato l'oggetto AppaltoBaseType rendendo obbligatorio il campo categorieMerceologiche.
+	* Rimosso il required del campo categorieMerceologiche dagli oggetti AppaltoP_10Type, AppaltoP_11Type, AppaltoP_12Type, AppaltoP_13Type, AppaltoP_14Type, AppaltoP_16Type, AppaltoP_17Type, AppaltoP_19Type, AppaltoP_20Type, AppaltoP_21Type. 
+	* modificato l'oggetto LottoBaseType:
+	* resi obbligatori i campi categorieMerceologiche, afferenteInvestimentiPNRR, contrattiDisposizioniParticolari.
+	* eliminato il campo modalitaAcquisizione.
+	* modificati gli oggetti LottoP_10Type, LottoP_11Type, LottoP_12Type, LottoP_13Type, LottoP_14Type, LottoP_16Type, LottoP_17Type, LottoP_19Type, LottoP_20Type, LottoP_21Type:
+	* rimosso il required dei campi categorieMerceologiche, afferenteInvestimentiPNRR, contrattiDisposizioniParticolari
+	* aggiunto il campo modalitaAcquisizione
+	* modificato l'oggetto DatiBaseProceduraType rendendo obbligatorio il campo tipoProcedura
+	* aggiunto l'oggetto DatiBaseProceduraOptionalType che non prevede il campo tipoProcedura obbligatorio
+	* modificato l'oggetto AppaltoPLCompletoType cambiando la reference da DatiBaseProceduraType a DatiBaseProceduraOptionalType
+	* modificato l'oggetto AppaltoP4BaseType: modificata la property datiBaseProcedura togliendo il required perché inserito nell'oggetto DatiBaseProceduraType referenziato 
+	* modificato l'oggetto AppaltoP7BaseType: modificata la property datiBaseProcedura togliendo il required perché inserito nell'oggetto DatiBaseProceduraType referenziato 
+	* aggiunto l'oggetto DatiBaseDocumentiOptionalType con tutti gli attributi opzionali
+	* modificato l'oggetto DatiBaseDocumentiType rendendo required la url
+	* modificati gli oggetti LottoP6BaseType e LottoP7BaseType: cambiata la reference del campo datiBaseDocumenti da DatiBaseDocumentiType a DatiBaseDocumentiOptionalType
+	* modificato l'oggetto LottoP4BaseType: tolto il required nel campo datiBaseDocumenti 
+	* modificato l'oggetto DatiBaseAppaltoType: aggiunto il required sull'importo
+	* aggiunto l'oggetto DatiBaseAppaltoOptionalType
+	* modificato l'oggetto AppaltoP6BaseType: tolta la property datibase
+	* modificato l'oggetto DatiBaseLottoType: aggiunto il required sull'importo
+	* aggiunto l'oggetto DatiBaseLottoOptionalType
+	* modificato l'oggetto AppaltoP6BaseType: tolta la property datibase
+	* modificato l'oggetto LottoP6BaseType: tolta la property datibase
+	* LottoP3BaseType eliminati i campi afferenteInvestimentiPNRR, categoria.
+    * DatiBaseAggiudicazioneType: aggiunto il required
+	* aggiunto l'oggetto DatiBaseAggiudicazioneOptionalType
+	* aggiunto l'oggetto LottoP7_2BaseType
+	* aggiunto l'oggetto DatiBaseLottoP7_3Type
+	* aggiunto l'oggetto DatiBaseCPVP7Type
+	* aggiunto l'oggetto DatiBaseCPVPLType
+	* aggiunto l'oggetto DatiBaseContrattoP7Type
+	* aggiunto l'oggetto DatiBaseProceduraADType
+	* modificato l'oggetto AppaltoAType: eliminato il campo relazioneUnicaSulleProcedure
+	* modificati gli oggetti AppaltoA1_29Type, AppaltoA1_30Type, AppaltoA1_33Type, AppaltoA1_34Type : aggiunto il campo relazioneUnicaSulleProcedure
+	* modificati gli oggetti AggiudicazioneCompletaType e AggiudicazioneBaseType: eliminato il campo numeroOfferteAmmesse
+	* modificati gli oggetti AggiudicazioneA1_29Type, AggiudicazioneA1_30Type, AggiudicazioneA1_32Type, AggiudicazioneA1_33Type, AggiudicazioneA1_34Type, AggiudicazioneA1_35Type, AggiudicazioneA1_36Type, AggiudicazioneA1_37Type, AggiudicazioneA4Type: aggiunto il campo numeroOfferteAmmesse
+	* aggiunto l'oggetto DatiBaseStrumentiProceduraAType
+	* aggiunto l'oggetto DatiBaseSubappaltiRequiredType    
 
 * modello-dati-schede-A2.32.yaml, modello-dati-schede-A2.33.yaml, modello-dati-schede-A2.34.yaml, modello-dati-schede-A2.35.yaml:
   * modificata la property datiBaseAggiudicazioneSubappalto: sostituito il puntamento all'oggetto DatiBaseAggiudicazioneSubappaltoType con DatiBaseSubappaltiType
