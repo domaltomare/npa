@@ -263,6 +263,30 @@ ref. /docs/specifiche-jws/
 	* modificato l'oggetto lotti:
 		modificato l'oggetto lotto eliminando il required perché già presente nell'oggetto DatiBaseDocumentiType referenziato
 		modificata la property datiBase aggiornando la reference all'oggetto DatiBaseLottoOptionalType
+
+* modello-dati-schede-P6.1.yaml:
+	* inseriti gli oggetti AppaltoP6_1Type, LottoP6_1Type 
+	* modello-dati-schede-P6.2.yaml:
+	* inserita la property datiBase negli oggetti AppaltoP6_2Type eLottoP6_2Type con i required opportuni
+
+* modello-dati-schede-P7.2.yaml:
+	* modificata la reference dell'oggetto LottoP7_2Type
+	* aggiunto l'oggetto QuadroEconomicoType
+
+* modello-dati-schede-P7.3.yaml: 
+	* modificata la reference all'oggetto datiBase e datiBaseDocumenti
+
+* modello-dati-schede-AD2_25.yaml, modello-dati-schede-AD2_26.yaml, modello-dati-schede-AD2_27.yaml, modello-dati-schede-AD2_28.yaml:
+	* modificata la reference dell'oggetto datiBaseProcedura
+
+* modello-dati-schede-A2_29.yaml,modello-dati-schede-A2_30.yaml,modello-dati-schede-A2_31.yaml,modello-dati-schede-A3_4.yaml:
+	* cambiata la reference degli oggetti datiBaseStrumentiProcedura e datiBaseSubappalti
+
+* modello-dati-schede-A7_1_2.yaml:
+	* cambiata la reference della property datibaseprocedura
+
+* modello-dati-schede-NAG.yaml:
+	* tolto il required dalla property datiBaseRisultatoProcedura
 ### Tipologiche
 * subappalto.json:
   * modificati i valori secondo la codelist Applicability del TED
