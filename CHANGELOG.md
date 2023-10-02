@@ -206,6 +206,7 @@ ref. /docs/specifiche-jws/
   * modificato l'oggetto DatiBaseDocumentiType rendendo required la url
   * modificati gli oggetti LottoP6BaseType e LottoP7BaseType: cambiata la reference del campo datiBaseDocumenti da DatiBaseDocumentiType a DatiBaseDocumentiOptionalType
   * modificato l'oggetto LottoPLBase: aggiunto il campo datiBaseDocumenti
+  * modificato l'oggetto LottoPLCompletoType: aggiunto il campo datiBaseDocumenti
   * modificato l'oggetto LottoP4BaseType: tolto il required nel campo datiBaseDocumenti 
   * modificato l'oggetto DatiBaseAppaltoType: aggiunto il required sull'importo
   * aggiunto l'oggetto DatiBaseAppaltoOptionalType
