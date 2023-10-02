@@ -236,10 +236,10 @@ ref. /docs/specifiche-jws/
   * rinominata la property datibaseSubappalti in datiBaseSubappalti
 
 * modello-dati-schede-A2.29.yaml, modello-dati-schede-A2.30.yaml, modello-dati-schede-A2.31.yaml, modello-dati-schede-A7.1.2.yaml, modello-dati-schede-A3.1.yaml, modello-dati-schede-A3.2.yaml, modello-dati-schede-A3.3.yaml, modello-dati-schede-A3.4.yaml, modello-dati-schede-A3.5.yaml:
-  * rinominata la property datiBaseAggiudicazioneSubappalto in datiBaseSubappalti
+	* rinominata la property datiBaseAggiudicazioneSubappalto in datiBaseSubappalti
 
 * modello-dati-schede-PL2.7.yaml,modello-dati-schede-PL2.8.yaml,modello-dati-schede-PL2.9.yaml:
- * eliminati i required dei campi accordoQuadro, sistemaDinamicoAcquisizione dalla property datiBaseStrumentiProcedura
+	* eliminati i required dei campi accordoQuadro, sistemaDinamicoAcquisizione dalla property datiBaseStrumentiProcedura
 
 * modello-dati-schede-A2.37.yaml,modello-dati-schede-A2.36.yaml:
 	* modificata la property datiBaseProcedura tolto il required perché inserito nell'oggetto DatiBaseProceduraType referenziato
