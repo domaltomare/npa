@@ -53,7 +53,7 @@ satisfies (count(aggiudicazione.offertePresentate) &gt; aggiudicazione.numeroOff
         <inputEntry id="UnaryTests_1x5logn">
           <text>some aggiudicazione in aggiudicazioni
 satisfies (some offerta in aggiudicazione.offertePresentate 
-satisfies offerta.offertaEconomica &lt; 0 OR offerta.offertaEconomica &gt; 100) </text>
+satisfies offerta.offertaEconomica &lt; 0 or offerta.offertaEconomica &gt; 100) </text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0aiqqkm">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG50\"}"</text>
@@ -66,8 +66,8 @@ satisfies offerta.offertaEconomica &lt; 0 OR offerta.offertaEconomica &gt; 100) 
         </inputEntry>
         <inputEntry id="UnaryTests_058nzm7">
           <text>some aggiudicazione in aggiudicazioni
-satisfies (count(aggiudicazione.offertePresentate) = 1 AND some offerta in aggiudicazione.offertePresentate 
-satisfies offerta.offertaInAumento = 0 AND offerta.offertaEconomica = 0)</text>
+satisfies (count(aggiudicazione.offertePresentate) = 1 and some offerta in aggiudicazione.offertePresentate 
+satisfies offerta.offertaInAumento = 0 and offerta.offertaEconomica = 0)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0rivwtj">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG51\"}"</text>
