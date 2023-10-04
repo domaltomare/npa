@@ -239,6 +239,9 @@ ref. /docs/specifiche-jws/
 	* modificato l'oggetto appalto: modificate le property datiBaseProcedura e datiBase: tolto il required perché inserito inserito negli oggetti referenziati
 	* modificato l'oggetto lotti eliminando il required perché già presente nell'oggetto DatiBaseDocumentiType referenziato 
 
+* modello-dati-schede-P2.12.yaml:
+	* resa array la property lotti 
+
 * modello-dati-schede-P2.18.yaml,modello-dati-schede-P2.17.yaml,modello-dati-schede-P2.16.yaml:
 	* aggiunto l'oggetto DatiBaseStrumentiProceduraType con i required richiesti
 	* modificato l'oggetto appalto:		
