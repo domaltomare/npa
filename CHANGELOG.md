@@ -183,7 +183,7 @@ ref. /docs/specifiche-jws/
 ### Regole
 
 ### Schede
-* modello-dati-schede-P1.10.yaml, modello-dati-schede-P1.11.yaml, modello-dati-schede-P1.12.yaml, modello-dati-schede-P1.13.yaml, modello-dati-schede-P1.14.yaml, modello-dati-schede-P1.15.1.yaml, modello-dati-schede-P1.15.2.yaml, modello-dati-schede-P1.16.yaml, modello-dati-schede-P1.17.yaml, modello-dati-schede-P1.18.yaml, modello-dati-schede-P1.19.yaml, modello-dati-schede-P1.20.yaml, modello-dati-schede-P1.21.yaml, modello-dati-schede-P1.23.yaml, modello-dati-schede-P1.24.yaml, modello-dati-schede-PL1.1.yaml, modello-dati-schede-PL1.2.yaml, modello-dati-schede-PL1.3.yaml, modello-dati-schede-PL1.4.yaml, modello-dati-schede-PL1.5.yaml, modello-dati-schede-PL1.6.yaml, modello-dati-schede-PL1.7.yaml, modello-dati-schede-PL1.8.yaml, modello-dati-schede-PL1.9.yaml, modello-dati-schede-PL2.1.yaml, modello-dati-schede-PL2.2.yaml, modello-dati-schede-PL2.3.yaml, modello-dati-schede-PL2.7.yaml, modello-dati-schede-PL2.8.yaml, modello-dati-schede-PL2.9.yaml, modello-dati-schede-P2.10.yaml, modello-dati-schede-P2.11.yaml, modello-dati-schede-P2.12.yaml, modello-dati-schede-P2.13.yaml, modello-dati-schede-P2.14.yaml, modello-dati-schede-P2.16.yaml, modello-dati-schede-P2.17.yaml, modello-dati-schede-P2.18.yaml, modello-dati-schede-P2.19.yaml, modello-dati-schede-P2.20.yaml, modello-dati-schede-P2.21.yaml, modello-dati-schede-P2.23.yaml, modello-dati-schede-P2.24.yaml, modello-dati-schede-P3.1.yaml, modello-dati-schede-P3.2.yaml, modello-dati-schede-P3.3.yaml, modello-dati-schede-P3.4.yaml, modello-dati-schede-P3.5.yaml, modello-dati-schede-P4.1.yaml, modello-dati-schede-P4.2.yaml, modello-dati-schede-P4.3.yaml, modello-dati-schede-P4.4.yaml, modello-dati-schede-P4.5.yaml, modello-dati-schede-P4.6.yaml, modello-dati-schede-P5.yaml, modello-dati-schede-P6.1.yaml, modello-dati-schede-P6.2.yaml, modello-dati-schede-P7.1.1.yaml, modello-dati-schede-P7.1.2.yaml, modello-dati-schede-P7.1.3.yaml, modello-dati-schede-P7.2.yaml, modello-dati-schede-P7.3.yaml, modello-dati-schede-AD1.25.yaml, modello-dati-schede-AD1.26.yaml, modello-dati-schede-AD1.27.yaml, modello-dati-schede-AD1.28.yaml, modello-dati-schede-AD2_25.yaml, modello-dati-schede-AD2.26.yaml, modello-dati-schede-AD2.27.yaml, modello-dati-schede-AD2.28.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A1.29.yaml, modello-dati-schede-A1.30.yaml, modello-dati-schede-A1.31.yaml, modello-dati-schede-A1.32.yaml, modello-dati-schede-A1.33.yaml, modello-dati-schede-A1.34.yaml, modello-dati-schede-A1.35.yaml, modello-dati-schede-A1.36.yaml, modello-dati-schede-A1.37.yaml, modello-dati-schede-A2.29.yaml, modello-dati-schede-A2.30.yaml, modello-dati-schede-A2.31.yaml, modello-dati-schede-A2.32.yaml, modello-dati-schede-A2.33.yaml, modello-dati-schede-A2.34.yaml, modello-dati-schede-A2.35.yaml, modello-dati-schede-A2.36.yaml, modello-dati-schede-A2.37.yaml, modello-dati-schede-A3.1.yaml, modello-dati-schede-A3.2.yaml, modello-dati-schede-A3.3.yaml, modello-dati-schede-A3.4.yaml, modello-dati-schede-A3.5.yaml, modello-dati-schede-A3.6.yaml, modello-dati-schede-A4.1.yaml, modello-dati-schede-A4.2.yaml, modello-dati-schede-A4.3.yaml, modello-dati-schede-A4.4.yaml, modello-dati-schede-A4.5.yaml, modello-dati-schede-A4.6.yaml, modello-dati-schede-A7.1.1.yaml, modello-dati-schede-A7.1.2.yaml, modello-dati-schede-M1.yaml, modello-dati-schede-M1.40.yaml, modello-dati-schede-M2.yaml, modello-dati-schede-M2.40.yaml, modello-dati-schede-SA1.yaml, modello-dati-schede-RSU1.yaml, modello-dati-schede-ES1.yaml, modello-dati-schede-CS1.yaml, modello-dati-schede-SO1.yaml, modello-dati-schede-SQ1.yaml, modello-dati-schede-RI1.yaml, modello-dati-schede-AC1.yaml, modello-dati-schede-CL1.yaml:
+* modello-dati-schede-P*.yaml, modello-dati-schede-PL*.yaml, modello-dati-schede-AD*.yaml, modello-dati-schede-A*.yaml, modello-dati-schede-M*.yaml, modello-dati-schede-SA1.yaml, modello-dati-schede-RSU1.yaml, modello-dati-schede-ES1.yaml, modello-dati-schede-CS1.yaml, modello-dati-schede-SO1.yaml, modello-dati-schede-SQ1.yaml, modello-dati-schede-RI1.yaml, modello-dati-schede-AC1.yaml, modello-dati-schede-CL1.yaml:
   * modificata la descrizione della scheda uniformandola al file Cronologia-schede-finale.xlsx
 
 * modello-dati-schede-dati-comuni.yaml:
@@ -192,44 +192,28 @@ ref. /docs/specifiche-jws/
   * modificato l'oggetto AppaltoBaseType rendendo obbligatorio il campo categorieMerceologiche.
   * Rimosso il required del campo categorieMerceologiche dagli oggetti AppaltoP_10Type, AppaltoP_11Type, AppaltoP_12Type, AppaltoP_13Type, AppaltoP_14Type, AppaltoP_16Type, AppaltoP_17Type, AppaltoP_19Type, AppaltoP_20Type, AppaltoP_21Type. 
   * modificato l'oggetto LottoBaseType:
-  * resi obbligatori i campi categorieMerceologiche, afferenteInvestimentiPNRR, contrattiDisposizioniParticolari.
-  * eliminato il campo modalitaAcquisizione.
+  	* resi obbligatori i campi categorieMerceologiche, afferenteInvestimentiPNRR, contrattiDisposizioniParticolari.
+  	* eliminato il campo modalitaAcquisizione.
   * modificati gli oggetti LottoP_10Type, LottoP_11Type, LottoP_12Type, LottoP_13Type, LottoP_14Type, LottoP_16Type, LottoP_17Type, LottoP_19Type, LottoP_20Type, LottoP_21Type:
-  * rimosso il required dei campi categorieMerceologiche, afferenteInvestimentiPNRR, contrattiDisposizioniParticolari
-  * aggiunto il campo modalitaAcquisizione
+  	* rimosso il required dei campi categorieMerceologiche, afferenteInvestimentiPNRR, contrattiDisposizioniParticolari
+  	* aggiunto il campo modalitaAcquisizione
   * modificato l'oggetto DatiBaseProceduraType rendendo obbligatorio il campo tipoProcedura
   * aggiunto l'oggetto DatiBaseProceduraOptionalType che non prevede il campo tipoProcedura obbligatorio
   * modificato l'oggetto AppaltoPLCompletoType cambiando la reference da DatiBaseProceduraType a DatiBaseProceduraOptionalType
   * modificato l'oggetto AppaltoP4BaseType: modificata la property datiBaseProcedura togliendo il required perché inserito nell'oggetto DatiBaseProceduraType referenziato 
   * modificato l'oggetto AppaltoP7BaseType: modificata la property datiBaseProcedura togliendo il required perché inserito nell'oggetto DatiBaseProceduraType referenziato 
-  * aggiunto l'oggetto DatiBaseDocumentiOptionalType con tutti gli attributi opzionali
   * modificato l'oggetto DatiBaseDocumentiType rendendo required la url
   * modificati gli oggetti LottoP6BaseType e LottoP7BaseType: cambiata la reference del campo datiBaseDocumenti da DatiBaseDocumentiType a DatiBaseDocumentiOptionalType
-  * modificato l'oggetto LottoPLBase: aggiunto il campo datiBaseDocumenti
-  * modificato l'oggetto LottoPLCompletoType: aggiunto il campo datiBaseDocumenti
-  * modificato l'oggetto LottoP4BaseType: tolto il required nel campo datiBaseDocumenti 
-  * modificato l'oggetto DatiBaseAppaltoType: aggiunto il required sull'importo
-  * aggiunto l'oggetto DatiBaseAppaltoOptionalType
-  * modificato l'oggetto AppaltoP6BaseType: tolta la property datibase
-  * modificato l'oggetto DatiBaseLottoType: aggiunto il required sull'importo
-  * aggiunto l'oggetto DatiBaseLottoOptionalType
-  * modificato l'oggetto AppaltoP6BaseType: tolta la property datibase
-  * modificato l'oggetto LottoP6BaseType: tolta la property datibase
+  * modificati gli oggetti LottoPLBase,LottoPLCompletoType,LottoP4BaseType: aggiunto il campo datiBaseDocumenti
+  * modificati gli oggetti DatiBaseAppaltoType,DatiBaseLottoType: aggiunto il required sull'importo
+  * aggiunti gli oggetti DatiBaseDocumentiOptionalType, DatiBaseAppaltoOptionalType,DatiBaseLottoOptionalType,DatiBaseAggiudicazioneOptionalType,LottoP7_2BaseType,DatiBaseLottoP7_3Type,DatiBaseCPVP7Type,DatiBaseCPVPLType,DatiBaseContrattoP7Type,DatiBaseProceduraADType, DatiBaseStrumentiProceduraAType, DatiBaseSubappaltiRequiredType
+  * modificati gli oggetti AppaltoP6BaseType,LottoP6BaseType: tolta la property datibase    
   * LottoP3BaseType eliminati i campi afferenteInvestimentiPNRR, categoria.
   * DatiBaseAggiudicazioneType: aggiunto il required
-  * aggiunto l'oggetto DatiBaseAggiudicazioneOptionalType
-  * aggiunto l'oggetto LottoP7_2BaseType
-  * aggiunto l'oggetto DatiBaseLottoP7_3Type
-  * aggiunto l'oggetto DatiBaseCPVP7Type
-  * aggiunto l'oggetto DatiBaseCPVPLType
-  * aggiunto l'oggetto DatiBaseContrattoP7Type
-  * aggiunto l'oggetto DatiBaseProceduraADType
   * modificato l'oggetto AppaltoAType: eliminato il campo relazioneUnicaSulleProcedure
   * modificati gli oggetti AppaltoA1_29Type, AppaltoA1_30Type, AppaltoA1_33Type, AppaltoA1_34Type : aggiunto il campo relazioneUnicaSulleProcedure
   * modificati gli oggetti AggiudicazioneCompletaType e AggiudicazioneBaseType: eliminato il campo numeroOfferteAmmesse
-  * modificati gli oggetti AggiudicazioneA1_29Type, AggiudicazioneA1_30Type, AggiudicazioneA1_32Type, AggiudicazioneA1_33Type, AggiudicazioneA1_34Type, AggiudicazioneA1_35Type, AggiudicazioneA1_36Type, AggiudicazioneA1_37Type, AggiudicazioneA4Type: aggiunto il campo numeroOfferteAmmesse
-  * aggiunto l'oggetto DatiBaseStrumentiProceduraAType
-  * aggiunto l'oggetto DatiBaseSubappaltiRequiredType    
+  * modificati gli oggetti AggiudicazioneA1_29Type, AggiudicazioneA1_30Type, AggiudicazioneA1_32Type, AggiudicazioneA1_33Type, AggiudicazioneA1_34Type, AggiudicazioneA1_35Type, AggiudicazioneA1_36Type, AggiudicazioneA1_37Type, AggiudicazioneA4Type: aggiunto il campo numeroOfferteAmmesse  
 
 * modello-dati-schede-A2.32.yaml, modello-dati-schede-A2.33.yaml, modello-dati-schede-A2.34.yaml, modello-dati-schede-A2.35.yaml:
   * modificata la property datiBaseAggiudicazioneSubappalto: sostituito il puntamento all'oggetto DatiBaseAggiudicazioneSubappaltoType con DatiBaseSubappaltiType
