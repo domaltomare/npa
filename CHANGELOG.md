@@ -213,7 +213,8 @@ ref. /docs/specifiche-jws/
   * modificato l'oggetto AppaltoAType: eliminato il campo relazioneUnicaSulleProcedure
   * modificati gli oggetti AppaltoA1_29Type, AppaltoA1_30Type, AppaltoA1_33Type, AppaltoA1_34Type : aggiunto il campo relazioneUnicaSulleProcedure
   * modificati gli oggetti AggiudicazioneCompletaType e AggiudicazioneBaseType: eliminato il campo numeroOfferteAmmesse
-  * modificati gli oggetti AggiudicazioneA1_29Type, AggiudicazioneA1_30Type, AggiudicazioneA1_32Type, AggiudicazioneA1_33Type, AggiudicazioneA1_34Type, AggiudicazioneA1_35Type, AggiudicazioneA1_36Type, AggiudicazioneA1_37Type, AggiudicazioneA4Type: aggiunto il campo numeroOfferteAmmesse  
+  * modificati gli oggetti AggiudicazioneA1_29Type, AggiudicazioneA1_30Type, AggiudicazioneA1_32Type, AggiudicazioneA1_33Type, AggiudicazioneA1_34Type, AggiudicazioneA1_35Type, AggiudicazioneA1_36Type, AggiudicazioneA1_37Type, AggiudicazioneA4Type: aggiunto il campo numeroOfferteAmmesse
+  * modificati gli oggetti ModificaContrattualeType,ModificaContrattuale_40Type: tolta la property idcontratto
 
 * modello-dati-schede-A2.32.yaml, modello-dati-schede-A2.33.yaml, modello-dati-schede-A2.34.yaml, modello-dati-schede-A2.35.yaml:
   * modificata la property datiBaseAggiudicazioneSubappalto: sostituito il puntamento all'oggetto DatiBaseAggiudicazioneSubappaltoType con DatiBaseSubappaltiType
@@ -274,6 +275,11 @@ ref. /docs/specifiche-jws/
 
 * modello-dati-schede-NAG.yaml:
 	* tolto il required dalla property datiBaseRisultatoProcedura
+
+* modello-dati-schede-M1.yaml,modello-dati-schede-M1.40.yaml,modello-dati-schede-M2.yaml,modello-dati-schede-M2.40.yaml:
+	* modificato l'array delle modifiche contrattuali in property singola.
+	* spostato l'idcontratto dalla property modifica all'anac form.
+   
 ### Tipologiche
 * subappalto.json:
   * modificati i valori secondo la codelist Applicability del TED
