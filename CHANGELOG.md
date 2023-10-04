@@ -181,6 +181,7 @@ ref. /docs/specifiche-jws/
 ## Modello Dati 
 
 ### Regole
+* A3_1.dmn, A2_30.dmn, A2_33.dmn, A2_34.dmn,A3_2.dmn,A3_3.dmn,A3_4.dmn,A3_5.dmn,A3_6.dmn,A1_34.dmn,A1_33.dmn,A1_30.dmn,A1_32.dmn, A2_32.dmn,A1_35.dmn,A2_35.dmn, A2_29.dmn, A1_29.dmn: aggiornate regole
 
 ### Schede
 * modello-dati-schede-P*.yaml, modello-dati-schede-PL*.yaml, modello-dati-schede-AD*.yaml, modello-dati-schede-A*.yaml, modello-dati-schede-M*.yaml, modello-dati-schede-SA1.yaml, modello-dati-schede-RSU1.yaml, modello-dati-schede-ES1.yaml, modello-dati-schede-CS1.yaml, modello-dati-schede-SO1.yaml, modello-dati-schede-SQ1.yaml, modello-dati-schede-RI1.yaml, modello-dati-schede-AC1.yaml, modello-dati-schede-CL1.yaml:
