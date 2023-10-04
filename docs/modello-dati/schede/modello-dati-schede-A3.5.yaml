@@ -16,8 +16,7 @@ components:
           type: boolean             
         datiBaseSubappalti:
           allOf: 
-          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiType' 
-          required: [subAppalto]      
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiType'                
     AggiudicazioneA3_5Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
@@ -41,7 +40,6 @@ components:
         datiBaseRisultatoProcedura:
           allOf: 
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseEsitoRisultatoProceduraType' 
-          required: [esito,giustificazione]
         datiBaseAggiudicazioneAppalto:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'          
         datiBaseAccessibilita:

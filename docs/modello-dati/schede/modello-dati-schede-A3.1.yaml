@@ -13,7 +13,6 @@ components:
         datiBaseSubappalti:
           allOf: 
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiType' 
-          required: [subAppalto]
     AggiudicazioneA3_1Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       allOf: # estende la classe AggiudicazioneCompletaType
