@@ -176,7 +176,8 @@ ref. /docs/specifiche-jws/
   * creato un nuovo file con la roadmap prevista per l'attivazione dei controlli di correttezza formale e sostanziale del JWS token 
 </details>
 
-# Note di rilascio del 09/10/2023
+<details>
+<summary><h1>Note di rilascio del 09/10/2023</h1></summary>
 
 ## Modello Dati 
 
@@ -288,6 +289,24 @@ ref. /docs/specifiche-jws/
   * aggiornate descrizioni
   * inserito nuovo messaggio di errore ERR65
   * inserito nuovo messaggio di errore ERR66
+    
+## Orchestratore
+
+## Specifiche Interfacce
+</details>
+
+# Note di rilascio del gg/mm/aaaa
+
+## Modello Dati 
+
+### Regole
+
+
+### Schede
+
+   
+### Tipologiche
+
     
 ## Orchestratore
 
