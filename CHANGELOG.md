@@ -176,7 +176,7 @@ ref. /docs/specifiche-jws/
   * creato un nuovo file con la roadmap prevista per l'attivazione dei controlli di correttezza formale e sostanziale del JWS token 
 </details>
 
-# Note di rilascio del gg/mm/aaaa
+# Note di rilascio del 09/10/2023
 
 ## Modello Dati 
 
