@@ -290,9 +290,6 @@ ref. /docs/specifiche-jws/
   * inserito nuovo messaggio di errore ERR65
   * inserito nuovo messaggio di errore ERR66
     
-## Orchestratore
-
-## Specifiche Interfacce
 </details>
 
 # Note di rilascio del gg/mm/aaaa
