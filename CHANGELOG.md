@@ -186,7 +186,7 @@ ref. /docs/specifiche-jws/
 
 ### Schede
 * modello-dati-schede-P*.yaml, modello-dati-schede-PL*.yaml, modello-dati-schede-AD*.yaml, modello-dati-schede-A*.yaml, modello-dati-schede-M*.yaml, modello-dati-schede-SA1.yaml, modello-dati-schede-RSU1.yaml, modello-dati-schede-ES1.yaml, modello-dati-schede-CS1.yaml, modello-dati-schede-SO1.yaml, modello-dati-schede-SQ1.yaml, modello-dati-schede-RI1.yaml, modello-dati-schede-AC1.yaml, modello-dati-schede-CL1.yaml:
-  * modificata la descrizione della scheda uniformandola al file Cronologia-schede-finale.xlsx
+  * modificata la descrizione della scheda
 
 * modello-dati-schede-dati-comuni.yaml:
   * eliminato l'oggetto DatiBaseAggiudicazioneSubappaltoType
