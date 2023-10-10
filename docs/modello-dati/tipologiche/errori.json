@@ -591,6 +591,33 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR67",
+    "descrizione": {
+		"it": "errore generico durante la comunicazione con l'anagrafe AUSA",
+		"en": "errore generico durante la comunicazione con l'anagrafe AUSA"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR68",
+    "descrizione": {
+		"it": "l'anagrafica SA presente nella lista delle stazioni appaltanti non è coerente con l'anagrafe AUSA",
+		"en": "l'anagrafica SA presente nella lista delle stazioni appaltanti non è coerente con l'anagrafe AUSA"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR69",
+    "descrizione": {
+		"it": "il centro di costo SA presente nella lista delle stazioni appaltanti non è coerente con l'anagrafe AUSA",
+		"en": "il centro di costo SA presente nella lista delle stazioni appaltanti non è coerente con l'anagrafe AUSA"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
