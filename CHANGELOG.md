@@ -303,8 +303,11 @@ ref. /docs/specifiche-jws/
 
    
 ### Tipologiche
+* errori.json
+  * inserito nuovo messaggio di errore ERR67
+  * inserito nuovo messaggio di errore ERR68
+  * inserito nuovo messaggio di errore ERR69
 
-    
 ## Orchestratore
 
 ## Specifiche Interfacce
