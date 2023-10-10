@@ -307,6 +307,7 @@ ref. /docs/specifiche-jws/
   * inserito nuovo messaggio di errore ERR67
   * inserito nuovo messaggio di errore ERR68
   * inserito nuovo messaggio di errore ERR69
+  * inserito nuovo messaggio di errore ERR70
 
 ## Orchestratore
 
