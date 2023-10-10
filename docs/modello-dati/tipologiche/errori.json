@@ -618,7 +618,16 @@
 	},
     "dataInizio":null,
     "dataFine":null
-},	
+},
+{
+    "codice":"ERR70",
+    "descrizione": {
+		"it": "la lista delle stazioni appaltanti è vuota",
+		"en": "la lista delle stazioni appaltanti è vuota"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},		
 {
     "codice":"ERR9999",
     "descrizione": {
