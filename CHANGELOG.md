@@ -295,7 +295,8 @@ ref. /docs/specifiche-jws/
 # Note di rilascio del gg/mm/aaaa
 
 ## Modello Dati 
-
+* modello-dati-fvoe-fva.yaml:
+  * modificato tipoDato idRichiesta di RichiediDocumentoResponse 
 ### Regole
 
 
