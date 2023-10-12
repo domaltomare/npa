@@ -296,7 +296,10 @@ ref. /docs/specifiche-jws/
 
 ## Modello Dati 
 * modello-dati-fvoe-fva.yaml:
-  * modificato tipoDato idRichiesta di RichiediDocumentoResponse 
+  * modificato tipoDato idRichiesta di RichiediDocumentoResponse
+* modello-dati-npa.yaml:
+  * aggiunto il type string per l'attributo lotIdentifier in LottoType
+
 ### Regole
 
 
