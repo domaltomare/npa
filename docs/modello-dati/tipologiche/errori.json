@@ -627,7 +627,25 @@
 	},
     "dataInizio":null,
     "dataFine":null
-},		
+},
+{
+    "codice":"ERR71",
+    "descrizione": {
+		"it": "operazione non consentita: la notice-id dell'eForm non coincide con quella inviata in precedenza",
+		"en": "operazione non consentita: la notice-id dell'eForm non coincide con quella inviata in precedenza"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR72",
+    "descrizione": {
+		"it": "operazione non consentita: la version-id dell'eForm coincide con quella inviata in precedenza",
+		"en": "operazione non consentita: la version-id dell'eForm coincide con quella inviata in precedenza"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
 {
     "codice":"ERR9999",
     "descrizione": {
