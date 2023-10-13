@@ -647,6 +647,15 @@
     "dataFine":null
 },
 {
+    "codice":"ERR73",
+    "descrizione": {
+		"it": "operazione non consentita: il codiceAppalto indicato nella scheda non coincide con quello inviato in precedenza",
+		"en": "operazione non consentita: il codiceAppalto indicato nella scheda non coincide con quello inviato in precedenza"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
