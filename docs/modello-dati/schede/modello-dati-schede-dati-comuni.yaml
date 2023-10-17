@@ -2689,7 +2689,7 @@ components:
           $ref: '#/components/schemas/DatiBaseRisultatoProceduraType'
         datiBaseSubappalti:
           $ref: '#/components/schemas/DatiBaseSubappaltiType'
-        datibaseAggiudicazioneAppalto:
+        datiBaseAggiudicazioneAppalto:
           $ref: '#/components/schemas/DatiBaseAggiudicazioneAppaltoType' 
         datiBaseAccessibilita:
           $ref: '#/components/schemas/DatiBaseAccessibilitaType'
