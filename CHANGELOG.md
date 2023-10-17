@@ -316,7 +316,7 @@ ref. /docs/specifiche-jws/
   * inserito nuovo messaggio di errore ERR72
   * inserito nuovo messaggio di errore ERR73
 * tipoRuolo.json
-  * aggiornati valori tipologica
+  * aggiunti i nuovi valori DRP1, DRP2, DRP3 ed eliminato DRP
 
 ## Orchestratore
 
