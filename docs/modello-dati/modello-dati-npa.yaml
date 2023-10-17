@@ -587,6 +587,31 @@ components:
             type: array
             items:
               $ref: '#/components/schemas/ErroriEnum'
+      ProfiloSAType :
+        description: Proflio della SA
+        type: object
+        additionalProperties: false
+        properties:
+          codiceAusa:
+            description: codice Ausa della Stazione Appaltante. 
+            type: string
+            example: "0000322617"
+          codiceFiscale:
+            description: codice fiscale della Stazione Appaltante.
+            type: string
+            example: "80011600199"
+          denominazione:
+            description: denominazione della Stazione Appaltante.
+            type: string
+            example: "LICEO SCIENTIFICO STATALET.VAMINOPAVIA"
+          idCentroDiCosto:
+            description: Identificativo univo del centro di costo della Stazione Appaltante
+            type: string
+            example: "F4CBB277-C068-4CC8-B7EC-EE1222CDF911"  
+          centroDiCosto:
+            description: Denominazione del centro di costo della Stazione Appaltante
+            type: string
+            example: "LICEO SCIENTIFICO T. VAMINO - PAVIA"           
       TipoAzioneAvvisoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneAvvisoEnum'
       TipoAvvisoEnum:
