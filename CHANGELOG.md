@@ -299,7 +299,7 @@ ref. /docs/specifiche-jws/
   * modificato tipoDato idRichiesta di RichiediDocumentoResponse
 * modello-dati-npa.yaml:
   * aggiunto il type string per l'attributo lotIdentifier in LottoType
-
+  * aggiunto ProfiloSAType utilizzato dall'operazione /recupera-profilo
 ### Regole
 
 
@@ -321,5 +321,6 @@ ref. /docs/specifiche-jws/
 ## Orchestratore
 
 ## Specifiche Interfacce
-
+* specifiche-servizi-appalto.yaml:
+  * inserita operazione /recupero-profilo 
 ## Documentazione
