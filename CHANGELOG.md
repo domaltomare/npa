@@ -322,5 +322,5 @@ ref. /docs/specifiche-jws/
 
 ## Specifiche Interfacce
 * specifiche-servizi-appalto.yaml:
-  * inserita operazione /recupero-profilo 
+  * inserita operazione /recupera-profilo 
 ## Documentazione
