@@ -308,14 +308,7 @@ ref. /docs/specifiche-jws/
    
 ### Tipologiche
 * errori.json
-  * inserito nuovo messaggio di errore ERR67
-  * inserito nuovo messaggio di errore ERR68
-  * inserito nuovo messaggio di errore ERR69
-  * inserito nuovo messaggio di errore ERR70
-  * inserito nuovo messaggio di errore ERR71
-  * inserito nuovo messaggio di errore ERR72
-  * inserito nuovo messaggio di errore ERR73
-  * inserito nuovo messaggio di errore SEC14
+  * aggiunti i seguenti messaggio di errore: ERR67, ERR68, ERR69, ERR70, ERR71, ERR72, ERR73, ERR74, SEC14
 * tipoRuolo.json
   * aggiunti i nuovi valori DRP1, DRP2, DRP3 ed eliminato DRP
 
