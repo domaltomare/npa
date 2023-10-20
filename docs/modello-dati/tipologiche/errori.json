@@ -654,6 +654,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR74",
+    "descrizione": {
+		"it": "codice fiscale duplicato nell'elenco partecipanti",
+		"en": "codice fiscale duplicato nell'elenco partecipanti"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
