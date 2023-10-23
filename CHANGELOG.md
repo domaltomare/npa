@@ -316,5 +316,7 @@ ref. /docs/specifiche-jws/
 
 ## Specifiche Interfacce
 * specifiche-servizi-appalto.yaml:
-  * inserita operazione /recupera-profilo 
+  * inserita operazione /recupera-profilo
+* documento-specifiche-servizi-npa.md
+  * aggiornamento dei ruoli nei paragrafi 4.4 Utenti e ruoli e 4.5 Servizi e ruoli  
 ## Documentazione
