@@ -663,6 +663,24 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR75",
+    "descrizione": {
+		"it": "il codice fiscale non è autorizzato come soggetto delegato per le stazioni appaltanti presenti nella scheda",
+		"en": "il codice fiscale non è autorizzato come soggetto delegato per le stazioni appaltanti presenti nella scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR76",
+    "descrizione": {
+		"it": "non è possibile associare un soggetto delegato in quanto non è presente la lista delle stazioni appaltanti nella scheda",
+		"en": "non è possibile associare un soggetto delegato in quanto non è presente la lista delle stazioni appaltanti nella scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
