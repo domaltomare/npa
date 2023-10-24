@@ -311,6 +311,8 @@ ref. /docs/specifiche-jws/
   * aggiunti i seguenti messaggi di errore: ERR67, ERR68, ERR69, ERR70, ERR71, ERR72, ERR73, ERR74, SEC14
 * tipoRuolo.json
   * aggiunti i nuovi valori DRP1, DRP2, DRP3 ed eliminato DRP
+* statoContratto.json
+  * aggiornati i valori della tipologica
 
 ## Orchestratore
 
