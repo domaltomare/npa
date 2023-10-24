@@ -622,8 +622,8 @@
 {
     "codice":"ERR70",
     "descrizione": {
-		"it": "la lista delle stazioni appaltanti è vuota",
-		"en": "la lista delle stazioni appaltanti è vuota"
+		"it": "la lista delle stazioni appaltanti nella scheda è vuota",
+		"en": "la lista delle stazioni appaltanti nella scheda è vuota"
 	},
     "dataInizio":null,
     "dataFine":null
