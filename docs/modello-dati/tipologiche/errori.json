@@ -681,6 +681,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR77",
+    "descrizione": {
+		"it": "lotto non presente o il partecipante non è un soggetto aggiudicatario per il lotto",
+		"en": "lotto non presente o il partecipante non è un soggetto aggiudicatario per il lotto"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
