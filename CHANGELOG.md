@@ -320,5 +320,7 @@ ref. /docs/specifiche-jws/
 * specifiche-servizi-appalto.yaml:
   * inserita operazione /recupera-profilo
 * documento-specifiche-servizi-npa.md
-  * aggiornamento dei ruoli nei paragrafi 4.4 Utenti e ruoli e 4.5 Servizi e ruoli  
+  * aggiornamento dei ruoli nei paragrafi 4.4 Utenti e ruoli e 4.5 Servizi e ruoli
+    
 ## Documentazione
+* Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.9.0).
