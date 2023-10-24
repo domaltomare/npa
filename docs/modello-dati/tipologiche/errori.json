@@ -685,8 +685,26 @@
 {
     "codice":"ERR77",
     "descrizione": {
-		"it": "lotto non presente o il partecipante non è un soggetto aggiudicatario per il lotto",
-		"en": "lotto non presente o il partecipante non è un soggetto aggiudicatario per il lotto"
+		"it": "il partecipante non è valido per il lotto",
+		"en": "il partecipante non è valido per il lotto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR78",
+    "descrizione": {
+		"it": "il partecipante non è un soggetto aggiudicatario per il lotto",
+		"en": "il partecipante non è un soggetto aggiudicatario per il lotto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR79",
+    "descrizione": {
+		"it": "contratto già presente per il partecipante e lotto",
+		"en": "contratto già presente per il partecipante e lotto"
 	},
     "dataInizio":null,
     "dataFine":null
