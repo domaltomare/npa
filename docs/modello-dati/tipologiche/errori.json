@@ -1855,8 +1855,17 @@
 {
    "codice":"SEC14",
    "descrizione": {
-       "it": "Attenzione, esiste già un soggetto delegato in corso di validità per il ruolo indicato",
-       "en": "Attenzione, esiste già un soggetto delegato in corso di validità per il ruolo indicato"
+       "it": "Token non valido",
+       "en": "Token non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null   
+},
+{
+   "codice":"SEC15",
+   "descrizione": {
+       "it": "Soggetto Rappresentato non presente",
+       "en": "Soggetto Rappresentato non presente"
    },
    "dataInizio":null,
    "dataFine":null   
@@ -1902,7 +1911,7 @@
    "descrizione": {
        "it": "Anagrafica non presente",
        "en": "Anagrafica non presente"
-   },
+   },+
    "dataInizio":null,
    "dataFine":null
 }]
