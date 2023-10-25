@@ -746,6 +746,24 @@
     "dataFine":null
 },
 {
+    "codice":"ERR84",
+    "descrizione": {
+		"it": "la scheda indicata nel body non ha un contratto associato",
+		"en": "la scheda indicata nel body non ha un contratto associato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
+    "codice":"ERR85",
+    "descrizione": {
+		"it": "la scheda indicata nel body non ha un contratto valido per l'idAppalto",
+		"en": "la scheda indicata nel body non ha un contratto valido per l'idAppalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
