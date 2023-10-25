@@ -297,6 +297,7 @@ ref. /docs/specifiche-jws/
 ## Modello Dati 
 * modello-dati-fvoe-fva.yaml:
   * modificato tipoDato idRichiesta di RichiediDocumentoResponse
+  * aggiunto attributo personaGiuridica in AnagraficaOEType utilizzato dall'operazione /recupera-anagrafica-oe
 * modello-dati-npa.yaml:
   * aggiunto il type string per l'attributo lotIdentifier in LottoType
   * aggiunto ProfiloSAType utilizzato dall'operazione /recupera-profilo
@@ -321,6 +322,8 @@ ref. /docs/specifiche-jws/
   * inserita operazione /recupera-profilo
 * documento-specifiche-servizi-npa.md
   * aggiornamento dei ruoli nei paragrafi 4.4 Utenti e ruoli e 4.5 Servizi e ruoli
+* modello-dati-persona-giuridica.yaml:
+  * nuovo file che riporta il modello dati della persona giuridica restituita dall'operazione /recupera-anagrafica-oe
     
 ## Documentazione
 * Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.9.0).
