@@ -1869,4 +1869,40 @@
    },
    "dataInizio":null,
    "dataFine":null
+},	
+{
+   "codice":"FVX31",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Configurazione Servizio - Non Disponibile",
+       "en": "Errore Servizio esterno. Configurazione Servizio - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX32",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Controllo Autorizzazione Servizio - Non Disponibile",
+       "en": "Errore Servizio esterno. Controllo Autorizzazione Servizio - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX33",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Persona Giuridica Servizio - Non Disponibile",
+       "en": "Errore Servizio esterno. Persona Giuridica Servizio - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},	
+{
+   "codice":"FVX34",
+   "descrizione": {
+       "it": "Anagrafica non presente",
+       "en": "Anagrafica non presente"
+   },
+   "dataInizio":null,
+   "dataFine":null
 }]
