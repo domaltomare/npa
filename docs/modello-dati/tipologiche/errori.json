@@ -757,8 +757,8 @@
 {
     "codice":"ERR85",
     "descrizione": {
-		"it": "la scheda indicata nel body non ha un contratto valido per l'idAppalto",
-		"en": "la scheda indicata nel body non ha un contratto valido per l'idAppalto"
+		"it": "il contratto associato alla scheda indicata nel body non è coerente con l'idAppalto",
+		"en": "il contratto associato alla scheda indicata nel body non è coerente con l'idAppalto"
 	},
     "dataInizio":null,
     "dataFine":null
