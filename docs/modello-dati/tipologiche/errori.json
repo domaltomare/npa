@@ -708,6 +708,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+   "codice":"ERR80",
+   "descrizione": {
+       "it": "esiste già un soggetto delegato in corso di validità per il ruolo indicato",
+       "en": "esiste già un soggetto delegato in corso di validità per il ruolo indicato"
+   },
+   "dataInizio":null,
+   "dataFine":null   
 },	
 {
     "codice":"ERR9999",
