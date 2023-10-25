@@ -717,7 +717,34 @@
    },
    "dataInizio":null,
    "dataFine":null   
-},	
+},
+{
+    "codice":"ERR81",
+    "descrizione": {
+		"it": "la scheda indicata nel body non è stata trovata",
+		"en": "la scheda indicata nel body non è stata trovata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR82",
+    "descrizione": {
+		"it": "la scheda indicata nel body è una scheda iniziale",
+		"en": "la scheda indicata nel body è una scheda iniziale"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR83",
+    "descrizione": {
+		"it": "mancata coerenza tra idAppalto e la scheda indicata nel body",
+		"en": "mancata coerenza tra idAppalto e la scheda indicata nel body"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
 {
     "codice":"ERR9999",
     "descrizione": {
