@@ -762,6 +762,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR86",
+    "descrizione": {
+		"it": "codiceAusa non presente nella lista delle stazioni appaltanti della scheda di indizione",
+		"en": "codiceAusa non presente nella lista delle stazioni appaltanti della scheda di indizione"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
