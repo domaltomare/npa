@@ -771,6 +771,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR87",
+    "descrizione": {
+		"it": "per il lotto risultano offerte presentate duplicate per lo stesso idPartecipante",
+		"en": "per il lotto risultano offerte presentate duplicate per lo stesso idPartecipante"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
