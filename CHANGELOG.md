@@ -309,7 +309,7 @@ ref. /docs/specifiche-jws/
    
 ### Tipologiche
 * errori.json
-  * aggiunti i seguenti messaggi di errore: ERR67, ERR68, ERR69, ERR70, ERR71, ERR72, ERR73, ERR74, ERR75, ERR76, ERR77, ERR78, ERR79, ERR80, ERR81, ERR82, ERR83, ERR84, ERR85, ERR86, ERR87, SEC14, SEC15, FVX31, FVX32, FVX33, FVX34
+  * aggiunti i seguenti messaggi di errore: ERR67, ERR68, ERR69, ERR70, ERR71, ERR72, ERR73, ERR74, ERR75, ERR76, ERR77, ERR78, ERR79, ERR80, ERR81, ERR82, ERR83, ERR84, ERR85, ERR86, ERR87,ERR88, SEC14, SEC15, FVX31, FVX32, FVX33, FVX34
 * tipoRuolo.json
   * aggiunti i nuovi valori DRP1, DRP2, DRP3 ed eliminato DRP
 * statoContratto.json
