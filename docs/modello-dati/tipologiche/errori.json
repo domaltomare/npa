@@ -780,6 +780,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR88",
+    "descrizione": {
+		"it": "il codice della scheda indicata nel body non è valida secondo le regole di correlazione definite dall'orchestratore",
+		"en": "il codice della scheda indicata nel body non è valida secondo le regole di correlazione definite dall'orchestratore"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
