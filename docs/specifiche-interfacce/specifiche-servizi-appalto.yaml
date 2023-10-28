@@ -1281,12 +1281,18 @@ paths:
       parameters:
         - in: query
           name: idAppalto
-          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
-          required: true
+          description: identificativo univoco dell'Appalto definito da ANAC. Obbligatorio se idPianificazione non è stato valorizzato (A UUID specified by RFC4122)
           schema:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        - in: query
+          name: idPianificazione
+          description: identificativo univoco della Pianificazione definito da ANAC. Obbligatorio se idAppalto non è stato valorizzato (A UUID specified by RFC4122)
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"            
         - in: query
           name: tipoOperazione
           description: Tipo operazione di cui si vuole conoscere l'esito - fare riferimento ai valori contenuti nel file [tipoOperazione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/tipoOperazione.json)
