@@ -789,6 +789,24 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR89",
+    "descrizione": {
+		"it": "operazione non consentita: è in corso una richiesta di verifica piano",
+		"en": "operazione non consentita: è in corso una richiesta di verifica piano"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR90",
+    "descrizione": {
+		"it": "operazione non consentita: è in corso una richiesta di conferma piano",
+		"en": "operazione non consentita: è in corso una richiesta di conferma piano"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
