@@ -807,6 +807,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR91",
+    "descrizione": {
+		"it": "scheda non ammessa in questa fase del piano",
+		"en": "scheda non ammessa in questa fase del piano"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
