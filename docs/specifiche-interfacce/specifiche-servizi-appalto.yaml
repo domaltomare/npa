@@ -2179,6 +2179,7 @@ components:
       required:  # List the required properties here
         - idAvviso
         - idAppalto
+        - scheda
       properties:
         idAvviso:
           description: identificativo univoco dell'Avviso generato da ANAC.
