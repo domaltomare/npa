@@ -1862,6 +1862,8 @@ components:
       description: Oggetto in ingresso al servizio    
       type: object
       additionalProperties: false
+      required:  # List the required properties here
+        - scheda
       properties:
         scheda:
           $ref: '#/components/schemas/SchedaComunicaAppaltoType'
@@ -1871,6 +1873,7 @@ components:
       additionalProperties: false
       required:  # List the required properties here
         - idAppalto
+        - scheda
       properties:
         idAppalto:
           description: identificativo univoco dell'Appalto generato da ANAC.
@@ -1924,6 +1927,8 @@ components:
       description: Oggetto in ingresso al servizio    
       type: object
       additionalProperties: false
+      required:
+        - scheda
       properties:
         scheda:
           $ref: '#/components/schemas/SchedaPianificazioneType'
@@ -1933,6 +1938,7 @@ components:
       additionalProperties: false
       required:  # List the required properties here
         - idPianificazione
+        - scheda
       properties:
         idPianificazione:
           description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Pianificazione. (A UUID specified by RFC4122)
