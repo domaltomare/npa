@@ -315,6 +315,8 @@ ref. /docs/specifiche-jws/
   * aggiunti i nuovi valori DRP1, DRP2, DRP3 ed eliminato DRP
 * statoContratto.json
   * aggiornati i valori della tipologica
+* tipoPiano.json
+  * aggiornati i valori della tipologica
 
 ## Orchestratore
 
