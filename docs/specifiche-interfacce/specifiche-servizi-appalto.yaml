@@ -827,13 +827,6 @@ paths:
           schema:
             type: string
             example: 9050626CD6
-        - in: query    
-          name: idPianificazione
-          description:  identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by FC4122). Obbligatorio se codiceAppalto e cig non sono stati valorizzati.
-          schema:
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"              
         - in: query
           name: stato
           description: Codice Stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
@@ -854,6 +847,13 @@ paths:
             type: string
             format: date-time
           example: '2022-01-23T12:02:05Z'
+        - in: query    
+          name: idPianificazione
+          description:  identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by FC4122). Obbligatorio se codiceAppalto e cig non sono stati valorizzati.
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
         - in: query
           name: statoAvviso
           description: Codice Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file [statoAvviso.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoAvviso.json)
