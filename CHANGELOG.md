@@ -327,6 +327,7 @@ ref. /docs/specifiche-jws/
   * per le operation /modifica-avviso, /rettifica-avviso, /cancella-avviso, /ricerca-avviso aggiunto in input idPianificazione
 * documento-specifiche-servizi-npa.md
   * aggiornamento dei ruoli nei paragrafi 4.4 Utenti e ruoli e 4.5 Servizi e ruoli
+  * aggiornamento conferma-piano nel paragrafo 6 Contesto pianificazioneAppalto
 * modello-dati-persona-giuridica.yaml:
   * nuovo file che riporta il modello dati della persona giuridica restituita dall'operazione /recupera-anagrafica-oe
     
