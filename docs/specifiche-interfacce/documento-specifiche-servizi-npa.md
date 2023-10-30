@@ -235,7 +235,7 @@ I servizi che devono essere obbligatoriamente richiamati per questo contesto del
 
 - **crea-piano**: servizio utile per l’inserimento in bozza di un avviso di preinformazione. 
 A seguito dell’invocazione di questo servizio, il Piano transita nello stato “IN LAVORAZIONE”;
-- **conferma-piano**: servizio che ha lo scopo di validare e confermare i dati del Piano. A seguito dell’invocazione di questo servizio, lo stato del Piano transita in “CONFERMATO”. Qualora il tipo di piano lo consente, il servizio esito-operazione restituisce l'identificativo dell'avviso ad esso assegnato che la SA potrà utilizzare per la successiva invocazione di pubblica-avviso. ASINCRONO - ASIMMETRICO
+- **conferma-piano**: servizio che ha lo scopo di validare e confermare i dati del Piano. A seguito dell’invocazione di questo servizio, lo stato del Piano transita in “CONFERMATO” e, qualora il tipo di scheda lo consente, avvia la fase di pubblicazione dell'avviso. Mediante la successiva invocazione al servizio esito-operazione sarà possibile recuperare l'idAvviso assegnato. ASINCRONO - ASIMMETRICO
 
 Servizi facoltativi, una volta richiamato il crea-piano, possono essere invocati i seguenti servizi:
 - modifica-piano: servizio che va a sostituire il Piano creato precedentemente con una nuova bozza. Solo l’ultima istanza ricevuta del piano sarà oggetto delle successive fasi del processo;
