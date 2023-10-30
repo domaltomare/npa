@@ -321,7 +321,8 @@ ref. /docs/specifiche-jws/
 ## Specifiche Interfacce
 * specifiche-servizi-appalto.yaml:
   * inserita operazione /recupera-profilo
-  * per l'operation /esito-operazione aggiunto il parametro di ricerca idPianificazione
+  * per l'operation /esito-operazione aggiunto in input idPianificazione
+  * per le operation /modifica-avviso, /rettifica-avviso, /cancella-avviso, /ricerca-avviso aggiunto in input idPianificazione
 * documento-specifiche-servizi-npa.md
   * aggiornamento dei ruoli nei paragrafi 4.4 Utenti e ruoli e 4.5 Servizi e ruoli
 * modello-dati-persona-giuridica.yaml:
