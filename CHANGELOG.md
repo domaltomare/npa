@@ -308,11 +308,19 @@ ref. /docs/specifiche-jws/
   * AvvisoType estende il nuovo oggetto AvvisoCommonType e aggiunge l'attributo piano
     
 ### Regole
-
+* P1_10.dmn,P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn,P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,AD*.dmn:
+	* aggiornate regole.
 
 ### Schede
-
-   
+* modello-dati-schede-AC1.yaml:
+	* modificata descrizione scheda
+* modello-dati-schede-CS1.yaml:
+	* cambiato idcontratto con idscheda
+* modello-dati-schede-CO1.yaml:
+	* modificato l'oggetto ConclusioneType aggiungendo i campi motiviRisoluzione, dataStipula, dataEsecutivita.
+* modello-dati-schede-dati-comuni.yaml:
+	* modificato l'oggetto AggiudicazioneA4Type: corretta la label datiBaseAggiudicazioneAppalto
+  
 ### Tipologiche
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR67, ERR68, ERR69, ERR70, ERR71, ERR72, ERR73, ERR74, ERR75, ERR76, ERR77, ERR78, ERR79, ERR80, ERR81, ERR82, ERR83, ERR84, ERR85, ERR86, ERR87, ERR88, ERR89, ERR90, ERR91, ERR92, SEC14, SEC15, FVX31, FVX32, FVX33, FVX34
@@ -322,6 +330,8 @@ ref. /docs/specifiche-jws/
   * aggiornati i valori della tipologica
 * tipoPiano.json
   * aggiornati i valori della tipologica
+* tipoIncarico.json:
+	* eliminati i codici 9,11, 12, 14, 15, 16, 17 e 19
 
 ## Orchestratore
 
