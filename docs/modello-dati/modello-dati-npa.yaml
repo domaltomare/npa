@@ -320,12 +320,9 @@ components:
       AvvisoBaseType:
         type: object
         additionalProperties: false
+        allOf: # estende la classe AvvisoCommonType
+          - $ref: '#/components/schemas/AvvisoCommonType'
         properties:
-          idAvviso:
-            description: identificativo univoco dell'Avviso generato da ANAC.
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
           idAppalto:
             description: identificativo univoco dell'Appalto generato da ANAC.
             type: string
@@ -335,7 +332,16 @@ components:
             description: identificativo univoco della Pianificazione generato da ANAC.
             type: string
             format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"             
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      AvvisoCommonType:
+        type: object
+        additionalProperties: false
+        properties:
+          idAvviso:
+            description: identificativo univoco dell'Avviso generato da ANAC.
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
           dataCreazione:
             description: Data di crezione dell'Avviso  (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
@@ -360,8 +366,8 @@ components:
           datiPubblicazioneIT:
             $ref: '#/components/schemas/DatiPubblicazioneITType'            
       AvvisoType:
-        allOf: # estende la classe AvvisoBaseType
-          - $ref: '#/components/schemas/AvvisoBaseType'
+        allOf: # estende la classe AvvisoCommonType
+          - $ref: '#/components/schemas/AvvisoCommonType'
         properties:
           appalto:
             $ref: '#/components/schemas/AppaltoBaseType'
@@ -668,4 +674,4 @@ components:
       StatoPianoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoPianoEnum'
       TipoPianoEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoPianoEnum'
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoPianoEnum'        
