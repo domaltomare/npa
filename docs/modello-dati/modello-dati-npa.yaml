@@ -556,7 +556,12 @@ components:
             description: identificativo univoco dell'Appalto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
             type: string
             format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"            
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+          idPianificazione:
+            description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Piano. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"              
           dataControllo:
             description: data in cui è stato effettuato il controllo sullo stato dell'avviso (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
