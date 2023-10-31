@@ -816,6 +816,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR92",
+    "descrizione": {
+		"it": "criteri di ricerca non ammessi: popolare in modo alternativo idAppalto e idPianificazione",
+		"en": "criteri di ricerca non ammessi: popolare in modo alternativo idAppalto e idPianificazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
