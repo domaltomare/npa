@@ -320,7 +320,30 @@ ref. /docs/specifiche-jws/
 	* modificato l'oggetto ConclusioneType aggiungendo i campi motiviRisoluzione, dataStipula, dataEsecutivita.
 * modello-dati-schede-dati-comuni.yaml:
 	* modificato l'oggetto AggiudicazioneA4Type: corretta la label datiBaseAggiudicazioneAppalto
-  
+ 	* ove presente sia idGruppo sia idPartecipante eliminato idGruppo in quanto sarà usato solo l’idPartecipante
+* modello-dati-schede-S1.yaml:
+	* aggiunto l'oggetto anacForm.elencoSoggettiRichiedenti[] che ingloba l’attuale modello dati definito
+ 	* rinominato idGruppo dentro soggettiInteressati in idPartecipante
+* modello-dati-schede-S2.yaml:
+	* idPartecipante: da tipo string diventa tipo uuid
+ 	* aggiunto l'oggetto anacForm.elencoSoggetti[] che ingloba l’attuale modello dati definito
+ * modello-dati-schede-S3.yaml:
+	* aggiunto l'oggetto anacForm.elencoIncarichi[] che ingloba l’attuale modello dati definito
+	* modificato l’oggetto datiPersonaGiuridica dentro incarichi[] in un array datiPersonaGiuridica[]
+ 	* modificato l’oggetto datiPersonaGiuridica dentro prestazioni[] in un array datiPersonaGiuridica[]
+ * modello-dati-schede-A3_6.yaml, modello-dati-schede-AD*.yaml:
+ 	* aggiunto l'oggetto stazioniAppaltanti
+  	* modificato l'oggetto offertePresentate in partecipanti
+   	* modificato l'oggetto aggiudicatario in partecipanti
+* modello-dati-schede-P2*.yaml:
+	* eliminata la doppia reference agli oggetti AppaltoBaseType e LottoBaseType
+* modello-dati-schede-A*.yaml:
+	*  reso idPartecipante obbligatorio
+* modello-dati-schede-P*.yaml:
+	* modificato il nome dell'attributo idSchedaPreinformazione in idPianificazione
+* modello-dati-schede-RSU1.yaml:
+	* aggiunto il campo codiceFiscaleDittaACascata
+ 	* reso il campo cpv array
 ### Tipologiche
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR67, ERR68, ERR69, ERR70, ERR71, ERR72, ERR73, ERR74, ERR75, ERR76, ERR77, ERR78, ERR79, ERR80, ERR81, ERR82, ERR83, ERR84, ERR85, ERR86, ERR87, ERR88, ERR89, ERR90, ERR91, ERR92, SEC14, SEC15, FVX31, FVX32, FVX33, FVX34
