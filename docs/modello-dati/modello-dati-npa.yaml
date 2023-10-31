@@ -324,12 +324,12 @@ components:
           - $ref: '#/components/schemas/AvvisoCommonType'
         properties:
           idAppalto:
-            description: identificativo univoco dell'Appalto generato da ANAC.
+            description: identificativo univoco dell'Appalto generato da ANAC. Valorizzato se l'avviso è relativo ad un Appalto.
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
           idPianificazione:
-            description: identificativo univoco della Pianificazione generato da ANAC.
+            description: identificativo univoco della Pianificazione generato da ANAC. Valorizzato se l'avviso è relativo ad un Piano.
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
@@ -553,12 +553,12 @@ components:
             type: string
             format: uuid
           idAppalto:
-            description: identificativo univoco dell'Appalto definito da ANAC. Restituito dall'operazione di creazione Appalto. (A UUID specified by RFC4122)
+            description: identificativo univoco dell'Appalto definito da ANAC. Valorizzato se l'avviso è relativo ad un Appalto. (A UUID specified by RFC4122)
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
           idPianificazione:
-            description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Piano. (A UUID specified by RFC4122)
+            description: identificativo univoco della Pianificazione definito da ANAC. Valorizzato se l'avviso è relativo ad un Piano. (A UUID specified by RFC4122)
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"              
