@@ -302,6 +302,10 @@ ref. /docs/specifiche-jws/
   * aggiunto il type string per l'attributo lotIdentifier in LottoType
   * aggiunto ProfiloSAType utilizzato dall'operazione /recupera-profilo
   * aggiungo l'attributo idPianificazione all'oggetto EsitoOperazioneType
+  * aggiunto l'attributo tipo all'oggetto DatiPianoBaseType
+  * aggiunto l'attributo idPianificazione all'oggetto StatoAvvisoType
+  * aggiunto AvvisoCommonType esteso da AvvisoBaseType
+    
 ### Regole
 
 
