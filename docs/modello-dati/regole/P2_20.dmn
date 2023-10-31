@@ -87,7 +87,7 @@ satisfies is defined(stazioneAppaltante.funzioniSvolte) and stazioneAppaltante.c
       <rule id="DecisionRule_P2_20_0004">
         <description>REG4_1: Tipologica motivazioneCig: la motivazione è richiesta solo se la categoria merceologica è diversa dal valore "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015". Se la categoria merceologica è "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015" allora Motivazione Richiesta Cig è null.</description>
         <inputEntry id="UnaryTests_P2_20_0010">
-          <text>(appalto.motivazioneCig.codice = null) and (some categoriaMerceologica in appalto.categorieMerceologiche satisfies categoriaMerceologica.codice != "999")</text>
+          <text>is defined(appalto.motivazioneCig) and ((appalto.motivazioneCig.codice = null) and (some categoriaMerceologica in appalto.categorieMerceologiche satisfies categoriaMerceologica.codice != "999"))</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0011">
           <text></text>
@@ -102,7 +102,7 @@ satisfies is defined(stazioneAppaltante.funzioniSvolte) and stazioneAppaltante.c
       <rule id="DecisionRule_P2_20_0005">
         <description>REG4_2: Tipologica motivazioneCig: la motivazione è richiesta solo se la categoria merceologica è diversa dal valore "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015". Se la categoria merceologica è "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015" allora Motivazione Richiesta Cig è null.</description>
         <inputEntry id="UnaryTests_P2_20_0013">
-          <text>(appalto.motivazioneCig.codice != null) and (some categoriaMerceologica in appalto.categorieMerceologiche satisfies categoriaMerceologica.codice = "999")</text>
+          <text>is defined(appalto.motivazioneCig) and ((appalto.motivazioneCig.codice != null) and (some categoriaMerceologica in appalto.categorieMerceologiche satisfies categoriaMerceologica.codice = "999"))</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0014">
           <text></text>
@@ -149,7 +149,7 @@ satisfies lotto.condizioniNegoziata != null</text>
       <rule id="DecisionRule_P2_20_0020">
         <description>REG7: E’ stata selezionata la voce ‘Somma urgenza e protezione civile’ di cui all’art. 140 co. 10 D. Lgs. 36/2023. E’ necessario valorizzare il ‘link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile’ con la URL della sezione ‘Bandi e Contratti’ dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC</description>
         <inputEntry id="UnaryTests_P2_20_0061">
-          <text>appalto.motivoUrgenza.codice = "2"</text>
+          <text>appalto.motivoUrgenza.codice = "2" and appalto.link = null</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0062">
           <text></text>
