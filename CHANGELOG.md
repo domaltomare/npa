@@ -304,7 +304,8 @@ ref. /docs/specifiche-jws/
   * aggiungo l'attributo idPianificazione all'oggetto EsitoOperazioneType
   * aggiunto l'attributo tipo all'oggetto DatiPianoBaseType
   * aggiunto l'attributo idPianificazione all'oggetto StatoAvvisoType
-  * aggiunto AvvisoCommonType esteso da AvvisoBaseType
+  * AvvisoBaseType estende il nuovo oggetto AvvisoCommonType e aggiunge gli attributi idAppalto e idPianificazione
+  * AvvisoType estende il nuovo oggetto AvvisoCommonType e aggiunge l'attributo piano
     
 ### Regole
 
