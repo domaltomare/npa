@@ -322,6 +322,7 @@ ref. /docs/specifiche-jws/
 	* modificato l'oggetto AggiudicazioneA4Type: corretta la label datiBaseAggiudicazioneAppalto
  	* ove presente sia idGruppo sia idPartecipante eliminato idGruppo in quanto sarà usato solo l’idPartecipante
   	* aggiornato il riferimento alla tipologica motivazioneCIG.json
+  	* reso obbligatorio partecipanti negli oggetti usati dalle schede di affidamento diretto
 * modello-dati-schede-S1.yaml:
 	* aggiunto l'oggetto anacForm.elencoSoggettiRichiedenti[] che ingloba l’attuale modello dati definito
  	* rinominato idGruppo dentro soggettiInteressati in idPartecipante
