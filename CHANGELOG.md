@@ -321,6 +321,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-dati-comuni.yaml:
 	* modificato l'oggetto AggiudicazioneA4Type: corretta la label datiBaseAggiudicazioneAppalto
  	* ove presente sia idGruppo sia idPartecipante eliminato idGruppo in quanto sarà usato solo l’idPartecipante
+  	* aggiornato il riferimento alla tipologica motivazioneCIG.json
 * modello-dati-schede-S1.yaml:
 	* aggiunto l'oggetto anacForm.elencoSoggettiRichiedenti[] che ingloba l’attuale modello dati definito
  	* rinominato idGruppo dentro soggettiInteressati in idPartecipante
@@ -359,6 +360,7 @@ ref. /docs/specifiche-jws/
   * nuova tipologica ad uso interno
 * statoUtilizzo.json
   * nuova tipologica ad uso interno
+* motivazioneCig.json: rinominata in motivazioneCIG.json
 
 ## Orchestratore
 
