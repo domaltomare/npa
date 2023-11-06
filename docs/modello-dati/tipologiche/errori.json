@@ -1376,6 +1376,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG78",
+    "descrizione": {
+		"it": "Indicare almeno un partecipante.",
+		"en": "Indicare almeno un partecipante."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
