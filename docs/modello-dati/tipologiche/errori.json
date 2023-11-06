@@ -775,8 +775,8 @@
 {
     "codice":"ERR87",
     "descrizione": {
-		"it": "per il lotto risultano offerte presentate duplicate per lo stesso idPartecipante",
-		"en": "per il lotto risultano offerte presentate duplicate per lo stesso idPartecipante"
+		"it": "idPartecipante duplicato per lo stesso lotto",
+		"en": "idPartecipante duplicato per lo stesso lotto"
 	},
     "dataInizio":null,
     "dataFine":null
