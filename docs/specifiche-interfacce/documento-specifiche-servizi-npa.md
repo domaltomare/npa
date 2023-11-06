@@ -147,12 +147,12 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
 | Modulo | Contesto | Servizio | Ruolo | 
   |-------------|-------------| ------------- | ------------- |
   |**Modulo NPA**|**pianificazioneAppalto**| crea-piano  | RP |  
-  |**Modulo NPA**|**pianificazioneAppalto**| modifica-piano  | RP, DRP1 |
-  |**Modulo NPA**|**pianificazioneAppalto**| cancella-piano  | RP, DRP1 |  
-  |**Modulo NPA**|**pianificazioneAppalto**| ricerca-piano  | RP, DRP1 |
-  |**Modulo NPA**|**pianificazioneAppalto**| consulta-piano  | RP, DRP1 |
-  |**Modulo NPA**|**pianificazioneAppalto**| conferma-piano  | RP, DRP1 |
-  |**Modulo NPA**|**pianificazioneAppalto**| verifica-piano  | RP, DRP1 |
+  |**Modulo NPA**|**pianificazioneAppalto**| modifica-piano  | RP |
+  |**Modulo NPA**|**pianificazioneAppalto**| cancella-piano  | RP | 
+  |**Modulo NPA**|**pianificazioneAppalto**| ricerca-piano  | RP |
+  |**Modulo NPA**|**pianificazioneAppalto**| consulta-piano  | RP |
+  |**Modulo NPA**|**pianificazioneAppalto**| conferma-piano  | RP |
+  |**Modulo NPA**|**pianificazioneAppalto**| verifica-piano  | RP |
   |**Modulo NPA**|**gestioneUtenti**| presa-carico  | RP |
   |**Modulo NPA**|**gestioneUtenti**| ricerca-soggetto  | RP, DRP1, DRP2, DRP3 |
   |**Modulo NPA**|**gestioneUtenti**| aggiungi-soggetto  | RP |
@@ -174,27 +174,27 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo NPA**|**pubblicaAvviso**| stato-avviso  | RP, DRP1 |
   |**Modulo NPA**|**pubblicaAvviso**| recupera-cig  | RP, DRP1 |
   |**Modulo NPA**|**pubblicaAvviso**| consulta-rendering-avviso  | RP, DRP1 |
-  |**Modulo NPA**|**comunicaPostPubblicazione**| crea-scheda  | RP, DRP1, DRP2, DRP3 |
-  |**Modulo NPA**|**comunicaPostPubblicazione**| modifica-scheda  | RP, DRP1, DRP2, DRP3 |
-  |**Modulo NPA**|**comunicaPostPubblicazione**| cancella-scheda  | RP, DRP1, DRP2, DRP3 |
-  |**Modulo NPA**|**comunicaPostPubblicazione**| ricerca-scheda  | RP, DRP1, DRP2, DRP3 |
-  |**Modulo NPA**|**comunicaPostPubblicazione**| consulta-scheda  | RP, DRP1, DRP2, DRP3 |
-  |**Modulo NPA**|**comunicaPostPubblicazione**| verifica-scheda  | RP, DRP1, DRP2, DRP3 |
-  |**Modulo NPA**|**comunicaPostPubblicazione**| conferma-scheda  | RP, DRP1, DRP2, DRP3 |
-  |**Modulo FVOE**|**FVOE**| richiesta-accesso-fvoe  | RP, DRP3 |
-  |**Modulo FVOE**|**FVOE**| verifica-richiesta-accesso-fvoe  | RP, DRP3 |
-  |**Modulo FVOE**|**FVOE**| ricerca-documenti-fvoe  | RP, DRP3 |
-  |**Modulo FVOE**|**FVOE**| recupera-documento-fvoe  | RP, DRP3 |
-  |**Modulo FVOE**|**FVOE**| richiedi-documenti  | RP, DRP3 |
-  |**Modulo FVOE**|**FVOE**| recupera-storico-documento-fvoe  | RP, DRP3 |
-  |**Modulo FVOE**|**FVOE**| recupero-anagrafica-oe  | RP, DRP3 |
+  |**Modulo NPA**|**comunicaPostPubblicazione**| crea-scheda  | RP, DRP2, DRP3 |
+  |**Modulo NPA**|**comunicaPostPubblicazione**| modifica-scheda  | RP, DRP2, DRP3 |
+  |**Modulo NPA**|**comunicaPostPubblicazione**| cancella-scheda  | RP, DRP2, DRP3 |
+  |**Modulo NPA**|**comunicaPostPubblicazione**| ricerca-scheda  | RP, DRP2, DRP3 |
+  |**Modulo NPA**|**comunicaPostPubblicazione**| consulta-scheda  | RP, DRP2, DRP3 |
+  |**Modulo NPA**|**comunicaPostPubblicazione**| verifica-scheda  | RP, DRP2, DRP3 |
+  |**Modulo NPA**|**comunicaPostPubblicazione**| conferma-scheda  | RP, DRP2, DRP3 |
+  |**Modulo FVOE**|**FVOE**| richiesta-accesso-fvoe  | RP,  DRP2, DRP3 |
+  |**Modulo FVOE**|**FVOE**| verifica-richiesta-accesso-fvoe  | RP, DRP2, DRP3 |
+  |**Modulo FVOE**|**FVOE**| ricerca-documenti-fvoe  | RP, DRP2, DRP3 |
+  |**Modulo FVOE**|**FVOE**| recupera-documento-fvoe  | RP, DRP2, DRP3 |
+  |**Modulo FVOE**|**FVOE**| richiedi-documenti  | RP, DRP2, DRP3 |
+  |**Modulo FVOE**|**FVOE**| recupera-storico-documento-fvoe  | RP, DRP2, DRP3 |
+  |**Modulo FVOE**|**FVOE**| recupero-anagrafica-oe  | RP, DRP2, DRP3 |
   |**Modulo FVOE**|**FVOE**| autorizza-accesso-fvoe  | *Non Applicabile* |
-  |**Modulo FVA**|**FVA**| ricerca-fascicoli-fva  | RP, DRP1 |
-  |**Modulo FVA**|**FVA**| recupera-fascicolo-fva  | RP, DRP1 |
-  |**Modulo FVA**|**FVA**| ricerca-documenti-fva  | RP, DRP1 |
-  |**Modulo FVA**|**FVA**| recupera-documento-fva  | RP, DRP1 |
-  |**Modulo FVA**|**FVA**| recupera-storico-fascicolo-fva  | RP, DRP1 |
-  |**Modulo FVA**|**FVA**| recupera-storico-documento-fva  | RP, DRP1 |
+  |**Modulo FVA**|**FVA**| ricerca-fascicoli-fva  | RP, DRP1, DRP2, DRP3  |
+  |**Modulo FVA**|**FVA**| recupera-fascicolo-fva  | RP, DRP1, DRP2, DRP3  |
+  |**Modulo FVA**|**FVA**| ricerca-documenti-fva  | RP, DRP1, DRP2, DRP3  |
+  |**Modulo FVA**|**FVA**| recupera-documento-fva  | RP, DRP1, DRP2, DRP3  |
+  |**Modulo FVA**|**FVA**| recupera-storico-fascicolo-fva  | RP, DRP1, DRP2, DRP3  |
+  |**Modulo FVA**|**FVA**| recupera-storico-documento-fva  | RP, DRP1, DRP2, DRP3  |
   |**Modulo NPA**|**Servizi comuni**| stato-appalto  | RP, DRP1, DRP2, DRP3 |
   |**Modulo NPA**|**Servizi comuni**| esito-operazione  | RP, DRP1, DRP2, DRP3 |
   |**Modulo NPA**|**Servizi comuni**| recupera-elenco-tipologiche  | * |
