@@ -155,7 +155,7 @@
   * tipologiaComunicazione.json
 * tipoContenuto.json: 
   * nuova tipologica ad uso interno
-    
+
 ## Orchestratore
 
 ## Specifiche Interfacce
@@ -354,7 +354,11 @@ ref. /docs/specifiche-jws/
 * tipoPiano.json
   * aggiornati i valori della tipologica
 * tipoIncarico.json:
-	* eliminati i codici 9,11, 12, 14, 15, 16, 17 e 19
+  * eliminati i codici 9,11, 12, 14, 15, 16, 17 e 19
+* statoComprova.json
+  * nuova tipologica ad uso interno
+* statoUtilizzo.json
+  * nuova tipologica ad uso interno
 
 ## Orchestratore
 
