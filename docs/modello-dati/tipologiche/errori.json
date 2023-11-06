@@ -825,7 +825,16 @@
 	},
     "dataInizio":null,
     "dataFine":null
-},	
+},
+{
+    "codice":"ERR93",
+    "descrizione": {
+		"it": "elenco partecipanti vuoto",
+		"en": "elenco partecipanti vuoto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
 {
     "codice":"ERR9999",
     "descrizione": {
