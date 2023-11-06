@@ -2245,7 +2245,7 @@ components:
     AggiudicazioneAD1_25Type:
       description: Oggetto che riporta i dati di aggiudicazione per gli affidamenti diretti.
       type: object
-      required: [afferenteInvestimentiPNRR,lotIdentifier]
+      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -2308,7 +2308,7 @@ components:
     AggiudicazioneAD1_26Type:
       description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
       type: object
-      required: [afferenteInvestimentiPNRR, lotIdentifier]
+      required: [afferenteInvestimentiPNRR, lotIdentifier,partecipanti]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -2371,7 +2371,7 @@ components:
     AggiudicazioneAD1_27Type:
       description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
       type: object
-      required: [lotIdentifier]
+      required: [lotIdentifier,partecipanti]
       properties:  
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -2413,7 +2413,7 @@ components:
     AggiudicazioneAD1_28Type:
       description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
       type: object
-      required: [afferenteInvestimentiPNRR,lotIdentifier]
+      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
