@@ -315,7 +315,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-AC1.yaml:
 	* modificata descrizione scheda
 * modello-dati-schede-CS1.yaml:
-	* cambiato idcontratto con idscheda
+	* cambiato idcontratto con idscheda di esito subappalto
 * modello-dati-schede-CO1.yaml:
 	* modificato l'oggetto ConclusioneType aggiungendo i campi motiviRisoluzione, dataStipula, dataEsecutivita.
 * modello-dati-schede-dati-comuni.yaml:
