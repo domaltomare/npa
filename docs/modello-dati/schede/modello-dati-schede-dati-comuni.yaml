@@ -507,7 +507,15 @@ components:
         numeroRiserveDaDefinire:
           description: Numero riserve da definire
           type: number
-          format: integer          
+          format: integer
+        impTotaleRichiesto:
+          description: Importo totale richiesto
+          type: number
+          format: double
+        impTotaleDefinizione:
+          description: Importo totale eventuale definizione
+          type: number
+          format: double          
     AggiudicatarioA1_35Type:
       description: Dati dell'aggiudicatario
       type: object
