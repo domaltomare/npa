@@ -364,7 +364,8 @@ ref. /docs/specifiche-jws/
 * motivazioneCig.json: rinominata in motivazioneCIG.json
 
 ## Orchestratore
-
+* Aggiornato il file schema-cronologia-schede.xlsx
+  
 ## Specifiche Interfacce
 * specifiche-servizi-appalto.yaml:
   * inserita operazione /recupera-profilo
