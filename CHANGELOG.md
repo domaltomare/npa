@@ -323,6 +323,7 @@ ref. /docs/specifiche-jws/
  	* ove presente sia idGruppo sia idPartecipante eliminato idGruppo in quanto sarà usato solo l’idPartecipante
   	* aggiornato il riferimento alla tipologica motivazioneCIG.json
   	* reso obbligatorio partecipanti negli oggetti usati dalle schede di affidamento diretto
+  	* aggiornato l'oggetto DefinizioneType utilizzato nella scheda di collaudo CL1
 * modello-dati-schede-S1.yaml:
 	* aggiunto l'oggetto anacForm.elencoSoggettiRichiedenti[] che ingloba l’attuale modello dati definito
  	* rinominato idGruppo dentro soggettiInteressati in idPartecipante
