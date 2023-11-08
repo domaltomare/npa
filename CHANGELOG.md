@@ -349,6 +349,8 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-RSU1.yaml:
 	* aggiunto il campo codiceFiscaleDittaACascata
  	* reso il campo cpv array
+* modello-dati-schede-SC1.yaml:
+	* modificato il tipo del campo importoCauzione in number, double.
 ### Tipologiche
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR67, ERR68, ERR69, ERR70, ERR71, ERR72, ERR73, ERR74, ERR75, ERR76, ERR77, ERR78, ERR79, ERR80, ERR81, ERR82, ERR83, ERR84, ERR85, ERR86, ERR87, ERR88, ERR89, ERR90, ERR91, ERR92, SEC14, SEC15, FVX31, FVX32, FVX33, FVX34, REG78
