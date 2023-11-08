@@ -220,6 +220,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Motivo del mancato subappalto - fare riferimento ai valori contenuti nel file [motivoMancatoSubappalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoMancatoSubappalto.json)  
+    MotivoMancataEsecuzioneSubappaltoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo della mancata esecuzione del subappalto - fare riferimento ai valori contenuti nel file [motivoMancataEsecuzioneSubappalto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoMancataEsecuzioneSubappalto.json)    
     MotiviInterruzioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
