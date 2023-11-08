@@ -316,6 +316,7 @@ ref. /docs/specifiche-jws/
 	* modificata descrizione scheda
 * modello-dati-schede-CS1.yaml:
 	* cambiato idcontratto con idscheda di esito subappalto
+ 	* aggiunto nuovo campo motivoMancataEsecuzioneSubappalto
 * modello-dati-schede-CO1.yaml:
 	* modificato l'oggetto ConclusioneType aggiungendo i campi motiviRisoluzione, dataStipula, dataEsecutivita.
 * modello-dati-schede-dati-comuni.yaml:
@@ -363,6 +364,8 @@ ref. /docs/specifiche-jws/
 * statoUtilizzo.json
   * nuova tipologica ad uso interno
 * motivazioneCig.json: rinominata in motivazioneCIG.json
+* motivoMancataEsecuzioneSubappalto.json
+	* nuova tipologica utilizzata nella scheda di conclusione di una richiesta di subappalto   
 
 ## Orchestratore
 * Aggiornato il file schema-cronologia-schede.xlsx
