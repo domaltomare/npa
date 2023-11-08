@@ -325,6 +325,7 @@ ref. /docs/specifiche-jws/
   	* aggiornato il riferimento alla tipologica motivazioneCIG.json
   	* reso obbligatorio partecipanti negli oggetti usati dalle schede di affidamento diretto
   	* aggiornato l'oggetto DefinizioneType utilizzato nella scheda di collaudo CL1
+  	* aggiunto l'enum MotivoMancataEsecuzioneSubappaltoEnum utilizzato nella scheda di conclusione subappalto CS1
 * modello-dati-schede-S1.yaml:
 	* aggiunto l'oggetto anacForm.elencoSoggettiRichiedenti[] che ingloba l’attuale modello dati definito
  	* rinominato idGruppo dentro soggettiInteressati in idPartecipante
