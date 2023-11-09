@@ -310,6 +310,8 @@ ref. /docs/specifiche-jws/
 ### Regole
 * P1_10.dmn,P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn,P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,AD*.dmn:
 	* aggiornate regole.
+ * P*.dmn, A*.dmn, AD*.dmn:
+ 	* revisionate le regole 
 
 ### Schede
 * modello-dati-schede-AC1.yaml:
