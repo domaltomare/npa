@@ -43,7 +43,7 @@
         </inputEntry>
         <inputEntry id="UnaryTests_P1_24_0041">
           <text>some lotto in lotti
-satisfies lotto.motivoEsclusioneOrdinarioSpeciale= "12"</text>
+satisfies lotto.motivoEsclusioneOrdinarioSpeciale.codice= "12"</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P1_24_0042">
           <text></text>
