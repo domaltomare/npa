@@ -326,6 +326,7 @@ ref. /docs/specifiche-jws/
   	* reso obbligatorio partecipanti negli oggetti usati dalle schede di affidamento diretto
   	* aggiornato l'oggetto DefinizioneType utilizzato nella scheda di collaudo CL1
   	* aggiunto l'enum MotivoMancataEsecuzioneSubappaltoEnum utilizzato nella scheda di conclusione subappalto CS1
+  	* riscritti gli enum in upper case
 * modello-dati-schede-S1.yaml:
 	* aggiunto l'oggetto anacForm.elencoSoggettiRichiedenti[] che ingloba l’attuale modello dati definito
  	* rinominato idGruppo dentro soggettiInteressati in idPartecipante
@@ -344,6 +345,7 @@ ref. /docs/specifiche-jws/
 	* eliminata la doppia reference agli oggetti AppaltoBaseType e LottoBaseType
 * modello-dati-schede-A*.yaml:
 	*  reso idPartecipante obbligatorio
+ 	*  reso offertePresentate obbligatorio
 * modello-dati-schede-P*.yaml:
 	* modificato il nome dell'attributo idSchedaPreinformazione in idPianificazione
 * modello-dati-schede-RSU1.yaml:
@@ -351,6 +353,8 @@ ref. /docs/specifiche-jws/
  	* reso il campo cpv array
 * modello-dati-schede-SC1.yaml:
 	* modificato il tipo del campo importoCauzione in number, double.
+* modello-dati-schede-CL1.yaml:
+	* riscritto enum in upper case. 
 ### Tipologiche
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR67, ERR68, ERR69, ERR70, ERR71, ERR72, ERR73, ERR74, ERR75, ERR76, ERR77, ERR78, ERR79, ERR80, ERR81, ERR82, ERR83, ERR84, ERR85, ERR86, ERR87, ERR88, ERR89, ERR90, ERR91, ERR92, SEC14, SEC15, FVX31, FVX32, FVX33, FVX34, REG78
