@@ -391,6 +391,8 @@ ref. /docs/specifiche-jws/
   * aggiornamento conferma-piano nel paragrafo 6 Contesto pianificazioneAppalto
 * modello-dati-persona-giuridica.yaml:
   * nuovo file che riporta il modello dati della persona giuridica restituita dall'operazione /recupera-anagrafica-oe
+* specifiche-servizi-fvoe-fva.yaml
+  * modificata la descrizione per l'operation /recupero-anagrafica-oe
     
 ## Documentazione
 * Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.9.0).
