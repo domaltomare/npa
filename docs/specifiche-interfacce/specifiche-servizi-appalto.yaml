@@ -849,7 +849,7 @@ paths:
           example: '2022-01-23T12:02:05Z'
         - in: query    
           name: idPianificazione
-          description:  identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by FC4122). Obbligatorio se codiceAppalto e cig non sono stati valorizzati.
+          description:  identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by FC4122). Obbligatorio se codiceAppalto, idAppalto e cig non sono stati valorizzati.
           schema:
             type: string
             format: uuid
