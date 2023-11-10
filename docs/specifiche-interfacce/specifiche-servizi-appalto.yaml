@@ -1689,7 +1689,7 @@ paths:
       tags:
         -  gestioneUtenti
       summary: API Rest per il recupero del profilo utente. SINCRONO
-      description: Viene recuperata il profilo utente contenene i dati della stazione appaltante che viene rappresentata . SINCRONO
+      description: Viene recuperata il profilo utente contenente i dati della stazione appaltante che viene rappresentata . SINCRONO
       operationId: idProfiloRecupera  
       responses:
         '200':
