@@ -306,6 +306,8 @@ ref. /docs/specifiche-jws/
   * aggiunto l'attributo idPianificazione all'oggetto StatoAvvisoType
   * AvvisoBaseType estende il nuovo oggetto AvvisoCommonType e aggiunge gli attributi idAppalto e idPianificazione
   * AvvisoType estende il nuovo oggetto AvvisoCommonType e aggiunge l'attributo piano
+* modello-dati-persona-giuridica.yaml:
+  * nuovo file che riporta il modello dati della persona giuridica restituita dall'operazione /recupera-anagrafica-oe    
     
 ### Regole
 * P1_10.dmn,P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn,P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,AD*.dmn:
@@ -389,8 +391,6 @@ ref. /docs/specifiche-jws/
 * documento-specifiche-servizi-npa.md
   * aggiornamento dei ruoli nei paragrafi 4.4 Utenti e ruoli e 4.5 Servizi e ruoli
   * aggiornamento conferma-piano nel paragrafo 6 Contesto pianificazioneAppalto
-* modello-dati-persona-giuridica.yaml:
-  * nuovo file che riporta il modello dati della persona giuridica restituita dall'operazione /recupera-anagrafica-oe
 * specifiche-servizi-fvoe-fva.yaml
   * modificata la descrizione per l'operation /recupero-anagrafica-oe
     
