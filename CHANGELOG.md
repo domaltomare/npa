@@ -292,7 +292,8 @@ ref. /docs/specifiche-jws/
     
 </details>
 
-# Note di rilascio del gg/mm/aaaa
+<details>
+<summary><h1> Note di rilascio del 13/11/2023</h1></summary>
 
 ## Modello Dati 
 * modello-dati-fvoe-fva.yaml:
@@ -396,3 +397,25 @@ ref. /docs/specifiche-jws/
     
 ## Documentazione
 * Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.9.0).
+</details>
+
+# Note di rilascio del gg/mm/yyyy
+
+## Modello Dati 
+   
+    
+### Regole
+
+
+### Schede
+
+### Tipologiche
+ 
+
+## Orchestratore
+
+  
+## Specifiche Interfacce
+
+    
+## Documentazione
