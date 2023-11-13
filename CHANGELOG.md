@@ -412,6 +412,8 @@ ref. /docs/specifiche-jws/
 ### Tipologiche
 * statoPiano.json
   * aggiunti i nuovi valori IN_ATT_PUBB, IN_STOP_PUBB e PUBB
+* errori.json
+  * aggiunti i seguenti messaggi di errore: ERR93
 
 ## Orchestratore
 
