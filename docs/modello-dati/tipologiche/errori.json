@@ -827,6 +827,15 @@
     "dataFine":null
 },
 {
+    "codice":"ERR93",
+    "descrizione": {
+		"it": "mancata coerenza tra idPianificazione e idAvviso",
+		"en": "mancata coerenza tra idPianificazione e idAvviso"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
