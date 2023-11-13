@@ -410,7 +410,8 @@ ref. /docs/specifiche-jws/
 ### Schede
 
 ### Tipologiche
- 
+* statoPiano.json
+  * aggiunti i nuovi valori IN_ATT_PUBB, IN_STOP_PUBB e PUBB
 
 ## Orchestratore
 
