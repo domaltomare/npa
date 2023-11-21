@@ -297,7 +297,7 @@ and count(lotto.ipotesiCollegamento.cigCollegato) &lt;2</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P1_17_0071">
           <text>some lotto in lotti
-satisfies lotto.afferenteInvestimentiPNRR and lotto.acquisizioneCup=false</text>
+satisfies lotto.afferenteInvestimentiPNRR = true and ( and lotto.acquisizioneCup = null or lotto.acquisizioneCup=false)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P1_17_0072">
           <text></text>
@@ -494,7 +494,7 @@ satisfies lotto.afferenteInvestimentiPNRR and lotto.datiBaseAccessibilita.access
         </inputEntry>
         <inputEntry id="UnaryTests_P1_17_0104">
           <text>some lotto in lotti
-satisfies (some accessibilita in lotto.datiBaseAccessibilita.accessibilita satisfies accessibilita.codice = "n-inc-just" and lotto.datiBaseAccessibilita.giustificazione = null)</text>
+satisfies lotto.datiBaseAccessibilita.accessibilita.codice = "n-inc-just" and (lotto.datiBaseAccessibilita.giustificazione = null or lotto.datiBaseAccessibilita.giustificazione="")</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P1_17_0105">
           <text></text>
