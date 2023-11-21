@@ -36,8 +36,10 @@ components:
           description: Data delibera di ammissibilità del collaudo (ove prevista)
           type: string
           format: date-time
-        esitoCollaudo:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EsitoCollaudoEnum'
+        esito:
+          description: Esito del collaudo/ verifica di conformità
+          type: string
+          enum: ['POSITIVO', 'NEGATIVO'] 
         quadroEconomicoStandard:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType'
         quadroEconomicoConcessioni:
