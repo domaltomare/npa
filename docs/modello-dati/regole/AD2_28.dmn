@@ -22,7 +22,7 @@
       <rule id="DecisionRule_1osq1ip">
         <description>REG7: E’ stata selezionata la voce ‘Somma urgenza e protezione civile’ di cui all’art. 140 co. 10 D. Lgs. 36/2023. E’ necessario valorizzare il ‘link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile’ con la URL della sezione ‘Bandi e Contratti’ dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC</description>
         <inputEntry id="UnaryTests_0uj5s08">
-          <text>appalto.motivoUrgenza.codice = "2" and appalto.linkDocumenti = null</text>
+          <text>appalto.motivoUrgenza.codice = "2" and (appalto.linkDocumenti = null or appalto.linkDocumenti ="")</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1im8dyc">
           <text></text>
@@ -34,7 +34,7 @@
       <rule id="DecisionRule_118bhk8">
         <description>REG8: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile: deve essere una url valida e quindi iniziare con http o https.</description>
         <inputEntry id="UnaryTests_0tu71l5">
-          <text>starts with(appalto.linkDocumenti,"http:") = false and starts with(appalto.linkDocumenti,"https:") = false</text>
+          <text>appalto.linkDocumenti != null and appalto.linkDocumenti != "" and starts with(appalto.linkDocumenti,"http:") = false and starts with(appalto.linkDocumenti,"https:") = false</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0kh4588">
           <text></text>
