@@ -416,6 +416,7 @@ ref. /docs/specifiche-jws/
   	* modificato l'oggetto DatiBaseAccessibilitaType: aggiunto l'attributo giustificazioneMl per il multilingua
   	* modificato l'oggetto DatiBaseModificaContrattualeType: aggiunto l'attributo causaModificaMl per il multilingua
   	* modificati gli oggetti PartecipanteType, PartecipanteADType: aggiunto l'attributo paeseOperatoreEconomicoMl per il multilingua
+  	* aggiunto il campo array categoriaScorporabile per tutti gli oggetti lotto.
 * modello-dati-schede-IR1.yaml:
 	* modificato l'oggetto RitardoType: aggiunto l'attributo motivoSospensioneMl per il multilingua
 * modello-dati-schede-P5.yaml:
@@ -434,6 +435,7 @@ ref. /docs/specifiche-jws/
 	* resi opzionali i campi consegnaFrazionata e avvioPerFasi
 * modello-dati-schede-AD5.yaml:
 	* tolti i campi codiceFiscaleSA e denominazioneSA dall'oggetto appalto.
+ 	* reso opzionale il campo cup
 ### Tipologiche
 * statoPiano.json
   * aggiunti i nuovi valori IN_ATT_PUBB, IN_STOP_PUBB e PUBB
