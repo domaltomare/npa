@@ -400,18 +400,46 @@ ref. /docs/specifiche-jws/
 # Note di rilascio del gg/mm/yyyy
 
 ## Modello Dati 
-   
-    
-### Regole
 
+### Regole
+* inserite le regole di esecuzione
+* modificata la REG8
 
 ### Schede
-
+* modello-dati-schede-AD*.yaml, modello-dati-schede-A3_6.yaml, modello-dati-schede-P7_1_1.yaml, modello-dati-schede-P7_1_2.yaml, modello-dati-schede-P7_1_3.yaml,modello-dati-schede-P7_2.yaml:
+	* inseriti gli attributi: importo, oggetto, oggetto contratto, codNuts, codIstat, categoria, ccnl
+* modello-dati-schede-AD*.yaml e modello-dati-schede-P7*.yaml:
+	* resa la cpv secondaria opzionale
+* modello-dati-schede-dati-comuni.yaml:
+	*  aggiunto l'oggetto MultilinguaType per l'invio dei dati in multilingua
+ 	* modificati gli oggetti DatiBaseAppaltoType,DatiBaseAppaltoOptionalType,DatiBaseAppaltoPLType,DatiBaseAppaltoADType,DatiBaseLottoType,DatiBaseLottoOptionalType,DatiBaseLottoPLType,DatiBaseLottoP7_3Type,DatiBaseLottoADType: aggiunto l'attributo oggettoMl per il multilingua
+  	* modificato l'oggetto DatiBaseAccessibilitaType: aggiunto l'attributo giustificazioneMl per il multilingua
+  	* modificato l'oggetto DatiBaseModificaContrattualeType: aggiunto l'attributo causaModificaMl per il multilingua
+  	* modificati gli oggetti PartecipanteType, PartecipanteADType: aggiunto l'attributo paeseOperatoreEconomicoMl per il multilingua
+* modello-dati-schede-IR1.yaml:
+	* modificato l'oggetto RitardoType: aggiunto l'attributo motivoSospensioneMl per il multilingua
+* modello-dati-schede-P5.yaml:
+	* modificato l'oggetto LottoP5Type: aggiunto l'attributo oggettoMl per il multilingua
+ 	* aggiunto l'array delle stazioni appaltanti
+* modello-dati-schede-P7.3.yaml:
+	* aggiunto l'array delle stazioni appaltanti
+ 	* tolti gli attributi idSchedaPreinformazione e termineRidottoAvvisoPreinformazione
+* modello-dati-schede-RSU1.yaml:
+	* modificato l'oggetto SubappaltoType: aggiunto l'attributo oggettoMl per il multilingua
+* modello-dati-schede-SA1.yaml: 
+	* modificato l'oggetto AvanzamentoType: aggiunto l'attributo denominazioneAvanzamentoMl per il multilingua
+* modello-dati-schede-SC1.yaml:
+	* idPartecipante: da tipo string diventa tipo uuid
+* modello-dati-schede-I1.yaml:
+	* resi opzionali i campi consegnaFrazionata e avvioPerFasi
+* modello-dati-schede-AD5.yaml:
+	* tolti i campi codiceFiscaleSA e denominazioneSA dall'oggetto appalto.
 ### Tipologiche
 * statoPiano.json
   * aggiunti i nuovi valori IN_ATT_PUBB, IN_STOP_PUBB e PUBB
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR93
+  * aggiunti i messaggi delle regole di esecuzione
 
 ## Orchestratore
 
