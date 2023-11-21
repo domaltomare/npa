@@ -56,7 +56,7 @@
         </inputEntry>
         <inputEntry id="UnaryTests_AD1_27_10_0104">
           <text>some aggiudicazione in aggiudicazioni
-satisfies (some accessibilita in aggiudicazione.datiBaseAccessibilita.accessibilita satisfies accessibilita.codice = "n-inc-just" and aggiudicazione.datiBaseAccessibilita.giustificazione = null)</text>
+satisfies aggiudicazione.datiBaseAccessibilita.accessibilita.codice = "n-inc-just" and (aggiudicazione.datiBaseAccessibilita.giustificazione = null or aggiudicazione.datiBaseAccessibilita.giustificazione ="")</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_AD1_27_10_0035">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG33\"}"</text>
@@ -82,7 +82,7 @@ satisfies count(aggiudicazione.partecipanti)&gt;1 and (every partecipante in agg
         </inputEntry>
         <inputEntry id="UnaryTests_1icqdub">
           <text>some aggiudicazione in aggiudicazioni
-satisfies some partecipante in aggiudicazione.partecipanti satisfies partecipante.ruolo.codice="2" and (partecipante.importo != null or partecipante.importo &gt; 0)</text>
+satisfies some partecipante in aggiudicazione.partecipanti satisfies partecipante.ruoloOE.codice="2" and (partecipante.importo != null or partecipante.importo &gt; 0)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0817065">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG53\"}"</text>
