@@ -239,7 +239,18 @@ components:
     ModoCollaudoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Modalità del collaudo tecnico/amministrativo/ verifica di conformità - fare riferimento ai valori contenuti nel file [modoCollaudo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modoCollaudo.json)   
+      description: Modalità del collaudo tecnico/amministrativo/ verifica di conformità - fare riferimento ai valori contenuti nel file [modoCollaudo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modoCollaudo.json) 
+    MultilinguaType:
+      description: Oggetto utilizzato per la comunicazione dei dati in multilingua
+      type: object
+      additionalProperties: false
+      properties:
+        de:
+          description: Deutsch
+          type: string
+        en: 
+          description: English
+          type: string
     IpotesiCollegamentoType:
       description: ipotesi di collegamento
       type: object
@@ -317,9 +328,9 @@ components:
           description: Deroga per adesione ad AQ/Convenzione precedente alle linee guida DPO sull’articolo 47 del DL 77/2021 e ss.m.i.?
           type: boolean
         quota30PerCento:
-          description: Previsione nel bando di gara, nell’avviso o nell’invito, dell’obbligo di assicurare, in caso di aggiudicazione del contratto, una quota pari almeno al 30 per cento, delle assunzioni necessarie per l'esecuzione del contratto o per la realizzazione di attività ad esso connesse o strumentali, sia all'occupazione giovanile sia all'occupazione femminile (articolo 47, comma 4, D.L. 77/2021)? Valori ammessi - SI/NO/SI quota inferiore
+          description: Previsione nel bando di gara, nell’avviso o nell’invito, dell’obbligo di assicurare, in caso di aggiudicazione del contratto, una quota pari almeno al 30 per cento, delle assunzioni necessarie per l'esecuzione del contratto o per la realizzazione di attività ad esso connesse o strumentali, sia all'occupazione giovanile sia all'occupazione femminile (articolo 47, comma 4, D.L. 77/2021)? Valori ammessi - SI/NO/SI_QUOTA_INFERIORE
           type: string
-          enum: ['SI', 'NO', 'SI QUOTA INFERIORE'] 
+          enum: ['SI', 'NO', 'SI_QUOTA_INFERIORE'] 
         quotaInferioreOccupFemminile:
           description: Previsione di una quota inferiore con riferimento all’occupazione femminile
           type: number
@@ -1045,7 +1056,11 @@ components:
         ipotesiCollegamento:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
-          $ref: '#/components/schemas/CategoriaEnum' 
+          $ref: '#/components/schemas/CategoriaEnum'
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
         quadroEconomicoStandard:
@@ -1088,6 +1103,10 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
         quadroEconomicoStandard:
@@ -1131,6 +1150,10 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'   
         quadroEconomicoStandard:
@@ -1172,6 +1195,10 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'          
         paritaDiGenereGenerazionale:
@@ -1211,7 +1238,11 @@ components:
         ipotesiCollegamento:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
-          $ref: '#/components/schemas/CategoriaEnum' 
+          $ref: '#/components/schemas/CategoriaEnum'
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'          
         paritaDiGenereGenerazionale:
@@ -1282,7 +1313,11 @@ components:
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         categoria:
-          $ref: '#/components/schemas/CategoriaEnum'        
+          $ref: '#/components/schemas/CategoriaEnum'      
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         prestazioniComprese:
           $ref: '#/components/schemas/PrestazioniEnum'           
         oggettoPrincipaleContratto:
@@ -1340,6 +1375,10 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'          
         paritaDiGenereGenerazionale:
@@ -1394,6 +1433,10 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'  
         quadroEconomicoStandard:
@@ -1411,6 +1454,10 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         acquisizioneCup:
           description: Il contratto è finalizzato alla realizzazione di progetti d'investimento pubblico per i quali è prevista l'acquisizione del codice CUP ai sensi dell'art. 11 L. 3/2003 e ss.mm.? (E' necessario acquisire e comunicare il CUP per interventi finanziati, anche in parte, con risorse Comunitarie) (Si/No)
           type: boolean          
@@ -1466,6 +1513,10 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'          
     LottoP_20Type:
@@ -1505,6 +1556,10 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'          
         paritaDiGenereGenerazionale:
@@ -1548,6 +1603,10 @@ components:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'          
         paritaDiGenereGenerazionale:
@@ -1714,6 +1773,10 @@ components:
             $ref: '#/components/schemas/TipologiaLavoroEnum'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum'  
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         oggettoPrincipaleContratto:
           $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
         finanziamenti:
@@ -1788,6 +1851,10 @@ components:
               $ref: '#/components/schemas/TipologiaLavoroEnum'
           categoria:
             $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'            
           finanziamenti:
             description: Dati relativi ai finanziamenti
             type: array
@@ -1887,6 +1954,10 @@ components:
             $ref: '#/components/schemas/TipologiaLavoroEnum'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         prestazioniComprese:
           $ref: '#/components/schemas/PrestazioniEnum'           
         finanziamenti:
@@ -1901,7 +1972,7 @@ components:
           - $ref: '#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:
           allOf: 
-          - $ref: '#/components/schemas/DatiBaseCPVP7Type'
+          - $ref: '#/components/schemas/DatiBaseCPVType'
         datiBaseContratto:
           allOf: 
           - $ref: '#/components/schemas/DatiBaseContrattoP7Type'
@@ -1993,6 +2064,10 @@ components:
             $ref: '#/components/schemas/TipologiaLavoroEnum'
         categoria:
           $ref: '#/components/schemas/CategoriaEnum' 
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
         prestazioniComprese:
           $ref: '#/components/schemas/PrestazioniEnum'           
         finanziamenti:
@@ -2007,7 +2082,7 @@ components:
           - $ref: '#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:
           allOf: 
-          - $ref: '#/components/schemas/DatiBaseCPVP7Type'
+          - $ref: '#/components/schemas/DatiBaseCPVType'
         datiBaseContratto:
           allOf: 
           - $ref: '#/components/schemas/DatiBaseContrattoType'
@@ -2094,7 +2169,9 @@ components:
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         paeseOperatoreEconomico:
           description: Paese Operatore Economico
-          type: string          
+          type: string 
+        paeseOperatoreEconomicoMl:
+          $ref: '#/components/schemas/MultilinguaType'          
         avvalimento:
           description: Flag avvalimento
           type: boolean
@@ -2128,7 +2205,9 @@ components:
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         paeseOperatoreEconomico:
           description: Paese Operatore Economico
-          type: string          
+          type: string 
+        paeseOperatoreEconomicoMl:
+          $ref: '#/components/schemas/MultilinguaType'           
         avvalimento:
           description: Flag avvalimento
           type: boolean
@@ -2257,7 +2336,7 @@ components:
     AggiudicazioneAD1_25Type:
       description: Oggetto che riporta i dati di aggiudicazione per gli affidamenti diretti.
       type: object
-      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti]
+      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti,ccnl,categoria,codIstat]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -2272,7 +2351,18 @@ components:
           description: Cup associati al lotto
           type: array
           items: 
-            type: string  
+            type: string 
+        ccnl:
+          description: indicare il codice CNEL o non applicabile
+          type: string  
+        categoria:
+          $ref: '#/components/schemas/CategoriaEnum'  
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
+        codIstat:
+          $ref: '#/components/schemas/CodIstatEnum'          
         oggettoPrincipaleContratto:
           $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'            
         paritaDiGenereGenerazionale:
@@ -2320,7 +2410,7 @@ components:
     AggiudicazioneAD1_26Type:
       description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
       type: object
-      required: [afferenteInvestimentiPNRR, lotIdentifier,partecipanti]
+      required: [afferenteInvestimentiPNRR, lotIdentifier,partecipanti,ccnl,categoria,codIstat]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -2336,6 +2426,17 @@ components:
           type: array
           items: 
             type: string  
+        ccnl:
+          description: indicare il codice CNEL o non applicabile
+          type: string  
+        categoria:
+          $ref: '#/components/schemas/CategoriaEnum'  
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
+        codIstat:
+          $ref: '#/components/schemas/CodIstatEnum'             
         oggettoPrincipaleContratto:
           $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'            
         paritaDiGenereGenerazionale:
@@ -2383,11 +2484,22 @@ components:
     AggiudicazioneAD1_27Type:
       description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
       type: object
-      required: [lotIdentifier,partecipanti]
+      required: [lotIdentifier,partecipanti,ccnl,categoria,codIstat]
       properties:  
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
-          type: string      
+          type: string  
+        ccnl:
+          description: indicare il codice CNEL o non applicabile
+          type: string  
+        categoria:
+          $ref: '#/components/schemas/CategoriaEnum'  
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
+        codIstat:
+          $ref: '#/components/schemas/CodIstatEnum'           
         finanziamenti:
           description: Dati relativi ai finanziamenti
           type: array
@@ -2425,7 +2537,7 @@ components:
     AggiudicazioneAD1_28Type:
       description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
       type: object
-      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti]
+      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti,categoria,ccnl,codIstat]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -2441,6 +2553,17 @@ components:
           type: array
           items: 
             type: string  
+        ccnl:
+          description: indicare il codice CNEL o non applicabile
+          type: string  
+        categoria:
+          $ref: '#/components/schemas/CategoriaEnum'  
+        categoriaScorporabile:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategoriaEnum'          
+        codIstat:
+          $ref: '#/components/schemas/CodIstatEnum'             
         oggettoPrincipaleContratto:
           $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'            
         paritaDiGenereGenerazionale:
@@ -2944,26 +3067,6 @@ components:
           description: Numero di giorni di proroga concessi/tempo aggiuntivo rispetto ai termini contrattuali 
           type: number  
           format: integer
-    DatiBaseCPVP7Type:
-      description: Dato in comune con il Business Group Classification delle eforms
-      type: object
-      additionalProperties: false
-      required:
-        - tipoClassificazione
-        - cpvPrevalente
-        - cpvSecondarie
-      properties:
-        tipoClassificazione:
-          description: Il tipo di classificazione che descrive l'appalto (ad es. CPV).
-          $ref: '#/components/schemas/TipoClassificazioneEnum'
-        cpvPrevalente:
-          description: Il codice della classificazione che caratterizza meglio l'appalto - corrisponde al campo bt-262 - Main Classification Code del TED
-          $ref: '#/components/schemas/CPVEnum'
-        cpvSecondarie:
-          description: Codice classificazione supplementare che caratterizza anch'esso l'appalto - corrisponde al campo bt-263 - Additional Classification Codes del TED
-          type: array
-          items:
-            $ref: '#/components/schemas/CPVEnum'
     DatiBaseCPVPLType:
       description: Dato in comune con il Business Group Classification delle eforms
       type: object
@@ -3022,6 +3125,8 @@ components:
         giustificazione:
           description: giustificazione
           type: string
+        giustificazioneMl:
+          $ref: '#/components/schemas/MultilinguaType'          
     DatiBaseAggiudicazioneAppaltoType:
       description:  Dato in comune con il Business Group Contract delle eforms
       required: [dataAggiudicazione]
@@ -3063,6 +3168,8 @@ components:
         oggetto:
           description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
           type: string
+        oggettoMl:
+          $ref: '#/components/schemas/MultilinguaType' 
         importo:
           description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED
           type: number
@@ -3077,6 +3184,8 @@ components:
         oggetto:
           description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
           type: string
+        oggettoMl:
+          $ref: '#/components/schemas/MultilinguaType'          
         importo:
           description: Importo gara - corrisponde al campo bt-27 - Estimated Value del TED
           type: number
@@ -3091,6 +3200,20 @@ components:
         oggetto:
           description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
           type: string
+        oggettoMl:
+          $ref: '#/components/schemas/MultilinguaType'          
+    DatiBaseAppaltoADType:
+      description: Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required:
+        - oggetto
+      additionalProperties: false
+      properties:
+        oggetto:
+          description: Oggetto gara - corrisponde al campo bt-24 - Description del TED
+          type: string  
+        oggettoMl:
+          $ref: '#/components/schemas/MultilinguaType'          
     DatiBaseLottoType:
       description: Dato in comune con il Business Group Purpose delle eforms
       type: object
@@ -3104,6 +3227,8 @@ components:
         oggetto:
           description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
           type: string
+        oggettoMl:
+          $ref: '#/components/schemas/MultilinguaType'          
         importo:
           description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED 
           type: number
@@ -3120,6 +3245,8 @@ components:
         oggetto:
           description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
           type: string
+        oggettoMl:
+          $ref: '#/components/schemas/MultilinguaType'           
         importo:
           description: Importo lotto - corrisponde al campo bt-27 - Estimated Value del TED 
           type: number
@@ -3136,6 +3263,8 @@ components:
         oggetto:
           description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
           type: string
+        oggettoMl:
+          $ref: '#/components/schemas/MultilinguaType'            
     DatiBaseLottoP7_3Type:
       description: Dato in comune con il Business Group Purpose delle eforms
       type: object
@@ -3148,7 +3277,24 @@ components:
           $ref: '#/components/schemas/OggettoContrattoEnum'
         oggetto:
           description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
-          type: string          
+          type: string 
+        oggettoMl:
+          $ref: '#/components/schemas/MultilinguaType'           
+    DatiBaseLottoADType:
+      description: Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required:
+        - oggetto
+        - oggettoContratto
+      additionalProperties: false
+      properties:
+        oggettoContratto:
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggetto:
+          description: Oggetto lotto - corrisponde al campo bt-24 - Description del TED
+          type: string 
+        oggettoMl:
+          $ref: '#/components/schemas/MultilinguaType'          
     DatiBaseProceduraType:
       description: Dato in comune con il Business Group Procedure delle eforms
       type: object
@@ -3218,6 +3364,14 @@ components:
         codNUTS:
           $ref: '#/components/schemas/CodNUTSEnum'
     DatiBaseContrattoP7Type:
+      description: Dato in comune con il Business Group Place of Performance delle eforms
+      type: object
+      additionalProperties: false
+      required: [codNUTS]
+      properties:
+        codNUTS:
+          $ref: '#/components/schemas/CodNUTSEnum' 
+    DatiBaseContrattoADType:
       description: Dato in comune con il Business Group Place of Performance delle eforms
       type: object
       additionalProperties: false
@@ -3379,7 +3533,9 @@ components:
           $ref: '#/components/schemas/MotiviModificaContrattualeEnum'
         causaModifica:
           description: Cause della modifica contrattuale
-          type: string          
+          type: string 
+        causaModificaMl:
+          $ref: '#/components/schemas/MultilinguaType'        
     DatiBaseComunicazioneType:
       description:  Dato in comune con il Business Group Communication delle eforms
       additionalProperties: false
