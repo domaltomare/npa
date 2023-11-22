@@ -421,6 +421,10 @@ ref. /docs/specifiche-jws/
   	 	* modificato il type dell'attributo giustificazioneProceduraAccelerata
   	* aggiunto il campo array categoriaScorporabile per tutti gli oggetti lotto.
   	* modificati gli oggetti DatiBaseRisultatoProceduraType e DatiBaseEsitoRisultatoProceduraType: cambiato il nome del campo esito in esitoProcedura
+  	* modificato l'oggetto PartecipanteType: eliminate le imprese ausiliarie
+  	* modificato l'oggetto PartecipanteADType:
+  		* eliminate le imprese ausiliarie.
+  	 	* aggiunte le obbligatorietà sui campi
 * modello-dati-schede-IR1.yaml:
 	* modificato l'oggetto RitardoType: aggiunto l'attributo motivoSospensioneMl per il multilingua
 * modello-dati-schede-P5.yaml:
