@@ -53,7 +53,7 @@ components:
     SchedaAD2_28Type:
       description: Affidamento diretto sopra la soglia minima e sotto la soglia comunitaria, concessioni. Articolo 182 comma 7 decreto legislativo 36/2023. Articolo 187 decreto legislativo 36/2023.
       type: object
-      required: [anacForm]
+      required: [anacForm,espd]
       additionalProperties: false
       properties:
         anacForm:

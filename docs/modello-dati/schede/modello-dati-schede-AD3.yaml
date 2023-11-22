@@ -100,7 +100,7 @@ components:
     SchedaAD3Type:
       description: Affidamento diretto >= 5k € e entro i valori ammessi. Articolo 50 comma 9 decreto legislativo 36/2023.
       type: object
-      required: [anacForm]
+      required: [anacForm,espd]
       additionalProperties: false
       properties:
         anacForm:

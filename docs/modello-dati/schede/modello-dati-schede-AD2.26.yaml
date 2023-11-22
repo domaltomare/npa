@@ -55,7 +55,7 @@ components:
     SchedaAD2_26Type:
       description: Affidamento diretto sopra la soglia minima e sotto la soglia comunitaria, settoriale. Articolo 50 comma 9 decreto legislativo 36/2023.
       type: object
-      required: [anacForm]
+      required: [anacForm,espd]
       additionalProperties: false
       properties:
         anacForm:

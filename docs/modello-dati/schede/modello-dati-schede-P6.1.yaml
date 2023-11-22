@@ -40,7 +40,7 @@ components:
     SchedaP6_1Type:
       description: Adesione AQ/convenzione con successivo confronto competitivo (concessioni).
       type: object
-      required: [anacForm]
+      required: [anacForm,espd]
       additionalProperties: false
       properties:
         anacForm:

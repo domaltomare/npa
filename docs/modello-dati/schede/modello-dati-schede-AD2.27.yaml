@@ -55,7 +55,7 @@ components:
     SchedaAD2_27Type:
       description: Scheda di affidamento diretto (EU), valida per i sottoglia > 5K, senza invio al TED.
       type: object
-      required: [anacForm]
+      required: [anacForm,espd]
       additionalProperties: false
       properties:
         anacForm:

@@ -106,7 +106,7 @@ components:
     SchedaAD4Type:
       description: Adesione ad accordo quadro/convenzione senza successivo confronto competitivo. 
       type: object
-      required: [anacForm]
+      required: [anacForm,espd]
       additionalProperties: false
       properties:
         anacForm:
