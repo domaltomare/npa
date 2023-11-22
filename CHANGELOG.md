@@ -417,6 +417,7 @@ ref. /docs/specifiche-jws/
   	* modificato l'oggetto DatiBaseModificaContrattualeType: aggiunto l'attributo causaModificaMl per il multilingua
   	* modificati gli oggetti PartecipanteType, PartecipanteADType: aggiunto l'attributo paeseOperatoreEconomicoMl per il multilingua
   	* aggiunto il campo array categoriaScorporabile per tutti gli oggetti lotto.
+  	* modificati gli oggetti DatiBaseRisultatoProceduraType e DatiBaseEsitoRisultatoProceduraType: cambiato il nome del campo esito in esitoProcedura
 * modello-dati-schede-IR1.yaml:
 	* modificato l'oggetto RitardoType: aggiunto l'attributo motivoSospensioneMl per il multilingua
 * modello-dati-schede-P5.yaml:
@@ -442,7 +443,9 @@ ref. /docs/specifiche-jws/
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR93
   * aggiunti i messaggi delle regole di esecuzione
-
+* esito.json: rinominata in esitoProcedura.json
+* accessibilita.json, accordoQuadro.json, affidamentiRiservati.json, criteriAggiudicazione.json, durata.json, esitoProcedura.json, giustificazione.json, giustificazioniAggiudicazioneDiretta.json, lingue.json, motiviModifica.json, oggettoContratto.json, sistemaDinamicoAcquisizione.json, subappalto.json, tipoClassificazione.json, tipoProcedura.json:
+	* inserite le descrizioni in tedesco
 ## Orchestratore
 
   
