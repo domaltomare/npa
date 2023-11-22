@@ -1851,10 +1851,10 @@ components:
               $ref: '#/components/schemas/TipologiaLavoroEnum'
           categoria:
             $ref: '#/components/schemas/CategoriaEnum' 
-        categoriaScorporabile:
-          type: array
-          items:
-            $ref: '#/components/schemas/CategoriaEnum'            
+          categoriaScorporabile:
+            type: array
+            items:
+              $ref: '#/components/schemas/CategoriaEnum'            
           finanziamenti:
             description: Dati relativi ai finanziamenti
             type: array
@@ -2177,16 +2177,11 @@ components:
           type: boolean
         tipologiaAvvalimento:
           $ref: '#/components/schemas/TipologiaAvvalimentoEnum' 
-        impreseAusiliarie:
-          description: Dati relativi alle imprese ausiliarie
-          type: array
-          items:
-            $ref: '#/components/schemas/AusiliariaType'
     PartecipanteADType:
       description: Dati del partecipante in caso di aggiudicazione diretta
       type: object
       additionalProperties: false
-      required: [idPartecipante]      
+      required: [codiceFiscale,denominazione,ruoloOE,tipoOE,idPartecipante,paeseOperatoreEconomico,avvalimento]      
       properties:
         codiceFiscale:
           description: Codice fiscale del soggetto interessato
@@ -2217,11 +2212,6 @@ components:
           format: double          
         tipologiaAvvalimento:
           $ref: '#/components/schemas/TipologiaAvvalimentoEnum' 
-        impreseAusiliarie:
-          description: Dati relativi alle imprese ausiliarie
-          type: array
-          items:
-            $ref: '#/components/schemas/AusiliariaType'            
     PrestazioneType:
       description: Dati relativi alle prestazioni progettuali
       type: object
@@ -3329,10 +3319,11 @@ components:
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - corrisponde al campo bt-106 - Procedure Accelerated del TED 
           type: boolean
-        giustificazioniAggiudicazioneDiretta:
-          type: array
-          items:        
-            $ref: '#/components/schemas/GiustificazioneAggiudicazioneDirettaEnum'     
+        giustificazioneProceduraAccelerata:
+          description: Giustificazione procedura accelerata
+          type: string
+        giustificazioneProceduraAccelerataMl:
+          $ref: '#/components/schemas/MultilinguaType'           
     DatiBaseProceduraAType:
       description: Dato in comune con il Business Group Procedure delle eforms
       type: object
