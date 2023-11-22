@@ -416,6 +416,9 @@ ref. /docs/specifiche-jws/
   	* modificato l'oggetto DatiBaseAccessibilitaType: aggiunto l'attributo giustificazioneMl per il multilingua
   	* modificato l'oggetto DatiBaseModificaContrattualeType: aggiunto l'attributo causaModificaMl per il multilingua
   	* modificati gli oggetti PartecipanteType, PartecipanteADType: aggiunto l'attributo paeseOperatoreEconomicoMl per il multilingua
+  	* modificato l'oggetto DatiBaseProceduraCompletoType:
+  		* aggiunto l'attributo giustificazioneProceduraAccelerataMl per il multilingua
+  	 	* modificato il type dell'attributo giustificazioneProceduraAccelerata
   	* aggiunto il campo array categoriaScorporabile per tutti gli oggetti lotto.
   	* modificati gli oggetti DatiBaseRisultatoProceduraType e DatiBaseEsitoRisultatoProceduraType: cambiato il nome del campo esito in esitoProcedura
 * modello-dati-schede-IR1.yaml:
