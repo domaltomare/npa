@@ -2181,7 +2181,7 @@ components:
       description: Dati del partecipante in caso di aggiudicazione diretta
       type: object
       additionalProperties: false
-      required: [codiceFiscale,denominazione,ruoloOE,tipoOE,idPartecipante,paeseOperatoreEconomico,avvalimento]      
+      required: [codiceFiscale,denominazione,ruoloOE,tipoOE,idPartecipante,paeseOperatoreEconomico,avvalimento, importo]      
       properties:
         codiceFiscale:
           description: Codice fiscale del soggetto interessato
