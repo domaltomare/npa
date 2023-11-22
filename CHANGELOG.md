@@ -445,6 +445,8 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-AD5.yaml:
 	* tolti i campi codiceFiscaleSA e denominazioneSA dall'oggetto appalto.
  	* reso opzionale il campo cup
+* modello-dati-schede-P3*.yaml, modello-dati-schede-P6*.yaml, modello-dati-schede-P7_2.yaml, modello-dati-schede-AD*.yaml:
+	* reso obbligatorio il campo espd
 ### Tipologiche
 * statoPiano.json
   * aggiunti i nuovi valori IN_ATT_PUBB, IN_STOP_PUBB e PUBB
