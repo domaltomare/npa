@@ -426,6 +426,7 @@ ref. /docs/specifiche-jws/
   	* modificato l'oggetto PartecipanteADType:
   		* eliminate le imprese ausiliarie.
   	 	* aggiunte le obbligatorietà sui campi
+	* reso opzionale il campo tipologiaLavoro
 * modello-dati-schede-IR1.yaml:
 	* modificato l'oggetto RitardoType: aggiunto l'attributo motivoSospensioneMl per il multilingua
 * modello-dati-schede-P5.yaml:
