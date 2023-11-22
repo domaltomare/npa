@@ -307,6 +307,7 @@ ref. /docs/specifiche-jws/
   * aggiunto l'attributo idPianificazione all'oggetto StatoAvvisoType
   * AvvisoBaseType estende il nuovo oggetto AvvisoCommonType e aggiunge gli attributi idAppalto e idPianificazione
   * AvvisoType estende il nuovo oggetto AvvisoCommonType e aggiunge l'attributo piano
+  * spostata la scheda P7_3 nelle schede di pianificazione
 * modello-dati-persona-giuridica.yaml:
   * nuovo file che riporta il modello dati della persona giuridica restituita dall'operazione /recupera-anagrafica-oe    
     
