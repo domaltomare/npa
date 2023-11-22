@@ -1021,7 +1021,7 @@ components:
       allOf: # estende la classe LottoBaseType
         - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,prestazioniComprese,ccnl]
+      required: [opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,prestazioniComprese,ccnl]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -1070,7 +1070,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,prestazioniComprese,ccnl]
+      required: [opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,prestazioniComprese,ccnl]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -1334,7 +1334,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale,prestazioniComprese,ccnl]
+      required: [lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale,prestazioniComprese,ccnl]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -1390,7 +1390,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,tipologiaLavoro,servizioPubblicoLocale,prestazioniComprese,ccnl]
+      required: [lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale,prestazioniComprese,ccnl]
       additionalProperties: false
       properties:
         prestazioniComprese:
@@ -1475,7 +1475,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,tipologiaLavoro,servizioPubblicoLocale,ccnl]
+      required: [lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,servizioPubblicoLocale,ccnl]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1697,7 +1697,7 @@ components:
       description: Oggetto che riporta i dati del lotto 
       type: object
       additionalProperties: false
-      required: [lotIdentifier,tipologiaLavoro,codIstat]
+      required: [lotIdentifier,codIstat]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -1731,7 +1731,7 @@ components:
     LottoP6BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,tipologiaLavoro,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari]
+      required: [lotIdentifier, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1800,7 +1800,7 @@ components:
     LottoP4BaseType:
         description: Oggetto che riporta i dati del lotto
         type: object
-        required: [lotIdentifier,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi,afferenteInvestimentiPNRR,categoria,tipologiaLavoro,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari]
+        required: [lotIdentifier,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi,afferenteInvestimentiPNRR,categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari]
         additionalProperties: false
         properties:
           servizioPubblicoLocale:
