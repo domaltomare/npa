@@ -452,7 +452,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-P3*.yaml, modello-dati-schede-P6*.yaml, modello-dati-schede-P7_2.yaml, modello-dati-schede-AD*.yaml, modello-dati-schede-RSU1.yaml:
 	* reso obbligatorio il campo espd
 * adeguamento eform 1.9: eliminato l'attributo oggettoPrincipaleContratto in tutte le schede. Il campo per indicare l'oggetto del contratto è oggettoContratto e la tipologica di riferimento è la oggettoContratto.json con i valori previsti dal TED.
-* modello-dati-schede-P4*.yaml, modello-dati-schede-M1.yaml, modello-dati-schede-M1.40.yaml:
+* modello-dati-schede-P4_2.yaml,modello-dati-schede-P4_3.yaml,modello-dati-schede-P4_4.yaml,modello-dati-schede-P4_5.yaml,modello-dati-schede-P4_6.yaml, modello-dati-schede-M1.yaml, modello-dati-schede-M1.40.yaml:
 	* reso obbligatorio il campo eform
   
 ### Tipologiche
