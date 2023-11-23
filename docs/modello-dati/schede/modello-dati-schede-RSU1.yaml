@@ -57,7 +57,7 @@ components:
     SchedaRSU1Type:
       description: Comunicazione richiesta di subappalto per qualunque procedura.
       type: object
-      required: [anacForm]
+      required: [anacForm,espd]
       additionalProperties: false
       properties:
         anacForm:
