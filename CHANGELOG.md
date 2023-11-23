@@ -457,6 +457,7 @@ ref. /docs/specifiche-jws/
 * esito.json: rinominata in esitoProcedura.json
 * accessibilita.json, accordoQuadro.json, affidamentiRiservati.json, criteriAggiudicazione.json, durata.json, esitoProcedura.json, giustificazione.json, giustificazioniAggiudicazioneDiretta.json, lingue.json, motiviModifica.json, oggettoContratto.json, sistemaDinamicoAcquisizione.json, subappalto.json, tipoClassificazione.json, tipoProcedura.json:
 	* inserite le descrizioni in tedesco
+* motiviRevisionePrezzi.json: rinominata in motivoRevisionePrezzi.json
 ## Orchestratore
 
   
