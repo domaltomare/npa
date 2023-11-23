@@ -1054,8 +1054,8 @@
 {
     "codice":"REG20",
     "descrizione": {
-		"it": "Il campo cupLotto è obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto principale del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria",
-		"en": "Il campo cupLotto è obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto principale del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria"
+		"it": "Il campo cupLotto è obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria",
+		"en": "Il campo cupLotto è obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -1117,8 +1117,8 @@
 {
     "codice":"REG29",
     "descrizione": {
-		"it": "il campo modalitaAcquisizione è obbligatorio se l'oggetto principale del contratto è Servizi o Forniture",
-		"en": "il campo modalitaAcquisizione è obbligatorio se l'oggetto principale del contratto è Servizi o Forniture"
+		"it": "il campo modalitaAcquisizione è obbligatorio se l'oggetto del contratto è Servizi o Forniture",
+		"en": "il campo modalitaAcquisizione è obbligatorio se l'oggetto del contratto è Servizi o Forniture"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -1126,17 +1126,8 @@
 {
     "codice":"REG30",
     "descrizione": {
-		"it": "il campo prestazioniComprese è obbligatorio se l'oggetto principale del contratto è Lavori",
-		"en": "il campo prestazioniComprese è obbligatorio se l'oggetto principale del contratto è Lavori"
-	},
-    "dataInizio":null,
-    "dataFine":null
-},
-{
-    "codice":"REG31",
-    "descrizione": {
-		"it": "Il campo oggettoPrincipaleContratto è obbligatorio",
-		"en": "Il campo oggettoPrincipaleContratto è obbligatorio"
+		"it": "il campo prestazioniComprese è obbligatorio se l'oggetto del contratto è Lavori",
+		"en": "il campo prestazioniComprese è obbligatorio se l'oggetto del contratto è Lavori"
 	},
     "dataInizio":null,
     "dataFine":null
