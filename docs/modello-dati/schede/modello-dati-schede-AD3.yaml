@@ -33,9 +33,7 @@ components:
           description: Cup associati al lotto
           type: array
           items: 
-            type: string  
-        oggettoPrincipaleContratto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OggettoPrincipaleContrattoEnum'            
+            type: string              
         paritaDiGenereGenerazionale:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ParitaDiGenereGenerazionaleType'
         quadroEconomicoStandard:

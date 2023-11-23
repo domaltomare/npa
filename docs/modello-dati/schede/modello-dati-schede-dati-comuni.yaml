@@ -64,10 +64,6 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Modalità di acquisizione (per servizi e forniture) - fare riferimento ai valori contenuti nel file  [modalitaAcquisizione.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modalitaAcquisizione.json) 
-    OggettoPrincipaleContrattoEnum:
-      allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
-      description: Oggetto principale del contratto - fare riferimento ai valori contenuti nel file [oggettoPrincipaleContratto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/oggettoPrincipaleContratto.json)
     TipologiaLavoroEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -585,6 +581,7 @@ components:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione
       type: object
       additionalProperties: false
+      required: [datiBase]
       properties:
         datiBase:
           $ref: '#/components/schemas/DatiBaseAppaltoPLType' 
@@ -592,6 +589,7 @@ components:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione
       type: object
       additionalProperties: false
+      required: [datiBase]
       properties:
         datiBase:
           $ref: '#/components/schemas/DatiBaseAppaltoType'          
@@ -624,7 +622,7 @@ components:
     AppaltoP6BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [cigAccordoQuadro,codiceAppalto]
+      required: [cigAccordoQuadro,codiceAppalto,datiBaseProcedura]
       additionalProperties: false
       properties:  
         idAppalto:
@@ -657,7 +655,7 @@ components:
     AppaltoP4BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [prelazionePromotore,codiceAppalto,costituzioneSocietaDiScopo]
+      required: [prelazionePromotore,codiceAppalto,costituzioneSocietaDiScopo,datiBase,datiBaseProcedura]
       additionalProperties: false
       properties:
         idAppalto:
@@ -694,7 +692,7 @@ components:
     AppaltoP7BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [categorieMerceologiche,motivazioneCIG,strumentiSvolgimentoProcedure,codiceAppalto]
+      required: [categorieMerceologiche,motivazioneCIG,strumentiSvolgimentoProcedure,codiceAppalto,datiBase,datiBaseProcedura]
       additionalProperties: false
       properties:
         idAppalto:
@@ -977,8 +975,6 @@ components:
           items:
             type: string
             pattern: ^[a-zA-Z0-9]{15}$
-        oggettoPrincipaleContratto:
-          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
         finanziamenti:
           description: Dati relativi ai finanziamenti
           type: array
@@ -988,6 +984,7 @@ components:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pianificazione
       type: object
       additionalProperties: false
+      required: [datiBase]
       properties:
         datiBase:
           $ref: '#/components/schemas/DatiBaseLottoPLType'
@@ -1001,6 +998,7 @@ components:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pianificazione
       type: object
       additionalProperties: false
+      required: [datiBase]
       properties:
         datiBase:
           $ref: '#/components/schemas/DatiBaseLottoType'
@@ -1320,8 +1318,6 @@ components:
             $ref: '#/components/schemas/CategoriaEnum'          
         prestazioniComprese:
           $ref: '#/components/schemas/PrestazioniEnum'           
-        oggettoPrincipaleContratto:
-          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
         finanziamenti:
           description: Dati relativi ai finanziamenti
           type: array
@@ -1719,8 +1715,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/TipologiaLavoroEnum'
-        oggettoPrincipaleContratto:
-          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'          
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'
         finanziamenti:
@@ -1777,8 +1771,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/CategoriaEnum'          
-        oggettoPrincipaleContratto:
-          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
         finanziamenti:
           description: Dati relativi ai finanziamenti
           type: array
@@ -1800,7 +1792,7 @@ components:
     LottoP4BaseType:
         description: Oggetto che riporta i dati del lotto
         type: object
-        required: [lotIdentifier,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi,afferenteInvestimentiPNRR,categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari]
+        required: [lotIdentifier,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi,afferenteInvestimentiPNRR,categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari,datiBase]
         additionalProperties: false
         properties:
           servizioPubblicoLocale:
@@ -1880,7 +1872,7 @@ components:
     LottoP7BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier,categorieMerceologiche,saNonSoggettaObblighi24Dicembre2015,iniziativeNonSoddisfacenti,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat]
+      required: [lotIdentifier,categorieMerceologiche,saNonSoggettaObblighi24Dicembre2015,iniziativeNonSoddisfacenti,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,datiBase]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -1990,7 +1982,7 @@ components:
     LottoP7_2BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier,categorieMerceologiche,saNonSoggettaObblighi24Dicembre2015,iniziativeNonSoddisfacenti,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,ripetizioniEConsegneComplementari,opzioniRinnovi]
+      required: [lotIdentifier,categorieMerceologiche,saNonSoggettaObblighi24Dicembre2015,iniziativeNonSoddisfacenti,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,ripetizioniEConsegneComplementari,opzioniRinnovi,datiBase]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -2353,8 +2345,6 @@ components:
             $ref: '#/components/schemas/CategoriaEnum'          
         codIstat:
           $ref: '#/components/schemas/CodIstatEnum'          
-        oggettoPrincipaleContratto:
-          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'            
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'
         quadroEconomicoStandard:
@@ -2427,8 +2417,6 @@ components:
             $ref: '#/components/schemas/CategoriaEnum'          
         codIstat:
           $ref: '#/components/schemas/CodIstatEnum'             
-        oggettoPrincipaleContratto:
-          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'            
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'   
         quadroEconomicoStandard:
@@ -2554,8 +2542,6 @@ components:
             $ref: '#/components/schemas/CategoriaEnum'          
         codIstat:
           $ref: '#/components/schemas/CodIstatEnum'             
-        oggettoPrincipaleContratto:
-          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'            
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'  
         quadroEconomicoStandard:
@@ -2844,8 +2830,6 @@ components:
           type: array
           items: 
             type: string  
-        oggettoPrincipaleContratto:
-          $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'            
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'
         quadroEconomicoStandard:
@@ -3210,6 +3194,7 @@ components:
       required:
         - oggetto
         - importo
+        - oggettoContratto
       additionalProperties: false
       properties:
         oggettoContratto:
@@ -3228,6 +3213,7 @@ components:
       type: object
       required:
         - oggetto
+        - oggettoContratto
       additionalProperties: false
       properties:
         oggettoContratto:
@@ -3246,6 +3232,7 @@ components:
       type: object
       required:
         - oggetto
+        - oggettoContratto
       additionalProperties: false
       properties:
         oggettoContratto:
