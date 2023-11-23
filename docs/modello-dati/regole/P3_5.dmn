@@ -187,7 +187,7 @@ satisfies lotto.ripetizioniEConsegneComplementari and lotto.ipotesiCollegamento.
         </inputEntry>
         <inputEntry id="UnaryTests_P3_5_0071">
           <text>some lotto in lotti
-satisfies lotto.afferenteInvestimentiPNRR = true and ( and lotto.acquisizioneCup = null or lotto.acquisizioneCup=false)</text>
+satisfies lotto.afferenteInvestimentiPNRR = true and (lotto.acquisizioneCup = null or lotto.acquisizioneCup=false)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P3_5_0072">
           <text></text>

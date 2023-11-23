@@ -275,7 +275,7 @@ and count(lotto.ipotesiCollegamento.cigCollegato) &lt;2</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_10_0071">
           <text>some lotto in lotti
-satisfies lotto.afferenteInvestimentiPNRR = true and ( and lotto.acquisizioneCup = null or lotto.acquisizioneCup=false)</text>
+satisfies lotto.afferenteInvestimentiPNRR = true and (lotto.acquisizioneCup = null or lotto.acquisizioneCup=false)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_10_0072">
           <text></text>
