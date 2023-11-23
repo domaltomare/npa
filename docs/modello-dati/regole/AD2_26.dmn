@@ -86,39 +86,39 @@ satisfies aggiudicazione.datiBaseAccessibilita.accessibilita.codice = "n-inc-jus
         </outputEntry>
       </rule>
       <rule id="DecisionRule_AD2_10_0008">
-        <description>REG34: Importo Lavori: se l'oggetto principale del contratto è "Lavori" deve essere indicato un importo maggiore di 0.</description>
+        <description>REG34: Importo Lavori: se l'oggetto del contratto è "works" deve essere indicato un importo maggiore di 0.</description>
         <inputEntry id="UnaryTests_AD2_10_0022">
           <text></text>
         </inputEntry>
         <inputEntry id="UnaryTests_AD2_10_0023">
           <text>some aggiudicazione in aggiudicazioni
-satisfies aggiudicazione.oggettoPrincipaleContratto.codice = "L" and (aggiudicazione.quadroEconomicoStandard.impLavori = null or aggiudicazione.quadroEconomicoStandard.impLavori = 0)</text>
+satisfies aggiudicazione.datiBase.oggettoContratto.codice = "works" and (aggiudicazione.quadroEconomicoStandard.impLavori = null or aggiudicazione.quadroEconomicoStandard.impLavori = 0)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_AD2_10_0008">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG34\"}"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_AD2_10_0009">
-        <description>REG35: Importo Servizi: se l'oggetto principale del contratto è "Servizi" deve essere indicato un importo maggiore di 0.</description>
+        <description>REG35: Importo Servizi: se l'oggetto del contratto è "services" deve essere indicato un importo maggiore di 0.</description>
         <inputEntry id="UnaryTests_AD2_10_0025">
           <text></text>
         </inputEntry>
         <inputEntry id="UnaryTests_AD2_10_0026">
           <text>some aggiudicazione in aggiudicazioni
-satisfies aggiudicazione.oggettoPrincipaleContratto.codice = "S" and (aggiudicazione.quadroEconomicoStandard.impServizi = null or aggiudicazione.quadroEconomicoStandard.impServizi = 0)</text>
+satisfies aggiudicazione.datiBase.oggettoContratto.codice = "services" and (aggiudicazione.quadroEconomicoStandard.impServizi = null or aggiudicazione.quadroEconomicoStandard.impServizi = 0)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_AD2_10_0009">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG35\"}"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_AD2_10_0010">
-        <description>REG36: Importo Forniture: se l'oggetto principale del contratto è "Forniture" deve essere indicato un importo maggiore di 0.</description>
+        <description>REG36: Importo Forniture: se l'oggetto del contratto è "supplies" deve essere indicato un importo maggiore di 0.</description>
         <inputEntry id="UnaryTests_AD2_10_0028">
           <text></text>
         </inputEntry>
         <inputEntry id="UnaryTests_AD2_10_0029">
           <text>some aggiudicazione in aggiudicazioni
-satisfies aggiudicazione.oggettoPrincipaleContratto.codice = "F" and (aggiudicazione.quadroEconomicoStandard.impForniture = null or aggiudicazione.quadroEconomicoStandard.impForniture = 0)</text>
+satisfies aggiudicazione.datiBase.oggettoContratto.codice = "supplies" and (aggiudicazione.quadroEconomicoStandard.impForniture = null or aggiudicazione.quadroEconomicoStandard.impForniture = 0)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_AD2_10_0010">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG36\"}"</text>
