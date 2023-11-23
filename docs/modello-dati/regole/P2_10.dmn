@@ -408,7 +408,7 @@ satisfies lotto.paritaDiGenereGenerazionale != null and lotto.afferenteInvestime
         </inputEntry>
         <inputEntry id="UnaryTests_P2_10_0095">
           <text>some lotto in lotti
-satisfies (lotto.datiBase.oggettoContratto.codice = "services" or lotto.datiBase.oggettoContratto.codice = "supplies") and lotto.modalitaAcquisizione = null</text>
+satisfies (lotto.datiBase.oggettoContratto.codice = "services" or lotto.datiBase.oggettoContratto.codice = "supplies") and (lotto.modalitaAcquisizione = null or lotto.modalitaAcquisizione = "" or lotto.modalitaAcquisizione.codice = null or lotto.modalitaAcquisizione.codice = "")</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_10_0096">
           <text></text>
