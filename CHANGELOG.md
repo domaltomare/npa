@@ -457,7 +457,7 @@ ref. /docs/specifiche-jws/
 * statoPiano.json
   * aggiunti i nuovi valori IN_ATT_PUBB, IN_STOP_PUBB e PUBB
 * errori.json
-  * aggiunti i seguenti messaggi di errore: ERR93
+  * aggiunti i seguenti messaggi di errore: ERR93, FVX36, FVX37, FVX38
   * aggiunti i messaggi delle regole di esecuzione
 * esito.json: rinominata in esitoProcedura.json
 * accessibilita.json, accordoQuadro.json, affidamentiRiservati.json, criteriAggiudicazione.json, durata.json, esitoProcedura.json, giustificazione.json, giustificazioniAggiudicazioneDiretta.json, lingue.json, motiviModifica.json, oggettoContratto.json, sistemaDinamicoAcquisizione.json, subappalto.json, tipoClassificazione.json, tipoProcedura.json:
