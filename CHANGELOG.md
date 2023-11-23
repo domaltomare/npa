@@ -401,7 +401,9 @@ ref. /docs/specifiche-jws/
 # Note di rilascio del gg/mm/yyyy
 
 ## Modello Dati 
-
+* modello-dati-npa.yaml:
+  * eliminato attributo oggettoPrincipaleContratto in LottoType per adeguamento eform 1.9
+    
 ### Regole
 * inserite le regole di esecuzione
 * modificata la REG8
