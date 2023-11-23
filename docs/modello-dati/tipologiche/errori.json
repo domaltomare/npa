@@ -2301,4 +2301,31 @@
    },
    "dataInizio":null,
    "dataFine":null
+},
+{
+   "codice":"FVX36",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Servizio User Detail- Non Disponibile",
+       "en": "Errore Servizio esterno. Servizio User Detail- Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},	
+{
+   "codice":"FVX37",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Servizio Anagrafica SA - Non Disponibile",
+       "en": "Errore Servizio esterno. Servizio Anagrafica SA - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},	
+{
+   "codice":"FVX38",
+   "descrizione": {
+       "it": "Anagrafica Stazione Appaltante mal formattato",
+       "en": "Anagrafica Stazione Appaltante mal formattato"
+   },
+   "dataInizio":null,
+   "dataFine":null
 }]
