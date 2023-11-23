@@ -406,7 +406,8 @@ ref. /docs/specifiche-jws/
     
 ### Regole
 * inserite le regole di esecuzione
-* modificata la REG8
+* AD*.dmn, P1*.dmn, P2*.dmn, P3_4.dmn, A1*.dmn, A2*.dmn:
+	* modificata la REG8
 
 ### Schede
 * modello-dati-schede-AD*.yaml, modello-dati-schede-A3_6.yaml, modello-dati-schede-P7_1_1.yaml, modello-dati-schede-P7_1_2.yaml, modello-dati-schede-P7_1_3.yaml,modello-dati-schede-P7_2.yaml:
@@ -451,6 +452,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-P3*.yaml, modello-dati-schede-P6*.yaml, modello-dati-schede-P7_2.yaml, modello-dati-schede-AD*.yaml:
 	* reso obbligatorio il campo espd
 * adeguamento eform 1.9: eliminato l'attributo oggettoPrincipaleContratto in tutte le schede. Il campo per indicare l'oggetto del contratto è oggettoContratto e la tipologica di riferimento è la oggettoContratto.json con i valori previsti dal TED.
+  
 ### Tipologiche
 * statoPiano.json
   * aggiunti i nuovi valori IN_ATT_PUBB, IN_STOP_PUBB e PUBB
