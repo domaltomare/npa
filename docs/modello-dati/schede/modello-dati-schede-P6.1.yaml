@@ -10,6 +10,7 @@ components:
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP6BaseType'
       type: object          
       additionalProperties: false
+      required: [datiBase]
       properties:  
         datiBase:
             $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoType' 
@@ -19,6 +20,7 @@ components:
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP6BaseType'      
       type: object
       additionalProperties: false
+      required: [datiBase]
       properties:  
         datiBase:
             $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseLottoType'      

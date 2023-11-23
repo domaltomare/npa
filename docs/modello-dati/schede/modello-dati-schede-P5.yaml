@@ -23,7 +23,7 @@ components:
    LottoP5Type:
       description: Oggetto che riporta i dati del lotto.
       type: object
-      required: [lotIdentifier,importo,oggetto,sceltaContraente,oggettoPrincipaleContratto,fattispecieTracciabilita]
+      required: [lotIdentifier,oggettoContratto,importo,oggetto,sceltaContraente,fattispecieTracciabilita]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -35,8 +35,8 @@ components:
           description: importo
           type: number
           format: double
-        oggettoPrincipaleContratto:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OggettoPrincipaleContrattoEnum'          
+        oggettoContratto:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OggettoContrattoEnum'          
         oggetto: 
           description: oggetto
           type: string 

@@ -8,6 +8,7 @@ components:
       description: Oggetto che riporta i dati dell'appalto
       type: object
       additionalProperties: false
+      required: [datiBase]
       properties:
         idAppalto:
           description: Codice univoco dell'appalto.il campo viene determinato da anac e restituito nelle response. viene dunque ignorato il valore inserito nelle put/post.
@@ -21,7 +22,7 @@ components:
       description: Oggetto che riporta i dati del lotto
       type: object
       additionalProperties: false
-      required: [lotIdentifier]
+      required: [lotIdentifier,datiBase]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
