@@ -273,9 +273,7 @@ components:
             type: string
             format: decimal
           stato:
-            $ref: '#/components/schemas/StatoLottoEnum'          
-          oggettoPrincipaleContratto:
-            $ref: '#/components/schemas/OggettoPrincipaleContrattoEnum'
+            $ref: '#/components/schemas/StatoLottoEnum'
           oggettoContratto:
             $ref: '#/components/schemas/OggettoContrattoEnum'
       AppaltoBaseType:
@@ -653,9 +651,7 @@ components:
       StatoLottoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoLottoEnum'
       StatoContrattoEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoContrattoEnum'    
-      OggettoPrincipaleContrattoEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoPrincipaleContrattoEnum'
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoContrattoEnum' 
       OggettoContrattoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/OggettoContrattoEnum'
       DettaglioEsitoOperazioneEnum:
@@ -679,4 +675,4 @@ components:
       StatoPianoEnum:
         $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoPianoEnum'
       TipoPianoEnum:
-        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoPianoEnum'        
+        $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoPianoEnum'
