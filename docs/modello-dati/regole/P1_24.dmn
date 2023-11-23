@@ -87,15 +87,15 @@ satisfies lotto.afferenteInvestimentiPNRR = true and (lotto.acquisizioneCup = nu
       </rule>
       <rule id="DecisionRule_P1_24_0024">
         <description>REG20: Cup associati al lotto: il campo non è obbligatorio se:
-- lotti.acquisizionecup=’N’ e oggettoprincipaledelcontratto=’Servizi’ o ‘Forniture’
-- lotti.acquisizionecup=’N’ e oggettoprincipaledelcontratto=’Lavori” e lotti.tipologialavoro è assegnata la ‘Manutenzione Ordinaria’ (codice 12).
-E' quindi obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto principale del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria</description>
+- lotti.acquisizionecup=’N’ e oggettoContratto="services" o ‘supplies’
+- lotti.acquisizionecup=’N’ e oggettoContratto="works" e lotti.tipologialavoro è assegnata la ‘Manutenzione Ordinaria’ (codice 12).
+E' quindi obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria</description>
         <inputEntry id="UnaryTests_P1_24_0073">
           <text></text>
         </inputEntry>
         <inputEntry id="UnaryTests_P1_24_0074">
           <text>some lotto in lotti
-satisfies lotto.acquisizioneCup=false and lotto.oggettoPrincipaleContratto.codice="L" and lotto.tipologiaLavoro.codice!="12" and lotto.cupLotto = null</text>
+satisfies lotto.acquisizioneCup=false and lotto.datiBase.oggettoContratto.codice="works" and lotto.tipologiaLavoro.codice!="12" and lotto.cupLotto = null</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P1_24_0075">
           <text></text>
