@@ -461,8 +461,9 @@ ref. /docs/specifiche-jws/
 * accessibilita.json, accordoQuadro.json, affidamentiRiservati.json, criteriAggiudicazione.json, durata.json, esitoProcedura.json, giustificazione.json, giustificazioniAggiudicazioneDiretta.json, lingue.json, motiviModifica.json, oggettoContratto.json, sistemaDinamicoAcquisizione.json, subappalto.json, tipoClassificazione.json, tipoProcedura.json:
 	* inserite le descrizioni in tedesco
 * motiviRevisionePrezzi.json: rinominata in motivoRevisionePrezzi.json
-## Orchestratore
 
+## Orchestratore
+* Aggiornato il file schema-cronologia-schede.xlsx
   
 ## Specifiche Interfacce
 
