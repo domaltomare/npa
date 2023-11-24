@@ -470,8 +470,3 @@ ref. /docs/specifiche-jws/
 
 ## Orchestratore
 * Aggiornato il file schema-cronologia-schede.xlsx
-  
-## Specifiche Interfacce
-
-    
-## Documentazione
