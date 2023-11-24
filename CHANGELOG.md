@@ -398,7 +398,8 @@ ref. /docs/specifiche-jws/
 * Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.9.0).
 </details>
 
-# Note di rilascio del 24/11/2023
+<details>
+<summary><h1> Note di rilascio del 24/11/2023</h1></summary>
 
 ## Modello Dati 
 * modello-dati-npa.yaml:
@@ -470,3 +471,21 @@ ref. /docs/specifiche-jws/
 
 ## Orchestratore
 * Aggiornato il file schema-cronologia-schede.xlsx
+</details>
+
+# Note di rilascio del gg/mm/aaaa
+
+
+## Modello Dati 
+
+    
+### Regole
+
+
+### Schede
+
+
+### Tipologiche
+
+
+## Orchestratore
