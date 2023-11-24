@@ -86,6 +86,8 @@ components:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraAstaType'          
     AnacFormP3_5Type:
       description: Contiene i dati relativi alla scelta del socio privato nella società mista.
+      allOf: 
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'      
       type: object
       required: [appalto,lotti]
       additionalProperties: false
@@ -96,12 +98,7 @@ components:
           description: Dati relativi ai lotti
           type: array
           items:
-            $ref: '#/components/schemas/LottoP3_5Type'          
-        stazioniAppaltanti:
-          description: Dati relativi alle stazioni appaltanti
-          type: array
-          items:
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/StazioneAppaltanteType'    
+            $ref: '#/components/schemas/LottoP3_5Type'            
     SchedaP3_5Type:
       description: Scelta del socio privato nella società mista. Art. 13 comma 3 decreto legislativo 36/2023. Articolo 17 decreto legislativo 175/2016.
       type: object

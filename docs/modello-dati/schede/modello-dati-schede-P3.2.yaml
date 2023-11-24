@@ -55,6 +55,8 @@ components:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraType'          
     AnacFormP3_2Type:
       description: Contiene i dati relativi ai contratti esclusi in Concessione o Contratti esclusi in Concessione con la tecnica dell'AQ
+      allOf: 
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'      
       type: object
       required: [appalto,lotti]
       additionalProperties: false
@@ -65,12 +67,7 @@ components:
           description: Dati relativi ai lotti
           type: array
           items:
-            $ref: '#/components/schemas/LottoP3_2Type'           
-        stazioniAppaltanti:
-          description: Dati relativi alle stazioni appaltanti
-          type: array
-          items:
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/StazioneAppaltanteType'    
+            $ref: '#/components/schemas/LottoP3_2Type'              
     SchedaP3_2Type:
       description: Contratti esclusi in Concessione o Contratti esclusi in Concessione con la tecnica dell'AQ. Articolo 10 della direttiva 2014/23/UE.
       type: object

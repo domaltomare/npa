@@ -60,6 +60,8 @@ components:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraSistemaDinamicoAstaType'          
     AnacFormP3_3Type:
       description: Contiene i dati relativi ai contratti esclusi - adesione con confronto competitivo
+      allOf: 
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'      
       type: object
       required: [appalto,lotti]
       additionalProperties: false
@@ -70,12 +72,7 @@ components:
           description: Dati relativi ai lotti
           type: array
           items:
-            $ref: '#/components/schemas/LottoP3_3Type'          
-        stazioniAppaltanti:
-          description: Dati relativi alle stazioni appaltanti
-          type: array
-          items:
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/StazioneAppaltanteType'    
+            $ref: '#/components/schemas/LottoP3_3Type'             
     SchedaP3_3Type:
       description: Contratti esclusi - adesione con confronto competitivo. 
       type: object

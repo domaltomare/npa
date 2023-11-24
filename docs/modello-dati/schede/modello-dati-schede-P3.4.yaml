@@ -92,6 +92,8 @@ components:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraAstaType'
     AnacFormP3_4Type:
       description: Contiene i dati relativi al contraente generale.
+      allOf: 
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'      
       type: object
       required: [appalto,lotti]
       additionalProperties: false
@@ -102,12 +104,7 @@ components:
           description: Dati relativi ai lotti
           type: array
           items:
-            $ref: '#/components/schemas/LottoP3_4Type'          
-        stazioniAppaltanti:
-          description: Dati relativi alle stazioni appaltanti
-          type: array
-          items:
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/StazioneAppaltanteType'    
+            $ref: '#/components/schemas/LottoP3_4Type'              
     SchedaP3_4Type:
       description: Affidamento a contraente generale. Artt. 204 decreto legislativo 36/2023. Articolo 205 comma 6 e comma 7 decreto legislativo 36/2023.
       type: object
