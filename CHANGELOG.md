@@ -454,7 +454,9 @@ ref. /docs/specifiche-jws/
 * adeguamento eform 1.9: eliminato l'attributo oggettoPrincipaleContratto in tutte le schede. Il campo per indicare l'oggetto del contratto è oggettoContratto e la tipologica di riferimento è la oggettoContratto.json con i valori previsti dal TED.
 * modello-dati-schede-P4_2.yaml,modello-dati-schede-P4_3.yaml,modello-dati-schede-P4_4.yaml,modello-dati-schede-P4_5.yaml,modello-dati-schede-P4_6.yaml, modello-dati-schede-M1.yaml, modello-dati-schede-M1.40.yaml:
 	* reso obbligatorio il campo eform
-  
+* modello-dati-schede-P3*.yaml, modello-dati-schede-P2_18.yaml:
+	* reso obbligatorio il campo stazioniAppaltanti
+   
 ### Tipologiche
 * statoPiano.json
   * aggiunti i nuovi valori IN_ATT_PUBB, IN_STOP_PUBB e PUBB
