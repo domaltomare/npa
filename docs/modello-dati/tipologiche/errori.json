@@ -836,6 +836,15 @@
     "dataFine":null
 },
 {
+    "codice":"ERR94",
+    "descrizione": {
+		"it": "errore generico durante la comunicazione con PVL",
+		"en": "errore generico durante la comunicazione con PVL"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
