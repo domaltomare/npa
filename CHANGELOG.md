@@ -486,6 +486,7 @@ ref. /docs/specifiche-jws/
 
 
 ### Tipologiche
-
+* errori.json
+  * aggiunti i seguenti messaggi di errore: ERR94
 
 ## Orchestratore
