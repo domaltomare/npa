@@ -14,7 +14,7 @@ Schede utilizzate: P1_16
 | anacForm | <ul><li> modificare o aggiungere le informazioni identificative della Stazione appaltante in $.scheda.body.anacForm.stazioniAppaltanti <br> si può scegliere di modificare la SA presente (cf 11111111115) o aggiungere una nuova SA. Quella presente è la SA di test in uso presso ANAC </li> <li> modificare scheda.body.anacForm.appalto.codiceAppalto inserendo un valore univoco </li> </ul>|
 |	eForm |<ul><li>	modifica notice-id inserendo un valore univoco </li> <li> modifica issueDate inserendo la data corrente </li> </ul> <br> per l'aggiornamento della eForm vedi file eForm16.xml. Il file modificato deve essere codificato Base64 e inserito nel campo scheda.eForm della scheda |
 
-### 2.1.2 OSequenza operazioni
+### 2.1.2 Sequenza operazioni
 
 | Step | Descrizione | Servizio | Payload | Response |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
