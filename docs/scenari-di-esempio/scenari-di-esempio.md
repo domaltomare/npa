@@ -9,6 +9,10 @@ Schede utilizzate: P1_16
 
 ### 2.1.2 Preparazione dati 
 
+'''json 
+{"idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"} 
+'''
+
 | Sezione | Modifica |
 | ---------- | ---------- |
 | anacForm | <ul><li> modificare o aggiungere le informazioni identificative della Stazione appaltante in $.scheda.body.anacForm.stazioniAppaltanti <br> si può scegliere di modificare la SA presente (cf 11111111115) o aggiungere una nuova SA. Quella presente è la SA di test in uso presso ANAC </li> <li> modificare scheda.body.anacForm.appalto.codiceAppalto inserendo un valore univoco </li> </ul>|
