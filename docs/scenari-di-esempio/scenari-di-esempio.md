@@ -1,13 +1,13 @@
-# 1 Premessa
+# A - Premessa
 
 Di seguito la sequenza di operazioni da eseguire per ottenere l'aggiudicazione di un appalto nel settore ordinario sopra soglia scheda P1_16
 
-# 2 Esempi di flusso
-## 2.1 Pubblicazione procedura sopra soglia
+# B - Esempi di flusso
+## B.1 Pubblicazione procedura sopra soglia
 Creazione e pubblicazione di una procedura sopra soglia con invio dell'avvisio di indizione al TED.
 Schede utilizzate: P1_16  
 
-### 2.1.2 Preparazione dati 
+### 1 Preparazione dati 
 
 ```yaml 
 {"idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"} 
@@ -18,8 +18,21 @@ Schede utilizzate: P1_16
 | anacForm | <ul><li> modificare o aggiungere le informazioni identificative della Stazione appaltante in $.scheda.body.anacForm.stazioniAppaltanti <br> si può scegliere di modificare la SA presente (cf 11111111115) o aggiungere una nuova SA. Quella presente è la SA di test in uso presso ANAC </li> <li> modificare scheda.body.anacForm.appalto.codiceAppalto inserendo un valore univoco </li> </ul>|
 |	eForm |<ul><li>	modifica notice-id inserendo un valore univoco </li> <li> modifica issueDate inserendo la data corrente </li> </ul> <br> per l'aggiornamento della eForm vedi file eForm16.xml. Il file modificato deve essere codificato Base64 e inserito nel campo scheda.eForm della scheda |
 
-### 2.1.2 Sequenza operazioni
+### 2 Sequenza operazioni
 
+#### 2.1 Creazione di un avviso
+#### Servizio:
+../ComunicaAppalto/v2/crea-appalto/
+#### Payload:
+P1_16.json
+#### Response:
+```yaml
+{"status": 200,
+"title":"Operazione Effettuata",
+"detail": "Creazione eseguita con successo",
+"type": "about:blank",
+"idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"}
+```
 | Step | Descrizione | Servizio | Payload | Response |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 1 | Creazione di un avviso | ../ComunicaAppalto/v2/crea-appalto/ |  P1_16.json | {<br>"status": 200,<br>"title":"Operazione Effettuata",<br>"detail": "Creazione eseguita con successo",<br>"type": "about:blank",<br>"idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"<br>}|
