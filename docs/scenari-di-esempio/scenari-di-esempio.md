@@ -9,9 +9,9 @@ Schede utilizzate: P1_16
 
 ### 2.1.2 Preparazione dati 
 
-'''json 
+```yaml 
 {"idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"} 
-'''
+```
 
 | Sezione | Modifica |
 | ---------- | ---------- |
