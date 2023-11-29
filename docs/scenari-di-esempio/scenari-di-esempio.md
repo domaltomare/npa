@@ -7,15 +7,24 @@ Di seguito la sequenza di operazioni da eseguire per ottenere l'aggiudicazione d
 Creazione e pubblicazione di una procedura sopra soglia con invio dell'avvisio di indizione al TED.
 Schede utilizzate: P1_16
 
-### 2.1.2 Preparazione dati
+### 2.1.2 Preparazione dati 
+
 | Sezione | Modifica |
 | ---------- | ---------- |
 | anacForm | <ul><li> modificare o aggiungere le informazioni identificative della Stazione appaltante in $.scheda.body.anacForm.stazioniAppaltanti <br> si può scegliere di modificare la SA presente (cf 11111111115) o aggiungere una nuova SA. Quella presente è la SA di test in uso presso ANAC </li> <li> modificare scheda.body.anacForm.appalto.codiceAppalto inserendo un valore univoco </li> </ul>|
-|	eForm |<ul><li>	modifica notice-id per rendere unica la eForm </li> <li>modifica issueDate alla data corrente </li> </ul> |
+|	eForm |<ul><li>	modifica notice-id inserendo un valore univoco </li> <li> modifica issueDate inserendo la data corrente </li> </ul> <br> per l'aggiornamento della eForm vedi file eForm16.xml. Il file modificato deve essere codificato Base64 e inserito nel campo scheda.eForm della scheda |
 
-| Step | Descrizione | Servizio | Payload | Nota |
+### 2.1.2 OSequenza operazioni
+
+| Step | Descrizione | Servizio | Payload | Response |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| 1 | Creazione di un bando o avviso di indizione sopra soglia europea con relativa eForm inviata al TED| comunicaAppalto <br>operazioni:<br> <ul><li>crea-appalto</li><li>conferma-appalto</li></ul> |  Una delle schede dove schedaIndizione = "SI".| Tutte le schede di indizione prevedono l'invio di un documento ESPD di tipo request, nel caso si tratti di una procedura oltre la soglia europea è necessaria la trasmissione della eForm coerente con il tipo di procedura scelto. L'operazione conferma-appalto esegue implicitamente anche l'operazione verifica-appalto e una volta terminata assegna un CIG ad ogni lotto indicato nella scheda di indizione.|
+| 1 | Creazione di un bando o avviso di indizione sopra soglia europea con relativa eForm inviata al TED| https://apigw-int-test.anticorruzione.it/modi/rest/out/ANACFruitoreInternoTEST/ANAC/ComunicaAppalto/v2/crea-appalto/ |  P1_16.json | {
+    "status": 200,
+    "title": "Operazione Effettuata",
+    "detail": "Creazione eseguita con successo",
+    "type": "about:blank",
+    "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"
+}|
 | 2 | Pubblicazione di un bando o avviso di indizione| pubblicaAvviso <br>operazioni:<br> <ul><li>pubblica-avviso</li></ul> | L'identificativo dell'avviso ottenuto allo step 1 | Il sistema effettua la pubblicazione a livello nazionale e, se si tratta di una procedura di importo superiore alla soglia comunitaria, verso il TED nelle modalità previste |
 | 3 | Comunicazione partecipanti | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | scheda S2 | La scheda S2 contiene l'elenco delle offerte presentate in gara e il dettaglio dei partecipanti. L'invio della scheda attiva le funzioni erogate dal servizio FVOE per gli Operatori Economici riportati in elenco. Nel caso di procedura ristretta la scheda S2 è preceduta dalla S1 che riporta l'elenco delle manifestazioni di interesse |
 | 4 | Comunicazione esito | comunicaPostPubblicazione <br>operazioni:<br> <ul><li>crea-scheda</li><li>conferma-scheda</li></ul> | Una delle schede previste per la fasi: "affidamento", "aggiudicazione" | L'invio di una scheda di mancata aggiudicazione NAG termina la procedura |
