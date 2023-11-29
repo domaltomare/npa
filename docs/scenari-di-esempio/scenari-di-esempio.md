@@ -5,7 +5,7 @@ Di seguito la sequenza di operazioni da eseguire per ottenere l'aggiudicazione d
 # 2 Esempi di flusso
 ## 2.1 Pubblicazione procedura sopra soglia
 Creazione e pubblicazione di una procedura sopra soglia con invio dell'avvisio di indizione al TED.
-Schede utilizzate: P1_16 
+Schede utilizzate: P1_16  
 
 ### 2.1.2 Preparazione dati 
 
