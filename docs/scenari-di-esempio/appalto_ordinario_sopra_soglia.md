@@ -87,7 +87,7 @@ non richiesto
 #### 2.4 Recupero CIG assegnati ai lotti
  L'operazione consente di acquisire i codici CIG per il loro futuro uso nel payload dati 
 #### Servizio:
-../ComunicaAppalto/v2/recupera-cig?idAppalto=9d35c075-4316-46f5-aa5c-27fb111d0179
+../ComunicaAppalto/v2/recupera-cig?idAppalto=4f8f5660-87e8-4dbb-b325-17e216f4a519
 #### Payload:
 non richiesto
 #### Response:
