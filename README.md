@@ -120,5 +120,8 @@ L’Autorità Nazionale Anticorruzione si riserva la facoltà di non fornire ris
 - alla mancanza di risposta per richieste pervenute al di fuori dell'unico canale di comunicazione con ANAC rappresentato dalla sezione [Issues](https://github.com/domaltomare/npa/issues)
 - alla possibile mancanza di risposta per tutte le richieste pervenute nell'apposita sezione Issues o che potrebbero essere di competenza di organizzazioni esterne.
 
+## Scenari di esempio
+
+
 # Roadmap del progetto
 Le scadenze principali del progetto (milestones) sono consultabili nella [Roadmap](./roadmap.md). Fermo restando le scadenze principali la roadmap può essere aggiornata in qualunque momento
