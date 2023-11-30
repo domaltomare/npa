@@ -492,20 +492,11 @@ ref. /docs/specifiche-jws/
 	* reso obbligatorio l'attributo quadroEconomicoStandard
 </details>
 
-# Note di rilascio del gg/mm/aaaa
+# Note di rilascio del 30/11/2023
 
+## Documentazione
+* Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.8.0).
 
-## Modello Dati 
-
+## Scenari di esempio 
+* Aggiunto uno scenario di esempio che riporta la sequenza di operazioni da eseguire per ottenere l'aggiudicazione di un appalto nel settore ordinario sopra soglia
     
-### Regole
-
-
-### Schede
-
-
-### Tipologiche
-* errori.json
-  * aggiunti i seguenti messaggi di errore: ERR94
-
-## Orchestratore
