@@ -215,20 +215,21 @@ non richiesto
             "dataInoltroPubblicazione": null,
             "dataPubblicazione": null
         }
-    },
-    "scheda": {...omessa...},
-    "appalto": {
-        "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519",
-        "codiceAppalto": "TEST_P1_16.0",
-        "oggetto": "Provision of IT services related to the information systems of the publications office (namely EUR-Lex, N-Lex, and Search Layer),\n\t\t\twith the possibility to extend the provision to other information systems.",
-        "dataCreazione": "2023-11-30T09:14:31.209+00:00",
-        "dataModifica": "2023-11-30T09:20:22.831+00:00",
-        "stato": {
-            "idTipologica": "statoAppalto",
-            "codice": "IN_ATT_PUBB"
-        }
-    },
-    "piano": null
+    
+        "scheda": {...omessa...},
+        "appalto": {
+            "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519",
+            "codiceAppalto": "TEST_P1_16.0",
+            "oggetto": "Provision of IT services related to the information systems of the publications office (namely EUR-Lex, N-Lex, and Search Layer),\n\t\t\twith the possibility to extend the provision to other information systems.",
+            "dataCreazione": "2023-11-30T09:14:31.209+00:00",
+            "dataModifica": "2023-11-30T09:20:22.831+00:00",
+            "stato": {
+                "idTipologica": "statoAppalto",
+                "codice": "IN_ATT_PUBB"
+            }
+        },
+        "piano": null
+    }
 }
 ```
 
