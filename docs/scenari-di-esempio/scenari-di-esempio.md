@@ -15,7 +15,7 @@ Schede utilizzate: P1_16
 |	eForm |<ul><li>	modifica notice-id inserendo un valore univoco </li> <li> modifica issueDate inserendo la data corrente </li> </ul> <br> per l'aggiornamento della eForm vedi file eForm16.xml. Il file modificato deve essere codificato Base64 e inserito nel campo scheda.eForm della scheda |
 
 ### 2 Sequenza operazioni
-#### 2.1 Creazione di un avviso
+#### 2.1 Creazione di un avviso di indizione
 #### Servizio:
 ../ComunicaAppalto/v2/crea-appalto/
 #### Payload:
@@ -23,21 +23,21 @@ P1_16.json
 #### Response:
 ```yaml
 {
-  "status": 200,
-  "title":"Operazione Effettuata",
-  "detail": "Creazione eseguita con successo",
-  "type": "about:blank",
-  "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"
+    "status": 200,
+    "title": "Operazione Effettuata",
+    "detail": "Creazione eseguita con successo",
+    "type": "about:blank",
+    "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519"
 }
 ```
-#### 2.2 Conferma di un avviso
+#### 2.2 Conferma di un avviso di indizione
  Ad esito positivo dell'operazione il sistema assegna i CIG ai lotti. 
 #### Servizio:
 ../ComunicaAppalto/v2/conferma-appalto
 #### Payload:
 ```yaml
 {
-    "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"
+    "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519"
 }
 ```
 #### Response:
@@ -51,14 +51,40 @@ P1_16.json
 ```
 #### 2.3 Esito Operazione
  L'operazione di conferma è asincona e richiede un secondo accesso per ottere l'esito.
- Se la conferma va a buon fine esito-operazione consente di acquisire l'identificativo dell'avviso per il suo successivo uso nel payload dati 
+ Se la conferma va a buon fine esito-operazione consente di acquisire gli identificativi dell'avviso e della scheda per loro suo successivo uso nel payload dati 
 #### Servizio:
 ..ServiziComuni/v2/esito-operazione?idAppalto=c88f5cb1-65ee-4ab4-ae35-d9e55e926697&tipoRicerca=ULTIMO_ESITO&tipoOperazione=AP_CONF
 #### Payload:
-
+non richiesto
 #### Response:
 ```yaml
-
+{
+    "status": 200,
+    "title": "OK",
+    "detail": "Esecuzione avvenuta con successo",
+    "type": "about:blank",
+    "listaEsiti": [
+        {
+            "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519",
+            "idScheda": "989d89c5-29f1-4ce0-98e6-5171ace7e1a2",
+            "idAvviso": "b4a5f333-64e6-4fba-8c48-eb3cf88e3cdd",
+            "esito": {
+                "idTipologica": "esito",
+                "codice": "OK"
+            },
+            "tipoOperazione": {
+                "idTipologica": "tipoOperazione",
+                "codice": "AP_CONF"
+            },
+            "dataControllo": "2023-11-30T09:15:54.152+00:00",
+            "dettaglio": {
+                "idTipologica": "esitoOperazione",
+                "codice": "AP_CONF"
+            }
+        }
+    ]
+}
+```
 #### 2.4 Recupero CIG assegnati ai lotti
  L'operazione consente di acquisire i codici CIG per il loro futuro uso nel payload dati 
 #### Servizio:
@@ -72,14 +98,18 @@ P1_16.json
     "title": "OK",
     "detail": "Operazione eseguita con successo",
     "type": "about:blank",
-    "totRows": 1,
+    "totRows": 2,
     "totPages": 1,
     "currentPage": 1,
     "elementPage": 20,
     "result": [
         {
-            "cig": "J00003C9C1",
+            "cig": "K00003EC3A",
             "lotIdentifier": "LOT-0001"
+        },
+        {
+            "cig": "L00003DC3A",
+            "lotIdentifier": "LOT-0002"
         }
     ]
 }
@@ -91,8 +121,8 @@ P1_16.json
 #### Payload:
 ```yaml
 {
-    "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179",
-    "idAvviso": "75abbbb7-9720-46b2-afc2-51ca1cc6f498"
+    "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519",
+    "idAvviso": "b4a5f333-64e6-4fba-8c48-eb3cf88e3cdd"
 }
 ```
 #### Response:
@@ -119,13 +149,13 @@ P1_16.json
     "detail": "Operazione Effettuata",
     "type": "about:blank",
     "statoAvviso": {
-        "idAvviso": "75abbbb7-9720-46b2-afc2-51ca1cc6f498",
-        "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179",
+        "idAvviso": "b4a5f333-64e6-4fba-8c48-eb3cf88e3cdd",
+        "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519",
         "idPianificazione": null,
-        "dataControllo": "2023-11-21T15:15:03.620+00:00",
+        "dataControllo": "2023-11-30T09:20:22.830+00:00",
         "stato": {
             "idTipologica": "statoAvviso",
-            "codice": "PUBB"
+            "codice": "IN_ATT_PUBB"
         }
     }
 }
@@ -134,7 +164,7 @@ P1_16.json
 #### 2.7 Consulta avviso
  Il servizio restituisce maggiori dettagli sull'avviso e le informazioni relative alla pubblicazione dal parte del sistema TED e del servizio Pubblicita a Valore Legale (PVL) di ANAC
 #### Servizio:
-..//PubblicaAvviso/v2/stato-avviso?idAvviso=75abbbb7-9720-46b2-afc2-51ca1cc6f498
+..//PubblicaAvviso/v2/stato-avviso?idAvviso=b4a5f333-64e6-4fba-8c48-eb3cf88e3cdd
 #### Payload:
 
 #### Response:
@@ -146,22 +176,22 @@ P1_16.json
     "detail": "Operazione Effettuata",
     "type": "about:blank",
     "avviso": {
-        "idAvviso": "75abbbb7-9720-46b2-afc2-51ca1cc6f498",
-        "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179",
+        "idAvviso": "b4a5f333-64e6-4fba-8c48-eb3cf88e3cdd",
+        "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519",
         "idPianificazione": null,
-        "dataCreazione": "2023-11-28T20:34:54.898+00:00",
+        "dataCreazione": "2023-11-30T09:15:50.204+00:00",
         "dataPubblicazione": null,
         "stato": {
             "idTipologica": "statoAvviso",
             "codice": "IN_ATT_PUBB"
         },
-        "dataControllo": "2023-11-28T20:40:02.345+00:00",
+        "dataControllo": "2023-11-30T09:20:22.830+00:00",
         "azione": {
             "idTipologica": "tipoAzioneAvviso",
             "codice": "AZ_PUBB"
         },
         "datiPubblicazioneEU": {
-            "noticeId": "37cb1871-6381-4a78-bd84-d7e77b93d448",
+            "noticeId": "048e8090-e8f5-4f71-a282-76fc4236c98a",
             "versionId": "01",
             "tipo": {
                 "idTipologica": "tipoAvviso",
@@ -171,9 +201,9 @@ P1_16.json
                 "idTipologica": "statoAvviso",
                 "codice": "IN_ATT_PUBB"
             },
-            "dataControllo": "2023-11-28T20:40:02.345+00:00",
-            "dataInoltroPubblicazione": "2023-11-28T20:40:03.964+00:00",
-            "dataRicezionePubblicazione": "2023-11-27T22:00:00.000+00:00",
+            "dataControllo": "2023-11-30T09:20:22.830+00:00",
+            "dataInoltroPubblicazione": "2023-11-30T09:20:24.619+00:00",
+            "dataRicezionePubblicazione": null,
             "dataPubblicazione": null
         },
         "datiPubblicazioneIT": {
@@ -189,18 +219,19 @@ P1_16.json
     },
     "scheda": {...omessa...},
     "appalto": {
-        "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179",
-        "codiceAppalto": "utilizzare un codice Univoco",
-        "oggetto": "oggetto",
-        "dataCreazione": "2023-11-28T20:14:53.592+00:00",
-        "dataModifica": "2023-11-28T20:40:02.346+00:00",
+        "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519",
+        "codiceAppalto": "TEST_P1_16.0",
+        "oggetto": "Provision of IT services related to the information systems of the publications office (namely EUR-Lex, N-Lex, and Search Layer),\n\t\t\twith the possibility to extend the provision to other information systems.",
+        "dataCreazione": "2023-11-30T09:14:31.209+00:00",
+        "dataModifica": "2023-11-30T09:20:22.831+00:00",
         "stato": {
             "idTipologica": "statoAppalto",
             "codice": "IN_ATT_PUBB"
         }
     },
     "piano": null
-}```
+}
+```
 
 ## Acquisizione partecipanti e aggiudicazione
 Creazione e pubblicazione di una procedura sopra soglia con invio dell'avvisio di indizione al TED.
@@ -210,7 +241,7 @@ Schede utilizzate: S2, A1_29
 #### 1.1 Scheda S2 elenco partecipanti
 | Sezione | Modifica |
 | ---------- | ---------- |
-| anacForm | <ul><li> modificare i codici CIG inserendo quelli ottenuti per la procedura corrente con il servizio recupera CIG </li> </ul>|
+| anacForm | <ul><li> modificare i codici CIG inserendo quelli ottenuti per la procedura corrente con il servizio recupera CIG </li> <li> modificare idAppalto inserendo quello della procedura in corso </li></ul>|
 |	eForm | non prevista |
 
 #### 1.2 Scheda A1_29 elenco partecipanti
@@ -222,28 +253,29 @@ Schede utilizzate: S2, A1_29
 ### 2 Sequenza operazioni
 #### 2.1 Creazione di una scheda S2
 #### Servizio:
-../ComunicaAppalto/v2/crea-appalto/
+../ComunicaPostPubblicazione/v2/crea-scheda
 #### Payload:
 S2.json
 #### Response:
 ```yaml
 {
-  "status": 200,
-  "title":"Operazione Effettuata",
-  "detail": "Creazione eseguita con successo",
-  "type": "about:blank",
-  "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"
+    "status": 200,
+    "title": "Operazione Effettuata",
+    "detail": "Creazione eseguita con successo",
+    "type": "about:blank",
+    "idScheda": "7f234d6b-6fba-4384-9c06-3a22e643ca8c"
 }
 ```
 
 #### 2.2 Conferma della scheda S2
  
 #### Servizio:
-../ComunicaAppalto/v2/conferma-appalto
+../ComunicaPostPubblicazione/v2/conferma-scheda
 #### Payload:
 ```yaml
 {
-    "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"
+ "idScheda": "7f234d6b-6fba-4384-9c06-3a22e643ca8c",
+  "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519"
 }
 ```
 #### Response:
