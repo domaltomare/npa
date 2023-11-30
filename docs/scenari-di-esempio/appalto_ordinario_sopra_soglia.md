@@ -52,7 +52,7 @@ P1_16.json
  L'operazione di conferma è asincona e richiede un secondo accesso per ottere l'esito.
  Se la conferma va a buon fine esito-operazione consente di acquisire gli identificativi dell'avviso e della scheda per loro suo successivo uso nel payload dati 
 #### Servizio:
-../ServiziComuni/v2/esito-operazione?idAppalto=c88f5cb1-65ee-4ab4-ae35-d9e55e926697&tipoRicerca=ULTIMO_ESITO&tipoOperazione=AP_CONF
+../ServiziComuni/v2/esito-operazione?idAppalto=4f8f5660-87e8-4dbb-b325-17e216f4a519&tipoRicerca=ULTIMO_ESITO&tipoOperazione=AP_CONF
 #### Payload:
 non richiesto
 #### Response:
