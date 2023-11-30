@@ -59,7 +59,7 @@ P1_16.json
 #### Response:
 ```yaml
 
-#### 2.3 Recupero CIG assegnati ai lotti
+#### 2.4 Recupero CIG assegnati ai lotti
  L'operazione consente di acquisire i codici CIG per il loro futuro uso nel payload dati 
 #### Servizio:
 ../ComunicaAppalto/v2/recupera-cig?idAppalto=9d35c075-4316-46f5-aa5c-27fb111d0179
@@ -84,7 +84,7 @@ P1_16.json
     ]
 }
 ```
-#### 2.3 Pubblica avviso
+#### 2.5 Pubblica avviso
  Per richiedere la pubblicazione di una scheda di indizione è necessaria una chiamata esplicita al servizio pubblica avviso (in tutti gli altri casi il sistema pubblica automaticamente gli avvisi di pre e post informazione)
 #### Servizio:
 ../PubblicaAvviso/v2/pubblica-avviso
@@ -104,7 +104,7 @@ P1_16.json
     "type": "about:blank"
 }
 ```
-#### 2.3 Stato avviso
+#### 2.6 Stato avviso
  La pubblicazione dell'avviso può richiedere uno o più giorni e il processo attraversa diversi stati.
  La condizione attuale può essere consultata con il servizio stato avviso
 #### Servizio:
@@ -131,7 +131,7 @@ P1_16.json
 }
 ```
 
-#### 2.3 Consulta avviso
+#### 2.7 Consulta avviso
  Il servizio restituisce maggiori dettagli sull'avviso e le informazioni relative alla pubblicazione dal parte del sistema TED e del servizio Pubblicita a Valore Legale (PVL) di ANAC
 #### Servizio:
 ..//PubblicaAvviso/v2/stato-avviso?idAvviso=75abbbb7-9720-46b2-afc2-51ca1cc6f498
@@ -201,3 +201,57 @@ P1_16.json
     },
     "piano": null
 }```
+
+## Acquisizione partecipanti e aggiudicazione
+Creazione e pubblicazione di una procedura sopra soglia con invio dell'avvisio di indizione al TED.
+Schede utilizzate: S2, A1_29 
+
+### 1 Preparazione dati 
+#### 1.1 Scheda S2 elenco partecipanti
+| Sezione | Modifica |
+| ---------- | ---------- |
+| anacForm | <ul><li> modificare i codici CIG inserendo quelli ottenuti per la procedura corrente con il servizio recupera CIG </li> </ul>|
+|	eForm | non prevista |
+
+#### 1.2 Scheda A1_29 elenco partecipanti
+| Sezione | Modifica |
+| ---------- | ---------- |
+| anacForm | <ul><li> modificare i codici CIG inserendo quelli ottenuti per la procedura corrente con il servizio recupera CIG </li> </ul>|
+|	eForm |<ul><li>	modifica notice-id inserendo un valore univoco </li> <li> modifica issueDate inserendo la data corrente </li> </ul> <br> per l'aggiornamento della eForm vedi file eForm29.xml. Il file modificato deve essere codificato Base64 e inserito nel campo scheda.eForm della scheda |
+
+### 2 Sequenza operazioni
+#### 2.1 Creazione di una scheda S2
+#### Servizio:
+../ComunicaAppalto/v2/crea-appalto/
+#### Payload:
+S2.json
+#### Response:
+```yaml
+{
+  "status": 200,
+  "title":"Operazione Effettuata",
+  "detail": "Creazione eseguita con successo",
+  "type": "about:blank",
+  "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"
+}
+```
+
+#### 2.2 Conferma della scheda S2
+ 
+#### Servizio:
+../ComunicaAppalto/v2/conferma-appalto
+#### Payload:
+```yaml
+{
+    "idAppalto": "9d35c075-4316-46f5-aa5c-27fb111d0179"
+}
+```
+#### Response:
+```yaml
+{
+    "status": 200,
+    "title": "OK",
+    "detail": "Richiesta acquisita",
+    "type": "about:blank"
+}
+```
