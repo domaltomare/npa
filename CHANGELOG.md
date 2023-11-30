@@ -499,3 +499,17 @@ ref. /docs/specifiche-jws/
   
 ## Documentazione
 * Nel file README.md è stato aggiunto il riferimento alla nuova sezione Scenari di esempio
+
+# Note di rilascio del gg/mm/aaaa
+
+## Modello Dati 
+
+### Regole
+
+### Schede
+
+### Tipologiche
+* errori.json
+  * aggiunti i seguenti messaggi di errore: ERR94
+
+## Orchestratore  
