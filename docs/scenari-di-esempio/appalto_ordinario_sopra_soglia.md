@@ -214,8 +214,7 @@ non richiesto
             "dataControllo": null,
             "dataInoltroPubblicazione": null,
             "dataPubblicazione": null
-        }
-    
+        },
         "scheda": {...omessa...},
         "appalto": {
             "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519",
