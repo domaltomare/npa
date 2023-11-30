@@ -492,13 +492,15 @@ ref. /docs/specifiche-jws/
 	* reso obbligatorio l'attributo quadroEconomicoStandard
 </details>
 
-# Note di rilascio del 30/11/2023
+<details>
+<summary><h1> Note di rilascio del 30/11/2023</h1></summary>
 
 ## Scenari di esempio 
 * Aggiunta la cartella [scenari-di-esempio](docs/scenari-di-esempio) che riporta la sequenza di operazioni da eseguire per ottenere l'aggiudicazione di un appalto nel settore ordinario sopra soglia
   
 ## Documentazione
 * Nel file README.md è stato aggiunto il riferimento alla nuova sezione Scenari di esempio
+</details>
 
 # Note di rilascio del gg/mm/aaaa
 
