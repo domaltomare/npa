@@ -290,7 +290,7 @@ S2.json
 #### Servizio:
 ../ComunicaPostPubblicazione/v2/crea-scheda
 #### Payload:
-A1_29.json
+[A1_29.json](./files/A1_29.json)
 #### Response:
 ```yaml
 {
