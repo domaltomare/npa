@@ -505,9 +505,11 @@ ref. /docs/specifiche-jws/
 ## Modello Dati 
 
 ### Regole
-
+* S3.dmn
+	* riviste le regole
 ### Schede
-
+* modello-dati-schede-I1.yaml:
+	* modificato l'oggetto DatiInizioType: corretto il nome dell'attributo dataDisposizioneInizio (ISSUE 748)
 ### Tipologiche
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR94
