@@ -494,9 +494,8 @@ ref. /docs/specifiche-jws/
 
 # Note di rilascio del 30/11/2023
 
-## Documentazione
-* Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.8.0).
-
 ## Scenari di esempio 
-* Aggiunto uno scenario di esempio che riporta la sequenza di operazioni da eseguire per ottenere l'aggiudicazione di un appalto nel settore ordinario sopra soglia
-    
+* Aggiunta la cartella [scenari-di-esempio](docs/scenari-di-esempio) che riporta la sequenza di operazioni da eseguire per ottenere l'aggiudicazione di un appalto nel settore ordinario sopra soglia
+  
+## Documentazione
+* Nel file README.md è stato aggiunto il riferimento alla nuova sezione Scenari di esempio
