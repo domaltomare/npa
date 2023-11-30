@@ -18,7 +18,7 @@ Schede utilizzate: P1_16
 #### Servizio:
 ../ComunicaAppalto/v2/crea-appalto/
 #### Payload:
-P1_16.json
+[P1_16.json](./files/P1_16.json)
 #### Response:
 ```yaml
 {
@@ -254,7 +254,7 @@ Schede utilizzate: S2, A1_29
 #### Servizio:
 ../ComunicaPostPubblicazione/v2/crea-scheda
 #### Payload:
-S2.json
+[S2.json](./files/S2.json)
 #### Response:
 ```yaml
 {
