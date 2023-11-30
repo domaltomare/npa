@@ -163,7 +163,7 @@ non richiesto
 #### 2.7 Consulta avviso
  Il servizio restituisce maggiori dettagli sull'avviso e le informazioni relative alla pubblicazione dal parte del sistema TED e del servizio Pubblicita a Valore Legale (PVL) di ANAC
 #### Servizio:
-../PubblicaAvviso/v2/stato-avviso?idAvviso=b4a5f333-64e6-4fba-8c48-eb3cf88e3cdd
+../PubblicaAvviso/v2/consulta-avviso?idAvviso=b4a5f333-64e6-4fba-8c48-eb3cf88e3cdd
 #### Payload:
 non richiesto
 #### Response:
