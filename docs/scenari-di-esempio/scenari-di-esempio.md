@@ -2,7 +2,6 @@
 
 Di seguito la sequenza di operazioni da eseguire per ottenere l'aggiudicazione di un appalto nel settore ordinario sopra soglia scheda P1_16
 
-# Esempi di flusso
 ## Pubblicazione procedura sopra soglia
 Creazione e pubblicazione di una procedura sopra soglia con invio dell'avvisio di indizione al TED. <br>
 Schede utilizzate: P1_16  
@@ -11,8 +10,8 @@ Schede utilizzate: P1_16
 
 | Sezione | Modifica |
 | ---------- | ---------- |
-| anacForm | <ul><li> modificare o aggiungere le informazioni identificative della Stazione appaltante in $.scheda.body.anacForm.stazioniAppaltanti <br> si può scegliere di modificare la SA presente (cf 11111111115) o aggiungere una nuova SA. Quella presente è la SA di test in uso presso ANAC </li> <li> modificare scheda.body.anacForm.appalto.codiceAppalto inserendo un valore univoco </li> </ul>|
-|	eForm |<ul><li>	modifica notice-id inserendo un valore univoco </li> <li> modifica issueDate inserendo la data corrente </li> </ul> <br> per l'aggiornamento della eForm vedi file eForm16.xml. Il file modificato deve essere codificato Base64 e inserito nel campo scheda.eForm della scheda |
+| anacForm | <ul><li> modificare o aggiungere le informazioni identificative della Stazione appaltante in $.scheda.body.anacForm.stazioniAppaltanti <br> si può scegliere di modificare la SA presente (cf 11111111115) o aggiungere una nuova SA. Quella presente è la SA di test in uso presso ANAC </li> <li> modificare $.scheda.body.anacForm.appalto.codiceAppalto inserendo un valore univoco </li> </ul>|
+|	eForm |<ul><li>	modifica notice-id inserendo un valore univoco </li> <li> modifica issueDate inserendo la data corrente </li> </ul> <br> per l'aggiornamento della eForm estrarre il campo eForm, effettuare la decodifica e modificare il documento XML. Il documento modificato deve essere codificato Base64 e inserito nel campo scheda.eForm della scheda |
 
 ### 2 Sequenza operazioni
 #### 2.1 Creazione di un avviso di indizione
@@ -53,7 +52,7 @@ P1_16.json
  L'operazione di conferma è asincona e richiede un secondo accesso per ottere l'esito.
  Se la conferma va a buon fine esito-operazione consente di acquisire gli identificativi dell'avviso e della scheda per loro suo successivo uso nel payload dati 
 #### Servizio:
-..ServiziComuni/v2/esito-operazione?idAppalto=c88f5cb1-65ee-4ab4-ae35-d9e55e926697&tipoRicerca=ULTIMO_ESITO&tipoOperazione=AP_CONF
+../ServiziComuni/v2/esito-operazione?idAppalto=c88f5cb1-65ee-4ab4-ae35-d9e55e926697&tipoRicerca=ULTIMO_ESITO&tipoOperazione=AP_CONF
 #### Payload:
 non richiesto
 #### Response:
@@ -90,7 +89,7 @@ non richiesto
 #### Servizio:
 ../ComunicaAppalto/v2/recupera-cig?idAppalto=9d35c075-4316-46f5-aa5c-27fb111d0179
 #### Payload:
-
+non richiesto
 #### Response:
 ```yaml
 {
@@ -138,9 +137,9 @@ non richiesto
  La pubblicazione dell'avviso può richiedere uno o più giorni e il processo attraversa diversi stati.
  La condizione attuale può essere consultata con il servizio stato avviso
 #### Servizio:
-..//PubblicaAvviso/v2/stato-avviso?idAvviso=75abbbb7-9720-46b2-afc2-51ca1cc6f498
+../PubblicaAvviso/v2/stato-avviso?idAvviso=75abbbb7-9720-46b2-afc2-51ca1cc6f498
 #### Payload:
-
+non richiesto
 #### Response:
 ```yaml
 {
@@ -164,9 +163,9 @@ non richiesto
 #### 2.7 Consulta avviso
  Il servizio restituisce maggiori dettagli sull'avviso e le informazioni relative alla pubblicazione dal parte del sistema TED e del servizio Pubblicita a Valore Legale (PVL) di ANAC
 #### Servizio:
-..//PubblicaAvviso/v2/stato-avviso?idAvviso=b4a5f333-64e6-4fba-8c48-eb3cf88e3cdd
+../PubblicaAvviso/v2/stato-avviso?idAvviso=b4a5f333-64e6-4fba-8c48-eb3cf88e3cdd
 #### Payload:
-
+non richiesto
 #### Response:
 ```yaml
 {
@@ -275,6 +274,42 @@ S2.json
 ```yaml
 {
  "idScheda": "7f234d6b-6fba-4384-9c06-3a22e643ca8c",
+  "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519"
+}
+```
+#### Response:
+```yaml
+{
+    "status": 200,
+    "title": "OK",
+    "detail": "Richiesta acquisita",
+    "type": "about:blank"
+}
+```
+#### 2.3 Creazione di una scheda A1_29
+#### Servizio:
+../ComunicaPostPubblicazione/v2/crea-scheda
+#### Payload:
+A1_29.json
+#### Response:
+```yaml
+{
+    "status": 200,
+    "title": "Operazione Effettuata",
+    "detail": "Creazione eseguita con successo",
+    "type": "about:blank",
+    "idScheda": "90c54b91-1306-46c6-a96b-3c282195736c"
+}
+```
+
+#### 2.4 Conferma della scheda A1_29
+ 
+#### Servizio:
+../ComunicaPostPubblicazione/v2/conferma-scheda
+#### Payload:
+```yaml
+{
+ "idScheda": "90c54b91-1306-46c6-a96b-3c282195736c",
   "idAppalto": "4f8f5660-87e8-4dbb-b325-17e216f4a519"
 }
 ```
