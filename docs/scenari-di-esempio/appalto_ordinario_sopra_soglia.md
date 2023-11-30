@@ -137,7 +137,7 @@ non richiesto
  La pubblicazione dell'avviso può richiedere uno o più giorni e il processo attraversa diversi stati.
  La condizione attuale può essere consultata con il servizio stato avviso
 #### Servizio:
-../PubblicaAvviso/v2/stato-avviso?idAvviso=75abbbb7-9720-46b2-afc2-51ca1cc6f498
+../PubblicaAvviso/v2/stato-avviso?idAvviso=b4a5f333-64e6-4fba-8c48-eb3cf88e3cdd
 #### Payload:
 non richiesto
 #### Response:
