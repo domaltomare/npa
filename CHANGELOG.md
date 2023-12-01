@@ -517,3 +517,4 @@ ref. /docs/specifiche-jws/
   * aggiunti i seguenti messaggi di errore: ERR94
 
 ## Orchestratore  
+* Aggiornato il file schema-cronologia-schede.xlsx
