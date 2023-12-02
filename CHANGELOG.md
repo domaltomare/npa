@@ -502,8 +502,9 @@ ref. /docs/specifiche-jws/
 * Nel file README.md è stato aggiunto il riferimento alla nuova sezione Scenari di esempio
 </details>
 
-# Note di rilascio del 04/12/2023
-
+<details>
+<summary><h1> Note di rilascio del 04/12/2023</h1></summary>
+	
 ## Modello Dati 
 
 ### Regole
@@ -518,6 +519,7 @@ ref. /docs/specifiche-jws/
 
 ## Orchestratore  
 * Aggiornato il file schema-cronologia-schede.xlsx
+</details>
 
 # Note di rilascio del gg/mm/aaaa
 
