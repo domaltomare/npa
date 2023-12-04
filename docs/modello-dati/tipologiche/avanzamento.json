@@ -2,8 +2,9 @@
     "codice":"9",
     "descrizione": {
 		"it": "Puntuale",
-		"en": "Puntuale"
-		},
+		"en": "Puntuale",
+	        "de": "Pünktlich"	
+        },
     "dataInizio":null,
     "dataFine":null
 },
@@ -11,8 +12,9 @@
     "codice":"10",
     "descrizione": {
 		"it": "Anticipo",
-		"en": "Anticipo"
-		},
+		"en": "Anticipo",
+	        "de": "Vorzeitig"	
+        },
     "dataInizio":null,
     "dataFine":null
 },
@@ -20,8 +22,9 @@
     "codice":"11",
     "descrizione": {
 		"it": "Ritardo",
-		"en": "Ritardo"
-		},
+		"en": "Ritardo",
+	        "de": "Verspätung"	
+        },
     "dataInizio":null,
     "dataFine":null
 }]
