@@ -528,7 +528,8 @@ ref. /docs/specifiche-jws/
 ### Regole
 
 ### Schede
-
+* modello-dati-schede-CSU1.yaml:
+	* eliminata perché non utlizzata
 ### Tipologiche
 
 ## Orchestratore  
