@@ -407,6 +407,12 @@ components:
             type: string
             format: date-time
             example: '2022-01-23T12:02:05Z'
+          publicationId:
+            description: identificativo univoco di pubblicazione della notice ricevuto dal TED.
+            type: string
+          publicationUrl:
+            description: url di pubblicazione della notice ricevuto dal TED.
+            type: string            
           stato:
             $ref: '#/components/schemas/StatoAvvisoEnum'
           tipo:
