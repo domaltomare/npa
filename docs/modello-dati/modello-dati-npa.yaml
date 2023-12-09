@@ -372,10 +372,7 @@ components:
           piano:
             $ref: '#/components/schemas/DatiPianoBaseType'            
           scheda:
-            oneOf:
-              - $ref: '#/components/schemas/DatiPianoType'
-              - $ref: '#/components/schemas/DatiAppaltoType'
-              - $ref: '#/components/schemas/SchedaPostPubblicazioneType'
+            $ref: '#/components/schemas/SchedaGroupType'
       DatiPubblicazioneEUType:
         type: object
         additionalProperties: false
