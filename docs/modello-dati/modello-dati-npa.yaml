@@ -415,6 +415,10 @@ components:
         type: object
         additionalProperties: false
         properties:
+          idAvvisoPVL:
+            description: identificativo univoco dell'Avviso restituito da PVL.
+            type: string
+            format: uuid          
           dataControllo:
             description: data in cui è stato effettuato il controllo dello stato avviso sulla PPL nazionale (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
