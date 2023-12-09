@@ -526,6 +526,7 @@ ref. /docs/specifiche-jws/
 ## Modello Dati 
 * modello-dati-npa.yaml:
   * aggiunto idAvvisoPVL in DatiPubblicazioneITType
+  * aggiunti publicationId e publicationUrl in DatiPubblicazioneEUType
     
 ### Regole
 
