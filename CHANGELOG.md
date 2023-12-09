@@ -527,12 +527,14 @@ ref. /docs/specifiche-jws/
 * modello-dati-npa.yaml:
   * aggiunto idAvvisoPVL in DatiPubblicazioneITType
   * aggiunti publicationId e publicationUrl in DatiPubblicazioneEUType
+  * aggiunti codiceScheda e codiceNuovaScheda in EsitoOperazioneType 
     
 ### Regole
 
 ### Schede
 * modello-dati-schede-CSU1.yaml:
-	* eliminata perché non utlizzata
+  * eliminata perché non utlizzata
+    
 ### Tipologiche
 
 ## Orchestratore  
