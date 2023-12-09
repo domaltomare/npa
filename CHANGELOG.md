@@ -527,8 +527,9 @@ ref. /docs/specifiche-jws/
 * modello-dati-npa.yaml:
   * aggiunto idAvvisoPVL in DatiPubblicazioneITType
   * aggiunti publicationId e publicationUrl in DatiPubblicazioneEUType
-  * aggiunti codiceScheda e codiceNuovaScheda in EsitoOperazioneType 
-    
+  * aggiunti codiceScheda e codiceNuovaScheda in EsitoOperazioneType
+  * modificato l'attributo $ref dell'oggetto scheda in AvvisoType
+       
 ### Regole
 
 ### Schede
