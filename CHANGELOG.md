@@ -524,7 +524,9 @@ ref. /docs/specifiche-jws/
 # Note di rilascio del gg/mm/aaaa
 
 ## Modello Dati 
-
+* modello-dati-npa.yaml:
+  * aggiunto idAvvisoPVL in DatiPubblicazioneITType
+    
 ### Regole
 
 ### Schede
