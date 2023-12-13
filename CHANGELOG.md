@@ -537,5 +537,7 @@ ref. /docs/specifiche-jws/
   * eliminata perché non utlizzata
     
 ### Tipologiche
+* errori.json
+  * aggiunti i seguenti messaggi di errore: ERR95
 
 ## Orchestratore  
