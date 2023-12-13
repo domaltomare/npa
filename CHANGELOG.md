@@ -516,7 +516,11 @@ ref. /docs/specifiche-jws/
 ### Tipologiche
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR94
-
+* tipoSoggettoANAG.json
+  * nuova tipologica ad uso interno
+* naturaGiuridicaANAG.json
+  * nuova tipologica ad uso interno
+  
 ## Orchestratore  
 * Aggiornato il file schema-cronologia-schede.xlsx
 </details>
