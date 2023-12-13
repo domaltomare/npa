@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$binary": {
+      "base64": "FDSC4+eCRV+tvlsdZZCBbg==",
+      "subType": "04"
+    }
+  },
+  "idTipologica": "tipoSoggettoANAG",
+  "descrizione": "tipoSoggettoANAG",
+  "elenco": [
+    {
+      "codice": "01",
+      "descrizione": {
+        "it": "Impresa",
+        "en": "Business"
+      }
+    },
+    {
+      "codice": "02",
+      "descrizione": {
+        "it": "Ditta individuale",
+        "en": "Individual company"
+      }
+    },
+    {
+      "codice": "03",
+      "descrizione": {
+        "it": "Consorzio",
+        "en": "Association of business"
+      }
+    },
+    {
+      "codice": "04",
+      "descrizione": {
+        "it": "Stazione appaltante",
+        "en": "Stazione appaltante"
+      }
+    },
+    {
+      "codice": "05",
+      "descrizione": {
+        "it": "RTI",
+        "en": "Temporary grouping of companies"
+      }
+    },
+    {
+      "codice": "06",
+      "descrizione": {
+        "it": "Monosoggettivo",
+        "en": "Single-subjective business"
+      }
+    }
+  ],
+  "_class": "it.anticorruzione.ms.npa.codelistsms.model.Tipologica"
+}]
