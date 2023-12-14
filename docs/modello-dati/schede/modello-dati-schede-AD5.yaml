@@ -68,7 +68,7 @@ components:
     SchedaAD5Type:
       description: Affidamento diretto < 5k €. Articolo 49 c. 6 e 50 decreto legislativo 36/2023.
       type: object
-      required: [anacForm,espd]
+      required: [anacForm]
       additionalProperties: false
       properties:
         anacForm:
