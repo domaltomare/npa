@@ -7,7 +7,7 @@ components:
     AggiudicazioneAD3Type:
       type: object
       additionalProperties: false
-      required: [lotIdentifier,partecipanti,ccnl,categoria,codIstat,datiBase,datiBaseAggiudicazioneAppalto,quadroEconomicoStandard]
+      required: [lotIdentifier,partecipanti,ccnl,categoria,codIstat,datiBase,datiBaseAggiudicazioneAppalto,quadroEconomicoStandard,datiBaseDocumenti]
       properties:  
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -51,7 +51,10 @@ components:
         datiBaseAggiudicazioneAppalto:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'
         datiBaseAccessibilita:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'      
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'
+        datiBaseDocumenti:
+          allOf: 
+          - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseDocumentiType'           
     AppaltoAD3Type:
       type: object
       additionalProperties: false
