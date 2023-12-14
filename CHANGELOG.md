@@ -539,9 +539,13 @@ ref. /docs/specifiche-jws/
 ### Schede
 * modello-dati-schede-CSU1.yaml:
   * eliminata perché non utlizzata
+* modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P6.1.yaml, modello-dati-schede-P6.2.yaml, modello-dati-schede-P7.2.yaml:
+	* reso opzionale il campo espd
     
 ### Tipologiche
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR95
 
 ## Orchestratore  
+* orchestratore:
+	* aggiornata la colonna includeESPD per le schede AD3,AD4,AD5,P6_1,P6_2,P7_2 con i valori: SI, NO
