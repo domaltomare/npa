@@ -525,7 +525,7 @@ ref. /docs/specifiche-jws/
 * Aggiornato il file schema-cronologia-schede.xlsx
 </details>
 
-# Note di rilascio del gg/mm/aaaa
+# Note di rilascio del 18/12/2023
 
 ## Modello Dati 
 * modello-dati-npa.yaml:
@@ -546,8 +546,22 @@ ref. /docs/specifiche-jws/
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR95
 * CPV.json:
-	* eliminati i codici duplicati 
+  * eliminati i codici duplicati 
 
 ## Orchestratore  
 * orchestratore:
-	* aggiornata la colonna includeESPD per le schede AD3,AD4,AD5,P6_1,P6_2,P7_2 con i valori: SI, NO
+  * aggiornata la colonna includeESPD per le schede AD3,AD4,AD5,P6_1,P6_2,P7_2 con i valori: SI, NO
+
+# Note di rilascio del 31/01/2024
+
+## Modello Dati 
+* modello-dati-npa.yaml:
+  * modificato l'attributo $ref dell'oggetto scheda in AvvisoType
+       
+### Regole
+
+### Schede
+    
+### Tipologiche
+
+## Orchestratore  
