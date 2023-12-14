@@ -545,6 +545,8 @@ ref. /docs/specifiche-jws/
 ### Tipologiche
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR95
+* CPV.json:
+	* eliminati i codici duplicati 
 
 ## Orchestratore  
 * orchestratore:
