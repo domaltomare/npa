@@ -540,7 +540,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-CSU1.yaml:
   * eliminata perché non utlizzata
 * modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P6.1.yaml, modello-dati-schede-P6.2.yaml, modello-dati-schede-P7.2.yaml:
-	* reso opzionale il campo espd
+  * reso opzionale il campo espd
     
 ### Tipologiche
 * errori.json
