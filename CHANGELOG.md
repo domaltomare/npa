@@ -542,13 +542,10 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P6.1.yaml, modello-dati-schede-P6.2.yaml, modello-dati-schede-P7.2.yaml:
   * reso opzionale il campo espd
 * modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml,modello-dati-schede-AD5.yaml:
-	* inserito l'oggetto obbligatorio datiBaseDocumenti
+	* inserito l'oggetto datiBaseDocumenti
 * modello-dati-schede-AD4.yaml:
-	* inserito l'oggetto facoltativo datiBaseDocumenti
-* modello-dati-schede-P2*.yaml:
-	* reso obbligatorio l'oggetto datiBaseDocumenti
-* modello-dati-schede-dati-comuni.yaml:
-	* reso obbligatorio l'oggetto datiBaseDocumenti per le schede P4*    
+	* inserito l'oggetto datiBaseDocumenti
+    
 ### Tipologiche
 * errori.json
   * aggiunti i seguenti messaggi di errore: ERR95
