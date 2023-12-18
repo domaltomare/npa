@@ -525,7 +525,8 @@ ref. /docs/specifiche-jws/
 * Aggiornato il file schema-cronologia-schede.xlsx
 </details>
 
-# Note di rilascio del 18/12/2023
+<details>
+<summary><h1> Note di rilascio del 18/12/2023</h1></summary>
 
 ## Modello Dati 
 * modello-dati-npa.yaml:
@@ -551,6 +552,7 @@ ref. /docs/specifiche-jws/
 
 ## Orchestratore  
 * Aggiornato il file schema-cronologia-schede.xlsx
+</details>
 
 # Note di rilascio del 31/01/2024
 
