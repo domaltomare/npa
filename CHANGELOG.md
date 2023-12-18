@@ -532,7 +532,6 @@ ref. /docs/specifiche-jws/
   * aggiunto idAvvisoPVL in DatiPubblicazioneITType
   * aggiunti publicationId e publicationUrl in DatiPubblicazioneEUType
   * aggiunti codiceScheda e codiceNuovaScheda in EsitoOperazioneType
-  * modificato l'attributo $ref dell'oggetto scheda in AvvisoType
        
 ### Regole
 
@@ -551,8 +550,7 @@ ref. /docs/specifiche-jws/
   * eliminati i codici duplicati 
 
 ## Orchestratore  
-* orchestratore:
-  * aggiornata la colonna includeESPD per le schede AD3,AD4,AD5,P6_1,P6_2,P7_2 con i valori: SI, NO
+* Aggiornato il file schema-cronologia-schede.xlsx
 
 # Note di rilascio del 31/01/2024
 
