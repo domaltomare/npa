@@ -580,7 +580,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-P5.yaml:
 	* eliminati i campi oggetto, oggettoMl, oggettoContratto, importo da LottoP5Type e aggiunto il campo datiBase, contenenti i campi oggetto, oggettoMl, oggettoContratto, importo.    
 ### Tipologiche
-* aggiornata RuoloOE.json
-* aggiunta la tipologica categoriaScorporabile
+* aggiornare RuoloOE.json
+* aggiunta la tipologica categoriaScorporabile.json
 
 ## Orchestratore  
