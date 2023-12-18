@@ -559,9 +559,28 @@ ref. /docs/specifiche-jws/
   * modificato l'attributo $ref dell'oggetto scheda in AvvisoType
        
 ### Regole
-
+* issue 886: P1_10.dmn, P1_11.dmn, P1_12.dmn, P1_13.dmn, P1_14.dmn, P1_16.dmn, P1_17.dmn, P1_19.dmn, P1_20.dmn, P1_21.dmn, P2_10.dmn, P2_11.dmn, P2_12.dmn, P2_13.dmn, P2_14.dmn, P2_16.dmn, P2_17.dmn, P2_19.dmn, P2_20.dmn, P2_21.dmn:
+	* corretta la REG1.
 ### Schede
-    
+* issue 712:
+	* modello-dati-schede-dati-comuni.yaml: oggetto DatiPersonaGiuridicaType: sostituito idgruppo con idPartecipante. 
+* issue 694, 799:
+	* modello-dati-schede-dati-comuni.yaml: oggetto OfferteType: reso obbligatorio il campo aggiudicatario.
+* issue 448,548,567:	
+	* modello-dati-schede-CO2.yaml: oggetto AnacFormCO2Type: sostituito idContratto con idScheda.
+	* modello-dati-schede-CO1.yaml: oggetto AnacFormCO1Type: sostituire idContratto con lista di cig oppure rendere array il campo conclusione e dentro mettere cig?
+* issue 796:
+	* modello-dati-schede-A3_6.yaml: eliminato l'oggetto datiBaseRisultatoProcedura da AggiudicazioneA3_6Type
+* issue 599:
+	* modello-dati-schede-dati-comuni.yaml, modello-dati-schede-A3.6.yaml, modello-dati-schede-PL2.7.yaml, modello-dati-schede-PL2.8.yaml, modello-dati-schede-PL2.9.yaml, modello-dati-schede-P3.4.yaml, modello-dati-schede-P2.10.yaml, modello-dati-schede-P2.11.yaml, modello-dati-schede-P2.16.yaml, modello-dati-schede-P2.17.yaml, modello-dati-schede-P2.18.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml: modificata la descrizione dei dati comuni con il ted
+* issue 308:
+	* modello-dati-schede-RSU1.yaml: modificata la cardinalità dell'oggetto codiceFiscaleDitta. Diventato array codiciFiscaliDitte
+* togliere il campo idAppalto da tutte le schede.
+* PL,P*,AD*: rendere obbligatorio l'oggetto datiBaseDocumenti con il link SA su tutte le schede in cui il campo url è obbligatorio.
+* modello-dati-schede-P5.yaml:
+	* eliminati i campi oggetto, oggettoMl, oggettoContratto, importo da LottoP5Type e aggiunto il campo datiBase, contenenti i campi oggetto, oggettoMl, oggettoContratto, importo.    
 ### Tipologiche
+* aggiornata RuoloOE.json
+* aggiunta la tipologica categoriaScorporabile
 
 ## Orchestratore  
