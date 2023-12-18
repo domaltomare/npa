@@ -566,7 +566,7 @@ ref. /docs/specifiche-jws/
 	* modello-dati-schede-dati-comuni.yaml: oggetto DatiPersonaGiuridicaType: sostituito idgruppo con idPartecipante. 
 * issue 694, 799:
 	* modello-dati-schede-dati-comuni.yaml: oggetto OfferteType: reso obbligatorio il campo aggiudicatario.
-* issue 448,548,567:	
+* issue 448,548,567,875:	
 	* modello-dati-schede-CO2.yaml: oggetto AnacFormCO2Type: sostituito idContratto con idScheda.
 	* modello-dati-schede-CO1.yaml: oggetto AnacFormCO1Type: sostituire idContratto con lista di cig oppure rendere array il campo conclusione e dentro mettere cig?
 * issue 796:
