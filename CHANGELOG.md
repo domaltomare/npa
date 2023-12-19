@@ -580,7 +580,12 @@ ref. /docs/specifiche-jws/
 * togliere il campo idAppalto da tutte le schede.
 * PL,P*,AD*: rendere obbligatorio l'oggetto datiBaseDocumenti con il link SA su tutte le schede in cui il campo url è obbligatorio.
 * modello-dati-schede-P5.yaml:
-	* eliminati i campi oggetto, oggettoMl, oggettoContratto, importo da LottoP5Type e aggiunto il campo datiBase, contenenti i campi oggetto, oggettoMl, oggettoContratto, importo.    
+	* eliminati i campi oggetto, oggettoMl, oggettoContratto, importo da LottoP5Type e aggiunto il campo datiBase, contenenti i campi oggetto, oggettoMl, oggettoContratto, importo.
+ * modello-dati-schede-dati-comuni.yaml:
+ 	* aggiunto l'oggetto CategoriaScorporabileEnum
+  	* aggiornata la reference del campo categoriaScorporabile al nuovo oggetto CategoriaScorporabileEnum per tutti gli oggetti lotto
+* modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-RSU.yaml:
+	* aggiornata la reference del campo categoriaScorporabile al nuovo oggetto CategoriaScorporabileEnum
 ### Tipologiche
 * aggiornare RuoloOE.json
 * aggiunta la tipologica categoriaScorporabile.json
