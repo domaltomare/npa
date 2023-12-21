@@ -812,19 +812,18 @@ components:
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'
     AppaltoP_16Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
-      type: object
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
-      - type: object
-        required: [motivoUrgenza]
-        additionalProperties: false
-        properties:
-          motivoUrgenza:
-            $ref: '#/components/schemas/MotivoUrgenzaEnum'  
-          linkDocumenti:
-            description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
-            type: string
-            format: url           
+      type: object
+      required: [motivoUrgenza]
+      additionalProperties: false
+      properties:
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'  
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
+          type: string
+          format: url           
     AppaltoP_17Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -1979,7 +1978,7 @@ components:
         datiBaseComunicazione:
           $ref: '#/components/schemas/DatiBaseComunicazioneType'  
         datiBaseDocumenti:
-          $ref: '#/components/schemas/DatiBaseDocumentiOptionalType'
+          $ref: '#/components/schemas/DatiBaseDocumentiType'
     LottoP7_2BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
@@ -2089,7 +2088,7 @@ components:
         datiBaseComunicazione:
           $ref: '#/components/schemas/DatiBaseComunicazioneType'  
         datiBaseDocumenti:
-          $ref: '#/components/schemas/DatiBaseDocumentiType'          
+          $ref: '#/components/schemas/DatiBaseDocumentiOptionalType'          
     ModificaContrattualeType: 
       description: Oggetto che riporta tutti i dati della modifica contrattuale
       type: object
