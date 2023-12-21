@@ -17,19 +17,20 @@ components:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - corrisponde al campo bt-767 - Electronic Auction del TED
           type: boolean  
     AppaltoP2_16Type:
-      allOf: 
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP_16Type'     
       type: object
-      additionalProperties: false
-      required: [datiBase,datiBaseProcedura]
-      properties: 
-        datiBase:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoOptionalType'  
-        datiBaseProcedura:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraCompletoType' 
-        datiBaseStrumentiProcedura:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseStrumentiProceduraType'
+      allOf: 
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP_16Type'
+      - type: object
+        additionalProperties: false
+        required: [datiBase,datiBaseProcedura]
+        properties: 
+          datiBase:
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoOptionalType'  
+          datiBaseProcedura:
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraCompletoType' 
+          datiBaseStrumentiProcedura:
+            allOf: 
+            - $ref: '#/components/schemas/DatiBaseStrumentiProceduraType'
     LottoP2_16Type:
       allOf: 
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP_16Type'     
