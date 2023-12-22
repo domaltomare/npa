@@ -563,6 +563,8 @@ ref. /docs/specifiche-jws/
 ### Regole
 * issue 886: P1_10.dmn, P1_11.dmn, P1_12.dmn, P1_13.dmn, P1_14.dmn, P1_16.dmn, P1_17.dmn, P1_19.dmn, P1_20.dmn, P1_21.dmn, P2_10.dmn, P2_11.dmn, P2_12.dmn, P2_13.dmn, P2_14.dmn, P2_16.dmn, P2_17.dmn, P2_19.dmn, P2_20.dmn, P2_21.dmn:
 	* corretta la REG1.
+* issue 913:
+	* eliminare la REG53
 ### Schede
 * issue 712:
 	* modello-dati-schede-dati-comuni.yaml: oggetto DatiPersonaGiuridicaType: sostituito idgruppo con idPartecipante. 
@@ -581,9 +583,7 @@ ref. /docs/specifiche-jws/
 	* rendere offertePresentate obbligatorio nelle schede A1_31, A2_31, A3_5
 * issue 854:
 	* rendere offertePresentate obbligatorio nella scheda A3_3
-	* rendere appalto.cigAccordoQuadro obbligatorio nella scheda A3_3
-* issue 913:
-	* eliminare la REG53 
+	* rendere appalto.cigAccordoQuadro obbligatorio nella scheda A3_3 
 * togliere il campo idAppalto da tutte le schede.
 * PL,P*,AD*: rendere obbligatorio l'oggetto datiBaseDocumenti con il link SA su tutte le schede in cui il campo url è obbligatorio.
 * modello-dati-schede-P5.yaml:
