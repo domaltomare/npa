@@ -577,6 +577,13 @@ ref. /docs/specifiche-jws/
 	* modello-dati-schede-dati-comuni.yaml, modello-dati-schede-A3.6.yaml, modello-dati-schede-PL2.7.yaml, modello-dati-schede-PL2.8.yaml, modello-dati-schede-PL2.9.yaml, modello-dati-schede-P3.4.yaml, modello-dati-schede-P2.10.yaml, modello-dati-schede-P2.11.yaml, modello-dati-schede-P2.16.yaml, modello-dati-schede-P2.17.yaml, modello-dati-schede-P2.18.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml: modificata la descrizione dei dati comuni con il ted
 * issue 308:
 	* modello-dati-schede-RSU1.yaml: modificata la cardinalità dell'oggetto codiceFiscaleDitta. Diventato array codiciFiscaliDitte
+* issue 850, 855, 912:
+	* rendere offertePresentate obbligatorio nelle schede A1_31, A2_31, A3_5
+* issue 854:
+	* rendere offertePresentate obbligatorio nella scheda A3_3
+	* rendere appalto.cigAccordoQuadro obbligatorio nella scheda A3_3
+* issue 913:
+	* eliminare la REG53 
 * togliere il campo idAppalto da tutte le schede.
 * PL,P*,AD*: rendere obbligatorio l'oggetto datiBaseDocumenti con il link SA su tutte le schede in cui il campo url è obbligatorio.
 * modello-dati-schede-P5.yaml:
