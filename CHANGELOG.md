@@ -561,10 +561,7 @@ ref. /docs/specifiche-jws/
   * modificato l'attributo $ref dell'oggetto scheda in AvvisoType
        
 ### Regole
-* issue 886: P1_10.dmn, P1_11.dmn, P1_12.dmn, P1_13.dmn, P1_14.dmn, P1_16.dmn, P1_17.dmn, P1_19.dmn, P1_20.dmn, P1_21.dmn, P2_10.dmn, P2_11.dmn, P2_12.dmn, P2_13.dmn, P2_14.dmn, P2_16.dmn, P2_17.dmn, P2_19.dmn, P2_20.dmn, P2_21.dmn:
-	* corretta la REG1.
-* issue 913:
-	* eliminare la REG53
+
 ### Schede
 * issue 712:
 	* modello-dati-schede-dati-comuni.yaml: oggetto DatiPersonaGiuridicaType: sostituito idgruppo con idPartecipante. 
