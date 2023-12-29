@@ -590,6 +590,8 @@ ref. /docs/specifiche-jws/
  * modello-dati-schede-dati-comuni.yaml:
  	* aggiunto l'oggetto CategoriaScorporabileEnum
   	* aggiornata la reference del campo categoriaScorporabile al nuovo oggetto CategoriaScorporabileEnum per tutti gli oggetti lotto
+   	* aggiunta obbligatorietà del campo datiBase.importo.
+   	* eliminato il pattern nei campi percentuale e inseriti gli attributi minimum =0 e maximum=100 
 * modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-RSU.yaml:
 	* aggiornata la reference del campo categoriaScorporabile al nuovo oggetto CategoriaScorporabileEnum
 ### Tipologiche
