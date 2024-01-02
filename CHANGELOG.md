@@ -554,7 +554,7 @@ ref. /docs/specifiche-jws/
 * Aggiornato il file schema-cronologia-schede.xlsx
 </details>
 
-# Note di rilascio del 05/02/2024
+# Note di rilascio del 06/02/2024
 
 ## Modello Dati 
 * modello-dati-npa.yaml:
@@ -566,7 +566,7 @@ ref. /docs/specifiche-jws/
 * issue 694, 799:
 	* modello-dati-schede-dati-comuni.yaml: oggetto OfferteType: reso obbligatorio il campo aggiudicatario.
 * issue 448,548,567,875:	
-	* modello-dati-schede-CO2.yaml: oggetto AnacFormCO2Type: sostituito idContratto con idScheda.
+	* modello-dati-schede-CO2.yaml: oggetto AnacFormCO2Type: sostituito cig con idScheda.
 	* modello-dati-schede-CO1.yaml: oggetto AnacFormCO1Type: inserire il cig all'interno del campo conclusione
 * issue 796:
 	* modello-dati-schede-A3_6.yaml: eliminato l'oggetto datiBaseRisultatoProcedura da AggiudicazioneA3_6Type
