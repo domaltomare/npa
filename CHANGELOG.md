@@ -554,13 +554,11 @@ ref. /docs/specifiche-jws/
 * Aggiornato il file schema-cronologia-schede.xlsx
 </details>
 
-# Note di rilascio del 31/01/2024
+# Note di rilascio del 05/02/2024
 
 ## Modello Dati 
 * modello-dati-npa.yaml:
   * modificato l'attributo $ref dell'oggetto scheda in AvvisoType
-       
-### Regole
 
 ### Schede
 * issue 712:
@@ -598,5 +596,3 @@ ref. /docs/specifiche-jws/
 * aggiornata codIstat.json: eliminate le voci non più valide
 * aggiornata codNuts.json: eliminate le voci non più valide, eliminata la voce "non classificato"
 * aggiornata lingue.json: eliminata la voce "italiano"
-
-## Orchestratore  
