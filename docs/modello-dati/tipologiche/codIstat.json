@@ -2861,15 +2861,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"1001834",
-    "descrizione": {
-		"it": "BRUSASCO CAVAGNOLO",
-		"en": "BRUSASCO CAVAGNOLO"
-		},
-    "dataInizio":"1927-01-01T00:00:00Z",
-    "dataFine":"1956-12-31T00:00:00Z"
-},
-{
     "codice":"1002002",
     "descrizione": {
 		"it": "ALAGNA VALSESIA",
@@ -4470,15 +4461,6 @@
 		},
     "dataInizio":"1983-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"1003874",
-    "descrizione": {
-		"it": "PALLANZA",
-		"en": "PALLANZA"
-		},
-    "dataInizio":"1900-01-01T00:00:00Z",
-    "dataFine":"1939-12-31T00:00:00Z"
 },
 {
     "codice":"1004001",
@@ -14561,24 +14543,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3013854",
-    "descrizione": {
-		"it": "CERNUSCO MONTEVECCHIA",
-		"en": "CERNUSCO MONTEVECCHIA"
-		},
-    "dataInizio":"1928-01-01T00:00:00Z",
-    "dataFine":"1966-01-01T00:00:00Z"
-},
-{
-    "codice":"3013941",
-    "descrizione": {
-		"it": "SEPRIO",
-		"en": "SEPRIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2000-01-02T00:00:00Z"
-},
-{
     "codice":"3014001",
     "descrizione": {
 		"it": "ALBAREDO PER SAN MARCO",
@@ -15290,24 +15254,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015003",
-    "descrizione": {
-		"it": "AGRATE BRIANZA",
-		"en": "AGRATE BRIANZA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015004",
-    "descrizione": {
-		"it": "AICURZIO",
-		"en": "AICURZIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015005",
     "descrizione": {
 		"it": "ALBAIRATE",
@@ -15317,15 +15263,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015006",
-    "descrizione": {
-		"it": "ALBIATE",
-		"en": "ALBIATE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015007",
     "descrizione": {
 		"it": "ARCONATE",
@@ -15333,15 +15270,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015008",
-    "descrizione": {
-		"it": "ARCORE",
-		"en": "ARCORE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015009",
@@ -15380,15 +15308,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015013",
-    "descrizione": {
-		"it": "BARLASSINA",
-		"en": "BARLASSINA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015014",
     "descrizione": {
 		"it": "BASIANO",
@@ -15416,24 +15335,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015017",
-    "descrizione": {
-		"it": "BELLUSCO",
-		"en": "BELLUSCO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015018",
-    "descrizione": {
-		"it": "BERNAREGGIO",
-		"en": "BERNAREGGIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015019",
     "descrizione": {
 		"it": "BERNATE TICINO",
@@ -15443,15 +15344,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015021",
-    "descrizione": {
-		"it": "BESANA IN BRIANZA",
-		"en": "BESANA IN BRIANZA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015022",
     "descrizione": {
 		"it": "BESATE",
@@ -15459,15 +15351,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015023",
-    "descrizione": {
-		"it": "BIASSONO",
-		"en": "BIASSONO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015024",
@@ -15497,15 +15380,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015030",
-    "descrizione": {
-		"it": "BOVISIO-MASCIAGO",
-		"en": "BOVISIO-MASCIAGO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015032",
     "descrizione": {
 		"it": "BRESSO",
@@ -15513,24 +15387,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015033",
-    "descrizione": {
-		"it": "BRIOSCO",
-		"en": "BRIOSCO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015034",
-    "descrizione": {
-		"it": "BRUGHERIO",
-		"en": "BRUGHERIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015035",
@@ -15551,15 +15407,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015037",
-    "descrizione": {
-		"it": "BURAGO DI MOLGORA",
-		"en": "BURAGO DI MOLGORA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015038",
     "descrizione": {
 		"it": "BUSCATE",
@@ -15567,15 +15414,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015039",
-    "descrizione": {
-		"it": "BUSNAGO",
-		"en": "BUSNAGO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015040",
@@ -15614,15 +15452,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015045",
-    "descrizione": {
-		"it": "CAMPARADA",
-		"en": "CAMPARADA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015046",
     "descrizione": {
 		"it": "CANEGRATE",
@@ -15630,33 +15459,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015047",
-    "descrizione": {
-		"it": "CAPONAGO",
-		"en": "CAPONAGO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015048",
-    "descrizione": {
-		"it": "CARATE BRIANZA",
-		"en": "CARATE BRIANZA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015049",
-    "descrizione": {
-		"it": "CARNATE",
-		"en": "CARNATE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015050",
@@ -15731,24 +15533,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015068",
-    "descrizione": {
-		"it": "CAVENAGO DI BRIANZA",
-		"en": "CAVENAGO DI BRIANZA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015069",
-    "descrizione": {
-		"it": "CERIANO LAGHETTO",
-		"en": "CERIANO LAGHETTO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015070",
     "descrizione": {
 		"it": "CERNUSCO SUL NAVIGLIO",
@@ -15785,15 +15569,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015075",
-    "descrizione": {
-		"it": "CESANO MADERNO",
-		"en": "CESANO MADERNO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015076",
     "descrizione": {
 		"it": "CESATE",
@@ -15821,15 +15596,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015080",
-    "descrizione": {
-		"it": "COGLIATE",
-		"en": "COGLIATE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015081",
     "descrizione": {
 		"it": "COLOGNO MONZESE",
@@ -15846,15 +15612,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015084",
-    "descrizione": {
-		"it": "CONCOREZZO",
-		"en": "CONCOREZZO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015085",
@@ -15882,24 +15639,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015088",
-    "descrizione": {
-		"it": "CORNATE D'ADDA",
-		"en": "CORNATE D'ADDA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015092",
-    "descrizione": {
-		"it": "CORREZZANA",
-		"en": "CORREZZANA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015093",
@@ -15947,15 +15686,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015100",
-    "descrizione": {
-		"it": "DESIO",
-		"en": "DESIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015101",
     "descrizione": {
 		"it": "DRESANO",
@@ -15990,15 +15720,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015107",
-    "descrizione": {
-		"it": "GIUSSANO",
-		"en": "GIUSSANO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015108",
@@ -16064,15 +15785,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015117",
-    "descrizione": {
-		"it": "LAZZATE",
-		"en": "LAZZATE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015118",
     "descrizione": {
 		"it": "LEGNANO",
@@ -16080,33 +15792,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015119",
-    "descrizione": {
-		"it": "LENTATE SUL SEVESO",
-		"en": "LENTATE SUL SEVESO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015120",
-    "descrizione": {
-		"it": "LESMO",
-		"en": "LESMO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015121",
-    "descrizione": {
-		"it": "LIMBIATE",
-		"en": "LIMBIATE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015122",
@@ -16118,15 +15803,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015123",
-    "descrizione": {
-		"it": "LISSONE",
-		"en": "LISSONE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015125",
     "descrizione": {
 		"it": "LOCATE DI TRIULZI",
@@ -16134,15 +15810,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015129",
-    "descrizione": {
-		"it": "MACHERIO",
-		"en": "MACHERIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015130",
@@ -16181,15 +15848,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015138",
-    "descrizione": {
-		"it": "MEDA",
-		"en": "MEDA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015139",
     "descrizione": {
 		"it": "MEDIGLIA",
@@ -16226,15 +15884,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015145",
-    "descrizione": {
-		"it": "MEZZAGO",
-		"en": "MEZZAGO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015146",
     "descrizione": {
 		"it": "MILANO",
@@ -16242,24 +15891,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015147",
-    "descrizione": {
-		"it": "MISINTO",
-		"en": "MISINTO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015149",
-    "descrizione": {
-		"it": "MONZA",
-		"en": "MONZA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2016-05-25T14:28:23Z"
 },
 {
     "codice":"3015150",
@@ -16280,15 +15911,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015152",
-    "descrizione": {
-		"it": "MUGGIO'",
-		"en": "MUGGIO'"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015154",
     "descrizione": {
 		"it": "NERVIANO",
@@ -16305,15 +15927,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015156",
-    "descrizione": {
-		"it": "NOVA MILANESE",
-		"en": "NOVA MILANESE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015157",
@@ -16341,15 +15954,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015161",
-    "descrizione": {
-		"it": "ORNAGO",
-		"en": "ORNAGO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015164",
@@ -16487,15 +16091,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015180",
-    "descrizione": {
-		"it": "RENATE",
-		"en": "RENATE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015181",
     "descrizione": {
 		"it": "RESCALDINA",
@@ -16539,24 +16134,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015186",
-    "descrizione": {
-		"it": "RONCELLO",
-		"en": "RONCELLO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015187",
-    "descrizione": {
-		"it": "RONCO BRIANTINO",
-		"en": "RONCO BRIANTINO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015188",
@@ -16667,15 +16244,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015208",
-    "descrizione": {
-		"it": "SEREGNO",
-		"en": "SEREGNO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015209",
     "descrizione": {
 		"it": "SESTO SAN GIOVANNI",
@@ -16703,15 +16271,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015212",
-    "descrizione": {
-		"it": "SEVESO",
-		"en": "SEVESO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015213",
     "descrizione": {
 		"it": "SOLARO",
@@ -16719,24 +16278,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015216",
-    "descrizione": {
-		"it": "SOVICO",
-		"en": "SOVICO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015217",
-    "descrizione": {
-		"it": "SULBIATE",
-		"en": "SULBIATE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015219",
@@ -16775,15 +16316,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015223",
-    "descrizione": {
-		"it": "TRIUGGIO",
-		"en": "TRIUGGIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015224",
     "descrizione": {
 		"it": "TRUCCAZZANO",
@@ -16802,15 +16334,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3015227",
-    "descrizione": {
-		"it": "USMATE VELATE",
-		"en": "USMATE VELATE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"3015229",
     "descrizione": {
 		"it": "VANZAGO",
@@ -16827,42 +16350,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015231",
-    "descrizione": {
-		"it": "VAREDO",
-		"en": "VAREDO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015232",
-    "descrizione": {
-		"it": "VEDANO AL LAMBRO",
-		"en": "VEDANO AL LAMBRO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015233",
-    "descrizione": {
-		"it": "VEDUGGIO CON COLZANO",
-		"en": "VEDUGGIO CON COLZANO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015234",
-    "descrizione": {
-		"it": "VERANO BRIANZA",
-		"en": "VERANO BRIANZA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015235",
@@ -16890,24 +16377,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3015239",
-    "descrizione": {
-		"it": "VILLASANTA",
-		"en": "VILLASANTA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"3015241",
-    "descrizione": {
-		"it": "VIMERCATE",
-		"en": "VIMERCATE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"3015242",
@@ -18582,15 +18051,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3016181",
-    "descrizione": {
-		"it": "RIVIERA D'ADDA",
-		"en": "RIVIERA D'ADDA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2000-01-02T00:00:00Z"
 },
 {
     "codice":"3016182",
@@ -22850,15 +22310,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"3018890",
-    "descrizione": {
-		"it": "ZAVATTARELLO VALVERDE",
-		"en": "ZAVATTARELLO VALVERDE"
-		},
-    "dataInizio":"1929-01-01T00:00:00Z",
-    "dataFine":"1956-02-01T00:00:00Z"
-},
-{
     "codice":"3019001",
     "descrizione": {
 		"it": "ACQUANEGRA CREMONESE",
@@ -25269,15 +24720,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"3097080",
-    "descrizione": {
-		"it": "TORRE DE' BUSI",
-		"en": "TORRE DE' BUSI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
 },
 {
     "codice":"3097081",
@@ -31175,24 +30617,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"5024058",
-    "descrizione": {
-		"it": "MASON VICENTINO",
-		"en": "MASON VICENTINO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"5024059",
-    "descrizione": {
-		"it": "MOLVENA",
-		"en": "MOLVENA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
     "codice":"5024060",
     "descrizione": {
 		"it": "MONTEBELLO VICENTINO",
@@ -32253,15 +31677,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"5025052",
-    "descrizione": {
-		"it": "SAPPADA",
-		"en": "SAPPADA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
 },
 {
     "codice":"5025053",
@@ -37185,15 +36600,6 @@
 		},
     "dataInizio":"2016-03-10T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"6701706",
-    "descrizione": {
-		"it": "FIUME",
-		"en": "FIUME"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"1945-01-01T00:00:00Z"
 },
 {
     "codice":"7008001",
@@ -46232,15 +45638,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11041011",
-    "descrizione": {
-		"it": "CASTELDELCI",
-		"en": "CASTELDELCI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2013-01-01T00:00:00Z"
-},
-{
     "codice":"11041012",
     "descrizione": {
 		"it": "COLBORDOLO",
@@ -46347,15 +45744,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11041024",
-    "descrizione": {
-		"it": "MAIOLO",
-		"en": "MAIOLO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2009-12-31T00:00:00Z"
 },
 {
     "codice":"11041025",
@@ -46484,15 +45872,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11041039",
-    "descrizione": {
-		"it": "NOVAFELTRIA",
-		"en": "NOVAFELTRIA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
     "codice":"11041040",
     "descrizione": {
 		"it": "ORCIANO DI PESARO",
@@ -46509,15 +45888,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11041042",
-    "descrizione": {
-		"it": "PENNABILLI",
-		"en": "PENNABILLI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
 },
 {
     "codice":"11041043",
@@ -46610,15 +45980,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11041053",
-    "descrizione": {
-		"it": "SAN LEO",
-		"en": "SAN LEO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
     "codice":"11041054",
     "descrizione": {
 		"it": "SAN LORENZO IN CAMPO",
@@ -46626,15 +45987,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11041055",
-    "descrizione": {
-		"it": "SANT'AGATA FELTRIA",
-		"en": "SANT'AGATA FELTRIA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2009-08-15T00:00:00Z"
 },
 {
     "codice":"11041056",
@@ -46698,15 +46050,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11041063",
-    "descrizione": {
-		"it": "TALAMELLO",
-		"en": "TALAMELLO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
 },
 {
     "codice":"11041064",
@@ -47238,15 +46581,6 @@
 		},
     "dataInizio":"2016-03-10T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11042803",
-    "descrizione": {
-		"it": "ROSORA MERGO",
-		"en": "ROSORA MERGO"
-		},
-    "dataInizio":"1928-05-31T00:00:00Z",
-    "dataFine":"1946-12-31T00:00:00Z"
 },
 {
     "codice":"11043001",
@@ -47789,24 +47123,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11044003",
-    "descrizione": {
-		"it": "ALTIDONA",
-		"en": "ALTIDONA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044004",
-    "descrizione": {
-		"it": "AMANDOLA",
-		"en": "AMANDOLA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"11044005",
     "descrizione": {
 		"it": "APPIGNANO DEL TRONTO",
@@ -47832,24 +47148,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11044008",
-    "descrizione": {
-		"it": "BELMONTE PICENO",
-		"en": "BELMONTE PICENO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044009",
-    "descrizione": {
-		"it": "CAMPOFILONE",
-		"en": "CAMPOFILONE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"11044010",
@@ -47924,24 +47222,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11044018",
-    "descrizione": {
-		"it": "FALERONE",
-		"en": "FALERONE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044019",
-    "descrizione": {
-		"it": "FERMO",
-		"en": "FERMO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"11044020",
     "descrizione": {
 		"it": "FOLIGNANO",
@@ -47960,15 +47240,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11044022",
-    "descrizione": {
-		"it": "FRANCAVILLA D'ETE",
-		"en": "FRANCAVILLA D'ETE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"11044023",
     "descrizione": {
 		"it": "GROTTAMMARE",
@@ -47976,33 +47247,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11044024",
-    "descrizione": {
-		"it": "GROTTAZZOLINA",
-		"en": "GROTTAZZOLINA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044025",
-    "descrizione": {
-		"it": "LAPEDONA",
-		"en": "LAPEDONA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044026",
-    "descrizione": {
-		"it": "MAGLIANO DI TENNA",
-		"en": "MAGLIANO DI TENNA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"11044027",
@@ -48014,15 +47258,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11044028",
-    "descrizione": {
-		"it": "MASSA FERMANA",
-		"en": "MASSA FERMANA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"11044029",
     "descrizione": {
 		"it": "MASSIGNANO",
@@ -48030,15 +47265,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11044030",
-    "descrizione": {
-		"it": "MONSAMPIETRO MORICO",
-		"en": "MONSAMPIETRO MORICO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"11044031",
@@ -48059,15 +47285,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11044033",
-    "descrizione": {
-		"it": "MONTAPPONE",
-		"en": "MONTAPPONE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"11044034",
     "descrizione": {
 		"it": "MONTEDINOVE",
@@ -48075,15 +47292,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11044035",
-    "descrizione": {
-		"it": "MONTEFALCONE APPENNINO",
-		"en": "MONTEFALCONE APPENNINO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"11044036",
@@ -48095,15 +47303,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11044037",
-    "descrizione": {
-		"it": "MONTEFORTINO",
-		"en": "MONTEFORTINO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"11044038",
     "descrizione": {
 		"it": "MONTEGALLO",
@@ -48111,51 +47310,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11044039",
-    "descrizione": {
-		"it": "MONTE GIBERTO",
-		"en": "MONTE GIBERTO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044040",
-    "descrizione": {
-		"it": "MONTEGIORGIO",
-		"en": "MONTEGIORGIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044041",
-    "descrizione": {
-		"it": "MONTEGRANARO",
-		"en": "MONTEGRANARO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044042",
-    "descrizione": {
-		"it": "MONTELEONE DI FERMO",
-		"en": "MONTELEONE DI FERMO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044043",
-    "descrizione": {
-		"it": "MONTELPARO",
-		"en": "MONTELPARO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"11044044",
@@ -48176,78 +47330,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11044046",
-    "descrizione": {
-		"it": "MONTE RINALDO",
-		"en": "MONTE RINALDO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044047",
-    "descrizione": {
-		"it": "MONTERUBBIANO",
-		"en": "MONTERUBBIANO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044048",
-    "descrizione": {
-		"it": "MONTE SAN PIETRANGELI",
-		"en": "MONTE SAN PIETRANGELI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044049",
-    "descrizione": {
-		"it": "MONTE URANO",
-		"en": "MONTE URANO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044050",
-    "descrizione": {
-		"it": "MONTE VIDON COMBATTE",
-		"en": "MONTE VIDON COMBATTE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044051",
-    "descrizione": {
-		"it": "MONTE VIDON CORRADO",
-		"en": "MONTE VIDON CORRADO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044052",
-    "descrizione": {
-		"it": "MONTOTTONE",
-		"en": "MONTOTTONE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044053",
-    "descrizione": {
-		"it": "MORESCO",
-		"en": "MORESCO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"11044054",
     "descrizione": {
 		"it": "OFFIDA",
@@ -48257,15 +47339,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11044055",
-    "descrizione": {
-		"it": "ORTEZZANO",
-		"en": "ORTEZZANO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"11044056",
     "descrizione": {
 		"it": "PALMIANO",
@@ -48273,60 +47346,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11044057",
-    "descrizione": {
-		"it": "PEDASO",
-		"en": "PEDASO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044058",
-    "descrizione": {
-		"it": "PETRITOLI",
-		"en": "PETRITOLI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044059",
-    "descrizione": {
-		"it": "PONZANO DI FERMO",
-		"en": "PONZANO DI FERMO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044060",
-    "descrizione": {
-		"it": "PORTO SAN GIORGIO",
-		"en": "PORTO SAN GIORGIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044061",
-    "descrizione": {
-		"it": "PORTO SANT'ELPIDIO",
-		"en": "PORTO SANT'ELPIDIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044062",
-    "descrizione": {
-		"it": "RAPAGNANO",
-		"en": "RAPAGNANO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"11044063",
@@ -48365,42 +47384,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"11044067",
-    "descrizione": {
-		"it": "SANTA VITTORIA IN MATENANO",
-		"en": "SANTA VITTORIA IN MATENANO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044068",
-    "descrizione": {
-		"it": "SANT'ELPIDIO A MARE",
-		"en": "SANT'ELPIDIO A MARE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044069",
-    "descrizione": {
-		"it": "SERVIGLIANO",
-		"en": "SERVIGLIANO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"11044070",
-    "descrizione": {
-		"it": "SMERILLO",
-		"en": "SMERILLO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"11044071",
     "descrizione": {
 		"it": "SPINETOLI",
@@ -48408,15 +47391,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"11044072",
-    "descrizione": {
-		"it": "TORRE SAN PATRIZIO",
-		"en": "TORRE SAN PATRIZIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"11044073",
@@ -51081,15 +50055,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"12058802",
-    "descrizione": {
-		"it": "NETTUNIA",
-		"en": "NETTUNIA"
-		},
-    "dataInizio":"2019-01-01T00:00:00Z",
-    "dataFine":"1945-06-05T00:00:00Z"
 },
 {
     "codice":"12059001",
@@ -58652,15 +57617,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"15063801",
-    "descrizione": {
-		"it": "BARRA",
-		"en": "BARRA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2000-01-02T00:00:00Z"
-},
-{
     "codice":"15064001",
     "descrizione": {
 		"it": "AIELLO DEL SABATO",
@@ -61424,15 +60380,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"16071030",
-    "descrizione": {
-		"it": "MARGHERITA DI SAVOIA",
-		"en": "MARGHERITA DI SAVOIA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"16071031",
     "descrizione": {
 		"it": "MATTINATA",
@@ -61559,15 +60506,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"16071045",
-    "descrizione": {
-		"it": "SAN FERDINANDO DI PUGLIA",
-		"en": "SAN FERDINANDO DI PUGLIA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"16071046",
     "descrizione": {
 		"it": "SAN GIOVANNI ROTONDO",
@@ -61665,15 +60603,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"16071057",
-    "descrizione": {
-		"it": "TRINITAPOLI",
-		"en": "TRINITAPOLI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"16071058",
@@ -61775,15 +60704,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"16072005",
-    "descrizione": {
-		"it": "ANDRIA",
-		"en": "ANDRIA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"16072006",
     "descrizione": {
 		"it": "BARI",
@@ -61793,15 +60713,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"16072007",
-    "descrizione": {
-		"it": "BARLETTA",
-		"en": "BARLETTA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"16072008",
     "descrizione": {
 		"it": "BINETTO",
@@ -61809,15 +60720,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"16072009",
-    "descrizione": {
-		"it": "BISCEGLIE",
-		"en": "BISCEGLIE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"16072010",
@@ -61845,15 +60747,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"16072013",
-    "descrizione": {
-		"it": "CANOSA DI PUGLIA",
-		"en": "CANOSA DI PUGLIA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"16072014",
@@ -61962,15 +60855,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"16072026",
-    "descrizione": {
-		"it": "MINERVINO MURGE",
-		"en": "MINERVINO MURGE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"16072027",
@@ -62108,15 +60992,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"16072042",
-    "descrizione": {
-		"it": "SPINAZZOLA",
-		"en": "SPINAZZOLA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"16072043",
     "descrizione": {
 		"it": "TERLIZZI",
@@ -62133,15 +61008,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"16072045",
-    "descrizione": {
-		"it": "TRANI",
-		"en": "TRANI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"16072046",
@@ -66660,15 +65526,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"18079105",
-    "descrizione": {
-		"it": "SAMBIASE",
-		"en": "SAMBIASE"
-		},
-    "dataInizio":"1900-01-01T00:00:00Z",
-    "dataFine":"2000-12-31T00:00:00Z"
 },
 {
     "codice":"18079108",
@@ -72953,24 +71810,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20091013",
-    "descrizione": {
-		"it": "BOSA",
-		"en": "BOSA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091014",
-    "descrizione": {
-		"it": "BUDONI",
-		"en": "BUDONI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20091016",
     "descrizione": {
 		"it": "DESULO",
@@ -73005,42 +71844,6 @@
 		},
     "dataInizio":"2019-02-20T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20091020",
-    "descrizione": {
-		"it": "ESCALAPLANO",
-		"en": "ESCALAPLANO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091021",
-    "descrizione": {
-		"it": "ESCOLCA",
-		"en": "ESCOLCA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091022",
-    "descrizione": {
-		"it": "ESTERZILI",
-		"en": "ESTERZILI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091023",
-    "descrizione": {
-		"it": "FLUSSIO",
-		"en": "FLUSSIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"20091024",
@@ -73088,24 +71891,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20091029",
-    "descrizione": {
-		"it": "GENONI",
-		"en": "GENONI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091030",
-    "descrizione": {
-		"it": "GERGEI",
-		"en": "GERGEI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20091031",
     "descrizione": {
 		"it": "GIRASOLE",
@@ -73133,15 +71918,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20091034",
-    "descrizione": {
-		"it": "ISILI",
-		"en": "ISILI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20091035",
     "descrizione": {
 		"it": "JERZU",
@@ -73149,15 +71925,6 @@
 		},
     "dataInizio":"2019-02-20T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20091036",
-    "descrizione": {
-		"it": "LACONI",
-		"en": "LACONI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"20091037",
@@ -73232,15 +71999,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20091045",
-    "descrizione": {
-		"it": "MAGOMADAS",
-		"en": "MAGOMADAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20091046",
     "descrizione": {
 		"it": "MAMOIADA",
@@ -73259,24 +72017,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20091048",
-    "descrizione": {
-		"it": "MODOLO",
-		"en": "MODOLO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091049",
-    "descrizione": {
-		"it": "MONTRESTA",
-		"en": "MONTRESTA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20091050",
     "descrizione": {
 		"it": "NORAGUGUME",
@@ -73293,33 +72033,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20091052",
-    "descrizione": {
-		"it": "NURAGUS",
-		"en": "NURAGUS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091053",
-    "descrizione": {
-		"it": "NURALLAO",
-		"en": "NURALLAO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091054",
-    "descrizione": {
-		"it": "NURRI",
-		"en": "NURRI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"20091055",
@@ -73412,15 +72125,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20091065",
-    "descrizione": {
-		"it": "ORROLI",
-		"en": "ORROLI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20091066",
     "descrizione": {
 		"it": "ORTUERI",
@@ -73493,33 +72197,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20091074",
-    "descrizione": {
-		"it": "SADALI",
-		"en": "SADALI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091075",
-    "descrizione": {
-		"it": "SAGAMA",
-		"en": "SAGAMA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091076",
-    "descrizione": {
-		"it": "SAN TEODORO",
-		"en": "SAN TEODORO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20091077",
     "descrizione": {
 		"it": "SARULE",
@@ -73527,33 +72204,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20091080",
-    "descrizione": {
-		"it": "SERRI",
-		"en": "SERRI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091081",
-    "descrizione": {
-		"it": "SEUI",
-		"en": "SEUI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20091082",
-    "descrizione": {
-		"it": "SEULO",
-		"en": "SEULO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"20091083",
@@ -73592,15 +72242,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20091087",
-    "descrizione": {
-		"it": "SUNI",
-		"en": "SUNI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20091088",
     "descrizione": {
 		"it": "TALANA",
@@ -73635,15 +72276,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20091092",
-    "descrizione": {
-		"it": "TINNURA",
-		"en": "TINNURA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"20091093",
@@ -73718,15 +72350,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20091102",
-    "descrizione": {
-		"it": "VILLANOVA TULO",
-		"en": "VILLANOVA TULO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20091103",
     "descrizione": {
 		"it": "CARDEDU",
@@ -73745,24 +72368,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20092001",
-    "descrizione": {
-		"it": "ARBUS",
-		"en": "ARBUS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092002",
-    "descrizione": {
-		"it": "ARMUNGIA",
-		"en": "ARMUNGIA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
     "codice":"20092003",
     "descrizione": {
 		"it": "ASSEMINI",
@@ -73770,51 +72375,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20092004",
-    "descrizione": {
-		"it": "BALLAO",
-		"en": "BALLAO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092005",
-    "descrizione": {
-		"it": "BARRALI",
-		"en": "BARRALI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092006",
-    "descrizione": {
-		"it": "BARUMINI",
-		"en": "BARUMINI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092007",
-    "descrizione": {
-		"it": "BUGGERRU",
-		"en": "BUGGERRU"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092008",
-    "descrizione": {
-		"it": "BURCEI",
-		"en": "BURCEI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
 },
 {
     "codice":"20092009",
@@ -73826,15 +72386,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20092010",
-    "descrizione": {
-		"it": "CALASETTA",
-		"en": "CALASETTA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20092011",
     "descrizione": {
 		"it": "CAPOTERRA",
@@ -73842,33 +72393,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20092012",
-    "descrizione": {
-		"it": "CARBONIA",
-		"en": "CARBONIA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092013",
-    "descrizione": {
-		"it": "CARLOFORTE",
-		"en": "CARLOFORTE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092014",
-    "descrizione": {
-		"it": "COLLINAS",
-		"en": "COLLINAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"20092015",
@@ -73880,42 +72404,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20092016",
-    "descrizione": {
-		"it": "DECIMOPUTZU",
-		"en": "DECIMOPUTZU"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092017",
-    "descrizione": {
-		"it": "DOLIANOVA",
-		"en": "DOLIANOVA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092018",
-    "descrizione": {
-		"it": "DOMUS DE MARIA",
-		"en": "DOMUS DE MARIA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092019",
-    "descrizione": {
-		"it": "DOMUSNOVAS",
-		"en": "DOMUSNOVAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20092020",
     "descrizione": {
 		"it": "DONORI'",
@@ -73925,150 +72413,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20092021",
-    "descrizione": {
-		"it": "FLUMINIMAGGIORE",
-		"en": "FLUMINIMAGGIORE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092022",
-    "descrizione": {
-		"it": "FURTEI",
-		"en": "FURTEI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092023",
-    "descrizione": {
-		"it": "GENURI",
-		"en": "GENURI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092024",
-    "descrizione": {
-		"it": "GESICO",
-		"en": "GESICO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092025",
-    "descrizione": {
-		"it": "GESTURI",
-		"en": "GESTURI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092026",
-    "descrizione": {
-		"it": "GIBA",
-		"en": "GIBA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092027",
-    "descrizione": {
-		"it": "GONI",
-		"en": "GONI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092028",
-    "descrizione": {
-		"it": "GONNESA",
-		"en": "GONNESA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092029",
-    "descrizione": {
-		"it": "GONNOSFANADIGA",
-		"en": "GONNOSFANADIGA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092030",
-    "descrizione": {
-		"it": "GUAMAGGIORE",
-		"en": "GUAMAGGIORE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092031",
-    "descrizione": {
-		"it": "GUASILA",
-		"en": "GUASILA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092032",
-    "descrizione": {
-		"it": "GUSPINI",
-		"en": "GUSPINI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092033",
-    "descrizione": {
-		"it": "IGLESIAS",
-		"en": "IGLESIAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092034",
-    "descrizione": {
-		"it": "LAS PLASSAS",
-		"en": "LAS PLASSAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092035",
-    "descrizione": {
-		"it": "LUNAMATRONA",
-		"en": "LUNAMATRONA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092036",
-    "descrizione": {
-		"it": "MANDAS",
-		"en": "MANDAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
     "codice":"20092037",
     "descrizione": {
 		"it": "MARACALAGONIS",
@@ -74076,114 +72420,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20092038",
-    "descrizione": {
-		"it": "MONASTIR",
-		"en": "MONASTIR"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092039",
-    "descrizione": {
-		"it": "MURAVERA",
-		"en": "MURAVERA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092040",
-    "descrizione": {
-		"it": "MUSEI",
-		"en": "MUSEI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092041",
-    "descrizione": {
-		"it": "NARCAO",
-		"en": "NARCAO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092042",
-    "descrizione": {
-		"it": "NURAMINIS",
-		"en": "NURAMINIS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092043",
-    "descrizione": {
-		"it": "NUXIS",
-		"en": "NUXIS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092044",
-    "descrizione": {
-		"it": "ORTACESUS",
-		"en": "ORTACESUS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092045",
-    "descrizione": {
-		"it": "PABILLONIS",
-		"en": "PABILLONIS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092046",
-    "descrizione": {
-		"it": "PAULI ARBAREI",
-		"en": "PAULI ARBAREI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092047",
-    "descrizione": {
-		"it": "PERDAXIUS",
-		"en": "PERDAXIUS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092048",
-    "descrizione": {
-		"it": "PIMENTEL",
-		"en": "PIMENTEL"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092049",
-    "descrizione": {
-		"it": "PORTOSCUSO",
-		"en": "PORTOSCUSO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"20092050",
@@ -74204,132 +72440,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20092052",
-    "descrizione": {
-		"it": "SAMASSI",
-		"en": "SAMASSI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092053",
-    "descrizione": {
-		"it": "SAMATZAI",
-		"en": "SAMATZAI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092054",
-    "descrizione": {
-		"it": "SAN BASILIO",
-		"en": "SAN BASILIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092055",
-    "descrizione": {
-		"it": "SAN GAVINO MONREALE",
-		"en": "SAN GAVINO MONREALE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092056",
-    "descrizione": {
-		"it": "SAN GIOVANNI SUERGIU",
-		"en": "SAN GIOVANNI SUERGIU"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092057",
-    "descrizione": {
-		"it": "SANLURI",
-		"en": "SANLURI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092058",
-    "descrizione": {
-		"it": "SAN NICOLO' GERREI",
-		"en": "SAN NICOLO' GERREI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-04-11T00:00:00Z"
-},
-{
-    "codice":"20092059",
-    "descrizione": {
-		"it": "SAN SPERATE",
-		"en": "SAN SPERATE"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092060",
-    "descrizione": {
-		"it": "SANTADI",
-		"en": "SANTADI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092061",
-    "descrizione": {
-		"it": "SANT'ANDREA FRIUS",
-		"en": "SANT'ANDREA FRIUS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092062",
-    "descrizione": {
-		"it": "SANT'ANNA ARRESI",
-		"en": "SANT'ANNA ARRESI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092063",
-    "descrizione": {
-		"it": "SANT'ANTIOCO",
-		"en": "SANT'ANTIOCO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092064",
-    "descrizione": {
-		"it": "SAN VITO",
-		"en": "SAN VITO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092065",
-    "descrizione": {
-		"it": "SARDARA",
-		"en": "SARDARA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20092066",
     "descrizione": {
 		"it": "SARROCH",
@@ -74339,15 +72449,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20092067",
-    "descrizione": {
-		"it": "SEGARIU",
-		"en": "SEGARIU"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20092068",
     "descrizione": {
 		"it": "SELARGIUS",
@@ -74355,51 +72456,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20092069",
-    "descrizione": {
-		"it": "SELEGAS",
-		"en": "SELEGAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092070",
-    "descrizione": {
-		"it": "SENORBI'",
-		"en": "SENORBI'"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-04-11T00:00:00Z"
-},
-{
-    "codice":"20092071",
-    "descrizione": {
-		"it": "SERDIANA",
-		"en": "SERDIANA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092072",
-    "descrizione": {
-		"it": "SERRAMANNA",
-		"en": "SERRAMANNA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092073",
-    "descrizione": {
-		"it": "SERRENTI",
-		"en": "SERRENTI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"20092074",
@@ -74420,42 +72476,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20092076",
-    "descrizione": {
-		"it": "SETZU",
-		"en": "SETZU"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092077",
-    "descrizione": {
-		"it": "SIDDI",
-		"en": "SIDDI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092078",
-    "descrizione": {
-		"it": "SILIQUA",
-		"en": "SILIQUA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092079",
-    "descrizione": {
-		"it": "SILIUS",
-		"en": "SILIUS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
     "codice":"20092080",
     "descrizione": {
 		"it": "SINNAI",
@@ -74463,87 +72483,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20092081",
-    "descrizione": {
-		"it": "SIURGUS DONIGALA",
-		"en": "SIURGUS DONIGALA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092082",
-    "descrizione": {
-		"it": "SOLEMINIS",
-		"en": "SOLEMINIS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092083",
-    "descrizione": {
-		"it": "SUELLI",
-		"en": "SUELLI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092084",
-    "descrizione": {
-		"it": "TEULADA",
-		"en": "TEULADA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092085",
-    "descrizione": {
-		"it": "TRATALIAS",
-		"en": "TRATALIAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092086",
-    "descrizione": {
-		"it": "TUILI",
-		"en": "TUILI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092087",
-    "descrizione": {
-		"it": "TURRI",
-		"en": "TURRI"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092088",
-    "descrizione": {
-		"it": "USSANA",
-		"en": "USSANA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092089",
-    "descrizione": {
-		"it": "USSARAMANNA",
-		"en": "USSARAMANNA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"20092090",
@@ -74555,78 +72494,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20092091",
-    "descrizione": {
-		"it": "VALLERMOSA",
-		"en": "VALLERMOSA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092092",
-    "descrizione": {
-		"it": "VILLACIDRO",
-		"en": "VILLACIDRO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092093",
-    "descrizione": {
-		"it": "VILLAMAR",
-		"en": "VILLAMAR"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092094",
-    "descrizione": {
-		"it": "VILLAMASSARGIA",
-		"en": "VILLAMASSARGIA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092095",
-    "descrizione": {
-		"it": "VILLANOVAFORRU",
-		"en": "VILLANOVAFORRU"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092096",
-    "descrizione": {
-		"it": "VILLANOVAFRANCA",
-		"en": "VILLANOVAFRANCA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092097",
-    "descrizione": {
-		"it": "VILLAPUTZU",
-		"en": "VILLAPUTZU"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092098",
-    "descrizione": {
-		"it": "VILLASALTO",
-		"en": "VILLASALTO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
     "codice":"20092099",
     "descrizione": {
 		"it": "VILLA SAN PIETRO",
@@ -74636,51 +72503,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20092100",
-    "descrizione": {
-		"it": "VILLASIMIUS",
-		"en": "VILLASIMIUS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092101",
-    "descrizione": {
-		"it": "VILLASOR",
-		"en": "VILLASOR"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092102",
-    "descrizione": {
-		"it": "VILLASPECIOSA",
-		"en": "VILLASPECIOSA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092103",
-    "descrizione": {
-		"it": "MASAINAS",
-		"en": "MASAINAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
-    "codice":"20092104",
-    "descrizione": {
-		"it": "VILLAPERUCCIO",
-		"en": "VILLAPERUCCIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
-},
-{
     "codice":"20092105",
     "descrizione": {
 		"it": "QUARTUCCIU",
@@ -74688,24 +72510,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20092106",
-    "descrizione": {
-		"it": "CASTIADAS",
-		"en": "CASTIADAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092107",
-    "descrizione": {
-		"it": "PISCINAS",
-		"en": "PISCINAS"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2010-06-30T00:00:00Z"
 },
 {
     "codice":"20092108",
@@ -74724,123 +72528,6 @@
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20092110",
-    "descrizione": {
-		"it": "ESCALAPLANO",
-		"en": "ESCALAPLANO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092111",
-    "descrizione": {
-		"it": "ESCOLCA",
-		"en": "ESCOLCA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092112",
-    "descrizione": {
-		"it": "ESTERZILI",
-		"en": "ESTERZILI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092113",
-    "descrizione": {
-		"it": "GERGEI",
-		"en": "GERGEI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092114",
-    "descrizione": {
-		"it": "ISILI",
-		"en": "ISILI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092115",
-    "descrizione": {
-		"it": "NURAGUS",
-		"en": "NURAGUS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092116",
-    "descrizione": {
-		"it": "NURALLAO",
-		"en": "NURALLAO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092117",
-    "descrizione": {
-		"it": "NURRI",
-		"en": "NURRI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092118",
-    "descrizione": {
-		"it": "ORROLI",
-		"en": "ORROLI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092119",
-    "descrizione": {
-		"it": "SADALI",
-		"en": "SADALI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092120",
-    "descrizione": {
-		"it": "SERRI",
-		"en": "SERRI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092121",
-    "descrizione": {
-		"it": "SEULO",
-		"en": "SEULO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20092122",
-    "descrizione": {
-		"it": "VILLANOVA TULO",
-		"en": "VILLANOVA TULO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
 },
 {
     "codice":"20095001",
@@ -75563,15 +73250,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"20095081",
-    "descrizione": {
-		"it": "GENONI",
-		"en": "GENONI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
     "codice":"20095082",
     "descrizione": {
 		"it": "LACONI",
@@ -75633,897 +73311,6 @@
 		},
     "dataInizio":"2010-06-30T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"20104001",
-    "descrizione": {
-		"it": "AGGIUS",
-		"en": "AGGIUS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104002",
-    "descrizione": {
-		"it": "AGLIENTU",
-		"en": "AGLIENTU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104003",
-    "descrizione": {
-		"it": "ALA' DEI SARDI",
-		"en": "ALA' DEI SARDI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104004",
-    "descrizione": {
-		"it": "ARZACHENA",
-		"en": "ARZACHENA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104005",
-    "descrizione": {
-		"it": "BADESI",
-		"en": "BADESI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104006",
-    "descrizione": {
-		"it": "BERCHIDDA",
-		"en": "BERCHIDDA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104007",
-    "descrizione": {
-		"it": "BORTIGIADAS",
-		"en": "BORTIGIADAS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104008",
-    "descrizione": {
-		"it": "BUDDUSO'",
-		"en": "BUDDUSO'"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104009",
-    "descrizione": {
-		"it": "BUDONI",
-		"en": "BUDONI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20104010",
-    "descrizione": {
-		"it": "CALANGIANUS",
-		"en": "CALANGIANUS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104011",
-    "descrizione": {
-		"it": "GOLFO ARANCI",
-		"en": "GOLFO ARANCI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104012",
-    "descrizione": {
-		"it": "LA MADDALENA",
-		"en": "LA MADDALENA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104013",
-    "descrizione": {
-		"it": "LOIRI PORTO SAN PAOLO",
-		"en": "LOIRI PORTO SAN PAOLO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104014",
-    "descrizione": {
-		"it": "LUOGOSANTO",
-		"en": "LUOGOSANTO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104015",
-    "descrizione": {
-		"it": "LURAS",
-		"en": "LURAS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104016",
-    "descrizione": {
-		"it": "MONTI",
-		"en": "MONTI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104017",
-    "descrizione": {
-		"it": "OLBIA",
-		"en": "OLBIA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104018",
-    "descrizione": {
-		"it": "OSCHIRI",
-		"en": "OSCHIRI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104019",
-    "descrizione": {
-		"it": "PADRU",
-		"en": "PADRU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104020",
-    "descrizione": {
-		"it": "PALAU",
-		"en": "PALAU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104021",
-    "descrizione": {
-		"it": "SANT'ANTONIO DI GALLURA",
-		"en": "SANT'ANTONIO DI GALLURA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104022",
-    "descrizione": {
-		"it": "SANTA TERESA GALLURA",
-		"en": "SANTA TERESA GALLURA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104023",
-    "descrizione": {
-		"it": "SAN TEODORO",
-		"en": "SAN TEODORO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-04-11T00:00:00Z"
-},
-{
-    "codice":"20104024",
-    "descrizione": {
-		"it": "TELTI",
-		"en": "TELTI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20104025",
-    "descrizione": {
-		"it": "TEMPIO PAUSANIA",
-		"en": "TEMPIO PAUSANIA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105001",
-    "descrizione": {
-		"it": "ARZANA",
-		"en": "ARZANA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105002",
-    "descrizione": {
-		"it": "BARI SARDO",
-		"en": "BARI SARDO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105003",
-    "descrizione": {
-		"it": "BAUNEI",
-		"en": "BAUNEI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105004",
-    "descrizione": {
-		"it": "CARDEDU",
-		"en": "CARDEDU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105005",
-    "descrizione": {
-		"it": "ELINI",
-		"en": "ELINI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105006",
-    "descrizione": {
-		"it": "GAIRO",
-		"en": "GAIRO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105007",
-    "descrizione": {
-		"it": "GIRASOLE",
-		"en": "GIRASOLE"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105008",
-    "descrizione": {
-		"it": "ILBONO",
-		"en": "ILBONO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105009",
-    "descrizione": {
-		"it": "JERZU",
-		"en": "JERZU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105010",
-    "descrizione": {
-		"it": "LANUSEI",
-		"en": "LANUSEI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105011",
-    "descrizione": {
-		"it": "LOCERI",
-		"en": "LOCERI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105012",
-    "descrizione": {
-		"it": "LOTZORAI",
-		"en": "LOTZORAI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105013",
-    "descrizione": {
-		"it": "OSINI",
-		"en": "OSINI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105014",
-    "descrizione": {
-		"it": "PERDASDEFOGU",
-		"en": "PERDASDEFOGU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105015",
-    "descrizione": {
-		"it": "SEUI",
-		"en": "SEUI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20105016",
-    "descrizione": {
-		"it": "TALANA",
-		"en": "TALANA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105017",
-    "descrizione": {
-		"it": "TERTENIA",
-		"en": "TERTENIA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105018",
-    "descrizione": {
-		"it": "TORTOLI'",
-		"en": "TORTOLI'"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105019",
-    "descrizione": {
-		"it": "TRIEI",
-		"en": "TRIEI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105020",
-    "descrizione": {
-		"it": "ULASSAI",
-		"en": "ULASSAI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105021",
-    "descrizione": {
-		"it": "URZULEI",
-		"en": "URZULEI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105022",
-    "descrizione": {
-		"it": "USSASSAI",
-		"en": "USSASSAI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20105023",
-    "descrizione": {
-		"it": "VILLAGRANDE STRISAILI",
-		"en": "VILLAGRANDE STRISAILI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2019-02-20T00:00:00Z"
-},
-{
-    "codice":"20106001",
-    "descrizione": {
-		"it": "ARBUS",
-		"en": "ARBUS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106002",
-    "descrizione": {
-		"it": "BARUMINI",
-		"en": "BARUMINI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106003",
-    "descrizione": {
-		"it": "COLLINAS",
-		"en": "COLLINAS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106004",
-    "descrizione": {
-		"it": "FURTEI",
-		"en": "FURTEI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106005",
-    "descrizione": {
-		"it": "GENURI",
-		"en": "GENURI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106006",
-    "descrizione": {
-		"it": "GESTURI",
-		"en": "GESTURI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106007",
-    "descrizione": {
-		"it": "GONNOSFANADIGA",
-		"en": "GONNOSFANADIGA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106008",
-    "descrizione": {
-		"it": "GUSPINI",
-		"en": "GUSPINI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106009",
-    "descrizione": {
-		"it": "LAS PLASSAS",
-		"en": "LAS PLASSAS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106010",
-    "descrizione": {
-		"it": "LUNAMATRONA",
-		"en": "LUNAMATRONA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106011",
-    "descrizione": {
-		"it": "PABILLONIS",
-		"en": "PABILLONIS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106012",
-    "descrizione": {
-		"it": "PAULI ARBAREI",
-		"en": "PAULI ARBAREI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106013",
-    "descrizione": {
-		"it": "SAMASSI",
-		"en": "SAMASSI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106014",
-    "descrizione": {
-		"it": "SAN GAVINO MONREALE",
-		"en": "SAN GAVINO MONREALE"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106015",
-    "descrizione": {
-		"it": "SANLURI",
-		"en": "SANLURI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106016",
-    "descrizione": {
-		"it": "SARDARA",
-		"en": "SARDARA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106017",
-    "descrizione": {
-		"it": "SEGARIU",
-		"en": "SEGARIU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106018",
-    "descrizione": {
-		"it": "SERRAMANNA",
-		"en": "SERRAMANNA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106019",
-    "descrizione": {
-		"it": "SERRENTI",
-		"en": "SERRENTI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106020",
-    "descrizione": {
-		"it": "SETZU",
-		"en": "SETZU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106021",
-    "descrizione": {
-		"it": "SIDDI",
-		"en": "SIDDI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106022",
-    "descrizione": {
-		"it": "TUILI",
-		"en": "TUILI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106023",
-    "descrizione": {
-		"it": "TURRI",
-		"en": "TURRI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106024",
-    "descrizione": {
-		"it": "USSARAMANNA",
-		"en": "USSARAMANNA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106025",
-    "descrizione": {
-		"it": "VILLACIDRO",
-		"en": "VILLACIDRO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106026",
-    "descrizione": {
-		"it": "VILLAMAR",
-		"en": "VILLAMAR"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106027",
-    "descrizione": {
-		"it": "VILLANOVAFORRU",
-		"en": "VILLANOVAFORRU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20106028",
-    "descrizione": {
-		"it": "VILLANOVAFRANCA",
-		"en": "VILLANOVAFRANCA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107001",
-    "descrizione": {
-		"it": "BUGGERRU",
-		"en": "BUGGERRU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107002",
-    "descrizione": {
-		"it": "CALASETTA",
-		"en": "CALASETTA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107003",
-    "descrizione": {
-		"it": "CARBONIA",
-		"en": "CARBONIA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107004",
-    "descrizione": {
-		"it": "CARLOFORTE",
-		"en": "CARLOFORTE"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107005",
-    "descrizione": {
-		"it": "DOMUSNOVAS",
-		"en": "DOMUSNOVAS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107006",
-    "descrizione": {
-		"it": "FLUMINIMAGGIORE",
-		"en": "FLUMINIMAGGIORE"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107007",
-    "descrizione": {
-		"it": "GIBA",
-		"en": "GIBA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107008",
-    "descrizione": {
-		"it": "GONNESA",
-		"en": "GONNESA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107009",
-    "descrizione": {
-		"it": "IGLESIAS",
-		"en": "IGLESIAS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107010",
-    "descrizione": {
-		"it": "MASAINAS",
-		"en": "MASAINAS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107011",
-    "descrizione": {
-		"it": "MUSEI",
-		"en": "MUSEI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107012",
-    "descrizione": {
-		"it": "NARCAO",
-		"en": "NARCAO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107013",
-    "descrizione": {
-		"it": "NUXIS",
-		"en": "NUXIS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107014",
-    "descrizione": {
-		"it": "PERDAXIUS",
-		"en": "PERDAXIUS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107015",
-    "descrizione": {
-		"it": "PISCINAS",
-		"en": "PISCINAS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107016",
-    "descrizione": {
-		"it": "PORTOSCUSO",
-		"en": "PORTOSCUSO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107017",
-    "descrizione": {
-		"it": "SAN GIOVANNI SUERGIU",
-		"en": "SAN GIOVANNI SUERGIU"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107018",
-    "descrizione": {
-		"it": "SANTADI",
-		"en": "SANTADI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107019",
-    "descrizione": {
-		"it": "SANT'ANNA ARRESI",
-		"en": "SANT'ANNA ARRESI"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107020",
-    "descrizione": {
-		"it": "SANT'ANTIOCO",
-		"en": "SANT'ANTIOCO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107021",
-    "descrizione": {
-		"it": "TRATALIAS",
-		"en": "TRATALIAS"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107022",
-    "descrizione": {
-		"it": "VILLAMASSARGIA",
-		"en": "VILLAMASSARGIA"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
-    "codice":"20107023",
-    "descrizione": {
-		"it": "VILLAPERUCCIO",
-		"en": "VILLAPERUCCIO"
-		},
-    "dataInizio":"2010-06-30T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
 },
 {
     "codice":"20111001",
@@ -79172,15 +75959,6 @@
     "dataFine":"2099-12-31T00:00:00Z"
 },
 {
-    "codice":"999995720",
-    "descrizione": {
-		"it": "PALAU",
-		"en": "PALAU"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2018-06-08T11:52:00Z"
-},
-{
     "codice":"999995721",
     "descrizione": {
 		"it": "PAPUA NUOVA GUINEA",
@@ -79230,42 +76008,6 @@
     "descrizione": {
 		"it": "VANUATU",
 		"en": "VANUATU"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2099-12-31T00:00:00Z"
-},
-{
-    "codice":"999995733",
-    "descrizione": {
-		"it": "SEPRIO",
-		"en": "SEPRIO"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2000-01-02T00:00:00Z"
-},
-{
-    "codice":"999995734",
-    "descrizione": {
-		"it": "RIVIERA D'ADDA",
-		"en": "RIVIERA D'ADDA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2000-01-02T00:00:00Z"
-},
-{
-    "codice":"999995735",
-    "descrizione": {
-		"it": "BARRA",
-		"en": "BARRA"
-		},
-    "dataInizio":"2000-01-01T00:00:00Z",
-    "dataFine":"2000-01-02T00:00:00Z"
-},
-{
-    "codice":"999999999",
-    "descrizione": {
-		"it": "NON CLASSIFICATO",
-		"en": "NON CLASSIFICATO"
 		},
     "dataInizio":"2000-01-01T00:00:00Z",
     "dataFine":"2099-12-31T00:00:00Z"

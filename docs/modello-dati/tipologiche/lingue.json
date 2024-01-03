@@ -17,14 +17,4 @@
 		},	
     "dataInizio":null,
     "dataFine":null
-},
-{
-    "codice":"ITA",
-    "descrizione": {
-		"it": "italiano",
-		"en": "Italian",
-		"de": "Italienisch"
-		},	
-    "dataInizio":null,
-    "dataFine":null
 }]
