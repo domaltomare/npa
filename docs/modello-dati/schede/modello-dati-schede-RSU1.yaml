@@ -10,9 +10,11 @@ components:
       required: [codiceFiscaleDitta,impresaEstera,importoPresunto,categoria,cpv]
       additionalProperties: false
       properties:    
-        codiceFiscaleDitta:
-          description: Codice fiscale ditta subappaltatrice
-          type: string
+        codiciFiscaliDitte:
+          description: Codici fiscali ditte subappaltatrici
+          type: array
+          items:
+            type: string
         impresaEstera:
           description: Impresa estera?
           type: boolean
