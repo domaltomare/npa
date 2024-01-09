@@ -584,9 +584,13 @@ ref. /docs/specifiche-jws/
 	* eliminati i campi oggetto, oggettoMl, oggettoContratto, importo da LottoP5Type e aggiunto il campo datiBase, contenenti i campi oggetto, oggettoMl, oggettoContratto, importo.
  * modello-dati-schede-dati-comuni.yaml:
    	* aggiunta obbligatorietà del campo datiBase.importo.
-   	* eliminato il pattern nei campi percentuale e inseriti gli attributi minimum =0 e maximum=100 
+   	* eliminato il pattern nei campi percentuale e inseriti gli attributi minimum =0 e maximum=100
+   	  
 ### Tipologiche
 * aggiornata RuoloOE.json
 * aggiornata categoria.json: eliminate le voci non più valide
 * aggiornata codIstat.json: eliminate le voci non più valide, eliminata la voce "non classificato", corretti i codici inserendo la codifica a 9 cifre
 * aggiornata codNuts.json: eliminate le voci non più valide, eliminata la voce "non classificato"
+
+### Orchestratore  
+
