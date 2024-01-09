@@ -669,7 +669,7 @@ components:
           description: Indicare se è prevista la costituzione di una società di scopo
           type: boolean
         datiBase:
-          $ref: '#/components/schemas/DatiBaseAppaltoOptionalType'
+          $ref: '#/components/schemas/DatiBaseAppaltoType'
         datiBaseProcedura:
           allOf: 
           - $ref: '#/components/schemas/DatiBaseProceduraType'
