@@ -566,33 +566,27 @@ ref. /docs/specifiche-jws/
 * issue 694, 799:
 	* modello-dati-schede-dati-comuni.yaml: oggetto OfferteType: reso obbligatorio il campo aggiudicatario.
 * issue 448,548,567,875:	
-	* modello-dati-schede-CO2.yaml: oggetto AnacFormCO2Type: sostituito cig con idScheda.
-	* modello-dati-schede-CO1.yaml: oggetto AnacFormCO1Type: inserire il cig all'interno del campo conclusione
+	* modello-dati-schede-CO2.yaml: oggetto AnacFormCO2Type: inserito cig allo stesso livello dell’oggetto conclusione.
+	* modello-dati-schede-CO1.yaml: oggetto AnacFormCO1Type: inserita la doppia chiave: idContratto e cig
 * issue 796:
 	* modello-dati-schede-A3_6.yaml: eliminato l'oggetto datiBaseRisultatoProcedura da AggiudicazioneA3_6Type
 * issue 599:
 	* modello-dati-schede-dati-comuni.yaml, modello-dati-schede-A3.6.yaml, modello-dati-schede-PL2.7.yaml, modello-dati-schede-PL2.8.yaml, modello-dati-schede-PL2.9.yaml, modello-dati-schede-P3.4.yaml, modello-dati-schede-P2.10.yaml, modello-dati-schede-P2.11.yaml, modello-dati-schede-P2.16.yaml, modello-dati-schede-P2.17.yaml, modello-dati-schede-P2.18.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml: modificata la descrizione dei dati comuni con il ted
 * issue 308:
-	* modello-dati-schede-RSU1.yaml: modificata la cardinalità dell'oggetto codiceFiscaleDitta. Diventato array codiciFiscaliDitte
+	* modello-dati-schede-RSU1.yaml: modificata la cardinalità dell'oggetto codiceFiscaleDitta. Diventato array codiciFiscaliOE
 * issue 850, 855, 912:
-	* rendere offertePresentate obbligatorio nelle schede A1_31, A2_31, A3_5
+	* reso offertePresentate obbligatorio nelle schede A1_31, A2_31, A3_5
 * issue 854:
-	* rendere offertePresentate obbligatorio nella scheda A3_3 
-* togliere il campo idAppalto da tutte le schede.
-* PL,P*,AD*: rendere obbligatorio l'oggetto datiBaseDocumenti con il link SA su tutte le schede in cui il campo url è obbligatorio.
+	* reso offertePresentate obbligatorio nella scheda A3_3 
+* tolto il campo idAppalto da tutte le schede.
+* PL,P*,AD*: reso obbligatorio l'oggetto datiBaseDocumenti con il link SA su tutte le schede in cui il campo url è obbligatorio.
 * modello-dati-schede-P5.yaml:
 	* eliminati i campi oggetto, oggettoMl, oggettoContratto, importo da LottoP5Type e aggiunto il campo datiBase, contenenti i campi oggetto, oggettoMl, oggettoContratto, importo.
  * modello-dati-schede-dati-comuni.yaml:
- 	* aggiunto l'oggetto CategoriaScorporabileEnum
-  	* aggiornata la reference del campo categoriaScorporabile al nuovo oggetto CategoriaScorporabileEnum per tutti gli oggetti lotto
    	* aggiunta obbligatorietà del campo datiBase.importo.
    	* eliminato il pattern nei campi percentuale e inseriti gli attributi minimum =0 e maximum=100 
-* modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-RSU.yaml:
-	* aggiornata la reference del campo categoriaScorporabile al nuovo oggetto CategoriaScorporabileEnum
 ### Tipologiche
 * aggiornata RuoloOE.json
-* aggiunta la tipologica categoriaScorporabile.json
 * aggiornata categoria.json: eliminate le voci non più valide
-* aggiornata codIstat.json: eliminate le voci non più valide
+* aggiornata codIstat.json: eliminate le voci non più valide, eliminata la voce "non classificato", corretti i codici inserendo la codifica a 9 cifre
 * aggiornata codNuts.json: eliminate le voci non più valide, eliminata la voce "non classificato"
-* aggiornata lingue.json: eliminata la voce "italiano"
