@@ -572,7 +572,7 @@ ref. /docs/specifiche-jws/
 	* modello-dati-schede-A3_6.yaml: eliminato l'oggetto datiBaseRisultatoProcedura da AggiudicazioneA3_6Type
 * issue 599:
 	* modello-dati-schede-dati-comuni.yaml, modello-dati-schede-A3.6.yaml, modello-dati-schede-PL2.7.yaml, modello-dati-schede-PL2.8.yaml, modello-dati-schede-PL2.9.yaml, modello-dati-schede-P3.4.yaml, modello-dati-schede-P2.10.yaml, modello-dati-schede-P2.11.yaml, modello-dati-schede-P2.16.yaml, modello-dati-schede-P2.17.yaml, modello-dati-schede-P2.18.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml: modificata la descrizione dei dati comuni con il ted
-* issue 308:
+* issue 308, 778:
 	* modello-dati-schede-RSU1.yaml: modificata la cardinalità dell'oggetto codiceFiscaleDitta. Diventato array codiciFiscaliDitte
 * issue 850, 855, 912:
 	* rendere offertePresentate obbligatorio nelle schede A1_31, A2_31, A3_5
