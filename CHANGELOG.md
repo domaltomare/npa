@@ -593,4 +593,9 @@ ref. /docs/specifiche-jws/
 * aggiornata codNuts.json: eliminate le voci non più valide, eliminata la voce "non classificato"
 
 ## Orchestratore  
-
+* Modificata la colonna N "pubblicazioneNazionale": 
+	* scheda AD3: impostato pubblicazioneNazionale a SI
+	* schede A3_1, A3_2, A3_3: impostato pubblicazioneNazionale a NO (modifica già pubblicata)
+* Modificata la colonna R "schedaSuccessiva": 
+	* scheda CO1: inclusa se stessa come scheda successiva
+	* scheda CO2: inclusa se stessa come scheda successiva
