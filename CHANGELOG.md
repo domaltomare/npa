@@ -587,7 +587,7 @@ ref. /docs/specifiche-jws/
    	* eliminato il pattern nei campi percentuale e inseriti gli attributi minimum =0 e maximum=100
    	  
 ### Tipologiche
-* aggiornata RuoloOE.json
+* aggiornata ruoloOE.json
 * aggiornata categoria.json: eliminate le voci non più valide
 * aggiornata codIstat.json: eliminate le voci non più valide, eliminata la voce "non classificato", corretti i codici inserendo la codifica a 9 cifre
 * aggiornata codNuts.json: eliminate le voci non più valide, eliminata la voce "non classificato"
