@@ -863,6 +863,24 @@
     "dataFine":null
 },
 {
+    "codice":"ERR97",
+    "descrizione": {
+		"it": "errore durante la validazione del CUP",
+		"en": "errore durante la validazione del CUP"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR98",
+    "descrizione": {
+		"it": "errore durante la validazione del CIG negli accordi quadro",
+		"en": "errore durante la validazione del CIG negli accordi quadro"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
