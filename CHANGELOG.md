@@ -591,7 +591,10 @@ ref. /docs/specifiche-jws/
 * aggiornata categoria.json: eliminate le voci non più valide
 * aggiornata codIstat.json: eliminate le voci non più valide, eliminata la voce "non classificato", corretti i codici inserendo la codifica a 9 cifre
 * aggiornata codNuts.json: eliminate le voci non più valide, eliminata la voce "non classificato"
-
+* tipoCatastoStato.json
+  * nuova tipologica utilizzabile per la compilazione della richiesta di documentazione 
+* tipoFormaGiuridica.json
+  * nuova tipologica utilizzabile per la compilazione della richiesta di documentazione 
 ## Orchestratore  
 * Modificata la colonna N "pubblicazioneNazionale": 
 	* scheda AD3: impostato pubblicazioneNazionale a SI
