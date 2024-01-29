@@ -559,6 +559,10 @@ ref. /docs/specifiche-jws/
 ## Modello Dati 
 * modello-dati-npa.yaml:
   * modificato l'attributo $ref dell'oggetto scheda in AvvisoType
+    
+### Regole
+* P1_16.dmn, P1_17.dmn, P1_18.dmn, P1_19.dmn, P1_20.dmn, P1_21.dmn, P1_23.dmn, P1_24.dmn,P2_16.dmn, P2_17.dmn, P2_18.dmn, P2_19.dmn, P2_20.dmn, P2_21.dmn, P2_23.dmn, P2_24.dmn, P3*.dmn, P4*.dmn:
+	* aggiunte le regole REG95, REG96, REG97 sulla data di scadenza presentazione offerte e data scadenza presentazione invito
 
 ### Schede
 * issue 712:
@@ -585,7 +589,9 @@ ref. /docs/specifiche-jws/
  * modello-dati-schede-dati-comuni.yaml:
    	* aggiunta obbligatorietà del campo datiBase.importo.
    	* eliminato il pattern nei campi percentuale e inseriti gli attributi minimum =0 e maximum=100
-   	  
+ * P2*,P3_4,P3_5,P4*,P6*,P7*,PL2_8:
+ 	* reso obbligatorio l'oggetto datiBaseTerminiInvio
+       
 ### Tipologiche
 * aggiornata ruoloOE.json
 * aggiornata categoria.json: eliminate le voci non più valide
