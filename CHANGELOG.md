@@ -594,7 +594,9 @@ ref. /docs/specifiche-jws/
 * tipoCatastoStato.json
   * nuova tipologica utilizzabile per la compilazione della richiesta di documentazione 
 * tipoFormaGiuridica.json
-  * nuova tipologica utilizzabile per la compilazione della richiesta di documentazione 
+  * nuova tipologica utilizzabile per la compilazione della richiesta di documentazione
+* aggiornata errori.json
+  
 ## Orchestratore  
 * Modificata la colonna N "pubblicazioneNazionale": 
 	* scheda AD3: impostato pubblicazioneNazionale a SI
