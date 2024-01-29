@@ -1727,6 +1727,24 @@
     "dataFine":null
 },
 {
+    "codice":"REG98",
+    "descrizione": {
+		"it": "L'importo indicato nell'oggetto appalto.datiBase.importo deve essere > 0.",
+		"en": "L'importo indicato nell'oggetto appalto.datiBase.importo deve essere > 0."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG99",
+    "descrizione": {
+		"it": "L'importo indicato nell'oggetto lotti.datiBase.importo deve essere > 0.",
+		"en": "L'importo indicato nell'oggetto lotti.datiBase.importo deve essere > 0."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
