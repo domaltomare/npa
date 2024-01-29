@@ -67,6 +67,21 @@ satisfies is defined(stazioneAppaltante.funzioniSvolte) and stazioneAppaltante.c
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG3\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_1t5ps76">
+        <description>REG8_1: L'indirizzo dei documenti di gara: deve essere una url valida e quindi iniziare con http o https.</description>
+        <inputEntry id="UnaryTests_0v1qx7v">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qy60fi">
+          <text>some lotto in lotti satisfies lotto.datiBaseDocumenti.url != null and lotto.datiBaseDocumenti.url != "" and starts with(lotto.datiBaseDocumenti.url,"http:") = false and starts with(lotto.datiBaseDocumenti.url,"https:") = false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wt1l1s">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04cxsgw">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG8\"}"</text>
+        </outputEntry>
+      </rule>	  
       <rule id="DecisionRule_P3_2_0023">
         <description>REG18: E’ obbligatorio valorizzare a SI il campo ‘L'appalto è finalizzato alla realizzazione di progetti d'investimento pubblico per i quali è prevista l'acquisizione del codice CUP ai sensi dell'art. 11 L. 3/2003 e ss.mm.?
 ’ se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC</description>
@@ -262,6 +277,23 @@ satisfies count(lotto.datiBaseCPV.cpvSecondarie.codice) &gt; count(distinct valu
         </inputEntry>
         <outputEntry id="LiteralExpression_P3_2_0039">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG67\"}"</text>
+        </outputEntry>
+      </rule>
+	  <rule id="DecisionRule_117r61g">
+        <description>REG97: Inserire solo uno tra i campi oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito.</description>
+        <inputEntry id="UnaryTests_1pdxw01">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_050br9q">
+          <text>some lotto in lotti
+satisfies (lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != null and lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != "") and
+(lotti.datiBaseTerminiInvio.scadenzaPresentazioneInvito != null and lotti.datiBaseTerminiInvio.scadenzaPresentazioneInvito != "")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00w9vwt">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1r55cm1">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG97\"}"</text>
         </outputEntry>
       </rule>
     </decisionTable>

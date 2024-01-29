@@ -99,6 +99,21 @@ satisfies lotto.condizioniNegoziata != null</text>
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG6_2\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_1t5ps76">
+        <description>REG8_1: L'indirizzo dei documenti di gara: deve essere una url valida e quindi iniziare con http o https.</description>
+        <inputEntry id="UnaryTests_0v1qx7v">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qy60fi">
+          <text>some lotto in lotti satisfies lotto.datiBaseDocumenti.url != null and lotto.datiBaseDocumenti.url != "" and starts with(lotto.datiBaseDocumenti.url,"http:") = false and starts with(lotto.datiBaseDocumenti.url,"https:") = false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wt1l1s">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04cxsgw">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG8\"}"</text>
+        </outputEntry>
+      </rule>	  
       <rule id="DecisionRule_P4_4_0015">
         <description>REG10: Servizio Pubblico Locale: il campo è obbligatorio solo se l'oggetto del contratto = servizi</description>
         <inputEntry id="UnaryTests_P4_4_0046">
@@ -377,6 +392,40 @@ satisfies count(lotto.datiBaseCPV.cpvSecondarie.codice) &gt; count(distinct valu
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG67\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_0g72lga">
+        <description>REG96: E' obbligatorio inserire almeno uno dei due campi tra oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito.</description>
+        <inputEntry id="UnaryTests_1izcarr">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1bpo583">
+          <text>some lotto in lotti
+satisfies (lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte = null or lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte="") and
+(lotti.datiBaseTerminiInvio.scadenzaPresentazioneInvito = null or lotti.datiBaseTerminiInvio.scadenzaPresentazioneInvito = "")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0viirst">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00iukh1">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG96\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_117r61g">
+        <description>REG97: Inserire solo uno tra i campi oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito.</description>
+        <inputEntry id="UnaryTests_1pdxw01">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_050br9q">
+          <text>some lotto in lotti
+satisfies (lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != null and lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != "") and
+(lotti.datiBaseTerminiInvio.scadenzaPresentazioneInvito != null and lotti.datiBaseTerminiInvio.scadenzaPresentazioneInvito != "")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00w9vwt">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1r55cm1">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG97\"}"</text>
+        </outputEntry>
+      </rule>	  
     </decisionTable>
   </decision>
   <inputData id="InputData_1rz6dq5" name="lotti" />
