@@ -1513,8 +1513,8 @@
 {
     "codice":"REG74",
     "descrizione": {
-		"it": "Non è stato valorizzato il nuovo importo della sicurezza",
-		"en": "Non è stato valorizzato il nuovo importo della sicurezza"
+		"it": "Non è stato valorizzato il campo oneri derivanti",
+		"en": "Non è stato valorizzato il campo oneri derivanti"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -1695,6 +1695,33 @@
     "descrizione": {
 		"it": "Oneri complessivi derivanti è obbligatorio se il numero totale riserve è maggiore di zero.",
 		"en": "Oneri complessivi derivanti è obbligatorio se il numero totale riserve è maggiore di zero."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG95",
+    "descrizione": {
+		"it": "Per il tipo di procedura aperta o altra procedura a fase unica il campo oraScadenzaPresentazioneOfferte è obbligatorio.",
+		"en": "Per il tipo di procedura aperta o altra procedura a fase unica il campo oraScadenzaPresentazioneOfferte è obbligatorio."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG96",
+    "descrizione": {
+		"it": "E' obbligatorio inserire almeno uno dei due campi tra oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito.",
+		"en": "E' obbligatorio inserire almeno uno dei due campi tra oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG97",
+    "descrizione": {
+		"it": "Inserire solo uno tra i campi oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito.",
+		"en": "Inserire solo uno tra i campi oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito."
 	},
     "dataInizio":null,
     "dataFine":null
