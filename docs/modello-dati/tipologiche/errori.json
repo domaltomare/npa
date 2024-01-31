@@ -1018,8 +1018,8 @@
 {
     "codice":"REG8",
     "descrizione": {
-		"it": "I campi contenente una url devono iniziare per http oppure per https. In presenza di eForm verificare anche la validità del link ai documenti di gara (BT-15)",
-		"en": "I campi contenente una url devono iniziare per http oppure per https. In presenza di eForm verificare anche la validità del link ai documenti di gara (BT-15)"
+		"it": "I campi contenente una url devono iniziare per http oppure per https. In presenza di eForm verificare anche la validità del link ai documenti di gara (BT-15).",
+		"en": "I campi contenente una url devono iniziare per http oppure per https. In presenza di eForm verificare anche la validità del link ai documenti di gara (BT-15)."
 	},
     "dataInizio":null,
     "dataFine":null
