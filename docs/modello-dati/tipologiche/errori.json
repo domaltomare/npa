@@ -879,7 +879,16 @@
 	},
     "dataInizio":null,
     "dataFine":null
-},	
+},
+{
+    "codice":"ERR99",
+    "descrizione": {
+		"it": "popolare in modo alternativo idContratto o cig nel body della scheda",
+		"en": "popolare in modo alternativo idContratto o cig nel body della scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
 {
     "codice":"ERR9999",
     "descrizione": {
