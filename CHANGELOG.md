@@ -610,3 +610,9 @@ ref. /docs/specifiche-jws/
 * Modificata la colonna R "schedaSuccessiva": 
 	* scheda CO1: inclusa se stessa come scheda successiva
 	* scheda CO2: inclusa se stessa come scheda successiva
+ 	* per le schede di indizione sottosoglia:
+  		* dove prevista come scheda successiva S1,S2 diventa S1,S2,NAG
+    		* dove prevista come scheda successiva S2 diventa S2,NAG
+      		* dove prevista come scheda successiva S1 diventa S1,NAG
+      	* per la scheda S1 diventa S2,NAG
+
