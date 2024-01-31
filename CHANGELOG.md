@@ -554,7 +554,8 @@ ref. /docs/specifiche-jws/
 * Aggiornato il file schema-cronologia-schede.xlsx
 </details>
 
-# Note di rilascio del 31/01/2024 (esercizio 01/03/2024)
+<details>
+<summary><h1>Note di rilascio del 31/01/2024 (esercizio 01/03/2024)</h1></summary>
 
 ## Modello Dati 
 * modello-dati-npa.yaml:
@@ -615,3 +616,4 @@ ref. /docs/specifiche-jws/
   	* dove prevista come scheda successiva S2 diventa S2,NAG
   	* dove prevista come scheda successiva S1 diventa S1,NAG
   * per la scheda S1 diventa S2,NAG
+</details>
