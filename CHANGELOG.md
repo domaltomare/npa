@@ -560,7 +560,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-npa.yaml:
   * modificato l'attributo $ref dell'oggetto scheda in AvvisoType
     
-### Regole
+### Regole (ANTICIPATA in esercizio in data 09/02/2024)
 * P1_16.dmn, P1_17.dmn, P1_18.dmn, P1_19.dmn, P1_20.dmn, P1_21.dmn, P1_23.dmn, P1_24.dmn,P2_16.dmn, P2_17.dmn, P2_18.dmn, P2_19.dmn, P2_20.dmn, P2_21.dmn, P2_23.dmn, P2_24.dmn, P3*.dmn, P4*.dmn:
   * aggiunte le regole REG95, REG96, REG97 sulla data di scadenza presentazione offerte e data scadenza presentazione invito
 
