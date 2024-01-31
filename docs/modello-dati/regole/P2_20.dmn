@@ -307,8 +307,8 @@ satisfies lotto.afferenteInvestimentiPNRR = true and (lotto.acquisizioneCup = nu
       </rule>
       <rule id="DecisionRule_P2_20_0024">
         <description>REG20: Cup associati al lotto: il campo non è obbligatorio se:
-- lotti.acquisizionecup=’N’ e oggettoContratto="services" o ‘supplies’
-- lotti.acquisizionecup=’N’ e oggettoContratto="works" e lotti.tipologialavoro è assegnata la ‘Manutenzione Ordinaria’ (codice 12).
+- lotto.acquisizionecup=’N’ e oggettoContratto="services" o ‘supplies’
+- lotto.acquisizionecup=’N’ e oggettoContratto="works" e lotto.tipologialavoro è assegnata la ‘Manutenzione Ordinaria’ (codice 12).
 E' quindi obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria</description>
         <inputEntry id="UnaryTests_P2_20_0073">
           <text></text>
@@ -364,7 +364,7 @@ inferiore con riferimento all’occupazione femminile o giovanile: se è stato i
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0083">
           <text>some lotto in lotti
-satisfies lotto.paritaDiGenereGenerazionale != null and lotto.paritaDiGenereGenerazionale.quota30PerCento ="SI_QUOTA_INFERIORE" and lotto.paritaDiGenereGenerazionale.quotaInferioreOccupFemminile= "0" and lotto.paritaDiGenereGenerazionale.quotaInferioreOccupGiovanile="0"</text>
+satisfies lotto.paritaDiGenereGenerazionale != null and lotto.paritaDiGenereGenerazionale.quota30PerCento ="SI_QUOTA_INFERIORE" and lotto.paritaDiGenereGenerazionale.quotaInferioreOccupFemminile= 0 and lotto.paritaDiGenereGenerazionale.quotaInferioreOccupGiovanile=0</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0084">
           <text></text>
@@ -381,7 +381,7 @@ occupazione giovanile, deve essere inferiore al 30%</description>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0086">
           <text>some lotto in lotti
-satisfies lotto.paritaDiGenereGenerazionale != null and number(lotto.paritaDiGenereGenerazionale.quotaInferioreOccupFemminile) &gt;= 30 and number(lotto.paritaDiGenereGenerazionale.quotaInferioreOccupGiovanile) &gt;= 30</text>
+satisfies lotto.paritaDiGenereGenerazionale != null and lotto.paritaDiGenereGenerazionale.quotaInferioreOccupFemminile &gt;= 30 and lotto.paritaDiGenereGenerazionale.quotaInferioreOccupGiovanile &gt;= 30</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0087">
           <text></text>
@@ -477,7 +477,7 @@ satisfies lotto.datiBaseAccessibilita.accessibilita.codice = "n-inc-just" and (l
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0023">
           <text>some lotto in lotti
-satisfies lotto.datiBase.oggettoContratto.codice = "works" and lotto.quadroEconomicoStandard.impLavori = null or number(lotto.quadroEconomicoStandard.impLavori) = 0</text>
+satisfies lotto.datiBase.oggettoContratto.codice = "works" and (lotto.quadroEconomicoStandard.impLavori = null or lotto.quadroEconomicoStandard.impLavori = 0)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0024">
           <text></text>
@@ -493,7 +493,7 @@ satisfies lotto.datiBase.oggettoContratto.codice = "works" and lotto.quadroEcono
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0026">
           <text>some lotto in lotti
-satisfies lotto.datiBase.oggettoContratto.codice = "services" and lotto.quadroEconomicoStandard.impServizi = null or number(lotto.quadroEconomicoStandard.impServizi) = 0</text>
+satisfies lotto.datiBase.oggettoContratto.codice = "services" and (lotto.quadroEconomicoStandard.impServizi = null or lotto.quadroEconomicoStandard.impServizi = 0)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0027">
           <text></text>
@@ -509,7 +509,7 @@ satisfies lotto.datiBase.oggettoContratto.codice = "services" and lotto.quadroEc
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0029">
           <text>some lotto in lotti
-satisfies lotto.datiBase.oggettoContratto.codice = "supplies" and lotto.quadroEconomicoStandard.impForniture = null or number(lotto.quadroEconomicoStandard.impForniture) = 0</text>
+satisfies lotto.datiBase.oggettoContratto.codice = "supplies" and (lotto.quadroEconomicoStandard.impForniture = null or lotto.quadroEconomicoStandard.impForniture = 0)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0030">
           <text></text>
@@ -525,7 +525,7 @@ satisfies lotto.datiBase.oggettoContratto.codice = "supplies" and lotto.quadroEc
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0032">
           <text>some lotto in lotti
-satisfies lotto.opzioniRinnovi and lotto.quadroEconomicoStandard.sommeOpzioniRinnovi = null or number(lotto.quadroEconomicoStandard.sommeOpzioniRinnovi) = 0</text>
+satisfies lotto.opzioniRinnovi and lotto.quadroEconomicoStandard.sommeOpzioniRinnovi = null or lotto.quadroEconomicoStandard.sommeOpzioniRinnovi = 0</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0033">
           <text></text>
@@ -541,7 +541,7 @@ satisfies lotto.opzioniRinnovi and lotto.quadroEconomicoStandard.sommeOpzioniRin
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0035">
           <text>some lotto in lotti
-satisfies lotto.ripetizioniEConsegneComplementari and lotto.quadroEconomicoStandard.sommeRipetizioni = null or number(lotto.quadroEconomicoStandard.sommeRipetizioni) = 0</text>
+satisfies lotto.ripetizioniEConsegneComplementari and lotto.quadroEconomicoStandard.sommeRipetizioni = null or lotto.quadroEconomicoStandard.sommeRipetizioni = 0</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_20_0036">
           <text></text>
@@ -604,7 +604,7 @@ satisfies count(lotto.datiBaseCPV.cpvSecondarie.codice) &gt; count(distinct valu
         </inputEntry>
         <inputEntry id="UnaryTests_0jq49yh">
           <text>some lotto in lotti
-satisfies (lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte = null or lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte="")</text>
+satisfies (lotto.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte = null or lotto.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte="")</text>
         </inputEntry>
         <inputEntry id="UnaryTests_146yua6">
           <text></text>
@@ -620,8 +620,8 @@ satisfies (lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte = null or 
         </inputEntry>
         <inputEntry id="UnaryTests_1bpo583">
           <text>some lotto in lotti
-satisfies (lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte = null or lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte="") and
-(lotti.datiBaseTerminiInvio.scadenzaPresentazioneInvito = null or lotti.datiBaseTerminiInvio.scadenzaPresentazioneInvito = "")</text>
+satisfies (lotto.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte = null or lotto.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte="") and
+(lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito = null or lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito = "")</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0viirst">
           <text></text>
@@ -637,8 +637,8 @@ satisfies (lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte = null or 
         </inputEntry>
         <inputEntry id="UnaryTests_050br9q">
           <text>some lotto in lotti
-satisfies (lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != null and lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != "") and
-(lotti.datiBaseTerminiInvio.scadenzaPresentazioneInvito != null and lotti.datiBaseTerminiInvio.scadenzaPresentazioneInvito != "")</text>
+satisfies (lotto.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != null and lotto.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != "") and
+(lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != null and lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != "")</text>
         </inputEntry>
         <inputEntry id="UnaryTests_00w9vwt">
           <text></text>
@@ -663,7 +663,7 @@ satisfies (lotti.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != null an
         </outputEntry>
       </rule>
       <rule id="DecisionRule_05gn4js">
-        <description>REG99: L'importo indicato nell'oggetto lotti.datiBase.importo deve essere &gt; 0.</description>
+        <description>REG99: L'importo indicato nell'oggetto lotto.datiBase.importo deve essere &gt; 0.</description>
         <inputEntry id="UnaryTests_024uqji">
           <text></text>
         </inputEntry>
