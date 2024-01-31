@@ -2427,4 +2427,121 @@
    },
    "dataInizio":null,
    "dataFine":null
+   },
+{
+   "codice":"FVX39",
+   "descrizione": {
+       "it": "Anagrafica Stazione Appaltante non presente",
+       "en": "Anagrafica Stazione Appaltante non presente"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX40",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Inserisci Documento FVC - Non Disponibile",
+       "en": "Errore Servizio esterno. Inserisci Documento FVC - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX41",
+   "descrizione": {
+       "it": "Id documento non in formato UUID",
+       "en": "Id documento non in formato UUID"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX42",
+   "descrizione": {
+       "it": "Id fascicolo non in formato UUID",
+       "en": "Id fascicolo non in formato UUID"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX43",
+   "descrizione": {
+       "it": "Chiave Accesso non in formato UUID",
+       "en": "Chiave Accesso non in formato UUID"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX44",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Persona Fisica Servizio - Non Disponibile",
+       "en": "Errore Servizio esterno. Persona Fisica Servizio - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX45",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Richiedi Documento Servizio - Non Disponibile",
+       "en": "Errore Servizio esterno. Richiedi Documento Servizio - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX51",
+   "descrizione": {
+       "it": "Configurazione tipo documento non presente",
+       "en": "Configurazione tipo documento non presente"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX46",
+   "descrizione": {
+       "it": "Dati non validi",
+       "en": "Dati non validi"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX47",
+   "descrizione": {
+       "it": "Codice Fiscale Impresa non valido",
+       "en": "Codice Fiscale Impresa non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX48",
+   "descrizione": {
+       "it": "Codice Fiscale Professionistra non valido",
+       "en": "Codice Fiscale Professionistra non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX49",
+   "descrizione": {
+       "it": "Codice Fiscale Persona Fisica non valido",
+       "en": "Codice Fiscale Persona Fisica non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX50",
+   "descrizione": {
+       "it": "Codice Fiscale Persona Non Fisica non valido",
+       "en": "Codice Fiscale Persona Non Fisica non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null
 }]
