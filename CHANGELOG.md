@@ -625,7 +625,7 @@ ref. /docs/specifiche-jws/
 
     
 ### Regole
-
+Ticket#2024012460000868: AD4.dmn: eliminate le regole REG69, REG70, REG71
 
 ### Schede
 
