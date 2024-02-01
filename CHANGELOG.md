@@ -617,3 +617,20 @@ ref. /docs/specifiche-jws/
   	* dove prevista come scheda successiva S1 diventa S1,NAG
   * per la scheda S1 diventa S2,NAG
 </details>
+
+# Note di rilascio del dd/mm/aaaa
+
+
+## Modello Dati 
+
+    
+### Regole
+
+
+### Schede
+
+       
+### Tipologiche
+
+  
+## Orchestratore  
