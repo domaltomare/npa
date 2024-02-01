@@ -627,6 +627,8 @@ ref. /docs/specifiche-jws/
 ### Regole
 * Ticket#2024012460000868:
 	* AD4.dmn: eliminate le regole REG69, REG70, REG71
+* Issue 1010:
+	* AC1.dmn: corretto il messaggio di errore e modificata la REG74 perché accetti anche lo 0 nel campo oneriDerivanti. 
 * Issue 1076:
 	* P*.dmn: corretta la REG15  
 
