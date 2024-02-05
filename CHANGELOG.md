@@ -637,6 +637,6 @@ ref. /docs/specifiche-jws/
 
        
 ### Tipologiche
-
+* aggiornata errori.json
   
 ## Orchestratore  
