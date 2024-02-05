@@ -890,6 +890,15 @@
     "dataFine":null
 },
 {
+    "codice":"ERR100",
+    "descrizione": {
+		"it": "Importo totale non consentito per l'Affidamento diretto < 5k €. Articolo 49 c. 6 e 50 decreto legislativo 36/2023.",
+		"en": "Importo totale non consentito per l'Affidamento diretto < 5k €. Articolo 49 c. 6 e 50 decreto legislativo 36/2023."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
