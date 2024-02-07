@@ -50,7 +50,7 @@ satisfies list contains(appalto.categorieMerceologiche, categoria))</text>
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_P2_12_0019">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":{\"REG1\"}}"</text>
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG1\"}"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_P2_12_0007">
