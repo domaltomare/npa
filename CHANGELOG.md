@@ -619,7 +619,7 @@ ref. /docs/specifiche-jws/
   * per la scheda S1 diventa S2,NAG
 </details>
 
-# Note di rilascio del dd/mm/aaaa
+# Note di rilascio del 09/02/2024 (Fix e segnalazioni in ESERCIZIO)
 
 
 ## Modello Dati 
@@ -627,11 +627,11 @@ ref. /docs/specifiche-jws/
     
 ### Regole
 * Ticket#2024012460000868:
-	* AD4.dmn: eliminate le regole REG69, REG70, REG71
+  * AD4.dmn: eliminate le regole REG69, REG70, REG71
 * Issue 1010:
-	* AC1.dmn: corretto il messaggio di errore e modificata la REG74 perché accetti anche lo 0 nel campo oneriDerivanti. 
+  * AC1.dmn: corretto il messaggio di errore e modificata la REG74 perché accetti anche lo 0 nel campo oneriDerivanti. 
 * Issue 1076:
-	* P*.dmn: corretta la REG15
+  * P*.dmn: corretta la REG15
 * P1_18.dmn, P2_18.dmn, P5.dmn, A3_6.dmn: corretta la sintassi
 * AD5.dmn: aggiundo controllo su importo dati base
 
