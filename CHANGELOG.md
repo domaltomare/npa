@@ -619,7 +619,7 @@ ref. /docs/specifiche-jws/
   * per la scheda S1 diventa S2,NAG
 </details>
 
-# Note di rilascio del 09/02/2024 (Fix e segnalazioni in ESERCIZIO)
+# Note di rilascio del 09/02/2024 (Segnalazioni chiuse in ESERCIZIO)
 
 
 ## Modello Dati 
