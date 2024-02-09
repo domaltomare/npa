@@ -621,10 +621,7 @@ ref. /docs/specifiche-jws/
 
 # Note di rilascio del 09/02/2024 (Segnalazioni chiuse in Esercizio)
 
-
-## Modello Dati 
-
-    
+   
 ### Regole
 * Ticket#2024012460000868:
   * AD4.dmn: eliminate le regole REG69, REG70, REG71
@@ -635,10 +632,5 @@ ref. /docs/specifiche-jws/
 * P1_18.dmn, P2_18.dmn, P5.dmn, A3_6.dmn: corretta la sintassi
 * AD5.dmn: aggiundo controllo su importo dati base
 
-### Schede
-
-       
 ### Tipologiche
-* aggiornata errori.json
-  
-## Orchestratore  
+* aggiornata errori.json  
