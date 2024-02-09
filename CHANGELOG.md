@@ -631,7 +631,8 @@ ref. /docs/specifiche-jws/
 	* AC1.dmn: corretto il messaggio di errore e modificata la REG74 perché accetti anche lo 0 nel campo oneriDerivanti. 
 * Issue 1076:
 	* P*.dmn: corretta la REG15
-* P1_18.dmn, P2_18.dmn, P5.dmn, A3_6.dmn: corretta la sintassi  
+* P1_18.dmn, P2_18.dmn, P5.dmn, A3_6.dmn: corretta la sintassi
+* AD5.dmn: aggiundo controllo su importo dati base
 
 ### Schede
 
