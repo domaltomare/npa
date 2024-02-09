@@ -619,9 +619,9 @@ ref. /docs/specifiche-jws/
   * per la scheda S1 diventa S2,NAG
 </details>
 
-# Note di rilascio del 09/02/2024 (Segnalazioni chiuse in Esercizio)
+<details>
+<summary><h1>Note di rilascio del 09/02/2024 (Segnalazioni chiuse in Esercizio)</h1></summary>
 
-   
 ### Regole
 * Ticket#2024012460000868:
   * AD4.dmn: eliminate le regole REG69, REG70, REG71
@@ -633,4 +633,15 @@ ref. /docs/specifiche-jws/
 * AD5.dmn: aggiundo controllo su importo dati base
 
 ### Tipologiche
-* aggiornata errori.json  
+* aggiornata errori.json
+</details>
+
+
+# Note di rilascio del dd/mm/aaaa (Segnalazioni chiuse in Esercizio)
+
+   
+### Regole
+
+
+### Tipologiche
+
