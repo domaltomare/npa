@@ -525,7 +525,7 @@ satisfies lotto.datiBase.oggettoContratto.codice = "supplies" and (lotto.quadroE
         </inputEntry>
         <inputEntry id="UnaryTests_P2_11_0032">
           <text>some lotto in lotti
-satisfies lotto.opzioniRinnovi and lotto.quadroEconomicoStandard.sommeOpzioniRinnovi = null or lotto.quadroEconomicoStandard.sommeOpzioniRinnovi = 0</text>
+satisfies lotto.opzioniRinnovi and (lotto.quadroEconomicoStandard.sommeOpzioniRinnovi = null or lotto.quadroEconomicoStandard.sommeOpzioniRinnovi = 0)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_11_0033">
           <text></text>
@@ -541,7 +541,7 @@ satisfies lotto.opzioniRinnovi and lotto.quadroEconomicoStandard.sommeOpzioniRin
         </inputEntry>
         <inputEntry id="UnaryTests_P2_11_0035">
           <text>some lotto in lotti
-satisfies lotto.ripetizioniEConsegneComplementari and lotto.quadroEconomicoStandard.sommeRipetizioni = null or lotto.quadroEconomicoStandard.sommeRipetizioni = 0</text>
+satisfies lotto.ripetizioniEConsegneComplementari and (lotto.quadroEconomicoStandard.sommeRipetizioni = null or lotto.quadroEconomicoStandard.sommeRipetizioni = 0)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_11_0036">
           <text></text>
