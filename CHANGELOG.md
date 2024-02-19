@@ -645,3 +645,4 @@ ref. /docs/specifiche-jws/
 
 ### Tipologiche
 * strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5
+* aggiornata errori.json
