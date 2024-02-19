@@ -899,6 +899,24 @@
     "dataFine":null
 },
 {
+    "codice":"ERR101",
+    "descrizione": {
+		"it": "Il codice scheda in ingresso non è coerente con la scheda che si desidera rettificare.",
+		"en": "Il codice scheda in ingresso non è coerente con la scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR102",
+    "descrizione": {
+		"it": "La scheda non è rettificabile secondo le regole definite dall'orchestratore.",
+		"en": "La scheda non è rettificabile secondo le regole definite dall'orchestratore."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
