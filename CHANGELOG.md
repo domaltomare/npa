@@ -645,3 +645,7 @@ ref. /docs/specifiche-jws/
 ### Tipologiche
 * strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5  (modifica già pubblicata in Esercizio)
 * aggiornata errori.json
+* aggiornata contrattiDisposizioniParticolari.json
+* aggiornata fattispecieTracciabilita.json
+* aggiornata motivoEsclusioneConcessione.json
+* aggiornata motivoEsclusioneOrdinarioSpeciale.json
