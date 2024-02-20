@@ -637,12 +637,11 @@ ref. /docs/specifiche-jws/
 </details>
 
 
-# Note di rilascio del dd/mm/aaaa (Segnalazioni chiuse in Esercizio)
-
+# Note di rilascio del dd/mm/aaaa
    
 ### Regole
 
 
 ### Tipologiche
-* strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5
+* strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5  (modifica già pubblicata in Esercizio)
 * aggiornata errori.json
