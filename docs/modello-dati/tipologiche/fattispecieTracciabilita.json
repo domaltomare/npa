@@ -5,7 +5,7 @@
 		"en": "Contratti o concorsi di progettazione aggiudicati in base a norme/accordi internazionali o stabilite da un’organizzazione internazionale o da un’istituzione finanziaria internazionale, quando i contratti sono prevalentemente finanziati da quest’ultime."
 		},
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2024-03-20T00:00:00Z"
 },
 {
     "codice":"2",
@@ -14,7 +14,7 @@
 		"en": "contratti aggiudicati a un'impresa collegata"
 		},
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2024-03-20T00:00:00Z"
 },
 {
     "codice":"3",
@@ -23,7 +23,7 @@
 		"en": "contratti aggiudicati ad una joint-venture composta esclusivamente da più stazioni appaltanti o da più enti concedenti o alla joint venture di cui essi fanno"
 		},	
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2024-03-20T00:00:00Z"
 },
 {
     "codice":"4",
@@ -32,7 +32,7 @@
 		"en": "appalti aventi ad oggetto l'acquisto di prodotti agricoli e alimentari fino a 20.000 euro annui da imprese agricole situate nei comuni individuati dal codice"
 		},	
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2024-03-20T00:00:00Z"
 },
 {
     "codice":"5",
@@ -41,7 +41,7 @@
 		"en": "Acquisto, locazione di terreni e fabbricati esistenti o altri beni immobili o riguardanti diritti su tali beni"
 		},	
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2024-03-20T00:00:00Z"
 },
 {
     "codice":"6",
@@ -50,7 +50,7 @@
 		"en": "Contratti secretati o contratti la cui esecuzione deve essere accompagnata da speciali misure di sicurezza, in conformità a disposizioni legislative, regolamentari o amministrative"
 		},	
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2024-03-20T00:00:00Z"
 },
 {
     "codice":"7",
@@ -86,5 +86,113 @@
 		"en": "Contratti e convenzioni per servizi sociali e sociosanitari interamente sottratti all’applicazione del codice"
 		},	
     "dataInizio":null,
+    "dataFine":"2024-03-20T00:00:00Z"
+},
+{
+    "codice":"1",
+    "descrizione": {
+		"it": "Contratti e concorsi di progettazione aggiudicati o organizzati in base a norme internazionali (art. 56, comma 1, lett. c) e d) d. lgs. 36/2023 e altri in delibera 584/2023)",
+		"en": "Contratti e concorsi di progettazione aggiudicati o organizzati in base a norme internazionali (art. 56, comma 1, lett. c) e d) d. lgs. 36/2023 e altri in delibera 584/2023)"
+		},
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"2",
+    "descrizione": {
+		"it": "appalti e concessioni aggiudicati a un’impresa collegata (art. 142 comma 2, lett. a) e b) d. lgs 36/2023)",
+		"en": "appalti e concessioni aggiudicati a un’impresa collegata (art. 142 comma 2, lett. a) e b) d. lgs 36/2023)"
+		},
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"3",
+    "descrizione": {
+		"it": "Appalti e concessioni aggiudicati ad una joint venture o ad un ente aggiudicatore facente parte di una joint venture (art. 142 comma 1, lett. a) e b) d. lgs 36/2023)",
+		"en": "Appalti e concessioni aggiudicati ad una joint venture o ad un ente aggiudicatore facente parte di una joint venture (art. 142 comma 1, lett. a) e b) d. lgs 36/2023)"
+		},	
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"4",
+    "descrizione": {
+		"it": "appalti aventi ad oggetto l’acquisto di prodotti agricoli e alimentari fino a 20.000 euro annui da imprese agricole situate nei comuni individuati dal codice (art. 56, comma 1 lett q) d. lgs. 36/2023)",
+		"en": "appalti aventi ad oggetto l’acquisto di prodotti agricoli e alimentari fino a 20.000 euro annui da imprese agricole situate nei comuni individuati dal codice (art. 56, comma 1 lett q) d. lgs. 36/2023)"
+		},	
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"5",
+    "descrizione": {
+		"it": "Acquisto o locazione di beni immobili (art. 56, comma 1, lett. e) d. lgs. 36/2023 e altri in delibera 584/2023)",
+		"en": "Acquisto o locazione di beni immobili (art. 56, comma 1, lett. e) d. lgs. 36/2023 e altri in delibera 584/2023)"
+		},	
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"6",
+    "descrizione": {
+		"it": "Contratti secretati(art. 139 d.lgs. 36/2023)",
+		"en": "Contratti secretati(art. 139 d.lgs. 36/2023)"
+		},	
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"7",
+    "descrizione": {
+		"it": "Contratti e concorsi di progettazione aggiudicati o organizzati per fini diversi dal perseguimento di un’attività in un Paese terzo (art. 145 d. lgs. 36/2023 e altri in delibera 584/2023)",
+		"en": "Contratti e concorsi di progettazione aggiudicati o organizzati per fini diversi dal perseguimento di un’attività in un Paese terzo (art. 145 d. lgs. 36/2023 e altri in delibera 584/2023)"
+		},	
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"8",
+    "descrizione": {
+		"it": "Contratti disciplinati dal decreto legislativo n. 208/2011 e contratti ai quali non si applica neanche il decreto legislativo n. 208/2011, in virtù dell’art. 6 del medesimo decreto (art. 136 comma 1 lett. a) e lett. b) d. lgs. 36/2023)",
+		"en": "Contratti disciplinati dal decreto legislativo n. 208/2011 e contratti ai quali non si applica neanche il decreto legislativo n. 208/2011, in virtù dell’art. 6 del medesimo decreto (art. 136 comma 1 lett. a) e lett. b) d. lgs. 36/2023)"
+		},	
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"9",
+    "descrizione": {
+		"it": "Istituti disciplinati dal Titolo VII del codice del Terzo settore, di cui al decreto legislativo n. 117 del 2017 (art. 6 d.lgs. 36/2023) ed altri contratti e convenzioni per servizi sociali e sociosanitari interamente sottratti all’applicazione del codice",
+		"en": "Istituti disciplinati dal Titolo VII del codice del Terzo settore, di cui al decreto legislativo n. 117 del 2017 (art. 6 d.lgs. 36/2023) ed altri contratti e convenzioni per servizi sociali e sociosanitari interamente sottratti all’applicazione del codice"
+		},	
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"11",
+    "descrizione": {
+		"it": "Appalti pubblici e concorsi di progettazione che richiedono particolari misure per la tutela degli interessi essenziali di sicurezza dello Stato (art. 136 comma 2 d. lgs. 36/2023)",
+		"en": "Appalti pubblici e concorsi di progettazione che richiedono particolari misure per la tutela degli interessi essenziali di sicurezza dello Stato (art. 136 comma 2 d. lgs. 36/2023)"
+		},	
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"12",
+    "descrizione": {
+		"it": "Contratti estranei, soggetti a sola tracciabilità (L. 136/2010 e determina n. 4/2011 aggiornata con delibera n. 585 del 19 dicembre 2023)",
+		"en": "Contratti estranei, soggetti a sola tracciabilità (L. 136/2010 e determina n. 4/2011 aggiornata con delibera n. 585 del 19 dicembre 2023)"
+		},	
+    "dataInizio":"2024-03-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"13",
+    "descrizione": {
+		"it": "Contratti di cui all’articolo 13 comma 4 del d. lgs. 36/2023 nelle more dell’adozione del regolamento del Ministro degli affari esteri e della cooperazione internazionale",
+		"en": "Contratti di cui all’articolo 13 comma 4 del d. lgs. 36/2023 nelle more dell’adozione del regolamento del Ministro degli affari esteri e della cooperazione internazionale"
+		},	
+    "dataInizio":"2024-03-20T00:00:00Z",
     "dataFine":null
 }]
