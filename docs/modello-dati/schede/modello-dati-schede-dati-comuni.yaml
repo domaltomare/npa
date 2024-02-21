@@ -699,7 +699,7 @@ components:
     AppaltoP7BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [categorieMerceologiche,motivazioneCIG,strumentiSvolgimentoProcedure,codiceAppalto,datiBase,datiBaseProcedura]
+      required: [categorieMerceologiche,strumentiSvolgimentoProcedure,codiceAppalto,datiBase,datiBaseProcedura]
       additionalProperties: false
       properties:
         codiceAppalto:
