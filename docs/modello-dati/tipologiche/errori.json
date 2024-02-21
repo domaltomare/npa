@@ -917,6 +917,24 @@
     "dataFine":null
 },
 {
+    "codice":"ERR103",
+    "descrizione": {
+		"it": "Il numero delle stazioni appaltanti deve restare invariato rispetto alla scheda che si desidera rettificare.",
+		"en": "Il numero delle stazioni appaltanti deve restare invariato rispetto alla scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR104",
+    "descrizione": {
+		"it": "Le stazioni appaltanti devono restare invariate rispetto alla scheda che si desidera rettificare.",
+		"en": "Le stazioni appaltanti devono restare invariate rispetto alla scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
