@@ -222,23 +222,7 @@ satisfies lotto.lavoroOAcquistoPrevistoInProgrammazione and lotto.cui = null</te
         <outputEntry id="LiteralExpression_P2_20_0017">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG11\"}"</text>
         </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P2_20_0017">
-        <description>REG13: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari? se sì deve essere valorizzato a sì anche il campo 'L'appalto prevede opzioni/rinnovi?'</description>
-        <inputEntry id="UnaryTests_P2_20_0052">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_20_0053">
-          <text>some lotto in lotti
-satisfies lotto.ripetizioniEConsegneComplementari and lotto.opzioniRinnovi = false</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_20_0054">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P2_20_0018">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG13\"}"</text>
-        </outputEntry>
-      </rule>
+      </rule>      
       <rule id="DecisionRule_P2_20_0021">
         <description>REG14: Motivo Collegamento: Se l'appalto prevede ripetizioni, il motivo collegamento CIG deve essere 'No, nessuna ipotesi di collegamento' </description>
         <inputEntry id="UnaryTests_P2_20_0064">
