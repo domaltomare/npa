@@ -235,7 +235,15 @@ components:
     ModoCollaudoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Modalità del collaudo tecnico/amministrativo/ verifica di conformità - fare riferimento ai valori contenuti nel file [modoCollaudo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modoCollaudo.json) 
+      description: Modalità del collaudo tecnico/amministrativo/ verifica di conformità - fare riferimento ai valori contenuti nel file [modoCollaudo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modoCollaudo.json)
+    AnnullamentoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo di annullamento - fare riferimento ai valori contenuti nel file [annullamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/annullamento.json)
+    ComunicazioneNuovoImportoEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo di comunicazione nuovo importo - fare riferimento ai valori contenuti nel file [comunicazioneNuovoImporto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/comunicazioneNuovoImporto.json)      
     MultilinguaType:
       description: Oggetto utilizzato per la comunicazione dei dati in multilingua
       type: object
@@ -532,7 +540,20 @@ components:
         impTotaleDefinizione:
           description: Importo totale eventuale definizione
           type: number
-          format: double          
+          format: double
+    ComunicazioneType:
+        description: Oggetto che riporta i dati di comunicazione relativi ad annullamento o comunicazione nuovo importo.
+        type: object
+        additionalProperties: false
+        properties:
+          annullamento:
+            $ref: '#/components/schemas/AnnullamentoEnum'
+          comunicazioneNuovoImporto:
+            $ref: '#/components/schemas/ComunicazioneNuovoImportoEnum'
+          importo: 
+            description: Importo
+            type: number
+            format: double          
     AggiudicatarioA1_35Type:
       description: Dati dell'aggiudicatario
       type: object
