@@ -640,7 +640,7 @@ ref. /docs/specifiche-jws/
 # Note di rilascio del dd/mm/aaaa
    
 ### Regole
-
+* issue 1145: eliminata la REG13 da tutte le schede
 
 ### Tipologiche
 * strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5  (modifica già pubblicata in Esercizio)
