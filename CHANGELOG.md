@@ -642,7 +642,7 @@ ref. /docs/specifiche-jws/
 ### Schede 
 * issue 853: 
 	* modello-dati-schede-P6.2.yaml: reso obbligatorio il quadroEconomicoStandard
-* modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml:
+* modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A3_6.yaml:
 	* reso obbligatorio l'oggetto datiBaseCPV e il campo cpvPrevalente
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
