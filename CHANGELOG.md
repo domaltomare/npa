@@ -645,7 +645,8 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A3_6.yaml:
 	* reso obbligatorio l'oggetto datiBaseCPV e il campo cpvPrevalente
  * modello-dati-schede-C1.yaml, modello-dati-schede-C2.yaml:
- 	* Nuove schede C1 e C2 per annullamento procedura o comunicazione nuovo importo per appalti sotto (C1) e sopra (C2) i 5K euro. 
+ 	* Nuove schede C1 e C2 per annullamento procedura o comunicazione nuovo importo per appalti sotto (C1) e sopra (C2) i 5K euro.
+* schede P7_1_1, P7_1_2, P7_1_3, P7_2: eliminata l'obbligatorietà del campo motivazioneCIG
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
 * issue 1016, 1144: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
@@ -653,6 +654,8 @@ ref. /docs/specifiche-jws/
 	* regole relative alle nuove schede C1 e C2 per annullamento procedura o comunicazione nuovo importo per appalti sotto (C1) e sopra (C2) i 5K euro.
 * AD*.dmn, A3_6.dmn:
 	* inserito controllo che ci sia un solo idPartecipante
+* P7_1_1.dmn, P7_1_2.dmn, P7_1_3.dmn, P7_2.dmn:
+	* inserito controllo sul campo motivazioneCIG
 
 ### Tipologiche
 * strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5  (modifica già pubblicata in Esercizio)
