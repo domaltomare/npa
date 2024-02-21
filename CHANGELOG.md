@@ -641,7 +641,7 @@ ref. /docs/specifiche-jws/
    
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
-* issue 1144: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
+* issue 1016, 1144: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
 
 ### Tipologiche
 * strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5  (modifica già pubblicata in Esercizio)
