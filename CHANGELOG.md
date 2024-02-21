@@ -649,6 +649,8 @@ ref. /docs/specifiche-jws/
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
 * issue 1016, 1144: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
+* C1.dmn, C2.dmn:
+	* regole relative alle nuove schede C1 e C2 per annullamento procedura o comunicazione nuovo importo per appalti sotto (C1) e sopra (C2) i 5K euro. 
 
 ### Tipologiche
 * strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5  (modifica già pubblicata in Esercizio)
