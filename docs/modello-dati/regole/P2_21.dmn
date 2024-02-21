@@ -565,22 +565,7 @@ satisfies count(lotto.datiBaseCPV.cpvSecondarie.codice) &gt; count(distinct valu
         <outputEntry id="LiteralExpression_P2_21_0038">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG66\"}"</text>
         </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P2_21_0038">
-        <description>REG67: il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara</description>
-        <inputEntry id="UnaryTests_P2_21_0115">
-          <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.tipoProcedura != null and appalto.datiBaseProcedura.tipoProcedura.codice = "neg-wo-call" and (appalto.datiBaseProcedura.giustificazioneProceduraAccelerata = null or appalto.datiBaseProcedura.giustificazioneProceduraAccelerata="")</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_21_0116">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_21_0117">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P2_21_0039">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG67\"}"</text>
-        </outputEntry>
-      </rule>
+      </rule>      
 	  <rule id="DecisionRule_1oiflb4">
         <description>REG95: Per il tipo di procedura aperta o altra procedura a fase unica il campo oraScadenzaPresentazioneOfferte è obbligatorio.</description>
         <inputEntry id="UnaryTests_1bngedq">

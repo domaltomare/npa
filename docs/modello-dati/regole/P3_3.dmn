@@ -359,22 +359,7 @@ satisfies count(lotto.datiBaseCPV.cpvSecondarie.codice) &gt; count(distinct valu
         <outputEntry id="LiteralExpression_P3_3_0038">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG66\"}"</text>
         </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P3_3_0038">
-        <description>REG67: il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara</description>
-        <inputEntry id="UnaryTests_P3_3_0115">
-          <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.tipoProcedura != null and appalto.datiBaseProcedura.tipoProcedura.codice = "neg-wo-call" and (appalto.datiBaseProcedura.giustificazioneProceduraAccelerata = null or appalto.datiBaseProcedura.giustificazioneProceduraAccelerata="")</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P3_3_0116">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P3_3_0117">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P3_3_0039">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG67\"}"</text>
-        </outputEntry>
-      </rule>
+      </rule>      
 	  <rule id="DecisionRule_117r61g">
         <description>REG97: Inserire solo uno tra i campi oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito.</description>
         <inputEntry id="UnaryTests_1pdxw01">
