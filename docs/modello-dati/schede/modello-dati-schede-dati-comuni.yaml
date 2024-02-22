@@ -639,14 +639,14 @@ components:
     AppaltoP6BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [cigAccordoQuadro,codiceAppalto,datiBaseProcedura]
+      required: [cigAccordoQuadroConvenzione,codiceAppalto,datiBaseProcedura]
       additionalProperties: false
       properties:  
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           maxLength: 64            
-        cigAccordoQuadro:
+        cigAccordoQuadroConvenzione:
           description: CIG relativo all’accordo quadro/convenzione cui si aderisce
           type: string
         strumentiSvolgimentoProcedure: 

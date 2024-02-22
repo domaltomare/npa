@@ -14,7 +14,7 @@ components:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           maxLength: 64          
-        cigAccordoQuadro:
+        cigAccordoQuadroConvenzione:
           description: CIG relativo all’accordo quadro/convenzione cui si aderisce
           type: string  
         datiBase:
