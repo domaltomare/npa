@@ -646,7 +646,10 @@ ref. /docs/specifiche-jws/
 	* reso obbligatorio l'oggetto datiBaseCPV e il campo cpvPrevalente
  * modello-dati-schede-C1.yaml, modello-dati-schede-C2.yaml:
  	* Nuove schede C1 e C2 per annullamento procedura o comunicazione nuovo importo per appalti sotto (C1) e sopra (C2) i 5K euro.
-* schede P7_1_1, P7_1_2, P7_1_3, P7_2: eliminata l'obbligatorietà del campo motivazioneCIG
+* modello-dati-schede-P7_1_1.yaml, modello-dati-schede-P7_1_2.yaml, modello-dati-schede-P7_1_3.yaml, modello-dati-schede-P7_2.yaml:
+	* eliminata l'obbligatorietà del campo motivazioneCIG
+* modello-dati-schede-AD4.yaml, modello-dati-schede-A3_3.yaml, modello-dati-schede-P5.yaml, modello-dati-schede-dati-comuni.yaml:
+	* rinominato il campo relativo all’accordo quadro/convenzione cui si aderisce in "cigAccordoQuadroConvenzione"
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
 * issue 1016, 1144: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
