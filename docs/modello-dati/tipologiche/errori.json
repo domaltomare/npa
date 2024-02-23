@@ -960,6 +960,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR108",
+    "descrizione": {
+		"it": "idContratto deve coincidere con quello della scheda che si desidera rettificare.",
+		"en": "idContratto deve coincidere con quello della scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
