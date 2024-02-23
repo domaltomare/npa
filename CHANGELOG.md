@@ -671,3 +671,5 @@ ref. /docs/specifiche-jws/
 	* nuova tipologica per annullamento procedura per appalti sotto (C1) e sopra (C2) i 5K euro.
 * comunicazioneNuovoImporto.json:
 	* nuova tipologica per comunicazione nuovo importo per appalti sotto (C1) e sopra (C2) i 5K euro.
+ * enteCertificante.json:
+	* nuova tipologica usata internamente dal FE della SA per la trascodfica.
