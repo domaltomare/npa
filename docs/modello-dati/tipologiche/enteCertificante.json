@@ -1,0 +1,65 @@
+[
+    {
+      "codice": "INPS",
+      "descrizione": {
+        "it": "INPS",
+        "en": "INPS"
+      },
+      "dataInizio":null,
+      "dataFine":null
+    },
+    {
+      "codice": "MININT",
+      "descrizione": {
+        "it": "Min. Interno",
+        "en": "Min. Interno"
+      },
+	  "dataInizio":null,
+      "dataFine":null
+    },
+    {
+      "codice": "MINGIU",
+      "descrizione": {
+        "it": "Min. Giustizia",
+        "en": "Min. Giustizia"
+      },
+      "dataInizio":null,
+      "dataFine":null
+    },
+	{
+      "codice": "INARCA",
+      "descrizione": {
+        "it": "Inarcassa",
+        "en": "Inarcassa"
+      },
+      "dataInizio":null,
+      "dataFine":null
+    },
+	{
+      "codice": "ADE",
+      "descrizione": {
+        "it": "Agenzia delle Entrate",
+        "en": "Agenzia delle Entrate"
+      },
+      "dataInizio":null,
+      "dataFine":null
+    },
+	{
+      "codice": "UNICAM",
+      "descrizione": {
+        "it": "Unioncamere",
+        "en": "Unioncamere"
+      },
+      "dataInizio":null,
+      "dataFine":null
+    },
+	{
+      "codice": "OE",
+      "descrizione": {
+        "it": "Operatore Economino",
+        "en": "Operatore Economino"
+      },
+      "dataInizio":null,
+      "dataFine":null
+    }
+  ]
