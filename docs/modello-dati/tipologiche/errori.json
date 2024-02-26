@@ -969,6 +969,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR109",
+    "descrizione": {
+		"it": "operazione non consentita: per l'appalto è in corso una richiesta di rettifica.",
+		"en": "operazione non consentita: per l'appalto è in corso una richiesta di rettifica."
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
