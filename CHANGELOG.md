@@ -656,6 +656,8 @@ ref. /docs/specifiche-jws/
 	* aggiunta l'anacForm con l'oggetto stazioniAppaltanti.
 * modello-dati-schede-PL2_7.yaml, modello-dati-schede-PL2_8.yaml, modello-dati-schede-PL2_9.yaml, modello-dati-schede-dati-comuni.yaml:
 	* aggiunto l'oggetto stazioniAppaltanti in anacForm.
+* modello-dati-schede-P3_4.yaml, modello-dati-schede-P3_5.yaml, modello-dati-schede-P7_3.yaml:
+	* resi obbligatori l'oggetto datiBaseDocumenti e il campo url
 
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
