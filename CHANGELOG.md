@@ -652,6 +652,14 @@ ref. /docs/specifiche-jws/
 	* rinominato il campo relativo all’accordo quadro/convenzione cui si aderisce in "cigAccordoQuadroConvenzione"
 * modello-dati-schede-S4.yaml:
 	* modificata la descrizione della scheda
+* modello-dati-schede-PL1_*.yaml:
+	* aggiunta l'anacForm con l'oggetto stazioniAppaltanti.
+* modello-dati-schede-PL2_7.yaml, modello-dati-schede-PL2_8.yaml, modello-dati-schede-PL2_9.yaml, modello-dati-schede-dati-comuni.yaml:
+	* aggiunto l'oggetto stazioniAppaltanti in anacForm.
+
+## Orchestratore
+* modificata a sì la colonna includeAnacForm per le schede PL1_*
+
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
 * issue 1016, 1144: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
