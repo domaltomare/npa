@@ -3,7 +3,8 @@
       "codice": "INPS",
       "descrizione": {
         "it": "INPS",
-        "en": "INPS"
+        "en": "INPS",
+	"de": "INPS"      
       },
       "dataInizio":null,
       "dataFine":null
@@ -12,7 +13,8 @@
       "codice": "MININT",
       "descrizione": {
         "it": "Min. Interno",
-        "en": "Min. Interno"
+        "en": "Ministry of Interior",
+	"de": "Ministerium des Innern"      
       },
 	  "dataInizio":null,
       "dataFine":null
@@ -21,7 +23,8 @@
       "codice": "MINGIU",
       "descrizione": {
         "it": "Min. Giustizia",
-        "en": "Min. Giustizia"
+        "en": "Ministry of Justice",
+	"de": "Justizministerium"      
       },
       "dataInizio":null,
       "dataFine":null
@@ -30,7 +33,8 @@
       "codice": "INARCA",
       "descrizione": {
         "it": "Inarcassa",
-        "en": "Inarcassa"
+        "en": "Inarcassa",
+	"de": "Inarcassa"
       },
       "dataInizio":null,
       "dataFine":null
@@ -39,7 +43,8 @@
       "codice": "ADE",
       "descrizione": {
         "it": "Agenzia delle Entrate",
-        "en": "Agenzia delle Entrate"
+        "en": "Revenue Agency",
+	"de": "Finanzamt"
       },
       "dataInizio":null,
       "dataFine":null
@@ -48,7 +53,8 @@
       "codice": "UNICAM",
       "descrizione": {
         "it": "Unioncamere",
-        "en": "Unioncamere"
+        "en": "Unioncamere",
+	"de": "Unioncamere"
       },
       "dataInizio":null,
       "dataFine":null
@@ -56,8 +62,9 @@
 	{
       "codice": "OE",
       "descrizione": {
-        "it": "Operatore Economino",
-        "en": "Operatore Economino"
+        "it": "Operatore Economico",
+        "en": "Economic Operator",
+	"de": "Wirtschaftsbeteiligter"
       },
       "dataInizio":null,
       "dataFine":null
