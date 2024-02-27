@@ -3532,8 +3532,13 @@ components:
       description: Contiene i dati comuni per le schede relative alle pianificazioni
       type: object
       additionalProperties: false
-      required: [appalto,lotti]
+      required: [appalto,lotti,stazioniAppaltanti]
       properties:
+        stazioniAppaltanti:
+            description: Dati relativi alle stazioni appaltanti
+            type: array
+            items:
+              $ref: '#/components/schemas/StazioneAppaltanteType'
         appalto:
           $ref: '#/components/schemas/AppaltoPLBaseType'
         lotti:

@@ -28,6 +28,8 @@ components:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseComunicazioneType'        
     AnacFormPL2_9Type:
       description: Contiene tutti i dati necessari per la pubblicazione.
+      allOf: 
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'
       type: object
       required: [appalto,lotti]
       additionalProperties: false
