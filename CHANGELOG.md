@@ -650,6 +650,8 @@ ref. /docs/specifiche-jws/
 	* eliminata l'obbligatorietà del campo motivazioneCIG
 * modello-dati-schede-AD4.yaml, modello-dati-schede-A3_3.yaml, modello-dati-schede-P5.yaml, modello-dati-schede-dati-comuni.yaml:
 	* rinominato il campo relativo all’accordo quadro/convenzione cui si aderisce in "cigAccordoQuadroConvenzione"
+* modello-dati-schede-S4.yaml:
+	* modificata la descrizione della scheda
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
 * issue 1016, 1144: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
