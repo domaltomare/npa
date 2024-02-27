@@ -2679,4 +2679,25 @@
    },
    "dataInizio":null,
    "dataFine":null
-}]
+},
+{
+   "codice":"FVX52",
+   "descrizione": {
+       "it": "Servizio esterno ricerca soggetti non disponibile",
+       "en": "External service searches for unavailable subjects",
+       "de": "Externer Dienst sucht nach nicht verfügbaren Themen"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+    "codice": "SCH01",
+    "descrizione": {
+     	"it": "Soggetto Non Presente Nelle Schede Inviate",
+        "en": "Subject not present in the cards sent",
+        "de": "Der Betreff ist in den versendeten Karten nicht enthalten"
+      },
+     "dataInizio": null,
+     "dataFine": null
+}
+]
