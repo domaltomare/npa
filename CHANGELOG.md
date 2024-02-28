@@ -642,6 +642,8 @@ ref. /docs/specifiche-jws/
 ### Schede 
 * issue 853: 
 	* modello-dati-schede-P6.2.yaml: reso obbligatorio il quadroEconomicoStandard
+* issue 1151:
+	* modello-dati-schede-dati-comuni.yaml: per le schede P1_23 e P2_23 spostato il campo contrattiDisposizioniParticolari dall'oggetto appalto all'oggetto lotti, come per tutte le altre schede
 * modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A3_6.yaml:
 	* reso obbligatorio l'oggetto datiBaseCPV e il campo cpvPrevalente
  * **NUOVE SCHEDE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: modello-dati-schede-C1.yaml, modello-dati-schede-C2.yaml:
