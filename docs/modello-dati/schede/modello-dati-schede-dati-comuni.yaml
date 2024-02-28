@@ -891,8 +891,6 @@ components:
           maxLength: 64           
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'  
-        contrattiDisposizioniParticolari:
-          $ref: '#/components/schemas/ContrattiDisposizioniParticolariEnum' 
         idPianificazione:
           description: ID pianificazione
           type: string  
@@ -1594,7 +1592,7 @@ components:
     LottoP_23Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [afferenteInvestimentiPNRR, lotIdentifier,acquisizioneCup,codIstat]
+      required: [afferenteInvestimentiPNRR, lotIdentifier,acquisizioneCup,codIstat,contrattiDisposizioniParticolari]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -1621,6 +1619,8 @@ components:
           items:
             type: string 
             pattern: ^[a-zA-Z0-9]{15}$
+        contrattiDisposizioniParticolari:
+          $ref: '#/components/schemas/ContrattiDisposizioniParticolariEnum'            
         motivoEsclusioneOrdinarioSpeciale:
           $ref: '#/components/schemas/MotivoEsclusioneOrdinarioSpecialeEnum' 
         finanziamenti:
