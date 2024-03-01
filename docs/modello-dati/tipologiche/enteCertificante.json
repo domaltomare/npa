@@ -59,12 +59,22 @@
       "dataInizio":null,
       "dataFine":null
     },
-	{
+    {
       "codice": "OE",
       "descrizione": {
         "it": "Operatore Economico",
         "en": "Economic Operator",
 	"de": "Wirtschaftsbeteiligter"
+      },
+      "dataInizio":null,
+      "dataFine":null
+    },
+    {
+      "codice": "ANAC",
+      "descrizione": {
+        "it": "Autorità Nazionale Anticorruzione",
+        "en": "National Anti-Corruption Authority",
+	"de": "Nationale Antikorruptionsbehörde"
       },
       "dataInizio":null,
       "dataFine":null
