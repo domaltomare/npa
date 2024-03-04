@@ -669,7 +669,11 @@ ref. /docs/specifiche-jws/
  	* Reso obbligatorio l'oggetto finanziamenti
   	* Motivo deroga: corretta la descrizione del campo
 	* modalita acquisizione: resa facolativa nelle schede P_20 e P_21
-  	* aggiunto il campo costituzionesocietascopo nelle schede P1_14, P2_14 ,P1_19, P2_19 
+  	* aggiunto il campo costituzionesocietascopo nelle schede P1_14, P2_14 ,P1_19, P2_19
+* modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml:
+	* inserito il quadro economico delle concessioni
+* modello-dati-schede-AD1_28, modello-dati-schede-AD2_28.yaml:
+	* eliminato il quadro economico standard
 
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
