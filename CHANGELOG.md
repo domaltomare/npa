@@ -663,7 +663,9 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-AD5.yaml:
 	* eliminata l'obbligatorietà dell'oggetto datiBaseDocumenti e del campo url
 * modello-dati-schede-P2_19.yaml, modello-dati-schede-S2.yaml:
-	* aggiornata la descrizione della Scheda in coerenza con il file orchestratore. 
+	* aggiornata la descrizione della Scheda in coerenza con il file orchestratore.
+*  modello-dati-schede-dati-comuni.yaml:
+	* eliminati i campi saNonSoggettaObblighi24Dicembre2015 e iniziativeNonSoddisfacenti dall'oggetto lotto in tutte le schede
 
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
