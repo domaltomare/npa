@@ -7,7 +7,7 @@ components:
     AggiudicazioneAD4Type:
       type: object
       additionalProperties: false
-      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti,ccnl,categoria,codIstat,datiBase,datiBaseAggiudicazioneAppalto,datiBaseCPV]
+      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti,ccnl,categoria,codIstat,datiBase,datiBaseAggiudicazioneAppalto,datiBaseCPV,finanziamenti]
       properties: 
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED

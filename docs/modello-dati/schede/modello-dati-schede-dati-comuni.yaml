@@ -79,7 +79,7 @@ components:
     MotivoDerogaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivo deroga che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii. - fare riferimento ai valori contenuti nel file [motivoDeroga.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoDeroga.json) 
+      description: Motivo della deroga alla previsione dell’obbligo di indicare una quota pari almeno al 30 per cento con riferimento all’occupazione femminile/giovanile - fare riferimento ai valori contenuti nel file [motivoDeroga.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/motivoDeroga.json) 
     MisurePremialiEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -794,7 +794,12 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
+      required: [costituzioneSocietaDiScopo] 
       additionalProperties: false
+      properties:
+        costituzioneSocietaDiScopo:
+          description: Indicare se è prevista la costituzione di una società di scopo
+          type: boolean
     AppaltoP_15Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione
       type: object
@@ -850,7 +855,12 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object 
+      required: [costituzioneSocietaDiScopo] 
       additionalProperties: false
+      properties:
+        costituzioneSocietaDiScopo:
+          description: Indicare se è prevista la costituzione di una società di scopo
+          type: boolean        
     AppaltoP_20Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -927,6 +937,7 @@ components:
         - categorieMerceologiche
         - afferenteInvestimentiPNRR
         - contrattiDisposizioniParticolari
+        - finanziamenti
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -1210,6 +1221,7 @@ components:
         - ccnl
         - categoria
         - prestazioniComprese
+        - finanziamenti
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -1452,7 +1464,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [modalitaAcquisizione,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale,ccnl,quadroEconomicoStandard]
+      required: [lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale,ccnl,quadroEconomicoStandard]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1493,7 +1505,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [modalitaAcquisizione,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale,ccnl,quadroEconomicoStandard]
+      required: [lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale,ccnl,quadroEconomicoStandard]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1532,7 +1544,7 @@ components:
     LottoP_23Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [afferenteInvestimentiPNRR, lotIdentifier,acquisizioneCup,codIstat,contrattiDisposizioniParticolari]
+      required: [afferenteInvestimentiPNRR, lotIdentifier,acquisizioneCup,codIstat,contrattiDisposizioniParticolari, finanziamenti]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -1573,7 +1585,7 @@ components:
     LottoP_24Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [lotIdentifier, afferenteInvestimentiPNRR, acquisizioneCup,codIstat,contrattiDisposizioniParticolari]
+      required: [lotIdentifier, afferenteInvestimentiPNRR, acquisizioneCup,codIstat,contrattiDisposizioniParticolari,finanziamenti]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -1615,7 +1627,7 @@ components:
       description: Oggetto che riporta i dati del lotto 
       type: object
       additionalProperties: false
-      required: [lotIdentifier,codIstat]
+      required: [lotIdentifier,codIstat,finanziamenti]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -1647,7 +1659,7 @@ components:
     LottoP6BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari,datiBaseTerminiInvio,datiBaseCPV]
+      required: [lotIdentifier, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari,datiBaseTerminiInvio,datiBaseCPV,finanziamenti]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1714,7 +1726,7 @@ components:
     LottoP4BaseType:
         description: Oggetto che riporta i dati del lotto
         type: object
-        required: [lotIdentifier,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi,afferenteInvestimentiPNRR,categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari,datiBase,datiBaseDocumenti,datiBaseTerminiInvio,datiBaseCPV]
+        required: [lotIdentifier,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi,afferenteInvestimentiPNRR,categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari,datiBase,datiBaseDocumenti,datiBaseTerminiInvio,datiBaseCPV,finanziamenti]
         additionalProperties: false
         properties:
           servizioPubblicoLocale:
@@ -2228,7 +2240,7 @@ components:
     AggiudicazioneAD1_25Type:
       description: Oggetto che riporta i dati di aggiudicazione per gli affidamenti diretti.
       type: object
-      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti,ccnl,categoria,codIstat,quadroEconomicoStandard]
+      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti,ccnl,categoria,codIstat,quadroEconomicoStandard,finanziamenti]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -2295,7 +2307,7 @@ components:
     AggiudicazioneAD1_26Type:
       description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
       type: object
-      required: [afferenteInvestimentiPNRR, lotIdentifier,partecipanti,ccnl,categoria,codIstat,quadroEconomicoStandard]
+      required: [afferenteInvestimentiPNRR, lotIdentifier,partecipanti,ccnl,categoria,codIstat,quadroEconomicoStandard,finanziamenti]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -2362,7 +2374,7 @@ components:
     AggiudicazioneAD1_27Type:
       description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
       type: object
-      required: [lotIdentifier,partecipanti,ccnl,categoria,codIstat]
+      required: [lotIdentifier,partecipanti,ccnl,categoria,codIstat,finanziamenti]
       properties:  
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -2410,7 +2422,7 @@ components:
     AggiudicazioneAD1_28Type:
       description: Oggetto che riporta i dati delle aggiudicazioni per gli affidamenti diretti.
       type: object
-      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti,categoria,ccnl,codIstat,quadroEconomicoStandard]
+      required: [afferenteInvestimentiPNRR,lotIdentifier,partecipanti,categoria,ccnl,codIstat,finanziamenti]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED
@@ -2439,8 +2451,6 @@ components:
           $ref: '#/components/schemas/CodIstatEnum'             
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'  
-        quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoType'
         quadroEconomicoConcessioni:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType'          
         partecipanti:
@@ -2704,7 +2714,7 @@ components:
     AggiudicazioneA7Type:
       description: Oggetto che riporta i dati di aggiudicazione per procedura negoziata senza bando pari o sopra soglia.
       type: object
-      required: [afferenteInvestimentiPNRR,cig,partecipanti]
+      required: [afferenteInvestimentiPNRR,cig,partecipanti,finanziamenti]
       properties:
         cig:
           description: CIG affidamento incarico esterno di progettazione (in caso di progettista esterno)
