@@ -1009,13 +1009,7 @@ components:
           type: boolean      
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean      
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean  
+          type: boolean        
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
@@ -1055,13 +1049,7 @@ components:
           $ref: '#/components/schemas/PrestazioniEnum'      
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean        
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean     
+          type: boolean             
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
@@ -1109,13 +1097,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
-          pattern: ^[a-zA-Z0-9]{20,22}$
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean 
+          pattern: ^[a-zA-Z0-9]{20,22}$ 
         ccnl:
           description: indicare il codice CNEL o non applicabile
           type: string          
@@ -1156,13 +1138,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
-          pattern: ^[a-zA-Z0-9]{20,22}$          
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean 
+          pattern: ^[a-zA-Z0-9]{20,22}$           
         ccnl:
           description: indicare il codice CNEL o non applicabile
           type: string          
@@ -1200,13 +1176,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
-          pattern: ^[a-zA-Z0-9]{20,22}$          
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean    
+          pattern: ^[a-zA-Z0-9]{20,22}$              
         ccnl:
           description: indicare il codice CNEL o non applicabile
           type: string          
@@ -1327,13 +1297,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
-          pattern: ^[a-zA-Z0-9]{20,22}$          
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean          
+          pattern: ^[a-zA-Z0-9]{20,22}$                    
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
@@ -1383,13 +1347,7 @@ components:
         cui:
           description: CUI programma triennale lavori pubblici o programma biennale forniture e servizi
           type: string
-          pattern: ^[a-zA-Z0-9]{20,22}$          
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean          
+          pattern: ^[a-zA-Z0-9]{20,22}$                    
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
@@ -1456,13 +1414,7 @@ components:
       properties:
         servizioPubblicoLocale:
           description: Flag servizio pubblico locale
-          type: boolean       
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean          
+          type: boolean                
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
@@ -1508,13 +1460,7 @@ components:
           type: boolean      
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean       
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean         
+          type: boolean                
         lavoroOAcquistoPrevistoInProgrammazione:
           description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
           type: boolean         
@@ -1555,13 +1501,7 @@ components:
           type: boolean      
         ripetizioniEConsegneComplementari:
           description: L’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari?
-          type: boolean        
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean          
+          type: boolean                  
         lavoroOAcquistoPrevistoInProgrammazione:
           description: Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione
           type: boolean          
@@ -1854,7 +1794,7 @@ components:
     LottoP7BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier,categorieMerceologiche,saNonSoggettaObblighi24Dicembre2015,iniziativeNonSoddisfacenti,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,datiBase,datiBaseDocumenti,datiBaseCPV]
+      required: [lotIdentifier,categorieMerceologiche,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,datiBase,datiBaseDocumenti,datiBaseCPV]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -1863,13 +1803,7 @@ components:
         categorieMerceologiche:
           type: array
           items:
-            $ref: '#/components/schemas/CategorieMerceologicheEnum' 
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean   
+            $ref: '#/components/schemas/CategorieMerceologicheEnum'    
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean  
@@ -1964,7 +1898,7 @@ components:
     LottoP7_2BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier,categorieMerceologiche,saNonSoggettaObblighi24Dicembre2015,iniziativeNonSoddisfacenti,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,ripetizioniEConsegneComplementari,opzioniRinnovi,datiBase,datiBaseCPV]
+      required: [lotIdentifier,categorieMerceologiche,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,ripetizioniEConsegneComplementari,opzioniRinnovi,datiBase,datiBaseCPV]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -1973,13 +1907,7 @@ components:
         categorieMerceologiche:
           type: array
           items:
-            $ref: '#/components/schemas/CategorieMerceologicheEnum' 
-        saNonSoggettaObblighi24Dicembre2015:
-          description: Che questa stazione appaltante non è soggetta agli obblighi del DPCM 24 dicembre 2015 e ss.mm.ii.
-          type: boolean
-        iniziativeNonSoddisfacenti:
-          description: Che nessuna delle iniziative disponibili presso i soggetti aggregatori di riferimento ha caratteristiche in grado di soddisfare i fabbisogni di questa stazione appaltante
-          type: boolean   
+            $ref: '#/components/schemas/CategorieMerceologicheEnum'   
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean  
