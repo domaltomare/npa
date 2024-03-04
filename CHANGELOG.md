@@ -662,6 +662,8 @@ ref. /docs/specifiche-jws/
 	* resi obbligatori l'oggetto datiBaseDocumenti e il campo url
 * modello-dati-schede-AD5.yaml:
 	* eliminata l'obbligatorietà dell'oggetto datiBaseDocumenti e del campo url
+* modello-dati-schede-P2_19.yaml, modello-dati-schede-S2.yaml:
+	* aggiornata la descrizione della Scheda in coerenza con il file orchestratore. 
 
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
