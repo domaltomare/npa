@@ -695,6 +695,8 @@ ref. /docs/specifiche-jws/
 * aggiornata fattispecieTracciabilita.json
 * aggiornata motivoEsclusioneConcessione.json
 * aggiornata motivoEsclusioneOrdinarioSpeciale.json
+* aggiornata tipoFascicolo.json
+* aggiornata tipoDocumento.json
 * **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: annullamento.json:
 	* nuova tipologica per annullamento procedura per appalti sotto (C1) e sopra (C2) i 5K euro.
 * **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: comunicazioneNuovoImporto.json:
