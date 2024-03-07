@@ -678,6 +678,8 @@ ref. /docs/specifiche-jws/
 	* revisione schede: aggiunti nell'oggetto appalto i campi: importo, accordoQuadro, 	sistemaDinamicoAcquisizione,astaElettronica, fineSistemaDinamicoAcquisizione. Aggiunti nell'oggetto lotto i campi: lotidentifier, importo, cpv secondaria, criteriAggiudicazione, affidamentiRiservati, accessibilita, contrattiSuccessivi, dataInvioInviti. Eliminato il campo codNUTS.
 * modello-dati-schede-PL2_7.yaml,modello-dati-schede-PL2_8.yaml,modello-dati-schede-PL2_9.yaml:
 	* revisione schede: aggiunti nell'oggetto appalto i campi: proceduraAccelerata, giustificazioneProceduraAccelerata, giustificazioneProceduraAccelerataMl,fineSistemaDinamicoAcquisizione. Aggiunto nell'oggetto lotto il campo: contrattiSuccessivi
+* modello-dati-schede-P7_3.yaml:
+	* revisione schede: reso obbligatorio l'oggetto datiBaseDurata
 
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
