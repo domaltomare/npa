@@ -606,7 +606,9 @@ components:
       required: [datiBase]
       properties:
         datiBase:
-          $ref: '#/components/schemas/DatiBaseAppaltoPLType' 
+          $ref: '#/components/schemas/DatiBaseAppaltoType' 
+        datiBaseStrumentiProcedura:
+          $ref: '#/components/schemas/DatiBaseStrumentiProceduraPLType'          
     AppaltoPLCompletoType:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione
       type: object
@@ -614,9 +616,11 @@ components:
       required: [datiBase]
       properties:
         datiBase:
-          $ref: '#/components/schemas/DatiBaseAppaltoType'          
+          $ref: '#/components/schemas/DatiBaseAppaltoType' 
         datiBaseProcedura:
-          $ref: '#/components/schemas/DatiBaseProceduraOptionalType'          
+          $ref: '#/components/schemas/DatiBaseProceduraPLType'      
+        datiBaseStrumentiProcedura:
+          $ref: '#/components/schemas/DatiBaseStrumentiProceduraPLType'           
     AppaltoP3BaseType:
       description: Oggetto che riporta i dati dell'appalto relativi ai contratti senza limiti di importo con obblighi di comunicazione.
       type: object
@@ -975,22 +979,36 @@ components:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pianificazione
       type: object
       additionalProperties: false
-      required: [datiBase]
+      required: [lotIdentifier,datiBase]
       properties:
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante
+          type: string      
         datiBase:
-          $ref: '#/components/schemas/DatiBaseLottoPLType'
+          $ref: '#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:
-          $ref: '#/components/schemas/DatiBaseCPVPLBaseType'
-        datiBaseContratto:
-          $ref: '#/components/schemas/DatiBaseContrattoType'
+          $ref: '#/components/schemas/DatiBaseCPVPLType'
+        datiBaseAggiudicazione:
+          $ref: '#/components/schemas/DatiBaseAggiudicazioneOptionalType'   
+        datiBaseAggiuntivi:
+          $ref: '#/components/schemas/DatiBaseAggiuntiviOptionalType'
+        datiBaseAccessibilita:
+          $ref: '#/components/schemas/DatiBaseSoloAccessibilitaType'
+        datiBaseImporto:
+          $ref: '#/components/schemas/DatiBaseImportoOptionalType'
+        datiBaseComunicazione:
+          $ref: '#/components/schemas/DatiBaseComunicazioneType'          
         datiBaseDocumenti:
           $ref: '#/components/schemas/DatiBaseDocumentiOptionalType'          
     LottoPLCompletoType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pianificazione
       type: object
       additionalProperties: false
-      required: [datiBase]
+      required: [lotIdentifier,datiBase]
       properties:
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante
+          type: string      
         datiBase:
           $ref: '#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:
@@ -1000,9 +1018,13 @@ components:
         datiBaseAggiudicazione:
           $ref: '#/components/schemas/DatiBaseAggiudicazioneOptionalType' 
         datiBaseAggiuntivi:
-          $ref: '#/components/schemas/DatiBaseAggiuntiviType'
+          $ref: '#/components/schemas/DatiBaseAggiuntiviOptionalType'
         datiBaseAccessibilita:
-          $ref: '#/components/schemas/DatiBaseAccessibilitaType'  
+          $ref: '#/components/schemas/DatiBaseSoloAccessibilitaType'
+        datiBaseImporto:
+          $ref: '#/components/schemas/DatiBaseImportoOptionalType'          
+        datiBaseComunicazione:
+          $ref: '#/components/schemas/DatiBaseComunicazioneType'          
         datiBaseDocumenti:
           $ref: '#/components/schemas/DatiBaseDocumentiOptionalType'          
     LottoP_10Type:
@@ -3001,7 +3023,13 @@ components:
           description: giustificazione
           type: string
         giustificazioneMl:
-          $ref: '#/components/schemas/MultilinguaType'          
+          $ref: '#/components/schemas/MultilinguaType'  
+    DatiBaseSoloAccessibilitaType:
+      description: Dato in comune con il Business Group Strategic Procurement delle eforms
+      additionalProperties: false
+      properties:
+        accessibilita:
+          $ref: '#/components/schemas/AccessibilitaEnum'
     DatiBaseAggiudicazioneAppaltoType:
       description:  Dato in comune con il Business Group Contract delle eforms
       required: [dataAggiudicazione]
@@ -3195,7 +3223,22 @@ components:
       properties:
         proceduraAccelerata:
           description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-106 - Procedure Accelerated del TED 
-          type: boolean          
+          type: boolean    
+    DatiBaseProceduraPLType:
+      description: Dato in comune con il Business Group Procedure delle eforms 
+      type: object
+      additionalProperties: false
+      properties:
+        tipoProcedura:
+          $ref: '#/components/schemas/TipoProceduraEnum'
+        proceduraAccelerata:
+          description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-106 - Procedure Accelerated del TED 
+          type: boolean
+        giustificazioneProceduraAccelerata:
+          description: Giustificazione procedura accelerata
+          type: string
+        giustificazioneProceduraAccelerataMl:
+          $ref: '#/components/schemas/MultilinguaType'          
     DatiBaseProceduraCompletoType:
       description: Dato in comune con il Business Group Procedure delle eforms 
       type: object
@@ -3268,6 +3311,14 @@ components:
           type: array
           items:        
            $ref: '#/components/schemas/AffidamentiRiservatiEnum'
+    DatiBaseAggiuntiviOptionalType:
+      description: Dato in comune con il Business Group Other Requirements delle eforms
+      additionalProperties: false
+      properties:
+        affidamentiRiservati:
+          type: array
+          items:        
+           $ref: '#/components/schemas/AffidamentiRiservatiEnum'           
     DatiBaseAggiudicazioneType:
       description: Dato in comune con il Business Group Award Criterion delle eforms
       additionalProperties: false
@@ -3292,6 +3343,20 @@ components:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
           type: boolean
+    DatiBaseStrumentiProceduraPLType:
+      description: Dato in comune con il Business Group Techniques delle eforms
+      additionalProperties: false
+      properties:
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'
+        sistemaDinamicoAcquisizione:
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean 
+        fineSistemaDinamicoAcquisizione:
+          description: È stato posto termine al sistema dinamico di acquisizione. Non saranno aggiudicati altri appalti, oltre a quelli pubblicizzati nel presente avviso o bando, mediante il sistema dinamico di acquisizione. Questo campo può essere utilizzato anche se l'avviso di aggiudicazione non pubblica l'aggiudicazione di alcun appalto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-119 -  Dynamic Purchasing System Termination del TED
+          type: boolean          
     DatiBaseStrumentiProceduraAType:
       description: Dato in comune con il Business Group Techniques delle eforms
       additionalProperties: false
@@ -3365,7 +3430,7 @@ components:
       additionalProperties: false
       properties:
         oraScadenzaPresentazioneOfferte: 
-          description: Date e ora di scadenza per la presentazione delle offerte (hh:mm) - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
+          description: Date e ora di scadenza per la presentazione delle offerte - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
           type: string
           format: date-time            
     DatiBaseImportoType:
@@ -3375,7 +3440,14 @@ components:
       properties:
         contrattiSuccessivi:
           description: contratti successivi - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-41 - Following Contract del TED
-          type: boolean           
+          type: boolean 
+    DatiBaseImportoOptionalType:
+      description: Dato in comune con il Business Group Prize delle eforms 
+      additionalProperties: false
+      properties:
+        contrattiSuccessivi:
+          description: contratti successivi - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-41 - Following Contract del TED
+          type: boolean            
     DatiBaseRisultatoProceduraType:
       description:  Dato in comune con il Business Group Procedure Lot Result delle eforms
       required: [esitoProcedura]
