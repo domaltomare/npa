@@ -672,8 +672,12 @@ ref. /docs/specifiche-jws/
   	* aggiunto il campo costituzionesocietascopo nelle schede P1_14, P2_14 ,P1_19, P2_19
 * modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml:
 	* inserito il quadro economico delle concessioni
-* modello-dati-schede-AD1_28, modello-dati-schede-AD2_28.yaml:
+* modello-dati-schede-AD1_28.yaml, modello-dati-schede-AD2_28.yaml:
 	* eliminato il quadro economico standard
+* modello-dati-schede-PL2_1.yaml,modello-dati-schede-PL2_2.yaml,modello-dati-schede-PL2_3.yaml:
+	* revisione schede: aggiunti nell'oggetto appalto i campi: importo, accordoQuadro, 	sistemaDinamicoAcquisizione,astaElettronica, fineSistemaDinamicoAcquisizione. Aggiunti nell'oggetto lotto i campi: lotidentifier, importo, cpv secondaria, criteriAggiudicazione, affidamentiRiservati, accessibilita, contrattiSuccessivi, dataInvioInviti. Eliminato il campo codNUTS.
+* modello-dati-schede-PL2_7.yaml,modello-dati-schede-PL2_8.yaml,modello-dati-schede-PL2_9.yaml:
+	* revisione schede: aggiunti nell'oggetto appalto i campi: proceduraAccelerata, giustificazioneProceduraAccelerata, giustificazioneProceduraAccelerataMl,fineSistemaDinamicoAcquisizione. Aggiunto nell'oggetto lotto il campo: contrattiSuccessivi
 
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
