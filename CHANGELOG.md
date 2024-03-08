@@ -682,7 +682,7 @@ ref. /docs/specifiche-jws/
 	* revisione schede: aggiunti nell'oggetto appalto i campi: proceduraAccelerata, giustificazioneProceduraAccelerata, giustificazioneProceduraAccelerataMl,fineSistemaDinamicoAcquisizione. Aggiunto nell'oggetto lotto il campo: contrattiSuccessivi
 * modello-dati-schede-P7_3.yaml:
 	* revisione schede: reso obbligatorio l'oggetto datiBaseDurata
-* modello-dati-schede-P2_10.yaml,modello-dati-schede-P2_11.yaml:
+* modello-dati-schede-P2_10.yaml,modello-dati-schede-P2_11.yaml,modello-dati-schede-P2_16.yaml:
 	* revisione schede: resi obbligatori gli oggetti datiBaseAggiuntivi, datiBaseStrumentiProcedura
 * modello-dati-schede-P2_12.yaml,modello-dati-schede-P2_13.yaml,modello-dati-schede-P2_14.yaml:
 	* revisione schede: reso obbligatorio l'oggetto datiBaseAggiuntivi
