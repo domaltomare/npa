@@ -1417,7 +1417,7 @@ components:
     LottoP_18Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [lotIdentifier, categoria,ccnl]
+      required: [lotIdentifier, categoria,ccnl,ipotesiCollegamento]
       additionalProperties: false
       properties:
         lotIdentifier:
