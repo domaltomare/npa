@@ -1369,7 +1369,7 @@ components:
       allOf: # estende la classe LottoBaseType
       - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale,prestazioniComprese,ccnl,quadroEconomicoStandard]
+      required: [lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,servizioPubblicoLocale,prestazioniComprese,ccnl,quadroEconomicoStandard,ipotesiCollegamento]
       additionalProperties: false
       properties:
         prestazioniComprese:
