@@ -346,11 +346,14 @@ components:
           type: number
           format: double
           minimum: 0
-          maximum: 100
+          maximum: 100        
         motivoDeroga:
           type: array
           items:
             $ref: '#/components/schemas/MotivoDerogaEnum'
+        ulterioriMisurePremiali:
+          description: Previsione nel bando di gara, nell’avviso o nell’invito di ulteriori misure premiali che attribuiscono un punteggio aggiuntivo all’offerente o al candidato.
+          type: boolean          
         misurePremiali:
           type: array
           items:
@@ -1032,7 +1035,7 @@ components:
       allOf: # estende la classe LottoBaseType
         - $ref: '#/components/schemas/LottoBaseType'
       type: object
-      required: [opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,prestazioniComprese,ccnl,quadroEconomicoStandard]
+      required: [opzioniRinnovi, categoria,ripetizioniEConsegneComplementari,prestazioniComprese,ccnl,quadroEconomicoStandard,ipotesiCollegamento]
       additionalProperties: false
       properties:
         prestazioniComprese:
