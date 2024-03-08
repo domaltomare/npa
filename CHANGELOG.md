@@ -667,6 +667,7 @@ ref. /docs/specifiche-jws/
 *  modello-dati-schede-dati-comuni.yaml:
 	* eliminati i campi saNonSoggettaObblighi24Dicembre2015 e iniziativeNonSoddisfacenti dall'oggetto lotto in tutte le schede
  	* Reso obbligatorio l'oggetto finanziamenti
+  	* Reso obbligatorio oggetto ipotesiCollegamento
   	* Motivo deroga: corretta la descrizione del campo
 	* modalita acquisizione: resa facolativa nelle schede P_20 e P_21
   	* aggiunto il campo costituzionesocietascopo nelle schede P1_14, P2_14 ,P1_19, P2_19
@@ -681,10 +682,9 @@ ref. /docs/specifiche-jws/
 	* revisione schede: aggiunti nell'oggetto appalto i campi: proceduraAccelerata, giustificazioneProceduraAccelerata, giustificazioneProceduraAccelerataMl,fineSistemaDinamicoAcquisizione. Aggiunto nell'oggetto lotto il campo: contrattiSuccessivi
 * modello-dati-schede-P7_3.yaml:
 	* revisione schede: reso obbligatorio l'oggetto datiBaseDurata
-* modello-dati-schede-P2_10.yaml:
-	* revisione schede: resi obbligatori gli oggetti datiBaseAggiuntivi, datiBaseStrumentiProcedura, ipotesiCollegamento
-* modello-dati-schede-P1_10.yaml:
-	* revisione schede: reso obbligatorio oggetto ipotesiCollegamento
+* modello-dati-schede-P2_10.yaml,modello-dati-schede-P2_11.yaml:
+	* revisione schede: resi obbligatori gli oggetti datiBaseAggiuntivi, datiBaseStrumentiProcedura
+
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
 
