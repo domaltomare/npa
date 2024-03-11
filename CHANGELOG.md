@@ -684,7 +684,7 @@ ref. /docs/specifiche-jws/
 	* revisione schede: reso obbligatorio l'oggetto datiBaseDurata
 * modello-dati-schede-P2_10.yaml,modello-dati-schede-P2_11.yaml,modello-dati-schede-P2_16.yaml,modello-dati-schede-P2_17.yaml, modello-dati-schede-P2_18.yaml:
 	* revisione schede: resi obbligatori gli oggetti datiBaseAggiuntivi, datiBaseStrumentiProcedura
-* modello-dati-schede-P2_12.yaml,modello-dati-schede-P2_13.yaml,modello-dati-schede-P2_14.yaml,modello-dati-schede-P2_19.yaml:
+* modello-dati-schede-P2_12.yaml,modello-dati-schede-P2_13.yaml,modello-dati-schede-P2_14.yaml,modello-dati-schede-P2_19.yaml,modello-dati-schede-P2_20.yaml:
 	* revisione schede: reso obbligatorio l'oggetto datiBaseAggiuntivi
 
 ## Orchestratore
