@@ -611,7 +611,7 @@ components:
         datiBase:
           $ref: '#/components/schemas/DatiBaseAppaltoType' 
         datiBaseStrumentiProcedura:
-          $ref: '#/components/schemas/DatiBaseStrumentiProceduraPLType'          
+          $ref: '#/components/schemas/DatiBaseStrumentiProceduraCompletoType'          
     AppaltoPLCompletoType:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione
       type: object
@@ -623,7 +623,7 @@ components:
         datiBaseProcedura:
           $ref: '#/components/schemas/DatiBaseProceduraPLType'      
         datiBaseStrumentiProcedura:
-          $ref: '#/components/schemas/DatiBaseStrumentiProceduraPLType'           
+          $ref: '#/components/schemas/DatiBaseStrumentiProceduraCompletoType'           
     AppaltoP3BaseType:
       description: Oggetto che riporta i dati dell'appalto relativi ai contratti senza limiti di importo con obblighi di comunicazione.
       type: object
@@ -3340,7 +3340,7 @@ components:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
           type: boolean
-    DatiBaseStrumentiProceduraPLType:
+    DatiBaseStrumentiProceduraCompletoType:
       description: Dato in comune con il Business Group Techniques delle eforms
       additionalProperties: false
       properties:
