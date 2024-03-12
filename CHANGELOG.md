@@ -689,7 +689,7 @@ ref. /docs/specifiche-jws/
 	* revisione schede: reso obbligatorio l'oggetto datiBaseAggiuntivi
 * modello-dati-schede-P2_23.yaml,modello-dati-schede-P2_24.yaml:
 	* revisione schede: reso obbligatorio l'oggetto datiBaseImporto
-* modello-dati-schede-P3_1.yaml:
+* modello-dati-schede-P3_1.yaml,modello-dati-schede-P3_2.yaml,modello-dati-schede-P3_3.yaml:
 	* revisione schede: resi obbligatori gli oggetti datiBaseAggiuntivi,datiBaseAggiudicazione. Aggiunto nell'oggetto lotto il campo: ccnl
 
 ## Orchestratore
