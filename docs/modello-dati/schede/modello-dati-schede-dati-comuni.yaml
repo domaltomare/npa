@@ -996,7 +996,7 @@ components:
         datiBaseAggiuntivi:
           $ref: '#/components/schemas/DatiBaseAggiuntiviOptionalType'
         datiBaseAccessibilita:
-          $ref: '#/components/schemas/DatiBaseSoloAccessibilitaType'
+          $ref: '#/components/schemas/DatiBaseAccessibilitaType'
         datiBaseImporto:
           $ref: '#/components/schemas/DatiBaseImportoOptionalType'
         datiBaseComunicazione:
@@ -1023,7 +1023,7 @@ components:
         datiBaseAggiuntivi:
           $ref: '#/components/schemas/DatiBaseAggiuntiviOptionalType'
         datiBaseAccessibilita:
-          $ref: '#/components/schemas/DatiBaseSoloAccessibilitaType'
+          $ref: '#/components/schemas/DatiBaseAccessibilitaType'
         datiBaseImporto:
           $ref: '#/components/schemas/DatiBaseImportoOptionalType'          
         datiBaseComunicazione:
@@ -1571,7 +1571,7 @@ components:
     LottoP_23Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [afferenteInvestimentiPNRR, lotIdentifier,acquisizioneCup,codIstat,contrattiDisposizioniParticolari, finanziamenti]
+      required: [afferenteInvestimentiPNRR, lotIdentifier,acquisizioneCup,codIstat,contrattiDisposizioniParticolari, finanziamenti,quadroEconomicoConcorsiProgettazione]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -1612,7 +1612,7 @@ components:
     LottoP_24Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       type: object
-      required: [lotIdentifier, afferenteInvestimentiPNRR, acquisizioneCup,codIstat,contrattiDisposizioniParticolari,finanziamenti]
+      required: [lotIdentifier, afferenteInvestimentiPNRR, acquisizioneCup,codIstat,contrattiDisposizioniParticolari,finanziamenti,quadroEconomicoConcorsiProgettazione]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -3029,12 +3029,6 @@ components:
           type: string
         giustificazioneMl:
           $ref: '#/components/schemas/MultilinguaType'  
-    DatiBaseSoloAccessibilitaType:
-      description: Dato in comune con il Business Group Strategic Procurement delle eforms
-      additionalProperties: false
-      properties:
-        accessibilita:
-          $ref: '#/components/schemas/AccessibilitaEnum'
     DatiBaseAggiudicazioneAppaltoType:
       description:  Dato in comune con il Business Group Contract delle eforms
       required: [dataAggiudicazione]
