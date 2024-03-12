@@ -2883,7 +2883,7 @@ components:
         sommeADisposizione:
           description: Somme a disposizione - Iva e altre Imposte e tasse
           type: number
-          format: double   
+          format: double     
     QuadroEconomicoConcessioniType:
       description: Oggetto che riporta tutti i dati del quadro economico per le concessioni. 
       type: object
