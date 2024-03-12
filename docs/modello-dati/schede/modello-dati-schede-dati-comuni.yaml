@@ -668,9 +668,7 @@ components:
         datiBaseProcedura:
           $ref: '#/components/schemas/DatiBaseProceduraCompletoType' 
         datiBaseStrumentiProcedura:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseStrumentiProceduraAccordoQuadroAstaType' 
-          required: [astaElettronica]
+          $ref: '#/components/schemas/DatiBaseStrumentiProceduraP6Type'           
     AppaltoP4BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
@@ -1685,7 +1683,7 @@ components:
     LottoP6BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari,datiBaseTerminiInvio,datiBaseCPV,finanziamenti]
+      required: [lotIdentifier, afferenteInvestimentiPNRR,opzioniRinnovi, categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari,datiBaseTerminiInvio,datiBaseCPV,finanziamenti,ipotesiCollegamento,datiBaseAggiudicazione]
       additionalProperties: false
       properties:
         servizioPubblicoLocale:
@@ -1741,8 +1739,7 @@ components:
         datiBaseContratto:
           $ref: '#/components/schemas/DatiBaseContrattoType'
         datiBaseAggiudicazione:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseAggiudicazioneType' 
+          $ref: '#/components/schemas/DatiBaseAggiudicazioneType' 
         datiBaseTerminiInvio:
           $ref: '#/components/schemas/DatiBaseTerminiInvioSoloOraType'   
         datiBaseAccessibilita:
@@ -1925,8 +1922,7 @@ components:
           allOf: 
           - $ref: '#/components/schemas/DatiBaseContrattoP7Type'
         datiBaseAggiudicazione:
-          allOf:
-          - $ref: '#/components/schemas/DatiBaseAggiudicazioneType'
+          $ref: '#/components/schemas/DatiBaseAggiudicazioneType'
         datiBaseAggiuntivi:
           $ref: '#/components/schemas/DatiBaseAggiuntiviType'       
         datiBaseAccessibilita:
@@ -2029,8 +2025,7 @@ components:
           allOf: 
           - $ref: '#/components/schemas/DatiBaseContrattoType'
         datiBaseAggiudicazione:
-          allOf:
-          - $ref: '#/components/schemas/DatiBaseAggiudicazioneType'
+          $ref: '#/components/schemas/DatiBaseAggiudicazioneType'
         datiBaseAggiuntivi:
           $ref: '#/components/schemas/DatiBaseAggiuntiviType'       
         datiBaseAccessibilita:
@@ -3396,7 +3391,17 @@ components:
           $ref: '#/components/schemas/AccordoQuadroEnum'        
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
-          type: boolean                
+          type: boolean  
+    DatiBaseStrumentiProceduraP6Type:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      additionalProperties: false
+      required: [astaElettronica]
+      properties:
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'        
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean        
     DatiBaseStrumentiProceduraAstaType:
       description: Dato in comune con il Business Group Techniques delle eforms 
       additionalProperties: false
