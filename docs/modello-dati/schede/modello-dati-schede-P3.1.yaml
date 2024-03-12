@@ -9,7 +9,7 @@ components:
       allOf: # estende la classe LottoP3BaseType
       - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP3BaseType'      
       type: object
-      required: [afferenteInvestimentiPNRR,motivoEsclusioneOrdinarioSpeciale,datiBase,quadroEconomicoStandard,datiBaseCPV]
+      required: [afferenteInvestimentiPNRR,motivoEsclusioneOrdinarioSpeciale,datiBase,quadroEconomicoStandard,datiBaseCPV,datiBaseAggiudicazione,datiBaseAggiuntivi]
       additionalProperties: false
       properties:
         afferenteInvestimentiPNRR:
@@ -35,7 +35,7 @@ components:
         datiBaseContratto:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseContrattoType'            
         datiBaseAggiudicazione:
-          allOf: # estende la classe LottoP3BaseType
+          allOf: 
           - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneType' 
         datiBaseAggiuntivi:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiuntiviType' 
