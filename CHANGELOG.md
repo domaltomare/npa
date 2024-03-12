@@ -636,6 +636,19 @@ ref. /docs/specifiche-jws/
 * aggiornata errori.json
 </details>
 
+<details>
+<summary><h1>Note di rilascio del 13/03/2024 (Segnalazioni chiuse in Esercizio)</h1></summary>
+
+### Regole
+* Issue 996, 1046, 1052, 1130, 1249:
+  * fix messaggio di errore troncato proveniente del TED
+* Issue 1174, 1156, 1134:
+  * fix errore partecipante ERR77
+    
+### Tipologiche
+* aggiornata errori.json
+* strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5  (modifica già pubblicata in Esercizio)
+</details>
 
 # Note di rilascio del dd/mm/aaaa
 
@@ -714,7 +727,6 @@ ref. /docs/specifiche-jws/
 	* inserito controllo sul campo motivazioneCIG
 
 ### Tipologiche
-* strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5  (modifica già pubblicata in Esercizio)
 * aggiornata errori.json
 * aggiornata contrattiDisposizioniParticolari.json
 * aggiornata fattispecieTracciabilita.json
