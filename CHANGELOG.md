@@ -668,6 +668,7 @@ ref. /docs/specifiche-jws/
 	* eliminati i campi saNonSoggettaObblighi24Dicembre2015 e iniziativeNonSoddisfacenti dall'oggetto lotto in tutte le schede
  	* Reso obbligatorio l'oggetto finanziamenti
   	* Reso obbligatorio oggetto ipotesiCollegamento
+   	* Reso obbligatorio l'oggetto quadroEconomicoConcorsiProgettazione
   	* Motivo deroga: corretta la descrizione del campo
 	* modalita acquisizione: resa facolativa nelle schede P_20 e P_21
   	* aggiunto il campo costituzionesocietascopo nelle schede P1_14, P2_14 ,P1_19, P2_19
