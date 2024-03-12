@@ -647,7 +647,7 @@ ref. /docs/specifiche-jws/
     
 ### Tipologiche
 * aggiornata errori.json
-* strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5  (modifica già pubblicata in Esercizio)
+* strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5
 </details>
 
 # Note di rilascio del dd/mm/aaaa
