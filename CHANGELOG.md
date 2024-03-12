@@ -695,6 +695,8 @@ ref. /docs/specifiche-jws/
 	* revisione schede: reso obbligatorio l'oggetto datiBaseAggiudicazione.
 * modello-dati-schede-P3_5.yaml:
 	* revisione schede: resi obbligatori gli oggetti: datiBaseAggiudicazione,tipoRealizzazione,ipotesiCollegamento
+* modello-dati-schede-P4*.yaml:
+	* revisione schede: resi obbligatori gli oggetti: ccnl,ipotesiCollegamento,datiBaseAggiuntivi
 
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
