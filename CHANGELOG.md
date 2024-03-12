@@ -637,7 +637,7 @@ ref. /docs/specifiche-jws/
 </details>
 
 <details>
-<summary><h1>Note di rilascio del 13/03/2024 (Segnalazioni chiuse in Esercizio)</h1></summary>
+<summary><h1>Note di rilascio del 12/03/2024 (Segnalazioni chiuse in Esercizio)</h1></summary>
 
 ### Regole
 * Issue 996, 1046, 1052, 1130, 1249:
