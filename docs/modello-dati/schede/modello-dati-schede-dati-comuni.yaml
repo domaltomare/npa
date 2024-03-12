@@ -1753,7 +1753,7 @@ components:
     LottoP4BaseType:
         description: Oggetto che riporta i dati del lotto
         type: object
-        required: [lotIdentifier,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi,afferenteInvestimentiPNRR,categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari,datiBase,datiBaseDocumenti,datiBaseTerminiInvio,datiBaseCPV,finanziamenti]
+        required: [lotIdentifier,lavoroOAcquistoPrevistoInProgrammazione, opzioniRinnovi,afferenteInvestimentiPNRR,categoria,servizioPubblicoLocale,codIstat,contrattiDisposizioniParticolari,datiBase,datiBaseDocumenti,datiBaseTerminiInvio,datiBaseCPV,finanziamenti,ccnl,ipotesiCollegamento,datiBaseAggiuntivi]
         additionalProperties: false
         properties:
           servizioPubblicoLocale:
@@ -1761,7 +1761,10 @@ components:
             type: boolean        
           lotIdentifier:
             description: Id univoco del lotto generato dalla stazione appaltante
-            type: string  
+            type: string 
+          ccnl:
+            description: indicare il codice CNEL o non applicabile
+            type: string        
           condizioniNegoziata:
             type: array
             items:
@@ -1828,8 +1831,7 @@ components:
           datiBaseAccessibilita:
             $ref: '#/components/schemas/DatiBaseAccessibilitaType'              
           datiBaseDocumenti:
-            allOf: 
-             - $ref: '#/components/schemas/DatiBaseDocumentiType'           
+            $ref: '#/components/schemas/DatiBaseDocumentiType'           
     LottoP7BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
