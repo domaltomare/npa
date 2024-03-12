@@ -686,6 +686,8 @@ ref. /docs/specifiche-jws/
 	* revisione schede: resi obbligatori gli oggetti datiBaseAggiuntivi, datiBaseStrumentiProcedura
 * modello-dati-schede-P2_12.yaml,modello-dati-schede-P2_13.yaml,modello-dati-schede-P2_14.yaml,modello-dati-schede-P2_19.yaml,modello-dati-schede-P2_20.yaml,modello-dati-schede-P2_21.yaml:
 	* revisione schede: reso obbligatorio l'oggetto datiBaseAggiuntivi
+* modello-dati-schede-P2_23.yaml,modello-dati-schede-P2_24.yaml:
+	* revisione schede: reso obbligatorio l'oggetto datiBaseImporto
 
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
