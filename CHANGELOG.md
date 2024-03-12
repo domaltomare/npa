@@ -691,6 +691,8 @@ ref. /docs/specifiche-jws/
 	* revisione schede: reso obbligatorio l'oggetto datiBaseImporto
 * modello-dati-schede-P3_1.yaml,modello-dati-schede-P3_2.yaml,modello-dati-schede-P3_3.yaml:
 	* revisione schede: resi obbligatori gli oggetti datiBaseAggiuntivi,datiBaseAggiudicazione. Aggiunto nell'oggetto lotto il campo: ccnl
+* modello-dati-schede-P3_4.yaml,modello-dati-schede-P3_5.yaml:
+	* revisione schede: reso obbligatorio l'oggetto datiBaseAggiudicazione.
 
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
