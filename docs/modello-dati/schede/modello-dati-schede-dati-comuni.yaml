@@ -699,8 +699,7 @@ components:
         datiBase:
           $ref: '#/components/schemas/DatiBaseAppaltoType'
         datiBaseProcedura:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseProceduraType'
+          $ref: '#/components/schemas/DatiBaseProceduraType'
         datiBaseStrumentiProcedura:
           $ref: '#/components/schemas/DatiBaseStrumentiProceduraAstaType'  
     AppaltoP7BaseType:
