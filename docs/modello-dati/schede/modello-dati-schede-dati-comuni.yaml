@@ -646,7 +646,7 @@ components:
     AppaltoP6BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [cigAccordoQuadroConvenzione,codiceAppalto,datiBaseProcedura]
+      required: [cigAccordoQuadroConvenzione,codiceAppalto,datiBaseProcedura,datiBaseStrumentiProcedura]
       additionalProperties: false
       properties:  
         codiceAppalto:
