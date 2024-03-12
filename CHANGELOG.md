@@ -641,7 +641,7 @@ ref. /docs/specifiche-jws/
 
 ### Segnalazioni
 * Issue 996, 1046, 1052, 1130, 1249:
-  * fix messaggio di errore troncato proveniente del TED
+  * fix messaggio di errore troncato proveniente dal TED
 * Issue 1174, 1156, 1134:
   * fix errore partecipante ERR77
     
