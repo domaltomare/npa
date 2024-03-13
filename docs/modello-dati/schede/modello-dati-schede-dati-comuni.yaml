@@ -737,6 +737,43 @@ components:
           $ref: '#/components/schemas/DatiBaseProceduraType'
         datiBaseStrumentiProcedura:
           $ref: '#/components/schemas/DatiBaseStrumentiProceduraP7Type'
+    AppaltoP7_2Type:
+      description: Oggetto che riporta i dati dell'appalto
+      type: object
+      required: [categorieMerceologiche,strumentiSvolgimentoProcedure,codiceAppalto,datiBase,datiBaseProcedura,datiBaseStrumentiProcedura]
+      additionalProperties: false
+      properties:
+        codiceAppalto:
+          description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
+          type: string
+          maxLength: 64  
+        idPianificazione:
+          description: ID pianificazione
+          type: string  
+          format: uuid
+        termineRidottoAvvisoPreinformazione:
+          description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
+          type: boolean           
+        categorieMerceologiche:
+          type: array
+          items:
+            $ref: '#/components/schemas/CategorieMerceologicheEnum'
+        motivazioneCIG:
+          $ref: '#/components/schemas/MotivazioneCIGEnum'
+        strumentiSvolgimentoProcedure: 
+          $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'  
+        motivoUrgenza:
+          $ref: '#/components/schemas/MotivoUrgenzaEnum'       
+        linkDocumenti:
+          description: Link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile (co 10, art 140 nuovo codice)
+          type: string
+          format: url   
+        datiBase:
+          $ref: '#/components/schemas/DatiBaseAppaltoType'
+        datiBaseProcedura:
+          $ref: '#/components/schemas/DatiBaseProceduraType'
+        datiBaseStrumentiProcedura:
+          $ref: '#/components/schemas/DatiBaseStrumentiProceduraP7_2Type'          
     AppaltoP_10Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -3472,7 +3509,17 @@ components:
           $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
-          type: boolean          
+          type: boolean  
+    DatiBaseStrumentiProceduraP7_2Type:
+      description: Dato in comune con il Business Group Techniques delle eforms 
+      additionalProperties: false
+      required: [accordoQuadro,astaElettronica]
+      properties:
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'        
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean            
     DatiBaseStrumentiProceduraAccordoQuadroAstaType:
       description: Dato in comune con il Business Group Techniques delle eforms 
       additionalProperties: false
