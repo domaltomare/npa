@@ -7,8 +7,7 @@ components:
    QuadroEconomicoType:
       description: Oggetto che riporta tutti i dati del quadro economico standard
       type: object
-      required:
-        - sommeADisposizione
+      required: 
         - sommeOpzioniRinnovi
         - sommeRipetizioni
       additionalProperties: false

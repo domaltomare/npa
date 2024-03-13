@@ -1069,7 +1069,7 @@ components:
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoType'          
+          $ref: '#/components/schemas/QuadroEconomicoPType'          
     LottoP_11Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -1109,7 +1109,7 @@ components:
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoType'          
+          $ref: '#/components/schemas/QuadroEconomicoPType'          
     LottoP_12Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
@@ -1831,7 +1831,7 @@ components:
     LottoP7BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier,categorieMerceologiche,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,datiBase,datiBaseDocumenti,datiBaseCPV,datiBaseContratto,datiBaseAggiudicazione,datiBaseAggiuntivi]
+      required: [lotIdentifier,categorieMerceologiche,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,datiBase,datiBaseDocumenti,datiBaseCPV,datiBaseContratto,datiBaseAggiudicazione,datiBaseAggiuntivi,contrattiDisposizioniParticolari]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -2823,6 +2823,90 @@ components:
           description: Somme a disposizione - Iva e altre Imposte e tasse
           type: number
           format: double
+    QuadroEconomicoPType:
+      description: Oggetto che riporta tutti i dati del quadro economico standard
+      type: object
+      required:
+        - sommeRipetizioni      
+      additionalProperties: false
+      properties:
+        impLavori:
+          description: Importo componente lavori in €
+          type: number
+          format: double
+        impServizi:
+          description: Importo componente servizi in €
+          type: number
+          format: double
+        impForniture:
+          description: Importo componente forniture in €
+          type: number
+          format: double
+        impTotaleSicurezza:
+          description: Importo totale per l'attuazione della sicurezza
+          type: number
+          format: double
+        ulterioriSommeNoRibasso:
+          description: Ulteriori somme non soggette a ribasso
+          type: number
+          format: double
+        impProgettazione:
+          description: Importo della progettazione in caso di appalto integrato
+          type: number
+          format: double
+        sommeOpzioniRinnovi:
+          description: Somme per opzioni/rinnovi
+          type: number
+          format: double
+        sommeRipetizioni:
+          description: Somme per ripetizione servizi/forniture/lavori analoghi e consegne complementari
+          type: number
+          format: double
+        sommeADisposizione:
+          description: Somme a disposizione - Iva e altre Imposte e tasse
+          type: number
+          format: double  
+    QuadroEconomicoP7Type:
+      description: Oggetto che riporta tutti i dati del quadro economico standard
+      type: object      
+      additionalProperties: false
+      properties:
+        impLavori:
+          description: Importo componente lavori in €
+          type: number
+          format: double
+        impServizi:
+          description: Importo componente servizi in €
+          type: number
+          format: double
+        impForniture:
+          description: Importo componente forniture in €
+          type: number
+          format: double
+        impTotaleSicurezza:
+          description: Importo totale per l'attuazione della sicurezza
+          type: number
+          format: double
+        ulterioriSommeNoRibasso:
+          description: Ulteriori somme non soggette a ribasso
+          type: number
+          format: double
+        impProgettazione:
+          description: Importo della progettazione in caso di appalto integrato
+          type: number
+          format: double
+        sommeOpzioniRinnovi:
+          description: Somme per opzioni/rinnovi
+          type: number
+          format: double
+        sommeRipetizioni:
+          description: Somme per ripetizione servizi/forniture/lavori analoghi e consegne complementari
+          type: number
+          format: double
+        sommeADisposizione:
+          description: Somme a disposizione - Iva e altre Imposte e tasse
+          type: number
+          format: double            
     QuadroEconomicoConcorsiProgettazioneType:
       description: Quadro economico concorsi progettazione
       type: object
