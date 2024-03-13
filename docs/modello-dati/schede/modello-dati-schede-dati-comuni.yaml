@@ -1968,7 +1968,7 @@ components:
     LottoP7_2BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier,categorieMerceologiche,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,ripetizioniEConsegneComplementari,opzioniRinnovi,datiBase,datiBaseCPV,datiBaseContratto]
+      required: [lotIdentifier,categorieMerceologiche,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,ripetizioniEConsegneComplementari,opzioniRinnovi,datiBase,datiBaseCPV,datiBaseContratto,contrattiDisposizioniParticolari,datiBaseAggiudicazione,datiBaseAggiuntivi]
       additionalProperties: false
       properties:
         lotIdentifier:
