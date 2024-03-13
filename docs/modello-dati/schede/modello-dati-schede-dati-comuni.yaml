@@ -2324,9 +2324,7 @@ components:
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoType'
-        quadroEconomicoConcessioni:
-          $ref: '#/components/schemas/QuadroEconomicoConcessioniType' 
+          $ref: '#/components/schemas/QuadroEconomicoP7Type' 
         partecipanti:
           type: array
           items: 
@@ -2392,8 +2390,6 @@ components:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'   
         quadroEconomicoStandard:
           $ref: '#/components/schemas/QuadroEconomicoType'
-        quadroEconomicoConcessioni:
-          $ref: '#/components/schemas/QuadroEconomicoConcessioniType'
         partecipanti:
           type: array
           items: 
@@ -2452,11 +2448,7 @@ components:
         partecipanti:
           type: array
           items: 
-            $ref: '#/components/schemas/PartecipanteADType' 
-        quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoType'
-        quadroEconomicoConcessioni:
-          $ref: '#/components/schemas/QuadroEconomicoConcessioniType'            
+            $ref: '#/components/schemas/PartecipanteADType'             
     AppaltoAD1_27Type:
       description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva per il settore della difesa - Articolo 64 della direttiva 2009/81/CE
       type: object
