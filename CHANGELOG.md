@@ -690,6 +690,10 @@ ref. /docs/specifiche-jws/
 	* inserito il quadro economico delle concessioni
 * modello-dati-schede-AD1_28.yaml, modello-dati-schede-AD2_28.yaml:
 	* eliminato il quadro economico standard
+* modello-dati-schede-AD1_25.yaml, modello-dati-schede-AD2_25.yaml, modello-dati-schede-AD1_26.yaml, modello-dati-schede-AD2_26.yaml:
+	* eliminato il quadro economico delle concessioni
+* modello-dati-schede-AD1_27.yaml, modello-dati-schede-AD2_27.yaml:
+	* eliminati i quadri economici
 * modello-dati-schede-PL2_1.yaml,modello-dati-schede-PL2_2.yaml,modello-dati-schede-PL2_3.yaml:
 	* revisione schede: aggiunti nell'oggetto appalto i campi: importo, accordoQuadro, 	sistemaDinamicoAcquisizione,astaElettronica, fineSistemaDinamicoAcquisizione. Aggiunti nell'oggetto lotto i campi: lotidentifier, importo, cpv secondaria, criteriAggiudicazione, affidamentiRiservati, accessibilita, contrattiSuccessivi, dataInvioInviti. Eliminato il campo codNUTS.
 * modello-dati-schede-PL2_7.yaml,modello-dati-schede-PL2_8.yaml,modello-dati-schede-PL2_9.yaml:
