@@ -712,7 +712,10 @@ ref. /docs/specifiche-jws/
 	* revisione schede: resi obbligatori gli oggetti: ccnl,ipotesiCollegamento,datiBaseAggiuntivi
 * modello-dati-schede-P6*.yaml:
 	* revisione schede: resi obbligatori gli oggetti: datiBaseStrumentiProcedura,ipotesiCollegamento,datiBaseAggiudicazione
-   
+* modello-dati-schede-P7_1_1.yaml, modello-dati-schede-P7_1_2.yaml, modello-dati-schede-P7_1_3.yaml, modello-dati-schede-P7_2.yaml:
+	* revisione schede:
+ 		* resi obbligatori gli oggetti: datiBaseContratto,datiBaseAggiudicazione,datiBaseAggiuntivi,contrattiDisposizioniParticolari.
+ 		* aggiunto l'oggetto datiBaseStrumentiProcedura
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
 
