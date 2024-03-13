@@ -2054,7 +2054,7 @@ components:
         datiBaseCPV:
           $ref: '#/components/schemas/DatiBaseCPVType'
         datiBaseContratto:
-          $ref: '#/components/schemas/DatiBaseContrattoType'
+          $ref: '#/components/schemas/DatiBaseContrattoP7Type'
         datiBaseAggiudicazione:
           $ref: '#/components/schemas/DatiBaseAggiudicazioneType'
         datiBaseAggiuntivi:
