@@ -703,7 +703,7 @@ components:
     AppaltoP7BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [categorieMerceologiche,strumentiSvolgimentoProcedure,codiceAppalto,datiBase,datiBaseProcedura]
+      required: [categorieMerceologiche,strumentiSvolgimentoProcedure,codiceAppalto,datiBase,datiBaseProcedura,datiBaseStrumentiProcedura]
       additionalProperties: false
       properties:
         codiceAppalto:
@@ -732,11 +732,11 @@ components:
           type: string
           format: url   
         datiBase:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseAppaltoType'
+          $ref: '#/components/schemas/DatiBaseAppaltoType'
         datiBaseProcedura:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseProceduraType'
+          $ref: '#/components/schemas/DatiBaseProceduraType'
+        datiBaseStrumentiProcedura:
+          $ref: '#/components/schemas/DatiBaseStrumentiProceduraP7Type'
     AppaltoP_10Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -1831,7 +1831,7 @@ components:
     LottoP7BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier,categorieMerceologiche,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,datiBase,datiBaseDocumenti,datiBaseCPV]
+      required: [lotIdentifier,categorieMerceologiche,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,datiBase,datiBaseDocumenti,datiBaseCPV,datiBaseContratto,datiBaseAggiudicazione,datiBaseAggiuntivi]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -1913,14 +1913,11 @@ components:
         tipoRealizzazione:
           $ref: '#/components/schemas/TipoRealizzazioneContrattoEnum'            
         datiBase:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseLottoType'
+          $ref: '#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseCPVType'
+          $ref: '#/components/schemas/DatiBaseCPVType'
         datiBaseContratto:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseContrattoP7Type'
+          $ref: '#/components/schemas/DatiBaseContrattoP7Type'
         datiBaseAggiudicazione:
           $ref: '#/components/schemas/DatiBaseAggiudicazioneType'
         datiBaseAggiuntivi:
@@ -1934,7 +1931,7 @@ components:
     LottoP7_2BaseType:
       description: Oggetto che riporta i dati del lotto
       type: object
-      required: [lotIdentifier,categorieMerceologiche,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,ripetizioniEConsegneComplementari,opzioniRinnovi,datiBase,datiBaseCPV]
+      required: [lotIdentifier,categorieMerceologiche,condizioniNegoziata,servizioPubblicoLocale,lavoroOAcquistoPrevistoInProgrammazione,ipotesiCollegamento,afferenteInvestimentiPNRR,ccnl,categoria,prestazioniComprese, finanziamenti,tipoRealizzazione,codIstat,ripetizioniEConsegneComplementari,opzioniRinnovi,datiBase,datiBaseCPV,datiBaseContratto]
       additionalProperties: false
       properties:
         lotIdentifier:
@@ -2016,14 +2013,11 @@ components:
         tipoRealizzazione:
           $ref: '#/components/schemas/TipoRealizzazioneContrattoEnum'            
         datiBase:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseLottoType'
+          $ref: '#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseCPVType'
+          $ref: '#/components/schemas/DatiBaseCPVType'
         datiBaseContratto:
-          allOf: 
-          - $ref: '#/components/schemas/DatiBaseContrattoType'
+          $ref: '#/components/schemas/DatiBaseContrattoType'
         datiBaseAggiudicazione:
           $ref: '#/components/schemas/DatiBaseAggiudicazioneType'
         datiBaseAggiuntivi:
@@ -3382,7 +3376,19 @@ components:
           type: boolean   
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
-          type: boolean      
+          type: boolean 
+    DatiBaseStrumentiProceduraP7Type:
+      description: Dato in comune con il Business Group Techniques delle eforms
+      additionalProperties: false
+      required: [accordoQuadro,sistemaDinamicoAcquisizione,astaElettronica]
+      properties:
+        accordoQuadro:
+          $ref: '#/components/schemas/AccordoQuadroEnum'
+        sistemaDinamicoAcquisizione:
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean          
     DatiBaseStrumentiProceduraAccordoQuadroAstaType:
       description: Dato in comune con il Business Group Techniques delle eforms 
       additionalProperties: false
