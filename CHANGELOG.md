@@ -731,6 +731,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-A2_29.yaml,modello-dati-schede-A2_30.yaml,modello-dati-schede-A2_31.yaml:
 	* revisione schede: resi obbligatori gli oggetti datiBaseAggiudicazioneAppalto,datiBaseSubappalti, datiBaseRisultatoProcedura. aggiunti i campi offertaMinimoRibasso, proceduraAccelerata
 * modello-dati-schede-A_32: resi obbligatori gli oggetti: datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto,quadroEconomicoConcessioni. Eliminato il campo nImpreseEscluseInsufficientiGiustificazioni
+* modello-dati-schede-A2_33.yaml,modello-dati-schede-A2_34.yaml: resi obbligatori gli oggetti: datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto
  
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
