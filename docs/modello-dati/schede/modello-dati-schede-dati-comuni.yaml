@@ -3380,6 +3380,7 @@ components:
       description: Dato in comune con il Business Group Procedure delle eforms
       type: object
       additionalProperties: false
+      required: [tipoProcedura]
       properties:
         tipoProcedura:
           $ref: '#/components/schemas/TipoProceduraEnum' 
