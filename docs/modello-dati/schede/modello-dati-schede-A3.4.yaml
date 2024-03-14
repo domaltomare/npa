@@ -7,7 +7,7 @@ components:
     AppaltoA3_4Type:
       type: object
       additionalProperties: false
-      required: [relazioneUnicaSulleProcedure]      
+      required: [relazioneUnicaSulleProcedure,datiBaseStrumentiProcedura,datiBaseSubappalti]      
       properties:
         modalitaRiaggiudicazioneAffidamento:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'      
