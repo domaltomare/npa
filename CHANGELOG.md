@@ -719,7 +719,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-P7_1_1.yaml, modello-dati-schede-P7_1_2.yaml, modello-dati-schede-P7_1_3.yaml, modello-dati-schede-P7_2.yaml:
 	* revisione schede:
  		* resi obbligatori gli oggetti: datiBaseContratto,datiBaseAggiudicazione,datiBaseAggiuntivi,contrattiDisposizioniParticolari.
- 		* aggiunto l'oggetto datiBaseStrumentiProcedura
+ 		* aggiunto l'oggetto datiBaseStrumentiProcedura **NOTA aggiungere l'oggetto nel modello dati di atterraggio dell'estrattore**
 * modello-dati-schede-AD2_25.yaml,modello-dati-schede-AD2_26.yaml,modello-dati-schede-AD2_27.yaml,modello-dati-schede-AD2_28.yaml, modello-dati-schede-AD4.yaml:
 	* revisione schede: reso obbligatorio l'oggetto datiBaseContratto
 * modello-dati-schede-AD3.yaml:
