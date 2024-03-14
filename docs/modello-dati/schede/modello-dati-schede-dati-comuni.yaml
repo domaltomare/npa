@@ -2610,17 +2610,13 @@ components:
       allOf: # estende la classe AggiudicazioneBaseType
       - $ref: '#/components/schemas/AggiudicazioneBaseType'      
       type: object
-      required: [numeroOfferteAmmesse]      
+      required: [numeroOfferteAmmesse,quadroEconomicoConcessioni]      
       additionalProperties: false
       properties: 
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
           type: number
-          format: integer      
-        nImpreseEscluseInsufficientiGiustificazioni: 
-          description: Numero imprese escluse per insufficienti giustificazioni
-          type: number
-          format: integer           
+          format: integer                 
         quadroEconomicoConcessioni:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType'
         esitoProceduraAnnullata:
