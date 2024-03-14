@@ -2734,12 +2734,15 @@ components:
           type: string
         modalitaRiaggiudicazioneAffidamento:
           $ref: '#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'
+        datiBaseSubappalti:
+          $ref: '#/components/schemas/DatiBaseSubappaltiType'          
     AggiudicazioneA4Type:
       description: Oggetto che riporta i dati del lotto
       allOf: # estende la classe AggiudicazioneBaseType
       - $ref: '#/components/schemas/AggiudicazioneBaseType' 
       type: object
       additionalProperties: false
+      required: [numeroOfferteAmmesse,datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto]
       properties:
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
