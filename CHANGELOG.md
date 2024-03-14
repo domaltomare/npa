@@ -729,7 +729,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-A3_6.yaml:
 	* revisione schede: resi obbligatori gli oggetti datiBaseContratto,datiBaseAggiudicazioneAppalto.
 * modello-dati-schede-A2_29.yaml:
-	* revisione schede: resi obbligatori gli oggetti datiBaseAggiudicazioneAppalto. aggiunto il campo offertaMinimoRibasso
+	* revisione schede: resi obbligatori gli oggetti datiBaseAggiudicazioneAppalto. aggiunti i campi offertaMinimoRibasso, proceduraAccelerata
  
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
