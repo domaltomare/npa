@@ -2389,7 +2389,7 @@ components:
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'   
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoType'
+          $ref: '#/components/schemas/QuadroEconomicoP7Type'
         partecipanti:
           type: array
           items: 
