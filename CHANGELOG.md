@@ -720,7 +720,7 @@ ref. /docs/specifiche-jws/
 	* revisione schede:
  		* resi obbligatori gli oggetti: datiBaseContratto,datiBaseAggiudicazione,datiBaseAggiuntivi,contrattiDisposizioniParticolari.
  		* aggiunto l'oggetto datiBaseStrumentiProcedura
-* modello-dati-schede-AD2_25.yaml,modello-dati-schede-AD2_26.yaml,modello-dati-schede-AD2_27.yaml,modello-dati-schede-AD2_28.yaml:
+* modello-dati-schede-AD2_25.yaml,modello-dati-schede-AD2_26.yaml,modello-dati-schede-AD2_27.yaml,modello-dati-schede-AD2_28.yaml, modello-dati-schede-AD4.yaml:
 	* revisione schede: reso obbligatorio l'oggetto datiBaseContratto
 * modello-dati-schede-AD3.yaml:
 	* revisione schede: resi obbligatori gli oggetti afferenteInvestimentiPNRR, datiBaseContratto. 
