@@ -740,7 +740,7 @@ ref. /docs/specifiche-jws/
 * AD*.dmn, A3_6.dmn:
 	* inserito controllo che ci sia un solo idPartecipante
 * P7_1_1.dmn, P7_1_2.dmn, P7_1_3.dmn, P7_2.dmn:
-	* inserito controllo sul campo motivazioneCIG **inserire jsonPath nella collection estrattore a livello di appalto**
+	* inserito controllo sul campo motivazioneCIG **NOTE inserire jsonPath nella collection estrattore a livello di appalto**
 
 ### Tipologiche
 * aggiornata errori.json
