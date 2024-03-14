@@ -723,7 +723,10 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-AD2_25.yaml,modello-dati-schede-AD2_26.yaml,modello-dati-schede-AD2_27.yaml,modello-dati-schede-AD2_28.yaml, modello-dati-schede-AD4.yaml:
 	* revisione schede: reso obbligatorio l'oggetto datiBaseContratto
 * modello-dati-schede-AD3.yaml:
-	* revisione schede: resi obbligatori gli oggetti afferenteInvestimentiPNRR, datiBaseContratto. 
+	* revisione schede: resi obbligatori gli oggetti afferenteInvestimentiPNRR, datiBaseContratto.
+* modello-dati-schede-AD5.yaml:
+	* eliminati i campi ccnl, categoria e categoria scorporabile. Nell'oggetto datibasecontratto tolta l'obbligatorietà del campo codNuts. 
+ 
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
 
