@@ -8,6 +8,8 @@ components:
       type: object
       additionalProperties: false
       properties: 
+        datiBaseProcedura:
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraAType'      
         datiBaseSubappalti:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiType'      
     AggiudicazioneA2_35Type:
