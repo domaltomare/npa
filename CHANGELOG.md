@@ -728,8 +728,8 @@ ref. /docs/specifiche-jws/
 	* eliminati i campi ccnl, categoria e categoria scorporabile. Nell'oggetto datibasecontratto tolta l'obbligatorietà del campo codNuts.
 * modello-dati-schede-A3_6.yaml:
 	* revisione schede: resi obbligatori gli oggetti datiBaseContratto,datiBaseAggiudicazioneAppalto.
-* modello-dati-schede-A2_29.yaml:
-	* revisione schede: resi obbligatori gli oggetti datiBaseAggiudicazioneAppalto, datiBaseRisultatoProcedura. aggiunti i campi offertaMinimoRibasso, proceduraAccelerata
+* modello-dati-schede-A2_29.yaml,modello-dati-schede-A2_30.yaml:
+	* revisione schede: resi obbligatori gli oggetti datiBaseAggiudicazioneAppalto,datiBaseSubappalti, datiBaseRisultatoProcedura. aggiunti i campi offertaMinimoRibasso, proceduraAccelerata
  
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
