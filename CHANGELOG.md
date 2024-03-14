@@ -670,7 +670,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-PL1_*.yaml:
 	* aggiunta l'anacForm con l'oggetto stazioniAppaltanti.
 * modello-dati-schede-PL2_7.yaml, modello-dati-schede-PL2_8.yaml, modello-dati-schede-PL2_9.yaml, modello-dati-schede-dati-comuni.yaml:
-	* aggiunto l'oggetto stazioniAppaltanti in anacForm.
+	* aggiunto l'oggetto stazioniAppaltanti in anacForm.  ** NOTA: verificare se è necessario aggiungere il controllo di coerenza con la SA del token **
 * modello-dati-schede-P3_4.yaml, modello-dati-schede-P3_5.yaml, modello-dati-schede-P7_3.yaml:
 	* resi obbligatori l'oggetto datiBaseDocumenti e il campo url
 * modello-dati-schede-AD5.yaml:
