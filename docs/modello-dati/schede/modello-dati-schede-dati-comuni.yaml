@@ -2560,7 +2560,7 @@ components:
       - $ref: '#/components/schemas/AppaltoAType'      
       type: object
       additionalProperties: false
-      required: [relazioneUnicaSulleProcedure]
+      required: [relazioneUnicaSulleProcedure,opereUrbanizzazioneScomputo]
       properties:
         relazioneUnicaSulleProcedure:
           description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
