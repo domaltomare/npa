@@ -26,7 +26,11 @@ components:
           type: number
           format: double
           minimum: 0
-          maximum: 100         
+          maximum: 100     
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
+          type: number
+          format: integer            
         quadroEconomicoConcessioni:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType'         
         datiBaseAggiudicazioneAppalto:
