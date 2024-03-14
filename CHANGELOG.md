@@ -734,6 +734,8 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-A2_33.yaml,modello-dati-schede-A2_34.yaml,modello-dati-schede-A2_36.yaml,modello-dati-schede-A2_37.yaml,modello-dati-schede-A3_1.yaml,modello-dati-schede-A3_2.yaml,modello-dati-schede-A3_3.yaml,modello-dati-schede-A3_5.yaml: resi obbligatori gli oggetti: datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto
 * modello-dati-schede-A3_4.yaml: resi obbligatori gli oggetti: datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto,datiBaseStrumentiProcedura,datiBaseSubappalti
 * modello-dati-schede-A4.yaml: resi obbligatori gli oggetti: numeroOfferteAmmesse,datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto
+* modello-dati-schede-A7_1_2.yaml: reso obbligatorio l'oggetto: datiBaseAggiudicazioneAppalto
+  
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
 
