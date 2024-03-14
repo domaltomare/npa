@@ -471,7 +471,7 @@ components:
     OfferteType:
       description: Dati delle offerte
       type: object
-      required: [importo,ccnl,idPartecipante,aggiudicatario]
+      required: [importo,ccnl,idPartecipante,aggiudicatario,offertaAnomala]
       additionalProperties: false
       properties:
         idPartecipante: 
@@ -518,7 +518,7 @@ components:
           description: L'offerta è stata esclusa automaticamente?
           type: boolean
         offertaAnomala: 
-          description: L'offerta è anomale?
+          description: L'offerta è anomala?
           type: boolean          
     DefinizioneType:
       description: Dati delle modalità di definizione
@@ -2270,9 +2270,7 @@ components:
           description: Valore soglia anomalia
           type: number
           format: double
-          pattern: (^100([.]0{1,2})?)$|(^\d{1,2}([.]\d{0,5})?)$          
-        quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoType'   
+          pattern: (^100([.]0{1,2})?)$|(^\d{1,2}([.]\d{0,5})?)$             
         offertePresentate:
           type: array
           items: 
@@ -2551,7 +2549,9 @@ components:
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
           type: number
-          format: integer      
+          format: integer 
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoP7Type'          
         esitoProceduraAnnullata:
           $ref: '#/components/schemas/EsitoProceduraAnnullataEnum'      
     AppaltoA1_30Type:
@@ -2578,7 +2578,9 @@ components:
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
           type: number
-          format: integer      
+          format: integer
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoP7Type'          
         esitoProceduraAnnullata:
           $ref: '#/components/schemas/EsitoProceduraAnnullataEnum'    
     AggiudicazioneA1_31Type:
@@ -2644,7 +2646,9 @@ components:
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
           type: number
-          format: integer      
+          format: integer  
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType'          
         esitoProceduraAnnullata:
           $ref: '#/components/schemas/EsitoProceduraAnnullataEnum'     
     AppaltoA1_34Type:
@@ -2670,6 +2674,8 @@ components:
           description: numero di offerte ammesse
           type: number
           format: integer      
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoType'          
         esitoProceduraAnnullata:
           $ref: '#/components/schemas/EsitoProceduraAnnullataEnum'      
     AggiudicazioneA1_35Type:
@@ -3143,8 +3149,12 @@ components:
       description:  Dato in comune con il Business Group Received Submissions delle eforms
       additionalProperties: false
       properties:
+        offertaMinimoRibasso:
+          description: Offerta di minimo ribasso - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-710 del TED.
+          type: number
+          format: double       
         offertaMassimoRibasso:
-          description: Offerta di massimo ribasso - nei casi in cui la scheda preveda un eform, corrisponde ai campi bt-710 e bt-711 del TED.
+          description: Offerta di massimo ribasso - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-711 del TED.
           type: number
           format: double          
     DatiBaseSubappaltiType:
@@ -3366,6 +3376,20 @@ components:
           type: array
           items:        
             $ref: '#/components/schemas/GiustificazioneAggiudicazioneDirettaEnum'
+    DatiBaseProceduraACompletoType:
+      description: Dato in comune con il Business Group Procedure delle eforms
+      type: object
+      additionalProperties: false
+      properties:
+        tipoProcedura:
+          $ref: '#/components/schemas/TipoProceduraEnum' 
+        proceduraAccelerata:
+          description: E' stata utilizzata la procedura accelerata per ragioni di urgenza? - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-106 - Procedure Accelerated del TED 
+          type: boolean  
+        giustificazioniAggiudicazioneDiretta:
+          type: array
+          items:        
+            $ref: '#/components/schemas/GiustificazioneAggiudicazioneDirettaEnum'            
     DatiBaseProceduraADType:
       description: Dato in comune con il Business Group Procedure delle eforms
       type: object
