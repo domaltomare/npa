@@ -651,7 +651,7 @@ ref. /docs/specifiche-jws/
 </details>
 
 <details>
-<summary><h1>Note di rilascio del 15/03/2024 (Segnalazioni chiuse in Esercizio)</h1></summary>
+<summary><h1>Note di rilascio del 15/03/2024 (in Esercizio)</h1></summary>
  
 ### Tipologiche
 * misurePremiali.json: inserita la voce con codice 13
