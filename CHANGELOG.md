@@ -746,6 +746,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-A4.yaml: resi obbligatori gli oggetti: numeroOfferteAmmesse,datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto
 * modello-dati-schede-A7_1_2.yaml: reso obbligatorio l'oggetto: datiBaseAggiudicazioneAppalto
 * modello-dati-schede-NAG.yaml: reso obbligatorio l'oggetto datiBaseRisultatoProcedura
+* modello-dati-schede-M2.yaml: reso obbligatorio l'oggetto datiBaseModificaContrattuale
 
   
 ## Orchestratore
