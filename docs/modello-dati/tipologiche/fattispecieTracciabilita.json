@@ -89,6 +89,15 @@
     "dataFine":"2024-03-20T00:00:00Z"
 },
 {
+    "codice":"11",
+    "descrizione": {
+		"it": "Procedura ai sensi dei regolamenti degli organi costituzionali",
+		"en": "Procedura ai sensi dei regolamenti degli organi costituzionali"
+		},	
+    "dataInizio":null,
+    "dataFine":null
+}	
+{
     "codice":"1",
     "descrizione": {
 		"it": "Contratti e concorsi di progettazione aggiudicati o organizzati in base a norme internazionali (art. 56, comma 1, lett. c) e d) d. lgs. 36/2023 e altri in delibera 584/2023)",
@@ -170,7 +179,7 @@
     "dataFine":null
 },
 {
-    "codice":"11",
+    "codice":"12",
     "descrizione": {
 		"it": "Appalti pubblici e concorsi di progettazione che richiedono particolari misure per la tutela degli interessi essenziali di sicurezza dello Stato (art. 136 comma 2 d. lgs. 36/2023)",
 		"en": "Appalti pubblici e concorsi di progettazione che richiedono particolari misure per la tutela degli interessi essenziali di sicurezza dello Stato (art. 136 comma 2 d. lgs. 36/2023)"
@@ -179,7 +188,7 @@
     "dataFine":null
 },
 {
-    "codice":"12",
+    "codice":"13",
     "descrizione": {
 		"it": "Contratti estranei, soggetti a sola tracciabilità (L. 136/2010 e determina n. 4/2011 aggiornata con delibera n. 585 del 19 dicembre 2023)",
 		"en": "Contratti estranei, soggetti a sola tracciabilità (L. 136/2010 e determina n. 4/2011 aggiornata con delibera n. 585 del 19 dicembre 2023)"
@@ -188,7 +197,7 @@
     "dataFine":null
 },
 {
-    "codice":"13",
+    "codice":"14",
     "descrizione": {
 		"it": "Contratti di cui all’articolo 13 comma 4 del d. lgs. 36/2023 nelle more dell’adozione del regolamento del Ministro degli affari esteri e della cooperazione internazionale",
 		"en": "Contratti di cui all’articolo 13 comma 4 del d. lgs. 36/2023 nelle more dell’adozione del regolamento del Ministro degli affari esteri e della cooperazione internazionale"
