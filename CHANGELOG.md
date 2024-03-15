@@ -650,6 +650,14 @@ ref. /docs/specifiche-jws/
 * strumentiSvolgimentoProcedure.json: riattivata la voce con codice 5
 </details>
 
+<details>
+<summary><h1>Note di rilascio del 15/03/2024 (Segnalazioni chiuse in Esercizio)</h1></summary>
+ 
+### Tipologiche
+* misurePremiali.json: inserita la voce con codice 13
+* fattispecieTracciabilita.json: inserita la voce con codice 11
+</details>
+
 # Note di rilascio del dd/mm/aaaa
 
 ### Schede 
