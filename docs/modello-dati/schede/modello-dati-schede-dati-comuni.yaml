@@ -2069,6 +2069,7 @@ components:
       description: Oggetto che riporta tutti i dati della modifica contrattuale
       type: object
       additionalProperties: false
+      required: [quadroEconomicoStandardRideterminato]
       properties: 
         dataApprovazione:
           description: Data di approvazione della modifica contrattuale
@@ -2751,9 +2752,7 @@ components:
         quadroEconomicoConcessioni:
           $ref: '#/components/schemas/QuadroEconomicoConcessioniType'          
         datiBaseRisultatoProcedura:
-          $ref: '#/components/schemas/DatiBaseRisultatoProceduraType'
-        datiBaseSubappalti:
-          $ref: '#/components/schemas/DatiBaseSubappaltiType'
+          $ref: '#/components/schemas/DatiBaseEsitoRisultatoProceduraType'
         datiBaseAggiudicazioneAppalto:
           $ref: '#/components/schemas/DatiBaseAggiudicazioneAppaltoType' 
         datiBaseAccessibilita:
@@ -3037,6 +3036,7 @@ components:
       description: Oggetto che riporta tutti i dati del quadro economico standard per la modifica contrattuale
       type: object
       additionalProperties: false
+      required: [impLavori,impServizi,impForniture]
       properties:
         impLavori:
           description: Importo contrattuale componente lavori in € (al netto dell’IVA e degli oneri di sicurezza)
