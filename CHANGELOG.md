@@ -694,6 +694,8 @@ ref. /docs/specifiche-jws/
 	* modalita acquisizione: resa facolativa nelle schede P_20 e P_21
   	* aggiunto il campo costituzionesocietascopo nelle schede P1_14, P2_14 ,P1_19, P2_19
    	* oggetto parita di genere: aggiunto il flag ulterioriMisurePremiali
+   	* Reso obbligatorio il campo quadroEconomicoStandardRideterminato dell'oggetto ModificaContrattualeType
+   	* Resi obbligatori gli importi del quadroEconomicoStandardRideterminato
 * modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml:
 	* inserito il quadro economico delle concessioni
 * modello-dati-schede-AD1_28.yaml, modello-dati-schede-AD2_28.yaml:
@@ -744,6 +746,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-A4.yaml: resi obbligatori gli oggetti: numeroOfferteAmmesse,datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto
 * modello-dati-schede-A7_1_2.yaml: reso obbligatorio l'oggetto: datiBaseAggiudicazioneAppalto
 * modello-dati-schede-NAG.yaml: reso obbligatorio l'oggetto datiBaseRisultatoProcedura
+
   
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
