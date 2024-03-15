@@ -743,6 +743,7 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-A3_4.yaml: resi obbligatori gli oggetti: datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto,datiBaseStrumentiProcedura,datiBaseSubappalti
 * modello-dati-schede-A4.yaml: resi obbligatori gli oggetti: numeroOfferteAmmesse,datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto
 * modello-dati-schede-A7_1_2.yaml: reso obbligatorio l'oggetto: datiBaseAggiudicazioneAppalto
+* modello-dati-schede-NAG.yaml: reso obbligatorio l'oggetto datiBaseRisultatoProcedura
   
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
