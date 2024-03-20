@@ -59,7 +59,7 @@
 		"en": "Contratti o concorsi di progettazione aggiudicati dalle stazioni appaltanti o enti concedenti per svolgere una delle attività di cui agli articoli da 146 a 152 in un paese terzo in circostanze che non comportino lo sfruttamento materiale di una rete o un’area geografica all’interno dell’Unione europea"
 		},	
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2024-03-20T00:00:00Z"
 },
 {
     "codice":"8",
@@ -68,7 +68,7 @@
 		"en": "Contratti e concorsi di progettazione nel settore della difesa e sicurezza esclusi ai sensi dell’art. 6 del decreto legislativo 15 novembre 2011 n. 208"
 		},	
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2024-03-20T00:00:00Z"
 },
 {
     "codice":"9",
@@ -77,7 +77,7 @@
 		"en": "Co-programmazione/co-progettazione di servizi sociali"
 		},	
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2024-03-20T00:00:00Z"
 },
 {
     "codice":"10",
