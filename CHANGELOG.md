@@ -658,6 +658,21 @@ ref. /docs/specifiche-jws/
 * fattispecieTracciabilita.json: inserita la voce con codice 11
 </details>
 
+<details>
+<summary><h1>Note di rilascio del 26/03/2024 (in Esercizio)</h1></summary>
+ 
+### Tipologiche
+* errori.json: aggiunti i valori REG105, REG106
+* codNUTS.json: aggiunti i valori per allineare la tipologica al TED
+
+### Regole
+* P1*,P2*,P3*,P4*, P6*, P7*, PL*: inserito controllo REG105 e REG106 sulla validità dei datiBaseTerminiInvio
+
+### Orchestratore  
+* Scheda S3: aggiornati i valori per la colonna "schedaSuccessiva"
+  
+</details>
+
 # Note di rilascio del dd/mm/aaaa
 
 ### Schede 
