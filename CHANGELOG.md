@@ -673,7 +673,28 @@ ref. /docs/specifiche-jws/
   
 </details>
 
-# Note di rilascio del dd/mm/aaaa
+<details>
+<summary><h1>Note di rilascio del XX/04/2024 (in Esercizio)</h1></summary>
+
+## Modello Dati
+* modello-dati-fvoe-fva.yaml:
+  * creato un nuovo oggetto DatiSA_00004. Oggetto che riporta i dati per richiedere il documento CERTIFICATO DEL CASELLARIO GIUDIZIARIO (INTEGRALE).
+  * creato un nuovo oggetto DatiSA_00020. Oggetto che riporta i dati per richiedere il documento CERTIFICATO DELL'ANAGRAFE DELLE SANZIONI AMMINISTRATIVE DIPENDENTI DA REATO
+  * creato un nuovo oggetto DatiSA_00036. Oggetto che riporta i dati per richiedere il documento DATI REDDITUALI SOCIETA DI PERSONE e per il documento DATI REDDITUALI IMPRESA INDIVIDUALE
+  * creato un nuovo oggetto DatiSA_00047. Oggetto che riporta i dati per richiedere il documento CONSISTENZA MEDIA PERSONALE
+  * creato un nuovo oggetto DatiSA_00048. Oggetto che riporta i dati per richiedere il documento COSTO COMPLESSIVO PERSONALE
+  * creato un nuovo oggetto DatiSA_00050. Oggetto che riporta i dati per richiedere il documento COMUNICAZIONE ANTIMAFIA
+  * creato un nuovo oggetto DatiSA_00899. Oggetto che riporta i dati generici per richiedere il documento all' Operatore Economico
+  * creato un nuovo oggetto DocumentoRichiediType Oggetto che riporta i dati della Richiesta di Documentazione verso gli enti certificanti
+  *  modificato l'attributo $ref dell'oggetto ErroriEnum per estendere il nuovo schema dati ($ref: '#/components/schemas/TipologicaSchemaErroriType')
+ 
+## Specifiche Interfacce
+* specifiche-servizi-fvoe-fva.yaml:
+  * inserita operazione richiedi-documenti
+
+</details>
+	
+# Note di rilascio del dd/mm/aaaa 
 
 ### Schede 
 * issue 853: 
