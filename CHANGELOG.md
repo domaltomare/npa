@@ -674,7 +674,9 @@ ref. /docs/specifiche-jws/
 </details>
 
 <details>
-<summary><h1>Note di rilascio del XX/04/2024 (in Esercizio)</h1></summary>
+<summary><h1>Note di rilascio del 05/04/2024. </h1></summary>
+
+**NOTA: La nuova operazione /richiedi-documenti sarà utilizzabile in ambiente di qualificazione a partire da una data successivamente comunicata.**
 
 ## Modello Dati
 * modello-dati-fvoe-fva.yaml:
@@ -686,7 +688,6 @@ ref. /docs/specifiche-jws/
   * creato un nuovo oggetto DatiSA_00050. Oggetto che riporta i dati per richiedere il documento COMUNICAZIONE ANTIMAFIA
   * creato un nuovo oggetto DatiSA_00899. Oggetto che riporta i dati generici per richiedere il documento all' Operatore Economico
   * creato un nuovo oggetto DocumentoRichiediType Oggetto che riporta i dati della Richiesta di Documentazione verso gli enti certificanti
-  *  modificato l'attributo $ref dell'oggetto ErroriEnum per estendere il nuovo schema dati ($ref: '#/components/schemas/TipologicaSchemaErroriType')
  
 ## Specifiche Interfacce
 * specifiche-servizi-fvoe-fva.yaml:
