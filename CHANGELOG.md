@@ -718,7 +718,7 @@ ref. /docs/specifiche-jws/
 	* aggiunto l'oggetto stazioniAppaltanti in anacForm.  **NOTA: verificare se è necessario aggiungere il controllo di coerenza con la SA del token: RISPOSTA SI**
 * **[PRIORITA 0]** modello-dati-schede-P3_4.yaml, modello-dati-schede-P3_5.yaml, modello-dati-schede-P7_3.yaml:
 	* resi obbligatori l'oggetto datiBaseDocumenti e il campo url
-* **[PRIORITA 0]** modello-dati-schede-AD5.yaml:
+* modello-dati-schede-AD5.yaml:
 	* eliminata l'obbligatorietà dell'oggetto datiBaseDocumenti e del campo url
 * modello-dati-schede-P2_19.yaml, modello-dati-schede-S2.yaml:
 	* aggiornata la descrizione della Scheda in coerenza con il file orchestratore.
