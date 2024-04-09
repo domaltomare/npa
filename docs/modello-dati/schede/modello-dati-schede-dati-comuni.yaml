@@ -586,6 +586,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64 
         categorieMerceologiche:
           type: array
@@ -633,6 +634,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64            
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'
@@ -652,6 +654,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64            
         cigAccordoQuadroConvenzione:
           description: CIG relativo all’accordo quadro/convenzione cui si aderisce
@@ -678,6 +681,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64            
         prelazionePromotore:
           description: E' previsto il diritto di prelazione per il promotore?
@@ -709,6 +713,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64  
         idPianificazione:
           description: ID pianificazione
@@ -746,6 +751,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64  
         idPianificazione:
           description: ID pianificazione
@@ -850,6 +856,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64 
         strumentiSvolgimentoProcedure:
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'
@@ -890,6 +897,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64            
     AppaltoP_19Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
@@ -939,6 +947,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64           
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'  
@@ -958,6 +967,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64           
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum' 
@@ -2342,6 +2352,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64           
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
@@ -2407,6 +2418,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64            
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
@@ -2457,6 +2469,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64            
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
@@ -2516,6 +2529,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64            
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
@@ -3695,7 +3709,6 @@ components:
         durata: 
           description: Il periodo (stimato) che intercorre tra l'inizio e la fine dell'appalto, dell'accordo quadro, del sistema dinamico di acquisizione o del sistema di qualificazione. Sono compresi tutte le opzioni e tutti i rinnovi. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-36 - Duration Period del TED
           type: string
-          format: number
         dataFine: 
           description: La data (stimata) alla quale ha fine l'appalto, l'accordo quadro, il sistema dinamico di acquisizione o il sistema di qualificazione. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-537 - Duration End Date del TED
           type: string
