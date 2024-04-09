@@ -733,8 +733,11 @@ ref. /docs/specifiche-jws/
    	* oggetto parita di genere: aggiunto il flag ulterioriMisurePremiali
    	* Reso obbligatorio il campo quadroEconomicoStandardRideterminato dell'oggetto ModificaContrattualeType
    	* Resi obbligatori gli importi del quadroEconomicoStandardRideterminato
+   	* Impostata la minLength a 8 sul codiceAppalto
 * modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml:
 	* inserito il quadro economico delle concessioni
+* modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P5.yaml:
+	*  Impostata la minLength a 8 sul codiceAppalto
 * modello-dati-schede-AD1_28.yaml, modello-dati-schede-AD2_28.yaml:
 	* eliminato il quadro economico standard
 * modello-dati-schede-AD1_25.yaml, modello-dati-schede-AD2_25.yaml, modello-dati-schede-AD1_26.yaml, modello-dati-schede-AD2_26.yaml:
