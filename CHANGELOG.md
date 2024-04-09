@@ -784,6 +784,8 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-A7_1_2.yaml: reso obbligatorio l'oggetto: datiBaseAggiudicazioneAppalto
 * **[PRIORITA' 0]** modello-dati-schede-NAG.yaml: reso obbligatorio l'oggetto datiBaseRisultatoProcedura
 * **[PRIORITA' 0]** modello-dati-schede-M2.yaml,modello-dati-schede-M2_40.yaml: reso obbligatorio l'oggetto datiBaseModificaContrattuale
+* **[PRIORITA' 0]** modello-dati-schede-dati-comuni.yaml, modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P5.yaml:
+	*  Impostata la minLength a 8 sul codiceAppalto
 
   
 ## Orchestratore
