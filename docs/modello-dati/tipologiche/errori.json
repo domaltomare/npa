@@ -1934,6 +1934,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG110",
+    "descrizione": {
+		"it": "La somma degli importi indicati nei lotti deve essere compresa tra l'80% e il 100% dell'importo indicato nell'appalto. In presenza di eForm verificare gli importi inseriti nei campi EstimatedOverallContractAmount (BT-27).",
+		"en": "La somma degli importi indicati nei lotti deve essere compresa tra l'80% e il 100% dell'importo indicato nell'appalto. In presenza di eForm verificare gli importi inseriti nei campi EstimatedOverallContractAmount (BT-27)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
