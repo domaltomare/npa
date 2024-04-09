@@ -1907,6 +1907,33 @@
     "dataFine":null
 },
 {
+    "codice":"REG107",
+    "descrizione": {
+		"it": "Indicare la data alla quale ha inizio il sistema dinamico di acquisizione. In presenza di eForm verificare il campo Duration Start Date (BT-536).",
+		"en": "Indicare la data alla quale ha inizio il sistema dinamico di acquisizione. In presenza di eForm verificare il campo Duration Start Date (BT-536)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG108",
+    "descrizione": {
+		"it": "E' obbligatorio inserire almeno uno dei tre campi tra dataFine, durata e altraDurata. In presenza di eForm verificare i campi Duration End Date (BT-537), Duration Period (BT-36) e Duration Other (BT-538).",
+		"en": "E' obbligatorio inserire almeno uno dei tre campi tra dataFine, durata e altraDurata. In presenza di eForm verificare i campi Duration End Date (BT-537), Duration Period (BT-36) e Duration Other (BT-538)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG109",
+    "descrizione": {
+		"it": "Inserire solo uno tra i campi dataFine, durata e altraDurata. In presenza di eForm verificare i campi Duration End Date (BT-537), Duration Period (BT-36) e Duration Other (BT-538).",
+		"en": "Inserire solo uno tra i campi dataFine, durata e altraDurata. In presenza di eForm verificare i campi Duration End Date (BT-537), Duration Period (BT-36) e Duration Other (BT-538)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
