@@ -47,6 +47,7 @@ components:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
+          minLength: 8
           maxLength: 64 
         datiBase:
           $ref: 'https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoADType'           
