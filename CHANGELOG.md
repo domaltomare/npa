@@ -802,6 +802,9 @@ ref. /docs/specifiche-jws/
 	* inserito controllo sul campo motivazioneCIG **NOTE inserire jsonPath nella collection estrattore a livello di appalto**
 * **[PRIORITA' 0]** P7_1*.dmn,P7_2.dmn,P6*.dmn,P1_10.dmn,P2_10.dmn,P1_11.dmn,P2_11.dmn,P1_12.dmn,P2_12.dmn,P1_13.dmn,P2_13.dmn,P1_14.dmn,P2_14.dmn,PL1_7.dmn,PL2_7.dmn,PL1_8.dmn,PL2_8.dmn,PL1_9.dmn,PL_2_9.dmn,P4*.dmn,P3*.dmn,P1_16.dmn,P2_16.dmn,P1_17.dmn,P2_17.dmn,P1_18.dmn,P2_18.dmn,P1_19.dmn,P2_19.dmn,P1_20.dmn,P2_20.dmn,P1_21.dmn,P2_21.dmn,P1_23.dmn,P2_23.dmn,P1_24.dmn,P2_24.dmn:
 	* inserite le regole di validazione REG105.dmn, REG106 per i campi scadenzaPresentazioneInvito e oraScadenzaPresentazioneOfferte
+* **[PRIORITA' 0]**
+  P1*.dmn, P2*.dmn, P3*.dmn, P4*.dmn,P5.dmn, P6*.dmn, P7_1*.dmn,P7_2.dmn;
+  	* inserita la regola di validazione 110: somma dell'importo dei lotti compresa tra 80% e 100% dell'importo gara
 
 ### **[PRIORITA' 0]** Tipologiche
 * aggiornata errori.json
