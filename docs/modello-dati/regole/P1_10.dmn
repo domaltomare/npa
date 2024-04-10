@@ -624,6 +624,21 @@ satisfies lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != null and lot
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG106\"}"</text>
         </outputEntry>
       </rule>	  
+      <rule id="DecisionRule_1lyz5uz">
+        <description>REG110: La somma degli importi indicati nei lotti deve essere compresa tra l'80% e il 100% dell'importo indicato nell'appalto. In presenza di eForm verificare gli importi inseriti nei campi EstimatedOverallContractAmount (BT-27).</description>
+        <inputEntry id="UnaryTests_0sfxdi3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17mc24k">
+          <text>(sum(for i in 1..count(lotti) return lotti[i].datiBase.importo) &lt; (appalto.datiBase.importo * 0.8)) or (sum(for i in 1..count(lotti) return lotti[i].datiBase.importo) &gt; appalto.datiBase.importo)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1345oap">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0kfgtgz">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG110\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <dmndi:DMNDI>
