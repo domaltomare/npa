@@ -243,7 +243,15 @@ components:
     ComunicazioneNuovoImportoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo di comunicazione nuovo importo - fare riferimento ai valori contenuti nel file [comunicazioneNuovoImporto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/comunicazioneNuovoImporto.json)      
+      description: Motivo di comunicazione nuovo importo - fare riferimento ai valori contenuti nel file [comunicazioneNuovoImporto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/comunicazioneNuovoImporto.json)  
+    StatoSDAEnum: 
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: stato SDA - fare riferimento ai valori contenuti nel file [statoSDA.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoSDA.json)
+    OperazioneSDAEnum: 
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: operazione SDA - fare riferimento ai valori contenuti nel file [operazioneSDA.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/operazioneSDA.json)
     MultilinguaType:
       description: Oggetto utilizzato per la comunicazione dei dati in multilingua
       type: object
@@ -3304,7 +3312,26 @@ components:
           description: Oggetto lotto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-24 - Description del TED
           type: string 
         oggettoMl:
-          $ref: '#/components/schemas/MultilinguaType'           
+          $ref: '#/components/schemas/MultilinguaType'
+    DatiBaseLottoSDAType:
+      description: Dato in comune con il Business Group Purpose delle eforms
+      type: object
+      required:
+        - oggetto
+        - importo
+      additionalProperties: false
+      properties:
+        oggettoContratto:
+          $ref: '#/components/schemas/OggettoContrattoEnum'
+        oggetto:
+          description: Oggetto lotto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-24 - Description del TED
+          type: string 
+        oggettoMl:
+          $ref: '#/components/schemas/MultilinguaType'   
+        importo:
+          description: Importo lotto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-27 - Estimated Value del TED 
+          type: number
+          format: double          
     DatiBaseLottoADType:
       description: Dato in comune con il Business Group Purpose delle eforms
       type: object
@@ -3571,7 +3598,17 @@ components:
       properties:
         astaElettronica:
           description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
-          type: boolean           
+          type: boolean 
+    DatiBaseStrumentiProceduraSDAType:
+      description: Dato in comune con il Business Group Techniques delle eforms
+      additionalProperties: false
+      required: [sistemaDinamicoAcquisizione,astaElettronica]
+      properties:
+        sistemaDinamicoAcquisizione:
+          $ref: '#/components/schemas/SistemaDinamicoAcquisizioneEnum'
+        astaElettronica:
+          description: Strumenti per lo svolgimento delle procedure. Ricorso all'asta elettronica - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-767 - Electronic Auction del TED
+          type: boolean          
     DatiBaseStrumentiProceduraAccordoQuadroSistemaDinamicoType:
       description: Dato in comune con il Business Group Techniques delle eforms 
       additionalProperties: false
@@ -3714,7 +3751,25 @@ components:
           type: string
           format: date-time 
         altraDurata: 
-          $ref: '#/components/schemas/AltraDurataEnum'    
+          $ref: '#/components/schemas/AltraDurataEnum'  
+    DatiBaseDurataSDAType:
+      description:  Dato in comune con il Business Group Duration delle eforms
+      additionalProperties: false
+      required: [dataInizio]
+      properties: 
+        dataInizio: 
+          description: La data (stimata) alla quale ha inizio l'appalto, l'accordo quadro, il sistema dinamico di acquisizione o il sistema di qualificazione. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-536 - Duration Start Date del TED
+          type: string
+          format: date-time
+        durata: 
+          description: Il periodo (stimato) che intercorre tra l'inizio e la fine dell'appalto, dell'accordo quadro, del sistema dinamico di acquisizione o del sistema di qualificazione. Sono compresi tutte le opzioni e tutti i rinnovi. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-36 - Duration Period del TED
+          type: string
+        dataFine: 
+          description: La data (stimata) alla quale ha fine l'appalto, l'accordo quadro, il sistema dinamico di acquisizione o il sistema di qualificazione. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-537 - Duration End Date del TED
+          type: string
+          format: date-time 
+        altraDurata: 
+          $ref: '#/components/schemas/AltraDurataEnum'          
     AnacFormPLBaseType:
       description: Contiene i dati comuni per le schede relative alle pianificazioni
       type: object
