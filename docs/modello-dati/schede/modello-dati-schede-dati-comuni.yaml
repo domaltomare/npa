@@ -773,9 +773,7 @@ components:
           items:
             $ref: '#/components/schemas/CategorieMerceologicheEnum'
         motivazioneCIG:
-          $ref: '#/components/schemas/MotivazioneCIGEnum'
-        strumentiSvolgimentoProcedure: 
-          $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'  
+          $ref: '#/components/schemas/MotivazioneCIGEnum'  
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:
