@@ -3612,6 +3612,7 @@ components:
     DatiBaseStrumentiProceduraCSDAType:
       description: Dato in comune con il Business Group Techniques delle eforms
       additionalProperties: false
+      required: [fineSistemaDinamicoAcquisizione]
       properties:
         fineSistemaDinamicoAcquisizione:
           description: È stato posto termine al sistema dinamico di acquisizione. Non saranno aggiudicati altri appalti, oltre a quelli pubblicizzati nel presente avviso o bando, mediante il sistema dinamico di acquisizione. Questo campo può essere utilizzato anche se l'avviso di aggiudicazione non pubblica l'aggiudicazione di alcun appalto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-119 -  Dynamic Purchasing System Termination del TED
