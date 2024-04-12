@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda ANN - Scheda di annullamento procedura.
+  version: 1.0.0
+components:
+  schemas:
+    AnacFormANNType:
+      type: object
+      required: [cig,motivo]
+      additionalProperties: false
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string 
+        motivo:
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnnullamentoEnum'             
+    SchedaANNType:
+      description: Scheda di annullamento procedura.
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormANNType'
