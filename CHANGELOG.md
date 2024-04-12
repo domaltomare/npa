@@ -704,8 +704,8 @@ ref. /docs/specifiche-jws/
 	* modello-dati-schede-dati-comuni.yaml: per le schede P1_23 e P2_23 spostato il campo contrattiDisposizioniParticolari dall'oggetto appalto all'oggetto lotti, come per tutte le altre schede
 * **[PRIORITA' 0]** modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A3_6.yaml:
 	* reso obbligatorio l'oggetto datiBaseCPV e il campo cpvPrevalente
- * **[PRIORITA' 0]** **NUOVE SCHEDE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: modello-dati-schede-C1.yaml, modello-dati-schede-C2.yaml:
- 	* Nuove schede C1 e C2 per annullamento procedura o comunicazione nuovo importo per appalti sotto (C1) e sopra (C2) i 5K euro.
+ * **[PRIORITA' 0]** **NUOVE SCHEDE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: modello-dati-schede-CM1.yaml, modello-dati-schede-CM2.yaml, modello-dati-schede-ANN.yaml:
+ 	* Nuove schede CM1, CM2 e ANN per annullamento procedura (ANN) o comunicazione nuovo importo per appalti sopra (CM1) e sotto (CM2) i 5K euro.
 * **[PRIORITA' 0]** modello-dati-schede-P7_1_1.yaml, modello-dati-schede-P7_1_2.yaml, modello-dati-schede-P7_1_3.yaml, modello-dati-schede-P7_2.yaml:
 	* eliminata l'obbligatorietà del campo motivazioneCIG
 * modello-dati-schede-AD4.yaml, modello-dati-schede-A3_3.yaml, modello-dati-schede-P5.yaml, modello-dati-schede-dati-comuni.yaml:
@@ -794,8 +794,8 @@ ref. /docs/specifiche-jws/
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
 * issue 1016, 1144, 1194, 1310: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
-* **[PRIORITA' 0]** **NUOVE REGOLE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: C1.dmn, C2.dmn:
-	* regole relative alle nuove schede C1 e C2 per annullamento procedura o comunicazione nuovo importo per appalti sotto (C1) e sopra (C2) i 5K euro.
+* **[PRIORITA' 0]** **NUOVE REGOLE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: CM1.dmn, CM2.dmn, ANN.dmn:
+	* regole relative alle nuove schede CM1, CM2 e ANN per annullamento procedura (ANN) o comunicazione nuovo importo o cup per appalti sopra (CM1) e sotto (CM2) i 5K euro.
 * **[PRIORITA' 0]** AD*.dmn, A3_6.dmn:
 	* inserito controllo che ci sia un solo idPartecipante
 * P7_1_1.dmn, P7_1_2.dmn, P7_1_3.dmn, P7_2.dmn:
@@ -815,8 +815,8 @@ ref. /docs/specifiche-jws/
 * aggiornata tipoFascicolo.json
 * aggiornata tipoDocumento.json
 * **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: annullamento.json:
-	* nuova tipologica per annullamento procedura per appalti sotto (C1) e sopra (C2) i 5K euro.
-* **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: comunicazioneNuovoImporto.json:
-	* nuova tipologica per comunicazione nuovo importo per appalti sotto (C1) e sopra (C2) i 5K euro.
+	* nuova tipologica per annullamento procedura.
+* **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: motivoRichiestaModifica.json:
+	* nuova tipologica per comunicazione nuovo importo o cup per appalti sopra (CM1) e sotto (CM2) i 5K euro.
  * enteCertificante.json:
 	* nuova tipologica usata internamente dal FE della SA per la trascodfica.
