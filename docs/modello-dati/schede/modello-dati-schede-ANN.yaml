@@ -6,14 +6,14 @@ components:
   schemas:
     AnacFormANNType:
       type: object
-      required: [cig,motivo]
+      required: [cig,annullamento]
       additionalProperties: false
       properties:
         cig:
           description: codice identificativo lotto
           type: string 
-        motivo:
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnnullamentoEnum'             
+        annullamento:
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnnullamentoType'             
     SchedaANNType:
       description: Scheda di annullamento procedura.
       type: object

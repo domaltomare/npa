@@ -236,15 +236,11 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Modalità del collaudo tecnico/amministrativo/ verifica di conformità - fare riferimento ai valori contenuti nel file [modoCollaudo.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/modoCollaudo.json)
-    AnnullamentoEnum:
+    MotivoRichiestaModificaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo di annullamento - fare riferimento ai valori contenuti nel file [annullamento.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/annullamento.json)
-    ComunicazioneNuovoImportoEnum:
-      allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo di comunicazione nuovo importo - fare riferimento ai valori contenuti nel file [comunicazioneNuovoImporto.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/comunicazioneNuovoImporto.json)  
-    StatoSDAEnum: 
+      description: Motivo di richiesta di modifica - fare riferimento ai valori contenuti nel file [motivoRichiestaModifica.json](https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/tipologiche/motivoRichiestaModifica.json)
+    AnnullamentoEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: stato SDA - fare riferimento ai valori contenuti nel file [statoSDA.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/statoSDA.json)
@@ -252,6 +248,27 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: operazione SDA - fare riferimento ai valori contenuti nel file [operazioneSDA.json](https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/tipologiche/operazioneSDA.json)
+    ComunicazioneType:
+      description: Oggetto utilizzato per modificare i dati di una procedura
+      type: object
+      additionalProperties: false
+      properties:
+        motivo:
+          $ref: '#/components/schemas/MotivoRichiestaModificaEnum'
+        importo:
+          description: Importo
+          type: number
+          format: double
+        cup:
+          description: Cup
+          type: string
+    AnnullamentoType:
+      description: Oggetto utilizzato per modificare i dati di una procedura
+      type: object
+      additionalProperties: false
+      properties:
+        motivo:
+          $ref: '#/components/schemas/AnnullamentoEnum'          
     MultilinguaType:
       description: Oggetto utilizzato per la comunicazione dei dati in multilingua
       type: object
