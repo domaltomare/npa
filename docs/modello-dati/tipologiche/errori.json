@@ -1855,8 +1855,8 @@
 {
     "codice":"REG101",
     "descrizione": {
-		"it": "Indicare uno dei motivi della comunicazione tra annullamento e comunicazioneNuovoImporto",
-		"en": "Indicare uno dei motivi della comunicazione tra annullamento e comunicazioneNuovoImporto"
+		"it": "Indicare almeno uno dei campi di cui si richiede la modifica.",
+		"en": "Indicare almeno uno dei campi di cui si richiede la modifica."
 	},
     "dataInizio":null,
     "dataFine":null
