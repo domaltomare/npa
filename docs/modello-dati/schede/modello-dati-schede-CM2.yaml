@@ -6,21 +6,14 @@ components:
   schemas:
     AnacFormCM2Type:
       type: object
-      required: [cig,motivo]
+      required: [cig,comunicazione]
       additionalProperties: false
       properties:
         cig:
           description: codice identificativo lotto
           type: string 
-        motivo:
-            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoRichiestaModificaEnum'
-        importo:
-          description: Importo
-          type: number
-          format: double
-        cup:
-          description: Cup
-          type: string        
+        comunicazione:
+            $ref: 'https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ComunicazioneType'               
     SchedaCM2Type:
       description: Scheda di comunicazione modifica dati della procedura per appalti sotto i 5K euro.
       type: object

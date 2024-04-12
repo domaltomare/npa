@@ -243,7 +243,28 @@ components:
     AnnullamentoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo di annullamento - fare riferimento ai valori contenuti nel file [annullamento.json](https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/tipologiche/annullamento.json)   
+      description: Motivo di annullamento - fare riferimento ai valori contenuti nel file [annullamento.json](https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/tipologiche/annullamento.json) 
+    ComunicazioneType:
+      description: Oggetto utilizzato per modificare i dati di una procedura
+      type: object
+      additionalProperties: false
+      properties:
+        motivo:
+          $ref: '#/components/schemas/MotivoRichiestaModificaEnum'
+        importo:
+          description: Importo
+          type: number
+          format: double
+        cup:
+          description: Cup
+          type: string
+    AnnullamentoType:
+      description: Oggetto utilizzato per modificare i dati di una procedura
+      type: object
+      additionalProperties: false
+      properties:
+        motivo:
+          $ref: '#/components/schemas/AnnullamentoEnum'          
     MultilinguaType:
       description: Oggetto utilizzato per la comunicazione dei dati in multilingua
       type: object
