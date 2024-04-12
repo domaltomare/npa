@@ -252,6 +252,7 @@ components:
       description: Oggetto utilizzato per modificare i dati di una procedura
       type: object
       additionalProperties: false
+      required: [motivo]
       properties:
         motivo:
           $ref: '#/components/schemas/MotivoRichiestaModificaEnum'
@@ -266,6 +267,7 @@ components:
       description: Oggetto utilizzato per modificare i dati di una procedura
       type: object
       additionalProperties: false
+      required: [motivo]
       properties:
         motivo:
           $ref: '#/components/schemas/AnnullamentoEnum'          
