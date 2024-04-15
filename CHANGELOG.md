@@ -702,12 +702,6 @@ ref. /docs/specifiche-jws/
 	* modello-dati-schede-P6.2.yaml: reso obbligatorio il quadroEconomicoStandard
 * issue 1151:
 	* modello-dati-schede-dati-comuni.yaml: per le schede P1_23 e P2_23 spostato il campo contrattiDisposizioniParticolari dall'oggetto appalto all'oggetto lotti, come per tutte le altre schede
-* **[PRIORITA 0]** modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A3_6.yaml:
-	* reso obbligatorio l'oggetto datiBaseCPV e il campo cpvPrevalente
- * **[PRIORITA 0]** **NUOVE SCHEDE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: modello-dati-schede-CM1.yaml, modello-dati-schede-CM2.yaml, modello-dati-schede-ANN.yaml:
- 	* Nuove schede CM1, CM2 e ANN per annullamento procedura (ANN) o comunicazione nuovo importo per appalti sopra (CM1) e sotto (CM2) i 5K euro.
-* **[PRIORITA 0]** modello-dati-schede-P7_1_1.yaml, modello-dati-schede-P7_1_2.yaml, modello-dati-schede-P7_1_3.yaml, modello-dati-schede-P7_2.yaml:
-	* eliminata l'obbligatorietà del campo motivazioneCIG
 * modello-dati-schede-AD4.yaml, modello-dati-schede-A3_3.yaml, modello-dati-schede-P5.yaml, modello-dati-schede-dati-comuni.yaml:
 	* rinominato il campo relativo all’accordo quadro/convenzione cui si aderisce in "cigAccordoQuadroConvenzione"
 * modello-dati-schede-S4.yaml:
@@ -716,8 +710,6 @@ ref. /docs/specifiche-jws/
 	* aggiunta l'anacForm con l'oggetto stazioniAppaltanti.
 * modello-dati-schede-PL2_7.yaml, modello-dati-schede-PL2_8.yaml, modello-dati-schede-PL2_9.yaml, modello-dati-schede-dati-comuni.yaml:
 	* aggiunto l'oggetto stazioniAppaltanti in anacForm.  **NOTA: verificare se è necessario aggiungere il controllo di coerenza con la SA del token: RISPOSTA SI**
-* **[PRIORITA 0]** modello-dati-schede-P3_4.yaml, modello-dati-schede-P3_5.yaml, modello-dati-schede-P7_3.yaml:
-	* resi obbligatori l'oggetto datiBaseDocumenti e il campo url
 * modello-dati-schede-AD5.yaml:
 	* eliminata l'obbligatorietà dell'oggetto datiBaseDocumenti e del campo url
 * modello-dati-schede-P2_19.yaml, modello-dati-schede-S2.yaml:
@@ -782,41 +774,14 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-A3_4.yaml: resi obbligatori gli oggetti: datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto,datiBaseStrumentiProcedura,datiBaseSubappalti
 * modello-dati-schede-A4.yaml: resi obbligatori gli oggetti: numeroOfferteAmmesse,datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto
 * modello-dati-schede-A7_1_2.yaml: reso obbligatorio l'oggetto: datiBaseAggiudicazioneAppalto
-* **[PRIORITA 0]** modello-dati-schede-NAG.yaml: reso obbligatorio l'oggetto datiBaseRisultatoProcedura
-* **[PRIORITA 0]** modello-dati-schede-M2.yaml,modello-dati-schede-M2_40.yaml: reso obbligatorio l'oggetto datiBaseModificaContrattuale
-* **[PRIORITA' 0]** modello-dati-schede-dati-comuni.yaml, modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P5.yaml:
-	*  Impostata la minLength a 8 sul codiceAppalto
 
   
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*
+* **TODO**
 
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
 * issue 1016, 1144, 1194, 1310: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
-* **[PRIORITA 0]** **NUOVE REGOLE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: CM1.dmn, CM2.dmn, ANN.dmn:
-	* regole relative alle nuove schede CM1, CM2, ANN per annullamento procedura (ANN) o comunicazione nuovo importo o cup per appalti sopra (CM1) e sotto (CM2) i 5K euro.
-* **[PRIORITA 0]** AD*.dmn, A3_6.dmn:
-	* inserito controllo che ci sia un solo idPartecipante
 * P7_1_1.dmn, P7_1_2.dmn, P7_1_3.dmn, P7_2.dmn:
 	* inserito controllo sul campo motivazioneCIG **NOTE inserire jsonPath nella collection estrattore a livello di appalto**
-* **[PRIORITA 0]** P7_1*.dmn,P7_2.dmn,P6*.dmn,P1_10.dmn,P2_10.dmn,P1_11.dmn,P2_11.dmn,P1_12.dmn,P2_12.dmn,P1_13.dmn,P2_13.dmn,P1_14.dmn,P2_14.dmn,PL1_7.dmn,PL2_7.dmn,PL1_8.dmn,PL2_8.dmn,PL1_9.dmn,PL_2_9.dmn,P4*.dmn,P3*.dmn,P1_16.dmn,P2_16.dmn,P1_17.dmn,P2_17.dmn,P1_18.dmn,P2_18.dmn,P1_19.dmn,P2_19.dmn,P1_20.dmn,P2_20.dmn,P1_21.dmn,P2_21.dmn,P1_23.dmn,P2_23.dmn,P1_24.dmn,P2_24.dmn:
-	* inserite le regole di validazione REG105.dmn, REG106 per i campi scadenzaPresentazioneInvito e oraScadenzaPresentazioneOfferte
-* **[PRIORITA' 0]**
-  P1*.dmn, P2*.dmn, P3*.dmn, P4*.dmn,P5.dmn, P6*.dmn, P7_1*.dmn,P7_2.dmn;
-  	* inserita la regola di validazione 110: somma dell'importo dei lotti compresa tra 80% e 100% dell'importo gara
-
-### **[PRIORITA 0]** Tipologiche
-* aggiornata errori.json
-* aggiornata contrattiDisposizioniParticolari.json
-* aggiornata fattispecieTracciabilita.json
-* aggiornata motivoEsclusioneConcessione.json
-* aggiornata motivoEsclusioneOrdinarioSpeciale.json
-* aggiornata tipoFascicolo.json
-* aggiornata tipoDocumento.json
-* **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: annullamento.json:
-	* nuova tipologica per annullamento procedura.
-* **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: motivoRichiestaModifica.json:
-	* nuova tipologica per comunicazione nuovo importo o cup per appalti sopra (CM1) e sotto (CM2) i 5K euro.
- * enteCertificante.json:
-	* nuova tipologica usata internamente dal FE della SA per la trascodfica.
