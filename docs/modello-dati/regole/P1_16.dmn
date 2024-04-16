@@ -666,7 +666,7 @@ satisfies (lotto.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != null an
       <rule id="DecisionRule_13m2iti">
         <description>REG98: L'importo indicato nell'oggetto appalto.datiBase.importo deve essere &gt; 0.</description>
         <inputEntry id="UnaryTests_1vksbpb">
-          <text>appalto.datiBase.importo = null or appalto.datiBase.importo = 0</text>
+          <text>appalto.datiBase.importo = null or appalto.datiBase.importo &lt;= 0</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1otf3ve">
           <text></text>
@@ -685,7 +685,7 @@ satisfies (lotto.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != null an
         </inputEntry>
         <inputEntry id="UnaryTests_10zccl6">
           <text>some lotto in lotti
-satisfies lotto.datiBase.importo = null or lotto.datiBase.importo = 0</text>
+satisfies lotto.datiBase.importo = null or lotto.datiBase.importo &lt;= 0</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1wluzhx">
           <text></text>
