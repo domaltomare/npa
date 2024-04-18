@@ -571,19 +571,6 @@ components:
           description: Importo totale eventuale definizione
           type: number
           format: double
-    ComunicazioneType:
-        description: Oggetto che riporta i dati di comunicazione relativi ad annullamento o comunicazione nuovo importo.
-        type: object
-        additionalProperties: false
-        properties:
-          annullamento:
-            $ref: '#/components/schemas/AnnullamentoEnum'
-          comunicazioneNuovoImporto:
-            $ref: '#/components/schemas/ComunicazioneNuovoImportoEnum'
-          importo: 
-            description: Importo
-            type: number
-            format: double          
     AggiudicatarioA1_35Type:
       description: Dati dell'aggiudicatario
       type: object
