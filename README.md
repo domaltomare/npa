@@ -1,8 +1,38 @@
-# AVVISO:
+# AVVISI:
+## 1
 Come da [roadmap](/docs/specifiche-jws/roadmap.md), si ricorda a tutti i soggetti che sono stati autorizzati all’accesso temporaneo agli eService della Piattaforma Contratti Pubblici, che a partire dal 9 ottobre 2023, per poter accedere agli eService attualmente disponibili che implementano il contesto di sicurezza, dovranno effettuare l’onboarding su PDND attraverso la richiesta di iscrizione tra le piattaforme certificate come indicato nelle [regole tecniche](https://www.agid.gov.it/it/piattaforme/procurement/certificazione-componenti-piattaforme) emanate da AgID 
+
+## 2
+Attivato il nuovo ambiente di ATTESTAZIONE per le piattaforme.
+L'ambiente è destinato all'esecuzione di test funzionali per la verifica delle attività di MAC, è esposto su PDND e disponibile alle sole piattaforme certificate.
+ANAC non garantisce livelli di servizio sulla disponibilità dell'ambiente ed è ammesso un disallineamento temporaneo di versione tra tale ambiente e quello di esercizio in coincidenza con le operazioni di rilascio di MAC, MAD o MEV.
+Di tale attività viene data informazione sul presente canale, il disallineamento può avere una durata fino a 3 giorni lavorativi.
+Nella sezione Ambienti di interoperabilità i dettagli per la connessione
 
 # Descrizione
 Il repository contiene la documentazione tecnica dei servizi di cooperazione applicativa che **le stazioni appaltanti** possono utilizzare per integrarsi con la Nuova Piattaforma Appalti (NPA) e con il Fascicolo Virtuale dell'Operatore Economico (FVOE) messi a disposizione dall'Autorità Nazionale Anticorruzione (ANAC), per governare l'ecosistema nazionale di approvvigionamento digitale per la gestione degli appalti pubblici.
+
+# Ambienti di interoperabilità
+La piattaforma PCP è disponibile esclusivamente attraverso l'infrastruttura PDND. Per le modalità di accesso a PDND e le indicazioni operative per la fruizione degli e-services si faccia riferimento alla documentazione presente sul portale PDND
+Sono previsti tre distinti ambienti disponibili alle Piattaforme Digitali di Approvvigionamento (PDA). Gli end point dei servizi sono pubblicati su PDND, per ogni ambiente è necessario attivare una fruizione.
+
+## Ambiente di QUALIFICAZIONE
+L'ambiente di qualificazione è destinato alle PDA durante la fase di certificazione dei propri componenti.
+L'accesso all'ambiente è garantito ai soggetti iscritti nel Registro delle Piattaforme Certificate, pubblicato da ANAC e gestito da AgID, che sono in fase di certificazione.
+Per le modalità di presentazione della domanda di certificazione si faccia riferimento alle norme tecniche ed alle istruzioni operative pubblicate da AgID sul proprio portale.
+Gli utenti e le stazioni appaltanti di test sono generati da ANAC e comunicati al gestore della piattaforma in fase di cerificazione.
+La richiesta di generazione di utenti di test può essere fatta invianfo un'email a ufficio.uscp@anticorruzione.it
+
+## Ambiente di ATTESTAZIONE
+L'ambiente di ATTESTAZIONE è destinato alle PDA durante la fase di esercizio dei propri componenti.
+L'accesso all'ambiente è garantito ai soggetti iscritti nel Registro delle Piattaforme Certificate che hanno già conseguito la certificazione.
+Gli utenti e le stazioni appaltanti di test sono i medesimi generati da ANAC per l'ambiente di QUALIFICAZIONE.
+La richiesta di generazione di ulteriori utenti di test può essere fatta inviando un'email a ufficio.uscp@anticorruzione.it
+
+## Ambiente di ESERCIZIO
+L'ambiente di ESERCIZIO è destinato alle PDA durante la fase di esercizio dei propri componenti.
+L'accesso all'ambiente è garantito ai soggetti iscritti nel Registro delle Piattaforme Certificate che hanno già conseguito la certificazione.
+E' richiesta l'iscrizione degli utenti sul sistema di gestione utenti di ANAC e per le stazioni appaltanti la corretta iscrizione in AUSA.
 
 # Documentazione
 ## Specifiche delle interfacce
