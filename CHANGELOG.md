@@ -724,6 +724,9 @@ ref. /docs/specifiche-jws/
 * **[PRIORITA' 0]**
   P1*.dmn, P2*.dmn, P3*.dmn, P4*.dmn,P5.dmn, P6*.dmn, P7_1*.dmn,P7_2.dmn;
   * inserita la regola di validazione 110: somma dell'importo dei lotti compresa tra 80% e 100% dell'importo gara
+* **[IN ESE IL 30.04]**
+  P1_23.dmn, P1_24.dmn;
+  * eliminate REG98 e REG99    
 
 ### **[PRIORITA' 0]** Tipologiche
 * aggiornata errori.json
