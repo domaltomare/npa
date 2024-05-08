@@ -7,8 +7,7 @@ Nel presente documento vengono riportati i tipi documento e il rispettivo modell
 
 ## Tipi Documenti Richiedibili
 
-Vengono riportati per ogni tipologia di documento richiedibile all'ente certificante il modello dati che arricchisce le informazioni,
-dove non presente, le informazioni implicitamente passate nella richiesta (Esempio Denominazione OE, Sede Legale, ecc) sono esaustive per l'eleborazione della richiesta per l'ente cerificante.
+Vengono riportati per ogni tipologia di documento richiedibile all'ente certificante il modello dati che arricchisce le informazioni, dove non presente, le informazioni implicitamente passate nella richiesta (Esempio Denominazione OE, Sede Legale, ecc) sono esaustive per l'eleborazione della richiesta per l'ente cerificante.
 
 Tutti i modelli dati sono presenti nel file [modello-dati-fvoe-fva.yaml](https://github.com/domaltomare/npa/tree/main/docs/modello-dati/modello-dati-fvoe-fva.yaml)
 
@@ -19,7 +18,7 @@ Tutti i modelli dati sono presenti nel file [modello-dati-fvoe-fva.yaml](https:/
 | :-------------: | :---------------: | :-------------------- | ----------------- | ----------------- | 
 | `23/01/2024`    | `00033` | `Estratto del casellario informatico ANAC`  | `-` | `Anac` |
 | `23/01/2024`    | `00004` | `Certificato integrale del casellario giudiziario`  | `DatiSA_00004` | `Min.Giustizia` |
-| `23/01/2024`    | `00021` | `Anagrafe delle sanzioni amministrative dipendenti da reato` | `-` | `Agenzia delle Entrate` |
+| `23/01/2024`    | `00021` | `Comunicazione regolarità fiscale` | `-` | `Agenzia delle Entrate` |
 | `23/01/2024`    | `00034` | `Visura al registo delle imprese`   | `-` | `Unioncamere` |
 | `23/01/2024`    | `00005` | `Anagrafe delle sanzioni amministrative dipendenti da reato`  | `DatiSA_00020` | `Min. Giustizia` |
 | `23/01/2024`    | `00038` | `DURC inarcassa professionista`  | `-` | `Inarcassa` |
@@ -28,7 +27,7 @@ Tutti i modelli dati sono presenti nel file [modello-dati-fvoe-fva.yaml](https:/
 | `23/01/2024`    | `00036` | `Consistenza media personale`  | `DatiSA_00047` | `Inps` |
 | `23/01/2024`    | `00037` | `Consistenza complessivo personale`  | `DatiSA_00048` | `Inps` |
 | `23/01/2024`    | `00001` | `Comunicazione antimafia`  | `DatiSA_00050` | `Min. Interno` |
-| `23/01/2024`    | `00041` | `Dati reddituali società di persone` | `DatiSA_00036`| `Min. Interno` |
+| `23/01/2024`    | `00041` | `Dati reddituali società di persone` | `DatiSA_00036`| `Agenzia delle Entrate` |
 | `23/01/2024`    | `00899` | `Documento Generico OE`  | `DatiSA_00899` | `Operatore Econimico` |
 | `In Progress`   | `00006` | `Carichi Fiscali Pendenti` | `-` | `Agenzia delle Entrate` |
 | `In Progress`   | `00007` | `Attestato WhiteList` | `-` | `Min. Interno` |
