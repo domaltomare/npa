@@ -697,6 +697,9 @@ ref. /docs/specifiche-jws/
 	
 # Note di rilascio del dd/mm/aaaa 
 
+### Tipologiche
+* statoAutorizzazione.json: aggiunto il valore 05
+ 
 ### Schede 
 * issue 853: 
 	* modello-dati-schede-P6.2.yaml: reso obbligatorio il quadroEconomicoStandard
