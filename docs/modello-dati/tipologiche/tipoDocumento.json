@@ -22,6 +22,14 @@
       "dataInizio": null,
       "dataFine": null
 },{
+      "codice": "00008",
+      "descrizione": {
+        "it": "Durc in corso di Validita",
+        "en": "Durc in corso di Validita"
+      },
+      "dataInizio": null,
+      "dataFine": null
+},{
       "codice": "00021",
       "descrizione": {
         "it": "Certificato regolarità fiscale violazioni definitive",
@@ -118,6 +126,14 @@
       },
       "dataInizio": null,
       "dataFine": null     
+},{
+      "codice": "00042",
+      "descrizione": {
+        "it": "Carichi fiscali pendenti",
+        "en": "Carichi fiscali pendenti"
+      },
+      "dataInizio": null,
+      "dataFine": null
 },{
       "codice": "00899",
       "descrizione": {
