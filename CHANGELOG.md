@@ -698,7 +698,12 @@ ref. /docs/specifiche-jws/
 # Note di rilascio del dd/mm/aaaa 
 
 ### Tipologiche
-* statoAutorizzazione.json: aggiunto il valore 05
+* statoAutorizzazione.json
+  * aggiunto il valore: 05
+* tipoDocumento.json:
+  * aggiunti i seguenti valori: 00008 00042
+* errori.json
+  * aggiunti il valore : FVX58
  
 ### Schede 
 * issue 853: 
