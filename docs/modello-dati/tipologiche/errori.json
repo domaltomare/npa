@@ -2768,8 +2768,17 @@
      	"it": "Soggetto Non Presente Nelle Schede Inviate",
         "en": "Subject not present in the cards sent",
         "de": "Der Betreff ist in den versendeten Karten nicht enthalten"
-      },
+     },
      "dataInizio": null,
      "dataFine": null
-}
-]
+},
+{
+   "codice":"FVX58",
+   "descrizione": {
+       "it": "File Caricato Risulta Vuoto",
+       "en": "Uploaded File Appears Empty",
+       "de": "Die hochgeladene Datei erscheint leer"
+   },
+   "dataInizio":null,
+   "dataFine":null
+}]
