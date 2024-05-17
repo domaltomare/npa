@@ -718,6 +718,9 @@ ref. /docs/specifiche-jws/
 
 ## Orchestratore
 * **TODO**
+* righe relative alle schede P3_1, P3_2, P3_3, P6_1, P6_2, P5, AD4: aggiornata la colonna scheda successiva per includere le nuove schede CM1, ANN
+* riga relativa alla scheda AD5: aggiornata la colonna scheda successiva per includere le nuove schede CM2, ANN
+* inserite nuove schede CM1, CM2, ANN
 
 ### Regole
 * **[PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** CM1.dmn, CM2.dmn, ANN.dmn:
