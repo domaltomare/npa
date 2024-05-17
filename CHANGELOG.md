@@ -743,7 +743,7 @@ ref. /docs/specifiche-jws/
 * aggiornata motivoEsclusioneOrdinarioSpeciale.json
 * aggiornata tipoFascicolo.json
 * aggiornata tipoDocumento.json
-* **[PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** annullamento.json:
+* **[PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** motivoAnnullamento.json:
   * nuova tipologica per annullamento procedura.
 * **[PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** motivoRichiestaModifica.json:
   * nuova tipologica per comunicazione nuovo importo o cup per appalti sopra (CM1) e sotto (CM2) i 5K euro.
