@@ -713,7 +713,7 @@ ref. /docs/specifiche-jws/
   
 ## Modello Dati
  * **[PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** modello-dati-npa.yaml:
-  * aggiunti i riferimenti alle nuove schede (CM1,CM2,ANN) nell'oggetto SchedaPostPubblicazioneType
+	*  aggiunti i riferimenti alle nuove schede (CM1,CM2,ANN) nell'oggetto SchedaPostPubblicazioneType
  
 
 ## Orchestratore
