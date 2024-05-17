@@ -695,40 +695,39 @@ ref. /docs/specifiche-jws/
 
 </details>
 	
-# Note di rilascio del dd/mm/aaaa 
+# Note di rilascio del 17/05/2024 (in Esercizio il 30/05/2024)
 
 ### Schede 
-* **[PRIORITA' 0]** modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A3_6.yaml:
+* modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A3_6.yaml:
 	* reso obbligatorio l'oggetto datiBaseCPV e il campo cpvPrevalente
- * **[PRIORITA' 0]** **NUOVE SCHEDE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: modello-dati-schede-CM1.yaml, modello-dati-schede-CM2.yaml, modello-dati-schede-ANN.yaml:
+ * **NUOVE SCHEDE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: modello-dati-schede-CM1.yaml, modello-dati-schede-CM2.yaml, modello-dati-schede-ANN.yaml:
  	* Nuove schede CM1, CM2 e ANN per annullamento procedura (ANN) o comunicazione nuovo importo per appalti sopra (CM1) e sotto (CM2) i 5K euro.
-* **[PRIORITA' 0]** modello-dati-schede-P7_1_1.yaml, modello-dati-schede-P7_1_2.yaml, modello-dati-schede-P7_1_3.yaml, modello-dati-schede-P7_2.yaml:
+* modello-dati-schede-P7_1_1.yaml, modello-dati-schede-P7_1_2.yaml, modello-dati-schede-P7_1_3.yaml, modello-dati-schede-P7_2.yaml:
 	* eliminata l'obbligatorietà del campo motivazioneCIG
-* **[PRIORITA' 0]** modello-dati-schede-P3_4.yaml, modello-dati-schede-P3_5.yaml, modello-dati-schede-P7_3.yaml:
+* modello-dati-schede-P3_4.yaml, modello-dati-schede-P3_5.yaml, modello-dati-schede-P7_3.yaml:
 	* resi obbligatori l'oggetto datiBaseDocumenti e il campo url
-* **[PRIORITA' 0]** modello-dati-schede-NAG.yaml: reso obbligatorio l'oggetto datiBaseRisultatoProcedura
-* **[PRIORITA' 0]** modello-dati-schede-M2.yaml,modello-dati-schede-M2_40.yaml: reso obbligatorio l'oggetto datiBaseModificaContrattuale
-* **[PRIORITA' 0]** modello-dati-schede-dati-comuni.yaml, modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P5.yaml:
+* modello-dati-schede-NAG.yaml: reso obbligatorio l'oggetto datiBaseRisultatoProcedura
+* modello-dati-schede-M2.yaml,modello-dati-schede-M2_40.yaml: reso obbligatorio l'oggetto datiBaseModificaContrattuale
+* modello-dati-schede-dati-comuni.yaml, modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P5.yaml:
 	*  Impostata la minLength a 8 sul codiceAppalto
   
 ## Orchestratore
 * **TODO**
 
 ### Regole
-* **[PRIORITA' 0]** **NUOVE REGOLE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: CM1.dmn, CM2.dmn, ANN.dmn:
+* **NUOVE REGOLE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP**: CM1.dmn, CM2.dmn, ANN.dmn:
   * regole relative alle nuove schede CM1, CM2 e ANN per annullamento procedura (ANN) o comunicazione nuovo importo o cup per appalti sopra (CM1) e sotto (CM2) i 5K euro.
-* **[PRIORITA' 0]** AD*.dmn, A3_6.dmn:
+* AD*.dmn, A3_6.dmn:
   * inserito controllo che ci sia un solo idPartecipante
-* **[PRIORITA' 0]IN ESERCIZIO IL 15/03** P7_1*.dmn,P7_2.dmn,P6*.dmn,P1_10.dmn,P2_10.dmn,P1_11.dmn,P2_11.dmn,P1_12.dmn,P2_12.dmn,P1_13.dmn,P2_13.dmn,P1_14.dmn,P2_14.dmn,PL1_7.dmn,PL2_7.dmn,PL1_8.dmn,PL2_8.dmn,PL1_9.dmn,PL_2_9.dmn,P4*.dmn,P3*.dmn,P1_16.dmn,P2_16.dmn,P1_17.dmn,P2_17.dmn,P1_18.dmn,P2_18.dmn,P1_19.dmn,P2_19.dmn,P1_20.dmn,P2_20.dmn,P1_21.dmn,P2_21.dmn,P1_23.dmn,P2_23.dmn,P1_24.dmn,P2_24.dmn:
+* **IN ESERCIZIO DAL 15/03/2024** P7_1*.dmn,P7_2.dmn,P6*.dmn,P1_10.dmn,P2_10.dmn,P1_11.dmn,P2_11.dmn,P1_12.dmn,P2_12.dmn,P1_13.dmn,P2_13.dmn,P1_14.dmn,P2_14.dmn,PL1_7.dmn,PL2_7.dmn,PL1_8.dmn,PL2_8.dmn,PL1_9.dmn,PL_2_9.dmn,P4*.dmn,P3*.dmn,P1_16.dmn,P2_16.dmn,P1_17.dmn,P2_17.dmn,P1_18.dmn,P2_18.dmn,P1_19.dmn,P2_19.dmn,P1_20.dmn,P2_20.dmn,P1_21.dmn,P2_21.dmn,P1_23.dmn,P2_23.dmn,P1_24.dmn,P2_24.dmn:
   * inserite le regole di validazione REG105.dmn, REG106 per i campi scadenzaPresentazioneInvito e oraScadenzaPresentazioneOfferte
-* **[PRIORITA' 0]**
-  P1*.dmn, P2*.dmn, P3*.dmn, P4*.dmn,P5.dmn, P6*.dmn, P7_1*.dmn,P7_2.dmn;
+* P1*.dmn, P2*.dmn, P3*.dmn, P4*.dmn,P5.dmn, P6*.dmn, P7_1*.dmn,P7_2.dmn;
   * inserita la regola di validazione 110: somma dell'importo dei lotti compresa tra 80% e 100% dell'importo gara
-* **[IN ESERCIZIO IL 30/04]**
+* **IN ESERCIZIO DAL 30/04/2024**
   P1_23.dmn, P1_24.dmn;
   * eliminate REG98 e REG99    
 
-### **[PRIORITA' 0]** Tipologiche
+### Tipologiche
 * aggiornata errori.json
 * aggiornata contrattiDisposizioniParticolari.json
 * aggiornata fattispecieTracciabilita.json
@@ -736,9 +735,9 @@ ref. /docs/specifiche-jws/
 * aggiornata motivoEsclusioneOrdinarioSpeciale.json
 * aggiornata tipoFascicolo.json
 * aggiornata tipoDocumento.json
-* **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: annullamento.json:
+* **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP**: annullamento.json:
   * nuova tipologica per annullamento procedura.
-* **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: motivoRichiestaModifica.json:
+* **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP**: motivoRichiestaModifica.json:
   * nuova tipologica per comunicazione nuovo importo o cup per appalti sopra (CM1) e sotto (CM2) i 5K euro.
  * enteCertificante.json:
   * nuova tipologica usata internamente dal FE della SA per la trascodfica.
