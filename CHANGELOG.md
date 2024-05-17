@@ -712,7 +712,7 @@ ref. /docs/specifiche-jws/
 	*  Impostata la minLength a 8 sul codiceAppalto
   
 ## Modello Dati
- * **NUOVE SCHEDE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: modello-dati-npa.yaml:
+ * **[NUOVE SCHEDE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** modello-dati-npa.yaml:
   * aggiunti i riferimenti alle nuove schede (CM1,CM2,ANN) nell'oggetto SchedaPostPubblicazioneType
  
 
@@ -720,7 +720,7 @@ ref. /docs/specifiche-jws/
 * **TODO**
 
 ### Regole
-* **NUOVE REGOLE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP**: CM1.dmn, CM2.dmn, ANN.dmn:
+* **[NUOVE REGOLE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** CM1.dmn, CM2.dmn, ANN.dmn:
   * regole relative alle nuove schede CM1, CM2 e ANN per annullamento procedura (ANN) o comunicazione nuovo importo o cup per appalti sopra (CM1) e sotto (CM2) i 5K euro.
 * AD*.dmn, A3_6.dmn:
   * inserito controllo che ci sia un solo idPartecipante
@@ -740,9 +740,9 @@ ref. /docs/specifiche-jws/
 * aggiornata motivoEsclusioneOrdinarioSpeciale.json
 * aggiornata tipoFascicolo.json
 * aggiornata tipoDocumento.json
-* **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP**: annullamento.json:
+* **[NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** annullamento.json:
   * nuova tipologica per annullamento procedura.
-* **NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP**: motivoRichiestaModifica.json:
+* **[NUOVE TIPOLOGICHE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** motivoRichiestaModifica.json:
   * nuova tipologica per comunicazione nuovo importo o cup per appalti sopra (CM1) e sotto (CM2) i 5K euro.
  * enteCertificante.json:
   * nuova tipologica usata internamente dal FE della SA per la trascodfica.
