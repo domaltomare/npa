@@ -711,6 +711,11 @@ ref. /docs/specifiche-jws/
 * modello-dati-schede-dati-comuni.yaml, modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P5.yaml:
 	*  Impostata la minLength a 8 sul codiceAppalto
   
+## Modello Dati
+ * **NUOVE SCHEDE - PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO**: modello-dati-npa.yaml:
+  * aggiunti i riferimenti alle nuove schede (CM1,CM2,ANN) nell'oggetto SchedaPostPubblicazioneType
+ 
+
 ## Orchestratore
 * **TODO**
 
