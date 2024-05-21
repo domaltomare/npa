@@ -555,7 +555,10 @@ ref. /docs/specifiche-jws/
 </details>
 
 <details>
-<summary><h1>Note di rilascio del 31/01/2024 (esercizio 01/03/2024)</h1></summary>
+<summary><h1>Note di rilascio del 31/01/2024 (esercizio 01/03/2024 ore 13:00)</h1></summary>
+
+## Pianificazione orario
+Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di circa un'ora, durante la quale i servizi PCP non saranno raggiungibili.
 
 ## Modello Dati 
 * modello-dati-npa.yaml:
@@ -670,11 +673,11 @@ ref. /docs/specifiche-jws/
 
 ### Orchestratore  
 * Scheda S3: aggiornati i valori per la colonna "schedaSuccessiva"
-  
+
 </details>
 
 <details>
-<summary><h1>Note di rilascio del 05/04/2024 </h1></summary>
+<summary><h1>Note di rilascio del 05/04/2024 (in Esercizio)</h1></summary>
 
 **NOTA: La nuova operazione /richiedi-documenti sarà utilizzabile in ambiente di qualificazione a partire da una data successivamente comunicata.**
 
@@ -692,9 +695,26 @@ ref. /docs/specifiche-jws/
 ## Specifiche Interfacce
 * specifiche-servizi-fvoe-fva.yaml:
   * inserita operazione richiedi-documenti
-
 </details>
+
+<details>
+<summary><h1>Aggiornamento documentazione del 24/04/2024</h1></summary>
 	
+## read.me
+* Pubblicazione ambiente ATTESTAZIONE
+  
+## documento-specifiche-servizi-npa.md 
+* Aggiornamento descrizione servizio modifica-avviso
+</details>
+
+<details>
+<summary><h1>Note di rilascio del 15/05/2024 (in Esercizio)</h1></summary>
+
+### Tipologiche
+* errori.json: aggiunti gli errori ERR110, ERR111
+* motivoEsclusioneOrdinarioSpeciale: riattivato codice 24
+</details>
+
 # Note di rilascio del 21/05/2024 (in Esercizio il 30/05/2024)
 
 ### Schede 
@@ -714,7 +734,6 @@ ref. /docs/specifiche-jws/
 ## Modello Dati
  * **[PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** modello-dati-npa.yaml:
 	*  aggiunti i riferimenti alle nuove schede (CM1,CM2,ANN) nell'oggetto SchedaPostPubblicazioneType
- 
 
 ## Orchestratore
 * righe relative alle schede P3_1, P3_2, P3_3, P6_1, P6_2, P5, AD4: aggiornata la colonna scheda successiva per includere le nuove schede CM1, ANN
