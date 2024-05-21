@@ -746,6 +746,6 @@ ref. /docs/specifiche-jws/
   * nuova tipologica per annullamento procedura.
 * **[PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** motivoRichiestaModifica.json:
   * nuova tipologica per comunicazione nuovo importo o cup per appalti sopra (CM1) e sotto (CM2) i 5K euro.
- * enteCertificante.json:
+* enteCertificante.json:
   * nuova tipologica usata internamente dal FE della SA per la trascodfica.
- * aggiornata codiceScheda.json
+* aggiornata codiceScheda.json
