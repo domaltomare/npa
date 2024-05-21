@@ -259,6 +259,7 @@ components:
         cup:
           description: Cup
           type: string
+          pattern: ^[a-zA-Z0-9]{15}$
     AnnullamentoType:
       description: Oggetto utilizzato per modificare i dati di una procedura
       type: object
@@ -2334,7 +2335,8 @@ components:
           description: Cup associati al lotto
           type: array
           items: 
-            type: string 
+            type: string
+            pattern: ^[a-zA-Z0-9]{15}$            
         ccnl:
           description: indicare il codice CNEL o non applicabile
           type: string  
@@ -2402,7 +2404,8 @@ components:
           description: Cup associati al lotto
           type: array
           items: 
-            type: string  
+            type: string
+            pattern: ^[a-zA-Z0-9]{15}$
         ccnl:
           description: indicare il codice CNEL o non applicabile
           type: string  
@@ -2519,7 +2522,8 @@ components:
           description: Cup associati al lotto
           type: array
           items: 
-            type: string  
+            type: string
+            pattern: ^[a-zA-Z0-9]{15}$
         ccnl:
           description: indicare il codice CNEL o non applicabile
           type: string  
@@ -2815,6 +2819,7 @@ components:
           type: array
           items: 
             type: string  
+            pattern: ^[a-zA-Z0-9]{15}$
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'
         quadroEconomicoStandard:
