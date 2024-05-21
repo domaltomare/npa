@@ -15,34 +15,34 @@ components:
           type: string
           minLength: 8
           maxLength: 64          
-        cigAccordoQuadro:
+        cigAccordoQuadroConvenzione:
           description: CIG relativo all’accordo quadro/convenzione cui si aderisce
           type: string  
         datiBase:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoType'          
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoType'          
    LottoP5Type:
       description: Oggetto che riporta i dati del lotto.
       type: object
-      required: [lotIdentifier,datiBase,sceltaContraente,fattispecieTracciabilita]
+      required: [lotIdentifier,datiBase,sceltaContraente]
       additionalProperties: false
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
           type: string  
         fattispecieTracciabilita:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/FattispecieTracciabilitaEnum'   
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/FattispecieTracciabilitaEnum'   
         datiBase:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseLottoType'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseLottoType'
         sceltaContraente:
-          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SceltaContraenteEnum'
+          $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SceltaContraenteEnum'
         cup:
           description: Cup
-          type: string  
+          type: string 
           pattern: ^[a-zA-Z0-9]{15}$          
    AnacFormP5Type:
       description: Contiene i dati per la tracciabilità
       allOf: # estende la classe AnacFormBaseType
-      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/changelog_priorita_0/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'       
+      - $ref: 'https://raw.githubusercontent.com/domaltomare/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'       
       type: object
       required: [appalto,lotti] 
       additionalProperties: false
