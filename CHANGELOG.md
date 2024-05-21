@@ -695,7 +695,7 @@ ref. /docs/specifiche-jws/
 
 </details>
 	
-# Note di rilascio del 17/05/2024 (in Esercizio il 30/05/2024)
+# Note di rilascio del 21/05/2024 (in Esercizio il 30/05/2024)
 
 ### Schede 
 * modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A3_6.yaml:
@@ -717,7 +717,6 @@ ref. /docs/specifiche-jws/
  
 
 ## Orchestratore
-* **TODO**
 * righe relative alle schede P3_1, P3_2, P3_3, P6_1, P6_2, P5, AD4: aggiornata la colonna scheda successiva per includere le nuove schede CM1, ANN
 * riga relativa alla scheda AD5: aggiornata la colonna scheda successiva per includere le nuove schede CM2, ANN
 * inserite nuove schede CM1, CM2, ANN
