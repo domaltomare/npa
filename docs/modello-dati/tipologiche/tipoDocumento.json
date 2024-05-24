@@ -22,6 +22,14 @@
       "dataInizio": null,
       "dataFine": null
 },{
+      "codice": "00008",
+      "descrizione": {
+        "it": "Durc in corso di Validita",
+        "en": "Durc in corso di Validita"
+      },
+      "dataInizio": null,
+      "dataFine": null
+},{
       "codice": "00021",
       "descrizione": {
         "it": "Certificato regolarità fiscale violazioni definitive",
@@ -119,6 +127,14 @@
       "dataInizio": null,
       "dataFine": null     
 },{
+      "codice": "00042",
+      "descrizione": {
+        "it": "Carichi fiscali pendenti",
+        "en": "Carichi fiscali pendenti"
+      },
+      "dataInizio": null,
+      "dataFine": null
+},{
       "codice": "00899",
       "descrizione": {
         "it": "Documento generico OE",
@@ -158,4 +174,36 @@
 		},
     "dataInizio":null,
     "dataFine":null
+},{
+  "codice": "00700",
+  "descrizione": {
+    "it": "Altro",
+    "en": "Altro"
+  },
+  "dataInizio": null,
+  "dataFine": null
+},{
+  "codice": "00701",
+  "descrizione": {
+    "it": "Carta d'identità",
+    "en": "Carta d'identità"
+  },
+  "dataInizio": null,
+  "dataFine": null
+},{
+  "codice": "00702",
+  "descrizione": {
+    "it": "Autocertificazione",
+    "en": "Autocertificazione"
+  },
+  "dataInizio": null,
+  "dataFine": null
+},{
+  "codice": "00703",
+  "descrizione": {
+    "it": "Fonte dei poteri",
+    "en": "Fonte dei poteri"
+  },
+  "dataInizio": null,
+  "dataFine": null
 }]
