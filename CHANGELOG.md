@@ -774,13 +774,18 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 	
 # Note di rilascio del dd/mm/aaaa 
 
+## documento-specifiche-servizi-npa.md 
+* Inserito paragrafo 11.3 Lista tipi documento richiedibili agli enti certificanti
+
 ### Tipologiche
 * statoAutorizzazione.json
   * aggiunto il valore: 05
 * tipoDocumento.json:
   * aggiunti i seguenti valori: 00008 00042
 * errori.json
-  * aggiunti il valore : FVX58
+  * aggiunto il valore : FVX58
+* tipoPrefettura.json
+  * nuova tipologica utilizzata per la scelta della prefettura nella compilazione della richiesta del 00001-Comunicazione Antimafia 
  
 ### Schede 
 * issue 853: 
