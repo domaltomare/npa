@@ -374,9 +374,9 @@ components:
           format: date-time
           example: '1980-02-01T00:00:00+01:00'
         LuogoNascita_Soggetto:
-          description: codice catastale del comune di nascita/stato di nascita
+          description: codice catastale del comune di nascita/stato di nascita estero
           type: string
-          pattern: '^([A-M]|Z)\d{3}$'
+          pattern: '^(([A-M]\d{3}$)|Z\d{2}[1-9])'
           example: H501
         Soggetto_daVerificare:
           description: >-
