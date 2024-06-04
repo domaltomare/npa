@@ -88,5 +88,15 @@
       },
       "dataInizio":null,
       "dataFine":null
-    }
+    },
+    {
+      "codice": "ISPLAV",
+      "descrizione": {
+        "it": "Ispettorato Nazionale del Lavoro",
+        "en": "National labor inspectorate",
+	"de": "Nationale arbeitsinspektion"
+      },
+      "dataInizio":null,
+      "dataFine":null
+    }	
   ]
