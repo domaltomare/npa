@@ -31,4 +31,4 @@ Tutti i modelli dati sono presenti nel file [modello-dati-fvoe-fva.yaml](https:/
 | `23/01/2024`    | `00899` | `Documento Generico OE`  | `DatiSA_00899` | `Operatore Econimico` |
 | `In Progress`   | `00006` | `Carichi Fiscali Pendenti` | `-` | `Agenzia delle Entrate` |
 | `In Progress`   | `00007` | `Attestato WhiteList` | `-` | `Min. Interno` |
-| `In Progress`   | `00008` | `DURC inps` | `-` | `Inps` |
+| `In Progress`   | `00008` | `DURC emesso in corso di validità` | `-` | `Inps` |
