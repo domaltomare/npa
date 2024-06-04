@@ -78,5 +78,15 @@
       },
       "dataInizio":null,
       "dataFine":null
+    },
+    {
+      "codice": "MINLAV",
+      "descrizione": {
+        "it": "Ministero del Lavoro",
+        "en": "Ministry of labor",
+	"de": "Arbeitsministerium"
+      },
+      "dataInizio":null,
+      "dataFine":null
     }
   ]
