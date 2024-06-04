@@ -785,7 +785,9 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * errori.json
   * aggiunto il valore : FVX58
 * tipoPrefettura.json
-  * nuova tipologica utilizzata per la scelta della prefettura nella compilazione della richiesta del 00001-Comunicazione Antimafia 
+  * nuova tipologica utilizzata per la scelta della prefettura nella compilazione della richiesta del 00001-Comunicazione Antimafia
+* enteCertificante.json
+  * aggiunto il valore : MINLAV 
 ### Modello Dati 
 * modello-dati-fvoe-fva.yaml:
   * modificato Soggetto_00050 - nel "luogo di nascita" inserita una regex per controllare i comuni italiani e gli stati esteri
