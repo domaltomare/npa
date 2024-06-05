@@ -1,6 +1,7 @@
 # Premessa
 
-Di seguito la sequenza di operazioni da eseguire per accedere al FV dell'OE per la successiva verifica dei requisiti  
+Di seguito la sequenza di operazioni da eseguire per accedere al FV dell'OE per la successiva verifica dei requisiti. <br>
+Per il formato e l'obbligatorietà di tutti i campi dei servizi si rimanda al [file YAML](../specifiche-interfacce/specifiche-servizi-fvoe-fva.yaml)
 
 ## Richiesta di Accesso al Fascicolo dell'OE
 
@@ -119,5 +120,79 @@ idAppalto : "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     "chiaveAccesso": "dafc5f6f-227c-4788-a523-72aa5244f649"
   }
 }
+}
+```
+## Recupero della lista dei documenti associati al FV dell'OE
+Dopo aver ottenuto il codiceAccesso é possibile recuperare la lista con i dati di sintesi dei documenti presenti nel Fascicolo in modo ordinato e paginato. 
+
+### 1 Preparazione dati 
+| ModelloDati | Modifica |
+| ---------- | ---------- |
+| Parameters | <ul><li> $chiaveAccesso  Inserire obbligatoriamente la chiaveAccesso recuperata mediante il servizio di verifica-accesso-richiesta-fvoe</li> </ul>|
+
+### 2 Invocazione servizio 
+#### Servizio:
+../FVC/v2//ricerca-documenti-fvoe
+#### Payload:
+```yaml
+chiaveAccesso : "dafc5f6f-227c-4788-a523-72aa5244f649"
+```
+#### Response: 
+```yaml
+{
+  "status": 200,
+  "title": "Operazione terminata correttamente",
+  "totRows": 2,
+  "totPages": 1,
+  "currentPage": 1,
+  "elementPage": 2,
+  "result": [
+    {
+      "idDocumento": "507f1f77bcf86cd799439011",
+      "tipo": {
+        "codice": "00001",
+        "id": "tipoDocumento"
+      },
+      "stato": {
+        "codice": "1",
+        "id": "statoDocumento"
+      },
+      "oggetto": "",
+      "dataInserimento": "2014-02-28T18:07:17Z",
+      "fascicoli": [
+                {
+                    "tipoFascicolo": {
+                        "codice": "FVC",
+                        "id": "tipoFascicolo"
+                    },
+                    "idFascicolo": "dafc5f6f-227c-4788-a523-72aa5244f649",
+                    "codiceFascicolo": "1111111113|4f8f5660-87e8-4dbb-b325-17e216f4a519"
+                }
+            ]
+    },
+    {
+      "idDocumento": "507f1f77bcf86cd799888889",
+      "tipo": {
+        "codice": "01",
+        "id": "tipoDocumento"
+      },
+      "stato": {
+        "codice": "1",
+        "id": "statoDocumento"
+      },
+      "oggetto": "",
+      "dataInserimento": "2014-02-28T18:07:17Z",
+      "fascicoli": [
+                {
+                    "tipoFascicolo": {
+                        "codice": "FVC",
+                        "id": "tipoFascicolo"
+                    },
+                    "idFascicolo": "dafc5f6f-227c-4788-a523-72aa5244f649",
+                    "codiceFascicolo": "1111111113|4f8f5660-87e8-4dbb-b325-17e216f4a519"
+                }
+            ]
+    }
+  ]
 }
 ```
