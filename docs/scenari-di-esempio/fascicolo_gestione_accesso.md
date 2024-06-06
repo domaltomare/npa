@@ -132,7 +132,7 @@ Dopo aver ottenuto il codiceAccesso é possibile recuperare la lista con i dati 
 
 ### 2 Invocazione servizio 
 #### Servizio:
-../FVC/v2//ricerca-documenti-fvoe
+../FVC/v2/ricerca-documenti-fvoe
 #### Payload:
 ```yaml
 chiaveAccesso : "dafc5f6f-227c-4788-a523-72aa5244f649"
