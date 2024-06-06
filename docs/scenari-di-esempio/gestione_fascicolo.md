@@ -128,7 +128,7 @@ Dopo aver ottenuto il codiceAccesso é possibile recuperare la lista con i dati 
 ### 1 Preparazione dati 
 | ModelloDati | Modifica |
 | ---------- | ---------- |
-| Parameters | <ul><li> $chiaveAccesso  Inserire obbligatoriamente la chiaveAccesso recuperata mediante il servizio di verifica-accesso-richiesta-fvoe</li> </ul>|
+| Parameters | <ul><li> $chiaveAccesso  Inserire obbligatoriamente la chiaveAccesso recuperata mediante il servizio di <b>verifica-accesso-richiesta-fvoe</b></li> </ul>|
 
 ### 2 Invocazione servizio 
 #### Servizio:
@@ -148,7 +148,7 @@ chiaveAccesso : "dafc5f6f-227c-4788-a523-72aa5244f649"
   "elementPage": 2,
   "result": [
     {
-      "idDocumento": "507f1f77bcf86cd799439011",
+      "idDocumento": "a8add5d8-42f5-4c9c-9ca0-d0580a582e8b",
       "tipo": {
         "codice": "00001",
         "id": "tipoDocumento"
@@ -157,7 +157,7 @@ chiaveAccesso : "dafc5f6f-227c-4788-a523-72aa5244f649"
         "codice": "1",
         "id": "statoDocumento"
       },
-      "oggetto": "",
+      "oggetto": "Test",
       "dataInserimento": "2014-02-28T18:07:17Z",
       "fascicoli": [
                 {
@@ -168,10 +168,10 @@ chiaveAccesso : "dafc5f6f-227c-4788-a523-72aa5244f649"
                     "idFascicolo": "dafc5f6f-227c-4788-a523-72aa5244f649",
                     "codiceFascicolo": "1111111113|4f8f5660-87e8-4dbb-b325-17e216f4a519"
                 }
-            ]
+      ]
     },
     {
-      "idDocumento": "507f1f77bcf86cd799888889",
+      "idDocumento": "b75b41c2-f7e3-4c2a-9309-4f8dd85ed6d1",
       "tipo": {
         "codice": "01",
         "id": "tipoDocumento"
@@ -191,8 +191,68 @@ chiaveAccesso : "dafc5f6f-227c-4788-a523-72aa5244f649"
                     "idFascicolo": "dafc5f6f-227c-4788-a523-72aa5244f649",
                     "codiceFascicolo": "1111111113|4f8f5660-87e8-4dbb-b325-17e216f4a519"
                 }
-            ]
+      ]
     }
   ]
 }
 ```
+## Recupero del dettaglio documento associato al FV dell'OE
+Mediante l'idDocumento recuperato dall'operazione precedente é possibile recuperate il documento nella sua interezza. Sia la parte dati e sia la parte binaria (facoltativa) .
+
+### 1 Preparazione dati 
+| ModelloDati | Modifica |
+| ---------- | ---------- |
+| Parameters | <ul><li> $idDocumento  Inserire obbligatoriamente l'idDocumento recuperato mediante il servizio di <b>ricerca-documenti-fvoe</b></li> </ul>|
+
+### 2 Invocazione servizio 
+#### Servizio:
+../FVC/v2/recupera-documento-fvoe
+#### Payload:
+```yaml
+idDocumento : "a8add5d8-42f5-4c9c-9ca0-d0580a582e8b"
+```
+#### Response: 
+```yaml
+{
+  "status": 200,
+  "title": "Operazione terminata correttamente",
+  "documento": {
+      "idDocumento": "a8add5d8-42f5-4c9c-9ca0-d0580a582e8b",
+      "tipo": {
+        "codice": "00001",
+        "id": "tipoDocumento"
+      },
+      "stato": {
+        "codice": "1",
+        "id": "statoDocumento"
+      },
+      "oggetto": "Test",
+      "dataInserimento": "2014-02-28T18:07:17Z",
+      "dataEmissione": "2023-05-01T07:28:00Z",
+      "dataFineValidita": "2024-02-29T08:28:00Z",
+      "dataProtocollo": "2023-05-01T07:28:00Z",
+      "numeroProtocollo": "3011202356",
+      "dataCreazione": "2023-12-20T09:29:03.724Z",
+      "utenteCreazione": "11111111114",
+      "fascicoli": [
+                {
+                    "tipoFascicolo": {
+                        "codice": "FVC",
+                        "id": "tipoFascicolo"
+                    },
+                    "idFascicolo": "dafc5f6f-227c-4788-a523-72aa5244f649",
+                    "codiceFascicolo": "1111111113|4f8f5660-87e8-4dbb-b325-17e216f4a519"
+                }
+      ]
+  },
+  "contenutoDocumento": {
+      "nomefile": "esDoc00001.pdf",
+      "estensione": "PDF",
+      "contenuto": "JVBERi0xLjQKJcOkw7zDtsOfCjIgM3RhcnR4cmVmCjkxMzkxCiUlRU9GCg==",
+      "dimensione": 93355
+  }
+}
+
+
+```
+
